@@ -1,0 +1,8 @@
+<?php
+// logout.php - Çıkış İşlemi
+
+require_once '../config.php';
+require_once '../auth.php';
+logout_user();
+
+?>
