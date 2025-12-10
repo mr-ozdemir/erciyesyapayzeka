@@ -1,0 +1,10 @@
+.env
+info/community_info.txt
+info/club_info.py
+info/membership_info.txt
+myenv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.chainlit/
