@@ -1,11 +1,11 @@
 <img width="1920" height="741" alt="500888680-0db729c4-8bb1-47a1-9820-0861a7ebd6d8 (1)" src="https://github.com/user-attachments/assets/1d487b64-5475-4d7a-943d-531184382137" />
 
 
-Güzel — elimizdeki klasör yapısına (son paylaştığın görsel) göre her dosyanın ne yaptığı, ne ile ilişkilendiği, ve gerçek çalışma akışıni adım adım, düşünülmüş ve uygulanabilir şekilde anlatıyorum. Amaç: senin ChatHandler sadece sınıfları çağırsın; karar verme (intent) IntentRouter’da; moderation ayrı; LLM & prompt engineering ayrı; scraping ayrı — her birinin tek sorumluluğu olsun.
+Amaç: ChatHandler sadece sınıfları çağırsın; karar verme (intent) IntentRouter’da; moderation ayrı; LLM & prompt engineering ayrı; scraping ayrı — her birinin tek sorumluluğu olsun.
 
 Aşağıdaki açıklama dosya adını → görev → hangi modüllerle konuşur → tipik iç iş akışı/örnek çağrı formatında. Okuması kolay olsun diye mantıksal akış (sequence) blokları da ekledim.
 
-Genel çalışma mantığı (yüksek seviye)
+Genel çalışma mantığı 
 
 main.py Chainlit event’i yakalar → app.py veya doğrudan ChatHandler'ı çağırır.
 
