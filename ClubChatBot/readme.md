@@ -1,4 +1,5 @@
-<img width="1920" height="741" alt="500888680-0db729c4-8bb1-47a1-9820-0861a7ebd6d8 (1)" src="https://github.com/user-attachments/assets/1d487b64-5475-4d7a-943d-531184382137" />
+
+<img width="487" height="633" alt="image" src="https://github.com/user-attachments/assets/de720789-94bb-4510-b3c4-5671ee5e4d86" />
 
 
 Amaç: ChatHandler sadece sınıfları çağırsın; karar verme (intent) IntentRouter’da; moderation ayrı; LLM & prompt engineering ayrı; scraping ayrı — her birinin tek sorumluluğu olsun.
