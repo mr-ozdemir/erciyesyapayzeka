@@ -9,17 +9,18 @@ Bu kararları burada vereceğiz.
 # Eğer proje, etkinlik, aktif etkinlik gibi güncel bilgiler istenirse tarayıcı ajanı kullanılacak. Bu mul sadece yönlendirme yapacak.
 # Gelen mesajın niyetini belirleyecek ve uygun modülü çağıracak.
 
-from scraping.browser_agent import BrowserAgent
-from scraping.browser_scraping import WebScraper
-# Direkt hangisi hakkında bilgi almak istiyorsa çalışacak
-from info.club_info import ClubInfo
-from info.community_info import CommunityInfo
-from info.membership_info import MembershipInfo
+# Make imports optional
+try:
+    from scraping.browser_agent import BrowserAgent
+except (ImportError, AttributeError):
+    BrowserAgent = None
 
+try:
+    from scraping.browser_scraping import WebScraper
+except (ImportError, AttributeError):
+    WebScraper = None
 
-# Link sorularında veya çoğu soruda bu linkleri vermeli
-from links.website_links import WebsiteLinks
-from links.social_links import SocialLinks
+# Info modules are handled in chat_handler now
 
 
 

@@ -5,7 +5,7 @@ class SafetyRules:
         # yasal problem açacak her şey
     ]
 
-    def check(self, text: str):
+    def check(self, text: str, user_id: str = None):
         lower = text.lower()
         if any(word in lower for word in self.BLOCKED_KEYWORDS):
             return "⚠️ Güvenlik nedeniyle kişisel bilgi paylaşamazsınız."

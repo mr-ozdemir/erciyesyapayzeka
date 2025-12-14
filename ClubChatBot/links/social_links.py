@@ -1,4 +1,5 @@
-from links.website_links import SITE_BASE
+from links.website_links import WebsiteLinks
+SITE_BASE = WebsiteLinks.SITE_BASE
 
 class SocialLinks:
     SOCIAL_LINKS = {

@@ -2,9 +2,10 @@
 info/community_info.txt
 info/club_info.py
 info/membership_info.txt
-myenv/
+venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .chainlit/
+chatbot_data.db

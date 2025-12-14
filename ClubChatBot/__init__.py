@@ -1,0 +1,1 @@
+print("Keşfedilmiş kainatın en iyi kulübü")

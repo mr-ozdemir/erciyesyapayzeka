@@ -17,10 +17,10 @@ class Settings:
     VERSION: str = "1.0"
 
     # Groq API Key
-    api_key = os.getenv("GROQ_API_KEY")
+    GROQ_API_KEY: str = os.getenv("GROQ_API_KEY")
 
     # LLM Settings
-    MODEL_NAME: str = "mixtral-8x7b-32768"
+    MODEL_NAME: str = "meta-llama/llama-4-maverick-17b-128e-instruct"
 
     # Logging
     DEBUG: bool = True

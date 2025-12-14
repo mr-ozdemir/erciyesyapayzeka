@@ -3,7 +3,7 @@ import time
 class SpamFilter:
     last_message_time = 0
 
-    def check(self, text: str):
+    def check(self, text: str, user_id: str = None):
         now = time.time()
         diff = now - SpamFilter.last_message_time
 

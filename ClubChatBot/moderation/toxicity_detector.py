@@ -9,7 +9,7 @@ class ToxicityDetector:
         # ve daha fazlası eklenmeli
     ]
 
-    def check(self, text: str):
+    def check(self, text: str, user_id: str = None):
         lower = text.lower()
         if any(p in lower for p in self.TOXIC_PATTERNS):
             return "⚠️ Saldırgan veya toksik bir ifade algılandı."
