@@ -1,0 +1,28 @@
+# ClubChatBot Dependencies
+# Install with: pip install -r requirements.txt
+
+# LangChain Core
+langchain>=0.1.0
+langchain-groq>=0.1.0
+langchain-community>=0.1.0
+langchain-core>=0.1.0
+
+# LLM Provider
+groq>=0.4.0
+
+# Web Scraping
+playwright>=1.40.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+
+# Streamlit UI
+streamlit>=1.30.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Database (if needed)
+# sqlite3 is built-in
+
+# Optional: For better async support
+# asyncio is built-in

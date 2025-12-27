@@ -36,6 +36,10 @@ class ChatManager:
         if "current_chat_id" not in st.session_state:
             self.create_new_chat()
         
+        # Model seçimi
+        if "selected_model" not in st.session_state:
+            st.session_state.selected_model = "llama-3.3-70b-versatile"
+        
         # İlk yüklemede veritabanından sohbetleri yükle
         if "chats_loaded" not in st.session_state:
             self.load_chats_from_db()
@@ -58,7 +62,7 @@ class ChatManager:
             # Chat objesini oluştur
             chat_obj = {
                 "id": chat_id,
-                "title": chat_data['preview'][:30] + "..." if len(chat_data['preview']) > 30 else chat_data['preview'],
+                "title": chat_data['preview'][:50] + "..." if len(chat_data['preview']) > 50 else chat_data['preview'],
                 "messages": formatted_messages,
                 "timestamp": datetime.datetime.strptime(chat_data['start_time'], "%Y-%m-%d %H:%M:%S")
             }
@@ -96,7 +100,7 @@ class ChatManager:
             
             # İlk mesajsa, başlığı güncelle
             if len(current_chat["messages"]) == 1 and role == "user":
-                title = content[:30] + "..." if len(content) > 30 else content
+                title = content[:50] + "..." if len(content) > 50 else content
                 current_chat["title"] = title
 
     def switch_chat(self, chat_id):
@@ -122,9 +126,8 @@ class ChatManager:
         return result.get("content", "Üzgünüm, bir hata oluştu.")
 
 
-
 # ====================================================
-#                 STYLING
+#                 STYLING - MODERN & MINIMAL
 # ====================================================
 class StyleManager:
     @staticmethod
@@ -133,15 +136,21 @@ class StyleManager:
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-        /* Ana Renk Paleti - Logo Uyumlu */
+        /* Modern Renk Paleti */
         :root {
-            --gold-primary: #D4AF37;
-            --gold-light: #F4D03F;
-            --gold-dark: #B8941E;
-            --black-bg: #0A0A0A;
-            --dark-bg: #1A1A1A;
-            --darker-bg: #0F0F0F;
-            --accent-blue: #4A90E2;
+            --honey-yellow: #C9A961;
+            --honey-dark: #B39654;
+            --bg-light: #2A2A2A;
+            --bg-medium: #1F1F1F;
+            --bg-dark: #151515;
+            --text-white: #FFFFFF;
+            --text-gray: #B0B0B0;
+            --text-muted: #6B6B6B;
+        }
+
+        /* SADECE FOOTER'I GİZLE */
+        footer {
+            visibility: hidden;
         }
 
         /* Genel Ayarlar */
@@ -149,32 +158,42 @@ class StyleManager:
             font-family: 'Inter', sans-serif;
         }
         
-        /* Ana Arka Plan */
-        .stApp {
-            background: linear-gradient(135deg, var(--black-bg) 0%, var(--darker-bg) 100%);
-        }
-        
         h1 {
             font-family: 'Inter', sans-serif;
             font-size: 2rem !important;
-            font-weight: 700 !important;
-            color: #ffffff !important;
+            font-weight: 600 !important;
+            color: var(--text-white) !important;
             text-align: center;
             margin-bottom: 1rem !important;
         }
 
-        /* Sidebar - Siyah & Altın Tema */
+        /* Sidebar - Sabit Layout */
         [data-testid="stSidebar"] {
-            background: linear-gradient(180deg, var(--black-bg) 0%, var(--dark-bg) 100%);
-            border-right: 1px solid rgba(212, 175, 55, 0.2);
+            padding-top: 0 !important;
+            overflow: hidden !important;
+        }
+        
+        [data-testid="stSidebar"] > div:first-child {
+            padding: 1rem !important;
+            height: 100vh !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
         }
         
         [data-testid="stSidebar"] img {
-            border-radius: 15px;
-            margin-bottom: 20px;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Sidebar Logo/Başlık Küçült */
+        [data-testid="stSidebar"] h1 {
+            font-size: 1.2rem !important;
+            font-weight: 600 !important;
+            margin-bottom: 1rem !important;
         }
 
-        /* Hoşgeldin Ekranı - Altın Gradient */
+        /* Hoşgeldin Ekranı */
         .welcome-container {
             display: flex;
             flex-direction: column;
@@ -186,120 +205,223 @@ class StyleManager:
         }
         
         .welcome-container h1 {
-            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 50%, var(--gold-dark) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--text-white);
         }
         
-        /* Ana Butonlar - Altın Tema */
+        /* Ana Butonlar - Kapalı Modern Sarı */
         .stButton > button {
             width: 100%;
-            border-radius: 12px;
-            border: 2px solid var(--gold-primary);
-            background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold-primary) 100%);
-            color: var(--black-bg);
+            border-radius: 8px;
+            border: none;
+            background: var(--honey-yellow);
+            color: var(--bg-dark);
             font-weight: 600;
-            transition: all 0.3s ease;
+            padding: 0.6rem 1.2rem;
+            transition: all 0.2s ease;
         }
         
         .stButton > button:hover {
-            transform: translateY(-2px);
-            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-light) 100%);
-            border-color: var(--gold-light);
+            background: var(--honey-dark);
         }
         
-        /* Chat Mesajları - Modern Kartlar */
+        /* Chat Mesajları */
         [data-testid="stChatMessage"] {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(15, 15, 15, 0.9) 100%);
-            border-radius: 16px;
+            background: var(--bg-medium);
+            border-radius: 12px;
             padding: 1.2rem;
             margin-bottom: 0.8rem;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--bg-light);
         }
         
         /* Kullanıcı Mesajı */
         [data-testid="stChatMessage"][data-testid*="user"] {
-            border-left: 3px solid var(--gold-primary);
+            border-left: 3px solid var(--honey-yellow);
         }
         
         /* Asistan Mesajı */
         [data-testid="stChatMessage"][data-testid*="assistant"] {
-            border-left: 3px solid var(--accent-blue);
+            border-left: 3px solid var(--text-gray);
         }
         
-        /* Chat Input - Altın Vurgu */
+        /* Chat Input Container */
         [data-testid="stChatInput"] {
-            border-radius: 16px;
-            border: 2px solid var(--gold-primary);
-            background: var(--dark-bg);
+            border-radius: 12px;
+            border: 1px solid var(--bg-light);
+            background: var(--bg-medium);
         }
         
         [data-testid="stChatInput"]:focus-within {
-            border-color: var(--gold-light);
+            border-color: var(--honey-yellow);
         }
         
-        /* Sidebar Butonları */
+        /* Sidebar Chat Butonları - Compact */
         [data-testid="stSidebar"] .stButton > button {
-            background: rgba(212, 175, 55, 0.1);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            color: var(--gold-light);
-            margin-bottom: 0.5rem;
-            font-weight: 500;
+            background: transparent;
+            border: none;
+            color: var(--text-gray);
+            margin-bottom: 0.1rem;
+            font-weight: 400;
+            text-align: left;
+            padding: 0.4rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            line-height: 1.3;
         }
         
         [data-testid="stSidebar"] .stButton > button:hover {
-            background: rgba(212, 175, 55, 0.2);
-            border-color: var(--gold-primary);
-            color: white;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-white);
         }
         
-        /* Primary Button (Yeni Sohbet) */
+        /* Aktif Chat Vurgusu */
+        [data-testid="stSidebar"] .stButton > button:active {
+            background: rgba(201, 169, 97, 0.15);
+            color: var(--text-white);
+        }
+        
+        /* Primary Button (Yeni Sohbet) - Compact */
         [data-testid="stSidebar"] button[kind="primary"] {
-            background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold-primary) 100%) !important;
-            border: 2px solid var(--gold-primary) !important;
-            color: var(--black-bg) !important;
+            background: var(--honey-yellow) !important;
+            border: none !important;
+            color: var(--bg-dark) !important;
             font-weight: 600 !important;
+            padding: 0.4rem 0.8rem !important;
+            font-size: 0.8rem !important;
+            margin-bottom: 0.5rem !important;
+            width: auto !important;
         }
         
         [data-testid="stSidebar"] button[kind="primary"]:hover {
-            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-light) 100%) !important;
+            background: var(--honey-dark) !important;
         }
         
-        /* Sidebar Caption */
+        /* Sidebar Caption - Küçük */
         [data-testid="stSidebar"] .element-container p {
-            color: var(--gold-primary);
+            color: var(--text-muted);
             font-weight: 500;
+            font-size: 0.7rem;
+            text-transform: uppercase;
             letter-spacing: 0.5px;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
         }
         
-        /* Spinner - Altın Renk */
+        /* Spinner */
         .stSpinner > div {
-            border-top-color: var(--gold-primary) !important;
+            border-top-color: var(--honey-yellow) !important;
         }
         
-        /* Scrollbar - Altın Tema */
+        /* Scrollbar */
         ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
+            width: 6px;
+            height: 6px;
         }
         
         ::-webkit-scrollbar-track {
-            background: var(--dark-bg);
+            background: transparent;
         }
         
         ::-webkit-scrollbar-thumb {
-            background: linear-gradient(180deg, var(--gold-dark) 0%, var(--gold-primary) 100%);
-            border-radius: 4px;
+            background: var(--bg-light);
+            border-radius: 3px;
         }
         
         ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(180deg, var(--gold-primary) 0%, var(--gold-light) 100%);
+            background: var(--bg-medium);
         }
+        
+        /* Chat Input Gönder Butonu - Honey Yellow */
+        [data-testid="stChatInput"] button[kind="primary"],
+        [data-testid="stChatInput"] button:last-child {
+            background: var(--honey-yellow) !important;
+            color: var(--bg-dark) !important;
+            border: none !important;
+        }
+        
+        [data-testid="stChatInput"] button[kind="primary"]:hover,
+        [data-testid="stChatInput"] button:last-child:hover {
+            background: var(--honey-dark) !important;
+        }
+        
+        /* Dosya Ekleme Butonu - Transparan/Gri */
+        [data-testid="stChatInput"] button:first-child {
+            background: transparent !important;
+            color: var(--text-gray) !important;
+            border: 1px solid var(--bg-light) !important;
+        }
+        
+        [data-testid="stChatInput"] button:first-child:hover {
+            background: var(--bg-light) !important;
+            color: var(--text-white) !important;
+        }
+        
+        /* Metin Renkleri */
+        p, span, div {
+            color: var(--text-white);
+        }
+        
+        /* Input Metinleri */
+        input, textarea {
+            color: var(--text-white) !important;
+        }
+        
+        /* Kullanıcı Profil Bölümü */
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            margin-top: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .user-profile-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--honey-yellow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bg-dark);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .user-profile-info {
+            flex: 1;
+        }
+        
+        .user-profile-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-white);
+            margin: 0;
+        }
+        
+        .user-profile-plan {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+        
+        /* Model Seçici */
+        .stSelectbox {
+            margin-bottom: 1rem;
+        }
+        
+        .stSelectbox > div > div {
+            background: var(--bg-medium);
+            border: 1px solid var(--bg-light);
+            border-radius: 8px;
+            color: var(--text-white);
+            font-size: 0.85rem;
+        }
+        
         </style>
         """, unsafe_allow_html=True)
-
 
 # ====================================================
 #                 MAIN VIEW
@@ -312,7 +434,7 @@ class MainView:
         col_left, col_center, col_right = st.columns([1, 0.6, 1])
         with col_center:
             if os.path.exists(logo_path):
-                st.image(logo_path, width=180) 
+                st.image(logo_path, width=3500) 
             else:
                 st.image("https://cdn-icons-png.flaticon.com/512/4712/4712027.png", width=150)
         
@@ -326,16 +448,16 @@ class MainView:
         selection = None
         
         with col1:
-            if st.button("🐍 Python'da liste nasıl oluşturulur?", use_container_width=True): 
-                selection = "Python'da liste nasıl oluşturulur?"
-            if st.button("✍️ Bana yaratıcı bir hikaye anlat", use_container_width=True): 
-                selection = "Bana yaratıcı bir hikaye anlat"
+            if st.button("Aktif etkinlikleriniz neler?", use_container_width=True): 
+                selection = "Aktif etkinlikleriniz neler?"
+            if st.button("Projeleriniz neler?", use_container_width=True): 
+                selection = "Projeleriniz neler?"
 
         with col2:
-            if st.button("🔌 API entegrasyonu nasıl yapılır?", use_container_width=True): 
-                selection = "API entegrasyonu nasıl yapılır?"
-            if st.button("📊 Veri analizi araçları nelerdir?", use_container_width=True): 
-                selection = "Veri analizi için en iyi araçlar nelerdir?"
+            if st.button("Kulüp hakkında bilgi ver", use_container_width=True): 
+                selection = "Kulüp hakkında bilgi ver"
+            if st.button("Vizyon ve misyonlarınız nedir?", use_container_width=True): 
+                selection = "Vizyon ve misyonlarınız nedir?"
         
         return selection
 
@@ -363,29 +485,70 @@ def main():
 
     # ================= SIDEBAR =================
     with st.sidebar:
+        # Tıklanabilir Logo - Web sitesine gider
         if os.path.exists(sidebar_logo_path):
-            st.image(sidebar_logo_path, use_container_width=True)
-        else:
-            st.title("🤖 Yapay Zeka Kulübü")
-
-        st.markdown("---")
+            import base64
+            
+            # Görseli base64'e çevir
+            with open(sidebar_logo_path, "rb") as f:
+                img_data = base64.b64encode(f.read()).decode()
+            
+            st.markdown(f"""
+                <a href="https://erciyesyapayzeka.com.tr" target="_blank" style="display: block; text-align: center;">
+                    <img src="data:image/png;base64,{img_data}" width="300" style="cursor: pointer; border-radius: 12px;">
+                </a>
+            """, unsafe_allow_html=True)
         
-        if st.button("➕ Yeni Sohbet Başlat", type="primary", use_container_width=True):
+        # Yeni Sohbet Butonu (+ Icon ile)
+        if st.button("➕ Yeni Sohbet", type="primary", use_container_width=True, key="new_chat_btn"):
             chat_manager.create_new_chat()
             st.rerun()
-            
+        
+        # Geçmiş Sohbetler Başlığı
+        st.markdown("<p style='font-size: 0.65rem; color: #6B6B6B; text-transform: uppercase; letter-spacing: 1px; margin: 0.5rem 0 0.3rem 0;'>Geçmiş Sohbetler</p>", unsafe_allow_html=True)
+        
+        # Scrollable Chat Container (kalan alana sığacak şekilde)
+        with st.container(height=350):
+            for chat in reversed(st.session_state.all_chats):
+                is_active = chat['id'] == st.session_state.current_chat_id
+                button_label = chat['title'][:40] + "..." if len(chat['title']) > 40 else chat['title']
+                
+                if is_active:
+                    st.markdown(f'''<div style="background: rgba(201, 169, 97, 0.2); border-left: 3px solid #C9A961; padding: 0.4rem 0.6rem; border-radius: 6px; margin-bottom: 0.2rem; font-size: 0.75rem; color: #fff;">{button_label}</div>''', unsafe_allow_html=True)
+                else:
+                    if st.button(button_label, key=f"chat_btn_{chat['id']}", use_container_width=True):
+                        chat_manager.switch_chat(chat['id'])
+                        st.rerun()
+        
+        # Sabit Alt Bölüm
         st.markdown("---")
-        st.caption("GEÇMİŞ SOHBETLER")
-
-        # Sohbetleri ters sırada göster (en yeni üstte)
-        for chat in reversed(st.session_state.all_chats):
-            # Aktif sohbeti vurgula
-            is_active = chat['id'] == st.session_state.current_chat_id
-            button_label = f"{'🟢' if is_active else '💬'} {chat['title']}"
-            
-            if st.button(button_label, key=f"chat_btn_{chat['id']}", use_container_width=True):
-                chat_manager.switch_chat(chat['id'])
-                st.rerun()
+        
+        # Model Seçici
+        st.markdown("<p style='font-size: 0.65rem; color: #6B6B6B; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.3rem;'>Model</p>", unsafe_allow_html=True)
+        model_options = {
+            "Llama 3.3 70B": "llama-3.3-70b-versatile",
+            "Llama 3.1 8B": "llama-3.1-8b-instant",
+            "Mixtral 8x7B": "mixtral-8x7b-32768"
+        }
+        
+        selected_model_name = st.selectbox(
+            "Model seçin",
+            options=list(model_options.keys()),
+            index=0,
+            label_visibility="collapsed"
+        )
+        st.session_state.selected_model = model_options[selected_model_name]
+        
+        # Kullanıcı Profili
+        st.markdown("""
+            <div style="display: flex; align-items: center; gap: 0.7rem; padding: 0.8rem; background: rgba(255,255,255,0.03); border-radius: 10px; margin-top: 1rem;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: #C9A961; display: flex; align-items: center; justify-content: center; color: #151515; font-weight: 600; font-size: 0.9rem;">K</div>
+                <div>
+                    <p style="font-size: 0.9rem; font-weight: 500; color: #fff; margin: 0;">Kadir</p>
+                    <p style="font-size: 0.75rem; color: #6B6B6B; margin: 0;">Free plan</p>
+                </div>
+            </div>
+        """, unsafe_allow_html=True)
 
     # ================= ANA İÇERİK =================
     current_chat = chat_manager.get_current_chat()
@@ -407,17 +570,36 @@ def main():
                 st.markdown(msg["content"])
 
     # --- 2. YENİ MESAJ VE CEVAP ---
-    if prompt := st.chat_input("Mesajınızı buraya yazın..."):
+    # Image yükleme destekli chat input
+    user_input = st.chat_input(
+        "Mesajınızı yazın veya görsel yükleyin...",
+        accept_file=True,
+        file_type=["jpg", "jpeg", "png", "gif", "webp"]
+    )
+    
+    if user_input:
+        # Text veya dict olabilir
+        if isinstance(user_input, str):
+            prompt = user_input
+            uploaded_files = []
+        else:
+            prompt = user_input.text if user_input.text else "[Görsel yüklendi]"
+            uploaded_files = user_input.files if hasattr(user_input, 'files') else []
+        
         # Kullanıcı Mesajı
         user_avatar = user_avatar_path if os.path.exists(user_avatar_path) else "👤"
         with st.chat_message("user", avatar=user_avatar):
             st.markdown(prompt)
+            # Yüklenen görselleri göster
+            for file in uploaded_files:
+                st.image(file, caption=file.name, width=300)
+        
         chat_manager.add_message("user", prompt)
 
         # Asistan Cevabı
         ai_avatar = ai_avatar_path if os.path.exists(ai_avatar_path) else "🤖"
         with st.chat_message("assistant", avatar=ai_avatar):
-            with st.spinner("Düşünüyorum..."):
+            with st.spinner("Düşünüyorum...🐝🐝🐝"):
                 response = chat_manager.generate_response(prompt)
                 st.markdown(response)
         chat_manager.add_message("assistant", response)

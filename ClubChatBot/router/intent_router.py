@@ -1,28 +1,11 @@
 '''
 Alınan kullanıcı girdisine göre uygun niyeti yönlendiren modül.
 IntentRouter sınıfı ile yapacağız.
-agent mı kullanılacak, scraping mi, yoksa direkt LLM mi cevap verecek?
+web_agent mı kullanılacak, yoksa direkt LLM mi cevap verecek?
 veya link modüllerine mi yönlendirecek?
 veya info modüllerine mi?
 Bu kararları burada vereceğiz.
 '''
-# Eğer proje, etkinlik, aktif etkinlik gibi güncel bilgiler istenirse tarayıcı ajanı kullanılacak. Bu mul sadece yönlendirme yapacak.
-# Gelen mesajın niyetini belirleyecek ve uygun modülü çağıracak.
-
-# Make imports optional
-try:
-    from scraping.browser_agent import BrowserAgent
-except (ImportError, AttributeError):
-    BrowserAgent = None
-
-try:
-    from scraping.browser_scraping import WebScraper
-except (ImportError, AttributeError):
-    WebScraper = None
-
-# Info modules are handled in chat_handler now
-
-
 
 
 class IntentRouter:
@@ -31,32 +14,36 @@ class IntentRouter:
     """
 
     def detect_intent(self, user_message: str) -> str:
-        # Basit anahtar kelime tabanlı niyet tespiti
+        """
+        Kullanıcı mesajının niyetini belirler.
+        
+        Returns:
+            'web_agent': Etkinlik ve proje sorguları (WebAgent kullanır)
+            'info': Genel kulüp bilgisi
+            'links': Link talepleri
+            'llm': Genel soru-cevap
+        """
         message_lower = user_message.lower()
 
-        if "bilgi" in message_lower or "etkinlik" in message_lower:
+        # Web Agent intent - etkinlik ve proje sorguları
+        web_agent_keywords = [
+            # Etkinlik anahtar kelimeleri
+            "etkinlik", "event", "seminer", "workshop", "kamp", "eğitim",
+            "data camp", "datacamp", "mutex", "cenglish", "aktivite",
+            # Proje anahtar kelimeleri
+            "proje", "project", "yayın", "araştırma", "research", "makale",
+            # Durum anahtar kelimeleri
+            "yaklaşan", "aktif", "güncel", "ne var", "neler var", "son",
+            # Scraping anahtar kelimeleri (artık web_agent'a yönlendirilir)
+            "tarayıcı", "web kazıma", "scrape"
+        ]
+        if any(kw in message_lower for kw in web_agent_keywords):
+            return "web_agent"
+        
+        # Kulüp bilgisi
+        if "bilgi" in message_lower or "hakkında" in message_lower:
             return "info"
         elif "link" in message_lower or "site" in message_lower:
             return "links"
-        elif "tarayıcı" in message_lower or "web kazıma" in message_lower:
-            return "scrape"
-        elif "yardımcı ajan" in message_lower or "agent" in message_lower:
-            return "agent"
         else:
             return "llm"
-
-    async def handle_with_agent(self, user_message: str) -> str:
-        # Tarayıcı tabanlı ajan ile işleme
-        from scraping.browser_agent import BrowserAgent
-        agent = BrowserAgent()
-        return await agent.interact(user_message)
-
-    async def handle_with_scraping(self, user_message: str) -> str:
-        # Web kazıma işlemi
-        from scraping.browser_scraping import WebScraper
-        scraper = WebScraper()
-        return await scraper.scrape(user_message)
-
-    async def handle_with_intent_router(self, user_message: str) -> str:
-        # Diğer özel yönlendirmeler için
-        return "Bu özellik yakında eklenecek."

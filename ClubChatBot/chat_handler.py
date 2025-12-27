@@ -12,13 +12,14 @@ from database import DatabaseManager
 import uuid
 from typing import Optional, Dict, Any
 
-# Try to import BrowserAgent (may not be implemented)
+# Try to import WebAgent for event/project/scraping queries
 try:
-    from scraping.browser_agent import BrowserAgent
-    BROWSER_AVAILABLE = True
-except (ImportError, AttributeError):
-    BROWSER_AVAILABLE = False
-    BrowserAgent = None
+    from agents.web_agent import WebAgent
+    WEB_AGENT_AVAILABLE = True
+except (ImportError, AttributeError) as e:
+    print(f"[ChatHandler] WebAgent import warning: {e}")
+    WEB_AGENT_AVAILABLE = False
+    WebAgent = None
 
 
 # Import info and links modules
@@ -81,9 +82,10 @@ class ChatHandler:
     def __init__(self):
         self.llm = GroqClient()
         self.moderation = ModerationChain()
-        self.browser = BrowserAgent() if BROWSER_AVAILABLE else None
         self.router = IntentRouter()
         self.db = DatabaseManager()
+        # Web Agent for event/project/scraping queries
+        self.web_agent = WebAgent() if WEB_AGENT_AVAILABLE else None
 
     def handle_message(
         self, 
@@ -130,6 +132,9 @@ class ChatHandler:
         
         if intent == "scrape":
             return self._handle_scrape_intent(text, session_id, chat_id)
+        
+        if intent == "web_agent":
+            return self._handle_web_agent_intent(text, session_id, chat_id)
 
         # Default: use LLM
         return self._handle_llm_intent(text, session_id, chat_id)
@@ -178,35 +183,16 @@ class ChatHandler:
         }
 
     def _handle_scrape_intent(self, text: str, session_id: str, chat_id: str) -> Dict[str, Any]:
-        """Handle web scraping requests."""
-        text_lower = text.lower()
+        """
+        Handle web scraping requests.
+        Redirects to WebAgent for consistent scraping behavior.
+        """
+        # Use WebAgent for scraping (consolidated approach)
+        if self.web_agent and WEB_AGENT_AVAILABLE:
+            return self._handle_web_agent_intent(text, session_id, chat_id)
         
-        if "etkinlik" in text_lower or "event" in text_lower:
-            url = WEBSITE_LINKS.get("events")
-        else:
-            url = WEBSITE_LINKS.get("home")
-        
-        # Check if browser is available
-        if self.browser and BROWSER_AVAILABLE:
-            try:
-                # Note: browser.get_page_text is async, but we'll handle it synchronously for Streamlit
-                # You may need to adjust this based on your BrowserAgent implementation
-                page_text = self.browser.get_page_text_sync(url) if hasattr(self.browser, 'get_page_text_sync') else None
-                
-                if page_text:
-                    snippet = page_text[:1200]
-                    answer = f"🔎 Site içeriğinden kısa not:\n{snippet}\n\nKaynak: web sitesi"
-                    self.db.save_conversation(session_id, chat_id, text, snippet, "scrape")
-                    
-                    return {
-                        "content": answer,
-                        "category": "scrape",
-                        "error": False
-                    }
-            except Exception as e:
-                pass
-        
-        # Fallback - browser not available or scraping failed
+        # Fallback - WebAgent not available
+        url = WEBSITE_LINKS.get("home", "https://erciyesyapayzeka.com.tr")
         answer = f"🔗 İçerik alınamadı, lütfen siteyi ziyaret edin: {url}"
         self.db.save_conversation(session_id, chat_id, text, answer, "scrape_fallback")
         
@@ -237,3 +223,43 @@ class ChatHandler:
             "category": "general",
             "error": False
         }
+
+    def _handle_web_agent_intent(self, text: str, session_id: str, chat_id: str) -> Dict[str, Any]:
+        """
+        Handle web agent queries (events, projects, etc.).
+        Uses WebAgent for scraping and LLM-powered responses.
+        """
+        # Check if WebAgent is available
+        if not self.web_agent or not WEB_AGENT_AVAILABLE:
+            # Fallback to info intent
+            return self._handle_info_intent(text, session_id, chat_id)
+        
+        try:
+            # Process query with WebAgent
+            answer = self.web_agent.process_query(text)
+            
+            # Determine specific category
+            query_type = self.web_agent.detect_query_type(text)
+            category = f"web_agent_{query_type}"
+            
+            # Save to database
+            self.db.save_conversation(session_id, chat_id, text, answer, category)
+            
+            return {
+                "content": answer,
+                "category": category,
+                "error": False
+            }
+        except Exception as e:
+            # Log error and fallback
+            print(f"[ChatHandler] WebAgent error: {e}")
+            
+            # Fallback response
+            fallback_answer = f"Web'den bilgi alırken bir sorun oluştu. Lütfen daha sonra tekrar deneyin.\n\n🔗 Etkinlikler: {WEBSITE_LINKS.get('events', 'https://erciyesyapayzeka.com.tr/etkinlikler')}"
+            
+            return {
+                "content": fallback_answer,
+                "category": "web_agent_error",
+                "error": True
+            }
+
