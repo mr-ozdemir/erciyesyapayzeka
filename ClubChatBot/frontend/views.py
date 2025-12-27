@@ -1,9 +1,3 @@
-# frontend/views.py
-"""
-View components for the Streamlit application.
-Contains UI components like welcome screen and quick action buttons.
-"""
-
 import streamlit as st
 import os
 
@@ -25,7 +19,7 @@ class MainView:
         
         st.markdown("""
             <div class="welcome-container">
-                <h1>Keşfedilmiş Kainatın En İyi Kulübüne Hoş Geldiniz 🚀</h1>
+                <h1>Keşfedilmiş Kainatın En İyi Kulübüne Hoş Geldiniz.🌍🌌</h1>
             </div>
         """, unsafe_allow_html=True)
         

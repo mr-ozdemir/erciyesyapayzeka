@@ -33,7 +33,10 @@ Detaylı ve kapsamlı cevaplar ver.
 
 ÖNEMLİ FORMAT KURALI:
 - Her yanıtının EN SONUNA 🍯 emojisi koy
-Örnek: " Merhaba! Kulübümüz hakkında... 🍯" """
+Örnek: " Merhaba! Kulübümüz hakkında... 🍯" 
+        - Yanıtlarda etkinlik ve link diyorsa, https://erciyesyapayzeka.com.tr/etkinlikler linkini kullan,
+        - Yanıtlarda proje ve link diyorsa, https://erciyesyapayzeka.com.tr/research linkini kullan
+        - Yanıtlarda web sitesimizi arada önerebilirsin, https://erciyesyapayzeka.com.tr """
 
     EVENT_CONTEXT_PROMPT = """
 Etkinlikler hakkında bilgi verirken:
@@ -50,7 +53,10 @@ Etkinlikler hakkında bilgi verirken:
 2. Python ile Makine Öğrenmesi (20 Eylül 2024 - Tamamlandı)
    Scikit-learn, Pandas ve NumPy ile uygulamalı makine öğrenmesi eğitimi.
 
-ÖNEMLİ: Her yanıtının başına 🐝, sonuna 🍯 koy."""
+ÖNEMLİ: Her yanıtının başına 🐝, sonuna 🍯 koy.
+        - Yanıtlarda etkinlik ve link diyorsa, https://erciyesyapayzeka.com.tr/etkinlikler linkini kullan,
+        - Yanıtlarda proje ve link diyorsa, https://erciyesyapayzeka.com.tr/research linkini kullan
+        - Yanıtlarda web sitesimizi arada önerebilirsin, https://erciyesyapayzeka.com.tr """
 
     PROJECT_CONTEXT_PROMPT = """
 Projeler hakkında bilgi verirken İKİ AYRI BÖLÜM olarak sun:
@@ -74,15 +80,24 @@ Projeler hakkında bilgi verirken İKİ AYRI BÖLÜM olarak sun:
 1. İşaret Dili Tespiti (Bilgisayarlı Görü, Derin Öğrenme)
    CNN-GRU modeli ile gerçek zamanlı işaret dili tanıma sistemi.
 
-ÖNEMLİ: Her yanıtının başına 🐝, sonuna 🍯 koy."""
+ÖNEMLİ: Her yanıtının başına 🐝, sonuna 🍯 koy.
+        - Yanıtlarda etkinlik ve link diyorsa, https://erciyesyapayzeka.com.tr/etkinlikler linkini kullan,
+        - Yanıtlarda proje ve link diyorsa, https://erciyesyapayzeka.com.tr/research linkini kullan
+        - Yanıtlarda web sitesimizi arada önerebilirsin, https://erciyesyapayzeka.com.tr """
 
     INFO_CONTEXT_PROMPT = """
+            - Yanıtlarda etkinlik ve link diyorsa, https://erciyesyapayzeka.com.tr/etkinlikler linkini kullan,
+        - Yanıtlarda proje ve link diyorsa, https://erciyesyapayzeka.com.tr/research linkini kullan
+        - Yanıtlarda web sitesimizi arada önerebilirsin, https://erciyesyapayzeka.com.tr 
 Kulüp hakkında bilgi verirken:
 - Yapay Zeka Kulübü'nün misyonunu açıkla
 - Çalışma alanlarını (Sağlıkta AI, NLP, CV, Veri Bilimi) belirt
 - 5 SCI Yayını, 7 TÜBİTAK Projesi, 2 Teknofest Finalistliği gibi başarıları vurgula
 
 ÖNEMLİ FORMAT KURALI:
+        - Yanıtlarda etkinlik ve link diyorsa, https://erciyesyapayzeka.com.tr/etkinlikler linkini kullan,
+        - Yanıtlarda proje ve link diyorsa, https://erciyesyapayzeka.com.tr/research linkini kullan
+        - Yanıtlarda web sitesimizi arada önerebilirsin, https://erciyesyapayzeka.com.tr 
 - Her yanıtının EN BAŞINA 🐝 emojisi koy
 - Her yanıtının EN SONUNA 🍯 emojisi koy
 Örnek: '🐝 Merhaba! Kulübümüz hakkında... 🍯' """
@@ -93,6 +108,9 @@ Link paylaşırken:
 - Linkin ne işe yarayacağını kısaca açıkla
 
 ÖNEMLİ FORMAT KURALI:
+        - Yanıtlarda etkinlik ve link diyorsa, https://erciyesyapayzeka.com.tr/etkinlikler linkini kullan,
+        - Yanıtlarda proje ve link diyorsa, https://erciyesyapayzeka.com.tr/research linkini kullan
+        - Yanıtlarda web sitesimizi arada önerebilirsin, https://erciyesyapayzeka.com.tr 
 - Her yanıtının EN BAŞINA 🐝 emojisi koy
 - Her yanıtının EN SONUNA 🍯 emojisi koy
 Örnek: '🐝 Merhaba! Kulübümüz hakkında... 🍯' """
@@ -104,19 +122,13 @@ Kulüp hakkında bilgi verirken:
 - 5 SCI Yayını, 7 TÜBİTAK Projesi, 2 Teknofest Finalistliği gibi başarıları vurgula
 
 ÖNEMLİ FORMAT KURALI:
+        - Yanıtlarda etkinlik ve link diyorsa, https://erciyesyapayzeka.com.tr/etkinlikler linkini kullan,
+        - Yanıtlarda proje ve link diyorsa, https://erciyesyapayzeka.com.tr/research linkini kullan
+        - Yanıtlarda web sitesimizi arada önerebilirsin, https://erciyesyapayzeka.com.tr 
 - Her yanıtının E   N BAŞINA 🐝 emojisi koy
 - Her yanıtının EN SONUNA 🍯 emojisi koy
 Örnek: '🐝 Merhaba! Kulübümüz hakkında... 🍯'"""
 
-    LINKS_CONTEXT_PROMPT = """
-Link paylaşırken:
-- Linki açık ve tıklanabilir olarak ver
-- Linkin ne işe yarayacağını kısaca açıkla
-
-ÖNEMLİ FORMAT KURALI:
-- Her yanıtının EN BAŞINA 🐝 emojisi koy
-- Her yanıtının EN SONUNA 🍯 emojisi koy
-Örnek: '🐝 Merhaba! Kulübümüz hakkında... 🍯'"""
 
     def __init__(self):
         self._custom_prompts: Dict[str, str] = {}
@@ -192,9 +204,12 @@ Kullanıcılara kulüp bilgileri, bağlantılar, topluluk ayrıntıları ve gene
 Cevaplarını samimi ve doğru tut.
 
 ÖNEMLİ FORMAT KURALI:
-- Her yanıtının EN BAŞINA 🐝 emojisi koy
-- Her yanıtının EN SONUNA 🍯 emojisi koy
-Örnek: '🐝 Merhaba! Kulübümüz hakkında... 🍯'
+        - Yanıtlarda etkinlik ve link diyorsa, https://erciyesyapayzeka.com.tr/etkinlikler linkini kullan,
+        - Yanıtlarda proje ve link diyorsa, https://erciyesyapayzeka.com.tr/research linkini kullan
+        - Yanıtlarda web sitesimizi arada önerebilirsin, https://erciyesyapayzeka.com.tr 
+        - Her yanıtının EN BAŞINA 🐝 emojisi koy
+        - Her yanıtının EN SONUNA 🍯 emojisi koy
+        Örnek: '🐝 Merhaba! Kulübümüz hakkında... 🍯'
 """
         final_prompt = (
             f"{system_prompt}\n"

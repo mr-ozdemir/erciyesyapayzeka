@@ -1,9 +1,3 @@
-# frontend/chat_manager.py
-"""
-ChatManager class for managing chat sessions and messages.
-Handles chat creation, switching, message storage, and response generation.
-"""
-
 import streamlit as st
 import datetime
 from enum import Enum
@@ -11,13 +5,11 @@ from database import DatabaseManager
 
 
 class MessageType(Enum):
-    """Enum for message types in chat."""
     USER = "user"
     ASSISTANT = "assistant"
 
 
 class ChatManager:
-    """Manages chat sessions, messages, and response generation."""
     
     def __init__(self):
         self.db = DatabaseManager()
@@ -44,7 +36,6 @@ class ChatManager:
             st.session_state.chats_loaded = True
 
     def load_chats_from_db(self):
-        """Veritabanından mevcut sohbetleri yükler."""
         chat_list = self.db.get_chat_list(st.session_state.session_id)
         
         for chat_data in chat_list:
@@ -104,6 +95,25 @@ class ChatManager:
     def switch_chat(self, chat_id):
         """Başka bir sohbete geçiş yapar."""
         st.session_state.current_chat_id = chat_id
+    
+    def delete_chat(self, chat_id):
+        """Sohbeti siler."""
+        # Session state'den kaldır
+        st.session_state.all_chats = [c for c in st.session_state.all_chats if c['id'] != chat_id]
+        
+        # Eğer silinen sohbet aktifse, yeni sohbet oluştur
+        if st.session_state.current_chat_id == chat_id:
+            if st.session_state.all_chats:
+                st.session_state.current_chat_id = st.session_state.all_chats[-1]['id']
+            else:
+                self.create_new_chat()
+    
+    def rename_chat(self, chat_id, new_title):
+        """Sohbetin adını değiştirir."""
+        for chat in st.session_state.all_chats:
+            if chat['id'] == chat_id:
+                chat['title'] = new_title
+                break
         
     def generate_response(self, user_message: str):
         """ChatHandler kullanarak cevap üretir (moderation, intent routing, LLM)."""

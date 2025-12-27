@@ -48,18 +48,43 @@ class StyleManager:
             margin-bottom: 1rem !important;
         }
 
-        /* Sidebar - Sabit Layout */
+        /* Sidebar - Flexbox Layout with Fixed Footer */
         [data-testid="stSidebar"] {
             padding-top: 0 !important;
-            overflow: hidden !important;
         }
         
         [data-testid="stSidebar"] > div:first-child {
             padding: 1rem !important;
             height: 100vh !important;
-            overflow: hidden !important;
             display: flex !important;
             flex-direction: column !important;
+            overflow: hidden !important;
+        }
+        
+        /* Expander takes remaining space and scrolls */
+        [data-testid="stSidebar"] [data-testid="stExpander"] {
+            flex: 1 !important;
+            overflow-y: auto !important;
+            min-height: 0 !important;
+            border: none !important;
+            background: transparent !important;
+        }
+        
+        [data-testid="stSidebar"] [data-testid="stExpander"] > details > summary {
+            color: #6B6B6B !important;
+            font-size: 0.8rem !important;
+            font-weight: 500 !important;
+        }
+        
+        [data-testid="stSidebar"] [data-testid="stExpander"] > details > summary:hover {
+            color: #fff !important;
+        }
+        
+        /* Footer stays at bottom */
+        .sidebar-footer {
+            margin-top: auto !important;
+            padding-top: 0.5rem !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
         }
         
         [data-testid="stSidebar"] img {
@@ -67,7 +92,69 @@ class StyleManager:
             margin-bottom: 0.5rem;
         }
         
-        /* Sidebar Logo/Başlık Küçült */
+        /* Section Titles */
+        .section-title {
+            font-size: 0.7rem !important;
+            color: #6B6B6B !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            margin: 0.8rem 0 0.4rem 0 !important;
+            font-weight: 500 !important;
+        }
+        
+        /* Chat Item Active - Subtle Dark BG */
+        .chat-item-active {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 0.5rem 0.6rem;
+            border-radius: 6px;
+            margin-bottom: 0.3rem;
+            font-size: 0.8rem;
+            color: #fff;
+        }
+        
+        /* User Profile */
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            margin-top: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #C9A961;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #151515;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .user-info {
+            flex: 1;
+        }
+        
+        .user-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #fff;
+            margin: 0 !important;
+        }
+        
+        .user-plan {
+            font-size: 0.75rem;
+            color: #6B6B6B;
+            margin: 0 !important;
+        }
+        
+        /* Sidebar Logo/Başlık */
         [data-testid="stSidebar"] h1 {
             font-size: 1.2rem !important;
             font-weight: 600 !important;
@@ -135,29 +222,78 @@ class StyleManager:
             border-color: var(--honey-yellow);
         }
         
-        /* Sidebar Chat Butonları - Compact */
+        /* Sidebar Chat Butonları */
         [data-testid="stSidebar"] .stButton > button {
             background: transparent;
             border: none;
             color: var(--text-gray);
-            margin-bottom: 0.1rem;
+            margin-bottom: 0.2rem;
             font-weight: 400;
             text-align: left;
-            padding: 0.4rem 0.6rem;
+            padding: 0.4rem 0.5rem;
             border-radius: 6px;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             line-height: 1.3;
         }
         
         [data-testid="stSidebar"] .stButton > button:hover {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.08);
             color: var(--text-white);
+        }
+        
+        /* Expander Stilleri */
+        [data-testid="stSidebar"] [data-testid="stExpander"] {
+            border: none !important;
+            background: transparent !important;
+        }
+        
+        [data-testid="stSidebar"] [data-testid="stExpander"] summary {
+            color: var(--text-muted) !important;
+            font-size: 0.75rem !important;
+            font-weight: 500 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            padding: 0.5rem 0 !important;
+        }
+        
+        [data-testid="stSidebar"] [data-testid="stExpander"] summary:hover {
+            color: var(--text-white) !important;
+        }
+        
+        /* Silme Butonu Küçük */
+        [data-testid="stSidebar"] .stButton > button[data-testid*="del_"] {
+            padding: 0.2rem !important;
+            font-size: 0.7rem !important;
+            opacity: 0.5;
+        }
+        
+        [data-testid="stSidebar"] .stButton > button[data-testid*="del_"]:hover {
+            opacity: 1;
+            background: rgba(255, 100, 100, 0.2) !important;
         }
         
         /* Aktif Chat Vurgusu */
         [data-testid="stSidebar"] .stButton > button:active {
             background: rgba(201, 169, 97, 0.15);
             color: var(--text-white);
+        }
+        
+        /* Yeni Sohbet Butonu - Minimal */
+        [data-testid="stSidebar"] button[data-testid*="new_chat"] {
+            background: transparent !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            color: var(--text-gray) !important;
+            font-size: 1rem !important;
+            font-weight: 400 !important;
+            padding: 0.4rem 0.5rem !important;
+            border-radius: 6px !important;
+            transition: all 0.15s ease !important;
+        }
+        
+        [data-testid="stSidebar"] button[data-testid*="new_chat"]:hover {
+            background: rgba(255, 255, 255, 0.1) !important;
+            color: var(--text-white) !important;
+            border-color: rgba(255, 255, 255, 0.3) !important;
         }
         
         /* Primary Button (Yeni Sohbet) - Compact */
@@ -299,6 +435,54 @@ class StyleManager:
             border-radius: 8px;
             color: var(--text-white);
             font-size: 0.85rem;
+        }
+        
+        /* Popover Menü Stilleri */
+        [data-testid="stPopover"] {
+            background: var(--bg-medium) !important;
+            border: 1px solid var(--bg-light) !important;
+            border-radius: 8px !important;
+        }
+        
+        [data-testid="stPopover"] button {
+            background: transparent !important;
+            color: var(--text-white) !important;
+            font-size: 0.8rem !important;
+        }
+        
+        [data-testid="stPopover"] button:hover {
+            background: rgba(255, 255, 255, 0.1) !important;
+        }
+        
+        /* 3 Nokta Menü Butonu */
+        [data-testid="stSidebar"] [data-testid="stPopoverButton"] {
+            background: transparent !important;
+            border: none !important;
+            color: var(--text-muted) !important;
+            padding: 0.2rem !important;
+            min-width: 24px !important;
+            font-size: 1rem !important;
+        }
+        
+        [data-testid="stSidebar"] [data-testid="stPopoverButton"]:hover {
+            background: rgba(255, 255, 255, 0.1) !important;
+            color: var(--text-white) !important;
+        }
+        
+        /* Popover İçi Input */
+        [data-testid="stPopover"] input {
+            background: var(--bg-dark) !important;
+            border: 1px solid var(--bg-light) !important;
+            border-radius: 6px !important;
+            color: var(--text-white) !important;
+            font-size: 0.8rem !important;
+            padding: 0.4rem 0.6rem !important;
+        }
+        
+        /* Popover İçi Divider */
+        [data-testid="stPopover"] hr {
+            border-color: var(--bg-light) !important;
+            margin: 0.5rem 0 !important;
         }
         
         </style>

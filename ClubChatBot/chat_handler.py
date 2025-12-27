@@ -205,7 +205,15 @@ class ChatHandler:
     def _handle_llm_intent(self, text: str, session_id: str, chat_id: str) -> Dict[str, Any]:
         """Handle general queries with LLM."""
         # Build system prompt
-        system_prompt = "Sen Erciyes Üniversitesi Yapay Zeka Kulübü'nün yardımsever AI asistanısın. Türkçe cevap ver ve kullanıcılara yapay zeka, programlama ve kulüp etkinlikleri hakkında yardımcı ol."
+        system_prompt = """Sen Erciyes Üniversitesi Yapay Zeka Kulübü'nün yardımsever AI asistanısın. Türkçe cevap ver ve kullanıcılara yapay zeka, programlama ve kulüp etkinlikleri hakkında yardımcı ol.
+        ÖNEMLİ FORMAT KURALI:
+        - Yanıtlarda etkinlik ve link diyorsa, https://erciyesyapayzeka.com.tr/etkinlikler linkini kullan,
+        - Yanıtlarda proje ve link diyorsa, https://erciyesyapayzeka.com.tr/research linkini kullan
+        - Yanıtlarda web sitesimizi arada önerebilirsin, https://erciyesyapayzeka.com.tr 
+        - Her yanıtının EN BAŞINA 🐝 emojisi koy
+        - Her yanıtının EN SONUNA 🍯 emojisi koy
+        Örnek: '🐝 Merhaba! Kulübümüz hakkında... 🍯
+        """
         
         messages = [
             {"role": "system", "content": system_prompt},

@@ -1,0 +1,55 @@
+================================================================================
+ERCİYES ÜNİVERSİTESİ YAPAY ZEKA KULÜBÜ
+================================================================================
+
+GENEL BİLGİLER
+--------------
+Web Sitesi: https://erciyesyapayzeka.com.tr/
+E-posta: info@erciyesyapayzeka.com.tr
+Konum: Mühendislik Fakültesi - Bilgisayar Mühendisliği, Erciyes Üniversitesi
+
+
+HAKKIMIZDA
+----------
+Erciyes Üniversitesi Yapay Zeka Kulübü, Bilgisayar Mühendisliği bünyesinde 
+Prof. Dr. Bahriye Akay danışmanlığında kurulmuştur. Yapay zeka teknolojileri 
+üzerine araştırmalar yaparak geleceğin teknolojilerine yön vermek, bu alanda 
+eğitimler ve yarışmalar düzenlemek, lisans düzeyinde bilimsel içerik üreterek 
+lider bir topluluk olmayı hedeflemekteyiz.
+
+
+ÇALIŞMA ALANLARI
+----------------
+• Sağlıkta Yapay Zeka
+• Veri Bilimi
+• Bilgisayarlı Görü
+• Doğal Dil İşleme
+
+
+BAŞARILARIMIZ
+-------------
+• 5 SCI Yayını
+• 7 TÜBİTAK Proje Desteği
+• 2 Teknofest Finalistliği
+• 12 Düzenlenen Etkinlik
+• 846 Etkinlik Katılımcısı
+
+
+================================================================================
+DANIŞMAN HOCAMIZ: PROF. DR. BAHRİYE AKAY
+================================================================================
+
+Erciyes Üniversitesi Bilgisayar Mühendisliği Bölümü öğretim üyesi ve 
+Yapay Zeka Anabilim Dalı Başkanı olan Prof. Dr. Bahriye Akay, yapay zeka 
+ve optimizasyon algoritmaları alanlarında çalışmaktadır.
+
+Başlıca uzmanlık alanları:
+• Yapay Zeka ve Optimizasyon Algoritmaları
+• Bilgisayarlı Görü ve Makine Öğrenmesi
+• Sağlık Alanında Yapay Zeka Uygulamaları
+
+2022 yılında TÜBA-GEBİP (Türkiye Bilimler Akademisi - Üstün Başarılı Genç 
+Bilim İnsanı) Ödülü almıştır. Uluslararası düzeyde yüksek atıf alan 
+yayınlarıyla tanınmaktadır.
+
+================================================================================

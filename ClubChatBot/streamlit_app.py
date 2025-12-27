@@ -34,44 +34,71 @@ def main():
 
     # ================= SIDEBAR =================
     with st.sidebar:
-        # Tıklanabilir Logo - Web sitesine gider
-        if os.path.exists(sidebar_logo_path):
-            # Görseli base64'e çevir
-            with open(sidebar_logo_path, "rb") as f:
-                img_data = base64.b64encode(f.read()).decode()
-            
-            st.markdown(f"""
-                <a href="https://erciyesyapayzeka.com.tr" target="_blank" style="display: block; text-align: center;">
-                    <img src="data:image/png;base64,{img_data}" width="300" style="cursor: pointer; border-radius: 12px;">
-                </a>
-            """, unsafe_allow_html=True)
+        # ===== ÜST BÖLÜM - Logo + Yeni Sohbet (aynı satır) =====
+        col_logo, col_btn = st.columns([0.8, 0.2])
         
-        # Yeni Sohbet Butonu (+ Icon ile)
-        if st.button("➕ Yeni Sohbet", type="primary", use_container_width=True, key="new_chat_btn"):
-            chat_manager.create_new_chat()
-            st.rerun()
+        with col_logo:
+            if os.path.exists(sidebar_logo_path):
+                with open(sidebar_logo_path, "rb") as f:
+                    img_data = base64.b64encode(f.read()).decode()
+                st.markdown(f'''
+                    <a href="https://erciyesyapayzeka.com.tr" target="_blank">
+                        <img src="data:image/png;base64,{img_data}" width="200" style="cursor: pointer; border-radius: 10px;">
+                    </a>
+                ''', unsafe_allow_html=True)
         
-        # Geçmiş Sohbetler Başlığı
-        st.markdown("<p style='font-size: 0.65rem; color: #6B6B6B; text-transform: uppercase; letter-spacing: 1px; margin: 0.5rem 0 0.3rem 0;'>Geçmiş Sohbetler</p>", unsafe_allow_html=True)
+        with col_btn:
+            if st.button("✚", key="new_chat_btn", help="Yeni Sohbet"):
+                chat_manager.create_new_chat()
+                st.rerun()
         
-        # Scrollable Chat Container (kalan alana sığacak şekilde)
-        with st.container(height=350):
-            for chat in reversed(st.session_state.all_chats):
-                is_active = chat['id'] == st.session_state.current_chat_id
-                button_label = chat['title'][:40] + "..." if len(chat['title']) > 40 else chat['title']
-                
-                if is_active:
-                    st.markdown(f'''<div style="background: rgba(201, 169, 97, 0.2); border-left: 3px solid #C9A961; padding: 0.4rem 0.6rem; border-radius: 6px; margin-bottom: 0.2rem; font-size: 0.75rem; color: #fff;">{button_label}</div>''', unsafe_allow_html=True)
-                else:
-                    if st.button(button_label, key=f"chat_btn_{chat['id']}", use_container_width=True):
-                        chat_manager.switch_chat(chat['id'])
-                        st.rerun()
+        # ===== ORTA BÖLÜM - SOHBETLER (SCROLLABLE AREA) =====
+        # Scrollable container içinde expander
+        with st.container(height=420):
+            with st.expander("💬 Sohbetler", expanded=True):
+                for chat in reversed(st.session_state.all_chats):
+                    is_active = chat['id'] == st.session_state.current_chat_id
+                    button_label = chat['title'][:28] + "..." if len(chat['title']) > 28 else chat['title']
+                    
+                    # Her sohbet için: [Sohbet Adı/Butonu] [⋮ Menü]
+                    col_chat, col_menu = st.columns([0.85, 0.15])
+                    
+                    with col_chat:
+                        if is_active:
+                            st.markdown(f'''<div class="chat-item-active">📍 {button_label}</div>''', unsafe_allow_html=True)
+                        else:
+                            if st.button(button_label, key=f"chat_{chat['id']}", use_container_width=True):
+                                chat_manager.switch_chat(chat['id'])
+                                st.rerun()
+                    
+                    with col_menu:
+                        with st.popover("⋮"):
+                            st.markdown("**Düzenle**")
+                            
+                            # Yeniden Adlandır
+                            new_name = st.text_input(
+                                "Yeni ad",
+                                value=chat['title'],
+                                key=f"rename_{chat['id']}",
+                                label_visibility="collapsed"
+                            )
+                            if st.button("✏️ Kaydet", key=f"save_{chat['id']}", use_container_width=True):
+                                if new_name and new_name != chat['title']:
+                                    chat_manager.rename_chat(chat['id'], new_name)
+                                    st.rerun()
+                            
+                            st.divider()
+                            
+                            # Sil
+                            if st.button("🗑️ Sil", key=f"del_{chat['id']}", use_container_width=True, type="secondary"):
+                                chat_manager.delete_chat(chat['id'])
+                                st.rerun()
         
-        # Sabit Alt Bölüm
-        st.markdown("---")
+        # ===== ALT BÖLÜM (SABİT) =====
+        st.markdown('<div class="sidebar-footer">', unsafe_allow_html=True)
         
         # Model Seçici
-        st.markdown("<p style='font-size: 0.65rem; color: #6B6B6B; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.3rem;'>Model</p>", unsafe_allow_html=True)
+        st.markdown("<p class='section-title'>🤖 Model</p>", unsafe_allow_html=True)
         model_options = {
             "Llama 3.3 70B": "llama-3.3-70b-versatile",
             "Llama 3.1 8B": "llama-3.1-8b-instant",
@@ -87,15 +114,17 @@ def main():
         st.session_state.selected_model = model_options[selected_model_name]
         
         # Kullanıcı Profili
-        st.markdown("""
-            <div style="display: flex; align-items: center; gap: 0.7rem; padding: 0.8rem; background: rgba(255,255,255,0.03); border-radius: 10px; margin-top: 1rem;">
-                <div style="width: 32px; height: 32px; border-radius: 50%; background: #C9A961; display: flex; align-items: center; justify-content: center; color: #151515; font-weight: 600; font-size: 0.9rem;">K</div>
-                <div>
-                    <p style="font-size: 0.9rem; font-weight: 500; color: #fff; margin: 0;">Kadir</p>
-                    <p style="font-size: 0.75rem; color: #6B6B6B; margin: 0;">Free plan</p>
+        st.markdown('''
+            <div class="user-profile">
+                <div class="user-avatar">K</div>
+                <div class="user-info">
+                    <p class="user-name">Kadir</p>
+                    <p class="user-plan">Free plan</p>
                 </div>
             </div>
-        """, unsafe_allow_html=True)
+        ''', unsafe_allow_html=True)
+        
+        st.markdown('</div>', unsafe_allow_html=True)
 
     # ================= ANA İÇERİK =================
     current_chat = chat_manager.get_current_chat()
