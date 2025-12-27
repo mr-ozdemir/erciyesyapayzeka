@@ -119,7 +119,7 @@ def main():
                 <div class="user-avatar">K</div>
                 <div class="user-info">
                     <p class="user-name">Kadir</p>
-                    <p class="user-plan">Free plan</p>
+                    <p class="user-plan">Gözcü Arı Birimi</p>
                 </div>
             </div>
         ''', unsafe_allow_html=True)
