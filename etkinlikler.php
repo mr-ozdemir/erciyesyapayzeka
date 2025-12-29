@@ -330,7 +330,7 @@ require_once "etkinlik_helpers.php";
     <header class="d-none d-xl-block">
         <div class="header-custom" id="header-sticky">
             <div class="header-logo-box">
-                <a href="index.php"><img src="assets/img/logo/logo.png" alt="logo"></a>
+                <a href="index"><img src="assets/img/logo/logo.png" alt="logo"></a>
             </div>
             <div class="header-menu-box">
                 <div class="header-menu-bottom">
@@ -339,10 +339,10 @@ require_once "etkinlik_helpers.php";
                             <div class="main-menu main-menu-second">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <li><a href="index.php">Ana Sayfa</a></li>
+                                        <li><a href="index">Ana Sayfa</a></li>
                                         <li><a class="active" href="etkinlikler.html">Etkinlikler</a></li>
-                                        <li><a href="research.html">Projeler</a></li>
-                                        <li><a href="uyeol.html">Üye Ol</a></li>
+                                        <li><a href="research">Projeler</a></li>
+                                        <li><a href="uyeol">Üye Ol</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -358,7 +358,7 @@ require_once "etkinlik_helpers.php";
             <div class="row align-items-center">
                 <div class="col-md-4 col-10">
                     <div class="tp-mob-logo">
-                        <a href="index.php"><img src="assets/img/logo/logo.png" alt="logo"></a>
+                        <a href="index"><img src="assets/img/logo/logo.png" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-md-8 col-2">
@@ -373,7 +373,7 @@ require_once "etkinlik_helpers.php";
     <div class="tpsideinfo tp-side-info-area">
         <button class="tpsideinfo__close"><i class="fal fa-times"></i></button>
         <div class="tpsideinfo__logo mb-40">
-            <a href="index.php"><img src="assets/img/logo/logo.png" alt="logo"></a>
+            <a href="index"><img src="assets/img/logo/logo.png" alt="logo"></a>
         </div>
         <div class="mobile-menu"></div>
     </div>
@@ -536,7 +536,7 @@ require_once "etkinlik_helpers.php";
                         <div class="row">
                             <div class="col-xxl-6 col-xl-7 col-lg-6 col-md-12 col-12">
                                 <div class="footer-widget__copyright cpy-white-content">
-                                    <span>© Copyright ©202 <a href="index.php">Erciyes Üniversitesi Yapay Zeka Kulübü</a>. <i>All Rights Reserved Copyright</i></span>
+                                    <span>© Copyright ©202 <a href="index">Erciyes Üniversitesi Yapay Zeka Kulübü</a>. <i>All Rights Reserved Copyright</i></span>
                                 </div>
                             </div>
                             <div class="col-xxl-6 col-xl-5 col-lg-6 col-md-12 col-12">

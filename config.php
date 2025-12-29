@@ -19,14 +19,17 @@ ini_set('session.cookie_lifetime', 0);    // Tarayıcı kapanınca session bitsi
 define('SESSION_TIMEOUT', 900);           // 15 dakika
 
 // ==================== VERİTABANI AYARLARI ====================
-define('DB_HOST', '127.0.0.1');          // veya 'localhost'
-define('DB_NAME', 'erciyesy_eruai');     // phpMyAdmin'deki DB adı
-define('DB_USER', 'root');               // XAMPP varsayılan kullanıcı
-define('DB_PASS', '');                   // XAMPP varsayılan şifre BOŞ
-define('DB_CHARSET', 'utf8mb4');
+define('DB_HOST',    'localhost');     // Çoğu hosting: 'localhost'
+define('DB_PORT',    3306);
+define('DB_NAME',    'erciyesy_eruai');   // panelde görünen tam isim
+define('DB_USER', 'erciyesy_admin');  // Kayızer hosting'inizdekini yazın
+define('DB_PASS', '34E.ruai.533???');      // Kayızer hosting'inizdekini yazın
+define('DB_SOCKET',  ''); // hosting dökümantasyonunda bir socket yolu verilmişse buraya yazın (örn: /var/lib/mysql/mysql.sock)
+define('DB_CHARSET', 'utf8mb4');      
+define('APP_DEBUG',  false); // canlıda false yapabilirsiniz
 
 // ==================== SITE AYARLARI ====================
-define('SITE_URL', 'http://localhost/erciyesyapayzeka');
+define('SITE_URL', 'https://erciyesyapayzeka.com.tr/');
 define('SITE_NAME', 'Erciyes Üniversitesi Yapay Zeka Kulübü');
 define('ADMIN_EMAIL', 'admin@localhost');
 

@@ -837,7 +837,7 @@ $etkinlik_resmi = get_etkinlik_resmi($etkinlik);
             alertBox.className = 'alert show alert-' + (data.success ? 'success' : 'danger');
             alertBox.textContent = data.message;
 
-            if (data.success) {
+            if (data.success) { 
                 this.reset();
                 setTimeout(() => {
                     alertBox.classList.remove('show');
