@@ -311,17 +311,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         </div>
 
-        <div class="info-box">
-            <strong>🔐 Test Hesapları</strong>
-            <div class="credentials">
-                <strong>Admin:</strong> admin / admin123<br>
-                <strong>Yönetici:</strong> yonetici / admin123<br>
-                <strong>Üye:</strong> uye / admin123
-            </div>
-            <small style="color: #dc3545; margin-top: 8px; display: block;">
-                ⚠️ Üretimde mutlaka değiştirin!
-            </small>
-        </div>
+      
     </div>
 </body>
 </html>

@@ -1,63 +1,39 @@
-# .htaccess - Sadece /erciyesyapayzeka için
-
+# Apache mod_rewrite'ı etkinleştir
 RewriteEngine On
-RewriteBase /erciyesyapayzeka/
 
-# 1) Mevcut dosya veya klasörse dokunma
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
+# Base directory'yi ayarla (gerekirse düzenleyin)
+RewriteBase 
 
-# 2) SEO-friendly etkinlik URL'leri: /erciyesyapayzeka/etkinlik/slug
-RewriteRule ^etkinlik/([a-z0-9-]+)/?$ etkinlik-detay.php?slug=$1 [L,QSA]
-
-# 3) Eski statik sayfaları yönlendir
-RewriteRule ^datacamp-3-sezon\.html$ etkinlik-detay.php?slug=datacamp-3-sezon [R=301,L]
-RewriteRule ^datacamp\.html$ etkinlik-detay.php?slug=datacamp-2-sezon [R=301,L]
-
-# 4) .php uzantısı KALDIRMA (sadece bu klasörde)
-# Kullanıcı direkt .php'li URL'ye gelirse, uzantısız olana yönlendir
-RewriteCond %{THE_REQUEST} \s/+erciyesyapayzeka/([^\s?]+)\.php[\s?]
+# Trailing slash'leri kaldır (opsiyonel)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
 RewriteRule ^ %1 [R=301,L]
 
-# Uzantısız istek geldiyse, arka planda .php dosyasına yönlendir
+# .php veya .html ile erişilirse uzantısız versiyona yönlendir
+RewriteCond %{THE_REQUEST} ^GET\ /(.*)\.php(\?.*)?\ HTTP
+RewriteRule (.*)\.php$ /$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^GET\ /(.*)\.html(\?.*)?\ HTTP
+RewriteRule (.*)\.html$ /$1 [R=301,L]
+
+# index sayfası için özel kural (/ olarak erişim)
+RewriteRule ^$ index.php [L]
+
+# Uzantısız URL'ler için önce .php dosyasını kontrol et
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.+)$ $1.php [L]
+RewriteRule ^(.+)$ $1.php [L,QSA]
 
-# 5) Güvenlik: bu projedeki kritik dosyaları direkt açtırma
-<Files "config.php">
-    Require all denied
-</Files>
+# Eğer .php yoksa .html dosyasını kontrol et
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]
 
-<Files "etkinlik_helpers.php">
-    Require all denied
-</Files>
-
-<Files "auth.php">
-    Require all denied
-</Files>
-
-<Files ".htaccess">
-    Require all denied
-</Files>
-
-# 6) Basit cache + gzip (tamam, bunlar sorun çıkarmaz)
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresByType image/jpg "access plus 1 year"
-    ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/gif "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
-    ExpiresByType image/webp "access plus 1 year"
-    ExpiresByType text/css "access plus 1 month"
-    ExpiresByType application/javascript "access plus 1 month"
-    ExpiresByType image/x-icon "access plus 1 year"
+# php -- BEGIN cPanel-generated handler, do not edit
+# “ea-php81” paketini varsayılan “PHP” programlama dili olarak ayarlayın.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
 </IfModule>
-
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html
-    AddOutputFilterByType DEFLATE text/css
-    AddOutputFilterByType DEFLATE text/javascript
-    AddOutputFilterByType DEFLATE application/javascript
-    AddOutputFilterByType DEFLATE application/json
-</IfModule>
+# php -- END cPanel-generated handler, do not edit
