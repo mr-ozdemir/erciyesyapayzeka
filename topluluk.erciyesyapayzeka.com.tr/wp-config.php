@@ -37,6 +37,18 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+
+/**
+ * Topluluk login MU-plugin'i için ayrı auth DB ayarları.
+ * XAMPP'ta gerekirse bu değerleri localinize göre düzenleyin.
+ */
+if ( ! defined( 'COMMUNITY_AUTH_DB_HOST' ) ) define( 'COMMUNITY_AUTH_DB_HOST', '127.0.0.1' );
+if ( ! defined( 'COMMUNITY_AUTH_DB_PORT' ) ) define( 'COMMUNITY_AUTH_DB_PORT', 3306 );
+if ( ! defined( 'COMMUNITY_AUTH_DB_NAME' ) ) define( 'COMMUNITY_AUTH_DB_NAME', 'erciyesy_eruai' );
+if ( ! defined( 'COMMUNITY_AUTH_DB_USER' ) ) define( 'COMMUNITY_AUTH_DB_USER', 'root' );
+if ( ! defined( 'COMMUNITY_AUTH_DB_PASS' ) ) define( 'COMMUNITY_AUTH_DB_PASS', '' );
+if ( ! defined( 'COMMUNITY_AUTH_DB_CHARSET' ) ) define( 'COMMUNITY_AUTH_DB_CHARSET', 'utf8mb4' );
+
 /**#@+
  * Authentication unique keys and salts.
  *
