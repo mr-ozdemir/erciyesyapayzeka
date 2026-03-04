@@ -1,0 +1,318 @@
+Return-Path: <cagatay.donmez@monsternotebook.com>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id SEhbLWWR72ewJRwAO6WR3A
+	(envelope-from <cagatay.donmez@monsternotebook.com>)
+	for <info@erciyesyapayzeka.com.tr>; Fri, 04 Apr 2025 10:59:33 +0300
+Return-path: <cagatay.donmez@monsternotebook.com>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Fri, 04 Apr 2025 10:59:33 +0300
+Received: from mail-vi1eur05on2133.outbound.protection.outlook.com ([40.107.21.133]:36385 helo=EUR05-VI1-obe.outbound.protection.outlook.com)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	(envelope-from <cagatay.donmez@monsternotebook.com>)
+	id 1u0bxa-00000007l2o-142O
+	for info@erciyesyapayzeka.com.tr;
+	Fri, 04 Apr 2025 10:59:33 +0300
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=AAteHA/RUCzoB2WpT7B/vCy11vfxOCuUrJPL1OIH9AXRK3EkOta+YS/G3wVNDQA8yQemMc9q8MgMSK3K/jvGnbkmEbDMZ+DKu9sOHGnwX13sJlB+NJNCrdY4ozgJUlUwav+solFPsbY0TMYYBSc121hZ4k7IASjACq0w9I5UO4qubYkyo4guosOqUxcrZQP+russZrzY7RUlu69yF9QKXdPbx5ihRTgLAA0o5EBcFosl/m62e4sjirb2qtzVm9JBsqiQrprhUYVgmscq3uGCqAt1pomSMjcUwjYdFRLbh7fc+lSdcAaaoEhIs/68+0PNWybOSTpONunewqOeIMsnhA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=EFn/jrFXzRTAD172iyTVlZKHfRc8EYAsBvrxGvnxEfo=;
+ b=C3jnLB6Vma77W06J74hg30cocFqA/UuAnnaoJRbyNRFwHnI2nN8aye5Bf2qaax2B64EzeNOhXpxzWaEff2xi0r2Zxe9Xf7Nz7pUqK2k1h+prIyaAwm2m8vIZOpfIhCA8TDjj5rwOAbqjPHefAg0aIsa32BAxRiBb/8q41UB7UKybwkpm5PwGlOx0hblP1C4fcvbnezKdOhkE3Nnm3G+NGbkAwijCukfdD6x+l0h2YONjnriIS3zHojw2NrYdZtM3pSlFdVXOkHynherfweGws9LvJv5Twjd2cgQH84KMUn5xrnl2cslwDHbNyNPJXktZhaiCEsCXfkBPqASIdS+xfw==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 13.94.132.127) smtp.rcpttodomain=erciyesyapayzeka.com.tr
+ smtp.mailfrom=monsternotebook.com; dmarc=pass (p=none sp=none pct=100)
+ action=none header.from=monsternotebook.com; dkim=pass (signature was
+ verified) header.d=monsternotebookcomtr.onmicrosoft.com; arc=pass (0 oda=1
+ ltdi=1 spf=[1,1,smtp.mailfrom=monsternotebook.com]
+ dkim=[1,1,header.d=monsternotebook.com]
+ dmarc=[1,1,header.from=monsternotebook.com])
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=monsternotebookcomtr.onmicrosoft.com;
+ s=selector1-monsternotebookcomtr-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=EFn/jrFXzRTAD172iyTVlZKHfRc8EYAsBvrxGvnxEfo=;
+ b=Ym1plxKb098eMpYLYP337t/3f7nCsvpfkHpkMAzCo96fH88IrNBvfjVZnIO7SkJUOCM960aSsMiz7nKki8TVyKAkeMdZBStOooMr5XECtDOV/ybj8TeIB2YwzoqM+HZPAdF8wlPTQscrlxUJgjhP52iq9vzdmb/gxg1I9AFeadE=
+Received: from DUZPR01CA0183.eurprd01.prod.exchangelabs.com
+ (2603:10a6:10:4b3::21) by GVXP190MB2178.EURP190.PROD.OUTLOOK.COM
+ (2603:10a6:150:1f9::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8583.43; Fri, 4 Apr
+ 2025 07:58:43 +0000
+Received: from DB5PEPF00014B95.eurprd02.prod.outlook.com
+ (2603:10a6:10:4b3:cafe::95) by DUZPR01CA0183.outlook.office365.com
+ (2603:10a6:10:4b3::21) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8606.26 via Frontend Transport; Fri,
+ 4 Apr 2025 07:58:43 +0000
+X-MS-Exchange-Authentication-Results: spf=pass (sender IP is 13.94.132.127)
+ smtp.mailfrom=monsternotebook.com; dkim=pass (signature was verified)
+ header.d=monsternotebookcomtr.onmicrosoft.com;dmarc=pass action=none
+ header.from=monsternotebook.com;
+Received-SPF: Pass (protection.outlook.com: domain of monsternotebook.com
+ designates 13.94.132.127 as permitted sender)
+ receiver=protection.outlook.com; client-ip=13.94.132.127;
+ helo=smtp.office365.com; pr=C
+Received: from smtp.office365.com (13.94.132.127) by
+ DB5PEPF00014B95.mail.protection.outlook.com (10.167.8.233) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8606.22 via Frontend Transport; Fri, 4 Apr 2025 07:58:43 +0000
+Received: from EUR05-VI1-obe.outbound.protection.outlook.com (unknown [104.47.17.174])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by Forcepoint Email with ESMTPS id 5D667465662B8AFE93AF
+	for <info@erciyesyapayzeka.com.tr>; Fri,  4 Apr 2025 10:58:42 +0300 (+03)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=uFJ/EWXEUV2AwOabPlHMeCn6vqlYuYSHXbKUkK0VUyB0gSpG3bmBR7Xw235iMEFhklJMSImUfoZDdij6/T+n1v4eZmUkboE6n129vqBsbQBff8ddwH225yfnYJOjuLgUIutmlcnq6lK9tZPcui8uD+TQTaiQ9ycciHiHtSkpwyqXjjlcfdE6y2TQJheuAWGcwH26WA7XKATI729YGzhCAP4OHgG2LiiPRqA9DVN4mqhRx1jszGpRTCIVgIHmWlbBzlTP3yld3MaLsCqoqs2YfUPvxgwBTFSzj37MBfkCXh8aTnRVcOi+OHfYpOYPbzFjU1jRhOMp/F92RA6tmzFvqA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=EFn/jrFXzRTAD172iyTVlZKHfRc8EYAsBvrxGvnxEfo=;
+ b=TL3klEXpvUGGqFfSazhOFbvwCPngiNkqgDACN6yzaOljXNXCHpB6qj6B0Cq5yrLX+hjzqPB23l4DkNnhSS711e7VFTHwia8GHNUs1ueQU3SohvBUgtXGGBLsXudjYdYbJVYrljHii7RpceXCGF5/gpVcByO3hzQMMDMiYI0N+7sL4PsuvVZelsovkqyRyGDvM6lRDyjAXEqxND6y/eMt0N8tfw7Ie04h8+XLEY7rJ5RgShxsUDZtnAJpsCVkEoEGRkiEnZQD6naehF+qPynG86awsHyHp+BqBzyOCr0Wdz5uiGflHOj4m7crRfUAAcnkLmt9IfVG9+Xozqutw6Z4rg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=monsternotebook.com; dmarc=pass action=none
+ header.from=monsternotebook.com; dkim=pass header.d=monsternotebook.com;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=monsternotebookcomtr.onmicrosoft.com;
+ s=selector1-monsternotebookcomtr-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=EFn/jrFXzRTAD172iyTVlZKHfRc8EYAsBvrxGvnxEfo=;
+ b=Ym1plxKb098eMpYLYP337t/3f7nCsvpfkHpkMAzCo96fH88IrNBvfjVZnIO7SkJUOCM960aSsMiz7nKki8TVyKAkeMdZBStOooMr5XECtDOV/ybj8TeIB2YwzoqM+HZPAdF8wlPTQscrlxUJgjhP52iq9vzdmb/gxg1I9AFeadE=
+Received: from AM9P190MB1140.EURP190.PROD.OUTLOOK.COM (2603:10a6:20b:26d::7)
+ by VI1P190MB0623.EURP190.PROD.OUTLOOK.COM (2603:10a6:800:121::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8583.41; Fri, 4 Apr
+ 2025 07:58:41 +0000
+Received: from AM9P190MB1140.EURP190.PROD.OUTLOOK.COM
+ ([fe80::26d3:3a30:3aca:ac90]) by AM9P190MB1140.EURP190.PROD.OUTLOOK.COM
+ ([fe80::26d3:3a30:3aca:ac90%5]) with mapi id 15.20.8583.041; Fri, 4 Apr 2025
+ 07:58:41 +0000
+From: Cagatay DONMEZ <cagatay.donmez@monsternotebook.com>
+To: "info@erciyesyapayzeka.com.tr" <info@erciyesyapayzeka.com.tr>
+CC: Monster - Kurumsal iletisim <kurumsal.iletisim@monsternotebook.com>
+Subject:
+ =?iso-8859-9?Q?RE:_Sponsorluk_=DD=FE_Birli=F0i_Talebi_|_AI_Challenge_2025?=
+ =?iso-8859-9?Q?_-_ER=DC_Yapay_Zeka_Kul=FCb=FC?=
+Thread-Topic:
+ =?iso-8859-9?Q?Sponsorluk_=DD=FE_Birli=F0i_Talebi_|_AI_Challenge_2025_-_E?=
+ =?iso-8859-9?Q?R=DC_Yapay_Zeka_Kul=FCb=FC?=
+Thread-Index: AQHbo9A2SX7POHNl1UGOtSTMFtjL/LOTJvrw
+Date: Fri, 4 Apr 2025 07:58:40 +0000
+Message-ID:
+ <AM9P190MB1140095837B6DFCA94040DE481A92@AM9P190MB1140.EURP190.PROD.OUTLOOK.COM>
+References: <tex.186460d7ba2bf60773a8f2f5e721e9d4@erciyesyapayzeka.com.tr>
+In-Reply-To: <tex.186460d7ba2bf60773a8f2f5e721e9d4@erciyesyapayzeka.com.tr>
+Accept-Language: tr-TR, en-US
+Content-Language: tr-TR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-bjprotectivemarking: <?xml version="1.0" encoding="us-ascii"?><sisl
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" sislVersion="0"
+ policy="51b74b14-78fa-49ee-939b-92efe74ba8d5" origin="userSelected"
+ xmlns="http://www.boldonjames.com/2008/01/sie/internal/label"><element
+ uid="7064b6e7-45e5-4688-b53b-237705a7e81f" value="" /><element
+ uid="d0b95cc1-aa8d-4059-b87c-fbae313fdae3" value="" /></sisl>
+classification: =?iso-8859-9?Q?Genel/Public/=DD=E7ermez?=
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=monsternotebook.com;
+x-ms-traffictypediagnostic:
+	AM9P190MB1140:EE_|VI1P190MB0623:EE_|DB5PEPF00014B95:EE_|GVXP190MB2178:EE_
+X-MS-Office365-Filtering-Correlation-Id: 76346f62-fefb-46f7-8cec-08dd734e8505
+X-MS-Exchange-AtpMessageProperties: SA
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam-Untrusted:
+ BCL:0;ARA:13230040|376014|1800799024|366016|38070700018|7053199007;
+X-Microsoft-Antispam-Message-Info-Original:
+ =?iso-8859-9?Q?P7rQEJ0XO0Vxjy1cPey6fdVAmFisiv7zxvrGOFgquC7E4VzhN9k2exoWiF?=
+ =?iso-8859-9?Q?7d1RQjuZB8YzpxFp0lzZTHob9ataLMsGiqjDvHorzusD93wkyCrQt050Ge?=
+ =?iso-8859-9?Q?MZTy0suukrOfFEzOnLZEuFDE0ANWouKgB9yABOBMyGcslLRYQw0VTWiZ7Y?=
+ =?iso-8859-9?Q?LKUjYQfqoXf0UWb+K80pk8DeG1jLffEFeQBYjJWkBIjm/kT7BSNp4fjZkl?=
+ =?iso-8859-9?Q?GZ+qFTe1rX4DwdfGphiJewLWHTF/AIKCyQ4P6xX3blBXsD3cKI2ksueBAO?=
+ =?iso-8859-9?Q?QBKZ280I5+DnmOfx1yAFvVJmJMvrGfq29DINb9V5E5S/4wtf/XyA3KrEdB?=
+ =?iso-8859-9?Q?xRg4/sLg9TKUIDoiXPRlWnzvv732Q4bAID6VcqeDsYX8vNdLbJL17HFkx+?=
+ =?iso-8859-9?Q?sHDOvjgs5mQjk2FzBy56hMlenFyHcGNkKNQMPX3P6d4mtn0QrmcSygmr5S?=
+ =?iso-8859-9?Q?+5GbwPyDoCVfLFJnYvDswA474v/+ZcxApopYwg1vJq6C6XPF002ziHGdPr?=
+ =?iso-8859-9?Q?a039e432YHAyATAU4dZOfhV0Jg83OTkjA/koLqrnHx8Lw8ijHa/jdF07oN?=
+ =?iso-8859-9?Q?zY/diUXS6VAa/E5mvWvU4AibHcbsx3kxKDHl7fI3Gan47r7t2ORVEzDEP/?=
+ =?iso-8859-9?Q?OF5l71sMUqtsR1eFDiJlIiSOcVT2p6Bf+vCu8Q+BrzXtVngTfS1vvU/TRB?=
+ =?iso-8859-9?Q?1WNajMhjXkrEKzz1t54R9eDvfFBy1C3Lh6JGU6NFvROZwRv9EJXVsfw45+?=
+ =?iso-8859-9?Q?6TczEwcOZZsk7yrMKELMepRZbIDc09XeIvSVkdeF/qC9WgjDc/ecX4MUFB?=
+ =?iso-8859-9?Q?0osWdKLExds/848AtXa3uslxS1ekeesE/v6yEo1DDOErxMMeoriHaF6Dum?=
+ =?iso-8859-9?Q?nQyK48TvGLqaMANKN/T5H+xpdUrnIEaxXs6coaCKI7QZWFPXVFyB/4VK8B?=
+ =?iso-8859-9?Q?c17DYghBmBACQVNU+V3dtTwRELRp8dyBgRQ6o+G0bsEukrrZC0SEgMKsrb?=
+ =?iso-8859-9?Q?2y/NvKVBATvU8e4aPLi3h9+zaJR2TtknmN//zf+pto/Yn+hRJcBguE0S7b?=
+ =?iso-8859-9?Q?Lr9Py7tSQJTAl9eS/o5QMOCxlx0+ScI2hNC5WcN2IM/1N7ZvaZjV5kQ5XE?=
+ =?iso-8859-9?Q?38yzUHQEVw0XoB9X2oM+UEpYT6hZ1MTMhVc9b6y081sA8xYKD7i1oPwJ86?=
+ =?iso-8859-9?Q?+VwDN1QuhEbINrI1TCLF0At7gAT8C16IEhhJVgbMqBTKQbsB6n3cU4PAds?=
+ =?iso-8859-9?Q?yQUQFB6VMgL/TYqzq+JrYZek2ch1O20nIZ1QV2ifW2e8ctfhwbEqDuodHl?=
+ =?iso-8859-9?Q?+dWnKXf1bp69fZYxWMeVs+bwbI1vFrSPptWTtVYigvcsBD00CkZ5nbCBPM?=
+ =?iso-8859-9?Q?8uqhOeO4PoJdfJYZ45qRDUxQZyzlPQBOYhIPr80OFcgsjTkTdlT9mWXJS5?=
+ =?iso-8859-9?Q?jkZeOfQ8/SRIxJH3NbSN6a34Jdbnj0ph/qbSGfb6XuBf1FvbTzqUt9t298?=
+ =?iso-8859-9?Q?dzOcpvrjZjgOeVwwZDZ83S?=
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:tr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:AM9P190MB1140.EURP190.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(376014)(1800799024)(366016)(38070700018)(7053199007);DIR:OUT;SFP:1102;
+Content-Type: text/plain; charset="iso-8859-9"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1P190MB0623
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ DB5PEPF00014B95.eurprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+	bb9fae46-cde1-4e43-3986-08dd734e83a5
+X-Microsoft-Antispam:
+	BCL:0;ARA:13230040|1800799024|36860700013|376014|14060799003|82310400026|35042699022|7053199007;
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-9?Q?WbpiKfbwKTT+91DzyDcHUJ4KVg3QSuQoD5O65suq54UwpOUpJraffWFZiB?=
+ =?iso-8859-9?Q?UPVWLa43gmfW52YADcczYOYx1c8NmEEVybuGMB200IpUyq981CwEG59Tu1?=
+ =?iso-8859-9?Q?v1817KS0+8dTI7+1/U4hlmMbi85LkjcZw8QFH0xnJ8zxSBEfXJkKmpGVbm?=
+ =?iso-8859-9?Q?2nnFdLBrWdTDsodRUQJvWAPo0Yv/8MRqAcyEXhF5bfBvO+SN4RIAoZZddg?=
+ =?iso-8859-9?Q?gRY3fkPtDTYtQo7g2ufL27SADYzJ8FDVufOu9raa8KKuDqfbYedU381AHt?=
+ =?iso-8859-9?Q?S4d5jTcCOVdJEFkp6EWW99YhciPycoCc9lpVL1TE6dK2u78F3K97+SOv81?=
+ =?iso-8859-9?Q?H6kGUSq82AnzpRlMVuJVW5t2z1Z44MLVxnRr2VO+W59m7iKqRMXgD2F8Cx?=
+ =?iso-8859-9?Q?jIoAQUJxTZrlJgOtBSB2xtallYcfaHXKhnvA/KOSfqiqjU/ZKNXWhIwiJZ?=
+ =?iso-8859-9?Q?qnOBboiBQ/DRkDkX5ShYc/oNw3I7Gtsp2LcnvUuYCSdC2LCNm57rI0Trw3?=
+ =?iso-8859-9?Q?zhKyPyucDFQQp/6AdOur/2T5LN01MsRRAVh0Vqp7zoBrezy+Gnnt2VDgxG?=
+ =?iso-8859-9?Q?M1Uw0BX/DDTagOyuU9VVgm/+WNC6TJHJ7tXPo2MmIGcmkzXOXnBxLafCTT?=
+ =?iso-8859-9?Q?4i0QYuNkPoH9ZH0kKPTeAqeQKRps0Ps+VqwvVXMx9sZaMdEbTLmcBXU+FV?=
+ =?iso-8859-9?Q?P/QV2yE270mLpMGoRqNhz8aCv4i2V8Ukn3i/DDv+ejIyk8SuR4/AjmPnT7?=
+ =?iso-8859-9?Q?wUnSltDKUYO5g6vRPrsP2ajPTP3kCFz2afLOquXfuvoQ9G0i+9AoMLMLZL?=
+ =?iso-8859-9?Q?HwRvZWXPOdRcYhHH2kQ1ihww/B1Az6sDs8p6Y5JcABqdwfDS66f1me+4RC?=
+ =?iso-8859-9?Q?h1Jz7vjBw3kDRRKgGOW786tJuDbSaz+FVkHOqqn0Ewova5GLpVqmFkWHTM?=
+ =?iso-8859-9?Q?mxMu8MQL4Fn+iCNAzmfC82ZBozw7lWqoqLbqSBcUTPwaOFCOSGoVcCEyP/?=
+ =?iso-8859-9?Q?vYSv5vLdpVTvPvXxC/SE0L1Q5+dNSPZc1pi4w31GPjH/cVpev59uFGB7CL?=
+ =?iso-8859-9?Q?kiMj6HbEMXaoqQGk775VqwiuWZZiV+u7zrnCYtiYjzZtjl5s+6MWX5YUvI?=
+ =?iso-8859-9?Q?ZCKRVfy8KuJKCbEX1KZ1aZVf2k6WLEZR4RlrA70fRTRZJzvhnyJcRT7Y7K?=
+ =?iso-8859-9?Q?PdVyryTd/NUAaW2NfCGM750f5p+zB26IsoNY6oLmqu31Q0j5wNt9Ra7F6f?=
+ =?iso-8859-9?Q?68CIGqrmV29C7wDpxtddHyndd1VTT7gJB805vAfHiI8fQCqLVqUcE/kLfs?=
+ =?iso-8859-9?Q?zK0P0hYTAJmtts1kQ9f10p1tAnJTDNm4KgB4tEaeGWUg5HEh/TbPk/PTHN?=
+ =?iso-8859-9?Q?MMEVhyTScW41lYPBjGy7ksgWG554Ty3mfO9jO1qO54EQH5q9C/Dp/K7pzR?=
+ =?iso-8859-9?Q?gMSJjNxlZIdF7qhaTJMZI3/1vsGgRaQ5CURswOCEI4w07LYNXuz86KygAW?=
+ =?iso-8859-9?Q?26sQLqf/9J0lqlnzyOZ8YAny/UJEn+uN/tNm5JyAJWU1rec1DpdjBLE9TU?=
+ =?iso-8859-9?Q?ohnKjiA=3D?=
+X-Forefront-Antispam-Report:
+	CIP:13.94.132.127;CTRY:NL;LANG:tr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:smtp.office365.com;PTR:InfoDomainNonexistent;CAT:NONE;SFS:(13230040)(1800799024)(36860700013)(376014)(14060799003)(82310400026)(35042699022)(7053199007);DIR:OUT;SFP:1102;
+X-OriginatorOrg: monsternotebook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Apr 2025 07:58:43.2074
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 76346f62-fefb-46f7-8cec-08dd734e8505
+X-MS-Exchange-CrossTenant-Id: e5d16472-5a72-4c91-be76-e8ef78a5580f
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=e5d16472-5a72-4c91-be76-e8ef78a5580f;Ip=[13.94.132.127];Helo=[smtp.office365.com]
+X-MS-Exchange-CrossTenant-AuthSource:
+	DB5PEPF00014B95.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: GVXP190MB2178
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "cpanel1.kayizer.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Genel / Kişisel Veri İçermez Merhaba Muhammet Bey, Öncelikle
+    ilginize teşekkür ederiz. Değerli çalışmanıza destek olmak ve beraber
+    çalışmayı çok isterdik; ancak şu anda kaynaklarımızı planladığımız
+    projelerimize ayırmış durumda [...] 
+ Content analysis details:   (0.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [40.107.21.133 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [40.107.21.133 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [40.107.21.133 listed in sa-accredit.habeas.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  0.0 ARC_SIGNED             Message has a ARC signature
+  0.0 ARC_VALID              Message has a valid ARC signature
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.8 KAM_ASCII_DIVIDERS     Email that uses ascii formatting dividers and
+                             possible spam tricks
+X-Spam-Flag: NO
+
+Genel / Ki=FEisel Veri =DD=E7ermez
+
+Merhaba Muhammet Bey,
+
+=D6ncelikle ilginize te=FEekk=FCr ederiz. De=F0erli =E7al=FD=FEman=FDza des=
+tek olmak ve beraber =E7al=FD=FEmay=FD =E7ok isterdik; ancak =FEu anda kayn=
+aklar=FDm=FDz=FD planlad=FD=F0=FDm=FDz projelerimize ay=FDrm=FD=FE durumday=
+=FDz. =DDlerleyen s=FCre=E7lerde tekrardan haberle=FEmek dile=F0iyle.=20
+=20
+Bilginize sunar, iyi =E7al=FD=FEmalar dileriz.
+
+
+Kurumsal =DDleti=FEim Uzman Yard=FDmc=FDs=FD
+Corporate Communications Assistant Specialist
+=C7a=F0atay D=F6nmez
+=A0
+cagatay.donmez@monsternotebook.com
+(+90) 850 255 11 11 - (0506) 385 48 17
+=A0
+MONSTER B=DDLG=DDSAYAR TEKNOLOJ=DD =DCR=DCNLER=DD A.=DE.
+Sahray=FDcedid Mah. Halk Sok. No.48, Kozyata=F0=FD/=DDstanbul
+___________________________________________________________________________=
+______________
+=A0
+=A0=A0=A0=A0=A0=A0=A0=A0=A0 =A0TURKEY=A0=A0 =A0.=A0=A0=A0 UAE=A0=A0 =A0.=A0=
+=A0 =A0CYPRUS=A0=A0=A0 .=A0=A0 =A0GERMANY
+
+
+-----Original Message-----
+From: info@erciyesyapayzeka.com.tr <info@erciyesyapayzeka.com.tr>=20
+Sent: Wednesday, April 2, 2025 4:04 PM
+To: Monster - Kurumsal iletisim <kurumsal.iletisim@monsternotebook.com>
+Subject: Sponsorluk =DD=FE Birli=F0i Talebi | AI Challenge 2025 - ER=DC Yap=
+ay Zeka Kul=FCb=FC
+
+Say=FDn Yetkili,
+
+Erciyes =DCniversitesi Yapay Zeka Kul=FCb=FC olarak, Gen=E7lik ve Spor Baka=
+nl=FD=F0=FD i=FE birli=F0i ile d=FCzenledi=F0imiz "AI Challenge 2025" yar=
+=FD=FEmas=FD i=E7in de=F0erli desteklerinizi bekliyoruz.
+
+Yar=FD=FEmam=FDz=FDn temel amac=FD, Kayseri'deki =FCniversitelerden yapay z=
+eka alan=FDna ilgili m=FChendis adaylar=FD ve gen=E7 ara=FEt=FDrmac=FDlara =
+teorik bilgilerini peki=FEtirme, proje geli=FEtirme ve ger=E7ek d=FCnya pro=
+blemlerine =E7=F6z=FCm =FCretme imkan=FD sunmakt=FDr. Yar=FD=FEmam=FDz, "Bi=
+lgisayarl=FD G=F6r=FC", "Do=F0al Dil =DD=FEleme", "Veri Bilimi" ve "Teorik =
+Makine =D6=F0renmesi" olmak =FCzere d=F6rt kategoride d=FCzenlenecek, e=F0i=
+tim ve proje geli=FEtirme s=FCre=E7lerini kapsayacakt=FDr.
+
+Bu de=F0erli etkinli=F0imizde, dereceye girecek kat=FDl=FDmc=FDlar=FDm=FDz=
+=FD =F6d=FCllendirerek motivasyonlar=FDn=FD art=FDrmak ad=FDna desteklerini=
+ze ihtiya=E7 duyuyoruz. Kurumsal deste=F0inizle birlikte, etkinlik boyunca =
+tan=FDt=FDm materyallerinde logonuzun kullan=FDlmas=FD, marka g=F6r=FCn=FCr=
+l=FC=F0=FCn=FCz=FCn artmas=FD ve gelece=F0in yetenekleriyle do=F0rudan tema=
+s kurma imkan=FDna sahip olacaks=FDn=FDz.
+
+Etkinlik Tarihleri: 28 Nisan - 30 May=FDs 2025
+Yer: Erciyes =DCniversitesi M=FChendislik Fak=FCltesi
+
+Deste=F0iniz i=E7in =FEimdiden te=FEekk=FCr ederiz. =DD=FE birli=F0i yapmak=
+ dile=F0iyle.
+
+Sayg=FDlar=FDm=FDzla,
+Erciyes =DCniversitesi Yapay Zeka Kul=FCb=FC
+
+=DDleti=FEim Sorumlusu: Muhammet =D6ZDEM=DDR
+Telefon: +90 555 880 19 08
+E-posta: info@erciyesyapayzeka.com.tr

@@ -1,0 +1,2273 @@
+# Translation of Plugins - Zephyr Project Manager - Development (trunk) in Turkish
+# This file is distributed under the same license as the Plugins - Zephyr Project Manager - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-10-03 19:22:02+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: tr\n"
+"Project-Id-Version: Plugins - Zephyr Project Manager - Development (trunk)\n"
+
+#: templates/parts/task-edit-modal.php:35
+msgid "Edit Task"
+msgstr "Görevi Düzenle"
+
+#: includes/Core/Tasks.php:1874
+msgid "Repeats Annually"
+msgstr "Yıllık Tekrar Eder"
+
+#: includes/Core/Tasks.php:1868
+msgid "Repeats Weekly"
+msgstr "Haftalık Tekrar Eder"
+
+#: includes/Core/Tasks.php:1851
+msgid "Repeats Daily"
+msgstr "Günlük Tekrar Eder"
+
+#: includes/Core/Tasks.php:1871
+msgid "Repeats Monthly"
+msgstr "Aylık Tekrar Eder"
+
+#: includes/Core/Project.php:23
+msgid "Untitled Project"
+msgstr "Başlıksız Proje"
+
+#: includes/Core/Task.php:36
+msgid "Untitled Task"
+msgstr "Başlıksız Görev"
+
+#: includes/strings.php:196
+msgid "No attachments"
+msgstr "Ek yok"
+
+#: includes/strings.php:97
+msgid "Access updated"
+msgstr "Erişim güncellendi"
+
+#: includes/strings.php:96
+msgid "Page"
+msgstr "Sayfa"
+
+#. translators: Mention notification. %s: Comment content
+#: includes/Core/Message.php:99
+msgid "You have been mentioned in a comment: %s"
+msgstr "Bir yorumda sizden bahsedildi: %s"
+
+#: includes/Core/Message.php:93
+msgid "You have been mentioned in a comment"
+msgstr "Bir yorumda sizden bahsedildi"
+
+#: includes/Core/Projects.php:1187 templates/parts/new_task.php:143
+#: templates/parts/new_task.php:144 templates/parts/project-panel.php:98
+#: templates/parts/project-single.php:249 templates/parts/task-single.php:280
+#: templates/parts/task-single.php:281
+msgid "Select Categories"
+msgstr "Kategori Seç"
+
+#: includes/Pages/Admin.php:1010
+msgid "File Manager"
+msgstr "Dosya Yöneticisi"
+
+#: templates/edit_members.php:16
+msgid "Can't edit administrators"
+msgstr "Yöneticiler düzenlenemez."
+
+#: templates/parts/new_task.php:205 templates/parts/new_task.php:213
+#: templates/parts/new_task.php:221 templates/parts/new_task.php:229
+#: templates/parts/task-edit-modal.php:134
+#: templates/parts/task-edit-modal.php:140
+#: templates/parts/task-edit-modal.php:146
+#: templates/parts/task-edit-modal.php:152 templates/parts/task-single.php:340
+#: templates/parts/task-single.php:364 templates/parts/task-single.php:388
+#: templates/parts/task-single.php:412
+msgid "Expires On (leave empty for no expiration):"
+msgstr "Bitiş Tarihi (Süresiz olması için boş bırakın):"
+
+#: templates/parts/new_task.php:192 templates/parts/task-edit-modal.php:123
+#: templates/parts/task-single.php:326
+msgid "Days to Repeat"
+msgstr "Tekrar Edilecek Günler"
+
+#: templates/parts/new_task.php:190 templates/parts/task-edit-modal.php:121
+msgid "Repeat Every"
+msgstr "Tekrar"
+
+#: templates/parts/new_task.php:185 templates/parts/task-edit-modal.php:116
+#: templates/parts/task-single.php:309
+msgid "Annually"
+msgstr "Yıllık"
+
+#: includes/Core/Tasks.php:1170 templates/parts/new_task.php:184
+#: templates/parts/task-edit-modal.php:115 templates/parts/task-single.php:308
+msgid "Monthly"
+msgstr "Aylık"
+
+#: includes/Core/Tasks.php:1167 templates/parts/new_task.php:183
+#: templates/parts/task-edit-modal.php:114 templates/parts/task-single.php:307
+msgid "Weekly"
+msgstr "Haftalık"
+
+#: templates/parts/page_footer.php:77
+msgid "Task Attachments"
+msgstr "Görev Ekleri"
+
+#: templates/settings.php:493 templates/settings.php:494
+msgid "Mentions Email"
+msgstr "E-posta Bahsetmeleri"
+
+#: templates/settings.php:345
+msgid "Only Administrators & Managers"
+msgstr "Sadece Yöneticiler & Müdürler"
+
+#: templates/settings.php:344
+msgid "Only Assigned Users"
+msgstr "Sadece Atanmış Kullanıcılar"
+
+#: templates/settings.php:341
+msgid "Who can complete tasks"
+msgstr "Görevi kim tamamlayabilir"
+
+#: templates/settings.php:248
+msgid "Enable grouping of projects by category"
+msgstr "Projelerin kategorilere göre gruplanmasına izin ver"
+
+#: templates/settings.php:244
+msgid "Group Projects by Category"
+msgstr "Kategoriye Göre Grup Projeleri"
+
+#: templates/settings.php:240 templates/settings.php:241
+msgid "Tasks Per Page"
+msgstr "Sayfa Başı Görev"
+
+#: templates/settings.php:235 templates/settings.php:236
+msgid "Projects Per Page"
+msgstr "Sayfa Başı Proje"
+
+#: includes/Core/Utillities.php:2361 includes/Pages/Admin.php:224
+msgid "No Project"
+msgstr "Proje Yok"
+
+#: templates/projects.php:157
+msgid "Choose a category"
+msgstr "Bir Kategori Seçin:"
+
+#: templates/projects.php:30
+msgid "All projects"
+msgstr "Tüm projeler"
+
+#: includes/Pages/Admin.php:769 includes/Pages/Admin.php:774
+#: includes/Pages/Admin.php:779 includes/Pages/Admin.php:784
+#: templates/dashboard.php:128 templates/dashboard.php:133
+#: templates/dashboard.php:138 templates/dashboard.php:151
+#: templates/dashboard.php:156 templates/dashboard.php:161
+#: templates/dashboard.php:166
+msgid "View All"
+msgstr "Tümünü Göster"
+
+#: templates/settings.php:312
+msgid "Permissions & Capabilities"
+msgstr "İzinler ve Yetkinlikler"
+
+#: templates/projects.php:101
+msgid "Grid"
+msgstr "Izgara"
+
+#: templates/settings.php:346
+msgid "Nobody"
+msgstr "Hiçkimse"
+
+#: templates/parts/new_task.php:179 templates/parts/task-edit-modal.php:110
+#: templates/parts/task-single.php:303
+msgid "Set Recurrence"
+msgstr "Yinelemeyi Belirle"
+
+#: includes/Base/AjaxHandler.php:2950
+msgid "Percentage Complete"
+msgstr "Tamamlanma Oranı"
+
+#: includes/Core/Utillities.php:1036 includes/Core/Utillities.php:1292
+msgid "In Progress"
+msgstr "İşlem sürüyor"
+
+#: includes/Core/Utillities.php:1031 includes/Core/Utillities.php:1291
+msgid "Not Started"
+msgstr "Başlamadı"
+
+#: includes/strings.php:65 includes/strings.php:101 includes/strings.php:102
+msgid "Deselect All"
+msgstr "Tüm Seçimleri Kaldır"
+
+#: includes/strings.php:84
+msgid "Uploading Files..."
+msgstr "Dosyalar Yükleniyor..."
+
+#: includes/Core/Tasks.php:1350
+msgid "results found in comments"
+msgstr "yorumlarda bulunan sonuçlar"
+
+#: includes/Core/Projects.php:1699
+msgid "zpm-default-color"
+msgstr "zpm-varsayılan-rengi"
+
+#: templates/dashboard.php:173
+msgid "Daily Tasks"
+msgstr "Günlük Görev"
+
+#: includes/Pages/Admin.php:763 templates/dashboard.php:145
+msgid "User Overview"
+msgstr "Kullanıcıya Genel Bakış"
+
+#: templates/parts/task-single.php:517
+msgid "Add Files"
+msgstr "Dosya Ekle"
+
+#: templates/parts/edit-multiple-tasks.php:44
+#: templates/parts/edit-multiple-tasks.php:93
+#: templates/parts/edit-multiple-tasks.php:111
+#: templates/parts/new-task-list.php:44 templates/parts/new_task.php:89
+#: templates/parts/task-edit-modal.php:67 templates/parts/task-panel.php:82
+#: templates/parts/task-single.php:229
+msgid "Select Assignees"
+msgstr "Atananlar Seç"
+
+#: templates/parts/project-single.php:650
+msgid "My Notifications"
+msgstr "Bildirimlerim"
+
+#: includes/Core/Tasks.php:3318
+msgid "Incomplete"
+msgstr "Tamamlanmamış"
+
+#: templates/parts/project-single.php:572
+msgid "Date Completed"
+msgstr "Tamamlanma Tarihi"
+
+#: templates/parts/project-single.php:506
+msgid "Filter by member"
+msgstr "Üyeye göre filtrele"
+
+#: templates/parts/project-single.php:454
+msgid "Select All"
+msgstr "Hepsini Seç"
+
+#: templates/parts/new_task.php:133 templates/parts/project-panel.php:89
+#: templates/parts/project-single.php:215
+#: templates/parts/task-edit-modal.php:99 templates/parts/task-single.php:271
+msgid "Select Status"
+msgstr "Durum Seç"
+
+#: includes/Core/Tasks.php:1164 templates/parts/new_task.php:182
+#: templates/parts/task-edit-modal.php:113 templates/parts/task-single.php:306
+#: templates/parts/task_view.php:100
+msgid "Daily"
+msgstr "Günlük"
+
+#: includes/Pages/Admin.php:333 templates/calendar.php:21
+#: templates/calendar.php:84
+msgid "Incompleted"
+msgstr "Tamamlanmamış"
+
+#: includes/Pages/Admin.php:330 templates/calendar.php:78
+#: templates/parts/edit-multiple-tasks.php:90 templates/parts/new_task.php:131
+#: templates/parts/project-panel.php:86 templates/parts/project-panel.php:132
+#: templates/parts/project-single.php:213
+#: templates/parts/project-single.php:328
+#: templates/parts/project-single.php:571 templates/parts/project-view.php:151
+#: templates/parts/task-edit-modal.php:97 templates/parts/task-panel.php:123
+#: templates/parts/task-single.php:269 templates/parts/task-single.php:490
+#: templates/parts/task_view.php:181 templates/tasks.php:152
+msgid "Status"
+msgstr "Durum"
+
+#: includes/Pages/Admin.php:297 includes/Pages/Admin.php:308
+#: includes/Pages/Admin.php:318 includes/Pages/Admin.php:332
+#: templates/calendar.php:18 templates/calendar.php:50
+#: templates/calendar.php:60 templates/calendar.php:70
+#: templates/calendar.php:83 templates/parts/project-single.php:509
+#: templates/projects.php:29 templates/tasks.php:133 templates/tasks.php:154
+msgid "All"
+msgstr "Tümü"
+
+#: templates/categories.php:55
+msgid "Statuses"
+msgstr "Durumlar"
+
+#: templates/categories.php:54
+msgid "New Status"
+msgstr "Yeni Durum"
+
+#: templates/categories.php:37
+msgid "Priorities"
+msgstr "Öncelikler"
+
+#: templates/categories.php:36
+msgid "New Priority"
+msgstr "Yeni Öncelik"
+
+#: templates/settings.php:587 templates/settings.php:588
+msgid "Custom CSS"
+msgstr "Özel CSS"
+
+#: templates/settings.php:260
+msgid "Display Auto Increment Project ID"
+msgstr "Otomatik Artış Projesi Kimliğini Görüntüle"
+
+#: templates/edit_members.php:173
+msgid "Role"
+msgstr "Rol"
+
+#: templates/settings.php:144
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+#: includes/Pages/Admin.php:1038 includes/Pages/Admin.php:1039
+msgid "Categories, Priorities & Statuses"
+msgstr "Kategoriler, Öncelikler ve Durumlar"
+
+#: includes/Core/Categories.php:198
+msgid "Edit Priority / Status"
+msgstr "Önceliği / Durumu Düzenle"
+
+#: includes/strings.php:200
+msgid "Are you sure you want to delete this priority / status? This action cannot be undone."
+msgstr "Bu önceliği / durumu silmek istediğinize emin misiniz? Bu işlem geri alınamaz."
+
+#: includes/strings.php:197 templates/parts/new_task.php:142
+msgid "Category"
+msgstr "Kategori"
+
+#: includes/strings.php:195
+msgid "Column Copied"
+msgstr "Sütun Kopyalandı"
+
+#: includes/strings.php:194
+msgid "Delete Column"
+msgstr "Sütunu Sil"
+
+#: includes/strings.php:193
+msgid "achieved"
+msgstr "tamamlandı"
+
+#: includes/functions.php:539 includes/strings.php:192
+msgid "Milestone"
+msgstr "Kilometre Taşı"
+
+#: includes/strings.php:182
+msgid "Shortcode copied to clipboard"
+msgstr "Kısa kod panoya kopyalandı"
+
+#: includes/Core/Categories.php:188 includes/strings.php:178
+msgid "Create"
+msgstr "Oluştur"
+
+#: includes/strings.php:177
+msgid "Cancel"
+msgstr "İptal Et"
+
+#: includes/Pages/Admin.php:129
+msgid "logged out"
+msgstr "çıkış yapıldı"
+
+#: includes/Pages/Admin.php:124
+msgid "logged in"
+msgstr "giriş yapıldı"
+
+#: includes/Api/Emails.php:481
+msgid "New Project Comment"
+msgstr "Yeni Proje Yorumu"
+
+#: includes/Api/Emails.php:470
+msgid "New Task Comment"
+msgstr "Yeni Görev Yorum"
+
+#: includes/Api/Emails.php:463 includes/Api/Emails.php:464
+#: includes/Api/Emails.php:469 includes/Api/Emails.php:480
+msgid "New Comment"
+msgstr "Yeni Yorum"
+
+#: includes/Api/Emails.php:398
+msgid "Assigned to Team:"
+msgstr "Takıma Atandı:"
+
+#. translators: Task completed message. %s is replaced with the task name.
+#: includes/Api/Emails.php:174
+msgid "The task %s has been completed."
+msgstr "%s görevi tamamlandı."
+
+#: templates/edit_members.php:140 templates/edit_members.php:141
+msgid "Unique ID"
+msgstr "Benzersiz Kimlik"
+
+#: templates/parts/new_task.php:270
+msgid "Add File"
+msgstr "Dosya Ekle"
+
+#: templates/parts/task-single.php:548
+msgid "Like Task"
+msgstr "Görevi Beğen"
+
+#: templates/parts/task-single.php:30
+msgid "This task does not exist or has been deleted."
+msgstr "Bu görev mevcut değil veya silindi."
+
+#: includes/strings.php:190 templates/parts/page_footer.php:70
+msgid "Copy Column"
+msgstr "Sütunu Kopyala"
+
+#: includes/strings.php:191 templates/parts/page_footer.php:59
+msgid "Copy Column to Project"
+msgstr "Sütunu Projeye Kopyala"
+
+#: templates/parts/project-single.php:697
+msgid "Weekly Update"
+msgstr "Haftalık güncelleme"
+
+#: templates/parts/project-single.php:690
+msgid "New Subtasks"
+msgstr "Yeni Alt Görevler"
+
+#: templates/parts/project-single.php:683
+msgid "Assigned Task Comments"
+msgstr "Atanan Görev Yorumları"
+
+#: templates/parts/project-single.php:676
+msgid "Task Comments"
+msgstr "Görev Yorumları"
+
+#: templates/parts/project-single.php:669
+msgid "Project Comments"
+msgstr "Proje Yorumları"
+
+#: includes/Api/Emails.php:170 includes/Api/Emails.php:171
+#: templates/parts/project-single.php:662
+msgid "Task Completed"
+msgstr "Görev Tamamlandı"
+
+#: templates/parts/project-single.php:655 templates/settings.php:201
+msgid "New Tasks"
+msgstr "Yeni Görevler"
+
+#: templates/parts/project-single.php:281 templates/parts/task-single.php:544
+msgid "Copy Shortcode"
+msgstr "Kısa Kodu Kopyala"
+
+#: templates/parts/project-view.php:172
+msgid "No discussion yet"
+msgstr "Henüz tartışma yok"
+
+#: templates/settings.php:301 templates/settings.php:302
+msgid "From Email"
+msgstr "Gönderen E-posta"
+
+#: templates/settings.php:296 templates/settings.php:297
+msgid "From Name"
+msgstr "Gönderen İsim"
+
+#: templates/settings.php:293 templates/settings.php:491
+msgid "Email Settings"
+msgstr "E-posta Ayarları"
+
+#: templates/settings.php:255
+msgid "Display Unique Project ID"
+msgstr "Benzersiz Proje Kimliği Görüntüleme"
+
+#: templates/settings.php:251
+msgid "Display Project ID"
+msgstr "Proje Kimliğini Göster"
+
+#: templates/help.php:99
+msgid "Zephyr Modern Admin Theme"
+msgstr "Zephyr Modern Yönetici Teması"
+
+#: templates/help.php:95
+msgid "More Zephyr Plugins"
+msgstr "Diğer Zephyr Eklentileri"
+
+#: templates/help.php:89
+msgid "If you enjoy using the plugin and have two minutes to spare, please consider leaving a review here - it would truly mean the world to me!"
+msgstr "Eklentiyi kullanmaktan hoşlanıyorsanız ve fazladan iki dakikanız varsa, lütfen buraya bir inceleme bırakın - benim için anlamı gerçekten çok büyük!"
+
+#: templates/help.php:76
+msgid "Click here to look at what the Premium add-on has to offer. Including many new features such as a fully customizable Frontend Project Manager, Custom Fields, Kanban Editor, Asana Integration and more!"
+msgstr "Premium eklentinin neler sunabileceğini görmek için buraya tıklayın. Tamamen özelleştirilebilir bir Frontend Proje Yöneticisi, Özel Alanlar, Kanban Editör, Asana Entegrasyonu ve daha fazlası gibi birçok yeni özellik!"
+
+#: templates/help.php:75
+msgid "Get Zephyr Project Manager Premium"
+msgstr "Zephyr Project Manager Premium'u edinin"
+
+#: templates/help.php:67
+msgid "Have any great ideas for new features to add or are there features you would like me to implement for you? I am always happy to help with this and you can contact me dylanjkotze@gmail.com at any time and I will respond as soon as possible to assist you further :)"
+msgstr "Yeni özelliklerin eklenmesi için herhangi bir harika fikriniz var mı veya sizin için uygulamamı istediğiniz özellikler var mı? Bu konuda size yardımcı olmaktan her zaman memnuniyet duyarım ve istediğiniz zaman benimle dylanjkotze@gmail.com adresinden iletişime geçebilirsiniz ve size daha fazla yardımcı olmak için en kısa sürede cevap vereceğim :)"
+
+#: templates/help.php:66
+msgid "Feature Requests & Bugs"
+msgstr "Özellik İstekleri ve Hatalar"
+
+#: templates/help.php:61
+msgid "Click here to go to the website where you can contact me and ask any questions or requests that you might have. You can also contact me at dylanjkotze@gmail.com at any time and I will respond as soon as possible to help as best I can :)"
+msgstr "Benimle iletişime geçebileceğiniz ve sorularınızı veya taleplerinizi sorabileceğiniz web sitesine gitmek için burayı tıklayın. Ayrıca, istediğiniz zaman dylanjkotze@gmail.com adresinden benimle iletişime geçebilirsiniz ve elimden geldiğince yardımcı olmak için en kısa sürede cevap vereceğim :)"
+
+#: templates/help.php:60
+msgid "Support / Contact"
+msgstr "Destek / İletişim"
+
+#: templates/help.php:54
+msgid "Click here to view the in-depth documentation on all the features and how to use and make the best out of Zephyr Project Manager."
+msgstr "Tüm özellikleri ve Zephyr Proje Yöneticisi'nden en iyi şekilde nasıl faydalanabileceğinizi ve faydalanabileceğini gösteren ayrıntılı belgeleri görüntülemek için buraya tıklayın."
+
+#: templates/help.php:53
+msgid "Documentation"
+msgstr "Belgeler"
+
+#: includes/Pages/Admin.php:1082 includes/Pages/Admin.php:1083
+#: templates/help.php:46
+msgid "Help"
+msgstr "Yardım"
+
+#: includes/Core/Categories.php:177
+msgid "New Priority / Status"
+msgstr "Yeni Öncelik / Durum"
+
+#: templates/help.php:101
+msgid "Zephyr Admin Theme allows you to visually transform and reimagine your WordPress dashboard into a completely modernized version. It also includes custom colors selection, beautiful predefined themes, a dark and light mode, login screen customization and much more! Click here to view the WordPress page and give it a try :)"
+msgstr "Zephyr Yönetici Teması, WordPress panonuzu görsel olarak tamamen modernize edilmiş bir sürüme dönüştürmenize ve yeniden düşünmenize olanak tanır. Ayrıca özel renk seçimi, önceden tanımlanmış güzel temalar, karanlık ve aydınlık mod, giriş ekranı özelleştirmesi ve çok daha fazlasını içerir! WordPress sayfasını görüntülemek ve denemek için burayı tıklayın :)"
+
+#: includes/Base/AjaxHandler.php:1128 templates/parts/project-single.php:364
+#: templates/parts/project-view.php:164
+msgid "No categories assigned"
+msgstr "Kategori atanmamış"
+
+#: includes/Base/AjaxHandler.php:648 includes/Base/AjaxHandler.php:649
+#: includes/Base/AjaxHandler.php:2034 includes/Base/AjaxHandler.php:2035
+#: includes/Core/Projects.php:1824 includes/Core/Projects.php:1825
+#: includes/Core/Tasks.php:183 includes/Core/Tasks.php:184
+msgid "Not set"
+msgstr "Ayarlanmadı"
+
+#: includes/Core/Utillities.php:890
+msgid "Coming Soon..."
+msgstr "Çok Yakında...!"
+
+#: includes/strings.php:247
+msgid "Sat"
+msgstr "Cts"
+
+#: includes/strings.php:246
+msgid "Fri"
+msgstr "Cum"
+
+#: includes/strings.php:245
+msgid "Thu"
+msgstr "Per"
+
+#: includes/strings.php:244
+msgid "Wed"
+msgstr "Çar"
+
+#: includes/strings.php:243
+msgid "Tue"
+msgstr "Sal"
+
+#: includes/strings.php:242
+msgid "Mon"
+msgstr "Pts"
+
+#: includes/strings.php:241
+msgid "Sun"
+msgstr "Paz"
+
+#: includes/strings.php:229
+msgid "December"
+msgstr "Aralık"
+
+#: includes/strings.php:228
+msgid "November"
+msgstr "Kasım"
+
+#: includes/strings.php:227
+msgid "October"
+msgstr "Ekim"
+
+#: includes/strings.php:226
+msgid "September"
+msgstr "Eylül"
+
+#: includes/strings.php:225
+msgid "August"
+msgstr "Ağustos"
+
+#: includes/strings.php:224
+msgid "July"
+msgstr "Temmuz"
+
+#: includes/strings.php:223
+msgid "June"
+msgstr "Haziran"
+
+#: includes/strings.php:221
+msgid "April"
+msgstr "Nisan"
+
+#: includes/strings.php:220
+msgid "March"
+msgstr "Mart"
+
+#: includes/strings.php:219
+msgid "February"
+msgstr "Şubat"
+
+#: includes/strings.php:218
+msgid "January"
+msgstr "Ocak"
+
+#: includes/strings.php:214
+msgid "Day"
+msgstr "Gün"
+
+#: includes/strings.php:213
+msgid "Week"
+msgstr "Hafta"
+
+#: includes/strings.php:212
+msgid "Month"
+msgstr "Ay"
+
+#: includes/Core/Tasks.php:1085 includes/strings.php:211
+#: templates/dashboard.php:181
+msgid "Today"
+msgstr "Bugün"
+
+#: includes/strings.php:189
+msgid "Task Copied"
+msgstr "Görev Kopyalandı"
+
+#: includes/strings.php:188
+msgid "Add new task"
+msgstr "Yeni görev ekle"
+
+#: includes/strings.php:187
+msgid "New Column"
+msgstr "Yeni Sütun"
+
+#: includes/strings.php:185
+msgid "Textarea"
+msgstr "Metin alanı"
+
+#: includes/strings.php:181
+msgid "Are you sure you want to permanently delete this template?"
+msgstr "Bu şablonu kalıcı olarak silmek istediğinizden emin misiniz?"
+
+#: includes/strings.php:180
+msgid "Are you sure you want to permanently delete this custom field?"
+msgstr "Bu özel alanı kalıcı olarak silmek istediğinize emin misiniz?"
+
+#: includes/strings.php:179
+msgid "There is no chart data to show."
+msgstr "Gösterilecek grafik verisi yok."
+
+#: includes/strings.php:176
+msgid "Option Value"
+msgstr "Opsiyon Değeri"
+
+#: includes/strings.php:175
+msgid "Default Value"
+msgstr "Varsayılan Değer"
+
+#: includes/strings.php:174
+msgid "Add Option"
+msgstr "Seçenek Ekle"
+
+#: includes/strings.php:173
+msgid "Required"
+msgstr "Gerekli"
+
+#: includes/strings.php:172
+msgid "Create Custom Field"
+msgstr "Özel Alan Oluştur"
+
+#: includes/strings.php:171
+msgid "New Custom Field"
+msgstr "Yeni Özel Alan"
+
+#: includes/strings.php:131
+msgid "Select Field"
+msgstr "Alan Seç"
+
+#: includes/strings.php:130
+msgid "Date Field"
+msgstr "Tarih Alanı"
+
+#: includes/strings.php:129
+msgid "Number Field"
+msgstr "Sayı Alanı"
+
+#: includes/strings.php:128
+msgid "Text Field"
+msgstr "Metin Alanı"
+
+#: includes/strings.php:5
+msgid "Are you sure you want to delete this task? This action cannot be undone."
+msgstr "Bu görevi silmek istediğinize emin misiniz? Bu işlem geri alınamaz."
+
+#: includes/Core/Utillities.php:607
+msgid "No Priority"
+msgstr "Öncelik Yok"
+
+#: templates/parts/page_footer.php:45
+msgid "Copy to Project"
+msgstr "Projeye Kopyala"
+
+#: includes/Core/Utillities.php:611 includes/Core/Utillities.php:1063
+#: includes/Core/Utillities.php:1290
+msgid "Critical"
+msgstr "Kritik"
+
+#: includes/Core/Utillities.php:610 includes/Core/Utillities.php:1058
+#: includes/Core/Utillities.php:1289
+msgid "High"
+msgstr "Yüksek"
+
+#: includes/Core/Utillities.php:609 includes/Core/Utillities.php:1053
+#: includes/Core/Utillities.php:1288
+msgid "Medium"
+msgstr "Orta"
+
+#: includes/Core/Utillities.php:608 includes/Core/Utillities.php:1048
+#: includes/Core/Utillities.php:1287
+msgid "Low"
+msgstr "Düşük"
+
+#: templates/parts/new_task.php:243 templates/parts/project-single.php:267
+#: templates/parts/task-single.php:524
+msgid "Set Priority"
+msgstr "Önceliği Ayarla"
+
+#: includes/Core/Projects.php:1226 includes/Core/Projects.php:1969
+#: includes/strings.php:186 templates/parts/edit-multiple-tasks.php:108
+#: templates/parts/project-single.php:267 templates/parts/task-panel.php:110
+#: templates/parts/task-panel.php:182 templates/parts/task-single.php:524
+#: templates/tasks.php:55
+msgid "Priority"
+msgstr "Öncelik"
+
+#: templates/parts/page_header.php:37
+msgid "Whats new in Zephyr Project Manager"
+msgstr "Zephyr Proje Yöneticisi'ndeki yenilikler"
+
+#: templates/settings.php:447
+msgid "Date Format"
+msgstr "Tarih Biçimi"
+
+#: templates/settings.php:439
+msgid "Calendar First Day"
+msgstr "Takvim İlk Günü"
+
+#: templates/settings.php:436
+msgid "Dates & Calendar Settings"
+msgstr "Tarihler ve Takvim Ayarları"
+
+#: templates/settings.php:426
+msgid "Customization"
+msgstr "Özelleştirme"
+
+#: templates/settings.php:343
+msgid "Everyone"
+msgstr "Herkes"
+
+#: templates/settings.php:129 templates/settings.php:232
+msgid "General Settings"
+msgstr "Genel Ayarlar"
+
+#: templates/settings.php:126
+msgid "Profile Settings"
+msgstr "Profil Ayarları"
+
+#: includes/Core/Tasks.php:1846 includes/Core/Utillities.php:1966
+#: includes/strings.php:238 templates/parts/new_task.php:198
+#: templates/parts/task-edit-modal.php:129 templates/parts/task-single.php:332
+msgid "Saturday"
+msgstr "Cumartesi"
+
+#: includes/Core/Tasks.php:1845 includes/Core/Utillities.php:1965
+#: includes/strings.php:237 templates/parts/new_task.php:197
+#: templates/parts/task-edit-modal.php:128 templates/parts/task-single.php:331
+msgid "Friday"
+msgstr "Cuma"
+
+#: includes/Core/Tasks.php:1844 includes/Core/Utillities.php:1964
+#: includes/strings.php:236 templates/parts/new_task.php:196
+#: templates/parts/task-edit-modal.php:127 templates/parts/task-single.php:330
+msgid "Thursday"
+msgstr "Perşembe"
+
+#: includes/Core/Tasks.php:1843 includes/Core/Utillities.php:1963
+#: includes/strings.php:235 templates/parts/new_task.php:195
+#: templates/parts/task-edit-modal.php:126 templates/parts/task-single.php:329
+msgid "Wednesday"
+msgstr "Çarşamba"
+
+#: includes/Core/Tasks.php:1842 includes/Core/Utillities.php:1962
+#: includes/strings.php:234 templates/parts/new_task.php:194
+#: templates/parts/task-edit-modal.php:125 templates/parts/task-single.php:328
+msgid "Tuesday"
+msgstr "Salı"
+
+#: includes/Core/Tasks.php:1841 includes/Core/Utillities.php:1961
+#: includes/strings.php:233 templates/parts/new_task.php:193
+#: templates/parts/task-edit-modal.php:124 templates/parts/task-single.php:327
+msgid "Monday"
+msgstr "Pazartesi"
+
+#: includes/Core/Tasks.php:1847 includes/Core/Utillities.php:1960
+#: includes/strings.php:232 templates/parts/new_task.php:199
+#: templates/parts/task-edit-modal.php:130 templates/parts/task-single.php:333
+msgid "Sunday"
+msgstr "Pazar"
+
+#: templates/devices.php:21
+msgid "Displays all your linked mobile devices using the Zephyr Project Manager mobile app"
+msgstr "Zephyr Project Manager mobil uygulamasını kullanarak tüm bağlı mobil cihazlarınızı görüntüler."
+
+#: templates/devices.php:21
+msgid "Linked Devices"
+msgstr "Bağlı Cihazlar"
+
+#: includes/strings.php:222
+msgid "May"
+msgstr "Mayıs"
+
+#: includes/Base/AjaxHandler.php:2461
+msgid "No projects found..."
+msgstr "Hiç proje bulunmadı..."
+
+#. Author of the plugin
+#: zephyr-project-manager.php
+msgid "Dylan James"
+msgstr "Dylan James"
+
+#: includes/strings.php:170
+msgid "No templates found..."
+msgstr "Şablon bulunamadı ..."
+
+#: includes/Pages/Admin.php:1049 includes/Pages/Admin.php:1050
+msgid "Devices"
+msgstr "Cihazlar"
+
+#: includes/Base/AjaxHandler.php:2333 includes/Base/AjaxHandler.php:2414
+#: includes/Base/AjaxHandler.php:4030 includes/Base/AjaxHandler.php:4261
+#: includes/strings.php:169
+msgid "No results found..."
+msgstr "Hiçbir sonuç bulunamadı..."
+
+#: includes/Base/AjaxHandler.php:1105
+msgid "Message"
+msgstr "Mesaj Gönder"
+
+#: includes/strings.php:168
+msgid "There was a problem updating the status."
+msgstr "Durum güncellenirken bir sorun oluştu."
+
+#: includes/strings.php:167
+msgid "Project status saved"
+msgstr "Proje durumu kaydedildi"
+
+#: includes/strings.php:166
+msgid "Members saved"
+msgstr "Üyeler kaydedildi"
+
+#: includes/strings.php:165
+msgid "Creating task..."
+msgstr "Görev yaratılıyor ..."
+
+#: includes/strings.php:164
+msgid "Removing project from dashboard."
+msgstr "Projenin kontrol panelinden kaldırılması."
+
+#: includes/strings.php:163
+msgid "There was a problem adding the project to the dashboard."
+msgstr "Projeyi gösterge tablosuna eklerken bir sorun oluştu."
+
+#: includes/strings.php:162
+msgid "Added to the dashboard."
+msgstr "Gösterge tablosuna eklendi."
+
+#: includes/strings.php:161
+msgid "Project removed from the dashboard."
+msgstr "Proje gösterge panosundan kaldırıldı."
+
+#: includes/strings.php:158
+msgid "Task deleted"
+msgstr "Görev silindi"
+
+#: includes/strings.php:157
+msgid "There was a problem updating the category. Please try again."
+msgstr "Kategori güncellenirken bir sorun oluştu. Lütfen tekrar deneyin."
+
+#: includes/strings.php:156
+msgid "Category changes saved."
+msgstr "Kategori değişiklikleri kaydedildi."
+
+#: includes/strings.php:155
+msgid "There was a problem removing the category. Please try again."
+msgstr "Kategori kaldırılırken bir sorun oluştu. Lütfen tekrar deneyin."
+
+#: includes/strings.php:150
+msgid "Category deleted."
+msgstr "Kategori silindi."
+
+#: includes/strings.php:149
+msgid "There was a problem importing the file. Please try again."
+msgstr "Dosyayı içe aktarırken bir sorun oluştu. Lütfen tekrar deneyin."
+
+#: includes/strings.php:148
+msgid "There was a problem deleting the project."
+msgstr "Projeyi silerken bir sorun oluştu."
+
+#: includes/strings.php:147
+msgid "There was a problem with the filtering."
+msgstr "Filtrelemede bir sorun oluştu."
+
+#: includes/strings.php:146
+msgid "There was a problem adding the category. Please try again."
+msgstr "Kategori eklenirken bir sorun oluştu. Lütfen tekrar deneyin."
+
+#: includes/strings.php:145
+msgid "Category created."
+msgstr "Kategori oluşturuldu."
+
+#: includes/strings.php:144
+msgid "There was a problem exporting the project to CSV."
+msgstr "Projeyi CSV'ye dışa aktarırken bir sorun oluştu."
+
+#: includes/strings.php:143
+msgid "There was a problem sending your message. Please try again."
+msgstr "Mesajınızı gönderirken bir sorun oluştu. Lütfen tekrar deneyin."
+
+#: includes/strings.php:142
+msgid "There was a problem. Please reload and try again."
+msgstr "Bir problem oluştu. Lütfen yeniden yükleyin ve tekrar deneyin."
+
+#: includes/strings.php:141
+msgid "There was a problem printing the project."
+msgstr "Projeyi yazdırırken bir sorun oluştu."
+
+#: includes/strings.php:140
+msgid "Printed from Zephyr Project Manager"
+msgstr "Zephyr Proje Yöneticisi'nden basılmıştır."
+
+#: includes/strings.php:138 templates/parts/project-view.php:178
+msgid "Go to Project"
+msgstr "Projeye Git"
+
+#: includes/strings.php:137
+msgid "New project created"
+msgstr "Yeni proje oluşturuldu"
+
+#: includes/strings.php:136
+msgid "Converting task to project..."
+msgstr "Görev projeye dönüştürülüyor ..."
+
+#: includes/strings.php:135
+msgid "Project created successfully"
+msgstr "Proje başarıyla oluşturuldu"
+
+#: includes/strings.php:134
+msgid "Creating Project..."
+msgstr "Proje Oluşturuluyor ..."
+
+#: includes/strings.php:133 templates/parts/project-single.php:498
+msgid "Loading..."
+msgstr "Yükleniyor..."
+
+#: includes/strings.php:132 templates/parts/project-view.php:96
+msgid "Save Task"
+msgstr "Görevi Kaydet"
+
+#: includes/strings.php:125
+msgid "You have a task that is due tomorrow"
+msgstr "Yarın bitmesi gereken bir göreviniz var"
+
+#: includes/strings.php:124
+msgid "You have a task that is due today"
+msgstr "Bugün bitmesi gereken bir göreviniz var"
+
+#: includes/strings.php:123
+msgid "Project successfully copied"
+msgstr "Proje başarıyla kopyalandı"
+
+#: includes/strings.php:122
+msgid "There was an unexpected problem while copying the project"
+msgstr "Proje kopyalanırken beklenmeyen bir sorun oluştu"
+
+#: includes/strings.php:121
+msgid "Copying project..."
+msgstr "Proje kopyalanıyor..."
+
+#: includes/strings.php:120
+msgid "There was a problem loading the task"
+msgstr "Görev yüklenirken bir sorun oluştu"
+
+#: includes/strings.php:119
+msgid "Task updated successfully."
+msgstr "Görev başarıyla güncellendi."
+
+#: includes/strings.php:118
+msgid "Task successfully created"
+msgstr "Görev başarıyla oluşturuldu"
+
+#: includes/strings.php:117
+msgid "There was a problem exporting the tasks. Please try again."
+msgstr "Görevleri dışa aktarırken bir sorun oluştu. Lütfen tekrar deneyin."
+
+#: includes/strings.php:116
+msgid "There was a problem exporting the task. Please try again."
+msgstr "Görevi dışa aktarırken bir sorun oluştu. Lütfen tekrar deneyin."
+
+#: includes/strings.php:115
+msgid "There was a problem converting the task"
+msgstr "Görev dönüştürülürken bir sorun oluştu"
+
+#: includes/strings.php:114
+msgid "There was a problem copying the task. Please try again."
+msgstr "Görev kopyalanırken bir sorun oluştu. Lütfen tekrar deneyin."
+
+#: includes/strings.php:113
+msgid "Problem removing message."
+msgstr "Mesaj silinirken sorun oluştu."
+
+#: includes/strings.php:112
+msgid "There was a problem adding the project."
+msgstr "Projeyi eklerken bir sorun oluştu."
+
+#: includes/strings.php:111
+msgid "There was a problem saving the task."
+msgstr "Görev kaydedilirken bir sorun oluştu."
+
+#: includes/strings.php:110
+msgid "There was a problem creating the task"
+msgstr "Görev oluşturulurken bir sorun oluştu"
+
+#: includes/strings.php:109 includes/strings.php:160
+msgid "There was a problem loading the tasks for this project."
+msgstr "Bu projenin görevlerini yüklerken bir sorun oluştu."
+
+#: includes/strings.php:105
+msgid "Are you sure you want to delete this project and all of its tasks?"
+msgstr "Bu projeyi ve tüm görevlerini silmek istediğinize emin misiniz?"
+
+#: includes/strings.php:104
+msgid "It appears that you have not uploaded a CSV file or a JSON file. Please make sure that the file format is correct and try again."
+msgstr "Bir CSV veya JSON dosyası yüklemediğiniz tespit edildi. Lütfen dosya biçiminin doğru olduğundan emin olun ve tekrar deneyin."
+
+#: includes/strings.php:103
+msgid "Are you sure you want to permanently delete this category?"
+msgstr "Bu kategoriyi kalıcı olarak silmek istediğinize emin misiniz?"
+
+#: includes/strings.php:88
+msgid "Creating Category..."
+msgstr "Kategori Oluşturuluyor ..."
+
+#: includes/strings.php:87
+msgid "Deleting Category..."
+msgstr "Kategori Siliniyor ..."
+
+#: includes/strings.php:86
+msgid "Task already exists"
+msgstr "Görev zaten mevcut"
+
+#: includes/strings.php:85
+msgid "File Uploaded"
+msgstr "Dosya Yüklendi"
+
+#: includes/strings.php:83
+msgid "Uploading File"
+msgstr "Dosya Yükleniyor"
+
+#: includes/strings.php:82
+msgid "Message Removed"
+msgstr "Mesaj Kaldırıldı"
+
+#: includes/strings.php:81
+msgid "Changes Saved Successfully"
+msgstr "Düzenlemeler Başarıyla Kaydedildi"
+
+#: includes/strings.php:80
+msgid "Creating Subtask"
+msgstr "Alt Görev Oluşturuluyor"
+
+#: includes/strings.php:77
+msgid "Subtask Deleted"
+msgstr "Alt Görev Silindi"
+
+#. Plugin Name of the plugin
+#: zephyr-project-manager.php includes/Api/SettingsApi.php:80
+#: includes/Api/SettingsApi.php:84
+msgid "Zephyr Project Manager"
+msgstr "Zephyr Proje Yöneticisi"
+
+#: includes/Pages/Admin.php:1224 templates/dashboard.php:113
+msgid "You have no tasks due this week"
+msgstr "Bu hafta bitmesi gereken işin yok"
+
+#: templates/dashboard.php:104
+msgid "Tasks Due This Week"
+msgstr "Bu Hafta Bitmesi Gereken Görevler"
+
+#: includes/Base/AjaxHandler.php:1101 includes/Core/Projects.php:589
+#: includes/Core/Projects.php:2271 templates/dashboard.php:98
+#: templates/parts/project-panel.php:158 templates/parts/project-view.php:131
+#: templates/tasks.php:113
+msgid "Active Tasks"
+msgstr "Aktif Görevler"
+
+#: includes/Base/AjaxHandler.php:1097 includes/Base/AjaxHandler.php:2895
+#: includes/Base/AjaxHandler.php:2948 includes/Core/Projects.php:585
+#: includes/Core/Projects.php:2267 includes/Pages/Admin.php:783
+#: includes/strings.php:100 templates/dashboard.php:94
+#: templates/dashboard.php:137 templates/dashboard.php:165
+#: templates/parts/project-single.php:629 templates/parts/project-view.php:127
+msgid "Completed Tasks"
+msgstr "Tamamlanan Görevler"
+
+#: templates/dashboard.php:90
+msgid "Tasks Total"
+msgstr "Görevler Toplamı"
+
+#: templates/dashboard.php:87
+msgid "Tasks Overview"
+msgstr "Görevlere Genel Bakış"
+
+#: templates/dashboard.php:81
+msgid "Active Projects"
+msgstr "Aktif Projeler"
+
+#: includes/strings.php:7 templates/dashboard.php:77
+#: templates/dashboard.php:132 templates/email_templates/project_email.php:164
+msgid "Completed Projects"
+msgstr "Tamamlanmış Projeler"
+
+#: includes/Base/AjaxHandler.php:2891 includes/functions.php:534
+#: includes/Pages/Admin.php:768 includes/Pages/Admin.php:969
+#: includes/Pages/Admin.php:1160 includes/strings.php:93
+#: templates/dashboard.php:73 templates/dashboard.php:127
+#: templates/dashboard.php:150 templates/email_templates/project_email.php:160
+#: templates/parts/project-single.php:88
+msgid "Projects"
+msgstr "Projeler"
+
+#: templates/dashboard.php:70
+msgid "Projects Overview"
+msgstr "Projelere Genel Bakış"
+
+#: includes/strings.php:126 templates/dashboard.php:284 templates/help.php:116
+msgid "Dismiss Notice"
+msgstr "Bildirimi Yoksay"
+
+#. Description of the plugin
+#: zephyr-project-manager.php
+msgid "A modern project manager for WordPress to keep track of all your projects from within WordPress."
+msgstr "WordPress'ten tüm projelerinizi takip etmek için modern bir WordPress proje yöneticisi."
+
+#. Plugin URI of the plugin
+#: zephyr-project-manager.php
+msgid "https://zephyr-one.com"
+msgstr "https://zephyr-one.com"
+
+#: templates/tasks.php:122 templates/tasks.php:177
+msgid "Add New"
+msgstr "Yeni Ekle"
+
+#: templates/tasks.php:114
+msgid "Complete Tasks"
+msgstr "Tamamlanmış Görevler"
+
+#: templates/tasks.php:112
+msgid "All Tasks"
+msgstr "Tüm Görevler"
+
+#: templates/tasks.php:132
+msgid "My Tasks"
+msgstr "Benim Görevlerim"
+
+#: templates/tasks.php:99
+msgid "Import from JSON"
+msgstr "JSON'dan içe aktar"
+
+#: templates/tasks.php:98
+msgid "Import from CSV"
+msgstr "CSV'den içe aktar"
+
+#: includes/Core/Projects.php:559 includes/Core/Tasks.php:2596
+#: templates/tasks.php:90
+msgid "Export to JSON"
+msgstr "JSON olarak dışa aktar"
+
+#: includes/Core/Projects.php:557 includes/Core/Tasks.php:2595
+#: templates/tasks.php:89
+msgid "Export to CSV"
+msgstr "CSV olarak dışa aktar"
+
+#: includes/Core/Core.php:107 templates/parts/page_footer.php:90
+#: templates/tasks.php:86
+msgid "Export Tasks"
+msgstr "Görevleri Dışa Aktar"
+
+#: templates/dashboard.php:281
+msgid "If you like the plugin and what I do and would like to help me improve the plugin more, please consider supporting me on Patreon. This would help a lot in being able to work on the plugin full-time and focus more on it to make it better and add new features. Thank you so much."
+msgstr "Eklentiyi ve yaptığım işi seviyorsanız ve eklentiyi daha fazla geliştirmeme yardım etmek istiyorsanız, lütfen beni Patreon'da desteklemeyi düşünün. Bu, tam gün eklenti üzerinde çalışabilmek ve daha iyi hale getirmek ve yeni özellikler eklemek için daha fazla odaklanmak konusunda çok yardımcı olacaktır. Çok teşekkür ederim."
+
+#: templates/dashboard.php:280 templates/dashboard.php:285
+#: templates/help.php:118
+msgid "Support me on Patreon"
+msgstr "Beni Patreon'da destekle"
+
+#: includes/Core/Projects.php:2207 includes/strings.php:89
+#: templates/dashboard.php:122 templates/parts/project-single.php:163
+#: templates/parts/project-view.php:70 templates/parts/task-single.php:163
+#: templates/parts/task_view.php:109
+msgid "Overview"
+msgstr "Genel görünüm"
+
+#: includes/Base/AjaxHandler.php:2883 includes/Core/Members.php:404
+#: includes/Core/Members.php:444 templates/edit_members.php:185
+msgid "Allow Access"
+msgstr "Erişime İzin Ver"
+
+#: includes/Core/Members.php:240 includes/Core/Projects.php:2210
+#: templates/parts/project-single.php:166
+#: templates/parts/project-single.php:433
+#: templates/parts/project-single.php:437 templates/teams_and_members.php:34
+msgid "Members"
+msgstr "Üyeler"
+
+#: includes/strings.php:94 templates/projects.php:103 templates/tasks.php:166
+msgid "All Projects"
+msgstr "Tüm Projeler"
+
+#: includes/Api/Emails.php:333 includes/Api/Emails.php:334
+#: includes/Core/Projects.php:1152 includes/Core/Utillities.php:2010
+#: includes/Pages/Admin.php:841 templates/parts/page_header.php:58
+#: templates/projects.php:64 templates/projects.php:118
+msgid "New Project"
+msgstr "Yeni Proje"
+
+#: includes/Core/Categories.php:164 includes/Core/Categories.php:184
+#: includes/Core/Categories.php:206 templates/categories.php:87
+msgid "Color"
+msgstr "Renk"
+
+#: includes/Base/AjaxHandler.php:1110 includes/Core/Categories.php:160
+#: includes/Core/Categories.php:161 includes/strings.php:45
+#: templates/categories.php:83 templates/categories.php:84
+#: templates/edit_members.php:129 templates/edit_members.php:130
+#: templates/email_templates/task_email.php:149
+#: templates/parts/project-panel.php:66 templates/parts/project-panel.php:116
+#: templates/parts/project-single.php:298 templates/parts/project-view.php:84
+#: templates/parts/project-view.php:140 templates/parts/task-panel.php:75
+#: templates/parts/task-panel.php:155 templates/parts/task_view.php:155
+#: templates/project/overview.php:26 templates/settings.php:175
+#: templates/settings.php:176
+msgid "Description"
+msgstr "Açıklama"
+
+#: includes/Core/Categories.php:155 includes/Core/Categories.php:156
+#: includes/Core/Categories.php:180 includes/Core/Categories.php:181
+#: includes/Core/Categories.php:202 includes/Core/Categories.php:203
+#: includes/strings.php:44 templates/categories.php:76
+#: templates/categories.php:77 templates/edit_members.php:124
+#: templates/edit_members.php:125 templates/parts/project-panel.php:61
+#: templates/parts/project-panel.php:111 templates/parts/project-single.php:293
+#: templates/parts/project-view.php:83 templates/parts/task-panel.php:70
+#: templates/parts/task-panel.php:150 templates/project/overview.php:22
+#: templates/settings.php:170 templates/settings.php:171
+msgid "Name"
+msgstr "İsim"
+
+#: includes/Base/AjaxHandler.php:1120 includes/Core/Projects.php:1185
+#: templates/categories.php:27 templates/parts/project-panel.php:96
+#: templates/parts/project-single.php:235
+#: templates/parts/project-single.php:349 templates/parts/project-view.php:156
+#: templates/parts/task-single.php:279
+msgid "Categories"
+msgstr "Kategoriler"
+
+#: includes/Core/Categories.php:152 includes/Core/Utillities.php:2018
+#: templates/categories.php:26 templates/parts/page_header.php:64
+msgid "New Category"
+msgstr "Yeni Kategori"
+
+#: includes/Core/Categories.php:210 includes/Core/Tasks.php:1986
+#: includes/strings.php:21 templates/categories.php:90
+#: templates/parts/project-edit-modal.php:58
+#: templates/parts/project-single.php:258
+#: templates/parts/task-edit-modal.php:165 templates/parts/task-single.php:495
+#: templates/tasks.php:219 templates/teams_and_members.php:161
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
+
+#: includes/Core/Tasks.php:2107 includes/strings.php:74
+msgid "Create Subtask"
+msgstr "Alt Görev Oluştur"
+
+#: includes/Base/AjaxHandler.php:3174 includes/Base/AjaxHandler.php:3175
+#: includes/Core/Tasks.php:2068 includes/Core/Tasks.php:2071
+#: templates/tasks.php:215 templates/tasks.php:216
+msgid "Subtask Name"
+msgstr "Alt Görev İsmi"
+
+#: templates/premium.php:38
+msgid "View your tasks in a Kanban board style and drag and drop them into different columns to keep them organized."
+msgstr "Görevlerinizi Kanban panosu tarzında görüntüleyin ve düzenli tutmak için farklı sütunlara sürükleyip bırakın."
+
+#: templates/premium.php:37
+msgid "Kanban Boards"
+msgstr "Kanban Panoları"
+
+#: templates/premium.php:28
+msgid "Custom Fields"
+msgstr "Özel Alanlar"
+
+#: templates/premium.php:20
+msgid "View your Asana projects and tasks in WordPress and import them into Zephyr to manage all your projects and tasks in one place."
+msgstr "Asana projelerinizi ve görevlerinizi WordPress'te görüntüleyin ve tüm projelerinizi ve görevlerinizi tek bir yerden yönetmek için bunları Zephyr'e alın."
+
+#: templates/premium.php:19
+msgid "Asana Integration"
+msgstr "Asana Entegrasyonu"
+
+#: templates/premium.php:12
+msgid "Zephyr Project Manager Pro"
+msgstr "Zephyr Proje Yöneticisi Pro"
+
+#: includes/Core/Members.php:259 templates/teams_and_members.php:132
+msgid "Edit Team"
+msgstr "Ekibi Düzenle"
+
+#: templates/teams_and_members.php:122
+msgid "Create Team"
+msgstr "Ekip Oluştur"
+
+#: templates/teams_and_members.php:102 templates/teams_and_members.php:103
+#: templates/teams_and_members.php:140 templates/teams_and_members.php:141
+msgid "Team Description"
+msgstr "Ekip Açıklaması"
+
+#: templates/teams_and_members.php:97 templates/teams_and_members.php:98
+#: templates/teams_and_members.php:135 templates/teams_and_members.php:136
+msgid "Team Name"
+msgstr "Ekip İsmi"
+
+#: templates/teams_and_members.php:82
+msgid "There are no teams yet..."
+msgstr "Henüz hiç ekip yok..."
+
+#: templates/teams_and_members.php:68 templates/teams_and_members.php:93
+msgid "New Team"
+msgstr "Yeni Ekip"
+
+#: templates/parts/project-single.php:443 templates/teams_and_members.php:65
+msgid "Teams"
+msgstr "Ekipler"
+
+#: includes/Base/AjaxHandler.php:2899
+msgid "Remaining Tasks"
+msgstr "Kalan Görevler"
+
+#: templates/files.php:36 templates/parts/project-single.php:421
+#: templates/parts/task-single.php:602 templates/parts/task-single.php:618
+msgid "Upload Files"
+msgstr "Dosya Yükle"
+
+#: includes/Pages/Admin.php:1011 includes/strings.php:55 templates/files.php:34
+#: templates/parts/project-panel.php:142 templates/parts/task-panel.php:199
+#: templates/parts/task-single.php:168 templates/parts/task-single.php:616
+#: templates/project/overview.php:66
+msgid "Files"
+msgstr "Dosyalar"
+
+#: templates/progress.php:21
+msgid "Select a project to display the progress for."
+msgstr "İlerlemesini görüntülemek için bir proje seçin."
+
+#: includes/Core/Projects.php:2211 templates/parts/project-single.php:167
+#: templates/parts/project-single.php:335
+#: templates/parts/project-single.php:622 templates/progress.php:17
+msgid "Progress"
+msgstr "İlerleme"
+
+#: templates/premium.php:98 templates/welcome.php:73
+msgid "Get Zephyr Pro Now"
+msgstr "Şimdi Zephyr Pro'yu Alın"
+
+#: templates/premium.php:94 templates/welcome.php:64
+msgid "Plus many more features. If you have any feature suggestions I would be more than happy to hear them. You can contact me at dylanjkotze@gmail.com."
+msgstr "Ayrıca daha birçok özellik. Herhangi bir özellik öneriniz varsa, bunları duymak isterim. dylanjkotze@gmail.com adresinden bana ulaşabilirsiniz."
+
+#: templates/premium.php:93 templates/welcome.php:63
+msgid "And much more..."
+msgstr "Ve çok daha fazlası..."
+
+#: templates/premium.php:78
+msgid "Manage your projects and tasks on the go and stay up to date from anywhere. Increase your productivity now with this beautifully designed Android app and get more work done, wherever you are."
+msgstr "Projelerinizi ve görevlerinizi hareket halindeyken yönetin ve her yerden güncel kalın. Bu güzel tasarlanmış Android uygulamasıyla üretkenliğinizi artırın ve nerede olursanız olun daha fazla iş yapın."
+
+#: templates/premium.php:77
+msgid "Mobile App"
+msgstr "Mobil Uygulama"
+
+#: templates/premium.php:68
+msgid "Create reusable and useful templates for your tasks with your custom fields, to add to your tasks in a single click and customize your projects and tasks to your needs."
+msgstr "Tek bir tıklamayla görevlerinize eklemek ve projelerinizi ve görevlerinizi ihtiyaçlarınıza göre özelleştirmek için, özel alanlarınızla görevleriniz için yeniden kullanılabilir ve kullanışlı şablonlar oluşturun."
+
+#: templates/premium.php:67
+msgid "Task Templates"
+msgstr "Görev Şablonları"
+
+#: templates/premium.php:58
+msgid "Create detailed project progress reports for any project and customize which data should be shown in the report. You can then print or save the reports."
+msgstr "Herhangi bir proje için ayrıntılı proje ilerleme raporları oluşturun ve raporda hangi verilerin gösterilmesi gerektiğini özelleştirin. Daha sonra raporları yazdırabilir veya kaydedebilirsiniz."
+
+#: templates/premium.php:57
+msgid "Reporting and Advanced Search"
+msgstr "Raporlama ve Gelişmiş Arama"
+
+#: templates/premium.php:47
+msgid "Beautiful & Customizable Frontend"
+msgstr "Güzel ve Özelleştirilebilir Arayüz"
+
+#: templates/premium.php:48
+msgid "Includes a beautiful Frontend Project Manager that is customizable and easy to use to allow users or yourself to manage projects from the frontend with the dedicated user interface."
+msgstr "Kullanıcıların ya da kendinizin ön uçtaki projeleri, özel kullanıcı arayüzü ile yönetmesine izin vermek için özelleştirilebilir ve kullanımı kolay, güzel bir Görsel Proje Yöneticisi içerir."
+
+#: templates/email_templates/task_email.php:164
+msgid "View Task in WordPress"
+msgstr "Görevi WordPress'te Görüntüle"
+
+#: templates/email_templates/task_email.php:158
+#: templates/parts/task_view.php:242
+msgid "Go to Task"
+msgstr "Göreve Git"
+
+#: includes/Base/AjaxHandler.php:1089 includes/Core/Projects.php:784
+#: includes/strings.php:36 templates/dashboard.php:246
+#: templates/email_templates/task_email.php:144
+#: templates/parts/edit-multiple-tasks.php:76
+#: templates/parts/edit-multiple-tasks.php:79 templates/parts/new_task.php:114
+#: templates/parts/new_task.php:115 templates/parts/project-edit-modal.php:51
+#: templates/parts/project-edit-modal.php:52
+#: templates/parts/project-panel.php:76 templates/parts/project-panel.php:78
+#: templates/parts/project-panel.php:126 templates/parts/project-single.php:197
+#: templates/parts/project-single.php:198
+#: templates/parts/project-single.php:308 templates/parts/project-view.php:85
+#: templates/parts/project-view.php:119 templates/parts/task-edit-modal.php:89
+#: templates/parts/task-edit-modal.php:90 templates/parts/task-panel.php:95
+#: templates/parts/task-panel.php:97 templates/parts/task-panel.php:105
+#: templates/parts/task-panel.php:176 templates/parts/task-single.php:204
+#: templates/parts/task-single.php:205 templates/parts/task-single.php:451
+#: templates/parts/task_view.php:123 templates/project/overview.php:34
+msgid "Due Date"
+msgstr "Bitiş Tarihi"
+
+#: includes/Core/Categories.php:244 includes/Core/Projects.php:2258
+#: includes/Core/Tasks.php:1136 includes/functions.php:533
+#: includes/Pages/Admin.php:295 includes/strings.php:47
+#: templates/calendar.php:48 templates/email_templates/task_email.php:139
+#: templates/parts/new-task-list.php:52 templates/parts/new_task.php:72
+#: templates/parts/page_footer.php:25 templates/parts/task-edit-modal.php:52
+#: templates/parts/task-single.php:243 templates/parts/task-single.php:485
+#: templates/tasks.php:164
+msgid "Project"
+msgid_plural "Projects"
+msgstr[0] "Proje"
+msgstr[1] "Projeler"
+
+#: includes/Pages/Admin.php:316 includes/strings.php:32
+#: templates/calendar.php:68 templates/email_templates/task_email.php:134
+#: templates/parts/new_task.php:88 templates/parts/project-single.php:570
+#: templates/parts/task-edit-modal.php:66 templates/parts/task-single.php:228
+#: templates/tasks.php:47 templates/tasks.php:130
+msgid "Assignee"
+msgstr "Görevli"
+
+#: includes/Core/Utillities.php:2014 includes/Pages/Admin.php:813
+#: templates/email_templates/task_email.php:24 templates/parts/new_task.php:56
+#: templates/parts/new_task.php:58 templates/parts/page_header.php:61
+#: templates/parts/project-single.php:379
+msgid "New Task"
+msgstr "Yeni Görev"
+
+#: templates/welcome.php:27
+msgid "Manage user roles, receive updates and notifications via email and add comments and discussions to tasks and projects."
+msgstr "Kullanıcı rollerini yönetin, e-postayla güncellemeler ve bildirimler alın ve görevlere ve projelere yorumlar ve tartışmalar ekleyin."
+
+#: templates/welcome.php:26
+msgid "Communicate and collaborate"
+msgstr "İletişim kurun ve işbirliği yapın"
+
+#: templates/welcome.php:18
+msgid "Create unlimited projects, tasks and subtasks and manage them easily and get work done all inside WordPress."
+msgstr "Sınırsız sayıda proje, görev ve alt görev oluşturun ve bunları kolayca yönetin ve tüm işlerinizi WordPress içinde halledin."
+
+#: templates/welcome.php:17
+msgid "Get Things Done"
+msgstr "İşleri Halledin"
+
+#: includes/Pages/Admin.php:1304 templates/welcome.php:10
+msgid "Welcome to Zephyr Project Manager"
+msgstr "Zephyr Proje Yöneticisine Hoşgeldiniz"
+
+#: includes/Pages/Admin.php:1028 includes/Pages/Admin.php:1029
+#: templates/calendar.php:43
+msgid "Calendar"
+msgstr "Takvim"
+
+#: templates/files.php:54
+msgid "No Files"
+msgstr "Dosya Yok"
+
+#: includes/Core/Utillities.php:2357 includes/Pages/Admin.php:206
+msgid "No Task"
+msgstr "Görev Yok"
+
+#: templates/files.php:41
+msgid "All Files"
+msgstr "Tüm Dosyalar"
+
+#: templates/edit_members.php:154
+msgid "Task Reminders"
+msgstr "Görev Hatırlatıcıları"
+
+#: templates/edit_members.php:149 templates/settings.php:196
+msgid "All Activity"
+msgstr "Tüm Etkinlik"
+
+#: templates/edit_members.php:145 templates/settings.php:193
+msgid "Email Notifications"
+msgstr "E-posta Bildirimleri"
+
+#: templates/settings.php:190
+msgid "Hidden"
+msgstr "Gizli"
+
+#: templates/edit_members.php:134 templates/edit_members.php:135
+#: templates/settings.php:180 templates/settings.php:181
+msgid "Email Address"
+msgstr "E-posta Adresi"
+
+#: templates/edit_members.php:114 templates/settings.php:160
+msgid "Profile Picture"
+msgstr "Profil Fotoğrafı"
+
+#: includes/Api/Emails.php:304
+#: templates/email_templates/task_notifications_email.php:141
+msgid "View Tasks in WordPress"
+msgstr "Görevleri WordPress'te Görüntüle"
+
+#: includes/strings.php:92
+#: templates/email_templates/task_notifications_email.php:129
+msgid "Due Tasks"
+msgstr "Bekleyen Görevler"
+
+#: templates/email_templates/project_email.php:180
+msgid "View Projects in WordPress"
+msgstr "Projeleri WordPress'te Görüntüleyin"
+
+#: templates/email_templates/project_email.php:174
+msgid "View Projects"
+msgstr "Projeleri Görüntüle"
+
+#: includes/strings.php:8 templates/email_templates/project_email.php:168
+msgid "Pending Projects"
+msgstr "Bekleyen Projeler"
+
+#: templates/email_templates/project_email.php:154
+msgid "Weekly Progress Update"
+msgstr "Haftalık İlerleme Güncellemesi"
+
+#: templates/email_templates/email_template.php:144
+#: templates/email_templates/project_email.php:181
+#: templates/email_templates/task_email.php:165
+#: templates/email_templates/task_notifications_email.php:142
+msgid "Unfollow"
+msgstr "Takibi Bırak"
+
+#: templates/parts/task-list.php:93
+msgid "There are no tasks yet."
+msgstr "Henüz bir görev yok."
+
+#: templates/activity.php:34
+msgid "Load More"
+msgstr "Daha Fazla Yükle"
+
+#: includes/Pages/Admin.php:664 templates/activity.php:28
+msgid "There is no activity yet. Once there is, the activities will be displayed here."
+msgstr "Henüz bir aktivite yok. Olduğu zaman aktiviteler burada gösterilecektir."
+
+#: templates/settings.php:433
+msgid "Primary Light Color"
+msgstr "Birincil Açık Renk"
+
+#: templates/settings.php:431
+msgid "Primary Dark Color"
+msgstr "Birincil Koyu Renk"
+
+#: templates/settings.php:428
+msgid "Primary Color"
+msgstr "Birincil Renk"
+
+#: templates/edit_members.php:192 templates/parts/project-single.php:709
+#: templates/settings.php:222 templates/settings.php:564
+#: templates/settings.php:596
+msgid "Save Settings"
+msgstr "Ayarları Kaydet"
+
+#: includes/Api/Emails.php:162 templates/edit_members.php:169
+#: templates/settings.php:216
+msgid "Weekly Updates"
+msgstr "Haftalık Güncellemeler"
+
+#: templates/edit_members.php:159 templates/settings.php:206
+msgid "Task Assigned"
+msgstr "Görev Atandı"
+
+#: includes/strings.php:63 templates/parts/project-panel.php:206
+#: templates/parts/project-single.php:423 templates/parts/task-panel.php:256
+#: templates/parts/task-single.php:604
+msgid "Comment"
+msgstr "Yorum"
+
+#: templates/parts/project-panel.php:196 templates/parts/project-panel.php:197
+#: templates/parts/project-single.php:411
+#: templates/parts/project-single.php:412 templates/parts/task-panel.php:251
+#: templates/parts/task-panel.php:252 templates/parts/task-single.php:591
+#: templates/parts/task-single.php:592 templates/parts/task_view.php:218
+#: templates/parts/task_view.php:219
+msgid "Write comment..."
+msgstr "Yorum Yap..."
+
+#: templates/parts/project-single.php:400
+msgid "Comments"
+msgstr "Yorumlar"
+
+#: templates/parts/project-single.php:261
+msgid "Back to Projects"
+msgstr "Projelere Geri Dön"
+
+#: includes/Base/AjaxHandler.php:1084 includes/strings.php:35
+#: templates/parts/edit-multiple-tasks.php:62
+#: templates/parts/edit-multiple-tasks.php:65 templates/parts/new_task.php:107
+#: templates/parts/new_task.php:108 templates/parts/project-edit-modal.php:46
+#: templates/parts/project-edit-modal.php:47
+#: templates/parts/project-panel.php:71 templates/parts/project-panel.php:73
+#: templates/parts/project-panel.php:121 templates/parts/project-single.php:192
+#: templates/parts/project-single.php:193
+#: templates/parts/project-single.php:303 templates/parts/project-view.php:114
+#: templates/parts/task-edit-modal.php:83
+#: templates/parts/task-edit-modal.php:84 templates/parts/task-panel.php:90
+#: templates/parts/task-panel.php:92 templates/parts/task-panel.php:171
+#: templates/parts/task-single.php:198 templates/parts/task-single.php:199
+#: templates/parts/task-single.php:445 templates/parts/task_view.php:119
+#: templates/project/overview.php:30 templates/tasks.php:35
+msgid "Start Date"
+msgstr "Başlangıç Tarihi"
+
+#: includes/Api/Emails.php:339 includes/Core/Projects.php:1167
+#: includes/Core/Projects.php:1169 templates/parts/project-edit-modal.php:41
+#: templates/parts/project-edit-modal.php:42
+#: templates/parts/project-single.php:187
+#: templates/parts/project-single.php:188
+msgid "Project Description"
+msgstr "Proje Açıklaması"
+
+#: includes/Api/Emails.php:337 includes/Core/Projects.php:1160
+#: includes/strings.php:39 templates/parts/project-edit-modal.php:36
+#: templates/parts/project-edit-modal.php:37
+#: templates/parts/project-single.php:182
+#: templates/parts/project-single.php:183
+msgid "Project Name"
+msgstr "Proje İsmi"
+
+#: includes/Core/Projects.php:2209 includes/strings.php:91
+#: templates/parts/project-panel.php:183 templates/parts/project-single.php:165
+#: templates/parts/project-view.php:72 templates/parts/task-panel.php:239
+#: templates/parts/task-single.php:165 templates/parts/task-single.php:579
+#: templates/parts/task_view.php:110
+msgid "Discussion"
+msgstr "Tartışma"
+
+#: includes/Api/Emails.php:136 includes/Base/AjaxHandler.php:2947
+#: includes/Core/Projects.php:2208 includes/functions.php:536
+#: includes/Pages/Admin.php:773 includes/Pages/Admin.php:968
+#: includes/strings.php:46 includes/strings.php:90 templates/dashboard.php:155
+#: templates/parts/project-single.php:164 templates/parts/project-view.php:71
+#: templates/parts/task-single.php:113 templates/project/overview.php:41
+msgid "Tasks"
+msgstr "Görevler"
+
+#: templates/parts/project-single.php:50
+msgid "Sorry, you do not have access to this project."
+msgstr "Özür dileriz, bu projeye erişiminiz bulunmamaktadır."
+
+#: includes/Core/Utillities.php:2028 includes/Pages/Admin.php:1093
+#: templates/parts/page_header.php:71
+msgid "Get Premium"
+msgstr "Premium'u Edinin"
+
+#: includes/Core/Utillities.php:2028 templates/parts/page_header.php:71
+msgid "Premium"
+msgstr "Premium"
+
+#: includes/Core/Projects.php:2212 includes/Core/Utillities.php:2025
+#: includes/Pages/Admin.php:1057 includes/Pages/Admin.php:1058
+#: templates/parts/page_header.php:69 templates/parts/project-single.php:169
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: includes/Core/Utillities.php:2022 templates/parts/page_header.php:67
+msgid "New File"
+msgstr "Yeni Dosya"
+
+#: templates/parts/new-task-list.php:53 templates/parts/new_task.php:74
+#: templates/parts/task-edit-modal.php:54 templates/parts/task-single.php:245
+msgid "Select Project"
+msgstr "Proje Seç"
+
+#: includes/Pages/Admin.php:306 templates/calendar.php:58
+#: templates/parts/new_task.php:97 templates/parts/project-single.php:446
+#: templates/parts/task-edit-modal.php:76 templates/parts/task-single.php:238
+#: templates/parts/task-single.php:480
+msgid "Team"
+msgstr "Ekip"
+
+#: includes/strings.php:127 templates/parts/project-view.php:89
+msgid "Select Assignee"
+msgstr "Görevli Seç"
+
+#: includes/Api/Emails.php:649 includes/Api/Emails.php:731
+#: includes/strings.php:31 templates/parts/new_task.php:66
+#: templates/parts/new_task.php:67 templates/parts/task-edit-modal.php:46
+#: templates/parts/task-edit-modal.php:47 templates/parts/task-single.php:192
+#: templates/parts/task-single.php:193 templates/parts/task-single.php:439
+msgid "Task Description"
+msgstr "Görev Açıklaması"
+
+#: includes/Api/Emails.php:647 includes/Api/Emails.php:729
+#: includes/strings.php:38 templates/parts/new_task.php:61
+#: templates/parts/new_task.php:62 templates/parts/project-single.php:569
+#: templates/parts/task-edit-modal.php:41
+#: templates/parts/task-edit-modal.php:42 templates/parts/task-single.php:186
+#: templates/parts/task-single.php:187 templates/parts/task-single.php:433
+msgid "Task Name"
+msgstr "Görev İsmi"
+
+#: templates/parts/page_footer.php:29
+msgid "Upload Attachment"
+msgstr "Ek Yükle"
+
+#: templates/parts/page_footer.php:28
+msgid "Select File"
+msgstr "Dosya Seç"
+
+#: templates/parts/page_footer.php:22
+msgid "New Attachment"
+msgstr "Yeni Ek"
+
+#: templates/parts/project-single.php:638
+msgid "Percent Complete"
+msgstr "Tamamlanan Yüzde"
+
+#: includes/Core/Projects.php:593 includes/strings.php:99
+#: templates/parts/project-single.php:635 templates/parts/project-view.php:135
+msgid "Overdue Tasks"
+msgstr "Geciken Görevler"
+
+#: includes/Base/AjaxHandler.php:2949 includes/Pages/Admin.php:778
+#: includes/strings.php:98 templates/dashboard.php:160
+#: templates/parts/project-single.php:632
+msgid "Pending Tasks"
+msgstr "Bekleyen Görevler"
+
+#: includes/Core/Projects.php:801 templates/parts/project-single.php:526
+msgid "No description"
+msgstr "Açıklama yok"
+
+#: templates/parts/project-single.php:482
+msgid "Update Status"
+msgstr "Durumu Güncelle "
+
+#: templates/parts/project-single.php:467
+#: templates/parts/project-single.php:478
+msgid "Project Status"
+msgstr "Proje Durumu"
+
+#: templates/parts/project-single.php:453
+msgid "Save Members"
+msgstr "Üyeleri Kaydet"
+
+#: templates/parts/task_view.php:145
+msgid "Assigned Team"
+msgstr "Atanan Ekip"
+
+#: templates/parts/task_view.php:140
+msgid "Not assigned to any members"
+msgstr "Hiçbir üyeye atanmamış"
+
+#: templates/parts/task-panel.php:80 templates/parts/task-panel.php:160
+#: templates/parts/task_view.php:129
+msgid "Assigned To"
+msgstr "Atandı"
+
+#: includes/Core/Tasks.php:2603 templates/dashboard.php:52
+msgid "Print"
+msgstr "Yazdır"
+
+#: includes/Core/Tasks.php:2601
+msgid "Convert to Project"
+msgstr "Projeye Dönüştür"
+
+#: includes/Core/Tasks.php:2592
+msgid "Export Task"
+msgstr "Görevi Dışa Aktar"
+
+#: includes/Core/Tasks.php:2590 includes/strings.php:41
+#: templates/parts/page_footer.php:54
+msgid "Copy Task"
+msgstr "Görevi Kopyala"
+
+#: includes/Core/Tasks.php:2584 templates/parts/new-task-list.php:67
+msgid "Delete Task"
+msgstr "Görevi Sil"
+
+#: includes/Api/Emails.php:384 includes/strings.php:29
+#: templates/parts/task-single.php:572
+msgid "New Subtask"
+msgstr "Yeni Alt Görev"
+
+#: includes/Core/Members.php:258 includes/Core/Tasks.php:1989
+#: includes/strings.php:66 templates/parts/task-edit-modal.php:163
+msgid "Delete"
+msgstr "Sil"
+
+#: includes/functions.php:538 includes/strings.php:33
+#: templates/parts/task-panel.php:215 templates/parts/task-single.php:164
+#: templates/parts/task-single.php:558 templates/parts/task_view.php:160
+msgid "Subtasks"
+msgstr "Alt Görevler"
+
+#: templates/parts/task-single.php:503 templates/parts/task-single.php:505
+msgid "Back to Tasks"
+msgstr "Görevlere Geri Dön"
+
+#: templates/parts/new_task.php:264 templates/parts/task-single.php:424
+msgid "Add Custom Field"
+msgstr "Özel Alan Ekle"
+
+#: templates/parts/new_task.php:262 templates/parts/task-single.php:422
+msgid "Purchase the Pro Add-On Now"
+msgstr "Pro Eklentiyi Hemen Satın Alın"
+
+#: templates/parts/new_task.php:262 templates/parts/task-single.php:422
+msgid "This option is only available in the Pro version."
+msgstr "Bu seçenek yalnızca Pro sürümünde kullanılabilir."
+
+#: includes/Api/Emails.php:288 includes/strings.php:139
+msgid "No date set"
+msgstr "Tarih ayarlanmadı"
+
+#: includes/Api/Emails.php:280
+msgid "You have the following due tasks this week"
+msgstr "Bu hafta bitmesi gereken görevleriniz bunlar"
+
+#: includes/Api/Emails.php:279
+msgid "Tasks due this week"
+msgstr "Bu hafta bitmesi gereken görevler"
+
+#: includes/Api/Emails.php:159
+msgid "View in WordPress"
+msgstr "WordPress'te Görüntüle"
+
+#: includes/Api/Emails.php:148 templates/parts/project-single.php:336
+msgid "Complete"
+msgstr "Tamamlandı"
+
+#: includes/Api/Emails.php:144 includes/Pages/Admin.php:1168
+msgid "Pending"
+msgstr "Bekliyor"
+
+#: includes/Api/Emails.php:140 includes/Core/Tasks.php:3316
+#: includes/Core/Utillities.php:1041 includes/Core/Utillities.php:1293
+#: includes/Pages/Admin.php:609 includes/Pages/Admin.php:1164
+#: includes/strings.php:201 templates/calendar.php:24
+msgid "Completed"
+msgstr "Tamamlandı"
+
+#: templates/edit_members.php:182
+msgid "Allow access to Zephyr"
+msgstr "Zephyr'e erişim izni ver"
+
+#: templates/edit_members.php:110
+msgid "Edit Member"
+msgstr "Üye Düzenle"
+
+#: includes/strings.php:75 templates/parts/new-task-list.php:77
+#: templates/parts/new_task.php:272
+msgid "Create Task"
+msgstr "Görev Oluştur"
+
+#: templates/parts/task-single.php:561 templates/parts/task_view.php:167
+msgid "No subtasks created."
+msgstr "Hiçbir alt görev oluşturulmadı."
+
+#: templates/parts/task_view.php:157
+msgid "No description added"
+msgstr "Açıklama eklenmedi"
+
+#: templates/parts/task_view.php:150
+msgid "Not assigned to any teams"
+msgstr "Hiçbir ekibe atanmamış"
+
+#: includes/Pages/Admin.php:1292 templates/help.php:88
+msgid "Leave a Review"
+msgstr "Görüşünüzü Paylaşın"
+
+#: includes/Pages/Admin.php:1291
+msgid "Thanks for using Zephyr Project Manager. If you enjoy it, could you please consider leaving a review? It would really mean the world to me!"
+msgstr "Zephyr Proje Yöneticisi'ni kullandığınız için teşekkür ederiz. Eğer beğenirseniz, lütfen bir inceleme bırakmayı düşünebilir misiniz? Bu gerçekten benim için çok önemli!"
+
+#: includes/Pages/Admin.php:1243
+msgid "See All Tasks"
+msgstr "Tüm Görevleri Gör"
+
+#: includes/Pages/Admin.php:1239
+msgid "You have no overdue tasks."
+msgstr "Gecikmiş bir görevin yok."
+
+#: includes/Pages/Admin.php:1227
+msgid "My Overdue Tasks"
+msgstr "Gecikmiş Görevlerim"
+
+#: includes/Pages/Admin.php:1216
+msgid "My Tasks Due This Weeks"
+msgstr "Bu Hafta Bitmesi Gereken Görevlerim"
+
+#: includes/Pages/Admin.php:1213
+msgid "There are no tasks to view at the moment."
+msgstr "Şu anda görüntülenecek görev yok."
+
+#: includes/Pages/Admin.php:1193
+msgid "View All Projects"
+msgstr "Tüm Projeleri Görüntüle"
+
+#: includes/Pages/Admin.php:1132
+msgid "Zephyr Latest Projects"
+msgstr "Zephyr Son Projeler"
+
+#: includes/Pages/Admin.php:1092 templates/parts/page_header.php:44
+msgid "Zephyr Pro"
+msgstr "Zephyr Pro"
+
+#: includes/Pages/Admin.php:1020 includes/Pages/Admin.php:1021
+msgid "Activity"
+msgstr "Etkinlik"
+
+#: includes/Pages/Admin.php:1136
+msgid "Zephyr Tasks"
+msgstr "Zephyr Görevleri"
+
+#: includes/Core/Projects.php:1209 templates/parts/project-single.php:135
+msgid "Organize your work in an itemized list."
+msgstr "Çalışmanızı ayrıntılı bir listede düzenleyin."
+
+#: includes/Core/Projects.php:1208 includes/strings.php:215
+#: templates/parts/project-single.php:116
+#: templates/parts/project-single.php:128
+#: templates/parts/project-single.php:134 templates/projects.php:102
+msgid "List"
+msgstr "Liste"
+
+#: includes/Core/Projects.php:1162
+msgid "Add a project name"
+msgstr "Bir proje ismi ekle"
+
+#: includes/Core/Projects.php:1155
+msgid "Create a new project"
+msgstr "Yeni bir proje oluştur"
+
+#: includes/Core/Projects.php:838
+msgid "There are no projects yet."
+msgstr "Henüz bir proje yok."
+
+#: includes/Base/AjaxHandler.php:1060 includes/Base/AjaxHandler.php:1061
+#: includes/Base/AjaxHandler.php:1113 includes/Base/AjaxHandler.php:2060
+#: includes/Core/Categories.php:265 includes/Core/Projects.php:145
+#: includes/Core/Projects.php:294 includes/Core/Projects.php:765
+#: includes/Core/Projects.php:766 includes/Core/Projects.php:767
+#: includes/Core/Projects.php:825 includes/Core/Projects.php:1226
+#: includes/Core/Projects.php:1232 includes/Core/Projects.php:1698
+#: includes/Core/Projects.php:2131 includes/Core/Tasks.php:2335
+#: includes/Core/Tasks.php:3166 includes/Core/Utillities.php:619
+#: includes/Core/Utillities.php:1194 includes/Core/Utillities.php:1233
+#: includes/Core/Utillities.php:2353 includes/functions.php:426
+#: includes/functions.php:459 includes/Helpers/Html.php:131
+#: includes/Helpers/Html.php:164 includes/Pages/Admin.php:194
+#: includes/strings.php:183 templates/parts/new-task-list.php:54
+#: templates/parts/new_task.php:168 templates/parts/new_task.php:181
+#: templates/parts/new_task.php:246 templates/parts/project-single.php:269
+#: templates/parts/project-single.php:299
+#: templates/parts/project-single.php:344
+#: templates/parts/project-single.php:591
+#: templates/parts/project-single.php:614 templates/parts/project-view.php:35
+#: templates/parts/project-view.php:36 templates/parts/project-view.php:143
+#: templates/parts/task-edit-modal.php:112 templates/parts/task-panel.php:114
+#: templates/parts/task-panel.php:127 templates/parts/task-single.php:291
+#: templates/parts/task-single.php:305 templates/parts/task-single.php:474
+#: templates/parts/task-single.php:479 templates/parts/task-single.php:484
+#: templates/parts/task-single.php:489 templates/parts/task-single.php:528
+#: templates/parts/task_view.php:36 templates/parts/task_view.php:43
+#: templates/project/overview.php:27 templates/project/overview.php:31
+#: templates/project/overview.php:35 templates/settings.php:394
+#: templates/settings.php:403 templates/settings.php:411
+msgid "None"
+msgstr "Hiçbiri"
+
+#: includes/Core/Projects.php:2275
+msgid "Messages"
+msgstr "Mesajlar"
+
+#: includes/Core/Projects.php:564
+msgid "Add to Dashboard"
+msgstr "Ön Panoya Ekle"
+
+#: includes/Core/Projects.php:553
+msgid "Export Project"
+msgstr "Projeyi Dışa Aktar"
+
+#: includes/Core/Projects.php:549 includes/strings.php:42
+msgid "Copy Project"
+msgstr "Projeyi Kopyala"
+
+#: includes/Core/Projects.php:538
+msgid "Delete Project"
+msgstr "Projeyi Sil"
+
+#: includes/Pages/Admin.php:1306
+msgid "Thanks for using Zephyr Project Manager. If you experience any problems or have any feature requests, I would be more than happy to add them. Please contact me at dylanjkotze@gmail.com for any queries."
+msgstr "Zephyr Proje Yöneticisi'ni kullandığınız için teşekkür ederiz. Herhangi bir sorunla karşılaşırsanız veya herhangi bir özellik isteğiniz varsa, bunları eklemekten mutluluk duyarım. Herhangi bir sorunuz için lütfen dylanjkotze@gmail.com adresinden bana ulaşın."
+
+#: includes/Core/Tasks.php:1455
+msgid "Default"
+msgstr "Varsayılan"
+
+#: includes/Core/Members.php:308
+msgid "Select Team"
+msgstr "Ekip Seç"
+
+#: includes/Core/Members.php:254
+msgid "No members have been added to this team"
+msgstr "Bu ekibe hiç üye eklenmedi"
+
+#: includes/Core/Projects.php:1254
+msgid "Pro Version"
+msgstr "Pro Sürümü"
+
+#: includes/Core/Projects.php:1252
+msgid "Create Kanban-style board projects with the "
+msgstr "ile Kanban tarzı pano projeleri oluşturun"
+
+#: includes/Core/Projects.php:1249
+msgid "Create Project"
+msgstr "Proje Oluştur"
+
+#: includes/strings.php:16
+msgid "Oops, no users found."
+msgstr "Hata! Kullanıcı bulunamadı."
+
+#: includes/strings.php:15
+msgid "Oops, no projects found."
+msgstr "Hata! Proje bulunamadı."
+
+#: includes/strings.php:17
+msgid "Oops, no teams found."
+msgstr "Hata! Ekip bulunamadı."
+
+#: includes/strings.php:14
+msgid "Tasks Remaining"
+msgstr "Kalan Görevler"
+
+#: includes/strings.php:13
+msgid "Tasks Completed"
+msgstr "Tamamlanan Görevler"
+
+#: includes/strings.php:12
+msgid "Choose File"
+msgstr "Dosya Seç"
+
+#: includes/strings.php:11
+msgid "Select a JSON File"
+msgstr "Bir JSON Dosyası Seç"
+
+#: includes/strings.php:10
+msgid "Select a CSV File"
+msgstr "Bir CSV Dosyası Seç"
+
+#: includes/strings.php:9
+msgid "Saving changes..."
+msgstr "Değişiklikler kaydediliyor..."
+
+#: includes/strings.php:6
+msgid "Loading progress..."
+msgstr "Yüklenme sürüyor..."
+
+#: includes/strings.php:4
+msgid "Are you sure you want to delete this team? This action cannot be undone."
+msgstr "Bu ekibi silmek istediğinden emin misin? Bu işlem geri alınamaz."
+
+#: includes/strings.php:3
+msgid "Choose Image"
+msgstr "Görsel Seç"
+
+#: includes/Core/Categories.php:167
+msgid "Create Category"
+msgstr "Kategori Oluştur"
+
+#: includes/strings.php:43
+msgid "Create New Project"
+msgstr "Yeni Proje Oluştur"
+
+#: includes/strings.php:40
+msgid "Copy of"
+msgstr "Kopyası"
+
+#: includes/strings.php:37
+msgid "Include"
+msgstr "Dahil et"
+
+#: includes/Core/Message.php:139 includes/strings.php:34
+msgid "Attachments"
+msgstr "Ekler"
+
+#: includes/strings.php:30
+msgid "Create New Task"
+msgstr "Yeni Görev Oluştur"
+
+#: includes/strings.php:28
+msgid "File Removed"
+msgstr "Dosya Kaldırıldı"
+
+#: includes/strings.php:27
+msgid "Are you sure you want to delete this file?"
+msgstr "Bu dosyayı silmek istediğinize emin misiniz?"
+
+#: includes/strings.php:26
+msgid "Date Uploaded"
+msgstr "Yüklenme Tarihi"
+
+#: includes/functions.php:535 includes/Pages/Admin.php:522
+#: includes/Pages/Admin.php:600 includes/strings.php:25
+msgid "Task"
+msgstr "Görev"
+
+#: includes/strings.php:24
+msgid "File Info"
+msgstr "Dosya Bilgisi"
+
+#: includes/strings.php:23
+msgid "File Link"
+msgstr "Dosya Bağlantısı"
+
+#: includes/strings.php:22 templates/parts/new-task-list.php:71
+#: templates/parts/project-view.php:79
+msgid "Add Task"
+msgstr "Görev Ekle"
+
+#: includes/strings.php:20
+msgid "Saving..."
+msgstr "Kaydediyor..."
+
+#: includes/strings.php:19
+msgid "Please enter a project name"
+msgstr "Lütfen bir proje adı girin"
+
+#: includes/strings.php:18
+msgid "Please enter a task name"
+msgstr "Lütfen bir görev adı girin"
+
+#: includes/strings.php:76
+msgid "Subtask Saved"
+msgstr "Alt Görev Kaydedildi"
+
+#: includes/strings.php:67
+msgid "deleted"
+msgstr "silindi"
+
+#: includes/strings.php:61 templates/parts/task-single.php:604
+msgid "Sending..."
+msgstr "Gönderiliyor..."
+
+#: includes/strings.php:60
+msgid "Importing"
+msgstr "İçe aktarılıyor"
+
+#: includes/strings.php:59
+msgid "Importing via JSON"
+msgstr "JSON ile içe aktarma"
+
+#: includes/strings.php:58
+msgid "Importing via CSV"
+msgstr "CSV ile içe aktarma"
+
+#: includes/Core/Core.php:108 includes/strings.php:57 templates/tasks.php:95
+msgid "Import Tasks"
+msgstr "Görevleri İçe Aktar"
+
+#: includes/strings.php:54 templates/parts/page_footer.php:82
+msgid "Close"
+msgstr "Kapat"
+
+#: includes/strings.php:53
+msgid "Loading tasks..."
+msgstr "Görevler yükleniyor ..."
+
+#: includes/strings.php:52
+msgid "Convert Task to Project"
+msgstr "Görevi Projeye Dönüştür"
+
+#: includes/strings.php:51
+msgid "Task Description as Project Description"
+msgstr "Proje Açıklaması Olarak Görev Tanımı"
+
+#: includes/strings.php:50
+msgid "Subtasks as Tasks"
+msgstr "Görev Olarak Alt Görevler"
+
+#: includes/strings.php:49
+msgid "Assignee as Project creator"
+msgstr "Proje yaratıcısı olarak görevli"
+
+#: includes/strings.php:48
+msgid "Convert Tasks"
+msgstr "Görevleri Dönüştür"
+
+#: includes/strings.php:159
+msgid "Problem deleting task"
+msgstr "Görev silinirken sorun oluştu"
+
+#: templates/settings.php:186
+msgid "Hide WordPress Dashboard Widgets"
+msgstr "WordPress panosu bileşenlerini gizle"
+
+#: includes/Pages/Admin.php:1065 includes/Pages/Admin.php:1066
+msgid "Teams & Members"
+msgstr "Ekipler ve Üyeler"
+
+#: includes/Pages/Admin.php:392 includes/strings.php:56
+msgid "Upload File"
+msgstr "Dosya Yükle"
+
+#: includes/Pages/Admin.php:983 includes/Pages/Admin.php:984
+#: templates/dashboard.php:64
+msgid "Dashboard"
+msgstr "Pano"

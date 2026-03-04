@@ -1,0 +1,1360 @@
+Return-Path: <pm_bounces@pm-bounces.wedevs.com>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id q7RuHdTGU2kJ7RsAO6WR3A
+	(envelope-from <pm_bounces@pm-bounces.wedevs.com>)
+	for <info@erciyesyapayzeka.com.tr>; Tue, 30 Dec 2025 15:34:28 +0300
+Return-path: <pm_bounces@pm-bounces.wedevs.com>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Tue, 30 Dec 2025 15:34:28 +0300
+Received: from mta13-ab1.mtasv.net ([50.31.205.13]:54922)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.99)
+	(envelope-from <pm_bounces@pm-bounces.wedevs.com>)
+	id 1vaYvc-00000007fcW-0eTR
+	for info@erciyesyapayzeka.com.tr;
+	Tue, 30 Dec 2025 15:34:18 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=ab20250324; d=ab.mtasv.net;
+ h=From:Date:Subject:Message-Id:Reply-To:To:MIME-Version:Content-Type:Date:
+ From:Message-ID:Reply-To:Sender:Subject:To:CC; t=1767098058; x=1767184458;
+ bh=vdUg7maTEUzRLVmyTdkyjJZab+M/Dj6t3jaLt5Hfl7c=;
+ b=K0VJERyCAglan4jecP2u3CGv9dLUYX2GQxrcDjQK+88af7X2oVmY7JjRLaQCLkPzNWAtwyJcoKpS
+   DlEli6ADikFcq0wr5N1AyFCUkCJaGuuJUFxtOPjarDLQ8z90QEZ20vfM3ojCxEWQvcZNTsCk8qcH
+   1tATG8+VA1KnJKuiWISzW1W4JGKoPqFUMe3Nb2Nm9TzVNEOC1WDZuafo5s3zYWsbmGayKAEwomvK
+   EP+ktNgUIfa1nTDAVcYId3SYM1Vv53vQrZrQj95Y7X9Ne10do7/3rKjkkDibaFUR5QMDgPDhTBYK
+   ItGzAZB1mFTSFjBk7mWPLIYfV8PHn35GYayr1A==
+Received: by mta13-ab1.mtasv.net id haf39u3b84kg for <info@erciyesyapayzeka.com.tr>; Tue, 30 Dec 2025 07:33:34 -0500 (envelope-from <pm_bounces@pm-bounces.wedevs.com>)
+X-PM-IP: 50.31.205.13
+X-IADB-IP: 50.31.205.13
+X-IADB-IP-REVERSE: 13.205.31.50
+DKIM-Signature: v=1; a=rsa-sha256; d=wedevs.com; s=20210727093452pm;
+	c=relaxed/relaxed; i=hello@wedevs.com; t=1767098014; x=1767270814;
+	h=date:date:from:from:message-id:reply-to:reply-to:sender:subject:subject:to:
+	to:cc:feedback-id:mime-version:content-type;
+	bh=vdUg7maTEUzRLVmyTdkyjJZab+M/Dj6t3jaLt5Hfl7c=;
+	b=BiAvDm7iOcEjYaA+VV5hh9csuE79HNFeLCXr3jt61D0BGFDSSPhei97DF8Ab4ARTxhKw8q764JF
+	3yzmhRhPoOaBanrKUVZrsvQC7G81CPcVAPwv4DJArmezmZLqwHAZRr6ymkQ3QqDFv5/WJI6CjSZKC
+	VsHtAsUCisBv9SQqfCw=
+From: WP Project Manager <hello@wedevs.com>
+Date: Tue, 30 Dec 2025 12:33:24 +0000
+Subject: {Disarmed} Last Holiday Deal Before the Year Ends!
+Message-Id: <7cd44518-41d7-46ef-bf69-cadd703a84f7@mtasv.net>
+Reply-To: WP Project Manager <hello@wedevs.com>
+To: info@erciyesyapayzeka.com.tr
+Feedback-ID: s8149297-_:s8149297:a164461:postmark
+X-Complaints-To: abuse@postmarkapp.com
+X-PM-Message-Id: 7cd44518-41d7-46ef-bf69-cadd703a84f7
+X-PM-RCPT: |bTB8MTY0NDYxfDgxNDkyOTd8aW5mb0BlcmNpeWVzeWFwYXl6ZWthLmNvbS50cg==|
+X-PM-Message-Options: v1;1.ssMb7mSh6srf3eS1ihNEIA.kJ0POV7BNsfXfTMqBWn4zMg_dLaz0FnzJzZha4LEd7DxoMCf6Z3O-9_qFT9sZVVlu33bxW1VICKFa0_titdFl2OtBLBpvNPJbqotXO05DQy4CcY_erL6WR3XXFt_RtFJa1GiQcMZn41D-8Qz_8kXb6ekg2NtYgz3tBxQajmyfeAmxKOldEeMUT7wp-7rBzjE
+X-PM-Message-Details: v1;1.l-ye8dcPoKfjUdMauKJzSw.r4BZonNEhee9Vwi5B6zrHs0jFJQJ0XtoLFyiMZkbCd2D7Akmga1vfycIEEC2JBo_FYmZW9GuJXWhZpzcDL_Z7hLNqh0VhZif16GH8vDBVHUtpTO_GT-SlCdsfsXK5u_GfdkPihWbLdFviWDtrLctBvDaRnHeMJVBDiHiGnj0KTehGqIo_1wvwGdbtjpiF318hA5lZmZS40kTN2t1CDZdapixRMSDHZnYoNp_46mJxrE
+MIME-Version: 1.0
+X-PM-MTA-Pool: application-bulk-1
+Content-Type: multipart/alternative;
+	boundary=mk3-03f5d05be2d141c1a96e4d3c3aae8f9b; charset=UTF-8
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1vaYvc-00000007fcW-0eTR
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=0.259, required 5, DKIM_SIGNED 0.10, DKIM_VALID -0.10,
+	DKIM_VALID_AU -0.10, HTML_FONT_LOW_CONTRAST 0.00, HTML_MESSAGE 0.00,
+	KAM_LOTSOFHASH 0.25, RCVD_IN_DNSWL_BLOCKED 0.00,
+	RCVD_IN_MSPIKE_H4 0.00, RCVD_IN_MSPIKE_WL 0.00,
+	RCVD_IN_VALIDITY_CERTIFIED_BLOCKED 0.00,
+	RCVD_IN_VALIDITY_RPBL_BLOCKED 0.00,
+	RCVD_IN_VALIDITY_SAFE_BLOCKED 0.00, RCVD_IN_ZEN_BLOCKED_OPENDNS 0.00,
+	SPF_HELO_PASS -0.00, SPF_PASS -0.00, URIBL_BLOCKED 0.00,
+	URIBL_DBL_BLOCKED_OPENDNS 0.00, URI_HEX 0.10)
+X-YourOrg-MailScanner-From: pm_bounces@pm-bounces.wedevs.com
+X-Spam-Status: No
+
+--mk3-03f5d05be2d141c1a96e4d3c3aae8f9b
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+ Don't Miss it =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+[https://wedevs.s3.amazonaws.com/uploads/2025/08/WP-Project-Manager-Logo.pn=
+g]
+[https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-=
+f922-42fa-9888-6e6ab2283a5d:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2]
+[https://wedevs.s3.amazonaws.com/uploads/2025/12/Holiday-PM-2025.webp]
+[https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-=
+f922-42fa-9888-6e6ab2283a5d:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2]
+Hi mr.ozdemir34,
+
+Time is running out! This is your final call to grab WP Project Manager at =
+up to
+35% Off. Keep your project on track while you enjoy holidays with no missed
+updates, no lost data, and no stress.
+
+You have only 3 days left! After that, the deal will disappear, and the pri=
+ce
+will return to normal. Let's start the new year 2026 with a suitable deal o=
+f the
+plugin to make your project planning even more organized.
+
+[https://api.getwemail.io/builder/countdown-generate?date=3D2026-01-02&amp;=
+weight=3Dregular&amp;time=3D18:00:00&amp;timezone=3DAsia/Dhaka]=20
+ =F0=9F=91=89 Get Up to 35% OFF Now
+[https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-=
+f922-42fa-9888-6e6ab2283a5d:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2]
+=F0=9F=92=B0 Last Deal of the Year 2025
+
+Let=E2=80=99s explore the key features and modules of WP Project Managerand=
+ how they
+help you.
+
+=E2=9C=A8AI Powered
+Creates lists of tasks automatically based on your project title.=F0=9F=93=
+=8AKanban Board
+Allows you to manage tasks visually with drag and drop.=E1=AF=93Gantt Chart
+Track timelines and set task dependencies with priority.=E2=8F=B1=EF=B8=8FT=
+ime Tracker
+Log hours spent on each task for better time control.=F0=9F=93=8CSub Tasks
+Split large tasks into smaller steps for easier task handling.=F0=9F=93=85T=
+ask Calendar
+Schedule tasks and deadlines in one organized place.=F0=9F=92=B0Invoice Gen=
+erator
+Create invoices directly from active projects without extra tools.=F0=9F=92=
+=B3Stripe
+Integration
+Accept online payments securely from clients without hassle.=F0=9F=9B=92Woo=
+Commerce
+Integration
+Connect orders with project workflows automatically.=F0=9F=93=88Advanced Re=
+ports &
+Milestones
+Monitor project progress with detailed reports and insights. =F0=9F=91=89 G=
+et Up to 35%
+OFF Now
+[https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-=
+f922-42fa-9888-6e6ab2283a5d:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2]
+Grab the best WP Project Manager deal to make your holiday season more
+productive and peaceful!
+
+Happy managing!
+Team WP Project Manager
+
+weDevs Logo [https://wedevs.s3.amazonaws.com/uploads/2013/05/wedevs-logo-bi=
+g.png]
+JOIN THE WEDEVS COMMUNITY
+[HTTPS://D7E15B6F-F922-42FA-9888-6E6AB2283A5D-727.WEMAILTRACK.COM/D7E15B6F-=
+F922-42FA-9888-6E6AB2283A5D:FAB28ECC3FF52688912785E165001C27/0F7D2ACD1AF6B2=
+85953F03DCBE3B43BE?EMAIL_ID=3DE03A2B4D-85B8-43D8-8604-A8A11B6659A2]
+Connect with thousands of WordPress developers and enthusiasts, and receive=
+ our
+product updates in real-time.
+
+Facebook [https://cdn.getwemail.io/images/social-icons/solid-color-facebook=
+.png]
+[https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-=
+f922-42fa-9888-6e6ab2283a5d:313fcf3ee5670cbd651368c1bd2b1f06/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2]=20
+ X [https://cdn.getwemail.io/images/social-icons/solid-color-x.png]
+[https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-=
+f922-42fa-9888-6e6ab2283a5d:e982cf5f8571926d6f0c341594229f51/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2]=20
+ YouTube [https://cdn.getwemail.io/images/social-icons/solid-color-youtube.=
+png]
+[https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-=
+f922-42fa-9888-6e6ab2283a5d:4141a0829fbc9fbf7c66ebcc1d1a32c8/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2]=20
+ LinkedIn
+[https://cdn.getwemail.io/images/social-icons/solid-color-linkedin.png]
+[https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-=
+f922-42fa-9888-6e6ab2283a5d:1f77c79a556cd3f67fec7fd0e0bd3bcc/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2]=20
+ This email was sent to info@erciyesyapayzeka.com.tr because you have opted=
+ in
+on our website. If you would prefer not to receive any email from us in the
+future, please unsubscribe
+[https://app.getwemail.io/campaigns/d7e15b6f-f922-42fa-9888-6e6ab2283a5d/su=
+bscribers/0f7d2acd1af6b285953f03dcbe3b43be/unsubscribe?email_id=3De03a2b4d-=
+85b8-43d8-8604-a8a11b6659a2]
+=2E
+Copyright =C2=A9 2025 weDevs Pte. Ltd. 160 Robinson Road, #14-04 SBF Centre=
+, SG-01,
+Singapore, 068914.
+
+[https://api.getwemail.io/campaigns/d7e15b6f-f922-42fa-9888-6e6ab2283a5d/su=
+bscribers/0f7d2acd1af6b285953f03dcbe3b43be/track?email_id=3De03a2b4d-85b8-4=
+3d8-8604-a8a11b6659a2&sid=3D0f7d2acd1af6b285953f03dcbe3b43be&cb=3D176709800=
+4152-6hkvqi9bxp]
+
+--mk3-03f5d05be2d141c1a96e4d3c3aae8f9b
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"box-sizing: border-bo=
+x; font-family: sans-serif; line-height: 1.15; -webkit-text-size-adjust: 10=
+0%; -ms-text-size-adjust: 100%; -ms-overflow-style: scrollbar; -webkit-tap-=
+highlight-color: transparent;">
+<head>
+    <title>weMail Email Campaign</title>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <style>@import url('https://fonts.googleapis.com/css2?family=3DLato:ita=
+l,wght@0,400;0,700;1,400;1,700&display=3Dswap');</style>
+    <!-- weMail styles -->
+<!--     <style>CUSTOMIZER_CSS</style> -->
+
+    <!-- litmus styles -->
+    <style type=3D"text/css">
+[tabindex=3D"-1"]:focus {
+  outline: none !important;
+}
+a:hover {
+  color: #003f5e;
+  text-decoration: underline;
+}
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+button::-moz-focus-inner,
+[type=3D"button"]::-moz-focus-inner,
+[type=3D"reset"]::-moz-focus-inner,
+[type=3D"submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.empty-content-zone.hovering-content .content-dropzone-placeholder {
+  background: rgba(0, 115, 170, .2);
+  border: 1px dashed #0073aa;
+}
+.responsive-table > tbody > tr > td .control-buttons i.disabled i:hover {
+  background-color: #23282d;
+}
+.responsive-table > tbody > tr > td .control-buttons i:hover {
+  background-color: #0073aa;
+}
+.responsive-table > tbody > tr > td:hover .control-buttons {
+  display: block;
+}
+@media screen and (max-width: 525px) {
+  .wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .wemail-content-image {
+    margin: 0!important;
+  }
+
+  .wemail-content-button {
+    margin-bottom: 10px;
+  }
+
+  .content-text-extra-padding {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .img-max {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .responsive-table {
+    width: 100% !important;
+  }
+
+  .section.section-top .wemail-content-text,
+.section.section-top .wemail-content-text p {
+    text-align: center !important;
+  }
+}
+</style>
+=20=20=20=20
+    <style type=3D"text/css">a{ color:#28B0F1;text-decoration:underline;}</=
+style>
+</head>
+<body style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; font-family: Arial, sans-serif; font-size: 0.875rem=
+; font-weight: normal; line-height: 1.5; color: #23282d; text-align: left; =
+background-color: #fff; height: 100%; width: 100%; margin: 0; padding: 0;">
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style=3D"box-sizing: border-box; display: none; font-size: 1px; co=
+lor: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; =
+max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Don't Miss it&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;
+    </div>
+
+    <div data-server-rendered=3D"true" style=3D"box-sizing: border-box;"><d=
+iv id=3D"wemail-customizer" style=3D"box-sizing: border-box; position: rela=
+tive; padding-top: 10px; padding-bottom: 0px; background-color: #F4FBF7;"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top-style=
+: solid; background-color: #F4FBF7; padding-bottom: 0px; font-family: Lato,=
+ sans-serif; color: #59595F; border-top-width: 0px; font-size: 16px; paddin=
+g-top: 10px; border-top-color: #0073aa; border-collapse: collapse;" bgcolor=
+=3D"#F4FBF7"><tr class=3D"section section-top" style=3D"box-sizing: border-=
+box;"><td align=3D"center" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"responsive-table section-wrapper" style=3D"box-sizing=
+: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: transparent;=
+ color: inherit; border-top-color: #1e73be; border-top-style: solid; border=
+-bottom-color: #1e73be; border-left: 0; font-family: inherit; padding-botto=
+m: 0px; border-top-width: 0px; border-right: 0; border-bottom-style: solid;=
+ font-size: inherit; margin-bottom: 0px; padding-top: 0px; border-bottom-wi=
+dth: 0px; max-width: 600px; border-collapse: collapse;" bgcolor=3D"transpar=
+ent"><tbody data-section-index=3D"0" style=3D"box-sizing: border-box;"><tr =
+data-source=3D"iframe" data-content-type=3D"image" data-section-index=3D"0"=
+ data-content-index=3D"0" class=3D"content-wrapper" style=3D"box-sizing: bo=
+rder-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt; position: relative;"><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-c=
+ollapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"cent=
+er" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjus=
+t: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; font-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><tabl=
+e align=3D"left" border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"wrapper" style=3D"box-sizing: border-box; -webkit-text-size=
+-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table=
+-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-b=
+ox;"><td align=3D"center" width=3D"100%" valign=3D"top" class=3D"columns" s=
+tyle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-si=
+ze-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class=
+=3D"wemail-content-image" style=3D"box-sizing: border-box; background-color=
+: #ffffff; border-color: #e5e5e5; padding-bottom: 15px; text-align: center;=
+ border-width: 0px; padding-right: 15px; margin-bottom: 0px; padding-top: 1=
+5px; border-style: solid; padding-left: 15px; max-width: 200px;"><a href=3D=
+"https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-=
+f922-42fa-9888-6e6ab2283a5d:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; background-color: transparent; -webkit-text-decoration-skip: o=
+bjects; -ms-touch-action: manipulation; touch-action: manipulation; color: =
+#28B0F1; text-decoration: underline; display: block;"><img src=3D"https://w=
+edevs.s3.amazonaws.com/uploads/2025/08/WP-Project-Manager-Logo.png" style=
+=3D"box-sizing: border-box; -ms-interpolation-mode: bicubic; border: 0; lin=
+e-height: 100%; outline: none; text-decoration: none; vertical-align: middl=
+e; border-style: none; max-width: 100%; height: auto;" height=3D"auto"></a>=
+</div></td></tr></table></td></tr></table></td></tr></tbody></table></td></=
+tr><tr class=3D"section section-head" style=3D"box-sizing: border-box;"><td=
+ align=3D"center" style=3D"box-sizing: border-box; -webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"responsive-table section-wrapper" style=3D"box-sizing: border-=
+box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; background-color: transparent; color: i=
+nherit; border-top-color: #1e73be; border-top-style: solid; border-bottom-c=
+olor: #1e73be; border-left: 0; font-family: inherit; padding-bottom: 0px; b=
+order-top-width: 0px; border-right: 0; border-bottom-style: solid; font-siz=
+e: inherit; margin-bottom: 0px; padding-top: 0px; border-bottom-width: 0px;=
+ max-width: 600px; border-collapse: collapse;" bgcolor=3D"transparent"><tbo=
+dy data-section-index=3D"1" style=3D"box-sizing: border-box;"><tr data-sour=
+ce=3D"iframe" data-content-type=3D"image" data-section-index=3D"1" data-con=
+tent-index=3D"0" class=3D"content-wrapper" style=3D"box-sizing: border-box;=
+"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; posit=
+ion: relative;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-=
+size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-t=
+able-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse: co=
+llapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=
+=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -=
+ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; fo=
+nt-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><table align=3D=
+"left" border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"wrapper" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 10=
+0%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0p=
+t; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td al=
+ign=3D"center" width=3D"100%" valign=3D"top" class=3D"columns" style=3D"box=
+-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: =
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class=3D"wemail-c=
+ontent-image" style=3D"box-sizing: border-box; background-color: #ffffff; b=
+order-color: #e5e5e5; padding-bottom: 15px; text-align: center; border-widt=
+h: 0px; padding-right: 15px; margin-bottom: 0px; padding-top: 15px; border-=
+style: solid; padding-left: 15px; max-width: 1200px;"><a href=3D"https://d7=
+e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-f922-42fa-9=
+888-6e6ab2283a5d:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b285953f03dcb=
+e3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2" style=3D"box-sizin=
+g: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+background-color: transparent; -webkit-text-decoration-skip: objects; -ms-t=
+ouch-action: manipulation; touch-action: manipulation; color: #28B0F1; text=
+-decoration: underline; display: block;"><img src=3D"https://wedevs.s3.amaz=
+onaws.com/uploads/2025/12/Holiday-PM-2025.webp" style=3D"box-sizing: border=
+-box; -ms-interpolation-mode: bicubic; border: 0; line-height: 100%; outlin=
+e: none; text-decoration: none; vertical-align: middle; border-style: none;=
+ max-width: 100%; height: auto;" height=3D"auto"></a></div></td></tr></tabl=
+e></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-type=
+=3D"text" data-section-index=3D"1" data-content-index=3D"1" class=3D"conten=
+t-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: borde=
+r-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table align=3D"=
+center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size=
+-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600=
+px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-sizing=
+: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing: bor=
+der-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; background-color: #ff=
+ffff;" bgcolor=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing: bord=
+er-box; display: inline-block; width: 100%; vertical-align: top;"><table al=
+ign=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-co=
+llapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"cente=
+r" valign=3D"top" class=3D"content-text-extra-padding" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapper=
+Inner" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"=
+box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjus=
+t: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 15px; p=
+adding-right: 15px; padding-bottom: 15px; padding-left: 15px; border-width:=
+ 0px; border-style: solid; border-color: #e5e5e5;"><table cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-=
+box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td align=3D"left" valign=3D"middle" style=3D"=
+box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjus=
+t: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><d=
+iv class=3D"wemail-content-text" style=3D"box-sizing: border-box;"><p style=
+=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;"><span styl=
+e=3D"box-sizing: border-box; margin-bottom: 0; font-size: 16px;">Hi mr.ozde=
+mir34,</span></p>
+<p style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;"><s=
+pan style=3D"box-sizing: border-box; margin-bottom: 0; font-size: 16px;"><s=
+trong style=3D"box-sizing: border-box; font-weight: bolder;">Time is runnin=
+g out!</strong> This is your <strong style=3D"box-sizing: border-box; font-=
+weight: bolder;">final call</strong> to grab WP Project Manager at <strong =
+style=3D"box-sizing: border-box; font-weight: bolder; margin-bottom: 0;">up=
+ to 35% Off</strong>. Keep your project on track while you enjoy holidays w=
+ith no missed updates, no lost data, and no stress.</span></p>
+<p style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><span=
+ style=3D"box-sizing: border-box; margin-bottom: 0; font-size: 16px;">You h=
+ave <strong style=3D"box-sizing: border-box; font-weight: bolder; margin-bo=
+ttom: 0;">only 3 days left</strong>! After that, the deal will disappear, a=
+nd the price will return to normal. Let's start the new year 2026 with a su=
+itable deal of the plugin to make your project planning even more organized=
+.</span></p></div></td></tr></table></td></tr></table></td></tr></table></d=
+iv> <!----></td></tr></table></td></tr><tr data-source=3D"iframe" data-cont=
+ent-type=3D"countdown" data-section-index=3D"1" data-content-index=3D"2" cl=
+ass=3D"content-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-=
+sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><ta=
+ble align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; =
+-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; m=
+ax-width: 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class=3D"wrappe=
+r" style=3D"box-sizing: border-box; vertical-align: top; width: 100%;"><tab=
+le align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"=
+center" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-a=
+djust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-r=
+space: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: border-box; -webkit-t=
+ext-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; m=
+so-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: =
+border-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust:=
+ 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace:=
+ 0pt; text-align: center; background-color: #ffffff; padding: 0px;" align=
+=3D"center" bgcolor=3D"#ffffff"><table cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-s=
+ize-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: borde=
+r-box;"><td valign=3D"middle" style=3D"box-sizing: border-box; -webkit-text=
+-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-countdown=
+" style=3D"box-sizing: border-box;"><img src=3D"https://api.getwemail.io/bu=
+ilder/countdown-generate?date=3D2026-01-02&amp;weight=3Dregular&amp;time=3D=
+18:00:00&amp;timezone=3DAsia/Dhaka" alt style=3D"box-sizing: border-box; -m=
+s-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; =
+outline: none; text-decoration: none; max-width: 100%; vertical-align: midd=
+le; border-style: none;" height=3D"auto"> <!----></div></td></tr></table></=
+td></tr></table></td></tr></table></div></td></tr></table></td></tr><tr dat=
+a-source=3D"iframe" data-content-type=3D"button" data-section-index=3D"1" d=
+ata-content-index=3D"3" class=3D"content-wrapper" style=3D"box-sizing: bord=
+er-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100=
+%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+; position: relative;"><table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webki=
+t-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt=
+; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-colla=
+pse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" =
+valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt; display: inline-block; vertical-align: top; width: 100%;" width=3D"100%=
+"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" cl=
+ass=3D"wrapperInner" style=3D"box-sizing: border-box; -webkit-text-size-adj=
+ust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"=
+><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-t=
+ext-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; paddin=
+g: 16px; background-color: #ffffff; margin-bottom: 0px; text-align: center;=
+" bgcolor=3D"#ffffff" align=3D"center"><table align=3D"left" cellpadding=3D=
+"0" cellspacing=3D"0" border=3D"0" width=3D"100%" class=3D"wrapper" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; bor=
+der-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td valign=
+=3D"middle" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-button" styl=
+e=3D"box-sizing: border-box;"><a href=3D"https://d7e15b6f-f922-42fa-9888-6e=
+6ab2283a5d-727.wemailtrack.com/d7e15b6f-f922-42fa-9888-6e6ab2283a5d:296e809=
+350a39c421a2cb2e1ec101938/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3De03a2=
+b4d-85b8-43d8-8604-a8a11b6659a2" style=3D"box-sizing: border-box; -webkit-t=
+ext-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-decoration-=
+skip: objects; -ms-touch-action: manipulation; touch-action: manipulation; =
+border: 0px none #176598; background-color: #611ED2; border-color: #e5e5e5;=
+ color: #fff; text-align: center; display: inline-block; padding-right: 65p=
+x; text-decoration: none; padding-bottom: 18px; border-radius: 26px; border=
+-width: 0px; font-size: 16px; line-height: 1; padding-top: 18px; border-sty=
+le: solid; padding-left: 65px; font-weight: bold; text-transform: none;">=
+=F0=9F=91=89 Get Up to 35% OFF Now</a></div></td></tr></table></td></tr></t=
+able></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-ty=
+pe=3D"text" data-section-index=3D"1" data-content-index=3D"4" class=3D"cont=
+ent-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: bor=
+der-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width:=
+ 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-si=
+zing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; background-color:=
+ #ffffff;" bgcolor=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing: =
+border-box; display: inline-block; width: 100%; vertical-align: top;"><tabl=
+e align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; borde=
+r-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"c=
+enter" valign=3D"top" class=3D"content-text-extra-padding" style=3D"box-siz=
+ing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wra=
+pperInner" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%;=
+ -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 3px=
+; padding-right: 15px; padding-bottom: 3px; padding-left: 15px; border-widt=
+h: 0px; border-style: solid; border-color: #e5e5e5;"><table cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: borde=
+r-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td align=3D"left" valign=3D"middle" style=3D"=
+box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjus=
+t: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><d=
+iv class=3D"wemail-content-text" style=3D"box-sizing: border-box;"><p style=
+=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0; text-align: ce=
+nter;"><b style=3D"box-sizing: border-box; font-weight: bolder;"><span styl=
+e=3D"box-sizing: border-box; margin-bottom: 0; background-color: #ffff00;">=
+=F0=9F=92=B0</span> </b><strong style=3D"box-sizing: border-box; font-weigh=
+t: bolder; margin-bottom: 0;"><span style=3D"box-sizing: border-box; margin=
+-bottom: 0; background-color: #ffff00;">Last Deal of the Year 2025</span></=
+strong></p></div></td></tr></table></td></tr></table></td></tr></table></di=
+v> <!----></td></tr></table></td></tr><tr data-source=3D"iframe" data-conte=
+nt-type=3D"divider" data-section-index=3D"1" data-content-index=3D"5" class=
+=3D"content-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-siz=
+ing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table=
+ align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-=
+width: 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"=
+box-sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-s=
+izing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10=
+0%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0;"><div class=
+=3D"wrapper" style=3D"box-sizing: border-box; display: inline-block; vertic=
+al-align: top; width: 100%;"><table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-s=
+izing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing=
+: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt;"><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: coll=
+apse;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: borde=
+r-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; padding: 15px; background-color: #fff=
+fff; line-height: 0;" bgcolor=3D"#ffffff"><table cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -web=
+kit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-siz=
+ing: border-box;"><td valign=3D"middle" style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content=
+-divider" style=3D"box-sizing: border-box;"><div style=3D"box-sizing: borde=
+r-box; width: 100%; border-top-style: dashed; margin: 0 auto; border-top-wi=
+dth: 2px; border-top-color: #e5e5e5;">=C2=A0</div></div></td></tr></table><=
+/td></tr></table></td></tr></table></div></td></tr></table></td></tr><tr da=
+ta-source=3D"iframe" data-content-type=3D"text" data-section-index=3D"1" da=
+ta-content-index=3D"6" class=3D"content-wrapper" style=3D"box-sizing: borde=
+r-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ position: relative;"><table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-collap=
+se: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" v=
+align=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 10=
+0%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0p=
+t; font-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><div class=
+=3D"wrapper" style=3D"box-sizing: border-box; display: inline-block; width:=
+ 100%; vertical-align: top;"><table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-s=
+izing: border-box;"><td align=3D"center" valign=3D"top" class=3D"content-te=
+xt-extra-padding" style=3D"box-sizing: border-box; -webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt; padding-right: 0;"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: border-bo=
+x; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"=
+box-sizing: border-box;"><td style=3D"box-sizing: border-box; -webkit-text-=
+size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-t=
+able-rspace: 0pt; padding-top: 15px; padding-right: 15px; padding-bottom: 1=
+5px; padding-left: 15px; border-width: 0px; border-style: solid; border-col=
+or: #e5e5e5;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=
+=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; =
+-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; b=
+order-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=
+=3D"left" valign=3D"middle" style=3D"box-sizing: border-box; -webkit-text-s=
+ize-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-text" style=
+=3D"box-sizing: border-box;"><p style=3D"box-sizing: border-box; margin-top=
+: 0; margin-bottom: 0;"><span style=3D"box-sizing: border-box; margin-botto=
+m: 0; font-size: 16px;">Let&rsquo;s explore the <strong style=3D"box-sizing=
+: border-box; font-weight: bolder;">key features and modules</strong> of <s=
+trong style=3D"box-sizing: border-box; font-weight: bolder; margin-bottom: =
+0;">WP Project Manager</strong>&nbsp;and how they help you.</span></p></div=
+></td></tr></table></td></tr></table></td></tr></table></div> <!----></td><=
+/tr></table></td></tr><tr data-source=3D"iframe" data-content-type=3D"text"=
+ data-section-index=3D"1" data-content-index=3D"7" class=3D"content-wrapper=
+" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; position: relative;"><table align=3D"center" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box=
+-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: =
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px; margi=
+n-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-sizing: border-=
+box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing: border-box; =
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; font-size: 0; background-color: #ffffff;" bg=
+color=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing: border-box; d=
+isplay: inline-block; width: 100%; vertical-align: top;"><table align=3D"le=
+ft" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse:=
+ collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" vali=
+gn=3D"top" class=3D"content-text-extra-padding" style=3D"box-sizing: border=
+-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table=
+-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" =
+style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-s=
+ize-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-coll=
+apse: collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-siz=
+ing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 0px; padding-r=
+ight: 15px; padding-bottom: 0px; padding-left: 15px; border-width: 0px; bor=
+der-style: solid; border-color: #e5e5e5;"><table cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -web=
+kit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-siz=
+ing: border-box;"><td align=3D"left" valign=3D"middle" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D=
+"wemail-content-text" style=3D"box-sizing: border-box;"><!-- WP Project Man=
+ager Features =E2=80=93 Proper Partial Separators -->
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" =
+style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-s=
+ize-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bott=
+om: 0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td align=3D"center" style=3D"box-sizing: border-box; -webkit-text-size-adj=
+ust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; margin-bottom: 0;">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; max-width: 600px; background: #ffffff; border-radius: 12px; o=
+verflow: hidden; border-collapse: collapse;" width=3D"100%" cellspacing=3D"=
+0" cellpadding=3D"0"><!-- Item -->
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 14px 0; font-size: 26px;" align=3D"center" valign=3D"top" width=3D"56">=
+=E2=9C=A8</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 14px 20px 14px 12px; border-bottom: 1px solid #F1F5F9;"=
+ valign=3D"middle"><strong style=3D"box-sizing: border-box; font-weight: bo=
+lder;">AI Powered</strong><br style=3D"box-sizing: border-box;"><span style=
+=3D"box-sizing: border-box; margin-bottom: 0; color: #6b7280;">Creates list=
+s of tasks automatically based on your project title.</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 14px 0; font-size: 26px;" align=3D"center" valign=3D"top" width=3D"56">=
+=F0=9F=93=8A</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 14px 20px 14px 12px; border-bottom: 1px solid #F1F5F9;"=
+ valign=3D"middle"><strong style=3D"box-sizing: border-box; font-weight: bo=
+lder;">Kanban Board</strong><br style=3D"box-sizing: border-box;"><span sty=
+le=3D"box-sizing: border-box; margin-bottom: 0; color: #6b7280;">Allows you=
+ to manage tasks visually with drag and drop.</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 14px 0; font-size: 26px;" align=3D"center" valign=3D"top" width=3D"56">=
+=E1=AF=93</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 14px 20px 14px 12px; border-bottom: 1px solid #F1F5F9;"=
+ valign=3D"middle"><strong style=3D"box-sizing: border-box; font-weight: bo=
+lder;">Gantt Chart</strong><br style=3D"box-sizing: border-box;"><span styl=
+e=3D"box-sizing: border-box; margin-bottom: 0; color: #6b7280;">Track timel=
+ines and set task dependencies with priority.</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 14px 0; font-size: 26px;" align=3D"center" valign=3D"top" width=3D"56">=
+=E2=8F=B1=EF=B8=8F</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 14px 20px 14px 12px; border-bottom: 1px solid #F1F5F9;"=
+ valign=3D"middle"><strong style=3D"box-sizing: border-box; font-weight: bo=
+lder;">Time Tracker</strong><br style=3D"box-sizing: border-box;"><span sty=
+le=3D"box-sizing: border-box; margin-bottom: 0; color: #6b7280;">Log hours =
+spent on each task for better time control.</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 14px 0; font-size: 26px;" align=3D"center" valign=3D"top" width=3D"56">=
+=F0=9F=93=8C</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 14px 20px 14px 12px; border-bottom: 1px solid #F1F5F9;"=
+ valign=3D"middle"><strong style=3D"box-sizing: border-box; font-weight: bo=
+lder;">Sub Tasks</strong><br style=3D"box-sizing: border-box;"><span style=
+=3D"box-sizing: border-box; margin-bottom: 0; color: #6b7280;">Split large =
+tasks into smaller steps for easier task handling.</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 14px 0; font-size: 26px;" align=3D"center" valign=3D"top" width=3D"56">=
+=F0=9F=93=85</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 14px 20px 14px 12px; border-bottom: 1px solid #F1F5F9;"=
+ valign=3D"middle"><strong style=3D"box-sizing: border-box; font-weight: bo=
+lder;">Task Calendar</strong><br style=3D"box-sizing: border-box;"><span st=
+yle=3D"box-sizing: border-box; margin-bottom: 0; color: #6b7280;">Schedule =
+tasks and deadlines in one organized place.</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 14px 0; font-size: 26px;" align=3D"center" valign=3D"top" width=3D"56">=
+=F0=9F=92=B0</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 14px 20px 14px 12px; border-bottom: 1px solid #F1F5F9;"=
+ valign=3D"middle"><strong style=3D"box-sizing: border-box; font-weight: bo=
+lder;">Invoice Generator</strong><br style=3D"box-sizing: border-box;"><spa=
+n style=3D"box-sizing: border-box; margin-bottom: 0; color: #6b7280;">Creat=
+e invoices directly from active projects without extra tools.</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 14px 0; font-size: 26px;" align=3D"center" valign=3D"top" width=3D"56">=
+=F0=9F=92=B3</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 14px 20px 14px 12px; border-bottom: 1px solid #F1F5F9;"=
+ valign=3D"middle"><strong style=3D"box-sizing: border-box; font-weight: bo=
+lder;">Stripe Integration</strong><br style=3D"box-sizing: border-box;"><sp=
+an style=3D"box-sizing: border-box; margin-bottom: 0; color: #6b7280;">Acce=
+pt online payments securely from clients without hassle.</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 14px 0; font-size: 26px;" align=3D"center" valign=3D"top" width=3D"56">=
+=F0=9F=9B=92</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 14px 20px 14px 12px; border-bottom: 1px solid #F1F5F9;"=
+ valign=3D"middle"><strong style=3D"box-sizing: border-box; font-weight: bo=
+lder;">WooCommerce Integration</strong><br style=3D"box-sizing: border-box;=
+"><span style=3D"box-sizing: border-box; margin-bottom: 0; color: #6b7280;"=
+>Connect orders with project workflows automatically.</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 14px 0; font-size: 26px;" align=3D"center" valign=3D"top" width=3D"56">=
+=F0=9F=93=88</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 14px 20px 14px 12px;" valign=3D"middle"><strong style=
+=3D"box-sizing: border-box; font-weight: bolder;">Advanced Reports &amp; Mi=
+lestones</strong><br style=3D"box-sizing: border-box;"><span style=3D"box-s=
+izing: border-box; margin-bottom: 0; color: #6b7280;">Monitor project progr=
+ess with detailed reports and insights.</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table></div></td></tr></table></td></tr></table></td></tr></table></div> =
+<!----></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-=
+type=3D"button" data-section-index=3D"1" data-content-index=3D"8" class=3D"=
+content-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table ali=
+gn=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-widt=
+h: 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-=
+sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizin=
+g: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block; vertic=
+al-align: top; width: 100%;" width=3D"100%"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box=
+-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: =
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collap=
+se;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-=
+box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; padding: 16px; background-color: #fffff=
+f; margin-bottom: 0px; text-align: center;" bgcolor=3D"#ffffff" align=3D"ce=
+nter"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" width=3D"100%" class=3D"wrapper" style=3D"box-sizing: border-box; -webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; width: 100%; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td valign=3D"middle" width=3D"100%" style=3D"=
+box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjus=
+t: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><d=
+iv class=3D"wemail-content-button" style=3D"box-sizing: border-box;"><a hre=
+f=3D"https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15=
+b6f-f922-42fa-9888-6e6ab2283a5d:296e809350a39c421a2cb2e1ec101938/0f7d2acd1a=
+f6b285953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2" sty=
+le=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size=
+-adjust: 100%; -webkit-text-decoration-skip: objects; -ms-touch-action: man=
+ipulation; touch-action: manipulation; border: 0px none #176598; background=
+-color: #611ED2; border-color: #e5e5e5; color: #fff; text-align: center; di=
+splay: inline-block; padding-right: 65px; text-decoration: none; padding-bo=
+ttom: 18px; border-radius: 26px; border-width: 0px; font-size: 16px; line-h=
+eight: 1; padding-top: 18px; border-style: solid; padding-left: 65px; font-=
+weight: bold; text-transform: none;">=F0=9F=91=89 Get Up to 35% OFF Now</a>=
+</div></td></tr></table></td></tr></table></td></tr></table></td></tr></tbo=
+dy></table></td></tr><tr class=3D"section section-body" style=3D"box-sizing=
+: border-box;"><td align=3D"center" style=3D"box-sizing: border-box; -webki=
+t-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt=
+; mso-table-rspace: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"responsive-table section-wrapper" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: tra=
+nsparent; color: inherit; border-top-color: #1e73be; border-top-style: soli=
+d; border-bottom-color: #1e73be; border-left: 0; font-family: inherit; padd=
+ing-bottom: 0px; border-top-width: 0px; border-right: 0; border-bottom-styl=
+e: solid; font-size: inherit; margin-bottom: 0px; padding-top: 0px; border-=
+bottom-width: 0px; max-width: 600px; border-collapse: collapse;" bgcolor=3D=
+"transparent"><tbody data-section-index=3D"2" style=3D"box-sizing: border-b=
+ox;"><tr data-source=3D"iframe" data-content-type=3D"divider" data-section-=
+index=3D"2" data-content-index=3D"0" class=3D"content-wrapper" style=3D"box=
+-sizing: border-box;"><td style=3D"box-sizing: border-box; -webkit-text-siz=
+e-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tabl=
+e-rspace: 0pt; position: relative;"><table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: borde=
+r-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px;=
+ border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td alig=
+n=3D"center" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-s=
+ize-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; font-size: 0;"><div class=3D"wrapper" style=3D"box-sizing:=
+ border-box; display: inline-block; vertical-align: top; width: 100%;"><tab=
+le align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"=
+center" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-a=
+djust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-r=
+space: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: border-box; -webkit-t=
+ext-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; m=
+so-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: =
+border-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust:=
+ 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace:=
+ 0pt; padding: 15px; background-color: #ffffff; line-height: 0;" bgcolor=3D=
+"#ffffff"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; borde=
+r-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td valign=3D"=
+middle" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -m=
+s-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; fon=
+t-size: 16px;"><div class=3D"wemail-content-divider" style=3D"box-sizing: b=
+order-box;"><div style=3D"box-sizing: border-box; width: 100%; border-top-s=
+tyle: dashed; margin: 0 auto; border-top-width: 2px; border-top-color: #e5e=
+5e5;">=C2=A0</div></div></td></tr></table></td></tr></table></td></tr></tab=
+le></div></td></tr></table></td></tr><tr data-source=3D"iframe" data-conten=
+t-type=3D"text" data-section-index=3D"2" data-content-index=3D"1" class=3D"=
+content-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table ali=
+gn=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-widt=
+h: 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-=
+sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizin=
+g: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; background-colo=
+r: #ffffff;" bgcolor=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing=
+: border-box; display: inline-block; width: 100%; vertical-align: top;"><ta=
+ble align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; =
+-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; b=
+order-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=
+=3D"center" valign=3D"top" class=3D"content-text-extra-padding" style=3D"bo=
+x-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust:=
+ 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=
+=3D"wrapperInner" style=3D"box-sizing: border-box; -webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><t=
+d style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-t=
+op: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; bo=
+rder-width: 0px; border-style: solid; border-color: #e5e5e5;"><table cellpa=
+dding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizi=
+ng: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;=
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">=
+<tr style=3D"box-sizing: border-box;"><td align=3D"left" valign=3D"middle" =
+style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-s=
+ize-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: =
+16px;"><div class=3D"wemail-content-text" style=3D"box-sizing: border-box;"=
+><p style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><spa=
+n style=3D"box-sizing: border-box; margin-bottom: 0; font-size: 16px;">Grab=
+ the best WP Project Manager deal to make your holiday season more producti=
+ve and peaceful!</span></p></div></td></tr></table></td></tr></table></td><=
+/tr></table></div> <!----></td></tr></table></td></tr><tr data-source=3D"if=
+rame" data-content-type=3D"text" data-section-index=3D"2" data-content-inde=
+x=3D"2" class=3D"content-wrapper" style=3D"box-sizing: border-box;"><td sty=
+le=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size=
+-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: rela=
+tive;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-ad=
+just: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse: collapse;=
+"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size:=
+ 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><div class=3D"wrapper" =
+style=3D"box-sizing: border-box; display: inline-block; width: 100%; vertic=
+al-align: top;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border=
+-box;"><td align=3D"center" valign=3D"top" class=3D"content-text-extra-padd=
+ing" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-t=
+ext-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; paddin=
+g-right: 0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: border-box; -webkit-t=
+ext-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; m=
+so-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: =
+border-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust:=
+ 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace:=
+ 0pt; padding-top: 12px; padding-right: 15px; padding-bottom: 12px; padding=
+-left: 15px; border-width: 0px; border-style: solid; border-color: #e5e5e5;=
+"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" st=
+yle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collap=
+se: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"left" val=
+ign=3D"middle" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt; font-size: 16px;"><div class=3D"wemail-content-text" style=3D"box-sizin=
+g: border-box;"><p style=3D"box-sizing: border-box; margin-top: 0; margin-b=
+ottom: 0;"><span style=3D"box-sizing: border-box; font-size: 16px;">Happy m=
+anaging!</span><br style=3D"box-sizing: border-box;"><span style=3D"box-siz=
+ing: border-box; margin-bottom: 0; font-size: 16px;">Team WP Project Manage=
+r</span></p></div></td></tr></table></td></tr></table></td></tr></table></d=
+iv> <!----></td></tr></table></td></tr><tr data-source=3D"iframe" data-cont=
+ent-type=3D"divider" data-section-index=3D"2" data-content-index=3D"3" clas=
+s=3D"content-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-si=
+zing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100=
+%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><tabl=
+e align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; =
+-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; m=
+ax-width: 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0;"><div c=
+lass=3D"wrapper" style=3D"box-sizing: border-box; display: inline-block; ve=
+rtical-align: top; width: 100%;"><table align=3D"left" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box=
+; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"b=
+ox-sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-si=
+zing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100=
+%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse:=
+ collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: =
+border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 15px; background-color:=
+ #ffffff; line-height: 0;" bgcolor=3D"#ffffff"><table cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-box;=
+ -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"bo=
+x-sizing: border-box;"><td valign=3D"middle" style=3D"box-sizing: border-bo=
+x; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-co=
+ntent-divider" style=3D"box-sizing: border-box;"><div style=3D"box-sizing: =
+border-box; width: 100%; border-top-style: dashed; margin: 0 auto; border-t=
+op-width: 2px; border-top-color: #e5e5e5;">=C2=A0</div></div></td></tr></ta=
+ble></td></tr></table></td></tr></table></div></td></tr></table></td></tr><=
+tr data-source=3D"iframe" data-content-type=3D"text" data-section-index=3D"=
+2" data-content-index=3D"4" class=3D"content-wrapper" style=3D"box-sizing: =
+border-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust:=
+ 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace:=
+ 0pt; position: relative;"><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-c=
+ollapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"cent=
+er" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjus=
+t: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; font-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><div =
+class=3D"wrapper" style=3D"box-sizing: border-box; display: inline-block; w=
+idth: 100%; vertical-align: top;"><table align=3D"left" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-bo=
+x; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"=
+box-sizing: border-box;"><td align=3D"center" valign=3D"top" class=3D"conte=
+nt-text-extra-padding" style=3D"box-sizing: border-box; -webkit-text-size-a=
+djust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-r=
+space: 0pt; padding-right: 0;"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: bord=
+er-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tab=
+le-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr styl=
+e=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -webkit-=
+text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; =
+mso-table-rspace: 0pt; padding-top: 15px; padding-right: 15px; padding-bott=
+om: 15px; padding-left: 15px; border-width: 0px; border-style: solid; borde=
+r-color: #e5e5e5;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" =
+width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td a=
+lign=3D"left" valign=3D"middle" style=3D"box-sizing: border-box; -webkit-te=
+xt-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-text" s=
+tyle=3D"box-sizing: border-box;"><table role=3D"presentation" width=3D"100%=
+" cellspacing=3D"0" cellpadding=3D"0" style=3D"box-sizing: border-box; -web=
+kit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; margin-bottom: 0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;"><!-- Logo on the le=
+ft -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertica=
+l-align: middle; padding-right: 20px;" align=3D"left" width=3D"100" valign=
+=3D"middle"><img style=3D"box-sizing: border-box; -ms-interpolation-mode: b=
+icubic; border: 0; line-height: 100%; outline: none; text-decoration: none;=
+ vertical-align: middle; border-style: none; margin-bottom: 0; display: blo=
+ck; max-width: 80px; height: auto;" src=3D"https://wedevs.s3.amazonaws.com/=
+uploads/2013/05/wedevs-logo-big.png" alt=3D"weDevs Logo" width=3D"80" heigh=
+t=3D"auto"></td>
+<!-- Text + CTA on the right -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; vertical-align: middle;" valign=3D"middle">
+<h2 style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; =
+font-family: inherit; margin: 0px 0px 4px; font-size: 18px; font-weight: bo=
+ld; color: #1f2937; line-height: 1.3;"><a href=3D"https://d7e15b6f-f922-42f=
+a-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-f922-42fa-9888-6e6ab2283a5=
+d:fab28ecc3ff52688912785e165001c27/0f7d2acd1af6b285953f03dcbe3b43be?email_i=
+d=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2" style=3D"box-sizing: border-box; =
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-colo=
+r: transparent; -webkit-text-decoration-skip: objects; -ms-touch-action: ma=
+nipulation; touch-action: manipulation; color: #28B0F1; text-decoration: un=
+derline; margin-bottom: 0;">Join the weDevs Community</a></h2>
+<p style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0; margin=
+: 0px 0px 12px; font-size: 13px; color: #6b7280; line-height: 1.4;">Connect=
+ with thousands of WordPress developers and enthusiasts, and receive our pr=
+oduct updates in real-time.</p>
+<!-- Centered button (middle-aligned with the text block) --></td>
+</tr>
+</tbody>
+</table></div></td></tr></table></td></tr></table></td></tr></table></div> =
+<!----></td></tr></table></td></tr></tbody></table></td></tr><tr class=3D"s=
+ection section-footer" style=3D"box-sizing: border-box;"><td align=3D"cente=
+r" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"re=
+sponsive-table section-wrapper" style=3D"box-sizing: border-box; -webkit-te=
+xt-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; background-color: transparent; color: inherit; border-=
+top-color: #1e73be; border-top-style: solid; border-bottom-color: #1e73be; =
+border-left: 0; font-family: inherit; padding-bottom: 0px; border-top-width=
+: 0px; border-right: 0; border-bottom-style: solid; font-size: inherit; mar=
+gin-bottom: 0px; padding-top: 0px; border-bottom-width: 0px; max-width: 600=
+px; border-collapse: collapse;" bgcolor=3D"transparent"><tbody data-section=
+-index=3D"3" style=3D"box-sizing: border-box;"><tr data-source=3D"iframe" d=
+ata-content-type=3D"socialFollow" data-section-index=3D"3" data-content-ind=
+ex=3D"0" class=3D"content-wrapper" style=3D"box-sizing: border-box;"><td st=
+yle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: rel=
+ative;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-ad=
+just: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse: collapse;=
+"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size:=
+ 0;"><div class=3D"wrapper" style=3D"box-sizing: border-box; display: inlin=
+e-block; vertical-align: top; width: 100%;"><table align=3D"left" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr=
+ style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperI=
+nner" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; borde=
+r-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: rgb=
+(247,248,249); padding: 15px; border-width: 0px; border-style: solid; borde=
+r-color: #e5e5e5;" bgcolor=3D"rgb(247,248,249)"><table cellpadding=3D"0" ce=
+llspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-box=
+; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"b=
+ox-sizing: border-box;"><td align=3D"left" valign=3D"middle" style=3D"box-s=
+izing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10=
+0%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div cl=
+ass=3D"wemail-content-social-follow" style=3D"box-sizing: border-box; line-=
+height: 0; text-align: center; padding: 15px; display: block;"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"social-follow-table ho=
+rizontal-icons default-icons align-center" style=3D"box-sizing: border-box;=
+ -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-size: 12px; display: inline-block; wid=
+th: auto; margin-right: 15px; border-collapse: collapse;" width=3D"auto"><t=
+r style=3D"box-sizing: border-box;"><td valign=3D"middle" class=3D"image-co=
+ntainer-td" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ padding: 0 3px; line-height: 1;"><a href=3D"https://d7e15b6f-f922-42fa-988=
+8-6e6ab2283a5d-727.wemailtrack.com/d7e15b6f-f922-42fa-9888-6e6ab2283a5d:313=
+fcf3ee5670cbd651368c1bd2b1f06/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3De=
+03a2b4d-85b8-43d8-8604-a8a11b6659a2" style=3D"box-sizing: border-box; -webk=
+it-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: tr=
+ansparent; -webkit-text-decoration-skip: objects; -ms-touch-action: manipul=
+ation; touch-action: manipulation; color: #28B0F1; display: block; text-dec=
+oration: none;"><img src=3D"https://cdn.getwemail.io/images/social-icons/so=
+lid-color-facebook.png" alt=3D"Facebook" style=3D"box-sizing: border-box; -=
+ms-interpolation-mode: bicubic; border: 0; line-height: 100%; outline: none=
+; text-decoration: none; max-width: 100%; vertical-align: middle; border-st=
+yle: none; width: 24px; height: 24px;" width=3D"24" height=3D"24"></a></td>=
+ <!----></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" class=3D"social-follow-table horizontal-icons default-icons align-center"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size:=
+ 12px; display: inline-block; width: auto; margin-right: 15px; border-colla=
+pse: collapse;" width=3D"auto"><tr style=3D"box-sizing: border-box;"><td va=
+lign=3D"middle" class=3D"image-container-td" style=3D"box-sizing: border-bo=
+x; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; padding: 0 3px; line-height: 1;"><a href=
+=3D"https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wemailtrack.com/d7e15b=
+6f-f922-42fa-9888-6e6ab2283a5d:e982cf5f8571926d6f0c341594229f51/0f7d2acd1af=
+6b285953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604-a8a11b6659a2" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; background-color: transparent; -webkit-text-decoration-skip: =
+objects; -ms-touch-action: manipulation; touch-action: manipulation; color:=
+ #28B0F1; display: block; text-decoration: none;"><img src=3D"https://cdn.g=
+etwemail.io/images/social-icons/solid-color-x.png" alt=3D"X" style=3D"box-s=
+izing: border-box; -ms-interpolation-mode: bicubic; border: 0; line-height:=
+ 100%; outline: none; text-decoration: none; max-width: 100%; vertical-alig=
+n: middle; border-style: none; width: 24px; height: 24px;" width=3D"24" hei=
+ght=3D"24"></a></td> <!----></tr></table><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" class=3D"social-follow-table horizontal-icons default=
+-icons align-center" style=3D"box-sizing: border-box; -webkit-text-size-adj=
+ust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; font-size: 12px; display: inline-block; width: auto; margin-right=
+: 15px; border-collapse: collapse;" width=3D"auto"><tr style=3D"box-sizing:=
+ border-box;"><td valign=3D"middle" class=3D"image-container-td" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 3px; line-=
+height: 1;"><a href=3D"https://d7e15b6f-f922-42fa-9888-6e6ab2283a5d-727.wem=
+ailtrack.com/d7e15b6f-f922-42fa-9888-6e6ab2283a5d:4141a0829fbc9fbf7c66ebcc1=
+d1a32c8/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3De03a2b4d-85b8-43d8-8604=
+-a8a11b6659a2" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; background-color: transparent; -webkit-tex=
+t-decoration-skip: objects; -ms-touch-action: manipulation; touch-action: m=
+anipulation; color: #28B0F1; display: block; text-decoration: none;"><img s=
+rc=3D"https://cdn.getwemail.io/images/social-icons/solid-color-youtube.png"=
+ alt=3D"YouTube" style=3D"box-sizing: border-box; -ms-interpolation-mode: b=
+icubic; border: 0; line-height: 100%; outline: none; text-decoration: none;=
+ max-width: 100%; vertical-align: middle; border-style: none; width: 24px; =
+height: 24px;" width=3D"24" height=3D"24"></a></td> <!----></tr></table><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"social-follow=
+-table horizontal-icons default-icons align-center" style=3D"box-sizing: bo=
+rder-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt; font-size: 12px; display: inline-b=
+lock; width: auto; border-collapse: collapse;" width=3D"auto"><tr style=3D"=
+box-sizing: border-box;"><td valign=3D"middle" class=3D"image-container-td"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0=
+ 3px; line-height: 1;"><a href=3D"https://d7e15b6f-f922-42fa-9888-6e6ab2283=
+a5d-727.wemailtrack.com/d7e15b6f-f922-42fa-9888-6e6ab2283a5d:1f77c79a556cd3=
+f67fec7fd0e0bd3bcc/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3De03a2b4d-85b=
+8-43d8-8604-a8a11b6659a2" style=3D"box-sizing: border-box; -webkit-text-siz=
+e-adjust: 100%; -ms-text-size-adjust: 100%; background-color: transparent; =
+-webkit-text-decoration-skip: objects; -ms-touch-action: manipulation; touc=
+h-action: manipulation; color: #28B0F1; display: block; text-decoration: no=
+ne;"><img src=3D"https://cdn.getwemail.io/images/social-icons/solid-color-l=
+inkedin.png" alt=3D"LinkedIn" style=3D"box-sizing: border-box; -ms-interpol=
+ation-mode: bicubic; border: 0; line-height: 100%; outline: none; text-deco=
+ration: none; max-width: 100%; vertical-align: middle; border-style: none; =
+width: 24px; height: 24px;" width=3D"24" height=3D"24"></a></td> <!----></t=
+r></table></div></td></tr></table></td></tr></table></td></tr></table></div=
+></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-type=
+=3D"footer" data-section-index=3D"3" data-content-index=3D"1" class=3D"cont=
+ent-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: bor=
+der-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width:=
+ 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-si=
+zing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; color: rgb(132,13=
+3,134); background-color: rgb(247,248,249);" bgcolor=3D"rgb(247,248,249)"><=
+div class=3D"wrapper" style=3D"box-sizing: border-box; display: inline-bloc=
+k; width: 100%; vertical-align: top;"><table align=3D"left" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: borde=
+r-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" class=3D"c=
+ontent-text-extra-padding" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; padding-right: 0;"><table border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: =
+border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr =
+style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -web=
+kit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; padding-top: 15px; padding-right: 15px; padding-=
+bottom: 15px; padding-left: 15px; border-width: 0px; border-style: solid; b=
+order-color: #e5e5e5;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjus=
+t: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><=
+td align=3D"left" valign=3D"middle" style=3D"box-sizing: border-box; -webki=
+t-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt=
+; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-tex=
+t" style=3D"box-sizing: border-box;"><p style=3D"box-sizing: border-box; ma=
+rgin-top: 0; margin-bottom: 0; text-align: center;"><span style=3D"box-sizi=
+ng: border-box; font-size: 11px;">This email was sent to info@erciyesyapayz=
+eka.com.tr because you have opted in on our website. If you would prefer no=
+t to receive any email from us in the future, please <a href=3D"https://app=
+.getwemail.io/campaigns/d7e15b6f-f922-42fa-9888-6e6ab2283a5d/subscribers/0f=
+7d2acd1af6b285953f03dcbe3b43be/unsubscribe?email_id=3De03a2b4d-85b8-43d8-86=
+04-a8a11b6659a2" target=3D"_blank">unsubscribe</a>.<br style=3D"box-sizing:=
+ border-box; margin-bottom: 0;"></span><span style=3D"box-sizing: border-bo=
+x; margin-bottom: 0; font-size: 11px;">Copyright &copy; 2025 weDevs Pte. Lt=
+d. 160 Robinson Road, #14-04 SBF Centre, SG-01, Singapore, 068914.</span></=
+p></div></td></tr></table></td></tr></table></td></tr></table></div> <!----=
+></td></tr></table></td></tr></tbody></table></td></tr></table></div></div>
+    <img src=3D"data:image/gif;base64,R0lGODlhAQABAJEAAP///wAAAAAAAAAAACH5B=
+AkAAAAALAAAAAABAAEAAAgEAAEEBAA7" width=3D"1" height=3D"auto" alt=3D"Web Bug=
+ from https://api.getwemail.io/campaigns/d7e15b6f-f922-42fa-9888-6e6ab2283a=
+5d/subscribers/0f7d2acd1af6b285953f03dcbe3b43be/track?email_id=3De03a2b4d-8=
+5b8-43d8-8604-a8a11b6659a2&sid=3D0f7d2acd1af6b285953f03dcbe3b43be&cb=3D1767=
+098004152-6hkvqi9bxp" />
+</body>
+</html>
+
+--mk3-03f5d05be2d141c1a96e4d3c3aae8f9b--

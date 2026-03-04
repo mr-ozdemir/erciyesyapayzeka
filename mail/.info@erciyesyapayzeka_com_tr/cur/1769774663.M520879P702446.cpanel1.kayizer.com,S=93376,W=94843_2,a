@@ -1,0 +1,1467 @@
+Return-Path: <pm_bounces@pm-bounces.wedevs.com>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id dL5fGUeefGnutwoAO6WR3A
+	(envelope-from <pm_bounces@pm-bounces.wedevs.com>)
+	for <info@erciyesyapayzeka.com.tr>; Fri, 30 Jan 2026 15:04:23 +0300
+Return-path: <pm_bounces@pm-bounces.wedevs.com>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Fri, 30 Jan 2026 15:04:23 +0300
+Received: from mta16-ab1.mtasv.net ([50.31.205.16]:51102)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.99)
+	(envelope-from <pm_bounces@pm-bounces.wedevs.com>)
+	id 1vlnEb-00000002wRw-19t1
+	for info@erciyesyapayzeka.com.tr;
+	Fri, 30 Jan 2026 15:04:18 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=ab20250324; d=ab.mtasv.net;
+ h=From:Date:Subject:Message-Id:Reply-To:To:MIME-Version:Content-Type:Date:
+ From:Message-ID:Reply-To:Sender:Subject:To:CC; t=1769774657; x=1769861057;
+ bh=LpGY92GB933ZfD/TEnNf59jAhwUmd7XVstRlhtgXFBI=;
+ b=Fq7VtpcwYlX/75DqGzIcGsyVu9GMRwxEtpD/nxmu9ft2pi7ZRfNbrThmrQ8PzD0ubXVcKxY261Ui
+   6oVW9SDlEzZfw+SxPlTmIe1xWDFhF6VFNsoeCs8a5b0kd1kNRpEuvLbaCuxI/xPcTovwuExcPoRZ
+   5JZxRIRfaD/X5WqhP81VTi0RQZRi4Cc7yQFi+TP+Xfd77H/z+8fOfz71XA72SFfDGGLAYm85FW4i
+   j8c+k0miOlmkoxgQcJzbI+tK1sFo2l0aMtMmHMtBh+u9BtSghfct/G0ZFAGBM3gVDhd7LupXuuP6
+   VEh2RwiokRyM6ChW5TTEJVxeja6LigUors/NHw==
+Received: by mta16-ab1.mtasv.net id hfif1e3b84ks for <info@erciyesyapayzeka.com.tr>; Fri, 30 Jan 2026 07:03:35 -0500 (envelope-from <pm_bounces@pm-bounces.wedevs.com>)
+X-PM-IP: 50.31.205.16
+X-IADB-IP: 50.31.205.16
+X-IADB-IP-REVERSE: 16.205.31.50
+DKIM-Signature: v=1; a=rsa-sha256; d=wedevs.com; s=20210727093452pm;
+	c=relaxed/relaxed; i=hello@wedevs.com; t=1769774615; x=1769947415;
+	h=date:date:from:from:message-id:reply-to:reply-to:sender:subject:subject:to:
+	to:cc:feedback-id:mime-version:content-type;
+	bh=LpGY92GB933ZfD/TEnNf59jAhwUmd7XVstRlhtgXFBI=;
+	b=zJwpB/pX3YYcPOlTaupmC3SjVlnTMSYh2OAUY+1OD4lZm0iXicR/oL+DXa7DwOIbISYeOMCMWIB
+	6j6T0oZUfgGG94qhON9odGxHOObg9vDIe1hm4nDyk2nt82A2k2cV/29xn07r4dMPn5vTx4oS6Bns+
+	Ci0+aJHOD3daf/vLNXE=
+From: WP Project Manager <hello@wedevs.com>
+Date: Fri, 30 Jan 2026 12:03:34 +0000
+Subject: {Disarmed} WP Project Manager deal is closing -
+Message-Id: <59ce0f9a-d68a-49db-92e3-3ccd2f9987dc@mtasv.net>
+Reply-To: WP Project Manager <hello@wedevs.com>
+To: info@erciyesyapayzeka.com.tr
+Feedback-ID: s8149297-_:s8149297:a164461:postmark
+X-Complaints-To: abuse@postmarkapp.com
+X-PM-Message-Id: 59ce0f9a-d68a-49db-92e3-3ccd2f9987dc
+X-PM-RCPT: |bTB8MTY0NDYxfDgxNDkyOTd8aW5mb0BlcmNpeWVzeWFwYXl6ZWthLmNvbS50cg==|
+X-PM-Message-Options: v1;1.lMYLOSNWQxoiufqV4xWfFg.MaWKRJNoQzHMA5fP5nSzzYQDNoN9VF2VDO-I7x8peFYdYkABCsO6O4YrqpsycZ7WqHO_9JSJRLUVegtAOpLi2DdhgeE4bpOebgU9mG4CZgF4UXccwu6aoBaZFJVO2AIbviYCSJkMyNWnLKDwi0W7ze7dYZk-v613P394naumJl8BqMNOI75KeYDUKpXPklIS
+X-PM-Message-Details: v1;1.EXrb02RCcpPCxkQf_MLhzQ.2IGNcmPA3l1lAKV19bdeJ9nX2aQe43khuQTTuMhkeFGW3PPTXxaw8T_shyIRzHq9yqROnQwPdh6_VWhx3U_ajq4lsVgafSUqGfpLX0mwXfr0U0KNM8ZQ_bkdC_s4tLtg6YYexQjVqzrMgCifrlMKy_1dwzHpbdFk5YntYAO4PyyIuuXhdDE3fLYtj_3rERgqnUpA-CPOyHCjsAlS5QVeIEwehWq57VQfpDi67BAJM8s
+MIME-Version: 1.0
+X-PM-MTA-Pool: application-bulk-1
+Content-Type: multipart/alternative;
+	boundary=mk3-b53b83312a6c4fcc8f35eecdc970fc38; charset=UTF-8
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1vlnEb-00000002wRw-19t1
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=0.252, required 5, BAYES_40 -0.00, DKIM_SIGNED 0.10,
+	DKIM_VALID -0.10, DKIM_VALID_AU -0.10, HTML_FONT_LOW_CONTRAST 0.00,
+	HTML_MESSAGE 0.00, KAM_LOTSOFHASH 0.25, RCVD_IN_MSPIKE_H3 0.00,
+	RCVD_IN_MSPIKE_WL 0.00, SPF_HELO_PASS -0.00, SPF_PASS -0.00,
+	URIBL_DBL_BLOCKED_OPENDNS 0.00, URI_HEX 0.10)
+X-YourOrg-MailScanner-From: pm_bounces@pm-bounces.wedevs.com
+X-Spam-Status: No
+
+--mk3-b53b83312a6c4fcc8f35eecdc970fc38
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+ Back to regular price tomorrow =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+[https://wedevs.s3.amazonaws.com/uploads/2025/08/WP-Project-Manager-Logo.pn=
+g]
+[https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-=
+9f26-414d-b7c3-1fc6d77f9143:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f]
+[https://wedevs.s3.amazonaws.com/uploads/2026/01/11.webp]
+[https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-=
+9f26-414d-b7c3-1fc6d77f9143:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f]
+Hi mr.ozdemir34,
+
+Failing to meet project deadlines can cost you money and valuable clients. =
+With=20
+WP Project Manager, you can not only track time but also visualize project
+progress using Gantt and Kanban boards.
+
+You can also set milestones, open project discussions, share files, create
+billing invoices, integrate with Slack, and more. So, everything stays in
+control, and your team stays focused.
+
+Don=E2=80=99t miss out on up to 35% off WP Project Manager. Act fast before=
+ the deal
+ends.
+
+[https://gen.sendtric.com/countdown/nz6mgh3snk] =F0=9F=91=89 Get Up to 35% =
+OFF Now
+[https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-=
+9f26-414d-b7c3-1fc6d77f9143:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f]
+Why You Should Consider=20
+WP Project ManagerFlat Pricing No per-user fee. Pay once for unlimited proj=
+ects
+and users.Full Data Ownership All data stays on your WordPress site with fu=
+ll
+control.All-in-One Workspace Manage tasks, Kanban, Gantt, files, time, and =
+chats
+easily.Smart Integrations Connect Slack, WooCommerce, BuddyPress, and more.
+Reports & Insights Track progress, performance, and milestones in one place.
+Frontend Access Access projects from the frontend without a backend login. =
+=F0=9F=91=89
+Get Up to 35% OFF Now
+[https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-=
+9f26-414d-b7c3-1fc6d77f9143:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f]
+=E2=98=85=E2=98=85=E2=98=85=E2=98=85=E2=98=85=E2=80=9CAfter two months of h=
+eavy use, I love this plugin.=E2=80=9D=E2=80=94 Mariano Velazquez
+=E2=98=85=E2=98=85=E2=98=85=E2=98=85=E2=98=85=E2=80=9CWP PM is by far the b=
+est with great support.=E2=80=9D=E2=80=94 Billy Ristuccia=E2=98=85=E2=98=85=
+=E2=98=85=E2=98=85=E2=98=85=E2=80=9CTruly
+exceptional customer service and support.=E2=80=9D=E2=80=94 David Hickson D=
+on=E2=80=99t just run after
+deadlines - take control of them. With the right project tool, it=E2=80=99s=
+ easier than
+you think. Grab the discount before it=E2=80=99s gone. You=E2=80=99ll thank=
+ yourself later!
+
+Happy managing!
+Team WP Project Manager
+
+weDevs Logo [https://wedevs.s3.amazonaws.com/uploads/2013/05/wedevs-logo-bi=
+g.png]
+JOIN THE WEDEVS COMMUNITY
+[HTTPS://30EF8FAF-9F26-414D-B7C3-1FC6D77F9143-727.WEMAILTRACK.COM/30EF8FAF-=
+9F26-414D-B7C3-1FC6D77F9143:FAB28ECC3FF52688912785E165001C27/0F7D2ACD1AF6B2=
+85953F03DCBE3B43BE?EMAIL_ID=3DF01F195E-400B-4363-96E0-27EAF817A95F]
+Connect with thousands of WordPress developers and enthusiasts, and receive=
+ our
+product updates in real-time.
+
+Facebook [https://cdn.getwemail.io/images/social-icons/solid-color-facebook=
+.png]
+[https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-=
+9f26-414d-b7c3-1fc6d77f9143:313fcf3ee5670cbd651368c1bd2b1f06/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f]=20
+ X [https://cdn.getwemail.io/images/social-icons/solid-color-x.png]
+[https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-=
+9f26-414d-b7c3-1fc6d77f9143:e982cf5f8571926d6f0c341594229f51/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f]=20
+ YouTube [https://cdn.getwemail.io/images/social-icons/solid-color-youtube.=
+png]
+[https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-=
+9f26-414d-b7c3-1fc6d77f9143:4141a0829fbc9fbf7c66ebcc1d1a32c8/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f]=20
+ LinkedIn
+[https://cdn.getwemail.io/images/social-icons/solid-color-linkedin.png]
+[https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-=
+9f26-414d-b7c3-1fc6d77f9143:1f77c79a556cd3f67fec7fd0e0bd3bcc/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f]=20
+ This email was sent to info@erciyesyapayzeka.com.tr because you have opted=
+ in
+on our website. If you would prefer not to receive any email from us in the
+future, please unsubscribe
+[https://app.getwemail.io/campaigns/30ef8faf-9f26-414d-b7c3-1fc6d77f9143/su=
+bscribers/0f7d2acd1af6b285953f03dcbe3b43be/unsubscribe?email_id=3Df01f195e-=
+400b-4363-96e0-27eaf817a95f]
+=2E
+Copyright =C2=A9 2026 weDevs Pte. Ltd. 160 Robinson Road, #14-04 SBF Centre=
+, SG-01,
+Singapore, 068914.
+
+[https://api.getwemail.io/campaigns/30ef8faf-9f26-414d-b7c3-1fc6d77f9143/su=
+bscribers/0f7d2acd1af6b285953f03dcbe3b43be/track?email_id=3Df01f195e-400b-4=
+363-96e0-27eaf817a95f&sid=3D0f7d2acd1af6b285953f03dcbe3b43be&cb=3D176977461=
+4405-pi1s21k1bvh]
+
+--mk3-b53b83312a6c4fcc8f35eecdc970fc38
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"box-sizing: border-bo=
+x; font-family: sans-serif; line-height: 1.15; -webkit-text-size-adjust: 10=
+0%; -ms-text-size-adjust: 100%; -ms-overflow-style: scrollbar; -webkit-tap-=
+highlight-color: transparent;">
+<head>
+    <title>weMail Email Campaign</title>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <style>@import url('https://fonts.googleapis.com/css2?family=3DLato:ita=
+l,wght@0,400;0,700;1,400;1,700&display=3Dswap');</style>
+    <!-- weMail styles -->
+<!--     <style>CUSTOMIZER_CSS</style> -->
+
+    <!-- litmus styles -->
+    <style type=3D"text/css">
+[tabindex=3D"-1"]:focus {
+  outline: none !important;
+}
+a:hover {
+  color: #003f5e;
+  text-decoration: underline;
+}
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+button::-moz-focus-inner,
+[type=3D"button"]::-moz-focus-inner,
+[type=3D"reset"]::-moz-focus-inner,
+[type=3D"submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.empty-content-zone.hovering-content .content-dropzone-placeholder {
+  background: rgba(0, 115, 170, .2);
+  border: 1px dashed #0073aa;
+}
+.responsive-table > tbody > tr > td .control-buttons i.disabled i:hover {
+  background-color: #23282d;
+}
+.responsive-table > tbody > tr > td .control-buttons i:hover {
+  background-color: #0073aa;
+}
+.responsive-table > tbody > tr > td:hover .control-buttons {
+  display: block;
+}
+@media screen and (max-width: 525px) {
+  .wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .wemail-content-image {
+    margin: 0!important;
+  }
+
+  .wemail-content-button {
+    margin-bottom: 10px;
+  }
+
+  .content-text-extra-padding {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .img-max {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .responsive-table {
+    width: 100% !important;
+  }
+
+  .section.section-top .wemail-content-text,
+.section.section-top .wemail-content-text p {
+    text-align: center !important;
+  }
+}
+</style>
+=20=20=20=20
+    <style type=3D"text/css">a{ color:#28B0F1;text-decoration:underline;}</=
+style>
+</head>
+<body style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; font-family: Arial, sans-serif; font-size: 0.875rem=
+; font-weight: normal; line-height: 1.5; color: #23282d; text-align: left; =
+background-color: #fff; height: 100%; width: 100%; margin: 0; padding: 0;">
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style=3D"box-sizing: border-box; display: none; font-size: 1px; co=
+lor: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; =
+max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Back to regular price tomorrow&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+    </div>
+
+    <div data-server-rendered=3D"true" style=3D"box-sizing: border-box;"><d=
+iv id=3D"wemail-customizer" style=3D"box-sizing: border-box; position: rela=
+tive; padding-top: 10px; padding-bottom: 0px; background-color: #F4FBF7;"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top-style=
+: solid; background-color: #F4FBF7; padding-bottom: 0px; font-family: Lato,=
+ sans-serif; color: #59595F; border-top-width: 0px; font-size: 16px; paddin=
+g-top: 10px; border-top-color: #0073aa; border-collapse: collapse;" bgcolor=
+=3D"#F4FBF7"><tr class=3D"section section-top" style=3D"box-sizing: border-=
+box;"><td align=3D"center" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"responsive-table section-wrapper" style=3D"box-sizing=
+: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: transparent;=
+ color: inherit; border-top-color: #1e73be; border-top-style: solid; border=
+-bottom-color: #1e73be; border-left: 0; font-family: inherit; padding-botto=
+m: 0px; border-top-width: 0px; border-right: 0; border-bottom-style: solid;=
+ font-size: inherit; margin-bottom: 0px; padding-top: 0px; border-bottom-wi=
+dth: 0px; max-width: 600px; border-collapse: collapse;" bgcolor=3D"transpar=
+ent"><tbody data-section-index=3D"0" style=3D"box-sizing: border-box;"><tr =
+data-source=3D"iframe" data-content-type=3D"image" data-section-index=3D"0"=
+ data-content-index=3D"0" class=3D"content-wrapper" style=3D"box-sizing: bo=
+rder-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt; position: relative;"><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-c=
+ollapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"cent=
+er" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjus=
+t: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; font-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><tabl=
+e align=3D"left" border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"wrapper" style=3D"box-sizing: border-box; -webkit-text-size=
+-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table=
+-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-b=
+ox;"><td align=3D"center" width=3D"100%" valign=3D"top" class=3D"columns" s=
+tyle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-si=
+ze-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class=
+=3D"wemail-content-image" style=3D"box-sizing: border-box; background-color=
+: #ffffff; border-color: #e5e5e5; padding-bottom: 15px; text-align: center;=
+ border-width: 0px; padding-right: 15px; margin-bottom: 0px; padding-top: 1=
+5px; border-style: solid; padding-left: 15px; max-width: 200px;"><a href=3D=
+"https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-=
+9f26-414d-b7c3-1fc6d77f9143:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; background-color: transparent; -webkit-text-decoration-skip: o=
+bjects; -ms-touch-action: manipulation; touch-action: manipulation; color: =
+#28B0F1; text-decoration: underline; display: block;"><img src=3D"https://w=
+edevs.s3.amazonaws.com/uploads/2025/08/WP-Project-Manager-Logo.png" style=
+=3D"box-sizing: border-box; -ms-interpolation-mode: bicubic; border: 0; lin=
+e-height: 100%; outline: none; text-decoration: none; vertical-align: middl=
+e; border-style: none; max-width: 100%; height: auto;" height=3D"auto"></a>=
+</div></td></tr></table></td></tr></table></td></tr></tbody></table></td></=
+tr><tr class=3D"section section-head" style=3D"box-sizing: border-box;"><td=
+ align=3D"center" style=3D"box-sizing: border-box; -webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"responsive-table section-wrapper" style=3D"box-sizing: border-=
+box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; background-color: transparent; color: i=
+nherit; border-top-color: #1e73be; border-top-style: solid; border-bottom-c=
+olor: #1e73be; border-left: 0; font-family: inherit; padding-bottom: 0px; b=
+order-top-width: 0px; border-right: 0; border-bottom-style: solid; font-siz=
+e: inherit; margin-bottom: 0px; padding-top: 0px; border-bottom-width: 0px;=
+ max-width: 600px; border-collapse: collapse;" bgcolor=3D"transparent"><tbo=
+dy data-section-index=3D"1" style=3D"box-sizing: border-box;"><tr data-sour=
+ce=3D"iframe" data-content-type=3D"image" data-section-index=3D"1" data-con=
+tent-index=3D"0" class=3D"content-wrapper" style=3D"box-sizing: border-box;=
+"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; posit=
+ion: relative;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-=
+size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-t=
+able-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse: co=
+llapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=
+=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -=
+ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; fo=
+nt-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><table align=3D=
+"left" border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"wrapper" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 10=
+0%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0p=
+t; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td al=
+ign=3D"center" width=3D"100%" valign=3D"top" class=3D"columns" style=3D"box=
+-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: =
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class=3D"wemail-c=
+ontent-image" style=3D"box-sizing: border-box; background-color: #ffffff; b=
+order-color: #e5e5e5; padding-bottom: 15px; text-align: center; border-widt=
+h: 0px; padding-right: 15px; margin-bottom: 0px; padding-top: 15px; border-=
+style: solid; padding-left: 15px; max-width: 1622px;"><a href=3D"https://30=
+ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-9f26-414d-b=
+7c3-1fc6d77f9143:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b285953f03dcb=
+e3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f" style=3D"box-sizin=
+g: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+background-color: transparent; -webkit-text-decoration-skip: objects; -ms-t=
+ouch-action: manipulation; touch-action: manipulation; color: #28B0F1; text=
+-decoration: underline; display: block;"><img src=3D"https://wedevs.s3.amaz=
+onaws.com/uploads/2026/01/11.webp" style=3D"box-sizing: border-box; -ms-int=
+erpolation-mode: bicubic; border: 0; line-height: 100%; outline: none; text=
+-decoration: none; vertical-align: middle; border-style: none; max-width: 1=
+00%; height: auto;" height=3D"auto"></a></div></td></tr></table></td></tr><=
+/table></td></tr><tr data-source=3D"iframe" data-content-type=3D"text" data=
+-section-index=3D"1" data-content-index=3D"1" class=3D"content-wrapper" sty=
+le=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; position: relative;"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizi=
+ng: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;=
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bot=
+tom: 0px; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"=
+><td align=3D"center" valign=3D"top" style=3D"box-sizing: border-box; -webk=
+it-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; font-size: 0; background-color: #ffffff;" bgcolor=
+=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing: border-box; displa=
+y: inline-block; width: 100%; vertical-align: top;"><table align=3D"left" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box=
+-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: =
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collap=
+se;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"t=
+op" class=3D"content-text-extra-padding" style=3D"box-sizing: border-box; -=
+webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace=
+: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse:=
+ collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: =
+border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 15px; padding-right=
+: 15px; padding-bottom: 15px; padding-left: 15px; border-width: 0px; border=
+-style: solid; border-color: #e5e5e5;"><table cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing=
+: border-box;"><td align=3D"left" valign=3D"middle" style=3D"box-sizing: bo=
+rder-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"we=
+mail-content-text" style=3D"box-sizing: border-box;"><p style=3D"box-sizing=
+: border-box; margin-top: 0; margin-bottom: 1rem;"><span style=3D"box-sizin=
+g: border-box; margin-bottom: 0; font-size: 16px;">Hi mr.ozdemir34,</span><=
+/p>
+<p style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;"><s=
+pan style=3D"box-sizing: border-box; margin-bottom: 0; font-size: 16px;">Fa=
+iling to meet project deadlines can cost you money and valuable clients. Wi=
+th <strong style=3D"box-sizing: border-box; font-weight: bolder; margin-bot=
+tom: 0;">WP Project Manager</strong>, you can not only track time but also =
+visualize project progress using Gantt and Kanban boards.</span></p>
+<p style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;"><s=
+pan style=3D"box-sizing: border-box; font-size: 16px;">You can also set mil=
+estones, open project discussions, share files, create billing invoices, in=
+tegrate with Slack, and more. So, e</span><span style=3D"box-sizing: border=
+-box; margin-bottom: 0; font-size: 16px;">verything stays in control, and y=
+our team stays focused.</span></p>
+<p style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><span=
+ style=3D"box-sizing: border-box; margin-bottom: 0; font-size: 16px;">Don&r=
+squo;t miss out on <strong style=3D"box-sizing: border-box; font-weight: bo=
+lder; margin-bottom: 0;">up to 35% off WP Project Manager</strong>. Act fas=
+t before the deal ends.</span></p></div></td></tr></table></td></tr></table=
+></td></tr></table></div> <!----></td></tr></table></td></tr><tr data-sourc=
+e=3D"iframe" data-content-type=3D"text" data-section-index=3D"1" data-conte=
+nt-index=3D"2" class=3D"content-wrapper" style=3D"box-sizing: border-box;">=
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; positio=
+n: relative;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse: coll=
+apse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D=
+"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-=
+size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><div class=3D"wrap=
+per" style=3D"box-sizing: border-box; display: inline-block; width: 100%; v=
+ertical-align: top;"><table align=3D"left" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-te=
+xt-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: b=
+order-box;"><td align=3D"center" valign=3D"top" class=3D"content-text-extra=
+-padding" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; =
+-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; p=
+adding-right: 0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: border-box; -webk=
+it-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizi=
+ng: border-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adj=
+ust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; paddin=
+g-left: 0px; border-width: 0px; border-style: solid; border-color: #e5e5e5;=
+"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" st=
+yle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collap=
+se: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"left" val=
+ign=3D"middle" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt; font-size: 16px;"><div class=3D"wemail-content-text" style=3D"box-sizin=
+g: border-box;"><table align=3D"center" style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; margin-bottom: 0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0;"><img class style=3D"box-sizing: border-box; -ms-interpolation-m=
+ode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; te=
+xt-decoration: none; vertical-align: middle; border-style: none; margin-bot=
+tom: 0; display: block; max-width: 100%;" src=3D"https://gen.sendtric.com/c=
+ountdown/nz6mgh3snk" width=3D"327" height=3D"auto"></td>
+</tr>
+</tbody>
+</table></div></td></tr></table></td></tr></table></td></tr></table></div> =
+<!----></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-=
+type=3D"button" data-section-index=3D"1" data-content-index=3D"3" class=3D"=
+content-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table ali=
+gn=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-widt=
+h: 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-=
+sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizin=
+g: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block; vertic=
+al-align: top; width: 100%;" width=3D"100%"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box=
+-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: =
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collap=
+se;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-=
+box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; padding: 16px; background-color: #fffff=
+f; margin-bottom: 0px; text-align: center;" bgcolor=3D"#ffffff" align=3D"ce=
+nter"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" width=3D"100%" class=3D"wrapper" style=3D"box-sizing: border-box; -webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; width: 100%; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td valign=3D"middle" width=3D"100%" style=3D"=
+box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjus=
+t: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><d=
+iv class=3D"wemail-content-button" style=3D"box-sizing: border-box;"><a hre=
+f=3D"https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8=
+faf-9f26-414d-b7c3-1fc6d77f9143:296e809350a39c421a2cb2e1ec101938/0f7d2acd1a=
+f6b285953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f" sty=
+le=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size=
+-adjust: 100%; -webkit-text-decoration-skip: objects; -ms-touch-action: man=
+ipulation; touch-action: manipulation; border: 0px none #176598; background=
+-color: #611ED2; border-color: #e5e5e5; color: #fff; text-align: center; di=
+splay: inline-block; padding-right: 65px; text-decoration: none; padding-bo=
+ttom: 18px; border-radius: 26px; border-width: 0px; font-size: 16px; line-h=
+eight: 1; padding-top: 18px; border-style: solid; padding-left: 65px; font-=
+weight: bold; text-transform: none;">=F0=9F=91=89 Get Up to 35% OFF Now</a>=
+</div></td></tr></table></td></tr></table></td></tr></table></td></tr><tr d=
+ata-source=3D"iframe" data-content-type=3D"divider" data-section-index=3D"1=
+" data-content-index=3D"4" class=3D"content-wrapper" style=3D"box-sizing: b=
+order-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: =
+100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: =
+0pt; position: relative;"><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-c=
+ollapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"cent=
+er" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjus=
+t: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; font-size: 0;"><div class=3D"wrapper" style=3D"box-sizing: border-b=
+ox; display: inline-block; vertical-align: top; width: 100%;"><table align=
+=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" s=
+tyle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-si=
+ze-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" =
+valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ class=3D"wrapperInner" style=3D"box-sizing: border-box; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-bo=
+x;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -m=
+s-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; pad=
+ding: 14px; background-color: #ffffff; line-height: 0;" bgcolor=3D"#ffffff"=
+><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size=
+-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collaps=
+e: collapse;"><tr style=3D"box-sizing: border-box;"><td valign=3D"middle" s=
+tyle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-si=
+ze-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 1=
+6px;"><div class=3D"wemail-content-divider" style=3D"box-sizing: border-box=
+;"><div style=3D"box-sizing: border-box; width: 100%; border-top-style: das=
+hed; margin: 0 auto; border-top-width: 2px; border-top-color: #e5e5e5;">=C2=
+=A0</div></div></td></tr></table></td></tr></table></td></tr></table></div>=
+</td></tr></table></td></tr><tr data-source=3D"iframe" data-content-type=3D=
+"text" data-section-index=3D"1" data-content-index=3D"5" class=3D"content-w=
+rapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-b=
+ox; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; position: relative;"><table align=3D"cen=
+ter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px=
+; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-sizing: =
+border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing: borde=
+r-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; background-color: #ffff=
+ff;" bgcolor=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing: border=
+-box; display: inline-block; width: 100%; vertical-align: top;"><table alig=
+n=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-s=
+ize-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-coll=
+apse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center"=
+ valign=3D"top" class=3D"content-text-extra-padding" style=3D"box-sizing: b=
+order-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperI=
+nner" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; borde=
+r-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 15px; pa=
+dding-right: 15px; padding-bottom: 15px; padding-left: 15px; border-width: =
+0px; border-style: solid; border-color: #e5e5e5;"><table cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-b=
+ox; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D=
+"box-sizing: border-box;"><td align=3D"left" valign=3D"middle" style=3D"box=
+-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: =
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div =
+class=3D"wemail-content-text" style=3D"box-sizing: border-box;"><!-- WP Pro=
+ject Manager Benefits Section -->
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; background-color: #f9fafb; padding: 30px 0; border-collapse: =
+collapse; font-family: Arial, sans-serif;" border=3D"0" width=3D"100%" cell=
+spacing=3D"0" cellpadding=3D"0" bgcolor=3D"#f9fafb">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td align=3D"center" style=3D"box-sizing: border-box; -webkit-text-size-adj=
+ust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; margin-bottom: 0;"><!-- Section Wrapper -->
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; max-width: 600px; width: 100%; background-color: #ffffff; bor=
+der-radius: 0; overflow: hidden; border-collapse: collapse;" border=3D"0" w=
+idth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff"><!-- =
+Section Title -->
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 10px 20px 20px 20px; text-align: center; font-size: 28p=
+x; font-weight: bold; color: #111827;" align=3D"center">Why You Should Cons=
+ider <br style=3D"box-sizing: border-box; margin-bottom: 0;">WP Project Man=
+ager</td>
+</tr>
+<!-- Row 1 -->
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 0 20px 10px 20px;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: =
+0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;"><!-- Card 1 -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+-right: 5px; padding-bottom: 10px;" valign=3D"top" width=3D"50%">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; background: #fff7ed; border-radius: 12px; height: 100%; borde=
+r-collapse: collapse;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"15" height=3D"100%">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 16px 10px 16px 20px; vertical-align: top;" valign=3D"to=
+p"><strong style=3D"box-sizing: border-box; font-weight: bolder; font-size:=
+ 16px; color: #111827;">Flat Pricing</strong> <span style=3D"box-sizing: bo=
+rder-box; margin-bottom: 0; font-size: 14px; color: #4b5563; display: block=
+; margin-top: 8px;">No per-user fee. Pay once for unlimited projects and us=
+ers.</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- Card 2 -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding-left: 5px; padding-bottom: 10px;" valign=3D"top" width=
+=3D"50%">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; background: #ecfdf5; border-radius: 12px; height: 100%; borde=
+r-collapse: collapse;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"15" height=3D"100%">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 16px 10px 16px 20px; vertical-align: top;" valign=3D"to=
+p"><strong style=3D"box-sizing: border-box; font-weight: bolder; font-size:=
+ 16px; color: #111827;">Full Data Ownership</strong> <span style=3D"box-siz=
+ing: border-box; margin-bottom: 0; font-size: 14px; color: #4b5563; display=
+: block; margin-top: 8px;">All data stays on your WordPress site with full =
+control.</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 0 20px 10px 20px;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: =
+0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;"><!-- Card 3 -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+-right: 5px; padding-bottom: 10px;" valign=3D"top" width=3D"50%">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; background: #fff1f2; border-radius: 12px; height: 100%; borde=
+r-collapse: collapse;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"15" height=3D"100%">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 16px 10px 16px 20px; vertical-align: top;" valign=3D"to=
+p"><strong style=3D"box-sizing: border-box; font-weight: bolder; font-size:=
+ 16px; color: #111827;">All-in-One Workspace</strong> <span style=3D"box-si=
+zing: border-box; margin-bottom: 0; font-size: 14px; color: #4b5563; displa=
+y: block; margin-top: 8px;">Manage tasks, Kanban, Gantt, files, time, and c=
+hats easily.</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- Card 4 -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding-left: 5px; padding-bottom: 10px;" valign=3D"top" width=
+=3D"50%">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; background: #fef3c7; border-radius: 12px; height: 100%; borde=
+r-collapse: collapse;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"15" height=3D"100%">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 16px 10px 16px 20px; vertical-align: top;" valign=3D"to=
+p"><strong style=3D"box-sizing: border-box; font-weight: bolder; font-size:=
+ 16px; color: #111827;">Smart Integrations</strong> <span style=3D"box-sizi=
+ng: border-box; margin-bottom: 0; font-size: 14px; color: #4b5563; display:=
+ block; margin-top: 8px;">Connect Slack, WooCommerce, BuddyPress, and more.=
+</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 0 20px 30px 20px;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: =
+0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;"><!-- Card 5 -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+-right: 5px;" valign=3D"top" width=3D"50%">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; background: #eef2ff; border-radius: 12px; height: 100%; borde=
+r-collapse: collapse;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"15" height=3D"100%">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 16px 10px 16px 20px; vertical-align: top;" valign=3D"to=
+p"><strong style=3D"box-sizing: border-box; font-weight: bolder; font-size:=
+ 16px; color: #111827;">Reports &amp; Insights</strong> <span style=3D"box-=
+sizing: border-box; margin-bottom: 0; font-size: 14px; color: #4b5563; disp=
+lay: block; margin-top: 8px;">Track progress, performance, and milestones i=
+n one place.</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- Card 6 -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding-left: 5px;" valign=3D"top" width=3D"50%">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; background: #fff7ed; border-radius: 12px; height: 100%; borde=
+r-collapse: collapse;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"15" height=3D"100%">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 16px 10px 16px 20px; vertical-align: top;" valign=3D"to=
+p"><strong style=3D"box-sizing: border-box; font-weight: bolder; font-size:=
+ 16px; color: #111827;">Frontend Access</strong> <span style=3D"box-sizing:=
+ border-box; margin-bottom: 0; font-size: 14px; color: #4b5563; display: bl=
+ock; margin-top: 8px;">Access projects from the frontend without a backend =
+login.</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- End of Rows --></tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table></div></td></tr></table></td></tr></table></td></tr></table></div> =
+<!----></td></tr></table></td></tr></tbody></table></td></tr><tr class=3D"s=
+ection section-body" style=3D"box-sizing: border-box;"><td align=3D"center"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"resp=
+onsive-table section-wrapper" style=3D"box-sizing: border-box; -webkit-text=
+-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; background-color: transparent; color: inherit; border-to=
+p-color: #1e73be; border-top-style: solid; border-bottom-color: #1e73be; bo=
+rder-left: 0; font-family: inherit; padding-bottom: 0px; border-top-width: =
+0px; border-right: 0; border-bottom-style: solid; font-size: inherit; margi=
+n-bottom: 0px; padding-top: 0px; border-bottom-width: 0px; max-width: 600px=
+; border-collapse: collapse;" bgcolor=3D"transparent"><tbody data-section-i=
+ndex=3D"2" style=3D"box-sizing: border-box;"><tr data-source=3D"iframe" dat=
+a-content-type=3D"button" data-section-index=3D"2" data-content-index=3D"0"=
+ class=3D"content-wrapper" style=3D"box-sizing: border-box;"><td style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;">=
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100=
+%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+; max-width: 600px; margin-bottom: 0px; border-collapse: collapse;"><tr sty=
+le=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D=
+"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adju=
+st: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-blo=
+ck; vertical-align: top; width: 100%;" width=3D"100%"><table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" st=
+yle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collap=
+se: collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizin=
+g: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 16px; background-col=
+or: #ffffff; margin-bottom: 0px; text-align: center;" bgcolor=3D"#ffffff" a=
+lign=3D"center"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0" width=3D"100%" class=3D"wrapper" style=3D"box-sizing: border-bo=
+x; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; width: 100%; border-collapse: collapse;">=
+<tr style=3D"box-sizing: border-box;"><td valign=3D"middle" width=3D"100%" =
+style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-s=
+ize-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: =
+16px;"><div class=3D"wemail-content-button" style=3D"box-sizing: border-box=
+;"><a href=3D"https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.=
+com/30ef8faf-9f26-414d-b7c3-1fc6d77f9143:296e809350a39c421a2cb2e1ec101938/0=
+f7d2acd1af6b285953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817=
+a95f" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; -webkit-text-decoration-skip: objects; -ms-touch-ac=
+tion: manipulation; touch-action: manipulation; border: 0px none #176598; b=
+ackground-color: #611ED2; border-color: #e5e5e5; color: #fff; text-align: c=
+enter; display: inline-block; padding-right: 65px; text-decoration: none; p=
+adding-bottom: 18px; border-radius: 26px; border-width: 0px; font-size: 16p=
+x; line-height: 1; padding-top: 18px; border-style: solid; padding-left: 65=
+px; font-weight: bold; text-transform: none;">=F0=9F=91=89 Get Up to 35% OF=
+F Now</a></div></td></tr></table></td></tr></table></td></tr></table></td><=
+/tr><tr data-source=3D"iframe" data-content-type=3D"text" data-section-inde=
+x=3D"2" data-content-index=3D"1" class=3D"content-wrapper" style=3D"box-siz=
+ing: border-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-ad=
+just: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt; position: relative;"><table align=3D"center" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-bo=
+x; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; bor=
+der-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D=
+"center" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt; font-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff">=
+<div class=3D"wrapper" style=3D"box-sizing: border-box; display: inline-blo=
+ck; width: 100%; vertical-align: top;"><table align=3D"left" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: bord=
+er-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tab=
+le-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr styl=
+e=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" class=3D"=
+content-text-extra-padding" style=3D"box-sizing: border-box; -webkit-text-s=
+ize-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; padding-right: 0;"><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr=
+ style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -we=
+bkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt; padding-top: 15px; padding-right: 15px; padding=
+-bottom: 15px; padding-left: 15px; border-width: 0px; border-style: solid; =
+border-color: #e5e5e5;"><table cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-ad=
+just: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;=
+"><td align=3D"left" valign=3D"middle" style=3D"box-sizing: border-box; -we=
+bkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-=
+text" style=3D"box-sizing: border-box;"><!-- Testimonials Section =E2=80=93=
+ 600px Wide, Cards with #f9fafb Background, No Shadow -->
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; padding: 30px 0; border-collapse: collapse; font-family: Aria=
+l, sans-serif;" role=3D"presentation" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td align=3D"center" style=3D"box-sizing: border-box; -webkit-text-size-adj=
+ust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; margin-bottom: 0;"><!-- Main Container -->
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; max-width: 600px; width: 100%; border-collapse: collapse;" ro=
+le=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;"><!-- Testimonial 1 =
+-->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 7px;" valign=3D"top" width=3D"33.33%">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; background-color: #f9fafb; border-radius: 16px; padding: 20px=
+; transition: all 0.3s; border-collapse: collapse;" role=3D"presentation" w=
+idth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#f9fafb">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; color: #ffb703; font-size: 18px; letter-spacing: 2px; text-align=
+: center; padding-top: 5px;" align=3D"center">=E2=98=85=E2=98=85=E2=98=85=
+=E2=98=85=E2=98=85</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 10px 0 5px 0; color: #1f2937; font-size: 15px; line-hei=
+ght: 1.5; font-weight: 600; text-align: center;" align=3D"center">&ldquo;Af=
+ter two months of heavy use, I love this plugin.&rdquo;</td>
+</tr>
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; color: #6b7280; font-size: 14px; text-align: center; padding-bot=
+tom: 5px;" align=3D"center">&mdash; Mariano Velazquez</td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- Testimonial 2 -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+: 7px;" valign=3D"top" width=3D"33.33%">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; background-color: #f9fafb; border-radius: 16px; padding: 20px=
+; transition: all 0.3s; border-collapse: collapse;" role=3D"presentation" w=
+idth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#f9fafb">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; color: #ffb703; font-size: 18px; letter-spacing: 2px; text-align=
+: center; padding-top: 5px;" align=3D"center">=E2=98=85=E2=98=85=E2=98=85=
+=E2=98=85=E2=98=85</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 10px 0 5px 0; color: #1f2937; font-size: 15px; line-hei=
+ght: 1.5; font-weight: 600; text-align: center;" align=3D"center">&ldquo;WP=
+ PM is by far the best with great support.&rdquo;</td>
+</tr>
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; color: #6b7280; font-size: 14px; text-align: center; padding-bot=
+tom: 5px;" align=3D"center">&mdash; Billy Ristuccia</td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- Testimonial 3 -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 7px;" valign=3D"top" width=3D"33.33%">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; background-color: #f9fafb; border-radius: 16px; padding: 20px=
+; transition: all 0.3s; border-collapse: collapse;" role=3D"presentation" w=
+idth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#f9fafb">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; color: #ffb703; font-size: 18px; letter-spacing: 2px; text-align=
+: center; padding-top: 5px;" align=3D"center">=E2=98=85=E2=98=85=E2=98=85=
+=E2=98=85=E2=98=85</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 10px 0 5px 0; color: #1f2937; font-size: 15px; line-hei=
+ght: 1.5; font-weight: 600; text-align: center;" align=3D"center">&ldquo;Tr=
+uly exceptional customer service and support.&rdquo;</td>
+</tr>
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; color: #6b7280; font-size: 14px; text-align: center; padding-bot=
+tom: 5px;" align=3D"center">&mdash; David Hickson</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table></div></td></tr></table></td></tr></table></td></tr></table></div> =
+<!----></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-=
+type=3D"text" data-section-index=3D"2" data-content-index=3D"2" class=3D"co=
+ntent-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: b=
+order-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width:=
+ 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-si=
+zing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; background-color:=
+ #ffffff;" bgcolor=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing: =
+border-box; display: inline-block; width: 100%; vertical-align: top;"><tabl=
+e align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; borde=
+r-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"c=
+enter" valign=3D"top" class=3D"content-text-extra-padding" style=3D"box-siz=
+ing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wra=
+pperInner" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%;=
+ -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 15p=
+x; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; border-wi=
+dth: 0px; border-style: solid; border-color: #e5e5e5;"><table cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: b=
+order-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr s=
+tyle=3D"box-sizing: border-box;"><td align=3D"left" valign=3D"middle" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;=
+"><div class=3D"wemail-content-text" style=3D"box-sizing: border-box;"><p s=
+tyle=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><span sty=
+le=3D"box-sizing: border-box; margin-bottom: 0; font-size: 16px;">Don&rsquo=
+;t just run after deadlines - take control of them. With the right project =
+tool, it&rsquo;s easier than you think. Grab the discount before it&rsquo;s=
+ gone. You&rsquo;ll thank yourself later!</span></p></div></td></tr></table=
+></td></tr></table></td></tr></table></div> <!----></td></tr></table></td><=
+/tr><tr data-source=3D"iframe" data-content-type=3D"text" data-section-inde=
+x=3D"2" data-content-index=3D"3" class=3D"content-wrapper" style=3D"box-siz=
+ing: border-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-ad=
+just: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt; position: relative;"><table align=3D"center" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-bo=
+x; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; bor=
+der-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D=
+"center" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt; font-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff">=
+<div class=3D"wrapper" style=3D"box-sizing: border-box; display: inline-blo=
+ck; width: 100%; vertical-align: top;"><table align=3D"left" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: bord=
+er-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tab=
+le-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr styl=
+e=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" class=3D"=
+content-text-extra-padding" style=3D"box-sizing: border-box; -webkit-text-s=
+ize-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; padding-right: 0;"><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr=
+ style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -we=
+bkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt; padding-top: 12px; padding-right: 15px; padding=
+-bottom: 12px; padding-left: 15px; border-width: 0px; border-style: solid; =
+border-color: #e5e5e5;"><table cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-ad=
+just: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;=
+"><td align=3D"left" valign=3D"middle" style=3D"box-sizing: border-box; -we=
+bkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-=
+text" style=3D"box-sizing: border-box;"><p style=3D"box-sizing: border-box;=
+ margin-top: 0; margin-bottom: 0;"><span style=3D"box-sizing: border-box; f=
+ont-size: 16px;">Happy managing!</span><br style=3D"box-sizing: border-box;=
+"><span style=3D"box-sizing: border-box; margin-bottom: 0; font-size: 16px;=
+">Team WP Project Manager</span></p></div></td></tr></table></td></tr></tab=
+le></td></tr></table></div> <!----></td></tr></table></td></tr><tr data-sou=
+rce=3D"iframe" data-content-type=3D"divider" data-section-index=3D"2" data-=
+content-index=3D"4" class=3D"content-wrapper" style=3D"box-sizing: border-b=
+ox;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -=
+ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; po=
+sition: relative;"><table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-te=
+xt-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse:=
+ collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" vali=
+gn=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%;=
+ -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+font-size: 0;"><div class=3D"wrapper" style=3D"box-sizing: border-box; disp=
+lay: inline-block; vertical-align: top; width: 100%;"><table align=3D"left"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: coll=
+apse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D=
+"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D=
+"wrapperInner" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td s=
+tyle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-si=
+ze-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 15p=
+x; background-color: #ffffff; line-height: 0;" bgcolor=3D"#ffffff"><table c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box=
+-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: =
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collap=
+se;"><tr style=3D"box-sizing: border-box;"><td valign=3D"middle" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><di=
+v class=3D"wemail-content-divider" style=3D"box-sizing: border-box;"><div s=
+tyle=3D"box-sizing: border-box; width: 100%; border-top-style: dashed; marg=
+in: 0 auto; border-top-width: 2px; border-top-color: #e5e5e5;">=C2=A0</div>=
+</div></td></tr></table></td></tr></table></td></tr></table></div></td></tr=
+></table></td></tr><tr data-source=3D"iframe" data-content-type=3D"text" da=
+ta-section-index=3D"2" data-content-index=3D"5" class=3D"content-wrapper" s=
+tyle=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -webk=
+it-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; position: relative;"><table align=3D"center" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-si=
+zing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100=
+%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-b=
+ottom: 0px; border-collapse: collapse;"><tr style=3D"box-sizing: border-box=
+;"><td align=3D"center" valign=3D"top" style=3D"box-sizing: border-box; -we=
+bkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt; font-size: 0; background-color: #ffffff;" bgcol=
+or=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing: border-box; disp=
+lay: inline-block; width: 100%; vertical-align: top;"><table align=3D"left"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: coll=
+apse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D=
+"top" class=3D"content-text-extra-padding" style=3D"box-sizing: border-box;=
+ -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse:=
+ collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: =
+border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 15px; padding-right=
+: 15px; padding-bottom: 15px; padding-left: 15px; border-width: 0px; border=
+-style: solid; border-color: #e5e5e5;"><table cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing=
+: border-box;"><td align=3D"left" valign=3D"middle" style=3D"box-sizing: bo=
+rder-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"we=
+mail-content-text" style=3D"box-sizing: border-box;"><table role=3D"present=
+ation" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"box-sizi=
+ng: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;=
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: 0; border-col=
+lapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;"><!-- Logo on the le=
+ft -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertica=
+l-align: middle; padding-right: 20px;" align=3D"left" width=3D"100" valign=
+=3D"middle"><img style=3D"box-sizing: border-box; -ms-interpolation-mode: b=
+icubic; border: 0; line-height: 100%; outline: none; text-decoration: none;=
+ vertical-align: middle; border-style: none; margin-bottom: 0; display: blo=
+ck; max-width: 80px; height: auto;" src=3D"https://wedevs.s3.amazonaws.com/=
+uploads/2013/05/wedevs-logo-big.png" alt=3D"weDevs Logo" width=3D"80" heigh=
+t=3D"auto"></td>
+<!-- Text + CTA on the right -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; vertical-align: middle;" valign=3D"middle">
+<h2 style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; =
+font-family: inherit; margin: 0px 0px 4px; font-size: 18px; font-weight: bo=
+ld; color: #1f2937; line-height: 1.3;"><a href=3D"https://30ef8faf-9f26-414=
+d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-9f26-414d-b7c3-1fc6d77f914=
+3:fab28ecc3ff52688912785e165001c27/0f7d2acd1af6b285953f03dcbe3b43be?email_i=
+d=3Df01f195e-400b-4363-96e0-27eaf817a95f" style=3D"box-sizing: border-box; =
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-colo=
+r: transparent; -webkit-text-decoration-skip: objects; -ms-touch-action: ma=
+nipulation; touch-action: manipulation; color: #28B0F1; text-decoration: un=
+derline; margin-bottom: 0;">Join the weDevs Community</a></h2>
+<p style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0; margin=
+: 0px 0px 12px; font-size: 13px; color: #6b7280; line-height: 1.4;">Connect=
+ with thousands of WordPress developers and enthusiasts, and receive our pr=
+oduct updates in real-time.</p>
+<!-- Centered button (middle-aligned with the text block) --></td>
+</tr>
+</tbody>
+</table></div></td></tr></table></td></tr></table></td></tr></table></div> =
+<!----></td></tr></table></td></tr></tbody></table></td></tr><tr class=3D"s=
+ection section-footer" style=3D"box-sizing: border-box;"><td align=3D"cente=
+r" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"re=
+sponsive-table section-wrapper" style=3D"box-sizing: border-box; -webkit-te=
+xt-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; background-color: transparent; color: inherit; border-=
+top-color: #1e73be; border-top-style: solid; border-bottom-color: #1e73be; =
+border-left: 0; font-family: inherit; padding-bottom: 0px; border-top-width=
+: 0px; border-right: 0; border-bottom-style: solid; font-size: inherit; mar=
+gin-bottom: 0px; padding-top: 0px; border-bottom-width: 0px; max-width: 600=
+px; border-collapse: collapse;" bgcolor=3D"transparent"><tbody data-section=
+-index=3D"3" style=3D"box-sizing: border-box;"><tr data-source=3D"iframe" d=
+ata-content-type=3D"socialFollow" data-section-index=3D"3" data-content-ind=
+ex=3D"0" class=3D"content-wrapper" style=3D"box-sizing: border-box;"><td st=
+yle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: rel=
+ative;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-ad=
+just: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse: collapse;=
+"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size:=
+ 0;"><div class=3D"wrapper" style=3D"box-sizing: border-box; display: inlin=
+e-block; vertical-align: top; width: 100%;"><table align=3D"left" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr=
+ style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperI=
+nner" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; borde=
+r-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: rgb=
+(247,248,249); padding: 15px; border-width: 0px; border-style: solid; borde=
+r-color: #e5e5e5;" bgcolor=3D"rgb(247,248,249)"><table cellpadding=3D"0" ce=
+llspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-box=
+; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"b=
+ox-sizing: border-box;"><td align=3D"left" valign=3D"middle" style=3D"box-s=
+izing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10=
+0%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div cl=
+ass=3D"wemail-content-social-follow" style=3D"box-sizing: border-box; line-=
+height: 0; text-align: center; padding: 15px; display: block;"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"social-follow-table ho=
+rizontal-icons default-icons align-center" style=3D"box-sizing: border-box;=
+ -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-size: 12px; display: inline-block; wid=
+th: auto; margin-right: 15px; border-collapse: collapse;" width=3D"auto"><t=
+r style=3D"box-sizing: border-box;"><td valign=3D"middle" class=3D"image-co=
+ntainer-td" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ padding: 0 3px; line-height: 1;"><a href=3D"https://30ef8faf-9f26-414d-b7c=
+3-1fc6d77f9143-727.wemailtrack.com/30ef8faf-9f26-414d-b7c3-1fc6d77f9143:313=
+fcf3ee5670cbd651368c1bd2b1f06/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3Df=
+01f195e-400b-4363-96e0-27eaf817a95f" style=3D"box-sizing: border-box; -webk=
+it-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: tr=
+ansparent; -webkit-text-decoration-skip: objects; -ms-touch-action: manipul=
+ation; touch-action: manipulation; color: #28B0F1; display: block; text-dec=
+oration: none;"><img src=3D"https://cdn.getwemail.io/images/social-icons/so=
+lid-color-facebook.png" alt=3D"Facebook" style=3D"box-sizing: border-box; -=
+ms-interpolation-mode: bicubic; border: 0; line-height: 100%; outline: none=
+; text-decoration: none; max-width: 100%; vertical-align: middle; border-st=
+yle: none; width: 24px; height: 24px;" width=3D"24" height=3D"24"></a></td>=
+ <!----></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" class=3D"social-follow-table horizontal-icons default-icons align-center"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size:=
+ 12px; display: inline-block; width: auto; margin-right: 15px; border-colla=
+pse: collapse;" width=3D"auto"><tr style=3D"box-sizing: border-box;"><td va=
+lign=3D"middle" class=3D"image-container-td" style=3D"box-sizing: border-bo=
+x; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; padding: 0 3px; line-height: 1;"><a href=
+=3D"https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wemailtrack.com/30ef8f=
+af-9f26-414d-b7c3-1fc6d77f9143:e982cf5f8571926d6f0c341594229f51/0f7d2acd1af=
+6b285953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0-27eaf817a95f" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; background-color: transparent; -webkit-text-decoration-skip: =
+objects; -ms-touch-action: manipulation; touch-action: manipulation; color:=
+ #28B0F1; display: block; text-decoration: none;"><img src=3D"https://cdn.g=
+etwemail.io/images/social-icons/solid-color-x.png" alt=3D"X" style=3D"box-s=
+izing: border-box; -ms-interpolation-mode: bicubic; border: 0; line-height:=
+ 100%; outline: none; text-decoration: none; max-width: 100%; vertical-alig=
+n: middle; border-style: none; width: 24px; height: 24px;" width=3D"24" hei=
+ght=3D"24"></a></td> <!----></tr></table><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" class=3D"social-follow-table horizontal-icons default=
+-icons align-center" style=3D"box-sizing: border-box; -webkit-text-size-adj=
+ust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; font-size: 12px; display: inline-block; width: auto; margin-right=
+: 15px; border-collapse: collapse;" width=3D"auto"><tr style=3D"box-sizing:=
+ border-box;"><td valign=3D"middle" class=3D"image-container-td" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 3px; line-=
+height: 1;"><a href=3D"https://30ef8faf-9f26-414d-b7c3-1fc6d77f9143-727.wem=
+ailtrack.com/30ef8faf-9f26-414d-b7c3-1fc6d77f9143:4141a0829fbc9fbf7c66ebcc1=
+d1a32c8/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3Df01f195e-400b-4363-96e0=
+-27eaf817a95f" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; background-color: transparent; -webkit-tex=
+t-decoration-skip: objects; -ms-touch-action: manipulation; touch-action: m=
+anipulation; color: #28B0F1; display: block; text-decoration: none;"><img s=
+rc=3D"https://cdn.getwemail.io/images/social-icons/solid-color-youtube.png"=
+ alt=3D"YouTube" style=3D"box-sizing: border-box; -ms-interpolation-mode: b=
+icubic; border: 0; line-height: 100%; outline: none; text-decoration: none;=
+ max-width: 100%; vertical-align: middle; border-style: none; width: 24px; =
+height: 24px;" width=3D"24" height=3D"24"></a></td> <!----></tr></table><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"social-follow=
+-table horizontal-icons default-icons align-center" style=3D"box-sizing: bo=
+rder-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt; font-size: 12px; display: inline-b=
+lock; width: auto; border-collapse: collapse;" width=3D"auto"><tr style=3D"=
+box-sizing: border-box;"><td valign=3D"middle" class=3D"image-container-td"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0=
+ 3px; line-height: 1;"><a href=3D"https://30ef8faf-9f26-414d-b7c3-1fc6d77f9=
+143-727.wemailtrack.com/30ef8faf-9f26-414d-b7c3-1fc6d77f9143:1f77c79a556cd3=
+f67fec7fd0e0bd3bcc/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3Df01f195e-400=
+b-4363-96e0-27eaf817a95f" style=3D"box-sizing: border-box; -webkit-text-siz=
+e-adjust: 100%; -ms-text-size-adjust: 100%; background-color: transparent; =
+-webkit-text-decoration-skip: objects; -ms-touch-action: manipulation; touc=
+h-action: manipulation; color: #28B0F1; display: block; text-decoration: no=
+ne;"><img src=3D"https://cdn.getwemail.io/images/social-icons/solid-color-l=
+inkedin.png" alt=3D"LinkedIn" style=3D"box-sizing: border-box; -ms-interpol=
+ation-mode: bicubic; border: 0; line-height: 100%; outline: none; text-deco=
+ration: none; max-width: 100%; vertical-align: middle; border-style: none; =
+width: 24px; height: 24px;" width=3D"24" height=3D"24"></a></td> <!----></t=
+r></table></div></td></tr></table></td></tr></table></td></tr></table></div=
+></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-type=
+=3D"footer" data-section-index=3D"3" data-content-index=3D"1" class=3D"cont=
+ent-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: bor=
+der-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width:=
+ 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-si=
+zing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; color: rgb(132,13=
+3,134); background-color: rgb(247,248,249);" bgcolor=3D"rgb(247,248,249)"><=
+div class=3D"wrapper" style=3D"box-sizing: border-box; display: inline-bloc=
+k; width: 100%; vertical-align: top;"><table align=3D"left" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: borde=
+r-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" class=3D"c=
+ontent-text-extra-padding" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; padding-right: 0;"><table border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: =
+border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr =
+style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -web=
+kit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; padding-top: 15px; padding-right: 15px; padding-=
+bottom: 15px; padding-left: 15px; border-width: 0px; border-style: solid; b=
+order-color: #e5e5e5;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjus=
+t: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><=
+td align=3D"left" valign=3D"middle" style=3D"box-sizing: border-box; -webki=
+t-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt=
+; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-tex=
+t" style=3D"box-sizing: border-box;"><p style=3D"box-sizing: border-box; ma=
+rgin-top: 0; margin-bottom: 0; text-align: center;"><span style=3D"box-sizi=
+ng: border-box; font-size: 11px;">This email was sent to info@erciyesyapayz=
+eka.com.tr because you have opted in on our website. If you would prefer no=
+t to receive any email from us in the future, please <a href=3D"https://app=
+.getwemail.io/campaigns/30ef8faf-9f26-414d-b7c3-1fc6d77f9143/subscribers/0f=
+7d2acd1af6b285953f03dcbe3b43be/unsubscribe?email_id=3Df01f195e-400b-4363-96=
+e0-27eaf817a95f" target=3D"_blank">unsubscribe</a>.<br style=3D"box-sizing:=
+ border-box; margin-bottom: 0;"></span><span style=3D"box-sizing: border-bo=
+x; margin-bottom: 0; font-size: 11px;">Copyright &copy; 2026 weDevs Pte. Lt=
+d. 160 Robinson Road, #14-04 SBF Centre, SG-01, Singapore, 068914.</span></=
+p></div></td></tr></table></td></tr></table></td></tr></table></div> <!----=
+></td></tr></table></td></tr></tbody></table></td></tr></table></div></div>
+    <img src=3D"data:image/gif;base64,R0lGODlhAQABAJEAAP///wAAAAAAAAAAACH5B=
+AkAAAAALAAAAAABAAEAAAgEAAEEBAA7" width=3D"1" height=3D"auto" alt=3D"Web Bug=
+ from https://api.getwemail.io/campaigns/30ef8faf-9f26-414d-b7c3-1fc6d77f91=
+43/subscribers/0f7d2acd1af6b285953f03dcbe3b43be/track?email_id=3Df01f195e-4=
+00b-4363-96e0-27eaf817a95f&sid=3D0f7d2acd1af6b285953f03dcbe3b43be&cb=3D1769=
+774614405-pi1s21k1bvh" />
+</body>
+</html>
+
+--mk3-b53b83312a6c4fcc8f35eecdc970fc38--

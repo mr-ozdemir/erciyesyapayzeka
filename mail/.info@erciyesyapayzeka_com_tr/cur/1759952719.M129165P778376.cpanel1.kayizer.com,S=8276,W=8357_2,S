@@ -1,0 +1,81 @@
+Return-Path: <sila8627sila@gmail.com>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id AFA0A0+/5miI4AsAO6WR3A
+	(envelope-from <sila8627sila@gmail.com>)
+	for <info@erciyesyapayzeka.com.tr>; Wed, 08 Oct 2025 22:45:19 +0300
+Return-path: <sila8627sila@gmail.com>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Wed, 08 Oct 2025 22:45:19 +0300
+Received: from mail-ej1-f53.google.com ([209.85.218.53]:57697)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <sila8627sila@gmail.com>)
+	id 1v6a68-00000003HwG-0S0Z
+	for info@erciyesyapayzeka.com.tr;
+	Wed, 08 Oct 2025 22:45:18 +0300
+Received: by mail-ej1-f53.google.com with SMTP id a640c23a62f3a-b4c89df6145so27435566b.3
+        for <info@erciyesyapayzeka.com.tr>; Wed, 08 Oct 2025 12:44:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1759952674; x=1760557474; darn=erciyesyapayzeka.com.tr;
+        h=to:message-id:subject:date:mime-version:from
+         :content-transfer-encoding:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=LRcuFk4rYpGgyWz/WciqtjrBDnImAb/vkEGEO2nryZE=;
+        b=cNTQezBHhndCYm3apjs2c3+5Q9b3bV6PG8ydkqw2zWRPLHR/nBPzxPHL0e9dajusdW
+         VXHFfdUrgVROG3A1hgrgU0BmPddcfJSEyf+G1Ezp/QKII5QsHlARAur9I+oXLR8/t21v
+         +Y0JPpUBJ+4ExfH0MiKZFaKtsRMpDZgUtx0Nmtz8wEWxKvD73QdZcNlCU2r5UX4ZgaLR
+         fQPFu2UUqx0Iyg1PiqJSciUd9HErewJeX+sXBXghbicyd272KLUHz7EpAJ8M9R3fWmhT
+         gfb68sji/P1t5B6S90ykRo4GX5pJ4K+v+eBBiJDC+gDEoXq5Ygiij3Y6eFEm9EMB4LFk
+         NVmA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1759952674; x=1760557474;
+        h=to:message-id:subject:date:mime-version:from
+         :content-transfer-encoding:x-gm-message-state:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=LRcuFk4rYpGgyWz/WciqtjrBDnImAb/vkEGEO2nryZE=;
+        b=eGQ6ghx+0cBoeMSTpVbKl2CHyo6/wxCaX4Y70yTeG3BoQWN3ILST66w+JI7ofI5qle
+         2XKjaftnrXanFrgIicEj6pPtTvIQ6wTnrnpY/zHfQIMu3Iwl/r5B2WXBldc840SviR9R
+         so9ji7us/y9a9nrHk/V7Sj6oMwR90Q0myJE6zohl59RL0WnfkiikEq+enJgzloynOO5X
+         0shd/Zm7wIs9gROkHzd0Mb45hI54I25seHvIsGJcw0GCE9G1uiZrgOPsyUAka4ghi/y2
+         cjAzBR2ylVL3QrZn8wv+BWCO4aB5ADZrGzANmIe5mBIp33NqrbWd/Y3JUYmW6E2hVvqV
+         kgKg==
+X-Gm-Message-State: AOJu0YxL/nesyKTo7YT0Iq9Vvrry6kxj9zVwwHnLX39bLGJzMApz/2+s
+	Q1sUorlNagLMaCGAnkvw+Y2A/3/Iet6wXJwotyuK5PW6Ku19WYpJzhHv5/XvMA==
+X-Gm-Gg: ASbGncu0JaxapnUwRkb2hzM0oUlFTuXGfIBD5YGkjfYK+4c4Fq8Mds7Kt3q8WetYXwu
+	dpXfKINecHL4nIzCy8uQGMFVQIBAryAkbBV5PAAI78y5Eya7r0o7yO/FzOhCJOrZsxNrAojuy/9
+	U4SpoJ1zJat0Tqm1Za+zM4djc/4/B/Mp6XOMpRiAU1DCS3wgckm+a8zEy98fhdbecukgwIcIKjy
+	k4UhCi8SWYWPhz1KaksMlm9NGIbsObqh/EAxY76sLV1+yweLNXbyzcU9U4wphXtEs3S2uTszrXX
+	Lg0VN13XTubF0aXE32q0V68yCSt54jStZbk8zDp6a7bHfot1m4WUQw/bbbLCU66FiZm7p3Tx3G6
+	REZfyboQy9qJTmqCkbpmR2NyHzQrBVfNx7e9eR7YrER1h8L1ExY2PUaA8PlCNPqpBkBk=
+X-Google-Smtp-Source: AGHT+IFCl4dXJ9SnuYYnyqCDocLXPyO9m5517SaIHX1WwZGuu2Vs0Y3pfU4UUTNQZaWKj5P1AELQbg==
+X-Received: by 2002:a17:907:9448:b0:b40:a71b:151f with SMTP id a640c23a62f3a-b50ac1c4e7cmr551144566b.30.1759952674211;
+        Wed, 08 Oct 2025 12:44:34 -0700 (PDT)
+Received: from smtpclient.apple ([62.244.217.148])
+        by smtp.gmail.com with ESMTPSA id a640c23a62f3a-b4f3c7e057dsm570441366b.88.2025.10.08.12.44.33
+        for <info@erciyesyapayzeka.com.tr>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 08 Oct 2025 12:44:33 -0700 (PDT)
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+From: =?utf-8?Q?S=C4=B1la_Durmu=C5=9F?= <sila8627sila@gmail.com>
+Mime-Version: 1.0 (1.0)
+Date: Wed, 8 Oct 2025 22:44:19 +0300
+Subject: =?utf-8?Q?kul=C3=BCp?=
+Message-Id: <33CCF4B0-0874-4499-B798-052EDC400030@gmail.com>
+To: info@erciyesyapayzeka.com.tr
+X-Mailer: iPhone Mail (22G100)
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: =?ISO-8859-1?Q?Spam_detection_software=2C_running_on_the_system_=22cpanel1=2Ekayize?= =?ISO-8859-1?Q?r=2Ecom=22=2C=0A_has_NOT_identified_this_incoming_ema?= =?ISO-8859-1?Q?il_as_spam=2E__The_original=0A_message_has_been_attac?= =?ISO-8859-1?Q?hed_to_this_so_you_can_view_it_or_label=0A_similar_fu?= =?ISO-8859-1?Q?ture_email=2E__If_you_have_any_questions=2C_see=0A_ro?= =?ISO-8859-1?Q?ot=5C=40localhost_for_details=2E=0A_Content_preview=3A_?= =?ISO-8859-1?Q?_Merhaba_ben_S=C4=B1la=2Cge=C3=A7en_y=C4=B1l_kayseri_?= =?ISO-8859-1?Q?=C3=BCniversitesi_grafik=0A____tasar=C4=B1m=C4=B1ndan?= =?ISO-8859-1?Q?_mezun_oldum_erciyes_=C3=BCniversitesi_=C3=B6=C4=9Fre?= =?ISO-8859-1?Q?ncisi_de=C4=9Filim_fakat=0A____bu_kul=C3=BCbe_kat=C4=B1?= =?ISO-8859-1?Q?lmay=C4=B1_ger=C3=A7ekten_=C3=A7ok_istiyorum_bu_benim?= =?ISO-8859-1?Q?_i=C3=A7in_c_=5B=2E=2E=2E=5D_=0A_Content_analysis_det?= =?ISO-8859-1?Q?ails=3A___=28-0=2E2_points=2C_5=2E0_required=29=0A__p?= =?ISO-8859-1?Q?ts_rule_name______________description=0A_----_-------?= =?ISO-8859-1?Q?---------------_-------------------------------------?= =?ISO-8859-1?Q?-------------=0A__0=2E0_RCVD=5FIN=5FVALIDITY=5FRPBL=5FB?= =?ISO-8859-1?Q?LOCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_The_query_to=0A_?= =?ISO-8859-1?Q?_____________________________Validity_was_blocked=2E_?= =?ISO-8859-1?Q?_See=0A_____________________________https=3A//knowled?= =?ISO-8859-1?Q?ge=2Evalidity=2Ecom/hc/en-us/articles/20961730681243=0A_?= =?ISO-8859-1?Q?_____________________________for_more_information=2E=0A?= =?ISO-8859-1?Q?_____________________________=5B209=2E85=2E218=2E53_l?= =?ISO-8859-1?Q?isted_in_bl=2Escore=2Esenderscore=2Ecom=5D=0A__0=2E0_?= =?ISO-8859-1?Q?RCVD=5FIN=5FVALIDITY=5FSAFE=5FBLOCKED_RBL=3A_ADMINIST?= =?ISO-8859-1?Q?RATOR_NOTICE=3A_The_query_to=0A______________________?= =?ISO-8859-1?Q?________Validity_was_blocked=2E__See=0A______________?= =?ISO-8859-1?Q?_______________https=3A//knowledge=2Evalidity=2Ecom/h?= =?ISO-8859-1?Q?c/en-us/articles/20961730681243=0A___________________?= =?ISO-8859-1?Q?___________for_more_information=2E=0A________________?= =?ISO-8859-1?Q?_____________=5B209=2E85=2E218=2E53_listed_in_sa-accr?= =?ISO-8859-1?Q?edit=2Ehabeas=2Ecom=5D=0A__0=2E0_RCVD=5FIN=5FVALIDITY?= =?ISO-8859-1?Q?=5FCERTIFIED=5FBLOCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_?= =?ISO-8859-1?Q?The=0A_____________________________query_to_Validity_?= =?ISO-8859-1?Q?was_blocked=2E__See=0A_____________________________ht?= =?ISO-8859-1?Q?tps=3A//knowledge=2Evalidity=2Ecom/hc/en-us/articles/?= =?ISO-8859-1?Q?20961730681243=0A______________________________for_mo?= =?ISO-8859-1?Q?re_information=2E=0A__________________________=5B209=2E8?= =?ISO-8859-1?Q?5=2E218=2E53_listed_in_sa-trusted=2Ebondedsender=2Eor?= =?ISO-8859-1?Q?g=5D=0A_-0=2E0_SPF=5FPASS_______________SPF=3A_sender?= =?ISO-8859-1?Q?_matches_SPF_record=0A_-0=2E1_DKIM=5FVALID___________?= =?ISO-8859-1?Q?__Message_has_at_least_one_valid_DKIM_or_DK_signature?= =?ISO-8859-1?Q?=0A_-0=2E1_DKIM=5FVALID=5FEF__________Message_has_a_v?= =?ISO-8859-1?Q?alid_DKIM_or_DK_signature_from=0A____________________?= =?ISO-8859-1?Q?_________envelope-from_domain=0A_-0=2E1_DKIM=5FVALID=5FA?= =?ISO-8859-1?Q?U__________Message_has_a_valid_DKIM_or_DK_signature_f?= =?ISO-8859-1?Q?rom_author's=0A_____________________________domain=0A_?= =?ISO-8859-1?Q?_0=2E1_DKIM=5FSIGNED____________Message_has_a_DKIM_or?= =?ISO-8859-1?Q?_DK_signature=2C_not_necessarily_valid=0A__0=2E0_FREE?= =?ISO-8859-1?Q?MAIL=5FFROM__________Sender_email_is_commonly_abused_?= =?ISO-8859-1?Q?enduser_mail_provider=0A_____________________________?= =?ISO-8859-1?Q?=5Bsila8627sila=28at=29gmail=2Ecom=5D=0A__0=2E0_MIME=5FQ?= =?ISO-8859-1?Q?P=5FLONG=5FLINE______RAW=3A_Quoted-printable_line_lon?= =?ISO-8859-1?Q?ger_than_76_chars?=
+X-Spam-Flag: NO
+
+Merhaba ben S=C4=B1la,ge=C3=A7en y=C4=B1l kayseri =C3=BCniversitesi grafik t=
+asar=C4=B1m=C4=B1ndan mezun oldum erciyes =C3=BCniversitesi =C3=B6=C4=9Frenc=
+isi de=C4=9Filim fakat bu kul=C3=BCbe kat=C4=B1lmay=C4=B1 ger=C3=A7ekten =C3=
+=A7ok istiyorum bu benim i=C3=A7in cidden =C3=A7ok k=C4=B1ymetli fakat b=C3=B6=
+yle bir bilgi bulamad=C4=B1m bunun i=C3=A7in ne yapmam laz=C4=B1m rica etsem=
+ beni bilgilendirendirebilir misiniz? Kat=C4=B1labilir miyim=20
+iPhone=E2=80=99umdan g=C3=B6nderildi=

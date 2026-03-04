@@ -1,0 +1,219 @@
+Return-Path: <kasim@trainingexpress.org.uk>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id QBm/Cnx6wmjoXj0AO6WR3A
+	(envelope-from <kasim@trainingexpress.org.uk>)
+	for <info@erciyesyapayzeka.com.tr>; Thu, 11 Sep 2025 10:30:04 +0300
+Return-path: <kasim@trainingexpress.org.uk>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Thu, 11 Sep 2025 10:30:04 +0300
+Received: from mail-yx1-f48.google.com ([74.125.224.48]:54643)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <kasim@trainingexpress.org.uk>)
+	id 1uwbkp-0000000GsQM-2Onh
+	for info@erciyesyapayzeka.com.tr;
+	Thu, 11 Sep 2025 10:30:04 +0300
+Received: by mail-yx1-f48.google.com with SMTP id 956f58d0204a3-601b1535047so245522d50.1
+        for <info@erciyesyapayzeka.com.tr>; Thu, 11 Sep 2025 00:29:39 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=trainingexpress-org-uk.20230601.gappssmtp.com; s=20230601; t=1757575758; x=1758180558; darn=erciyesyapayzeka.com.tr;
+        h=to:subject:message-id:date:from:sender:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=5xwE2yPBEDokCAZcKaqBUIqnCw309r4y3x9/Ag3bGMA=;
+        b=AXfJikfcjZkiuQH8FS6zjQoy3pZBiY0rzCxNapN426cbw8ubHHUU3uy5jP/jS5Z/AS
+         Ut1BynKHL6ddtDQ/gqggTtU820YqiSyU02Uabq6W5Ms7JqCrdkyllUf1zUNNf82MuuEb
+         L4NQRkOT6kUWXN6LkF5MTxQYm+OkBitNlpPnzX95o232RNMBA5g0KaT2o5tJ3anEG6dZ
+         y3SzjbPdi8OTVv04e+HpsNjjaZYsU0nuBycIn4sJSTPn4UClWNQTvcyKF8nydg5kCpyZ
+         a5pO8XZ7qdC5oq481Wgyc47fFT4L422lM/eovTZfN4O69yqleyVcyyfdXuV89xIHlpSY
+         mYOA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1757575758; x=1758180558;
+        h=to:subject:message-id:date:from:sender:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=5xwE2yPBEDokCAZcKaqBUIqnCw309r4y3x9/Ag3bGMA=;
+        b=Qy1DC/vEm3BSTKddZNCEkSMqmv18pQhvNaWj9q935+uVYSD+SA6uSen4RndT7SdS+5
+         uBHjBjx52N2YIgzAXFxxNm3NOpCM+jAAiXIkL7m020gltOMB2lSDxJxKEnNCargkXvk1
+         VmOn0qy0qCZSUMgxkOAPx86xJG3jBv5BeHREmWg7gn88iknQkk7VYdbaZkH5/igr1H5C
+         PrWZ15GpBychSTx7O/fdshGZRbfpXb+fYNDK2xHtekTZLWx+khqQYXjYVZwmYrgQHIpb
+         BJ88VMbjqbjNMBlzV75b9DzIDrJ3RjSTS9oe8HrrldLQMXem5YVy5BGarUi7B1Fofztx
+         brQQ==
+X-Gm-Message-State: AOJu0Yza4Wm9M8QkcQvlCrlN72JrORwMKZ+YFLwSFSKc/MllJ6DeHVK2
+	b35Dp54Z/ip0PmvnuzTWdrAhRJQOGUyUNjVwCZhkawWfNgZ9oAmuzE9DxKLMigwak5mr5qbbL8k
+	zKQzKebzzeo0MEfQR6+62fcr5WaPl4H4nklG6INF1X2Cy/2E6/J92
+X-Gm-Gg: ASbGncsjtcWw/8sMvakU08uru9CSseCXZelvKg7HGiqWA8RctmM1+DfA6eJbDoLGWLr
+	g+3CihZwz5r/+uHFLD6eTW8yZO11hlW0yeCobi0sEAPWPmk7ajXaxC7TA4W8DpPe08+B3T3I47d
+	p4XANoBhQ+bGa3QD6rqkjGSRJYn7QytvtL1lVfd6w5j5qLppKLQAuyHVnVDf5N20CE2amBWPeR8
+	yEH3S1WO7BHUAeTQ91e93V9YmMdd2t3GJVEBkFIeksNLeXDR0wB9dKavhfPg6H3YIogdKcxukmn
+	pFTPjWt07Veptps8uJolSPYzZDtRNSZCFsALTfyCDpKyzvCgz8lbh7KlbteKXsQ3Zb25TRXbp+r
+	oibJV0LSZ0lC3Uw7M5oiLj2hFJtcJcAzzzdDO/ODNFMzMxkrvC0jNE/oRBZ5AI3GnPx3D2+a9In
+	g+tGHxSr3erVTH
+X-Google-Smtp-Source: AGHT+IGM252uItxP5z7VVGrcc3xxJqJaocYA+L5UeG6weURAbOzZx2A452MViWqeCbuWNQhpXq05adni5+fTnLBMF+0=
+X-Received: by 2002:a05:690e:1591:20b0:600:f59f:780d with SMTP id
+ 956f58d0204a3-6102472a997mr13410545d50.14.1757575757959; Thu, 11 Sep 2025
+ 00:29:17 -0700 (PDT)
+Received: from 1047125686499 named unknown by gmailapi.google.com with
+ HTTPREST; Thu, 11 Sep 2025 00:29:17 -0700
+Received: from 1047125686499 named unknown by gmailapi.google.com with
+ HTTPREST; Thu, 11 Sep 2025 00:29:17 -0700
+MIME-Version: 1.0
+Sender: Training Express <kasim@trainingexpress.org.uk>
+From: Training Express <kasim@trainingexpress.org.uk>
+Date: Thu, 11 Sep 2025 00:29:17 -0700
+X-Google-Sender-Auth: WHRfnVp0w9BA-tD9z4EP5IW7Ulo
+X-Gm-Features: Ac12FXwDq4-wNCRFB84qn7L4F2RFSk0Zn8Vm73WPJ-I-knuRPf3-rcbgPsZMcVY
+Message-ID: <CAPHXpKDUPWk369Y54Ew_LLbqOamCiXuAgwxqjam86KTWk1qb7Q@mail.gmail.com>
+Subject: Potential Partnership Inquiry
+To: info@erciyesyapayzeka.com.tr
+Content-Type: multipart/alternative; boundary="000000000000b822e8063e817e15"
+X-Spam-Status: No, score=1.3
+X-Spam-Score: 13
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "cpanel1.kayizer.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi, Want to offer accredited online training while keeping
+    full control of your brand and revenue? At *Training Express,* we provide
+    a *ready-to-launch, white-label e-learning* platform. You manage *pricing,
+    learners, and branding*, while we take care of the content and platform. 
+ Content analysis details:   (1.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: x.com]
+                             [URI: mail-signatures.com]
+                             [URI: trainingexpress.org.uk]
+  1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+               [Blocked - see <https://www.spamcop.net/bl.shtml?74.125.224.48>]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [74.125.224.48 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [74.125.224.48 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [74.125.224.48 listed in sa-trusted.bondedsender.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Spam-Flag: NO
+
+--000000000000b822e8063e817e15
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+Want to offer accredited online training while keeping full control of your
+brand and revenue?
+
+At *Training Express,* we provide a *ready-to-launch, white-label
+e-learning* platform. You manage *pricing, learners, and branding*, while
+we take care of the content and platform.
+
+This gives you a fully branded solution, a fast way to expand your training
+portfolio, and instant access to *2,700+ CPD QS*-accredited courses.
+
+If you=E2=80=99d like, I=E2=80=99d be happy to arrange a *quick call* to wa=
+lk you through
+the platform and answer any questions.
+
+Best regards,
+Kasim Agarwal
+Business Development Manager
+Mobile: 020 8158 3412
+Email: kasim@trainingexpress.org.uk
+
+14 Cumberland Avenue, London, NW10 7QL
+www.trainingexpress.org.uk   [image: facebook icon]
+<https://www.facebook.com/TrainingExpress>   [image: twitter icon]
+<https://x.com/TrainingExpres1>   [image: linkedin icon]
+<https://www.linkedin.com/company/trainingexpress>   [image: pinterest icon=
+]
+<https://uk.pinterest.com/trainingexpress/>
+
+--000000000000b822e8063e817e15
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div di=
+r=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div><p>Hi,<br=
+><br>Want to offer accredited online training while keeping full control of=
+ your brand and revenue?<br><br>At <b>Training Express,</b> we provide a <b=
+>ready-to-launch, white-label e-learning</b> platform. You manage <b>pricin=
+g, learners, and branding</b>, while we take care of the content and platfo=
+rm.<br><br>This gives you a fully branded solution, a fast way to expand yo=
+ur training portfolio, and instant access to <b>2,700+ CPD QS</b>-accredite=
+d courses.<br><br>If you=E2=80=99d like, I=E2=80=99d be happy to arrange a =
+<b>quick call</b> to walk you through the platform and answer any questions=
+.<br><br>Best regards,</p></div></div><div dir=3D"ltr" class=3D"gmail_signa=
+ture" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><table width=3D"4=
+40" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-spacin=
+g:0px;border-collapse:collapse;color:rgb(68,68,68);font-size:14px;width:440=
+px;font-family:Arial,sans-serif;background:transparent!important"><tbody><t=
+r><td width=3D"290" valign=3D"top" style=3D"padding:0px 0px 5px;font-size:1=
+0pt;width:290px;line-height:13pt"><span style=3D"font-weight:700"><span sty=
+le=3D"font-size:18pt;color:rgb(42,166,135)">Kasim Agarwal</span></span><br>=
+<span style=3D"font-size:11pt;color:rgb(10,9,9)">Business Development Manag=
+er</span></td><td valign=3D"top" width=3D"150" align=3D"right" style=3D"pad=
+ding:0px;width:150px"></td></tr><tr><td colspan=3D"2" style=3D"padding:10px=
+ 0px 0px;border-top:1px solid rgb(42,166,135);font-size:10pt"><span style=
+=3D"color:rgb(10,9,9)"><span style=3D"font-weight:700;color:rgb(42,166,135)=
+">Mobile:</span>=C2=A0020 8158 3412</span><span style=3D"color:rgb(10,9,9)"=
+><br><span style=3D"font-weight:700;color:rgb(42,166,135)">Email:</span>=C2=
+=A0<a href=3D"mailto:kasim@trainingexpress.org.uk" style=3D"background-colo=
+r:transparent;color:rgb(10,9,9)" target=3D"_blank"><span>kasim@trainingexpr=
+ess.org.uk</span></a></span><span style=3D"font-size:10pt;color:rgb(10,9,9)=
+"><br><br><span>14 Cumberland Avenue, London</span><span><span>,</span>=C2=
+=A0NW10 7QL</span></span></td></tr><tr><td valign=3D"bottom" style=3D"paddi=
+ng:0px;line-height:12pt;font-size:10pt"><span><a href=3D"http://www.trainin=
+gexpress.org.uk/" rel=3D"noopener" style=3D"background-color:transparent;co=
+lor:rgb(51,122,183)" target=3D"_blank"><span style=3D"font-weight:700;color=
+:rgb(42,166,135)">www.trainingexpress.org.uk</span></a></span></td><td alig=
+n=3D"right" style=3D"padding:0px"><span>=C2=A0=C2=A0<a href=3D"https://www.=
+facebook.com/TrainingExpress" rel=3D"noopener" style=3D"background-color:tr=
+ansparent;color:rgb(51,122,183)" target=3D"_blank"><img border=3D"0" width=
+=3D"13" alt=3D"facebook icon" src=3D"https://www.mail-signatures.com/signat=
+ure-generator/img/templates/out-of-the-blue/fb.png" style=3D"border:0px;ver=
+tical-align:middle;height:13px;width:13px"></a></span>=C2=A0<span>=C2=A0=C2=
+=A0<a href=3D"https://x.com/TrainingExpres1" rel=3D"noopener" style=3D"back=
+ground-color:transparent;color:rgb(51,122,183)" target=3D"_blank"><img bord=
+er=3D"0" width=3D"13" alt=3D"twitter icon" src=3D"https://www.mail-signatur=
+es.com/signature-generator/img/templates/out-of-the-blue/tt.png" style=3D"b=
+order:0px;vertical-align:middle;height:13px;width:13px"></a></span>=C2=A0<s=
+pan>=C2=A0=C2=A0<a href=3D"https://www.linkedin.com/company/trainingexpress=
+" rel=3D"noopener" style=3D"background-color:transparent;color:rgb(51,122,1=
+83)" target=3D"_blank"><img border=3D"0" width=3D"13" alt=3D"linkedin icon"=
+ src=3D"https://www.mail-signatures.com/signature-generator/img/templates/o=
+ut-of-the-blue/ln.png" style=3D"border:0px;vertical-align:middle;height:13p=
+x;width:13px"></a></span>=C2=A0<span>=C2=A0=C2=A0<a href=3D"https://uk.pint=
+erest.com/trainingexpress/" rel=3D"noopener" style=3D"background-color:tran=
+sparent;color:rgb(51,122,183)" target=3D"_blank"><img border=3D"0" width=3D=
+"13" alt=3D"pinterest icon" src=3D"https://www.mail-signatures.com/signatur=
+e-generator/img/templates/out-of-the-blue/pt.png" style=3D"border:0px;verti=
+cal-align:middle;height:13px;width:13px"></a></span></td></tr></tbody></tab=
+le></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+--000000000000b822e8063e817e15--

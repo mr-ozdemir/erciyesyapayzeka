@@ -1,0 +1,186 @@
+Return-Path: <>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id ACk7N6Cv1mgjmiQAO6WR3A
+	(envelope-from <>)
+	for <info@erciyesyapayzeka.com.tr>; Fri, 26 Sep 2025 18:22:08 +0300
+Return-path: <>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Fri, 26 Sep 2025 18:22:08 +0300
+Received: from relay0-bounce-e.mailbaby.net ([174.138.180.157]:47784)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	id 1v2AGu-0000000AOpA-0Kth
+	for info@erciyesyapayzeka.com.tr;
+	Fri, 26 Sep 2025 18:22:08 +0300
+Received: from localhost
+ by relay0-bounce-e.mailbaby.net (MailBabyMTA) with HTTP id 199869cf9b700017bd.001
+ for <info@erciyesyapayzeka.com.tr>;
+ Fri, 26 Sep 2025 15:20:58 +0000
+X-Zone-Loop: 51f2393cb2b5397f989c0786e71661aa825402a0222d
+Feedback-ID: bounce:199869cf9b700017bd:xteudzzt75rwzbjq:mbaby
+From: Mail Delivery Subsystem <mailer-daemon@bounces.mailbaby.net>
+To: info@erciyesyapayzeka.com.tr
+X-Failed-Recipients: yusuffakn016@gmail.com
+Auto-Submitted: auto-replied
+Subject: Delivery Status Notification (Failure)
+In-Reply-To: <bb0acfc73424b9ecfe71f49dcbfd3eed@erciyesyapayzeka.com.tr>
+References: <bb0acfc73424b9ecfe71f49dcbfd3eed@erciyesyapayzeka.com.tr>
+Date: Fri, 26 Sep 2025 15:20:58 +0000
+Message-ID: <00cee9e8-71c6-405f-6a71-5f4004adcd46@bounces.mailbaby.net>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+ boundary="--_NmP-1de4655969c51e02-Part_1"
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "cpanel1.kayizer.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Delivery to the following recipient failed permanently: yusuffakn016@gmail.com
+    Technical details of permanent failure: 550-5.1.1 The email account that
+   you tried to reach does not exist. Please try double-checking the recipient's
+    email address for typos or unnecessary spaces. For more information, go to
+    https://suppor [...] 
+ Content analysis details:   (0.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: mailbaby.net]
+                             [URI: kayizer.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [174.138.180.157 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                           [174.138.180.157 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                        [174.138.180.157 listed in sa-trusted.bondedsender.org]
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+X-Spam-Flag: NO
+
+----_NmP-1de4655969c51e02-Part_1
+Content-Type: text/plain
+Content-Description: Notification
+Content-Transfer-Encoding: quoted-printable
+
+Delivery to the following recipient failed permanently:
+    yusuffakn016@gmail.com
+
+Technical details of permanent failure:
+
+550-5.1.1 The email account that you tried to reach does not exist. Please =
+try double-checking the recipient's email address for typos or unnecessary =
+spaces. For more information, go to https://support.google.com/mail/?=
+p=3DNoSuchUser 586e51a60fabf-363c61bba91si1144031fac.248 - gsmtp
+
+
+----_NmP-1de4655969c51e02-Part_1
+Content-Type: message/delivery-status
+Content-Description: Delivery report
+
+Reporting-MTA: dns; relay0-bqueue-c.mailbaby.net
+X-ZoneMTA-Queue-ID: 199869cc21f000d539
+X-ZoneMTA-Sender: rfc822; info@erciyesyapayzeka.com.tr
+Arrival-Date: Fri, 26 Sep 2025 15:20:54 +0000
+
+Final-Recipient: rfc822; yusuffakn016@gmail.com
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. For more information, go to https://support.google.com/mail/?p=NoSuchUser 586e51a60fabf-363c61bba91si1144031fac.248 - gsmtp
+
+
+----_NmP-1de4655969c51e02-Part_1
+Content-Type: text/rfc822-headers
+Content-Description: Undelivered Message Headers
+Content-Transfer-Encoding: quoted-printable
+
+Received: from cpanel1.kayizer.com ([85.235.74.127] cpanel1.kayizer.com)
+ (Authenticated sender: mb46323)
+ by relay0-bqueue-c.mailbaby.net (MailBabyMTA) with ESMTPSA id =
+199869cc21f000d539.01d
+ for <yusuffakn016@gmail.com>
+ (version=3DTLSv1.3 cipher=3DTLS_AES_256_GCM_SHA384);
+ Fri, 26 Sep 2025 15:20:44 +0000
+X-Zone-Loop: d074d8076c8ce89ecc9927ddf347268e7643c8cc781a
+ARC-Authentication-Results: i=3D1;	rspamdcluster8.mailbaby.net;	=
+auth=3Dpass
+ smtp.auth=3Dmb46323 smtp.mailfrom=3Dinfo@erciyesyapayzeka.com.tr
+ARC-Seal: i=3D1; s=3Ddetka; d=3Dmailbaby.net; t=3D1758900044; =
+a=3Drsa-sha256;
+	cv=3Dnone;
+	b=3DZNICtt55mDKr9LcWhwpr5po5SNMduu8ppT7BwvhmnbtEmCw/Vxq6Sdo5Cs7NqpNm7Nlcyx=
+
+	07YlsDHCzexQf61CiUImlwg/RbGJEe/L8eNKthbwwwNPkA685ZkQyrkyzqmp0gtqk8C8VH
+	u6++X8MsC8L9Ef3oZ7JIalBG4000Cxj/en/2duDUAM1DyAhRWPqwPHjaAHPWw0p079AhEv
+	gC3QWAyjoWgLDyfuA80A6RUkRr12ystKm2HHc3G7rlBEucFQlBaOb+XKTdL13W3dIdfza1
+	JQSQlpVXf1HXK2AtK2cQ14MHswPcrbRob/bsVI01OTRxbpWccAujRW7eoScryA=3D=3D
+ARC-Message-Signature: i=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed;
+ d=3Dmailbaby.net;	s=3Ddetka; t=3D1758900044;
+	h=3Dfrom:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=3D67FUpVmdMZZ/c8fStO1DLD00ZGOPq6nKZ8sT60kFS2E=3D;
+	b=3DwWojOO7tP/1I51P/G5g81ehTCHdoV87gwzt3GdR5/mpTvNQA9iBLJ1/rntXbz2MZlDgYyX=
+
+	+6TWFlfPId66udO/cqg3w1qoEKy0ZGPnrGpvaPZ7rrj4gkdaArYd9TTgCbR76gdWu2Sc5N
+	aiBf9iWmVJdbDx6xUqQgrXPEWZ3fZ6m1/GqMm0RwSS90TEC62XnP9AnJgxgOiu9mAdf7rp
+	LtO1A9bZgE9YYw0RGT6s9svSGhTnRxS+v4p7DGkzu65PKGTGgRKEab/HzxnZ5UQZ4nujrz
+	poF9uubH41rpgrpKpFBsuWpZN419ZJCuA1V1/FlR9a9c7fEXdTJCQfTzXiX10g=3D=3D
+X-MB-ID: mb46323|info@erciyesyapayzeka.com.tr
+X-SPF: pass
+Feedback-ID: mb46323:199869cc21f000d539:85.235.74.127:mbaby
+DKIM-Signature: v=3D1; a=3Drsa-sha256; q=3Ddns/txt; c=3Drelaxed/relaxed;
+	d=3Derciyesyapayzeka.com.tr; s=3Ddefault; h=3DContent-Transfer-Encoding:
+	Content-Type:Message-ID:Subject:To:From:Date:MIME-Version:Sender:Reply-To:=
+Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archiv=
+e;
+	bh=3D67FUpVmdMZZ/c8fStO1DLD00ZGOPq6nKZ8sT60kFS2E=3D; =
+b=3DvbEI0+RbZl5pFy0V6WhUjJpZmx
+	YdpBjm9XFsLKwONDbu4ZIr4bfLbOZuUrndaPa26Fpumm8VAle50GJQkvOlMenUjoDqCu6WW0DT=
+4ox
+	1u5Jbma/HU3ayWlnrf6VxGqngN2PnAT9Mdv118HxXkXZBiWrgTYD9XnCzBsBTgbTi1wp1gutNV=
+iCL
+	/GKF5W7CI/yOj9XwKG9jlL0/Vsm/POKFhku5OAoZXpLoqp6AYVKslvY0XiiNujYNxww0LzuuoB=
+M3e
+	Lfb27tOFIACeEUBC2YkoYoDvzU/O9npE+o2Ibdi0BHxC0fzI/CouDyFHFuVaOnOaK7dSYhs6AZ=
+fQH
+	wy8gfWTw=3D=3D;
+Received: from [::1] (port=3D41324 helo=3Dcpanel1.kayizer.com)
+	by cpanel1.kayizer.com with esmtpa (Exim 4.98.2)
+	(envelope-from <info@erciyesyapayzeka.com.tr>)
+	id 1v2AFY-0000000AOXD-1POa;
+	Fri, 26 Sep 2025 18:20:42 +0300
+MIME-Version: 1.0
+Date: Fri, 26 Sep 2025 18:20:40 +0300
+From: info@erciyesyapayzeka.com.tr
+To: undisclosed-recipients:;
+Subject: Data Kamp Bahar
+User-Agent: Roundcube Webmail/1.6.11
+Message-ID: <bb0acfc73424b9ecfe71f49dcbfd3eed@erciyesyapayzeka.com.tr>
+X-Sender: info@erciyesyapayzeka.com.tr
+Content-Type: text/plain; charset=3DUTF-8;
+ format=3Dflowed
+Content-Transfer-Encoding: 8bit
+X-AuthUser: info@erciyesyapayzeka.com.tr
+
+
+----_NmP-1de4655969c51e02-Part_1--

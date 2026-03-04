@@ -1,0 +1,165 @@
+Return-Path: <>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id wKukIVpnQmmWeTYAO6WR3A
+	(envelope-from <>)
+	for <info@erciyesyapayzeka.com.tr>; Wed, 17 Dec 2025 11:18:34 +0300
+Return-path: <>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Wed, 17 Dec 2025 11:18:34 +0300
+Received: from relay0-bounce-e.mailbaby.net ([174.138.180.157]:15812)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	id 1vVmjr-0000000Eyus-1OuV
+	for info@erciyesyapayzeka.com.tr;
+	Wed, 17 Dec 2025 11:18:26 +0300
+Received: from mb-nj-kvm1.internal (mb-nj-kvm1.internal [10.10.2.10])
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1vVmjr-0000000Eyus-1OuV
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: spam, SpamAssassin (not cached,
+	score=10.631, required 5, KAM_BLANKSUBJECT 0.25,
+	KAM_DMARC_STATUS 0.01, KAM_GB_INVALID_FROM 5.00, MISSING_DATE 1.40,
+	MISSING_FROM 1.00, MISSING_HEADERS 1.21, MISSING_SUBJECT 1.77,
+	SPF_HELO_PASS -0.00, UNPARSEABLE_RELAY 0.00,
+	URIBL_DBL_BLOCKED_OPENDNS 0.00)
+X-YourOrg-MailScanner-SpamScore: ssssssssss
+X-YourOrg-MailScanner-From: 
+Subject: {Spam?}
+
+ by relay0-bounce-e.mailbaby.net (MailBabyMTA) with HTTP id 19b2b62aa0c000991d.001
+ for <info@erciyesyapayzeka.com.tr>;
+ Wed, 17 Dec 2025 08:17:25 +0000
+X-Zone-Loop: 1514844f8fa32133eb34e08a351f01ccd24bbd94987a
+Feedback-ID: bounce:19b2b62aa0c000991d:nc7t6hgykyjbnpuq:mbaby
+From: Mail Delivery Subsystem <mailer-daemon@bounces.mailbaby.net>
+To: info@erciyesyapayzeka.com.tr
+X-Failed-Recipients: yetiksila@icloud.com
+Auto-Submitted: auto-replied
+Subject: Delivery Status Notification (Failure)
+In-Reply-To: <067b36ea3cf69df646e85d7434ef6c04@erciyesyapayzeka.com.tr>
+References: <067b36ea3cf69df646e85d7434ef6c04@erciyesyapayzeka.com.tr>
+Date: Wed, 17 Dec 2025 08:17:25 +0000
+Message-ID: <cb0103be-4d8e-aafb-ee6a-6968be11eb90@bounces.mailbaby.net>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+ boundary="--_NmP-2a890c8d8b35c497-Part_1"
+
+----_NmP-2a890c8d8b35c497-Part_1
+Content-Type: text/plain
+Content-Description: Notification
+Content-Transfer-Encoding: 7bit
+
+Delivery to the following recipient failed permanently:
+    yetiksila@icloud.com
+
+Technical details of permanent failure:
+
+552 5.2.2 <yetiksila@icloud.com>: user is over quota
+
+
+----_NmP-2a890c8d8b35c497-Part_1
+Content-Type: message/delivery-status
+Content-Description: Delivery report
+
+Reporting-MTA: dns; relay0-squeue-a.mailbaby.net
+X-ZoneMTA-Queue-ID: 19b2b62624f000af04
+X-ZoneMTA-Sender: rfc822; info@erciyesyapayzeka.com.tr
+Arrival-Date: Wed, 17 Dec 2025 08:17:19 +0000
+
+Final-Recipient: rfc822; yetiksila@icloud.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx01.mail.icloud.com
+Diagnostic-Code: smtp; 552 5.2.2 <yetiksila@icloud.com>: user is over quota
+
+
+----_NmP-2a890c8d8b35c497-Part_1
+Content-Type: text/rfc822-headers
+Content-Description: Undelivered Message Headers
+Content-Transfer-Encoding: quoted-printable
+
+Received: from mb-nj-kvm1.internal (mb-nj-kvm1.internal [10.10.2.10])
+ (Authenticated sender: mb46323)
+ by relay0-squeue-a.mailbaby.net (MailBabyMTA) with ESMTPSA id =
+19b2b62624f000af04.004
+ for <yetiksila@icloud.com>
+ (version=3DTLSv1.3 cipher=3DTLS_AES_256_GCM_SHA384);
+ Wed, 17 Dec 2025 08:17:06 +0000
+X-Zone-Loop: 18361edfd73378971d176c005416d66a0e4e56600575
+ARC-Authentication-Results: i=3D1;	rspamd7.mailbaby.net;	auth=3Dpass
+ smtp.auth=3Dmb46323 smtp.mailfrom=3Dinfo@erciyesyapayzeka.com.tr
+ARC-Seal: i=3D1; a=3Drsa-sha256; d=3Dmailbaby.net; s=3Ddetka; cv=3Dnone;
+ t=3D1765959426;
+	b=3Dr6VRCjMTzR78T0q5sJndC5nEzMFV5k1oqZ8BOwE7gvH16qS3FW8/YOcyCn+P+YZnMQUfun=
+
+	7+nQxRXn7jMSwIdjk90CB9oScFVObjahxnKQ3eQ4n5mVyWyi1Jt/RfkwMnjFw7zLlUs1E9
+	xQlh3wYbibkUR3WGplZPc7VcPBV08dVqg/jEk7iQWTo9kQM6PDUR+Ql+r5reIlPl0Clx3x
+	LuSb++zAGcCoPZgsdMve1NqugDlTfyWYY0Z4uJj/qI0DvHXm1dW6L/4tMyBRWS2gxw0Odp
+	rfFv1SEaDkbVDAtDOl2/04j1JPDLr5uLhVDh0IH2TN5PmQ8o9OlpmM+BN5Hnbw=3D=3D
+ARC-Message-Signature: i=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed;
+ d=3Dmailbaby.net;	s=3Ddetka; t=3D1765959426;
+	h=3Dfrom:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=3DDKGkXNyB2VjRHC4XV1QsQ4YKeKEa1+zEfFJdPot/jbk=3D;
+	b=3DEn0kHvVV+4lvJBOxDA/FrI7YwT1aUKNGLY9HffoYqYNTnObKWuSLHFi782cTFiJJqBGMUd=
+
+	acZthbyvO+Fs0RMEX3mnvYmT2NVxsjVw2oqzxsbi4r4xb1QDKDO0DNCNZFPMES4yC3pInr
+	JVAbeUBT70GJ9jw350PGfSgu66Rp7UFwy67JylIXXNMeLrJZxToLxfw4/a8XK9cJ+cXnGq
+	u+MZ5BfQSYJOid+s7o1AnGrlS80AX+FpQGx1mP7PWSrY1wcAOduKeZMv7VqeuHkHMMysYN
+	m/fW0fu+4v2BJfZu3j/cUwz613MZyjhgq0INUDnKfz3+PtA2w9YFNpXnwMd0tQ=3D=3D
+X-MB-ID: mb46323|info@erciyesyapayzeka.com.tr
+X-SPF: pass
+Feedback-ID: mb46323:19b2b62624f000af04:85.235.74.127:mbaby
+X-NS-SCAN: PASS
+X-MAILBABY-ORIGIN: PASS
+DKIM-Signature: v=3D1; a=3Drsa-sha256; q=3Ddns/txt; c=3Drelaxed/relaxed;
+	d=3Derciyesyapayzeka.com.tr; s=3Ddefault; h=3DContent-Transfer-Encoding:
+	Content-Type:Message-ID:Subject:To:From:Date:MIME-Version:Sender:Reply-To:=
+Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archiv=
+e;
+	bh=3DDKGkXNyB2VjRHC4XV1QsQ4YKeKEa1+zEfFJdPot/jbk=3D; =
+b=3DsujUrD+xTb6WaLD2Dd73K1XsZh
+	BmX/XKnLjCBZRVc+O4+mGg4bS9YATmFFgHCdZFR830VhnUSOoCRGNU2b0cbyaCChdgY6XtD841=
+QgT
+	aubn7tSGXI0YIkC+HCfVIht58XKg9tueWxm+BvrALDkSilgO1ZnaxzpCvGn9D6KBqfr3zbuC6G=
+Xpo
+	H8SnlH6zVW3F+jmalzWj7e0DkVGhCw3nX+f6+2Rrl4L5CJWn3suQUy13jCaf6SRVu4x0I7rGX6=
+SgZ
+	FHQf9FUqKRorQsKqnVHj47r5VorA0h4mkuQoYO4o6vi4VPG3zoOfhP9h/ImkEu/50fDINvIuvp=
+R5O
+	EvYVuVFQ=3D=3D;
+Received: from [::1] (port=3D35966 helo=3Dcpanel1.kayizer.com)
+	by cpanel1.kayizer.com with esmtpa (Exim 4.98.2)
+	(envelope-from <info@erciyesyapayzeka.com.tr>)
+	id 1vVmiW-0000000EyZb-3R2f;
+	Wed, 17 Dec 2025 11:17:03 +0300
+MIME-Version: 1.0
+Date: Wed, 17 Dec 2025 11:17:03 +0300
+From: info@erciyesyapayzeka.com.tr
+To: undisclosed-recipients:;
+Subject: =3D?UTF-8?Q?Akademik_D=3DC3=3DBC=3DC5=3D9F=3DC3=3DBCnme_ve_Tart=3D=
+C4=3DB1=3DC5=3D9Fma_?=3D
+ =3D?UTF-8?Q?G=3DC3=3DBCn=3DC3=3DBC?=3D
+User-Agent: Roundcube Webmail/1.6.11
+Message-ID: <067b36ea3cf69df646e85d7434ef6c04@erciyesyapayzeka.com.tr>
+X-Sender: info@erciyesyapayzeka.com.tr
+Content-Type: text/plain; charset=3DUTF-8;
+ format=3Dflowed
+Content-Transfer-Encoding: 8bit
+X-YourOrg-MailScanner-Information: Please contact the ISP for more =
+information
+X-YourOrg-MailScanner-ID: 1vVmiW-0000000EyZb-3R2f
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck:=20
+X-YourOrg-MailScanner-From: info@erciyesyapayzeka.com.tr
+X-Spam-Status: No
+X-AuthUser: info@erciyesyapayzeka.com.tr
+
+
+----_NmP-2a890c8d8b35c497-Part_1--

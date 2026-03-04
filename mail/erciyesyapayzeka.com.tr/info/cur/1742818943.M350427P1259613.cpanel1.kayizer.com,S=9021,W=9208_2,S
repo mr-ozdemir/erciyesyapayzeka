@@ -1,0 +1,187 @@
+Return-Path: <>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id IDuaFH9O4WddOBMAO6WR3A
+	(envelope-from <>)
+	for <info@erciyesyapayzeka.com.tr>; Mon, 24 Mar 2025 15:22:23 +0300
+Return-path: <>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Mon, 24 Mar 2025 15:22:23 +0300
+Received: from relay1-bounce-e.mailbaby.net ([174.138.180.165]:48760)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.1)
+	id 1twgou-00000005IgT-2w3s
+	for info@erciyesyapayzeka.com.tr;
+	Mon, 24 Mar 2025 15:22:23 +0300
+Received: from localhost
+ by relay1-bounce-e.mailbaby.net (MailBabyMTA) with HTTP id 195c819c0680001a4d.001
+ for <info@erciyesyapayzeka.com.tr>;
+ Mon, 24 Mar 2025 12:21:25 +0000
+X-Zone-Loop: f18600b264266ba7a80c7c2bbbfcf878f03e286e532c
+Feedback-ID: bounce:195c819c0680001a4d:7n42zqynvoxixwix:mbaby
+From: Mail Delivery Subsystem <mailer-daemon@bounces.mailbaby.net>
+To: info@erciyesyapayzeka.com.tr
+X-Failed-Recipients: dincelthsn8@gmail.com
+Auto-Submitted: auto-replied
+Subject: Delivery Status Notification (Failure)
+In-Reply-To: <3f34eae9576b1413cd012b39bebd8f04@erciyesyapayzeka.com.tr>
+References: <3f34eae9576b1413cd012b39bebd8f04@erciyesyapayzeka.com.tr>
+Date: Mon, 24 Mar 2025 12:21:25 +0000
+Message-ID: <aebaad21-a966-06f5-3bbc-6612a6c202ea@bounces.mailbaby.net>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+ boundary="--_NmP-3a4e25af69dbc1ea-Part_1"
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "cpanel1.kayizer.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Delivery to the following recipient failed permanently: dincelthsn8@gmail.com
+    Technical details of permanent failure: 421-4.7.28 Gmail has detected an
+   unusual rate of mail originating from your DKIM domain [erciyesyapayzeka.com.tr
+    36]. To protect our users from spam, mail sent from your domain has been
+   temporarily ra [...] 
+ Content analysis details:   (0.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                           [174.138.180.165 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The query to
+                              Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [174.138.180.165 listed in sa-accredit.habeas.com]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: mailbaby.net]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                        [174.138.180.165 listed in sa-trusted.bondedsender.org]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+X-Spam-Flag: NO
+
+----_NmP-3a4e25af69dbc1ea-Part_1
+Content-Type: text/plain
+Content-Description: Notification
+Content-Transfer-Encoding: quoted-printable
+
+Delivery to the following recipient failed permanently:
+    dincelthsn8@gmail.com
+
+Technical details of permanent failure:
+
+421-4.7.28 Gmail has detected an unusual rate of mail originating from your=
+ DKIM domain [erciyesyapayzeka.com.tr 36]. To protect our users from spam, =
+mail sent from your domain has been temporarily rate limited. For more =
+information, go to https://support.google.com/mail/?=
+p=3DUnsolicitedRateLimitError to review our Bulk Email Senders Guidelines. =
+d75a77b69052e-4771d639bedsi71713941cf.502 - gsmtp
+
+
+----_NmP-3a4e25af69dbc1ea-Part_1
+Content-Type: message/delivery-status
+Content-Description: Delivery report
+
+Reporting-MTA: dns; relay1-squeue-d.mailbaby.net
+X-ZoneMTA-Queue-ID: 195c819a04a0001a4d
+X-ZoneMTA-Sender: rfc822; info@erciyesyapayzeka.com.tr
+Arrival-Date: Mon, 24 Mar 2025 12:21:20 +0000
+
+Final-Recipient: rfc822; dincelthsn8@gmail.com
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: smtp; 421-4.7.28 Gmail has detected an unusual rate of mail originating from your DKIM domain [erciyesyapayzeka.com.tr 36]. To protect our users from spam, mail sent from your domain has been temporarily rate limited. For more information, go to https://support.google.com/mail/?p=UnsolicitedRateLimitError to review our Bulk Email Senders Guidelines. d75a77b69052e-4771d639bedsi71713941cf.502 - gsmtp
+
+
+----_NmP-3a4e25af69dbc1ea-Part_1
+Content-Type: text/rfc822-headers
+Content-Description: Undelivered Message Headers
+Content-Transfer-Encoding: quoted-printable
+
+Received: from cpanel1.kayizer.com ([85.235.74.127] cpanel1.kayizer.com)
+ (Authenticated sender: mb46323)
+ by relay1-squeue-d.mailbaby.net (MailBabyMTA) with ESMTPSA id =
+195c819a04a0001a4d.019
+ for <dincelthsn8@gmail.com>
+ (version=3DTLSv1.3 cipher=3DTLS_AES_256_GCM_SHA384);
+ Mon, 24 Mar 2025 12:21:17 +0000
+X-Zone-Loop: 680d26da945c856fb4091dda6d3d2ba0a4e991318624
+ARC-Authentication-Results: i=3D1;	relay1.mailbaby.net;	auth=3Dpass
+ smtp.auth=3Dmb46323 smtp.mailfrom=3Dinfo@erciyesyapayzeka.com.tr
+ARC-Seal: i=3D1; s=3Ddetka; d=3Dmailbaby.net; t=3D1742818877; =
+a=3Drsa-sha256;
+	cv=3Dnone;
+	b=3DmzjOIH4CTm4hK1vGcPYnGfrAWcWTaENZ8pgS1AZONe+bu9TCeZe/MToJnYlc+88OKXvgkm=
+
+	J76LrH4EZ67I2zJrJijTz5elIE6QJtj33L9ZLMgiGkEMAs6AQ1mnb0Vb8IRc5MOGNwyU0P
+	YKpYy7GZ+LNvBYF2oB+MiuquWJOnMVTLlasmkIjsjnNVzbhb2NKuXzrcStkHLTQ1vhEsTt
+	YWuhoGqouTSziRDVtkZ8G92LLBJH6305I/QbjPGwvA2Ei77Y+aiUhRnWHV3+4y/lg4I3Qw
+	nJi2d/geXV//l9ueqJ7GJQigqos0O+UmSD3N/1iA4hUZeJjHPLse4QJ+YMW9xA=3D=3D
+ARC-Message-Signature: i=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed;
+ d=3Dmailbaby.net;	s=3Ddetka; t=3D1742818877;
+	h=3Dfrom:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=3DIwk4gX6oZwG/ZIOnel1D92QJhXzlbo3+KmKo309V0/w=3D;
+	b=3DWPqBJ54GpzTM+3vDkEidAqtDom5Oc4aXPDiiNiegje1g3YcfjR9QQGJLnIqU5kFNKAajAB=
+
+	+Eb1gjnrmNw9UR7gf+VH6V2/Oesx0mjtNj3g09hgNhP4d6bUAakeGam/IdVcjHp1QIFzgL
+	sb8J29IwTgBfEl0ZEk/ubgCSogr8SopoTkKhpjVbNHhQNeMsSvpJi5LtbqUwakF6El2/aF
+	CkrrStO/m1g0r0lPrE5dRjK8j3arrowQVbEVatSL5On/mkOIdvUslexPTzQT34cf3Hc3MN
+	bx9jQEGliVkEjEuE1B2ApxJxRCA7pEnG2bDPbmh9tAUfIQvMiZYSYd3N9FQbQQ=3D=3D
+X-MB-ID: mb46323|info@erciyesyapayzeka.com.tr
+X-SPF: pass
+Feedback-ID: mb46323:195c819a04a0001a4d:85.235.74.127:mbaby
+DKIM-Signature: v=3D1; a=3Drsa-sha256; q=3Ddns/txt; c=3Drelaxed/relaxed;
+	d=3Derciyesyapayzeka.com.tr; s=3Ddefault; h=3DContent-Transfer-Encoding:
+	Content-Type:Message-ID:Subject:To:From:Date:MIME-Version:Sender:Reply-To:=
+Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archiv=
+e;
+	bh=3DIwk4gX6oZwG/ZIOnel1D92QJhXzlbo3+KmKo309V0/w=3D; =
+b=3DWcVLluQGa/26sy1BekR1VxjvvK
+	R/NEJY9pKO/FBDaPiy/zkWweGr/0cWvT3TemFC2CpKIi/D4+oly1qcfFigGx/YKRCTROaesu0H=
+aHg
+	IX9rJCMs893nVqB10f4aNBGQEjmN7H6uoPyMseAPoRtCLK08hbG2YxMfX4MkG1KvEfjb+jIxLI=
+lwz
+	n3s5MLpthFvRsqhL1QUna4zAWhg8TGXMzWBWzQBwHZCuwauP8Do969CoK/8nXbJxMA+IZble7v=
+OlF
+	nW2Y/iqUFjvynr03A+Dn8p0XkV/EApgyAv1eVGkPjyIYuOlKZ55Kzd0QGHwlUl6nYTVfGnip/I=
+2wh
+	G9BIw+mg=3D=3D;
+Received: from [::1] (port=3D45576 helo=3Dcpanel1.kayizer.com)
+	by cpanel1.kayizer.com with esmtpa (Exim 4.98.1)
+	(envelope-from <info@erciyesyapayzeka.com.tr>)
+	id 1twgnq-00000005IUK-0ysK;
+	Mon, 24 Mar 2025 15:21:14 +0300
+MIME-Version: 1.0
+Date: Mon, 24 Mar 2025 15:21:10 +0300
+From: info@erciyesyapayzeka.com.tr
+To: undisclosed-recipients:;
+Subject: =3D?UTF-8?Q?Data_Kamp_E=3DC4=3D9Fitim_Tarihleri_Hakk=3DC4=3DB1nda?=
+=3D
+User-Agent: Roundcube Webmail/1.6.9
+Message-ID: <3f34eae9576b1413cd012b39bebd8f04@erciyesyapayzeka.com.tr>
+X-Sender: info@erciyesyapayzeka.com.tr
+Content-Type: text/plain; charset=3DUTF-8;
+ format=3Dflowed
+Content-Transfer-Encoding: 8bit
+X-AuthUser: info@erciyesyapayzeka.com.tr
+
+
+----_NmP-3a4e25af69dbc1ea-Part_1--

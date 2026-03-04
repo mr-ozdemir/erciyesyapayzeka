@@ -1,0 +1,226 @@
+Return-Path: <kasim@trainingexpress.org.uk>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id 2EL8IdvmNmkcAjcAO6WR3A
+	(envelope-from <kasim@trainingexpress.org.uk>)
+	for <info@erciyesyapayzeka.com.tr>; Mon, 08 Dec 2025 17:55:23 +0300
+Return-path: <kasim@trainingexpress.org.uk>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Mon, 08 Dec 2025 17:55:23 +0300
+Received: from mail-yx1-f54.google.com ([74.125.224.54]:42018)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <kasim@trainingexpress.org.uk>)
+	id 1vScdz-0000000F7RF-0Hyx
+	for info@erciyesyapayzeka.com.tr;
+	Mon, 08 Dec 2025 17:55:18 +0300
+Received: by mail-yx1-f54.google.com with SMTP id 956f58d0204a3-640daf41b19so5979268d50.0
+        for <info@erciyesyapayzeka.com.tr>; Mon, 08 Dec 2025 06:54:57 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=trainingexpress-org-uk.20230601.gappssmtp.com; s=20230601; t=1765205676; x=1765810476; darn=erciyesyapayzeka.com.tr;
+        h=to:subject:message-id:date:from:sender:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=X59mUrSkGVdr0k07YSulPKBpx+OHN/2gqNSO1Xl+THA=;
+        b=dPC52bNyNthyC40kE+dAYOZ+WxXZlfmAbH37oA7tSusQUraT6K7MyItIUX17hWqprG
+         BPfH93W4PXBsc8WUXdXVXnsaJvmGDrsseXxzQ5XcZ2ilTJfo59VGYip+GFBUepW28nf6
+         y/CrwDIBqe1K5tD76j/jiW9IbGHQpokLQoV4D622xjTdWF0t7ha/C+MsUtZrYBBl3Hly
+         rYGfkoWQ2INkKu0O8fR4i5RuRuPJ3VtaXVP68VtsvJLdRMCxUHqxuxC+xbjUwqkcZYSB
+         N7HO1rTryGy6h3x84VII3EE+ZPYDOO2cjb3zFbyUzBudZtWbm0iuTG5pv5qlmd67qIim
+         jFDA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1765205676; x=1765810476;
+        h=to:subject:message-id:date:from:sender:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=X59mUrSkGVdr0k07YSulPKBpx+OHN/2gqNSO1Xl+THA=;
+        b=W0YMPRMsGSed9OVaH48+e+oaBY/RvEYlMk/WMLk0u4RTNhZ9YdhbE3qGA8jYtQnVwk
+         3SY4mmLdczMwHff3lDuOLycHNDucLZzSJGCXS3oRzGvW59kpDAjGtuX8GDGS3FQ53G7n
+         UGa0IeRB3Y+bDsqR4C4CYDlj/3GOsnNQC0g/CZ5pEWCdArsBRr1paPVoHOm/iV14h3+G
+         cB0TD/Wvw2wRVtPccBpx/844BkYs8wi5N9Worsw5VZyeF2GBjHwPhJXvpp1DfBk/+0Qx
+         wG/GyC/Sm0gJlqUyPbOli9HNLoaZdbIfASyrUmhPXS37BwpwnMDiC/xsw0pzhOTLjqxR
+         ETDg==
+X-Gm-Message-State: AOJu0YwbOuWz6cmfb+3/zODj2ir2TCoMUz1rpH/FDpWEG0cCxPy4i94A
+	L+E/QuTx3cjo8W7myllrVExFJFvSMZhhFAXx1fYPqWZLR4936U5rZ2+De8N+4Cz6u7JJ+8Hn7vH
+	lXS8QWJE2KvaArJFGvLdiD8OwgVF4/cyVx3V2sfQ0/hzHOqWeQl2R
+X-Gm-Gg: ASbGncs104QdCnYxJbxKnSWq9o9v1fD9VXT3qx9mgho2XT3iCaRKz6snYb+7NnYcteE
+	qNRZrUiNW1iw/EkNuE6Pqg1XDKt0Pl50B9rEOhZlIVL8L8O1TlEuiiI9oTmBiMFj7hTSiqgZygW
+	XubR/wTg39kkR1jG6VgIJ6apHTgC7qCjqlEUQgwnrMvXcVz0LlefqdrxyY130ERVPYL58jlpkPK
+	gLiEniPOmESsnCfUOvgVn+D5Zzsaws0zbW/PKYeykqy+xGHrvKjh4EkNGmhv7d4kidFzjZYWQjp
+	pvUbLIFev+hflCl/oyXoaR8LHdKA5A6UpCT23YogFaUxBSvbyGOe97epxuVbAlz8FcZD/s6GL0N
+	4xirFaxkOi58Wr2oi0o15zNR59FdJYoC3LDdE+khCcraAIm3glt96Lbyu6La53Itd1BbTvzDUyi
+	IDw+fWMB9ZOvQNw1mJbf09XADZ8p3bPMyQz5E+mOZmd6QoeNftxIcFA9i2aohJm/3cPp10Lpzi
+X-Google-Smtp-Source: AGHT+IFW280WVrbaJlUPzXG6a7af7xp0MO/VBdSUNB7G4TFpPj8gmz7ufbJiaG3QER1uhhwy3Sz/kYhO/B0wAhr5TqU=
+X-Received: by 2002:a05:690e:200e:b0:644:4259:9b6f with SMTP id
+ 956f58d0204a3-64442599ca1mr8380420d50.3.1765205675996; Mon, 08 Dec 2025
+ 06:54:35 -0800 (PST)
+Received: from 1047125686499 named unknown by gmailapi.google.com with
+ HTTPREST; Mon, 8 Dec 2025 06:54:35 -0800
+Received: from 1047125686499 named unknown by gmailapi.google.com with
+ HTTPREST; Mon, 8 Dec 2025 06:54:35 -0800
+MIME-Version: 1.0
+Sender: Training Express <kasim@trainingexpress.org.uk>
+From: Training Express <kasim@trainingexpress.org.uk>
+Date: Mon, 8 Dec 2025 06:54:35 -0800
+X-Google-Sender-Auth: m6KadvBRHCax7YDJfvxz62xVBl0
+X-Gm-Features: AQt7F2qb2WxrssrT0vAf8J-KkhSE8pD8L0JYHGQPSkSngpXqgV7VkKkCdZVXlcU
+Message-ID: <CAPHXpKA4Y0EzZdwM9jb4rTxtpe5Q-=C6Dvhoa9oAdhsxjTTUNw@mail.gmail.com>
+Subject: Just Checking In: Training Platform
+To: info@erciyesyapayzeka.com.tr
+Content-Type: multipart/alternative; boundary="0000000000004605c7064571f96c"
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1vScdz-0000000F7RF-0Hyx
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=1.253, required 5, DKIM_SIGNED 0.10, DKIM_VALID -0.10,
+	HTML_FONT_LOW_CONTRAST 0.00, HTML_MESSAGE 0.00, KAM_SHORT 0.00,
+	RCVD_IN_BL_SPAMCOP_NET 1.25, RCVD_IN_VALIDITY_CERTIFIED_BLOCKED 0.00,
+	RCVD_IN_VALIDITY_RPBL_BLOCKED 0.00,
+	RCVD_IN_VALIDITY_SAFE_BLOCKED 0.00, RCVD_IN_ZEN_BLOCKED_OPENDNS 0.00,
+	SPF_PASS -0.00, URIBL_DBL_BLOCKED_OPENDNS 0.00)
+X-YourOrg-MailScanner-SpamScore: s
+X-YourOrg-MailScanner-From: kasim@trainingexpress.org.uk
+X-Spam-Status: No
+
+--0000000000004605c7064571f96c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I=E2=80=99m following up to share an opportunity to expand your training of=
+ferings
+easily and efficiently.
+
+At *Training Express,* we provide a ready-to-use, white-label platform
+with *2,500+
+CPD QS-accredited courses*. You can deliver these under your own *brand*,
+helping your clients while saving time and resources.
+
+If this is of interest, I=E2=80=99d be happy to schedule a *brief call* or =
+share my
+calendar to show how it could benefit your organisation.
+
+Kind regards,
+Kasim Agarwal
+Business Development Manager
+Mobile: 020 8158 3412
+Email: kasim@trainingexpress.org.uk
+
+14 Cumberland Avenue, London, NW10 7QL
+www.trainingexpress.org.uk   [image: facebook icon]
+<https://www.facebook.com/TrainingExpress>   [image: twitter icon]
+<https://x.com/TrainingExpres1>   [image: linkedin icon]
+<https://www.linkedin.com/company/trainingexpress>   [image: pinterest icon=
+]
+<https://uk.pinterest.com/trainingexpress/>
+
+[image: Mailsuite] Email tracked with Mailsuite  =C2=B7  Opt out
+<https://mailsuite.com/##mt_unsubscribe_link##>
+11/04/25, 07:44:49 PM
+Remove
+
+--0000000000004605c7064571f96c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div di=
+r=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"lt=
+r"><div dir=3D"ltr"><p>Hi,<br><br>I=E2=80=99m following up to share an oppo=
+rtunity to expand your training offerings easily and efficiently.<br><br>At=
+ <b>Training Express,</b> we provide a ready-to-use, white-label platform w=
+ith <b>2,500+ CPD QS-accredited courses</b>. You can deliver these under yo=
+ur own <b>brand</b>, helping your clients while saving time and resources.<=
+br><br>If this is of interest, I=E2=80=99d be happy to schedule a <b>brief =
+call</b> or share my calendar to show how it could benefit your organisatio=
+n.</p><p>Kind regards,</p></div><div dir=3D"ltr" class=3D"gmail_signature" =
+data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><table width=3D"440" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-spacing:0px;=
+border-collapse:collapse;color:rgb(68,68,68);font-size:14px;width:440px;fon=
+t-family:Arial,sans-serif;background:transparent!important"><tbody><tr><td =
+width=3D"290" valign=3D"top" style=3D"padding:0px 0px 5px;font-size:10pt;wi=
+dth:290px;line-height:13pt"><span style=3D"font-weight:700"><span style=3D"=
+font-size:18pt;color:rgb(42,166,135)">Kasim Agarwal</span></span><br><span =
+style=3D"font-size:11pt;color:rgb(10,9,9)">Business Development Manager</sp=
+an></td><td valign=3D"top" width=3D"150" align=3D"right" style=3D"padding:0=
+px;width:150px"></td></tr><tr><td colspan=3D"2" style=3D"padding:10px 0px 0=
+px;border-top:1px solid rgb(42,166,135);font-size:10pt"><span style=3D"colo=
+r:rgb(10,9,9)"><span style=3D"font-weight:700;color:rgb(42,166,135)">Mobile=
+:</span>=C2=A0020 8158 3412</span><span style=3D"color:rgb(10,9,9)"><br><sp=
+an style=3D"font-weight:700;color:rgb(42,166,135)">Email:</span>=C2=A0<a hr=
+ef=3D"mailto:kasim@trainingexpress.org.uk" style=3D"background-color:transp=
+arent;color:rgb(10,9,9)" target=3D"_blank"><span>kasim@trainingexpress.org.=
+uk</span></a></span><span style=3D"font-size:10pt;color:rgb(10,9,9)"><br><b=
+r><span>14 Cumberland Avenue, London</span><span><span>,</span>=C2=A0NW10 7=
+QL</span></span></td></tr><tr><td valign=3D"bottom" style=3D"padding:0px;li=
+ne-height:12pt;font-size:10pt"><span><a href=3D"http://www.trainingexpress.=
+org.uk/" rel=3D"noopener" style=3D"background-color:transparent;color:rgb(5=
+1,122,183)" target=3D"_blank"><span style=3D"font-weight:700;color:rgb(42,1=
+66,135)">www.trainingexpress.org.uk</span></a></span></td><td align=3D"righ=
+t" style=3D"padding:0px"><span>=C2=A0=C2=A0<a href=3D"https://www.facebook.=
+com/TrainingExpress" rel=3D"noopener" style=3D"background-color:transparent=
+;color:rgb(51,122,183)" target=3D"_blank"><img border=3D"0" width=3D"13" al=
+t=3D"facebook icon" src=3D"https://www.mail-signatures.com/signature-genera=
+tor/img/templates/out-of-the-blue/fb.png" style=3D"border:0px;vertical-alig=
+n:middle;height:13px;width:13px"></a></span>=C2=A0<span>=C2=A0=C2=A0<a href=
+=3D"https://x.com/TrainingExpres1" rel=3D"noopener" style=3D"background-col=
+or:transparent;color:rgb(51,122,183)" target=3D"_blank"><img border=3D"0" w=
+idth=3D"13" alt=3D"twitter icon" src=3D"https://www.mail-signatures.com/sig=
+nature-generator/img/templates/out-of-the-blue/tt.png" style=3D"border:0px;=
+vertical-align:middle;height:13px;width:13px"></a></span>=C2=A0<span>=C2=A0=
+=C2=A0<a href=3D"https://www.linkedin.com/company/trainingexpress" rel=3D"n=
+oopener" style=3D"background-color:transparent;color:rgb(51,122,183)" targe=
+t=3D"_blank"><img border=3D"0" width=3D"13" alt=3D"linkedin icon" src=3D"ht=
+tps://www.mail-signatures.com/signature-generator/img/templates/out-of-the-=
+blue/ln.png" style=3D"border:0px;vertical-align:middle;height:13px;width:13=
+px"></a></span>=C2=A0<span>=C2=A0=C2=A0<a href=3D"https://uk.pinterest.com/=
+trainingexpress/" rel=3D"noopener" style=3D"background-color:transparent;co=
+lor:rgb(51,122,183)" target=3D"_blank"><img border=3D"0" width=3D"13" alt=
+=3D"pinterest icon" src=3D"https://www.mail-signatures.com/signature-genera=
+tor/img/templates/out-of-the-blue/pt.png" style=3D"border:0px;vertical-alig=
+n:middle;height:13px;width:13px"></a></span></td></tr></tbody></table></div=
+></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br><div id=3D"mt-signature">
+        <table border=3D"0" cellpadding=3D"8" cellspacing=3D"0" style=3D"us=
+er-select: none;">
+            <tbody><tr style=3D"display:flex">
+                <td style=3D"padding:0 4px 0 0">
+                    <img src=3D"https://s3.amazonaws.com/mailtrack-signatur=
+e/logo-grey.png" alt=3D"Mailsuite" class=3D"mt-no-pointer-events" width=3D"=
+24" height=3D"20">
+                </td>
+                <td style=3D"padding:0 10px 0 0">
+                    <span style=3D"color:#333;font-size:12px;font-family:In=
+ter,sans-serif;font-weight:400;line-height:185%">Email tracked with Mailsui=
+te =C2=A0=C2=B7=C2=A0 <a href=3D"https://mailsuite.com/##mt_unsubscribe_lin=
+k##" target=3D"_blank" style=3D"color:#666;font-size:11px;font-family:Inter=
+,sans-serif;font-weight:400;line-height:185%">Opt out</a></span><br>
+                </td>
+               =20
+    <td><span style=3D"color:transparent;font-size:0">11/04/25, 07:44:49 PM=
+</span></td>
+
+                <td class=3D"mt-remove-signature-button-container" style=3D=
+"padding:4px 0 0 0">
+                   =20
+<div class=3D"mt-remove-signature-button center">
+  <button class=3D"mt-remove" style=3D"display:none">
+   =20
+     =20
+     =20
+   =20
+    <span style=3D"color:#e55a50">Remove</span>
+  </button>
+</div>
+                </td>
+            </tr>
+        </tbody></table>
+    </div></div>
+
+--0000000000004605c7064571f96c--

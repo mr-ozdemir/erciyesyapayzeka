@@ -1,0 +1,35 @@
+[10-Mar-2025 21:23:30 +0300]: <4bebada6> [5 ERR] Database::get (SELECT * FROM carddav_addressbooks WHERE (("user_id" = '1'))) ERROR: [1] no such table: carddav_addressbooks 
+[10-Mar-2025 21:23:30 +0300]: <4bebada6> [5 ERR] Error reading carddav addressbooks: [1] no such table: carddav_addressbooks 
+[10-Mar-2025 21:23:30 +0300]: <4bebada6> [5 ERR] Database::get (SELECT "filename" FROM carddav_migrations) ERROR: [1] no such table: carddav_migrations 
+[26-Sep-2025 18:16:20 +0300]: <2fb20fc1> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[02-Oct-2025 17:25:01 +0300]: <cd110fdf> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[03-Oct-2025 11:33:58 +0300]: <ba1712b6> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[03-Oct-2025 12:14:54 +0300]: <9984f810> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[03-Oct-2025 18:15:21 +0300]: <54fa5986> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[03-Oct-2025 19:18:30 +0300]: <3914b434> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[05-Oct-2025 13:08:09 +0300]: <557a6d06> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[07-Oct-2025 18:51:05 +0300]: <74cfca22> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[08-Oct-2025 18:51:20 +0300]: <35afab9c> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[10-Oct-2025 16:40:22 +0300]: <71ab7456> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[19-Oct-2025 18:34:28 +0300]: <41b920e1> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[30-Oct-2025 17:15:02 +0300]: <5f8c18fb> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[11-Nov-2025 17:05:58 +0300]: <9245235c> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[27-Nov-2025 14:35:19 +0300]: <e4fed401> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[17-Dec-2025 11:02:25 +0300]: <33b822f2> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 
+[24-Dec-2025 14:51:49 +0300]: <b6f7889b> [5 ERR] Cannot update name of addressbook 1: Expected Multistatus HTTP request was not successful (401 Unauthorized): <html>Authorization Required</html>
+ 

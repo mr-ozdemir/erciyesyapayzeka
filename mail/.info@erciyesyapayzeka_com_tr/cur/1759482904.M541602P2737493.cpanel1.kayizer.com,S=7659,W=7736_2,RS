@@ -1,0 +1,77 @@
+Return-Path: <telmanbakhshaliyev2020@gmail.com>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id WKAPIBiU32hVxSkAO6WR3A
+	(envelope-from <telmanbakhshaliyev2020@gmail.com>)
+	for <info@erciyesyapayzeka.com.tr>; Fri, 03 Oct 2025 12:15:04 +0300
+Return-path: <telmanbakhshaliyev2020@gmail.com>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Fri, 03 Oct 2025 12:15:04 +0300
+Received: from mail-ej1-f65.google.com ([209.85.218.65]:55599)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <telmanbakhshaliyev2020@gmail.com>)
+	id 1v4bsY-0000000GQFt-0kc0
+	for info@erciyesyapayzeka.com.tr;
+	Fri, 03 Oct 2025 12:15:04 +0300
+Received: by mail-ej1-f65.google.com with SMTP id a640c23a62f3a-b3f5e0e2bf7so385382166b.3
+        for <info@erciyesyapayzeka.com.tr>; Fri, 03 Oct 2025 02:14:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1759482861; x=1760087661; darn=erciyesyapayzeka.com.tr;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=gLx+v+yWTO4VQmpDyUwHnZ83gCX82BCn7HVWR2e0bOY=;
+        b=Gq4vYRgSnNqaYWxLGUtSLJS1nTpESZ4ghUglWlREJG8ECM4WoBx1PJds5yEmk1VJ04
+         m+EP2dO3iiYFnsIyWBY8BfMLjPFBszSmMLZ2mRQ0dk+08cA6nhI5mCtkWwgR5EEezIx9
+         /3pDKZG8yNv65vwco+rEJL64Z5MPZPZPLYeshN1xNgOBvzqbxn39rXp/JX70T+j4G+Pm
+         OP0LF/xWTKwvhCTsZqMWxLXDvaBA8xTgNEZrcujlAnz7MgrDPJNhnCdmMFNKqbiImw+L
+         6EZT86fuvTEavwyhWHnj04AyPqW9uQBONn/QL9k6lc+OGO2xXDG7xgbpxpgC2qCpNjmQ
+         72SQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1759482861; x=1760087661;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=gLx+v+yWTO4VQmpDyUwHnZ83gCX82BCn7HVWR2e0bOY=;
+        b=nibYX2hzidCc4dX2GNk8HcuroPqByLAxP9WSZCTPxYxMHpLlbup/HF4DNL6p/8X3EO
+         oIRD9KNNIiOHebUUhevz2waPlNYiCj7WFDn6gkP0iMIcEs3p2yFkSVVZX3t8vmhhPXPq
+         FKnRUEw3Khac8Ie3aso/Fya2zY+Nt5ousuoOFwA7jOVsSLjxurBCYHaLVjCM75A7LkxW
+         J+qNvRupzRuNuWuj71Pi5fhnyTDOzpfEmiweOFueHMIyp6xu4QZY8cdxKhftbsUXafYM
+         q/gEZV7KjvYvc9SQDGBHZzvI+tY93Q4h2fR/HQVyH/kag5cM8GoPwAF+uZjbSC7jgM20
+         QADA==
+X-Gm-Message-State: AOJu0Yz1RZteseX8bEgh78DuWl+YmjMdYU8Ke9Ilx5uN89tsitXi42U3
+	b4QTHOwYgCxQyShQM7APe0n2dvl/fSEDENK/YqE7OHBvjeOfowPySZZ0457gjKekjNxUju7925a
+	3vCRaFjEO849ZLZNAu1MuumhLV/2swA7sfeT2
+X-Gm-Gg: ASbGncva/QI6WMC4/kw7igftEUbYKOSwsZnKX44c53gLDj+LhOQoqgdsupCwa2afKuC
+	nzY3kjT2gAwRnO7poICD/terny2CMCQ7M1wr1+WLWPbKLXBvW9sLHvb2WqB7DZhHBgE5pmEhyiT
+	/l31k8lx1F/K5vZU7KqXTsqdqeSOZ1SfYx+FZiPTYjMQ9CGQ38mXorNaixNG9CUC2BQlHXlCMdB
+	HEjsiOEUiVkPLSuCOCxu8SkTioin8f6iu2XWGbp0A==
+X-Google-Smtp-Source: AGHT+IG+RRW2yK15Vd2cUjrj7tg4ebB2hdpNu8qn5Z7vO2F8g+CcElzbDXnPJZnM91NNEWEAD99aB0GV8DcqtZkr5gw=
+X-Received: by 2002:a17:907:7286:b0:b3d:e9be:7ac2 with SMTP id
+ a640c23a62f3a-b49c1278127mr265720966b.5.1759482860600; Fri, 03 Oct 2025
+ 02:14:20 -0700 (PDT)
+MIME-Version: 1.0
+From: TELMAN BAKHSHALIYEV <telmanbakhshaliyev2020@gmail.com>
+Date: Fri, 3 Oct 2025 12:13:49 +0300
+X-Gm-Features: AS18NWAJWfbcc35dd5uA1iR6LTHXfISVz9w4EwRWPLbmqby0o1uCvWeozPPY1EA
+Message-ID: <CAObGF3y9NiLi1UjGtp+LcOd8Qe820dYHnS3=awdQNPyUGq48SA@mail.gmail.com>
+Subject: E posta adresi
+To: info@erciyesyapayzeka.com.tr
+Content-Type: multipart/alternative; boundary="000000000000e501b306403d8692"
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: =?ISO-8859-1?Q?Spam_detection_software=2C_running_on_the_system_=22cpanel1=2Ekayize?= =?ISO-8859-1?Q?r=2Ecom=22=2C=0A_has_NOT_identified_this_incoming_ema?= =?ISO-8859-1?Q?il_as_spam=2E__The_original=0A_message_has_been_attac?= =?ISO-8859-1?Q?hed_to_this_so_you_can_view_it_or_label=0A_similar_fu?= =?ISO-8859-1?Q?ture_email=2E__If_you_have_any_questions=2C_see=0A_ro?= =?ISO-8859-1?Q?ot=5C=40localhost_for_details=2E=0A_Content_preview=3A_?= =?ISO-8859-1?Q?_telmanbakhshaliyev2020=40gmail=2Ecom_telmanbakhshali?= =?ISO-8859-1?Q?yev2020=40gmail=2Ecom=0A____=0A_Content_analysis_deta?= =?ISO-8859-1?Q?ils=3A___=280=2E1_points=2C_5=2E0_required=29=0A__pts?= =?ISO-8859-1?Q?_rule_name______________description=0A_----_---------?= =?ISO-8859-1?Q?-------------_---------------------------------------?= =?ISO-8859-1?Q?-----------=0A__0=2E0_RCVD=5FIN=5FVALIDITY=5FRPBL=5FB?= =?ISO-8859-1?Q?LOCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_The_query_to=0A_?= =?ISO-8859-1?Q?_____________________________Validity_was_blocked=2E_?= =?ISO-8859-1?Q?_See=0A_____________________________https=3A//knowled?= =?ISO-8859-1?Q?ge=2Evalidity=2Ecom/hc/en-us/articles/20961730681243=0A_?= =?ISO-8859-1?Q?_____________________________for_more_information=2E=0A?= =?ISO-8859-1?Q?_____________________________=5B209=2E85=2E218=2E65_l?= =?ISO-8859-1?Q?isted_in_bl=2Escore=2Esenderscore=2Ecom=5D=0A__0=2E0_?= =?ISO-8859-1?Q?RCVD=5FIN=5FVALIDITY=5FSAFE=5FBLOCKED_RBL=3A_ADMINIST?= =?ISO-8859-1?Q?RATOR_NOTICE=3A_The_query_to=0A______________________?= =?ISO-8859-1?Q?________Validity_was_blocked=2E__See=0A______________?= =?ISO-8859-1?Q?_______________https=3A//knowledge=2Evalidity=2Ecom/h?= =?ISO-8859-1?Q?c/en-us/articles/20961730681243=0A___________________?= =?ISO-8859-1?Q?___________for_more_information=2E=0A________________?= =?ISO-8859-1?Q?_____________=5B209=2E85=2E218=2E65_listed_in_sa-accr?= =?ISO-8859-1?Q?edit=2Ehabeas=2Ecom=5D=0A__0=2E0_RCVD=5FIN=5FVALIDITY?= =?ISO-8859-1?Q?=5FCERTIFIED=5FBLOCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_?= =?ISO-8859-1?Q?The=0A_____________________________query_to_Validity_?= =?ISO-8859-1?Q?was_blocked=2E__See=0A_____________________________ht?= =?ISO-8859-1?Q?tps=3A//knowledge=2Evalidity=2Ecom/hc/en-us/articles/?= =?ISO-8859-1?Q?20961730681243=0A______________________________for_mo?= =?ISO-8859-1?Q?re_information=2E=0A__________________________=5B209=2E8?= =?ISO-8859-1?Q?5=2E218=2E65_listed_in_sa-trusted=2Ebondedsender=2Eor?= =?ISO-8859-1?Q?g=5D=0A_-0=2E0_SPF=5FPASS_______________SPF=3A_sender?= =?ISO-8859-1?Q?_matches_SPF_record=0A_-0=2E1_DKIM=5FVALID=5FAU______?= =?ISO-8859-1?Q?____Message_has_a_valid_DKIM_or_DK_signature_from_aut?= =?ISO-8859-1?Q?hor's=0A_____________________________domain=0A_-0=2E1?= =?ISO-8859-1?Q?_DKIM=5FVALID_____________Message_has_at_least_one_va?= =?ISO-8859-1?Q?lid_DKIM_or_DK_signature=0A_-0=2E1_DKIM=5FVALID=5FEF_?= =?ISO-8859-1?Q?_________Message_has_a_valid_DKIM_or_DK_signature_fro?= =?ISO-8859-1?Q?m=0A_____________________________envelope-from_domain?= =?ISO-8859-1?Q?=0A__0=2E1_DKIM=5FSIGNED____________Message_has_a_DKI?= =?ISO-8859-1?Q?M_or_DK_signature=2C_not_necessarily_valid=0A__0=2E0_?= =?ISO-8859-1?Q?FREEMAIL=5FFROM__________Sender_email_is_commonly_abu?= =?ISO-8859-1?Q?sed_enduser_mail_provider=0A_________________________?= =?ISO-8859-1?Q?____=5Btelmanbakhshaliyev2020=28at=29gmail=2Ecom=5D=0A?= =?ISO-8859-1?Q?__0=2E2_FREEMAIL=5FENVFROM=5FEND=5FDIGIT_Envelope-fro?= =?ISO-8859-1?Q?m_freemail_username_ends_in=0A_______________________?= =?ISO-8859-1?Q?______digit=0A_____________________________=5Btelmanb?= =?ISO-8859-1?Q?akhshaliyev2020=28at=29gmail=2Ecom=5D=0A__0=2E0_HTML=5FM?= =?ISO-8859-1?Q?ESSAGE___________BODY=3A_HTML_included_in_message?=
+X-Spam-Flag: NO
+
+--000000000000e501b306403d8692
+Content-Type: text/plain; charset="UTF-8"
+
+telmanbakhshaliyev2020@gmail.com
+
+--000000000000e501b306403d8692
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"><a href="mailto:telmanbakhshaliyev2020@gmail.com">telmanbakhshaliyev2020@gmail.com</a><div dir="auto"><br></div></div>
+
+--000000000000e501b306403d8692--

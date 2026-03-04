@@ -1,0 +1,89 @@
+Return-Path: <halilyahya42@gmail.com>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id kJ3eETKj2mhenBsAO6WR3A
+	(envelope-from <halilyahya42@gmail.com>)
+	for <info@erciyesyapayzeka.com.tr>; Mon, 29 Sep 2025 18:18:10 +0300
+Return-path: <halilyahya42@gmail.com>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Mon, 29 Sep 2025 18:18:10 +0300
+Received: from mail-ed1-f53.google.com ([209.85.208.53]:52403)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <halilyahya42@gmail.com>)
+	id 1v3Fdg-00000007np9-05AE
+	for info@erciyesyapayzeka.com.tr;
+	Mon, 29 Sep 2025 18:18:09 +0300
+Received: by mail-ed1-f53.google.com with SMTP id 4fb4d7f45d1cf-62ecd3c21d3so8847030a12.0
+        for <info@erciyesyapayzeka.com.tr>; Mon, 29 Sep 2025 08:17:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1759159046; x=1759763846; darn=erciyesyapayzeka.com.tr;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=mK25ExFj0Vo6eyhaCNismYyOfWcYi6zBmmYexImIf30=;
+        b=OAGFqXapbcw2S/46fXwE6Wmoc0UnKy+P4Hd2ZgVSEYzYjiQpfITFJ0YJjYfga+Dj7X
+         SW547NSAmH6iJ2DqV5eYEr6xROamSn7FLBww1VAhuzyFwnWzI9mbsYuPvFDPgVFTA6gA
+         KV9XOxAjwucPTICKemWPS5MxJe7QLCSMIeDbhEmQIYTP7AbpcTvsVPTsfq5kXfB88AFJ
+         GJ1pYMUdsk6kkiVSU4g7gf46EmtQ4EzRnW1cdmDURrpxCRFiBokzHBbKkZadNcOYhS0g
+         UHW4I/yqSVFIOHSI7UFqSVslVPULVfZtrxsaj4j6gNIjjXULyuVYvXs7DyfSWTGteIMv
+         iMNw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1759159046; x=1759763846;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=mK25ExFj0Vo6eyhaCNismYyOfWcYi6zBmmYexImIf30=;
+        b=ZecYg/a3akXhREDHRYXieW5mSOIuXn7C2fxIHxrdbapgrNtanEDJo6IxFGXzFTeC31
+         mDZVGGn6X35TfpVAobNjqNGMTHAbjEKJTpz+cBH1WqCHeXXU2Yo9cbBCY0uNdG16gQ0M
+         W51DUTYp1H+zxYjMrra4e2X8rY4idY/d8ZSxRbF7UM5WpRNjadU7ObdppieLvFhaA67Z
+         7evYLjHM6a8rmbB3kORsMFCoVUMW8/pTYKaNljEoX6YgTmXH5mxqXcxb8F6Vw3CU8XTD
+         WY/8zOicSKm1uvhPr+Ygpi6mmJGLS7TfyByETIBZ5d2AFaF9g7iAAYugEDlpfGe6bnrT
+         52gQ==
+X-Gm-Message-State: AOJu0YxwWRMaEpT1e8X3TFE/ERkxJE6LJ2eApT0+0WiLGqlAEuOOqheL
+	cARDBnHSde0H6DOEirfqUhcYd3oVFMyX+q6Wue9JNfSZoi7qQ3HAHpy6SOW/9+jNNQ34SlzrF0z
+	osLIa7v6bjAq0xyHvUdUnue/KHAmhLL7PQA==
+X-Gm-Gg: ASbGncvjsIZFVp2F2NS90pV95Y/4EdI15eS2sYe1ptkHcqMxzBflCa42lgVKmVr05Gr
+	iPJPWnfhkGH83o/Sy5/GPyTj6sq6OckSjdIZsWmZJTR5XqWxSiRQOcFW1ZvmiiUpeqUF0xQJlbO
+	R0/KoohioVr1wXVKWIccHGwsVO6hSxedTtjU3+Go1U06xUL0d1u6Jc7a1weFXD2BumqYVQO15eo
+	N3TgJHG2Wwgjb24Pg==
+X-Google-Smtp-Source: AGHT+IGVLZyYmUDMhnJ+Flk8cTCjharDVq3CH4RF1j8db9+hg3hS1K9YScs5suYHU6xsHE0EUo/UeFMASrTdWNgj04w=
+X-Received: by 2002:a17:907:7e88:b0:b07:87f5:73a2 with SMTP id
+ a640c23a62f3a-b34bef98e8dmr1715074866b.44.1759159045683; Mon, 29 Sep 2025
+ 08:17:25 -0700 (PDT)
+MIME-Version: 1.0
+From: halil yahya <halilyahya42@gmail.com>
+Date: Mon, 29 Sep 2025 18:17:13 +0300
+X-Gm-Features: AS18NWCljZsTMa8kf2NtJJ_nxnGUjrtKb8YPf5yDhdvGEV3NCfwaiEVu1RMgrG8
+Message-ID: <CAKsku5ytRtJV9Gbvx0VJjPy=DUg3C03d5p5p9Xrc=cLC1mjX+Q@mail.gmail.com>
+Subject: 
+To: info@erciyesyapayzeka.com.tr
+Content-Type: multipart/alternative; boundary="000000000000057e0f063ff222cb"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: =?ISO-8859-1?Q?Spam_detection_software=2C_running_on_the_system_=22cpanel1=2Ekayize?= =?ISO-8859-1?Q?r=2Ecom=22=2C=0A_has_NOT_identified_this_incoming_ema?= =?ISO-8859-1?Q?il_as_spam=2E__The_original=0A_message_has_been_attac?= =?ISO-8859-1?Q?hed_to_this_so_you_can_view_it_or_label=0A_similar_fu?= =?ISO-8859-1?Q?ture_email=2E__If_you_have_any_questions=2C_see=0A_ro?= =?ISO-8859-1?Q?ot=5C=40localhost_for_details=2E=0A_Content_preview=3A_?= =?ISO-8859-1?Q?_Ben_1=2Es=C4=B1n=C4=B1f_bilgisayar_m=C3=BChendisli=C4=9F?= =?ISO-8859-1?Q?i_b=C3=B6l=C3=BCm=C3=BCnde_okuyorum=0A____kul=C3=BCbe?= =?ISO-8859-1?Q?_kendime_geli=C5=9Ftirmek_i=C3=A7in_kat=C4=B1ld=C4=B1?= =?ISO-8859-1?Q?m_yani_daha_programada_s=C4=B1f=C4=B1r=C4=B1m=0A____k?= =?ISO-8859-1?Q?at=C4=B1lmam=C4=B1n_bir_sak=C4=B1ncas=C4=B1_yok_de=C4=9F?= =?ISO-8859-1?Q?il_mi=3F_ilginiz_i=C3=A7in_te=C5=9Fekk=C3=BCr_ederim=0A_?= =?ISO-8859-1?Q?___=0A_Content_analysis_details=3A___=280=2E3_points=2C_?= =?ISO-8859-1?Q?5=2E0_required=29=0A__pts_rule_name______________desc?= =?ISO-8859-1?Q?ription=0A_----_----------------------_--------------?= =?ISO-8859-1?Q?------------------------------------=0A__0=2E0_RCVD=5FI?= =?ISO-8859-1?Q?N=5FVALIDITY=5FRPBL=5FBLOCKED_RBL=3A_ADMINISTRATOR_NO?= =?ISO-8859-1?Q?TICE=3A_The_query_to=0A______________________________?= =?ISO-8859-1?Q?Validity_was_blocked=2E__See=0A______________________?= =?ISO-8859-1?Q?_______https=3A//knowledge=2Evalidity=2Ecom/hc/en-us/?= =?ISO-8859-1?Q?articles/20961730681243=0A___________________________?= =?ISO-8859-1?Q?___for_more_information=2E=0A________________________?= =?ISO-8859-1?Q?_____=5B209=2E85=2E208=2E53_listed_in_bl=2Escore=2Ese?= =?ISO-8859-1?Q?nderscore=2Ecom=5D=0A__0=2E0_RCVD=5FIN=5FVALIDITY=5FC?= =?ISO-8859-1?Q?ERTIFIED=5FBLOCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_The?= =?ISO-8859-1?Q?=0A_____________________________query_to_Validity_was?= =?ISO-8859-1?Q?_blocked=2E__See=0A_____________________________https?= =?ISO-8859-1?Q?=3A//knowledge=2Evalidity=2Ecom/hc/en-us/articles/209?= =?ISO-8859-1?Q?61730681243=0A______________________________for_more_?= =?ISO-8859-1?Q?information=2E=0A__________________________=5B209=2E8?= =?ISO-8859-1?Q?5=2E208=2E53_listed_in_sa-trusted=2Ebondedsender=2Eor?= =?ISO-8859-1?Q?g=5D=0A__0=2E0_RCVD=5FIN=5FVALIDITY=5FSAFE=5FBLOCKED_?= =?ISO-8859-1?Q?RBL=3A_ADMINISTRATOR_NOTICE=3A_The_query_to=0A_______?= =?ISO-8859-1?Q?_______________________Validity_was_blocked=2E__See=0A_?= =?ISO-8859-1?Q?____________________________https=3A//knowledge=2Eval?= =?ISO-8859-1?Q?idity=2Ecom/hc/en-us/articles/20961730681243=0A______?= =?ISO-8859-1?Q?________________________for_more_information=2E=0A___?= =?ISO-8859-1?Q?__________________________=5B209=2E85=2E208=2E53_list?= =?ISO-8859-1?Q?ed_in_sa-accredit=2Ehabeas=2Ecom=5D=0A_-0=2E0_SPF=5FP?= =?ISO-8859-1?Q?ASS_______________SPF=3A_sender_matches_SPF_record=0A_?= =?ISO-8859-1?Q?_0=2E1_DKIM=5FSIGNED____________Message_has_a_DKIM_or?= =?ISO-8859-1?Q?_DK_signature=2C_not_necessarily_valid=0A_-0=2E1_DKIM?= =?ISO-8859-1?Q?=5FVALID_____________Message_has_at_least_one_valid_D?= =?ISO-8859-1?Q?KIM_or_DK_signature=0A_-0=2E1_DKIM=5FVALID=5FEF______?= =?ISO-8859-1?Q?____Message_has_a_valid_DKIM_or_DK_signature_from=0A_?= =?ISO-8859-1?Q?____________________________envelope-from_domain=0A_-?= =?ISO-8859-1?Q?0=2E1_DKIM=5FVALID=5FAU__________Message_has_a_valid_?= =?ISO-8859-1?Q?DKIM_or_DK_signature_from_author's=0A________________?= =?ISO-8859-1?Q?_____________domain=0A__0=2E2_KAM=5FBLANKSUBJECT_____?= =?ISO-8859-1?Q?__Message_has_a_blank_Subject=0A__0=2E2_FREEMAIL=5FEN?= =?ISO-8859-1?Q?VFROM=5FEND=5FDIGIT_Envelope-from_freemail_username_e?= =?ISO-8859-1?Q?nds_in=0A_____________________________digit=0A_______?= =?ISO-8859-1?Q?______________________=5Bhalilyahya42=28at=29gmail=2Ec?= =?ISO-8859-1?Q?om=5D=0A__0=2E0_FREEMAIL=5FFROM__________Sender_email?= =?ISO-8859-1?Q?_is_commonly_abused_enduser_mail_provider=0A_________?= =?ISO-8859-1?Q?____________________=5Bhalilyahya42=28at=29gmail=2Eco?= =?ISO-8859-1?Q?m=5D=0A__0=2E0_HTML=5FMESSAGE___________BODY=3A_HTML_?= =?ISO-8859-1?Q?included_in_message?=
+X-Spam-Flag: NO
+
+--000000000000057e0f063ff222cb
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+QmVuIDEuc8SxbsSxZiBiaWxnaXNheWFyIG3DvGhlbmRpc2xpxJ9pIGLDtmzDvG3DvG5kZSBva3V5
+b3J1bSBrdWzDvGJlIGtlbmRpbWUNCmdlbGnFn3Rpcm1layBpw6dpbiBrYXTEsWxkxLFtIHlhbmkg
+ZGFoYSBwcm9ncmFtYWRhIHPEsWbEsXLEsW0ga2F0xLFsbWFtxLFuIGJpcg0Kc2FrxLFuY2FzxLEg
+eW9rIGRlxJ9pbCBtaT8NCg0KaWxnaW5peiBpw6dpbiB0ZcWfZWtrw7xyIGVkZXJpbQ0KDQpCaWxn
+aXNheWFyIG3DvGhlbmRpc2xpxJ9pIGLDtmzDvG3DvA0KWUFIWUEgS0hBTElMDQo=
+--000000000000057e0f063ff222cb
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Ben 1.s=C4=B1n=C4=B1f bilgisayar m=C3=BChendisli=C4=9Fi b=
+=C3=B6l=C3=BCm=C3=BCnde okuyorum kul=C3=BCbe kendime geli=C5=9Ftirmek i=C3=
+=A7in kat=C4=B1ld=C4=B1m yani daha programada s=C4=B1f=C4=B1r=C4=B1m kat=C4=
+=B1lmam=C4=B1n bir sak=C4=B1ncas=C4=B1 yok de=C4=9Fil mi?<div dir=3D"auto">=
+<br></div><div dir=3D"auto">ilginiz i=C3=A7in te=C5=9Fekk=C3=BCr ederim</di=
+v><div dir=3D"auto"><br></div><div dir=3D"auto">Bilgisayar m=C3=BChendisli=
+=C4=9Fi b=C3=B6l=C3=BCm=C3=BC</div><div dir=3D"auto">YAHYA KHALIL</div></di=
+v>
+
+--000000000000057e0f063ff222cb--

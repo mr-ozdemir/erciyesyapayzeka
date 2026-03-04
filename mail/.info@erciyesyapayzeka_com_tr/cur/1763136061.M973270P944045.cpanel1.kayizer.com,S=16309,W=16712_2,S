@@ -1,0 +1,403 @@
+Return-Path: <0100019a83187f00-09f9712c-f06e-436e-9e28-64072d17c031-000000@ses-east-1.appsero.com>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id kE4cNz1SF2mtZw4AO6WR3A
+	(envelope-from <0100019a83187f00-09f9712c-f06e-436e-9e28-64072d17c031-000000@ses-east-1.appsero.com>)
+	for <info@erciyesyapayzeka.com.tr>; Fri, 14 Nov 2025 19:01:01 +0300
+Return-path: <0100019a83187f00-09f9712c-f06e-436e-9e28-64072d17c031-000000@ses-east-1.appsero.com>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Fri, 14 Nov 2025 19:01:01 +0300
+Received: from a8-126.smtp-out.amazonses.com ([54.240.8.126]:40855)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <0100019a83187f00-09f9712c-f06e-436e-9e28-64072d17c031-000000@ses-east-1.appsero.com>)
+	id 1vJwEM-00000003xCM-46qX
+	for info@erciyesyapayzeka.com.tr;
+	Fri, 14 Nov 2025 19:00:55 +0300
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ixtdgfaembgcvmhd6xvbyrbqfadc5wfs; d=appsero.com; t=1763136012;
+	h=From:To:Reply-To:Subject:Message-ID:MIME-Version:Date:Content-Type;
+	bh=12rSEnhddC0tk7c0osyMXdVJD9wsyx2f94dmmCPWlU8=;
+	b=QzxRBmP+p+y2baIfwwX1Gf2TLUHn31XFVdN/NSwkpMYRG0Iw0fW+KctXauhnOQUr
+	9lpnAfPAxptdO0f0GFPvPFOmbuV5fYeWLwgPcLuVGMooNvkawYscYebpGBDEBsSWU9c
+	9rSC4FLSqxEaEm/V9OcJqHZx/5L78S43jcD6rsp0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1763136012;
+	h=From:To:Reply-To:Subject:Message-ID:MIME-Version:Date:Content-Type:Feedback-ID;
+	bh=12rSEnhddC0tk7c0osyMXdVJD9wsyx2f94dmmCPWlU8=;
+	b=CmX4TR5ZS6C4t1II/hSzGgMj6god3+2L5TXCPXGmPAhWtdXRmntLSCyfOSkB3L06
+	Rlo2I7P+38kVQi1YCzHscBRiI8Yg1MDY6VSarMNUudgI9dh4SXsepWg1UvubqmX1lSl
+	CHk6StxKV9Y709Mt2uj3c4nE0dE4hRAWZ2tJ8WTg=
+From: weDevs <noreply@appsero.com>
+To: info@erciyesyapayzeka.com.tr
+Reply-To: support@wedevs.com
+Subject: =?utf-8?Q?We=E2=80=99re?= sorry to see you go.
+Message-ID: <0100019a83187f00-09f9712c-f06e-436e-9e28-64072d17c031-000000@email.amazonses.com>
+MIME-Version: 1.0
+Date: Fri, 14 Nov 2025 16:00:12 +0000
+Content-Type: multipart/alternative; boundary=AAU8Plfn
+Feedback-ID: ::1.us-east-1.YLZHvqN0WcUg+2J6NoWJL9L0eDq3vlKRvBHwJoyetXI=:AmazonSES
+X-SES-Outgoing: 2025.11.14-54.240.8.126
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1vJwEM-00000003xCM-46qX
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=-0.094, required 5, DKIM_SIGNED 0.10, DKIM_VALID -0.10,
+	DKIM_VALID_AU -0.10, HTML_MESSAGE 0.00, KAM_SHORT 0.00,
+	RCVD_IN_VALIDITY_CERTIFIED_BLOCKED 0.00,
+	RCVD_IN_VALIDITY_RPBL_BLOCKED 0.00,
+	RCVD_IN_VALIDITY_SAFE_BLOCKED 0.00, RCVD_IN_ZEN_BLOCKED_OPENDNS 0.00,
+	SPF_PASS -0.00, URIBL_DBL_BLOCKED_OPENDNS 0.00)
+X-YourOrg-MailScanner-From: 0100019a83187f00-09f9712c-f06e-436e-9e28-64072d17c031-000000@ses-east-1.appsero.com
+X-Spam-Status: No
+
+--AAU8Plfn
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+<head>
+<meta name=3D"viewport" content=3D"width=3Dd=
+evice-width, initial-scale=3D1.0" />
+<meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8" />
+</head>
+<body>
+<style>
+@med=
+ia only screen and (max-width: 600px) {
+.inner-body {
+width: 100% !impo=
+rtant;
+}
+
+.footer {
+width: 100% !important;
+}
+}
+
+@media onl=
+y screen and (max-width: 500px) {
+.button {
+width: 100% !important;
+}=
+
+}
+</style>
+
+<table class=3D"wrapper" width=3D"100%" cellpadding=3D=
+"0" cellspacing=3D"0">
+<tr>
+<td align=3D"center">
+<table class=3D"con=
+tent" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+<!-- Header -->=
+
+<tr>
+<td class=3D"header">
+<img src=3D"https://storage.googleapis.co=
+m/appsero-storage/team/wedevs/ayB8i9O9YnqmgnMuH6PcgMh6JGLVU0JHbTtoT2m8.png"=
+ alt=3D"weDevs" height=3D"auto" style=3D"max-height: 100px">
+</td>
+</tr=
+>
+
+<!-- Email Body -->
+<tr>
+<td class=3D"body" width=3D"100%" cellp=
+adding=3D"0" cellspacing=3D"0">
+<table class=3D"inner-body" align=3D"cent=
+er" width=3D"570" cellpadding=3D"0" cellspacing=3D"0">
+<!-- Body content =
+-->
+<tr>
+<td class=3D"main-content-cell">
+<div class=3D"order-complet=
+ed-body">
+<div class=3D"deactivation-content">
+<p><span style=3D"color:=
+ rgb(68, 68, 68);">Hi,</span></p><p><br></p><p><span style=3D"color: rgb(68=
+, 68, 68);">It=E2=80=99s heartbreaking to see you breaking up with us :(=
+=C2=A0</span></p><p><br></p><p><span style=3D"color: rgb(68, 68, 68);">If y=
+ou have already given us the reason before, we will analyse it and get back=
+ to you in a zap. (We, even might be working on your problem right now!)=
+=C2=A0</span></p><p><br></p><p><span style=3D"color: rgb(68, 68, 68);">If y=
+ou haven't already, please share your experience with us. It=E2=80=99ll hel=
+p us to further improve your experience with WP Project Manager. Our dedica=
+ted Developers and Quality Assurance Team are constantly trying to make thi=
+ngs better for you.=C2=A0</span></p><p><br></p><p><span style=3D"color: rgb=
+(68, 68, 68);">So, you could help us with your feedback by replying to this=
+ email.</span></p><p><br></p><p><span style=3D"color: rgb(68, 68, 68);">Bes=
+ides, you can learn how you can easily utilise WP Project Manager for your =
+business with this rich </span><a href=3D"https://wedevs.com/docs/wp-projec=
+t-manager/getting-started/installation/" target=3D"_blank" style=3D"color: =
+rgb(17, 85, 204);">documentation</a><span style=3D"color: rgb(68, 68, 68);"=
+>.</span></p><p><br></p><p><span style=3D"color: rgb(68, 68, 68);">Sincerel=
+y,</span></p><p><span style=3D"color: rgb(68, 68, 68);">Team WP Project Man=
+ager=C2=A0</span></p><p><br></p><p><br></p>
+</div>
+</div>
+
+</td>
+=
+</tr>
+</table>
+</td>
+</tr>
+
+<!-- Footer -->
+<tr>
+<td>
+<tabl=
+e class=3D"footer" align=3D"center" width=3D"570" cellpadding=3D"0" cellspa=
+cing=3D"0">
+<tr>
+<td class=3D"footer-content" align=3D"center">
+You=
+=E2=80=99re receiving this email because you deactivated <strong>WP Project=
+ Manager</strong>,
+which partners with <a href=3D"https://appsero.com/?ut=
+m_source=3Ddeactivation&utm_medium=3Demail&utm_campaign=3DWP+Project+Manage=
+r" target=3D"_blank">Appsero</a> to provide Analytics, Licensing and Automa=
+tic Updates.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>=
+
+</tr>
+</table>
+</body>
+</html>
+
+--AAU8Plfn
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+<head>
+<meta name=3D"viewport" content=3D"width=3Dd=
+evice-width, initial-scale=3D1.0">
+<meta http-equiv=3D"Content-Type" cont=
+ent=3D"text/html; charset=3DUTF-8">
+</head>
+<body style=3D"font-family:=
+ Avenir, Helvetica, sans-serif; box-sizing: border-box; background: #F3F3F3=
+; color: #74787E; height: 100%; hyphens: auto; line-height: 1.4; margin: 0;=
+ -moz-hyphens: auto; -ms-word-break: break-all; width: 100% !important; -we=
+bkit-hyphens: auto; -webkit-text-size-adjust: none; word-break: break-word;=
+">
+<style>
+@media only screen and (max-width: 600px) {
+.inner-body {=
+
+width: 100% !important;
+}
+
+.footer {
+width: 100% !important;
+}=
+
+}
+
+@media only screen and (max-width: 500px) {
+.button {
+width: =
+100% !important;
+}
+}
+</style>
+
+<table class=3D"wrapper" width=3D"=
+100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Avenir, Hel=
+vetica, sans-serif; box-sizing: border-box; background: #F3F3F3; margin: 0;=
+ padding: 0; width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing=
+: 0; -premailer-width: 100%;">
+<tr>
+<td align=3D"center" style=3D"font-=
+family: Avenir, Helvetica, sans-serif; box-sizing: border-box;">
+<table c=
+lass=3D"content" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; mar=
+gin: 0; padding: 0; width: 100%; -premailer-cellpadding: 0; -premailer-cell=
+spacing: 0; -premailer-width: 100%;">
+<!-- Header -->
+<tr>
+<td class=
+=3D"header" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing=
+: border-box; padding: 25px 0; text-align: center;">
+<img src=3D"https://=
+storage.googleapis.com/appsero-storage/team/wedevs/ayB8i9O9YnqmgnMuH6PcgMh6=
+JGLVU0JHbTtoT2m8.png" alt=3D"weDevs" height=3D"auto" style=3D"font-family: =
+Avenir, Helvetica, sans-serif; box-sizing: border-box; max-width: 180px; he=
+ight: auto; max-height: 100px;">
+</td>
+</tr>
+
+<!-- Email Body -->=
+
+<tr>
+<td class=3D"body" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bor=
+der-box; margin: 0; padding: 0; width: 100%; -premailer-cellpadding: 0; -pr=
+emailer-cellspacing: 0; -premailer-width: 100%;">
+<table class=3D"inner-b=
+ody" align=3D"center" width=3D"570" cellpadding=3D"0" cellspacing=3D"0" sty=
+le=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; b=
+ackground: transparent; margin: 0 auto; padding: 0; width: 570px; -premaile=
+r-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 570px;">
+<=
+!-- Body content -->
+<tr>
+<td class=3D"main-content-cell" style=3D"font=
+-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; border-top:=
+ 4px solid #7ba3f8; background: #FFFFFF;">
+<div class=3D"order-completed-=
+body" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bord=
+er-box;">
+<div class=3D"deactivation-content" style=3D"font-family: Aveni=
+r, Helvetica, sans-serif; box-sizing: border-box; padding: 30px;">
+<p sty=
+le=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; c=
+olor: #74787E; font-size: 16px; line-height: 1.5em; margin-top: 0; text-ali=
+gn: left; margin-bottom: 0px;"><span style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: rgb(68, 68, 68);">Hi,</span><=
+/p>
+<p style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: b=
+order-box; color: #74787E; font-size: 16px; line-height: 1.5em; margin-top:=
+ 0; text-align: left; margin-bottom: 0px;"><br></p>
+<p style=3D"font-fami=
+ly: Avenir, Helvetica, sans-serif; box-sizing: border-box; color: #74787E; =
+font-size: 16px; line-height: 1.5em; margin-top: 0; text-align: left; margi=
+n-bottom: 0px;"><span style=3D"font-family: Avenir, Helvetica, sans-serif; =
+box-sizing: border-box; color: rgb(68, 68, 68);">It=E2=80=99s heartbreaking=
+ to see you breaking up with us :(=C2=A0</span></p>
+<p style=3D"font-fami=
+ly: Avenir, Helvetica, sans-serif; box-sizing: border-box; color: #74787E; =
+font-size: 16px; line-height: 1.5em; margin-top: 0; text-align: left; margi=
+n-bottom: 0px;"><br></p>
+<p style=3D"font-family: Avenir, Helvetica, sans=
+-serif; box-sizing: border-box; color: #74787E; font-size: 16px; line-heigh=
+t: 1.5em; margin-top: 0; text-align: left; margin-bottom: 0px;"><span style=
+=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; col=
+or: rgb(68, 68, 68);">If you have already given us the reason before, we wi=
+ll analyse it and get back to you in a zap. (We, even might be working on y=
+our problem right now!)=C2=A0</span></p>
+<p style=3D"font-family: Avenir,=
+ Helvetica, sans-serif; box-sizing: border-box; color: #74787E; font-size: =
+16px; line-height: 1.5em; margin-top: 0; text-align: left; margin-bottom: 0=
+px;"><br></p>
+<p style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; color: #74787E; font-size: 16px; line-height: 1.5em; m=
+argin-top: 0; text-align: left; margin-bottom: 0px;"><span style=3D"font-fa=
+mily: Avenir, Helvetica, sans-serif; box-sizing: border-box; color: rgb(68,=
+ 68, 68);">If you haven't already, please share your experience with us. It=
+=E2=80=99ll help us to further improve your experience with WP Project Mana=
+ger. Our dedicated Developers and Quality Assurance Team are constantly try=
+ing to make things better for you.=C2=A0</span></p>
+<p style=3D"font-fami=
+ly: Avenir, Helvetica, sans-serif; box-sizing: border-box; color: #74787E; =
+font-size: 16px; line-height: 1.5em; margin-top: 0; text-align: left; margi=
+n-bottom: 0px;"><br></p>
+<p style=3D"font-family: Avenir, Helvetica, sans=
+-serif; box-sizing: border-box; color: #74787E; font-size: 16px; line-heigh=
+t: 1.5em; margin-top: 0; text-align: left; margin-bottom: 0px;"><span style=
+=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; col=
+or: rgb(68, 68, 68);">So, you could help us with your feedback by replying =
+to this email.</span></p>
+<p style=3D"font-family: Avenir, Helvetica, san=
+s-serif; box-sizing: border-box; color: #74787E; font-size: 16px; line-heig=
+ht: 1.5em; margin-top: 0; text-align: left; margin-bottom: 0px;"><br></p>=
+
+<p style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bord=
+er-box; color: #74787E; font-size: 16px; line-height: 1.5em; margin-top: 0;=
+ text-align: left; margin-bottom: 0px;"><span style=3D"font-family: Avenir,=
+ Helvetica, sans-serif; box-sizing: border-box; color: rgb(68, 68, 68);">Be=
+sides, you can learn how you can easily utilise WP Project Manager for your=
+ business with this rich </span><a href=3D"https://wedevs.com/docs/wp-proje=
+ct-manager/getting-started/installation/" target=3D"_blank" style=3D"font-f=
+amily: Avenir, Helvetica, sans-serif; box-sizing: border-box; text-decorati=
+on: none; color: rgb(17, 85, 204);">documentation</a><span style=3D"font-fa=
+mily: Avenir, Helvetica, sans-serif; box-sizing: border-box; color: rgb(68,=
+ 68, 68);">.</span></p>
+<p style=3D"font-family: Avenir, Helvetica, sans-=
+serif; box-sizing: border-box; color: #74787E; font-size: 16px; line-height=
+: 1.5em; margin-top: 0; text-align: left; margin-bottom: 0px;"><br></p>
+<=
+p style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: border-b=
+ox; color: #74787E; font-size: 16px; line-height: 1.5em; margin-top: 0; tex=
+t-align: left; margin-bottom: 0px;"><span style=3D"font-family: Avenir, Hel=
+vetica, sans-serif; box-sizing: border-box; color: rgb(68, 68, 68);">Sincer=
+ely,</span></p>
+<p style=3D"font-family: Avenir, Helvetica, sans-serif; b=
+ox-sizing: border-box; color: #74787E; font-size: 16px; line-height: 1.5em;=
+ margin-top: 0; text-align: left; margin-bottom: 0px;"><span style=3D"font-=
+family: Avenir, Helvetica, sans-serif; box-sizing: border-box; color: rgb(6=
+8, 68, 68);">Team WP Project Manager=C2=A0</span></p>
+<p style=3D"font-fa=
+mily: Avenir, Helvetica, sans-serif; box-sizing: border-box; color: #74787E=
+; font-size: 16px; line-height: 1.5em; margin-top: 0; text-align: left; mar=
+gin-bottom: 0px;"><br></p>
+<p style=3D"font-family: Avenir, Helvetica, sa=
+ns-serif; box-sizing: border-box; color: #74787E; font-size: 16px; line-hei=
+ght: 1.5em; margin-top: 0; text-align: left; margin-bottom: 0px;"><br></p>=
+
+</div>
+</div>
+
+
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+=
+
+<!-- Footer -->
+<tr>
+<td style=3D"font-family: Avenir, Helvetica, sa=
+ns-serif; box-sizing: border-box;">
+<table class=3D"footer" align=3D"cent=
+er" width=3D"570" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family:=
+ Avenir, Helvetica, sans-serif; box-sizing: border-box; margin: 0 auto; pad=
+ding: 0; text-align: center; width: 570px; -premailer-cellpadding: 0; -prem=
+ailer-cellspacing: 0; -premailer-width: 570px;">
+<tr>
+<td class=3D"foot=
+er-content" align=3D"center" style=3D"font-family: Avenir, Helvetica, sans-=
+serif; box-sizing: border-box; color: #999; font-size: 14px; text-align: ce=
+nter; padding-top: 30px; padding-bottom: 30px;">
+You=E2=80=99re receiving=
+ this email because you deactivated <strong style=3D"font-family: Avenir, H=
+elvetica, sans-serif; box-sizing: border-box;">WP Project Manager</strong>,=
+
+which partners with <a href=3D"https://appsero.com/?utm_source=3Ddeactiv=
+ation&amp;utm_medium=3Demail&amp;utm_campaign=3DWP+Project+Manager" target=
+=3D"_blank" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing=
+: border-box; color: #3097D1; text-decoration: none; font-weight: bold;">Ap=
+psero</a> to provide Analytics, Licensing and Automatic Updates.
+</td>
+=
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</=
+body>
+</html>
+--AAU8Plfn--

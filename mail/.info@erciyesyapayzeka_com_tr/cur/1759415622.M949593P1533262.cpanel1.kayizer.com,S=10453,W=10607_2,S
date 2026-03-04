@@ -1,0 +1,154 @@
+Return-Path: <>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id YPNkOEaN3mhOZRcAO6WR3A
+	(envelope-from <>)
+	for <info@erciyesyapayzeka.com.tr>; Thu, 02 Oct 2025 17:33:42 +0300
+Return-path: <>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Thu, 02 Oct 2025 17:33:42 +0300
+Received: from relay3-bounce-b.mailbaby.net ([174.138.180.170]:48824)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	id 1v4KNM-00000006T6O-0tiZ
+	for info@erciyesyapayzeka.com.tr;
+	Thu, 02 Oct 2025 17:33:42 +0300
+Received: from localhost
+ by relay3-bounce-b.mailbaby.net (MailBabyMTA) with HTTP id 199a5570586000768c.001
+ for <info@erciyesyapayzeka.com.tr>;
+ Thu, 02 Oct 2025 14:32:47 +0000
+X-Zone-Loop: be7fed571a2a908e0c32cebcc488ccc74bb3076f8142
+Feedback-ID: bounce:199a5570586000768c:qr6klncqfchvlr24:mbaby
+From: Mail Delivery Subsystem <mailer-daemon@bounces.mailbaby.net>
+To: info@erciyesyapayzeka.com.tr
+X-Failed-Recipients: ecebegum85@gmail.com
+Auto-Submitted: auto-replied
+Subject: Delivery Status Notification (Failure)
+In-Reply-To: <ee41204071b2473790772c5da1a3e77a@erciyesyapayzeka.com.tr>
+References: <ee41204071b2473790772c5da1a3e77a@erciyesyapayzeka.com.tr>
+Date: Thu, 02 Oct 2025 14:32:47 +0000
+Message-ID: <7d4aa5bd-802d-5ddf-94b6-cf7471d75683@bounces.mailbaby.net>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+ boundary="--_NmP-ce35714021ad5651-Part_1"
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: =?ISO-8859-1?Q?Spam_detection_software=2C_running_on_the_system_=22cpanel1=2Ekayize?= =?ISO-8859-1?Q?r=2Ecom=22=2C=0A_has_NOT_identified_this_incoming_ema?= =?ISO-8859-1?Q?il_as_spam=2E__The_original=0A_message_has_been_attac?= =?ISO-8859-1?Q?hed_to_this_so_you_can_view_it_or_label=0A_similar_fu?= =?ISO-8859-1?Q?ture_email=2E__If_you_have_any_questions=2C_see=0A_ro?= =?ISO-8859-1?Q?ot=5C=40localhost_for_details=2E=0A_Content_preview=3A_?= =?ISO-8859-1?Q?_Delivery_to_the_following_recipient_failed_permanent?= =?ISO-8859-1?Q?ly=3A_ecebegum85=40gmail=2Ecom=0A____Technical_detail?= =?ISO-8859-1?Q?s_of_permanent_failure=3A_421-4=2E7=2E28_Gmail_has_de?= =?ISO-8859-1?Q?tected_an=0A___unusual_rate_of_mail_originating_from_?= =?ISO-8859-1?Q?your_SPF_domain_=5Berciyesyapayzeka=2Ecom=2Etr=0A____?= =?ISO-8859-1?Q?35=5D=2E_To_protect_our_users_from_spam=2C_mail_sent_?= =?ISO-8859-1?Q?from_your_domain_has_been=0A___temporarily_rat_=5B=2E?= =?ISO-8859-1?Q?=2E=2E=5D_=0A_Content_analysis_details=3A___=280=2E0_?= =?ISO-8859-1?Q?points=2C_5=2E0_required=29=0A__pts_rule_name________?= =?ISO-8859-1?Q?______description=0A_----_----------------------_----?= =?ISO-8859-1?Q?----------------------------------------------=0A__0=2E0?= =?ISO-8859-1?Q?_URIBL=5FBLOCKED__________ADMINISTRATOR_NOTICE=3A_The?= =?ISO-8859-1?Q?_query_to_URIBL_was_blocked=2E=0A____________________?= =?ISO-8859-1?Q?_________See=0A_____________________________http=3A//?= =?ISO-8859-1?Q?wiki=2Eapache=2Eorg/spamassassin/DnsBlocklists#dnsbl-?= =?ISO-8859-1?Q?block=0A______________________________for_more_inform?= =?ISO-8859-1?Q?ation=2E=0A_____________________________=5BURI=3A_mai?= =?ISO-8859-1?Q?lbaby=2Enet=5D=0A_____________________________=5BURI=3A_?= =?ISO-8859-1?Q?erciyesyapayzeka=2Ecom=2Etr=5D=0A____________________?= =?ISO-8859-1?Q?_________=5BURI=3A_kayizer=2Ecom=5D=0A__0=2E0_RCVD=5FI?= =?ISO-8859-1?Q?N=5FVALIDITY=5FRPBL=5FBLOCKED_RBL=3A_ADMINISTRATOR_NO?= =?ISO-8859-1?Q?TICE=3A_The_query_to=0A______________________________?= =?ISO-8859-1?Q?Validity_was_blocked=2E__See=0A______________________?= =?ISO-8859-1?Q?_______https=3A//knowledge=2Evalidity=2Ecom/hc/en-us/?= =?ISO-8859-1?Q?articles/20961730681243=0A___________________________?= =?ISO-8859-1?Q?___for_more_information=2E=0A________________________?= =?ISO-8859-1?Q?___=5B174=2E138=2E180=2E170_listed_in_bl=2Escore=2Ese?= =?ISO-8859-1?Q?nderscore=2Ecom=5D=0A__0=2E0_RCVD=5FIN=5FVALIDITY=5FC?= =?ISO-8859-1?Q?ERTIFIED=5FBLOCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_The?= =?ISO-8859-1?Q?=0A_____________________________query_to_Validity_was?= =?ISO-8859-1?Q?_blocked=2E__See=0A_____________________________https?= =?ISO-8859-1?Q?=3A//knowledge=2Evalidity=2Ecom/hc/en-us/articles/209?= =?ISO-8859-1?Q?61730681243=0A______________________________for_more_?= =?ISO-8859-1?Q?information=2E=0A________________________=5B174=2E138?= =?ISO-8859-1?Q?=2E180=2E170_listed_in_sa-trusted=2Ebondedsender=2Eor?= =?ISO-8859-1?Q?g=5D=0A_-0=2E0_SPF=5FHELO=5FPASS__________SPF=3A_HELO?= =?ISO-8859-1?Q?_matches_SPF_record=0A__0=2E0_RCVD=5FIN=5FVALIDITY=5FS?= =?ISO-8859-1?Q?AFE=5FBLOCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_The_quer?= =?ISO-8859-1?Q?y_to=0A______________________________Validity_was_blo?= =?ISO-8859-1?Q?cked=2E__See=0A_____________________________https=3A/?= =?ISO-8859-1?Q?/knowledge=2Evalidity=2Ecom/hc/en-us/articles/2096173?= =?ISO-8859-1?Q?0681243=0A______________________________for_more_info?= =?ISO-8859-1?Q?rmation=2E=0A_____________________________=5B174=2E13?= =?ISO-8859-1?Q?8=2E180=2E170_listed_in_sa-accredit=2Ehabeas=2Ecom=5D=0A?= =?ISO-8859-1?Q?__0=2E0_KAM=5FDMARC=5FSTATUS_______Test_Rule_for_DKIM?= =?ISO-8859-1?Q?_or_SPF_Failure_with_Strict=0A_______________________?= =?ISO-8859-1?Q?______Alignment?=
+X-Spam-Flag: NO
+
+----_NmP-ce35714021ad5651-Part_1
+Content-Type: text/plain
+Content-Description: Notification
+Content-Transfer-Encoding: quoted-printable
+
+Delivery to the following recipient failed permanently:
+    ecebegum85@gmail.com
+
+Technical details of permanent failure:
+
+421-4.7.28 Gmail has detected an unusual rate of mail originating from your=
+ SPF domain [erciyesyapayzeka.com.tr 35]. To protect our users from spam, =
+mail sent from your domain has been temporarily rate limited. For more =
+information, go to https://support.google.com/mail/?=
+p=3DUnsolicitedRateLimitError to review our Bulk Email Senders Guidelines. =
+af79cd13be357-87778370f82si106386685a.1343 - gsmtp
+
+
+----_NmP-ce35714021ad5651-Part_1
+Content-Type: message/delivery-status
+Content-Description: Delivery report
+
+Reporting-MTA: dns; relay3-bqueue-j.mailbaby.net
+X-ZoneMTA-Queue-ID: 199a556c28e0007194
+X-ZoneMTA-Sender: rfc822; info@erciyesyapayzeka.com.tr
+Arrival-Date: Thu, 02 Oct 2025 14:32:43 +0000
+
+Final-Recipient: rfc822; ecebegum85@gmail.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 421-4.7.28 Gmail has detected an unusual rate of mail originating from your SPF domain [erciyesyapayzeka.com.tr 35]. To protect our users from spam, mail sent from your domain has been temporarily rate limited. For more information, go to https://support.google.com/mail/?p=UnsolicitedRateLimitError to review our Bulk Email Senders Guidelines. af79cd13be357-87778370f82si106386685a.1343 - gsmtp
+
+
+----_NmP-ce35714021ad5651-Part_1
+Content-Type: text/rfc822-headers
+Content-Description: Undelivered Message Headers
+Content-Transfer-Encoding: quoted-printable
+
+Received: from cpanel1.kayizer.com ([85.235.74.127] cpanel1.kayizer.com)
+ (Authenticated sender: mb46323)
+ by relay3-bqueue-j.mailbaby.net (MailBabyMTA) with ESMTPSA id =
+199a556c28e0007194.027
+ for <ecebegum85@gmail.com>
+ (version=3DTLSv1.3 cipher=3DTLS_AES_256_GCM_SHA384);
+ Thu, 02 Oct 2025 14:32:30 +0000
+X-Zone-Loop: 9bfda7176c8b569799b1bc98af173c7769cf86696db7
+ARC-Authentication-Results: i=3D1;	offloadmongo4c.mailbaby.net;	=
+auth=3Dpass
+ smtp.auth=3Dmb46323 smtp.mailfrom=3Dinfo@erciyesyapayzeka.com.tr
+ARC-Seal: i=3D1; s=3Ddetka; d=3Dmailbaby.net; t=3D1759415550; =
+a=3Drsa-sha256;
+	cv=3Dnone;
+	b=3DuWRzymfsOrc5up5uC1l6FnyFnU1nZOh5XwALmrTgTPzyIVM8TiT3jGeyYBoBPzjSQ5H43F=
+
+	Duh6gGQ6pJ//aITlXHnrg3Jc+Xh/+RgZYl1GCRvsFQulczXHpAp7BXqoFtaT7xVEi+8Kqb
+	UqeppPZZCBFCojS40r+QIwhewe+tRlXnvVh+OjNUaa6uHMDvqUWkdDykJArW2hXaiUlzq2
+	r9bXOn7RMjMM+o2E12f7j2UkiLKgxNhczd98W9a/oUtxCsaOBtWGGvjllFaDJxuFBrNAhq
+	64DNFB1ZttCYnVjanO+fQVWyMoLur1RvCj5Ppm45RtGSGFqm6r5xL3boeT9lwg=3D=3D
+ARC-Message-Signature: i=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed;
+ d=3Dmailbaby.net;	s=3Ddetka; t=3D1759415550;
+	h=3Dfrom:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=3D+GHqSsdGrfmbuadF+YlyfbM13jK/QPkrWp2Ag6xmUmI=3D;
+	b=3DIiSTsFNgAz/OA++sTjKGAd5fek6pqXu0qgjVLTpEL9oFbpGfiuyDaH1tXCYHMOV/J8DkGU=
+
+	t4pzNmcJoPOnxb1lPMKBIDuOqzrw6n6EXEmeNbET7YC5JycI7bJUG9JqfbFYrd3vUP62/7
+	NwDYMMkKbldBT/iUcDq6taj7FwE8/E0TC/1JyTlbVgKs17Vaav5ZRVenxw2pfJJJwNem24
+	UgvBZtMUjH4ZihNM2lkLA+UNqGskWfCsWiBWn/tXEgLrVVmhco8kBwx0vXI/pMLWtxh5Mu
+	KSHCAw8dJXLunqfIkApbBwlGgH4iHmqd37PKxCfFtBQQI0ANnyF57LelaFj84A=3D=3D
+X-MB-ID: mb46323|info@erciyesyapayzeka.com.tr
+X-SPF: pass
+Feedback-ID: mb46323:199a556c28e0007194:85.235.74.127:mbaby
+X-NS-SCAN: PASS
+DKIM-Signature: v=3D1; a=3Drsa-sha256; q=3Ddns/txt; c=3Drelaxed/relaxed;
+	d=3Derciyesyapayzeka.com.tr; s=3Ddefault; h=3DContent-Transfer-Encoding:
+	Content-Type:Message-ID:Subject:To:From:Date:MIME-Version:Sender:Reply-To:=
+Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archiv=
+e;
+	bh=3D+GHqSsdGrfmbuadF+YlyfbM13jK/QPkrWp2Ag6xmUmI=3D; =
+b=3DBQfZtYIEU/ltYa4RGioq6YOKE/
+	Ymp2zGqgA0dLT8E/53BTOzMVWsBUxbKiNk4U1TBjodusaodhtrkapcWbxoK3mip4+kLE9FVQAq=
+i61
+	S9kNk+tM08tJZQJhbW8JVM7jAl9rEY52rgJj91kPoda65nBTsMnKXLfkIpAZA9tVh1W1XXzz7a=
+mkq
+	yP0OAzJUj/dklgRUvt/swR9l4BUP3FlhYUMR4IIXku1e9HzzfCtMO0PfFMjM1G8aYK3Q1jW8GK=
+jnm
+	H8/P5kYumwulpyIvxTJOJeeg1M4TRKcJ84p0TAL0NG+v4d1QNyObKt8YgVNn6oo5qFf3x4ldrb=
+mHM
+	qYsaFOmQ=3D=3D;
+Received: from [::1] (port=3D39858 helo=3Dcpanel1.kayizer.com)
+	by cpanel1.kayizer.com with esmtpa (Exim 4.98.2)
+	(envelope-from <info@erciyesyapayzeka.com.tr>)
+	id 1v4KMA-00000006Ssw-2ZAO;
+	Thu, 02 Oct 2025 17:32:28 +0300
+MIME-Version: 1.0
+Date: Thu, 02 Oct 2025 17:32:26 +0300
+From: info@erciyesyapayzeka.com.tr
+To: undisclosed-recipients:;
+Subject: =3D?UTF-8?Q?Data_Kamp_Yapay_Zeka=3D27ya_Giri=3DC5=3D9F?=3D
+User-Agent: Roundcube Webmail/1.6.11
+Message-ID: <ee41204071b2473790772c5da1a3e77a@erciyesyapayzeka.com.tr>
+X-Sender: info@erciyesyapayzeka.com.tr
+Content-Type: text/plain; charset=3DUTF-8;
+ format=3Dflowed
+Content-Transfer-Encoding: 8bit
+X-AuthUser: info@erciyesyapayzeka.com.tr
+
+
+----_NmP-ce35714021ad5651-Part_1--

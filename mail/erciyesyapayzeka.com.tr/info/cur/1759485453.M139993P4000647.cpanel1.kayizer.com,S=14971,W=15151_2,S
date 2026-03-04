@@ -1,0 +1,180 @@
+Return-Path: <gorkemkoyuncu7@outlook.com>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id wNN7BA2e32iHCz0AO6WR3A
+	(envelope-from <gorkemkoyuncu7@outlook.com>)
+	for <info@erciyesyapayzeka.com.tr>; Fri, 03 Oct 2025 12:57:33 +0300
+Return-path: <gorkemkoyuncu7@outlook.com>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Fri, 03 Oct 2025 12:57:33 +0300
+Received: from mail-northeuropeazolkn19010003.outbound.protection.outlook.com ([52.103.32.3]:20203 helo=DB3PR0202CU003.outbound.protection.outlook.com)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <gorkemkoyuncu7@outlook.com>)
+	id 1v4cXe-0000000Gpwq-0X3s
+	for info@erciyesyapayzeka.com.tr;
+	Fri, 03 Oct 2025 12:57:32 +0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=LIbAhh9ffmQ8PyFatgEV8PKrUNa5WYcNl9/56F3gUgD3oLTrqJ2eTKrfuBXx+oO/x1Efq1c7OBX9tRo3YCixf9+XdEMmgWMbHNI3XQX13pqm2jciUY6p5S+zb3/jOvF0h26nGWa1v9H4JP82J6k0YNzqm9/iL3V9v3VXzopRVHpPbxqHdkKsxVEBsOQ1iXt8h1yHPibV0alkm0nn5Q81dCIObcxH4QmN5qLp2PcXZXEMD4GPMrvyiZn/qnT4Wan+1/tNVvqq1CE9CcwVeKI6YuMXynlHQO1rzg/YRLGA9/oaSJbNLO37juTwOH2yhPbdH2cqd/oKtoM/Mq+5NixRvg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=x/ou7Wblb/JM2H7rliAzH8SOnOCxyWu5YYrCNiLpK3Y=;
+ b=fquivxuZuhty12fNZpOViwYdi+4nbpPkS291vcWEyZi4M8QfveRhzPYC20aPk/jt6SkDmbnQ8DH0+tivCTarAv3BRtuLJDkRA+2VyUl/PyhKQl4M6Nn3kVjmGNIXR9T1R3N9ntChAJMV7S4XY50EzbNKTR3SQ6ZW1ujLjfgPAUJPIi3MHpA3lzPvcUQOK0cOVol7HW0U4rjU4OubbKLdxnvPNWpqRvq0Li3rv8bh/3i0BOMrHJ5xnR2/rExV3/TnIkMC+Qxr9AD2Kf1MSJnpeSmVmx/V7btQWuWlWTus0vQi7IpLsdNDeiyOrx1yWEn2D2axH4V1iNVk6tHHjiP7TA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=x/ou7Wblb/JM2H7rliAzH8SOnOCxyWu5YYrCNiLpK3Y=;
+ b=McnpTyGO6UjXFqNXB11PboJ8KNHREB+hEiyGowOWFpZtR2gZdHVunKvioHY3W0A3zKSYAgVH8b614V9uPPdE/IAKT8c/8p36Xa2acj8IHtewyXQMv7K4AOaUN6R8FhY6ierAwu6S2WQhoMln6kUmTSiPuhVZF6R3nLcrZiLnc/tG0R3RjtnsiNkpOGY4LRiutbre89ftdOeVai21sxvCvKQ3asCVIC57H87fE8N76XYkl+GAwuPUomgxNu1pP1Q74G7RHE0eI2rpuwE4Xj++D/REoO9xJWuqcr5776qHpz6FDcX2KxwcvALel62MaYVK60k/0yaOe0SzjpBsu0EqCA==
+Received: from FRWP191MB2841.EURP191.PROD.OUTLOOK.COM (2603:10a6:d10:17e::8)
+ by AM7P191MB0834.EURP191.PROD.OUTLOOK.COM (2603:10a6:20b:179::7) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9160.17; Fri, 3 Oct
+ 2025 09:56:48 +0000
+Received: from FRWP191MB2841.EURP191.PROD.OUTLOOK.COM
+ ([fe80::9a73:9d9:65be:b994]) by FRWP191MB2841.EURP191.PROD.OUTLOOK.COM
+ ([fe80::9a73:9d9:65be:b994%6]) with mapi id 15.20.9160.017; Fri, 3 Oct 2025
+ 09:56:48 +0000
+From: =?iso-8859-3?Q?g=F6rkem_koyuncu?= <gorkemkoyuncu7@outlook.com>
+To: "info@erciyesyapayzeka.com.tr" <info@erciyesyapayzeka.com.tr>
+Subject: =?iso-8859-3?Q?Ba=BAvuru_maili?=
+Thread-Topic: =?iso-8859-3?Q?Ba=BAvuru_maili?=
+Thread-Index: AQHcNEvhMwA2deA+W0us1v0lb/gsvg==
+Date: Fri, 3 Oct 2025 09:56:47 +0000
+Message-ID:
+ <FRWP191MB28419163EED6ABD1F27D5DE882E4A@FRWP191MB2841.EURP191.PROD.OUTLOOK.COM>
+Accept-Language: tr-TR, en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-ms-reactions: allow
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: FRWP191MB2841:EE_|AM7P191MB0834:EE_
+x-ms-office365-filtering-correlation-id: 594d06b5-53bb-420b-d75a-08de02632b00
+x-microsoft-antispam:
+ BCL:0;ARA:14566002|15080799012|9400799040|31061999003|461199028|12050799012|8060799015|19110799012|14030799003|8062599012|1602099012|3412199025|440099028|39105399003|51005399003|4302099013|40105399003|10035399007|102099032|3430499032|26104999006;
+x-microsoft-antispam-message-info:
+ =?iso-8859-3?Q?GT96TdM5CVsbQfBKzVTBjtcCgi5Wr2jF3H6Wd973FxWd6JG+NCrtMVXTwv?=
+ =?iso-8859-3?Q?pBm/K9vHZJjN/0gtZp4smMi8kGUPNJH6cI2hQ7G6p8sfNbkZJlmHVVqSur?=
+ =?iso-8859-3?Q?IR9eVI7hhtZ7Xkehf8k14TIZ6znqLdvHw6OwZvy/dS84SGfr4Hw6WIrwB1?=
+ =?iso-8859-3?Q?T+/Kf0BLlxIwggYAXbiBF+ipN2rR91D/QXfiiUJip3phBJsmznKBiyFVKe?=
+ =?iso-8859-3?Q?tZ1xZ0jx/iGbNH+v/DSTdQgFMzIbhWEdD5fxsgl1rH07lbi2gJJ6byhrOG?=
+ =?iso-8859-3?Q?Yqjh3N2LBwhfHLJANPW0ND11NijxGH5XUcEfYJgrFfoTbleqe5JoxQ02bK?=
+ =?iso-8859-3?Q?MuT78ivDJTVS2ipahBoEemKsKTzaQ2GliNpGRsc9MqoceQQ9EldEESRzyw?=
+ =?iso-8859-3?Q?+lwKK1ePCZogj8trcCQNR1ouDvkhlKzBNprLdJQmWZTd9tU3T1sVvlp/WX?=
+ =?iso-8859-3?Q?kJEh7rQN16Q5v8DdANcc5uRhlJPUobktE9hhq7W2K22D6rVwDxW+yQj6RG?=
+ =?iso-8859-3?Q?RjgBvHWyCKvjtJRDPo8jU8Rxc1/fYtRQAv+BcOZBFAPFGnQS/3EyKO6Eah?=
+ =?iso-8859-3?Q?+1glRlUSzHGKPnYZdRBocpHh6oOkySDjb3XS7lgtd7nbb4CVeNoKFbdoN8?=
+ =?iso-8859-3?Q?qi0Q9vchBopul+Y68EeYbfjZRVDGi568jtah0xPsBLc12TbzSGwBw8U1Sv?=
+ =?iso-8859-3?Q?TeVaZmAliAClemiU1hIe2cZ1BI8RkDxakLWYU4GRIBeOp6pH4lSoBEoEOC?=
+ =?iso-8859-3?Q?eJpeMPiMJVy4nEf6tSBCcgSCZZEnWp5Mh0xAaYQGgRIu+sDyH7dFPGAfyl?=
+ =?iso-8859-3?Q?PpyzCu4B4Acs4pq/HItvRvhj/CoTE5vMUn7n3A9hrjliUPfe6/muPz/2JX?=
+ =?iso-8859-3?Q?h2xZ2uzK1TZqvn+N2kcKhHnHL98PEVk+zDOBPMWKgzWBoD5aDDaTsWHytp?=
+ =?iso-8859-3?Q?FNnF7LYjnrhRlS8+tF4SBWgZ9sOhyV6ABTdygcqMqgbBB3pp4KLqYl/+oD?=
+ =?iso-8859-3?Q?E36v8w5ig4qOE6/I2N6Ub3n4/TorzWeOsmernJJ6qr83+5gkBm2idKpfrh?=
+ =?iso-8859-3?Q?HBYdeQBGnmF1L+c3fQ8J8oXu015SSU+jWT4Wavwp6U3ZdxiQyXZ0ioFYoD?=
+ =?iso-8859-3?Q?KAS93LGFqovIb4+0nUacSHb3IhVCJwfypJIkon8wmikrvHxY2gwz8+S1ZZ?=
+ =?iso-8859-3?Q?GbVVSF3U8yINxq3vOzRSJYdcGIX9AM+Hckz+cuiXZqc8LcHOYgmL1P96VZ?=
+ =?iso-8859-3?Q?n+OeEre2G2dWkKipJ4aXUp0k6ZzjbV7n6KspXSlsOCEanZzCT2b2rXFZjO?=
+ =?iso-8859-3?Q?fZGOtCBK+DFg5qLhYd7mNb1A5DgWl1tS/mtVSpbbjZtjqQWqthtH/tJ6aQ?=
+ =?iso-8859-3?Q?yO0P+guzKrkTgLQrRteAf8cpy/1q7bvZBn9Q8f3Sgf37jlOAiSa47zvcd/?=
+ =?iso-8859-3?Q?4nTfdpHyNiJbVEAaBMB+4fi/hB+Wz1GyYFk5UiHmDbLOKdLi/lfLJh/30P?=
+ =?iso-8859-3?Q?U3p+iUirEOuqP/zyW5rnEl?=
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-3?Q?IPqZOBi3XDGtjX29CbaPAf52Sy5YU9SpfTGW1OwJ9hts4d25S+2VDjHc6/?=
+ =?iso-8859-3?Q?ng4LeqmkLMMZ6wh9SIf+IVExLWqi8nR9FOZIPymcxVxaYqLoCQC4oCc5TW?=
+ =?iso-8859-3?Q?tuav6eAWKhZjeP9Qj99EaxPwigae5zKhH8xRd+FfMl5df1CtKtWFIUIwRt?=
+ =?iso-8859-3?Q?kjRLETBPpE7P74rCw4B+rSz9RdkDWrCt52YpdaEzkjai8/yivAZ+yE2RS7?=
+ =?iso-8859-3?Q?6Q9ClBJzQ+UZjszXDt1h3g1nDoNwXC1gMfH3w9TfQnrC8cBiaOHVDXVhin?=
+ =?iso-8859-3?Q?7BDf8Y+9wZt1GrEeyCJf/+SCFqxTHN2b7CGdznA17fdYwxFtB1UHtN6/a4?=
+ =?iso-8859-3?Q?QwSRa3KNZ8LH7nAsdvJLUp1vF04UUuafcXet/TAOtMsPPy/f2YS3h1jIxf?=
+ =?iso-8859-3?Q?hyEEjRffaDkit0sjGR5gYTD1yyA6+VimCrRcwYoyVLbpWSFTiRGTjUs3uH?=
+ =?iso-8859-3?Q?PG2xhw91YuYuJxElw8/oRy9Q6oV9OjOjiTFU7F4gdVDxUZwAWpIX9e8kJd?=
+ =?iso-8859-3?Q?+jywjhXxHuhGt93z6ov4Ah4grN/SgqF7hCsxRnjlFCgMrTzBlvODjIPwK2?=
+ =?iso-8859-3?Q?FvOhZAPgTZPJK0IECu+eYQ4+FXqI28dVF569L7/rOgcbPGHcqKI+iCjiCH?=
+ =?iso-8859-3?Q?voiGL3n9EkGfBp8UCP4gFVyvy/NCaZ04JvdxMMnpJqKFuB/pq3fVhTLMva?=
+ =?iso-8859-3?Q?pQrloCEY4byzB4maiM8NJrPIyMkaeblO8E9i4uIq6yLbTZrdRbk8H9PRhc?=
+ =?iso-8859-3?Q?1LNCgZBNmAY3rva+GmG2IEAYtQZJP3tufUvcc8PutMnjpWFGrfx8GwukGE?=
+ =?iso-8859-3?Q?Mz+khdxzOPdEhM4pibFylKtMZK0wdMGZupZOej8p3f1nJQU4qRrT8dquzh?=
+ =?iso-8859-3?Q?iZpGL2sJZh6vBheXfgVxPNuZfkiadKH0c20C0WHFooVovjhskqrvuEoj6Y?=
+ =?iso-8859-3?Q?ej9xpebRk86fubks8XaDtGRVlVdK32Xz0LcKZaguhq/f5wyn39Iu/ncGRL?=
+ =?iso-8859-3?Q?lyKfgtKMh1FGLXiviC+5DvUsQjxi/BcpEkN+X+owGO5FrAfmaqpGiDz7jx?=
+ =?iso-8859-3?Q?KAt5wDPVbz10WHe+FEh1N7HmftpNb+tHAbMDakvZ2beion6QeE4cl2Rb+K?=
+ =?iso-8859-3?Q?0BtAysYJLMIUDXu+JgiKW3HRLbyexjqXV/OjMuPeUQGjwzglzN12Foy48u?=
+ =?iso-8859-3?Q?txSuqvfDLNSEG3x8lZiC7mBUZQpahZfITkLoD3pD7wwpzPbjSslZpZZSrv?=
+ =?iso-8859-3?Q?BSqepctUvKvpXanIsj/9Av29vz59tVL6bPaJu8v8qf144cbJyPZBTR5zH7?=
+ =?iso-8859-3?Q?GAG9?=
+Content-Type: multipart/alternative;
+	boundary="_000_FRWP191MB28419163EED6ABD1F27D5DE882E4AFRWP191MB2841EURP_"
+MIME-Version: 1.0
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: FRWP191MB2841.EURP191.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 594d06b5-53bb-420b-d75a-08de02632b00
+X-MS-Exchange-CrossTenant-originalarrivaltime: 03 Oct 2025 09:56:47.9062
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM7P191MB0834
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: =?ISO-8859-1?Q?Spam_detection_software=2C_running_on_the_system_=22cpanel1=2Ekayize?= =?ISO-8859-1?Q?r=2Ecom=22=2C=0A_has_NOT_identified_this_incoming_ema?= =?ISO-8859-1?Q?il_as_spam=2E__The_original=0A_message_has_been_attac?= =?ISO-8859-1?Q?hed_to_this_so_you_can_view_it_or_label=0A_similar_fu?= =?ISO-8859-1?Q?ture_email=2E__If_you_have_any_questions=2C_see=0A_ro?= =?ISO-8859-1?Q?ot=5C=40localhost_for_details=2E=0A_Content_preview=3A_?= =?ISO-8859-1?Q?_merhaba_1030521451_numaral=C4=B1_G=C3=B6rkem_Koyuncu?= =?ISO-8859-1?Q?_isimli_=C3=B6=C4=9Frenciyim=2E=0A____Yapay_zeka_kul=C3=BC?= =?ISO-8859-1?Q?b=C3=BCne_ba=C5=9Fvurmama_ra=C4=9Fmen_mail_alamad=C4=B1?= =?ISO-8859-1?Q?m_=C4=B0yi_g=C3=BCnler_Get=0A____Outlook_for_iOS=3Cht?= =?ISO-8859-1?Q?tps=3A//aka=2Ems/o0ukef=3E_=0A_Content_analysis_detai?= =?ISO-8859-1?Q?ls=3A___=280=2E1_points=2C_5=2E0_required=29=0A__pts_?= =?ISO-8859-1?Q?rule_name______________description=0A_----_----------?= =?ISO-8859-1?Q?------------_----------------------------------------?= =?ISO-8859-1?Q?----------=0A__0=2E0_RCVD=5FIN=5FVALIDITY=5FRPBL=5FBL?= =?ISO-8859-1?Q?OCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_The_query_to=0A_?= =?ISO-8859-1?Q?_____________________________Validity_was_blocked=2E_?= =?ISO-8859-1?Q?_See=0A_____________________________https=3A//knowled?= =?ISO-8859-1?Q?ge=2Evalidity=2Ecom/hc/en-us/articles/20961730681243=0A_?= =?ISO-8859-1?Q?_____________________________for_more_information=2E=0A?= =?ISO-8859-1?Q?_____________________________=5B52=2E103=2E32=2E3_lis?= =?ISO-8859-1?Q?ted_in_bl=2Escore=2Esenderscore=2Ecom=5D=0A__0=2E0_RC?= =?ISO-8859-1?Q?VD=5FIN=5FVALIDITY=5FSAFE=5FBLOCKED_RBL=3A_ADMINISTRA?= =?ISO-8859-1?Q?TOR_NOTICE=3A_The_query_to=0A________________________?= =?ISO-8859-1?Q?______Validity_was_blocked=2E__See=0A________________?= =?ISO-8859-1?Q?_____________https=3A//knowledge=2Evalidity=2Ecom/hc/?= =?ISO-8859-1?Q?en-us/articles/20961730681243=0A_____________________?= =?ISO-8859-1?Q?_________for_more_information=2E=0A__________________?= =?ISO-8859-1?Q?___________=5B52=2E103=2E32=2E3_listed_in_sa-accredit?= =?ISO-8859-1?Q?=2Ehabeas=2Ecom=5D=0A_-0=2E0_SPF=5FHELO=5FPASS_______?= =?ISO-8859-1?Q?___SPF=3A_HELO_matches_SPF_record=0A__0=2E0_RCVD=5FIN?= =?ISO-8859-1?Q?=5FVALIDITY=5FCERTIFIED=5FBLOCKED_RBL=3A_ADMINISTRATO?= =?ISO-8859-1?Q?R_NOTICE=3A_The=0A_____________________________query_?= =?ISO-8859-1?Q?to_Validity_was_blocked=2E__See=0A___________________?= =?ISO-8859-1?Q?__________https=3A//knowledge=2Evalidity=2Ecom/hc/en-?= =?ISO-8859-1?Q?us/articles/20961730681243=0A________________________?= =?ISO-8859-1?Q?______for_more_information=2E=0A_____________________?= =?ISO-8859-1?Q?_______=5B52=2E103=2E32=2E3_listed_in_sa-trusted=2Ebo?= =?ISO-8859-1?Q?ndedsender=2Eorg=5D=0A_-0=2E0_SPF=5FPASS_____________?= =?ISO-8859-1?Q?__SPF=3A_sender_matches_SPF_record=0A_-0=2E1_DKIM=5FV?= =?ISO-8859-1?Q?ALID=5FAU__________Message_has_a_valid_DKIM_or_DK_sig?= =?ISO-8859-1?Q?nature_from_author's=0A_____________________________d?= =?ISO-8859-1?Q?omain=0A_-0=2E1_DKIM=5FVALID_____________Message_has_?= =?ISO-8859-1?Q?at_least_one_valid_DKIM_or_DK_signature=0A__0=2E0_ARC?= =?ISO-8859-1?Q?=5FVALID______________Message_has_a_valid_ARC_signatu?= =?ISO-8859-1?Q?re=0A_-0=2E1_DKIM=5FVALID=5FEF__________Message_has_a?= =?ISO-8859-1?Q?_valid_DKIM_or_DK_signature_from=0A__________________?= =?ISO-8859-1?Q?___________envelope-from_domain=0A__0=2E0_ARC=5FSIGNE?= =?ISO-8859-1?Q?D_____________Message_has_a_ARC_signature=0A__0=2E1_D?= =?ISO-8859-1?Q?KIM=5FSIGNED____________Message_has_a_DKIM_or_DK_sign?= =?ISO-8859-1?Q?ature=2C_not_necessarily_valid=0A__0=2E0_FREEMAIL=5FF?= =?ISO-8859-1?Q?ROM__________Sender_email_is_commonly_abused_enduser_?= =?ISO-8859-1?Q?mail_provider=0A_____________________________=5Bgorke?= =?ISO-8859-1?Q?mkoyuncu7=28at=29outlook=2Ecom=5D=0A__0=2E2_FREEMAIL=5FE?= =?ISO-8859-1?Q?NVFROM=5FEND=5FDIGIT_Envelope-from_freemail_username_?= =?ISO-8859-1?Q?ends_in=0A_____________________________digit=0A______?= =?ISO-8859-1?Q?_______________________=5Bgorkemkoyuncu7=28at=29outlo?= =?ISO-8859-1?Q?ok=2Ecom=5D=0A__0=2E0_HTML=5FMESSAGE___________BODY=3A_?= =?ISO-8859-1?Q?HTML_included_in_message?=
+X-Spam-Flag: NO
+
+--_000_FRWP191MB28419163EED6ABD1F27D5DE882E4AFRWP191MB2841EURP_
+Content-Type: text/plain; charset="iso-8859-3"
+Content-Transfer-Encoding: quoted-printable
+
+merhaba 1030521451 numaral=B9 G=F6rkem Koyuncu isimli =F6=BBrenciyim. Yapay=
+ zeka kul=FCb=FCne ba=BAvurmama ra=BBmen mail alamad=B9m
+
+=A9yi g=FCnler
+
+Get Outlook for iOS<https://aka.ms/o0ukef>
+
+--_000_FRWP191MB28419163EED6ABD1F27D5DE882E4AFRWP191MB2841EURP_
+Content-Type: text/html; charset="iso-8859-3"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+3">
+</head>
+<body>
+<div dir=3D"ltr" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-s=
+ystem, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt;">
+merhaba 1030521451 numaral=B9 G=F6rkem Koyuncu isimli =F6=BBrenciyim. Yapay=
+ zeka kul=FCb=FCne ba=BAvurmama ra=BBmen mail alamad=B9m</div>
+<div dir=3D"ltr" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-s=
+ystem, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt;">
+<br>
+</div>
+<div dir=3D"ltr" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-s=
+ystem, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt;">
+=A9yi g=FCnler</div>
+<div id=3D"ms-outlook-mobile-body-separator-line" data-applydefaultfontstyl=
+es=3D"true" style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system=
+, Roboto, Arial, Helvetica, sans-serif; font-size: 12pt;" dir=3D"ltr">
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt;" dir=3D"ltr">
+<br>
+</div>
+</div>
+<div style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robot=
+o, Arial, Helvetica, sans-serif; font-size: 12pt;" id=3D"ms-outlook-mobile-=
+signature">
+<span style=3D"font-family: Aptos, Aptos_MSFontService, -apple-system, Robo=
+to, Arial, Helvetica, sans-serif; font-size: 12pt;">Get
+<a href=3D"https://aka.ms/o0ukef">Outlook for iOS</a></span></div>
+</body>
+</html>
+
+--_000_FRWP191MB28419163EED6ABD1F27D5DE882E4AFRWP191MB2841EURP_--

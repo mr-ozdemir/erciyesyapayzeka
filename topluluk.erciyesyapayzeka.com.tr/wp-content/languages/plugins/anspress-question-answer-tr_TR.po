@@ -1,0 +1,3807 @@
+# Translation of Plugins - AnsPress &#8211; Question and answer - Stable (latest release) in Turkish
+# This file is distributed under the same license as the Plugins - AnsPress &#8211; Question and answer - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-04-13 07:56:50+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: tr\n"
+"Project-Id-Version: Plugins - AnsPress &#8211; Question and answer - Stable (latest release)\n"
+
+#: addons/email/email.php:920
+msgid "Your answer is selected as best!"
+msgstr "Yanıtınız en iyi yanıt olarak seçildi!"
+
+#. translators: %s is file size in MB.
+#: includes/theme.php:694
+msgid "File size is bigger than %s MB"
+msgstr "Dosya boyutu %s MB'den büyük"
+
+#: includes/functions.php:2199
+msgid "You do not have permission to answer this question."
+msgstr "Bu soruyu cevaplamak için izniniz yok."
+
+#. Translators: Placeholder contain form name.
+#: lib/class-form.php:204
+msgid "No fields found for form: %s"
+msgstr "%s formu için hiçbir alan bulunmadı"
+
+#: lib/class-anspress-cli.php:90
+msgid "Successfully enabled addon"
+msgstr "Eklenti başarıyla etkinleştirildi"
+
+#: lib/class-anspress-cli.php:87
+msgid "Unable to activate addon. May be its already active or wrong name passed."
+msgstr "Eklenti etkinleştirilemiyor. Zaten aktif veya yanlış ad geçebilir."
+
+#: lib/class-anspress-upgrader.php:372
+msgid "Categories data migrated"
+msgstr "Kategori verileri taşındı"
+
+#: lib/class-anspress-upgrader.php:301
+msgid "Migrated all reputations"
+msgstr "Tüm itibarlar taşındı"
+
+#. translators: %s is question ID.
+#: lib/class-anspress-upgrader.php:72
+msgid "Migrating question: %d"
+msgstr "Soru taşınıyor: %d"
+
+#: lib/class-validate.php:742
+msgid "File type is not allowed to upload."
+msgstr "Bu dosya türünün yüklenmesine izin verilmiyor."
+
+#. Translators: %1$d contain maximum files user can upload, %2$s contain label
+#. of field.
+#: lib/class-validate.php:732
+msgid "You cannot upload more than %1$d file in field %2$s"
+msgstr "%2$s alanına %1$d adetten daha fazla dosya yükleyemezsiniz"
+
+#: lib/class-validate.php:719
+msgid "You are not allowed to upload file(s)"
+msgstr "Dosya yüklemenize izin verilmiyor"
+
+#: lib/class-validate.php:627
+msgid "A PHP extension stopped the file upload."
+msgstr "Bir PHP eklentisi karşıya dosya yüklemesini durdurdu."
+
+#: lib/class-validate.php:625
+msgid "Missing a temporary folder"
+msgstr "Geçici klasör eksik"
+
+#: lib/class-validate.php:624
+msgid "No file was uploaded"
+msgstr "Karşıya dosya yüklenmedi"
+
+#: lib/class-validate.php:623
+msgid "The uploaded file was only partially uploaded"
+msgstr "Yüklenen dosya kısmen aktarılabildi"
+
+#: lib/class-validate.php:620
+msgid "There is no error, the file uploaded with success"
+msgstr "Herhangi bir sorun yok, dosya karşıya başarıyla yüklendi"
+
+#. Translators: placeholder contain field label.
+#: lib/class-validate.php:602
+msgid "Found bad words in field %s. Remove them and try again."
+msgstr "%s alanında yasaklı kelimeler bulundu. Bu kelimeleri silerek tekrar deneyin."
+
+#. Translators: placeholder contain field label.
+#: lib/class-validate.php:524
+msgid "Minimum %1$d values are required in field %2$s."
+msgstr "%2$s alanında en az %1$d değer girilmesi gerekiyor."
+
+#. Translators: placeholder contain field label.
+#: lib/class-validate.php:387
+msgid "Value provided in field %s is not a valid email."
+msgstr "%s alanına girilen değer geçerli bir e-posta değil."
+
+#: lib/form/class-upload.php:417
+msgid "File is bigger than the allowed limit."
+msgstr "Dosya izin verilen boyuttan daha büyük."
+
+#: lib/form/class-upload.php:400
+msgid "File upload stopped by extension."
+msgstr "Dosya yükleme eklenti tarafından durduruldu."
+
+#: lib/class-validate.php:626 lib/form/class-upload.php:399
+msgid "Failed to write file to disk."
+msgstr "Dosyayı diske yazma başarısız oldu."
+
+#: lib/form/class-upload.php:398
+msgid "Missing a temporary folder."
+msgstr "Geçici bir klasör kayıp."
+
+#: lib/form/class-upload.php:396
+msgid "No file was uploaded."
+msgstr "Herhangi bir dosya yüklenmedi."
+
+#. Translators: %d contains maximum files allowed to upload.
+#: lib/form/class-upload.php:116
+msgid "You cannot add more then %d files"
+msgstr "%d dosyadan fazlasını ekleyemezsiniz"
+
+#: lib/form/class-upload.php:108
+msgid "This file type is not allowed to upload."
+msgstr "Bu dosya tipini yüklemeye izin verilmiyor."
+
+#: lib/form/class-upload.php:98
+msgid "Select file(s) to upload"
+msgstr "Yüklenecek dosya(ları) seçin"
+
+#: lib/form/class-upload.php:96
+msgid "AnsPress Upload Field"
+msgstr "AnsPress Yükleme Alanı"
+
+#: lib/class-form.php:430 lib/form/class-field.php:402
+msgid "Error found in fields, please check and re-submit"
+msgstr "Alanlarda hata bulundu, lütfen kontrol edin ve yeniden gönderin"
+
+#: lib/form/class-textarea.php:44
+msgid "AnsPress Textarea Field"
+msgstr "AnsPress Metin Alanı"
+
+#: lib/form/class-input.php:55
+msgid "AnsPress Input Field"
+msgstr "AnsPress Giriş Alanı"
+
+#: lib/form/class-checkbox.php:42
+msgid "AnsPress Checkbox Field"
+msgstr "AnsPress Seçim Kutuğu Alanı"
+
+#: lib/form/class-radio.php:44
+msgid "AnsPress Radio Field"
+msgstr "AnsPress Radyo Düğmesi Alanı"
+
+#. translators: %s is field label.
+#: lib/form/class-repeatable.php:172
+msgid "Add More %s"
+msgstr "Daha Fazla %s Ekle"
+
+#: lib/form/class-repeatable.php:59
+msgid "AnsPress Repeatable Field"
+msgstr "AnsPress Tekrarlanabilir Alanı"
+
+#: lib/form/class-group.php:52
+msgid "AnsPress Group Field"
+msgstr "AnsPress Grup Alanı"
+
+#: lib/form/class-select.php:91
+msgid "Select an option"
+msgstr "Bir seçim yapın"
+
+#: lib/form/class-select.php:42
+msgid "AnsPress Select Field"
+msgstr "AnsPress Seçim Alanı"
+
+#: lib/form/class-editor.php:51
+msgid "AnsPress Editor Field"
+msgstr "AnsPress Düzenleyici Alanı"
+
+#: lib/form/class-tags.php:44
+msgid "AnsPress Tags Field"
+msgstr "AnsPress Etiketler Alanı"
+
+#. translators: %s is total comments found.
+#: includes/comments.php:422
+msgid "Show %s more comments"
+msgstr "%s yorum daha göster"
+
+#: includes/comments.php:376 includes/comments.php:409
+msgid "No comments found."
+msgstr "Hiçbir yorum bulunamadı."
+
+#: includes/comments.php:361
+msgid "Sorry, you do not have permission to read comments."
+msgstr "Üzgünüz, yorumları okumaya yetkiniz yok."
+
+#: includes/comments.php:356
+msgid "Not a valid post ID."
+msgstr "Geçerli bir gönderi kimliği değil."
+
+#. translators: %d is count of questions.
+#: includes/ajax-hooks.php:107
+msgid "We have found some similar questions that have been asked earlier."
+msgstr "Daha önceden yöneltilmiş benzer bazı sorular bulduk."
+
+#. translators: %s is post type.
+#: includes/post-status.php:137
+msgid "This %s is not published yet and is not accessible to anyone until it get published."
+msgstr "Bu %s henüz yayınlanmadı ve yayınlanana kadar kimse erişemez."
+
+#: includes/post-types.php:163
+msgid "All answers"
+msgstr "Tüm cevaplar"
+
+#: includes/post-types.php:87
+msgid "View question"
+msgstr "Soruyu görüntüle"
+
+#: includes/post-types.php:86
+msgid "All questions"
+msgstr "Tüm sorular"
+
+#: includes/activity.php:60
+msgid "Not AnsPress posts"
+msgstr "AnsPress gönderisi değil"
+
+#: includes/votes.php:638 includes/votes.php:650
+msgid "Withdraw your vote"
+msgstr "Oyunuzu geri çekin"
+
+#: includes/votes.php:637 includes/votes.php:649
+msgid "You have already voted"
+msgstr "Zaten oy verdiniz"
+
+#: includes/class-form-hooks.php:813
+msgid "There is no change in your comment."
+msgstr "Yorumunuzda herhangi bir değişiklik yok."
+
+#: includes/class-form-hooks.php:803
+msgid "You cannot edit this comment."
+msgstr "Bu yorumu düzenleyemezsiniz."
+
+#: includes/class-form-hooks.php:733
+msgid "Your answer is posted successfully."
+msgstr "Cevabınız başarıyla gönderildi."
+
+#: includes/class-form-hooks.php:731
+msgid "Answer updated successfully. Redirecting you to question page."
+msgstr "Soru başarıyla güncellendi. Soru sayfasına yönlendiriliyorsunuz."
+
+#. Translators: placeholder contain error message.
+#: includes/class-form-hooks.php:677
+msgid "Unable to post answer. Error: %s"
+msgstr "Cevap gönderilemedi. Hata: %s"
+
+#: includes/class-form-hooks.php:616
+msgid "Please check field"
+msgstr "Lütfen alanı kontrol edin"
+
+#: includes/class-form-hooks.php:517
+msgid "Your question is posted successfully, you'll be redirected in a moment."
+msgstr "Soru başarıyla gönderildi, birazdan yönlendirileceksiniz."
+
+#: includes/class-form-hooks.php:515
+msgid "Question updated successfully, you'll be redirected in a moment."
+msgstr "Soru başarıyla güncellendi, birazdan yönlendirileceksiniz."
+
+#. Translators: placeholder contain error message.
+#: includes/class-form-hooks.php:471
+msgid "Unable to post question. Error: %s"
+msgstr "Soru gönderilemedi. Hata: %s"
+
+#: includes/class-form-hooks.php:386 includes/class-form-hooks.php:420
+msgid "Failed to insert question"
+msgstr "Soru ekleme başarısız"
+
+#: includes/class-form-hooks.php:380 includes/class-form-hooks.php:414
+msgid "Unable to post question."
+msgstr "Soru gönderilemiyor."
+
+#: includes/class-form-hooks.php:291
+msgid "Enter link to your website."
+msgstr "Web siteniz için bağlantı ekleyin."
+
+#: includes/class-form-hooks.php:289
+msgid "Your Website"
+msgstr "Web Siteniz"
+
+#: includes/class-form-hooks.php:281
+msgid "Enter your email to get follow up notifications."
+msgstr "Bildirimleri almak için e-postanızı girin."
+
+#: includes/class-form-hooks.php:272
+msgid "Enter your name to display."
+msgstr "Gösterilecek isminizi girin."
+
+#: includes/class-form-hooks.php:256
+msgid "Write your comment here..."
+msgstr "Yorumunuzu buraya yazın..."
+
+#: includes/class-form-hooks.php:248
+msgid "Submit Comment"
+msgstr "Yorum Yaz"
+
+#: includes/class-form-hooks.php:89 includes/class-form-hooks.php:203
+#: includes/class-form-hooks.php:279
+msgid "Your Email"
+msgstr "E-postanız"
+
+#: includes/class-form-hooks.php:78 includes/class-form-hooks.php:192
+#: includes/class-form-hooks.php:270
+msgid "Your Name"
+msgstr "Adınız"
+
+#: includes/class-form-hooks.php:70 includes/class-form-hooks.php:184
+msgid "Is private?"
+msgstr "Özel mi?"
+
+#: includes/class-form-hooks.php:45
+msgid "Question title"
+msgstr "Soru başlığı"
+
+#: includes/class-form-hooks.php:37
+msgid "Submit Question"
+msgstr "Soru Gönder"
+
+#: includes/upload.php:259
+msgid "Successfully uploaded image"
+msgstr "Görsel başarıyla yüklendi"
+
+#: includes/functions.php:2375
+msgid "Page used to display all anspress activities."
+msgstr "Sayfa tüm anspress etkinliklerini göstermek için kullanılır."
+
+#: includes/functions.php:2374
+msgid "Activities page"
+msgstr "Etkinlikler sayfası"
+
+#: includes/functions.php:2369
+msgid "Page used to display question tags. NOTE: Tags addon must be enabled to render this page."
+msgstr "Soru etiketlerini göstermek için kullanılan sayfa. NOT: Etiket eklentisi bu sayfayı tarayabilmelidir. "
+
+#: includes/functions.php:2368
+msgid "Tags page"
+msgstr "Etiketler sayfası"
+
+#: includes/functions.php:2363
+msgid "Page used to display question categories. NOTE: Categories addon must be enabled to render this page."
+msgstr "Soru kategorilerini göstermek için kullanılan sayfa. NOT: Kategori eklentileri bu sayfayı tarayabilmelidir."
+
+#: includes/functions.php:2362
+msgid "Categories page"
+msgstr "Kategoriler sayfası"
+
+#: includes/functions.php:2357
+msgid "Page used to display user profile."
+msgstr "Kullanıcı profili gösterimi için kullanılacak sayfa."
+
+#: includes/functions.php:2356
+msgid "User page"
+msgstr "Kullanıcı sayfası"
+
+#: includes/functions.php:2352
+msgid "Ask a question"
+msgstr "Soru sor"
+
+#: includes/functions.php:2351
+msgid "Page used to display ask form."
+msgstr "Soru formu gösterimi için kullanılacak sayfa."
+
+#: includes/functions.php:2350
+msgid "Ask page"
+msgstr "Soru sayfası"
+
+#: includes/functions.php:2344
+msgid "Archives page"
+msgstr "Arşiv sayfası"
+
+#: includes/functions.php:2194
+msgid "You cannot edit this answer."
+msgstr "Bu yanıtı düzenleyemezsiniz."
+
+#: includes/functions.php:1652
+msgid "User Profile"
+msgstr "Kullanıcı Profili"
+
+#: includes/functions.php:1648
+msgid "BuddyPress"
+msgstr "BuddyPress"
+
+#: includes/class/class-activity.php:491
+msgid "Yesterday"
+msgstr "Dün"
+
+#: includes/class/class-activity.php:489
+msgid "Today"
+msgstr "Bugün"
+
+#: includes/class/class-activity.php:487
+msgid "Just now"
+msgstr "Hemen şimdi"
+
+#: includes/class/class-activity-helper.php:462
+msgid "Failed to delete activity rows."
+msgstr "Etkinlik satırlarının silinmesi başarısız."
+
+#: includes/class/class-activity-helper.php:456
+msgid "No columns found in where clue"
+msgstr "İpucu nerede sütun bulunamadı"
+
+#: includes/class/class-activity-helper.php:390
+msgid "Failed to insert activity"
+msgstr "Etkinlik eklenemedi"
+
+#: includes/class/class-activity-helper.php:365
+msgid "Invalid date"
+msgstr "Geçersiz tarih"
+
+#: includes/class/class-activity-helper.php:354
+msgid "Not a valid action"
+msgstr "Geçerli bir eylem değil"
+
+#: includes/class/class-activity-helper.php:349
+msgid "Question id is required."
+msgstr "Soru numarası gerekiyor."
+
+#: includes/class/class-activity-helper.php:256
+msgid "Unselected an answer"
+msgstr "Cevabın seçimi kaldırıldı"
+
+#: includes/class/class-activity-helper.php:251
+msgid "Selected answer as best"
+msgstr "En iyi cevap olarak seçildi"
+
+#: includes/class/class-activity-helper.php:246
+msgid "Edited comment"
+msgstr "Düzenlenmiş yorum"
+
+#: includes/class/class-activity-helper.php:241
+msgid "Posted new comment"
+msgstr "Yeni yorum gönderildi"
+
+#: includes/class/class-activity-helper.php:231
+msgid "Marked as closed"
+msgstr "Kapalı olarak işaretlendi"
+
+#: includes/class/class-activity-helper.php:221
+msgid "Marked as featured question"
+msgstr "Öne çıkarılan soru olarak işaretlendi"
+
+#: includes/class/class-activity-helper.php:211
+msgid "Changed visibility to private"
+msgstr "Görünürlüğü özel olarak değiştirildi"
+
+#: includes/class/class-activity-helper.php:206
+msgid "Changed status to moderate"
+msgstr "Onaylanacak durumuna çevrildi"
+
+#: includes/class/class-activity-helper.php:201
+msgid "Changed publish date to future"
+msgstr "Yayınlama tarihi geleceğe ertelendi"
+
+#: includes/class/class-activity-helper.php:196
+msgid "Changed status to publish"
+msgstr "Durumu yayınlanmak üzere'ye değiştirildi"
+
+#: includes/class/class-activity-helper.php:191
+msgid "Edited answer"
+msgstr "Düzenlenmiş cevap"
+
+#: includes/class/class-activity-helper.php:186
+msgid "Answered question"
+msgstr "Cevaplanan soru"
+
+#: includes/class/class-activity-helper.php:181
+msgid "Edited question"
+msgstr "Düzenlenmiş soru"
+
+#: includes/class/class-activity-helper.php:176
+msgid "Asked question"
+msgstr "Sorulan soru"
+
+#: includes/mce-languages.php:38
+msgid "Insert your code."
+msgstr "Kodunuzu ekleyin."
+
+#: includes/mce-languages.php:37
+msgid "Inline?"
+msgstr "Satıriçi?"
+
+#: includes/mce-languages.php:36
+msgid "Insert"
+msgstr "Ekle"
+
+#: includes/mce-languages.php:35
+msgid "Insert codes (AnsPress)"
+msgstr "Kodları ekleyin (AnsPress)"
+
+#: includes/mce-languages.php:33
+msgid "Media preview"
+msgstr "Ortam ön izleme"
+
+#: includes/mce-languages.php:32
+msgid "Image title"
+msgstr "Görsel başlığı"
+
+#: includes/mce-languages.php:31
+msgid "Browse from computer"
+msgstr "Bilgisayardan göz at"
+
+#: includes/mce-languages.php:30
+msgid "Select File"
+msgstr "Dosya seç"
+
+#: includes/mce-languages.php:28
+msgid "Insert Media (AnsPress)"
+msgstr "Ortam Ekle (AnsPress)"
+
+#: includes/common-pages.php:84
+msgid "This question is awaiting moderation and cannot be viewed. Please check back later."
+msgstr "Bu soru moderasyon için bekliyor ve görüntülenemez. Lütfen bir süre sonra tekrar deneyiniz."
+
+#: includes/common-pages.php:29 includes/functions.php:2376
+msgid "Activities"
+msgstr "Etkinlikler"
+
+#: includes/common-pages.php:26
+msgid "Ask a Question"
+msgstr "Bir Soru Sor"
+
+#: ajax/comment-modal.php:86
+msgid "Add a comment"
+msgstr "Yorum ekle"
+
+#: ajax/comment-modal.php:86
+msgid "Edit comment"
+msgstr "Yorumu düzenle"
+
+#: classes/ajax.php:208
+msgid "Something went wrong."
+msgstr "Bir şeyler yanlış gitti."
+
+#: admin/views/options.php:231
+msgid "AnsPress option updated successfully!"
+msgstr "AnsPress seçenekleri başarıyla güncellendi!"
+
+#: admin/views/options.php:98
+msgid "Uninstall"
+msgstr "Kaldır"
+
+#: admin/views/options.php:94
+msgid "Re-count"
+msgstr "Yeniden say"
+
+#: admin/views/options.php:85
+msgid "Role Editor"
+msgstr "Rol Yöneticisi"
+
+#: admin/views/options.php:82
+msgid "Other Permissions"
+msgstr "Diğer İzinler"
+
+#: admin/views/options.php:79
+msgid "Posting Permissions"
+msgstr "Gönderi İzinleri"
+
+#: admin/views/options.php:76
+msgid "Reading Permissions"
+msgstr "Okuma İzinleri"
+
+#: admin/views/options.php:68
+msgid "Activity"
+msgstr "Etkinlik"
+
+#: admin/views/options.php:53
+msgid "Permalinks"
+msgstr "Kalıcı bağlantılar"
+
+#: admin/views/options.php:21
+msgid "Trying to cheat, huh!"
+msgstr "Hile yapıyorsun demek, ha!"
+
+#: admin/views/select_question.php:41
+msgid "Recently active questions"
+msgstr "Son zamanlarda yanıtlanan sorular"
+
+#: admin/views/recount.php:113
+msgid "Max. views"
+msgstr "Max. görüntülenme"
+
+#: admin/views/recount.php:112
+msgid "Min. views"
+msgstr "Min. görüntülenme"
+
+#: admin/views/recount.php:111
+msgid "Minimum and maximum views"
+msgstr "Minimum ve maksimum görüntülenme sayıları"
+
+#: admin/views/recount.php:106
+msgid "Add fake views"
+msgstr "Sahte görüntülenmeleri ekle"
+
+#: admin/views/recount.php:104
+msgid "Add fake views if views table is empty"
+msgstr "Görüntülenme tablosu boşsa sahte görüntülenmeleri ekle"
+
+#: admin/views/recount.php:97
+msgid "Recount question views"
+msgstr "Soru görüntülenme sayılarını yeniden say"
+
+#: admin/views/recount.php:24
+msgid "Recount answers of every question."
+msgstr "Tüm sorular için cevaplar yeniden sayılıyor."
+
+#: admin/views/recount.php:23
+msgid "Recount Answers"
+msgstr "Cevapları Yeniden Say"
+
+#: admin/views/recount.php:20
+msgid "Recount votes of questions and answers."
+msgstr "Tüm soru ve cevaplar için verilmiş oyları yeniden say."
+
+#: admin/views/recount.php:19
+msgid "Recount Votes"
+msgstr "Oyları Tekrar Say"
+
+#: admin/views/emails.php:64
+msgid "Edit Template"
+msgstr "Şablonu Düzenle"
+
+#: admin/views/emails.php:59
+msgid "The template selected here will appear below."
+msgstr "Seçili şablon aşağıda gösterilecek."
+
+#: admin/views/emails.php:47
+msgid "New Comment"
+msgstr "Yeni Yorum"
+
+#: admin/views/emails.php:39
+msgid "Select Template"
+msgstr "Şablon Seç"
+
+#: admin/views/emails.php:32
+msgid "More email options"
+msgstr "Daha fazla e-posta ayarı"
+
+#: admin/views/emails.php:30
+msgid "More email options can be found in addon options"
+msgstr "Daha fazla e-posta ayarı uzantı ayarlarında bulunabilir"
+
+#: admin/views/emails.php:26
+msgid "More options"
+msgstr "Daha fazla ayar"
+
+#: admin/ajax.php:278
+msgid "Successfully enabled addon. Redirecting!"
+msgstr "Uzantı başarıyla etkinleştirildi. Yönlendiriliyorsunuz!"
+
+#: admin/ajax.php:268
+msgid "Sorry, you do not have permission!"
+msgstr "Bu işlemi yapmanız için yetkiniz yok!"
+
+#: admin/anspress-admin.php:1493
+msgid "Addon options updated successfully!"
+msgstr "Uzantı ayarları başarıyla güncellendi!"
+
+#: admin/anspress-admin.php:1436
+msgid "Edit page"
+msgstr "Sayfayı düzenle"
+
+#: admin/anspress-admin.php:1435
+msgid "View page"
+msgstr "Sayfayı gör"
+
+#: admin/anspress-admin.php:1308
+msgid "Answer editor?"
+msgstr "Cevap düzenleyici?"
+
+#: admin/anspress-admin.php:1303 admin/anspress-admin.php:1309
+msgid "Quick tags editor"
+msgstr "Hızlı etiket düzenleyici"
+
+#: admin/anspress-admin.php:1302
+msgid "Question editor?"
+msgstr "Soru düzenleyici?"
+
+#: admin/anspress-admin.php:1242
+msgid "Numbers of comments to load in each query?"
+msgstr "Her sorguda yüklenecek yorum sayısı?"
+
+#: admin/anspress-admin.php:1241
+msgid "Numbers of comments to show"
+msgstr "Gösterilecek yorum sayısı"
+
+#: admin/anspress-admin.php:1207
+msgid "Allows users to create private question and answer. Private Q&A are only visible to admin and moderators."
+msgstr "Kullanıcılara özel soru ve cevap oluşturmak için izin ver. Özel soru ve cevaplar, sadece yönetici ve moderatörlere görünür."
+
+#: admin/anspress-admin.php:1151
+msgid "Default status of question or answer submitted by non-loggedin user."
+msgstr "Anonim kullanıcı tarafından gönderilen soru ve cevabın öntanımlı durumu."
+
+#: admin/anspress-admin.php:1106
+msgid "Only user having ap_new_comment capability"
+msgstr "Sadece yeni yorum göndermesine izin verilen kullanıcılar"
+
+#: admin/anspress-admin.php:1100
+msgid "Set who can submit a comment from frontend."
+msgstr "Site önyüzünden kimin yorum gönderebileceğini belirle."
+
+#: admin/anspress-admin.php:1099
+msgid "Who can post comment?"
+msgstr "Kimler yorum gönderebilir?"
+
+#: admin/anspress-admin.php:1094
+msgid "OP: Original poster/asker. Enabling this option will prevent users to post an answer on their question."
+msgstr "Soru Sahibi: Soruyu ilk soran. Bu seçeneği etkinleştirmek, kullanıcının kendi sorusuna cevap vermesine izin verir."
+
+#: admin/anspress-admin.php:1093
+msgid "OP can answer?"
+msgstr "Soru Sahibi cevaplayabilsin mi?"
+
+#: admin/anspress-admin.php:1077
+msgid "Only user having ap_new_answer capability"
+msgstr "Sadece cevap göndermesine izin verilen kullanıcılar"
+
+#: admin/anspress-admin.php:1071
+msgid "Set who can submit an answer from frontend."
+msgstr "Site önyüzünden kimin cevap gönderebileceğini belirle."
+
+#: admin/anspress-admin.php:1070
+msgid "Who can post answer?"
+msgstr "Kimler cevap gönderebilir?"
+
+#: admin/anspress-admin.php:1066
+msgid "Only user having ap_new_question capability"
+msgstr "Sadece soru göndermesine izin verilen kullanıcılar"
+
+#: admin/anspress-admin.php:1060
+msgid "Set who can submit a question from frontend."
+msgstr "Site önyüzünden kimin soru gönderebileceğini belirle."
+
+#: admin/anspress-admin.php:1059
+msgid "Who can post question?"
+msgstr "Kimler soru gönderebilir?"
+
+#: admin/anspress-admin.php:1038
+msgid "Only user having ap_read_comment capability"
+msgstr "Sadece yorumu okumasına izin verilen kullanıcılar"
+
+#: admin/anspress-admin.php:1032
+msgid "Set who can view or read a comment."
+msgstr "Yorumu kimin görüp okuyabileceğini belirle."
+
+#: admin/anspress-admin.php:1031
+msgid "Who can read comment?"
+msgstr "Yorumları kim okuyabilir?"
+
+#: admin/anspress-admin.php:1027
+msgid "Only user having ap_read_answer capability"
+msgstr "Sadece cevabı okumasına izin verilen kullanıcılar"
+
+#: admin/anspress-admin.php:1021
+msgid "Set who can view or read a answer."
+msgstr "Cevabı kimin görüp okuyabileceğini belirle."
+
+#: admin/anspress-admin.php:1020
+msgid "Who can read answers?"
+msgstr "Yanıtları kim okuyabilir?"
+
+#: admin/anspress-admin.php:1016
+msgid "Only user having ap_read_question capability"
+msgstr "Sadece soruyu okumasına izin verilen kullanıcılar"
+
+#: admin/anspress-admin.php:1015 admin/anspress-admin.php:1026
+#: admin/anspress-admin.php:1037 admin/anspress-admin.php:1065
+#: admin/anspress-admin.php:1076 admin/anspress-admin.php:1105
+msgid "Only logged in"
+msgstr "Sadece oturum açanlar"
+
+#: admin/anspress-admin.php:1010
+msgid "Set who can view or read a question."
+msgstr "Soruyu kimin görüp okuyabileceğini belirle."
+
+#: admin/anspress-admin.php:1009
+msgid "Who can read question?"
+msgstr "Soruyu kimler okuyabilir?"
+
+#: admin/anspress-admin.php:877
+msgid "Save Permalinks"
+msgstr "Kalıcı Bağlantıları Kaydet"
+
+#: admin/anspress-admin.php:826
+msgid "Save Pages"
+msgstr "Sayfaları Kaydet"
+
+#: admin/anspress-admin.php:700
+msgid "Or"
+msgstr "Veya"
+
+#: admin/anspress-admin.php:700
+msgid "Set automatically"
+msgstr "Otomatik ayarla"
+
+#: admin/anspress-admin.php:699
+msgid "One or more AnsPress page(s) does not exists."
+msgstr "Bir ya da daha fazla sayıda AnsPress sayfası mevcut değil."
+
+#: addons/tags/tags.php:606
+msgid "Order"
+msgstr "Sırala"
+
+#. Translators: %1$d contain minimum tags required and %2$d contain maximum
+#. tags allowed.
+#: addons/tags/tags.php:405
+msgid "Tagging will helps others to easily find your question. Minimum %1$d and maximum %2$d tags."
+msgstr "Etiketler sorunuzu daha çok kişinin görmesini sağlar. En az %1$d en çok %2$d etiket ekleyebilirsiniz."
+
+#: addons/recaptcha/recaptcha/class-captcha.php:98
+msgid "Unable to render captcha. Please add reCpatcha keys in AnsPress options."
+msgstr "Captcha görüntülenemedi. Lütfen AnsPress seçeneklerinde reCaptycha anahtarlarını ekleyin."
+
+#: addons/recaptcha/recaptcha/class-captcha.php:84
+msgid "Failed to verify captcha. Please try again."
+msgstr "Captcha doğrulanamadı. Lütfen tekrar deneyin."
+
+#: addons/recaptcha/recaptcha/class-captcha.php:47
+msgid "AnsPress reCaptcha Field"
+msgstr "AnsPress reCaptcha Alanı"
+
+#: addons/recaptcha/recaptcha.php:147
+msgid "Prove that you are a human"
+msgstr "Gerçek bir insan olduğunuzu ispat edin"
+
+#: addons/reputation/reputation.php:93
+msgid "Reputation Points"
+msgstr "İtibar Puanı"
+
+#: addons/reputation/reputation.php:93
+msgid "Reputation event points can be adjusted here :"
+msgstr "İtibar etkinliği puanları buradan düzenlenebilir:"
+
+#: addons/reputation/reputation.php:113
+msgid "Custom slug for user profile reputations page"
+msgstr "Kullanıcı profili itibar sayfası için özel kısaisim"
+
+#: addons/reputation/reputation.php:112
+msgid "Reputations page slug"
+msgstr "İtibar sayfası kısaismi"
+
+#: addons/reputation/reputation.php:108
+msgid "Custom title for user profile reputations page"
+msgstr "Kullanıcı profili itibar sayfası için özel başlık"
+
+#: addons/reputation/reputation.php:107
+msgid "Reputations page title"
+msgstr "İtibar sayfası başlığı"
+
+#: addons/notifications/notifications.php:125
+msgid "Custom slug for user profile notifications page"
+msgstr "Kullanıcı profili bildirim sayfası için özel kısaisim"
+
+#: addons/notifications/notifications.php:124
+msgid "Notifications page slug"
+msgstr "Bildirimler sayfası kısaismi"
+
+#: addons/notifications/notifications.php:120
+msgid "Custom title for user profile notifications page"
+msgstr "Kullanıcı profili bildirimleri sayfası için özel başlık"
+
+#: addons/notifications/notifications.php:119
+msgid "Notifications page title"
+msgstr "Bildirimler sayfası başlığı"
+
+#: addons/email/email.php:1040
+msgid "An answer is trashed by"
+msgstr "Bir cevap şu kullanıcı tarafından silindi"
+
+#: addons/email/email.php:1019
+msgid "A question is trashed by"
+msgstr "Bir soru şu kullanıcı tarafından silindi"
+
+#: addons/email/email.php:995
+msgid "A answer is edited by"
+msgstr "Bir cevap şu kullanıcı tarafından düzenlendi"
+
+#: addons/email/email.php:971
+msgid "A question is edited by"
+msgstr "Bir soru şu kullanıcı tarafından düzenlendi"
+
+#: addons/email/email.php:947
+msgid "A new comment posted by"
+msgstr "Şu kullanıcı tarafından yeni bir yorum yazıldı"
+
+#: addons/email/email.php:899
+msgid "A new answer is posted by"
+msgstr "Şu kullanıcı tarafından yeni bir cevap verildi"
+
+#: addons/email/email.php:875
+msgid "A new question is posted by"
+msgstr "Şu kullanıcı tarafından yeni bir soru soruldu"
+
+#: addons/email/email.php:872
+msgid "{asker} have posted a new question"
+msgstr "{asker} yeni bir soru sordu"
+
+#. Translators: placeholder contain error message.
+#: addons/email/email.php:742
+msgid "Unable to save template. Error: %s"
+msgstr "Şablon kaydedilemedi. Hata: %s"
+
+#: addons/email/email.php:720 includes/class-form-hooks.php:610
+msgid "Unable to post answer."
+msgstr "Cevap gönderilemedi."
+
+#: addons/email/email.php:693 classes/ajax.php:129
+#: includes/class-form-hooks.php:339 includes/class-form-hooks.php:567
+#: includes/class-form-hooks.php:779
+msgid "Trying to cheat?!"
+msgstr "Hile yapıyorsun demek?!"
+
+#: addons/email/email.php:296
+msgid "Allowed tags"
+msgstr "İzin verilen etiketler"
+
+#: addons/email/email.php:288
+msgid "Email body"
+msgstr "E-posta gövdesi"
+
+#: addons/email/email.php:285
+msgid "Email subject"
+msgstr "E-posta konusu"
+
+#: addons/email/email.php:265
+msgid "Send notification to user when their answer get selected?"
+msgstr "Kullanıcıya cevabı seçildiğinde bildirim gönder?"
+
+#: addons/email/email.php:264
+msgid "Answer selected"
+msgstr "Cevap seçildi"
+
+#: addons/email/email.php:259
+msgid "Send edit answer notification to user?"
+msgstr "Kullanıcıya cevap düzenlemesi bildirimi gönder?"
+
+#: addons/email/email.php:253
+msgid "Send edit question notification to user?"
+msgstr "Kullanıcıya soru düzenlemesi bildirimi gönder?"
+
+#: addons/email/email.php:247
+msgid "Send new comment notification to user?"
+msgstr "Kullanıcıya yeni yorum bildirimi gönder?"
+
+#: addons/email/email.php:241
+msgid "Send new answer notification to user?"
+msgstr "Kullanıcıya yeni cevap bildirimi gönder?"
+
+#: addons/email/email.php:235
+msgid "Send new question notification to user?"
+msgstr "Kullanıcıya yeni soru bildirimi gönder?"
+
+#: addons/email/email.php:231
+msgid "Select the types of notification which will be sent to user."
+msgstr "Kullanıcıya gönderilecek bildirim türlerini seçin."
+
+#: addons/email/email.php:208
+msgid "Send notification to admin when question is edited."
+msgstr "Bir soru yeniden düzenlendiğinde yöneticiye bildirim gönder."
+
+#: addons/email/email.php:202
+msgid "Send new comment notification to admin."
+msgstr "Yeni bir yorum geldiğinde yöneticiye bildirim gönder."
+
+#: addons/email/email.php:196
+msgid "Send new answer notification to admin."
+msgstr "Yeni bir cevap verildiğinde yöneticiye bildirim gönder."
+
+#: addons/email/email.php:190
+msgid "Send new question notification to admin."
+msgstr "Yeni bir soru sorulduğunda yöneticiye bildirim gönder."
+
+#: addons/email/email.php:185
+msgid "Email where all admin notification will be sent. It can have multiple emails separated by comma."
+msgstr "Tüm yönetici bildirimlerinin gönderileceği e-posta adresi. Virgüllerle ayrılmış birden fazla adres olabilir."
+
+#: addons/email/email.php:184
+msgid "Admin email(s)"
+msgstr "Yönetici e-postaları"
+
+#: addons/email/email.php:181
+msgid "Select types of notification which will be sent to admin."
+msgstr "Yöneticiye gönderilecek bildirim türlerini seçin."
+
+#: addons/email/email.php:181
+msgid "Admin Notifications"
+msgstr "Yönetici Bildirimleri"
+
+#: addons/categories/categories.php:196
+msgid "Add New Category"
+msgstr "Yeni Kategori Ekle"
+
+#: addons/profile/profile.php:110
+msgid "Custom slug for user profile answers page"
+msgstr "Kullanıcı profili cevaplar sayfası için özel kısaisim"
+
+#: addons/profile/profile.php:105
+msgid "Custom title for user profile answers page"
+msgstr "Kullanıcı profili cevaplar sayfası için özel başlık"
+
+#: addons/profile/profile.php:100
+msgid "Custom slug for user profile questions page"
+msgstr "Kullanıcı profili sorular sayfası için özel kısaisim"
+
+#: addons/profile/profile.php:95
+msgid "Custom title for user profile questions page"
+msgstr "Kullanıcı profili sorular sayfası için özel başlık"
+
+#: addons/profile/profile.php:94
+msgid "Questions page title"
+msgstr "Sorular sayfası başlığı"
+
+#: addons/akismet/akismet.php:261
+msgid "Mark as spam"
+msgstr "Spam olarak işaretle"
+
+#: addons/akismet/akismet.php:261
+msgid "Mark this post as a spam"
+msgstr "Bu gönderiyi spam olarak işaretle"
+
+#: addons/akismet/akismet.php:98
+msgid "Trash the post"
+msgstr "Gönderiyi çöpe gönder"
+
+#: addons/akismet/akismet.php:91
+msgid "Save add-on options"
+msgstr "Eklenti seçeneklerini kaydet"
+
+#: addons/syntaxhighlighter/syntaxhighlighter.php:82
+#: includes/mce-languages.php:34
+msgid "Insert code"
+msgstr "Kodu girin"
+
+#: addons/syntaxhighlighter/syntaxhighlighter.php:78
+msgid "Language"
+msgstr "Dil"
+
+#: templates/question-list.php:37
+msgid "There are no questions matching your query or you do not have permission to read them."
+msgstr "Sorgunuzla eşleşen soru yok veya bunları okuma izniniz yok."
+
+#: templates/content-none.php:33
+msgid "go to page 1"
+msgstr "1. sayfaya git"
+
+#. translators: %d is currently paged value.
+#: templates/content-none.php:29
+msgid "Showing results with pagination active, you are currently on page %d. Click here to return to the initial page"
+msgstr "Sayfalandırma etkin olan sonuçlar gösteriliyor, şu anda %d sayfadasınız. İlk sayfaya dönmek için burayı tıklayın"
+
+#. translators: %s comments count.
+#: templates/single-question.php:91
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] "%s Yorum"
+msgstr[1] "%s Yorum"
+
+#: templates/single-question.php:77
+msgid "Scheduled for"
+msgstr "İçin planlanan"
+
+#: templates/addons/user/index.php:27
+msgid "Please login to view your profile"
+msgstr "Profilinizi görebilmek için oturum açın"
+
+#: templates/addons/tag/tags.php:27
+msgid "Search tags"
+msgstr "Etiketlerde ara"
+
+#: includes/theme.php:704
+msgid "Sorry, you don't have permission to read comments."
+msgstr "Üzgünüz, yorumları okumak için yetkiniz yok."
+
+#: includes/theme.php:691
+msgid "Loading.."
+msgstr "Yükleniyor.."
+
+#: templates/activities/activity-ref-content.php:32
+msgid "View comment"
+msgstr "Yorumu görüntüle"
+
+#: templates/activities/activities.php:61
+msgid "No activities found!"
+msgstr "Hiçbir etkinlik bulunamadı!"
+
+#. translators: %d is activity count.
+#: templates/activities/activity.php:56
+msgid "with other activity"
+msgid_plural "with other %d activities"
+msgstr[0] "diğer etkinlikle"
+msgstr[1] "diğer %d etkinlikle"
+
+#. Plugin Name of the plugin
+#: anspress-question-answer.php
+msgid "AnsPress Question Answer"
+msgstr "AnsPress Question Answer"
+
+#: includes/class-form-hooks.php:948
+msgid "Comment successfully posted"
+msgstr "Yorum başarıyla gönderildi"
+
+#: admin/updater.php:104
+msgid "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" title=\"%4s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update now</a>."
+msgstr "<strong>%1$s %2$s</strong> mevcut. <a href=\"%3$s\" class=\"thickbox\" title=\"%4s\">Yenilikleri kontrol edin.</a> veya <a href=\"%5$s\"%6$s>güncelleyin</a>."
+
+#: admin/updater.php:103
+msgid "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update."
+msgstr "Bu temayı güncellemek, yaptığınız tüm özelleştirmeleri kaybetmenize yol açacak. Durdurmak için 'Cancel', güncellemek için 'OK' düğmesine tıklayın."
+
+#: admin/updater.php:101
+msgid "Site is inactive."
+msgstr "Site devre dışı."
+
+#: admin/updater.php:100
+msgid "License key is disabled."
+msgstr "Lisans anahtarı devre dışı bırakılmış."
+
+#: admin/updater.php:99
+msgid "License is inactive."
+msgstr "Lisans etkinleştirilmemiş."
+
+#: admin/updater.php:98
+msgid "License keys do not match."
+msgstr "Lisans anahtarları eşleşmiyor."
+
+#: admin/updater.php:97
+msgid "License key has expired."
+msgstr "Lisans anahtarı sonlanmış."
+
+#: admin/updater.php:96
+msgid "License key expired %s."
+msgstr "Lisans anahtarı %s tarihinde geçerliliğini yitirdi."
+
+#: admin/updater.php:95
+msgid "You have %1$s / %2$s sites activated."
+msgstr " %1$s / %2$s siteniz aktive edildi."
+
+#: admin/updater.php:94
+msgid "Expires %s."
+msgstr "%s Sona eriyor."
+
+#: admin/updater.php:93
+msgid "License key is active."
+msgstr "Lisans anahtarı etkin."
+
+#: admin/updater.php:92
+msgid "unlimited"
+msgstr "sınırsız"
+
+#: admin/updater.php:91
+msgid "Renew?"
+msgstr "Yenile?"
+
+#: admin/updater.php:90 admin/updater.php:102
+msgid "License status is unknown."
+msgstr "Lisans durumu bilinmiyor."
+
+#: admin/updater.php:87
+msgid "License Action"
+msgstr "Lisans Eylemi"
+
+#: admin/updater.php:86
+msgid "License Key"
+msgstr "Lisans Anahtarı"
+
+#: admin/updater.php:85
+msgid "Enter your theme license key."
+msgstr "Tema lisans anahtarınızı girin."
+
+#: admin/updater.php:84
+msgid "Theme License"
+msgstr "Tema Lisansı"
+
+#. translators: %d is total numbers of answer.
+#. translators: %d is answers count.
+#. translators: %d contain total answer of the question.
+#. translators: %d is total answer count.
+#. translators: %d is answer count.
+#. translators: %d is total answer count of a question.
+#: admin/class-list-table-hooks.php:288 admin/class-list-table-hooks.php:371
+#: admin/views/select_question.php:64 includes/ajax-hooks.php:125
+#: includes/ajax-hooks.php:128 includes/ajax-hooks.php:279
+#: includes/functions.php:2154 templates/buddypress/question-item.php:48
+#: templates/widgets/widget-questions.php:27
+msgid "%d Answer"
+msgid_plural "%d Answers"
+msgstr[0] "%d Cevap"
+msgstr[1] ""
+
+#: widgets/questions.php:129
+msgid "Order by:"
+msgstr "Sıralama Öğesi:"
+
+#: widgets/ask-form.php:31
+msgid "AnsPress ask form widget"
+msgstr "AnsPress soru sorma bileşeni"
+
+#: templates/login-signup.php:24
+msgid "Register"
+msgstr "Kayıt ol"
+
+#: templates/functions.php:123
+msgid "(AnsPress) Author page"
+msgstr "(AnsPress) Yazar sayfası"
+
+#: templates/functions.php:111
+msgid "(AnsPress) Tag page"
+msgstr "(AnsPress) Etiket sayfası"
+
+#: templates/functions.php:99
+msgid "(AnsPress) Category Page"
+msgstr "(AnsPress) Kategori Sayfası"
+
+#: templates/functions.php:87
+msgid "(AnsPress) Question Sidebar"
+msgstr "(AnsPress) Soru Kenar Çubuğu"
+
+#: templates/functions.php:79
+msgid "Widgets in this area will be shown in AnsPress sidebar except single question page."
+msgstr "Bu alandaki bileşen, tekil soru sayfası hariç olmak üzere AnsPress kenar çubuğunda gösterilecektir."
+
+#: templates/functions.php:75
+msgid "(AnsPress) Sidebar"
+msgstr "(AnsPress) Kenar Çubuğu"
+
+#: templates/functions.php:63
+msgid "(AnsPress) Question List Top"
+msgstr "(AnsPress) Soru Listesi En Üst"
+
+#: templates/functions.php:51
+msgid "(AnsPress) Before"
+msgstr "(AnsPress) Önce"
+
+#: includes/theme.php:700
+msgid "Write your comment..."
+msgstr "Yorumunuzu yazın..."
+
+#. translators: %s is file size in MB.
+#: includes/theme.php:695
+msgid "You have already attached maximum numbers of allowed attachments"
+msgstr "İzin verilen maksimum ek sayısı kadar ekleme yaptınız"
+
+#. Translators: %s contain maximum file size user can upload.
+#: lib/class-validate.php:758
+msgid "File(s) size is bigger than %s MB"
+msgstr "Dosya boyutu %s MB'tan daha büyük"
+
+#: templates/content-none.php:18
+msgid "Sorry! No question found."
+msgstr "Afedersiniz! Soru bulunamadı."
+
+#: templates/addons/user/answer-item.php:63
+#: templates/buddypress/answer-item.php:55
+msgid "Selected"
+msgstr "Seçili"
+
+#: templates/addons/user/answer-item.php:63
+#: templates/buddypress/answer-item.php:55
+msgid "This answer is selected as best"
+msgstr "Bu cevap en iyi cevap olarak seçildi"
+
+#. translators: %d is count of net votes.
+#. translators: %d is net vote count.
+#. translators: %d is net votes count.
+#. translators: %d is total votes count.
+#: templates/addons/user/answer-item.php:59
+#: templates/buddypress/answer-item.php:51
+#: templates/buddypress/question-item.php:62
+#: templates/widgets/widget-questions.php:34
+msgid "%d Vote"
+msgid_plural "%d Votes"
+msgstr[0] "%d Oy"
+msgstr[1] "%d Oy"
+
+#: templates/addons/tag/no-tags-found.php:18
+msgid "No tags is set!"
+msgstr "Etiket atanmamış!"
+
+#: includes/class/class-activity.php:550
+#: templates/addons/notification/index.php:68
+#: templates/addons/reputation/index.php:43
+msgid "Load More"
+msgstr "Daha fazla yükle"
+
+#: templates/addons/notification/index.php:37
+msgid "Seen"
+msgstr "Görüldü"
+
+#: templates/addons/notification/index.php:36
+msgid "Unseen"
+msgstr "Görülmedi"
+
+#: templates/addons/category/no-category-found.php:17
+msgid "No category is set!"
+msgstr "Hiçbir kategori ayarlanmadı!"
+
+#: templates/addons/category/single-category.php:69
+msgid "Sub Categories"
+msgstr "Alt Kategoriler"
+
+#: includes/upload.php:50
+msgid "Unable to delete attachment"
+msgstr "Ek silinemiyor"
+
+#: includes/theme.php:1008
+msgid "AnsPress links"
+msgstr "AnsPress bağlantıları"
+
+#: includes/theme.php:791
+msgid "Clear Filter"
+msgstr "Filtreyi Temizle"
+
+#: includes/theme.php:741
+msgid "Order By"
+msgstr "Şununla Sırala"
+
+#: includes/theme.php:350
+msgid "Convert this question to blog post"
+msgstr "Bu soruyu blog yazısına çevir"
+
+#: addons/tags/tags.php:655 addons/tags/tags.php:718 includes/theme.php:408
+msgid "New"
+msgstr "Yeni"
+
+#: addons/tags/tags.php:650 addons/tags/tags.php:717
+msgid "Popular"
+msgstr "Popüler"
+
+#: includes/taxo.php:348
+msgid "Tagged"
+msgstr "Etiketlendi"
+
+#: includes/class/class-activity-helper.php:216
+msgid "Trashed"
+msgstr "Çöpe atılmış"
+
+#: includes/post-status.php:130
+msgid "Question is closed for new answers."
+msgstr "Soru yeni cevaplara kapalıdır."
+
+#: includes/post-status.php:68
+msgid "You are not allowed to change post status"
+msgstr "Gönderi durumunu değiştirmenize izin verilmiyor"
+
+#. translators: %s is search query.
+#: includes/options.php:104
+msgid "Search \"%s\""
+msgstr "Ara \"%s\""
+
+#: includes/functions.php:1331
+msgid "changed status"
+msgstr "değiştirilen durum"
+
+#: includes/functions.php:1320
+msgid "deleted comment"
+msgstr "silinen yorum"
+
+#: includes/functions.php:1318
+msgid "restored answer"
+msgstr "geri getirilen cevap"
+
+#: includes/functions.php:1313 includes/functions.php:1314
+msgid "approved"
+msgstr "onaylı"
+
+#: includes/common-pages.php:190
+msgid "Sorry, you cannot edit this answer."
+msgstr "Üzgünüz, bu cevabı yeniden düzenleyemezsiniz."
+
+#: includes/common-pages.php:157
+msgid "Something went wrong, please try again"
+msgstr "Bir şey ters gitti, lütfen tekrar deneyin"
+
+#: includes/comments.php:465
+msgid "Add a Comment"
+msgstr "Bir Yorum Ekle"
+
+#: includes/comments.php:128
+msgid "Sorry, unable to approve comment"
+msgstr "Üzgünüz, yorum onaylama başarısız oldu"
+
+#. Translators: %s contain post type name.
+#: includes/class-form-hooks.php:882
+msgid "Commenting is not allowed on draft, pending or deleted %s"
+msgstr "Taslak, bekleyen veya silinen %s hakkında yorum yapma izni yok"
+
+#: includes/class-form-hooks.php:788
+msgid "Unable to post comment."
+msgstr "Yorum gönderilemedi."
+
+#: includes/functions.php:2053
+msgid "You cannot edit this question."
+msgstr "Bu soruyu düzenleyemezsiniz."
+
+#. translators: %d is total answer count of question.
+#: includes/answer-loop.php:363
+msgid "You are viewing 1 out of %d answers, click here to view all answers."
+msgstr "%d cevaptan 1'ini inceliyorsun, tüm cevapları görmek için buraya tıklayın."
+
+#: includes/ajax-hooks.php:581 includes/theme.php:956
+msgid "Unsubscribe"
+msgstr "Takibi bırak"
+
+#: includes/ajax-hooks.php:532 includes/ajax-hooks.php:565
+msgid "Sorry, unable to subscribe"
+msgstr "Üzgünüz, takibe alma işlemi başarısız oldu"
+
+#: includes/ajax-hooks.php:521
+msgid "You must be logged in to subscribe to a question"
+msgstr "Bu soruyu takibe almak için oturum açmanız gerekiyor"
+
+#: includes/ajax-hooks.php:461
+msgid "Sorry, you are not allowed to convert this question to post"
+msgstr "Üzgünüz, bu soruyu bir gönderiye dönüştürmeye yetkiniz yok"
+
+#: includes/ajax-hooks.php:396
+msgid "Question is opened"
+msgstr "Soru açıldı"
+
+#: includes/ajax-hooks.php:396
+msgid "Question closed"
+msgstr "Soru kapalı"
+
+#: includes/ajax-hooks.php:394 includes/theme.php:256
+msgid "Open this question for new answers"
+msgstr "Yeni cevaplar için bu soruyu aç"
+
+#: includes/ajax-hooks.php:394 includes/theme.php:256
+msgid "Close this question for new answer."
+msgstr "Bu soruyu yeni cevaplara kapa."
+
+#: includes/ajax-hooks.php:386
+msgid "You cannot close a question"
+msgstr "Bir soruyu kapatamazsın"
+
+#: includes/ajax-hooks.php:365 includes/theme.php:919
+msgid "Unfeature"
+msgstr "Öne çıkarmayı kaldır"
+
+#: includes/ajax-hooks.php:364 includes/theme.php:918
+msgid "Unmark this question as featured"
+msgstr "Bu sorunun öne çıkarılmasını geri al"
+
+#: includes/ajax-hooks.php:307
+msgid "Sorry, you cannot toggle a featured question"
+msgstr "Üzgünüz, öne çıkarılmış soruya geçiş yapamazsınız"
+
+#: includes/ajax-hooks.php:284
+msgid "Answer is deleted permanently"
+msgstr "Cevap kalıcı olarak silindi"
+
+#: includes/ajax-hooks.php:271
+msgid "Question is deleted permanently"
+msgstr "Soru kalıcı olarak silindi"
+
+#: includes/ajax-hooks.php:241
+msgid "Sorry, unable to delete post"
+msgstr "Üzgünüz, gönderi silinemiyor"
+
+#. translators: %s is post type.
+#: includes/ajax-hooks.php:224
+msgid "%s is trashed"
+msgstr "%s çöpe atıldı"
+
+#: includes/ajax-hooks.php:216 includes/theme.php:298
+msgid "Undelete"
+msgstr "Silme işlemini geri al"
+
+#. translators: %s post type.
+#: includes/ajax-hooks.php:186
+msgid "%s is restored"
+msgstr "%s geri yüklendi"
+
+#: includes/ajax-hooks.php:155
+msgid "Unable to trash this post"
+msgstr "Bu gönderi çöp kutusuna gönderilemiyor"
+
+#: ajax/toggle-best-answer.php:82
+msgid "This answer cannot be selected as best, update status to select as best answer."
+msgstr "Bu cevap en iyi cevap olarak seçilemez, en iyi cevabı seçmek için durumunu güncelleyin."
+
+#: admin/views/uninstall.php:125
+msgid "Do you wish to proceed? This cannot be undone."
+msgstr "Devam etmek istiyor musunuz? Bu geri alınamaz."
+
+#: admin/views/uninstall.php:93
+msgid "Clicking this button will remove all AnsPress DB tables"
+msgstr "Bu düğmeye tıklamak, tüm AnsPress DB (veritabanı) tablolarını kaldıracaktır."
+
+#: admin/views/uninstall.php:92
+msgid "Delete all database tables"
+msgstr "Tüm veritabanı tablolarını sil"
+
+#: admin/views/uninstall.php:89
+msgid "Permanently delete all AnsPress tables?"
+msgstr "Tüm AnsPress tabloları kalıcı olarak silinsin mi?"
+
+#: admin/views/uninstall.php:84
+msgid "Clicking this button will delete all AnsPress terms data"
+msgstr "Bu düğmeye tıklamak, tüm AnsPress şartları verilerini silecektir."
+
+#: admin/views/uninstall.php:75
+msgid "Clicking this button will delete all AnsPress options"
+msgstr "Bu düğmeye tıkladığınızda tüm AnsPress ayarları silinir"
+
+#: admin/views/uninstall.php:74
+msgid "Delete all options"
+msgstr "Tüm seçenekleri sil"
+
+#: admin/views/uninstall.php:71
+msgid "Permanently delete all AnsPress options?"
+msgstr "Tüm AnsPress seçeneklerini kalıcı olarak silinsin mi?"
+
+#: admin/views/uninstall.php:66
+msgid "Clicking this button will delete all user data added by AnsPress"
+msgstr "Bu düğmeye tıkladığınızda, AnsPress tarafından eklenen tüm kullanıcı verileri silinir"
+
+#: admin/views/uninstall.php:65
+msgid "Delete all user data"
+msgstr "Tüm kullanıcı verilerini sil"
+
+#: admin/views/uninstall.php:62
+msgid "Permanently delete all AnsPress user data?"
+msgstr "AnsPress kullanıcı verilerini kalıcı olarak silmek mi istiyorsunuz?"
+
+#: admin/views/uninstall.php:57
+msgid "Clicking this button will delete all answers and its related data from database"
+msgstr "Bu düğmeye tıklamak, tüm cevapları ve ilgili verileri veritabanından silecektir"
+
+#. translators: %d is total numbers of answers.
+#: admin/views/uninstall.php:54
+msgid "Delete %d answers"
+msgstr "%d Cevapları sil"
+
+#: admin/views/uninstall.php:45
+msgid "Permanently delete all answers?"
+msgstr "Tüm cevaplar kalıcı olarak silinsin mi?"
+
+#: admin/views/uninstall.php:40
+msgid "Clicking this button will delete all questions and answers data from database"
+msgstr "Bu düğmeye tıklamak tüm soruları ve cevapları veritabanından  silecektir"
+
+#. translators: %d is total numbers of question and answer.
+#: admin/views/uninstall.php:37
+msgid "Delete %d Q&A"
+msgstr "Sil %d S&C"
+
+#: admin/views/uninstall.php:28
+msgid "Permanently delete all questions and answers?"
+msgstr "Tüm soru ve cevaplar kalıcı olarak silinsin mi?"
+
+#: admin/views/uninstall.php:21
+msgid "If you are unsure about this section please do not use any of these options below."
+msgstr "Bu bölüm hakkında emin değilseniz lütfen aşağıdaki seçeneklerden hiçbirini kullanmayın."
+
+#: admin/views/roles.php:140
+msgid "Save Role"
+msgstr "Rolü Kaydet"
+
+#: admin/views/reputation-events.php:34
+msgid "Save Events Points"
+msgstr "Etkinlik Noktalarını Kaydet"
+
+#: lib/class-anspress-upgrader.php:275 lib/class-anspress-upgrader.php:283
+msgid "Successfully migrated all reputations"
+msgstr "Tüm itibarlar başarıyla taşındı"
+
+#: admin/anspress-admin.php:1190
+msgid "Set numbers of media user can upload for each post."
+msgstr "Kullanıcının her gönderide yükleyebileceği çokluortam sayısını belirleyin."
+
+#: admin/anspress-admin.php:1189
+msgid "Max uploads per post"
+msgstr "Gönderi başına maksimum yükleme"
+
+#: admin/anspress-admin.php:1339
+msgid "Order answers by by default using selected"
+msgstr "Cevapları öntanımlı olarak şuna göre sırala"
+
+#: admin/anspress-admin.php:1338
+msgid "Default answers order"
+msgstr "Öntanımlı cevap sıralaması"
+
+#: admin/anspress-admin.php:1272
+msgid "Default question order"
+msgstr "Öntanımlı soru sıralaması"
+
+#: admin/anspress-admin.php:1254
+msgid "Checking this will disable question suggestion in ask form"
+msgstr "Bunu işaretlediğinizde soru formunda soru önerileri devre dışı bırakılacak"
+
+#: admin/anspress-admin.php:1253
+msgid "Disable question suggestion"
+msgstr "Soru önerisini devre dışı bırak"
+
+#: admin/anspress-admin.php:1248
+msgid "Check for duplicate posts before posting"
+msgstr "Göndermeden önce yinelenen gönderileri kontrol et"
+
+#: admin/anspress-admin.php:1247
+msgid "Check duplicate"
+msgstr "Yinelenenleri kontrol et"
+
+#: admin/anspress-admin.php:914
+msgid "Author page title"
+msgstr "Yazar sayfası başlığı"
+
+#: admin/anspress-admin.php:887
+msgid "Select single question permalink structure."
+msgstr "Tekil soru için kalıcı bağlantı yapısını seçin."
+
+#: admin/anspress-admin.php:886
+msgid "Question permalink"
+msgstr "Soru kalıcı bağlantısı"
+
+#: admin/anspress-admin.php:881
+msgid "Slug for single question page."
+msgstr "Tekil soru sayfası için kısaisim."
+
+#: admin/anspress-admin.php:880
+msgid "Question slug"
+msgstr "Soru kısaismi"
+
+#: admin/anspress-admin.php:694
+msgid "Update now"
+msgstr "Şimdi güncelle"
+
+#: admin/anspress-admin.php:693
+msgid "AnsPress database is not updated."
+msgstr "AnsPress veritabanı güncellenmedi."
+
+#: admin/anspress-admin.php:528
+msgid "Select All"
+msgstr "Hepsini Seç"
+
+#: addons/tags/tags.php:349
+msgid "Suggestions are available. Use the up and down arrow keys to read it."
+msgstr "Öneriler mevcut. Okumak için yukarı ve aşağı ok tuşlarını kullanın."
+
+#: addons/tags/tags.php:348
+msgid "removed from the tags list."
+msgstr "etiketler listesinden kaldırıldı."
+
+#: addons/tags/tags.php:347
+msgid "added to the tags list."
+msgstr "etiketler listesine eklendi."
+
+#: addons/tags/tags.php:346
+msgid "Add Tag"
+msgstr "Etiket Ekle"
+
+#: addons/tags/tags.php:345
+msgid "Delete Tag"
+msgstr "Etiketi Sil"
+
+#: addons/tags/tags.php:278
+msgid "Slug for tag page"
+msgstr "Etiket sayfası için kısaisim"
+
+#: addons/tags/tags.php:277
+msgid "Tag page slug"
+msgstr "Etiket sayfası kısaismi"
+
+#: addons/tags/tags.php:272
+msgid "minimum numbers of tags that user must add when asking."
+msgstr "kullanıcının soru sorarken eklemesi gereken minimum etiket sayısı."
+
+#: addons/tags/tags.php:271
+msgid "Minimum tags"
+msgstr "Minimum etiketler"
+
+#: addons/tags/tags.php:266
+msgid "Maximum numbers of tags that user can add when asking."
+msgstr "Kullanıcı soru sorarken ekleyebileceği maksimum etiket sayısı."
+
+#: addons/tags/tags.php:265
+msgid "Maximum tags"
+msgstr "Maksimum etiketler"
+
+#: addons/tags/tags.php:260
+msgid "Numbers of tags to show in tags page."
+msgstr "Etiketler sayfalarında gösterilecek etiket sayısı."
+
+#: addons/tags/tags.php:259
+msgid "Tags to show"
+msgstr "Gösterilecek etiketler"
+
+#: addons/tags/tags.php:199
+msgid "Search Tag"
+msgstr "Etiketi ara"
+
+#: addons/tags/tags.php:198
+msgid "View Tag"
+msgstr "Etiketi Göster"
+
+#: addons/tags/tags.php:197
+msgid "New Tag"
+msgstr "Yeni Etiket"
+
+#: addons/tags/tags.php:196
+msgid "Edit Tag"
+msgstr "Etiketi Düzenle"
+
+#: addons/tags/tags.php:194
+msgid "All Tags"
+msgstr "Tüm Etiketler"
+
+#: addons/tags/tags.php:192 addons/tags/tags.php:232
+msgid "Question Tags"
+msgstr "Soru Etiketleri"
+
+#: addons/tags/tags.php:164
+msgid "(AnsPress) Tags"
+msgstr "(AnsPress) Etiketler"
+
+#: addons/reputation/reputation.php:46 addons/reputation/reputation.php:495
+#: addons/reputation/reputation.php:559
+msgid "Reputations"
+msgstr "İtibarlar"
+
+#: addons/reputation/reputation.php:280
+msgid "Successfully updated reputation points!"
+msgstr "İtibar puanları başarıyla güncellendi!"
+
+#: addons/reputation/reputation.php:218
+msgid "Given a down vote"
+msgstr "Bir negatif oy verildi"
+
+#: addons/reputation/reputation.php:216
+msgid "Points taken from user when they give a down vote"
+msgstr "Bir kullanıcı aşağı oy verdiğinde kullanıcıdan geri alınacak puan"
+
+#: addons/reputation/reputation.php:215
+msgid "Gives down vote"
+msgstr "Negatif oy verdi"
+
+#: addons/reputation/reputation.php:210
+msgid "Given an up vote"
+msgstr "Bir pozitif oy verildi"
+
+#: addons/reputation/reputation.php:208
+msgid "Points taken from user when they give an up vote"
+msgstr "Yukarı oy alırken kullanıcıdan alınan puanlar"
+
+#: addons/reputation/reputation.php:207
+msgid "Gives an up vote"
+msgstr "Pozitif oy verdi"
+
+#: addons/reputation/reputation.php:202
+msgid "Received a down vote"
+msgstr "Bir aşağı oy aldı"
+
+#: addons/reputation/reputation.php:200
+msgid "Points awarded when user receives a down vote"
+msgstr "Kullanıcı eksi oy puanı aldığında verilen puanlar"
+
+#: addons/reputation/reputation.php:199
+msgid "Received down vote"
+msgstr "Negatif oy aldı"
+
+#: addons/reputation/reputation.php:194
+msgid "Received an upvote"
+msgstr "Bir pozitif oy aldı"
+
+#: addons/reputation/reputation.php:192
+msgid "Points awarded when user receives an upvote"
+msgstr "Kullanıcı artı bir oy aldığında verilen puanlar"
+
+#: addons/reputation/reputation.php:191
+msgid "Received up vote"
+msgstr "Pozitif oy aldı"
+
+#: addons/reputation/reputation.php:185
+msgid "Answer was selected as best"
+msgstr "En iyi cevap seçildi"
+
+#: addons/reputation/reputation.php:183
+msgid "Points awarded when user's answer is selected as best"
+msgstr "Kullanıcının cevabı en iyi seçildiğinde verilen puan"
+
+#: addons/reputation/reputation.php:182
+msgid "Answer selected as best"
+msgstr "En iyi cevap olarak seçildi"
+
+#: addons/reputation/reputation.php:176
+msgid "Selected an answer as best"
+msgstr "En iyi cevap seçildi"
+
+#: addons/reputation/reputation.php:174
+msgid "Points awarded when user selects an answer for their question"
+msgstr "Kullanıcı, kendi sorusu için bir cevap seçtiğinde verilen puanlar"
+
+#: addons/reputation/reputation.php:167
+msgid "Commented on a post"
+msgstr "Bir yazıya yorum yaptı"
+
+#: addons/reputation/reputation.php:165
+msgid "Points awarded when user comments on question or answer"
+msgstr "Kullanıcı soru veya cevap hakkında yorum yaptığında verilen puan"
+
+#: addons/reputation/reputation.php:164
+msgid "Commenting"
+msgstr "Yorumlanıyor"
+
+#: addons/reputation/reputation.php:158
+msgid "Posted an answer"
+msgstr "Cevap gönderildi"
+
+#: addons/reputation/reputation.php:156
+msgid "Points awarded when user answers a question"
+msgstr "Kullanıcı bir soruyu cevapladığında verilen puanlar"
+
+#: addons/reputation/reputation.php:155
+msgid "Answering"
+msgstr "Cevaplanıyor"
+
+#: addons/reputation/reputation.php:149
+msgid "Asked a question"
+msgstr "Bir soru sordu"
+
+#: addons/reputation/reputation.php:147
+msgid "Points awarded when user asks a question"
+msgstr "Kullanıcı soru sorduğunda kazanılacak puan"
+
+#: addons/reputation/reputation.php:146
+msgid "Asking"
+msgstr "Soruluyor"
+
+#: addons/reputation/reputation.php:140
+msgid "Registered"
+msgstr "Kayıtlı"
+
+#: addons/reputation/reputation.php:138
+msgid "Points awarded when user account is created"
+msgstr "Kullanıcı hesabı oluşturulduğunda verilen puan"
+
+#: addons/reputation/reputation.php:137
+msgid "Registration"
+msgstr "Kayıt"
+
+#: addons/recaptcha/recaptcha.php:116
+msgid "Select method to use when verification keeps failing"
+msgstr "Doğrulama başarısız olduğunda kullanacak yöntemi seçin"
+
+#: addons/recaptcha/recaptcha.php:115
+msgid "Recaptcha Method"
+msgstr "Recaptcha Yöntemi"
+
+#: addons/profile/profile.php:351
+msgid "Callback function not found for rendering this page"
+msgstr "Bu sayfayı oluşturmak için Callback işlevi bulunamadı"
+
+#: addons/notifications/notifications.php:516
+msgid "Successfully updated all notifications"
+msgstr "Tüm bildirimler başarılı bir şekilde güncellendi"
+
+#: addons/notifications/notifications.php:504
+msgid "There was a problem processing your request"
+msgstr "İsteğiniz işlenirken bir sorun oluştu"
+
+#: addons/notifications/notifications.php:213
+msgid "You lose %points% points"
+msgstr "%points% puan kaybettiniz"
+
+#: addons/notifications/notifications.php:205
+msgid "You have earned %points% points"
+msgstr "%points% puan kazandınız"
+
+#: addons/notifications/notifications.php:197
+msgid "selected your answer"
+msgstr "sizin cevabınız seçildi"
+
+#. translators: %cpt% is AnsPress placeholder not gettext.
+#: addons/notifications/notifications.php:189
+msgid "down voted your %cpt%"
+msgstr "Sizin %cpt% pozitif oylandı"
+
+#. translators: %cpt% is AnsPress placeholder not gettext.
+#: addons/notifications/notifications.php:178
+msgid "up voted your %cpt%"
+msgstr "Sizin %cpt% pozitif oylandı"
+
+#. translators: %cpt% is AnsPress placeholder not gettext.
+#: addons/notifications/notifications.php:169
+msgid "commented on your %cpt%"
+msgstr "%cpt% yorum yapıldı"
+
+#: addons/notifications/notifications.php:160
+msgid "posted an answer on your question"
+msgstr "sorunuza bir cevap yazıldı"
+
+#: addons/notifications/query.php:320
+msgid "post"
+msgstr "gönderi"
+
+#: addons/notifications/query.php:274
+msgid "Someone"
+msgstr "Birisi"
+
+#: addons/email/email.php:226
+msgid "Send email to admin when answer is trashed."
+msgstr "Cevap çöpe gönderildiğinde yöneticiye e-posta gönder."
+
+#: addons/email/email.php:225
+msgid "Delete answer"
+msgstr "Cevabı sil"
+
+#: addons/email/email.php:220
+msgid "Send email to admin when question is trashed."
+msgstr "Soru çöp kutusuna gönderildiğinde yöneticiye e-posta gönder."
+
+#: addons/email/email.php:219
+msgid "Delete question"
+msgstr "Soruyu sil"
+
+#: addons/email/email.php:214
+msgid "Send email to admin when answer is edited."
+msgstr "Yanıt düzenlendiğinde yöneticiye e-posta gönder."
+
+#: addons/email/email.php:201 addons/email/email.php:246
+msgid "New comment"
+msgstr "Yeni yorum"
+
+#: addons/email/email.php:195 addons/email/email.php:240
+#: includes/post-types.php:166
+msgid "New answer"
+msgstr "Yeni cevap"
+
+#: addons/email/email.php:148
+msgid ""
+"Hello!\n"
+"Answer on '{question_title}' is trashed by {user}.\n"
+msgstr ""
+"Merhaba!\n"
+"'{Question_title}' ile ilgili cevap {user} tarafından çöp kutusuna gönderildi.\n"
+
+#: addons/email/email.php:147 addons/email/email.php:1037
+msgid "An answer is trashed by {user}"
+msgstr "Bir cevap {user} tarafından çöpe atıldı"
+
+#: addons/email/email.php:1016
+msgid "A question is trashed by {user}"
+msgstr "Bir soru {user} tarafından çöpe atıldı"
+
+#: addons/email/email.php:992
+msgid "A answer is edited by {editor}"
+msgstr "Cevap {editor} tarafından düzenlendi"
+
+#: addons/email/email.php:968
+msgid "A question is edited by {editor}"
+msgstr "Soru {editor} tarafından düzenlendi"
+
+#: addons/email/email.php:944
+msgid "New comment by {commenter}"
+msgstr "{Commenter} tarafından yeni yorum yapıldı"
+
+#: addons/email/email.php:923
+msgid "Your answer is selected as best by "
+msgstr "Cevabınız en iyi cevap olarak seçildi"
+
+#: addons/email/email.php:896
+msgid "New answer posted by {answerer}"
+msgstr "{Answerer} tarafından gönderilen yeni cevap"
+
+#. translators: placeholder contains count.
+#. translators: Placeholder contains count.
+#: addons/categories/categories.php:921 addons/tags/tags.php:698
+msgid ", %d+"
+msgstr ", %d+"
+
+#: addons/categories/categories.php:867
+msgid "Question category feed"
+msgstr "Soru kategorisi beslemesi"
+
+#. Translators: %d contains count of sub category.
+#: templates/addons/category/categories.php:64
+msgid "%d Sub category"
+msgid_plural "%d Sub categories"
+msgstr[0] "%d Alt kategori"
+msgstr[1] "%d Alt kategoriler"
+
+#: addons/categories/categories.php:646
+msgid "Featured image for category"
+msgstr "Kategori için öne çıkarılan görsel"
+
+#: addons/categories/categories.php:643 admin/anspress-admin.php:136
+#: admin/anspress-admin.php:1462
+msgid "Remove image"
+msgstr "Görseli kaldır"
+
+#: addons/categories/categories.php:597 addons/categories/categories.php:680
+msgid "Set background color to be used with icon"
+msgstr "Simge ile kullanılacak arka plan rengini ayarla"
+
+#: addons/categories/categories.php:595 addons/categories/categories.php:676
+msgid "Icon background color"
+msgstr "Simge arka plan rengi"
+
+#: addons/categories/categories.php:573 addons/categories/categories.php:651
+msgid "Category icon class"
+msgstr "Kategori simgesi sınıfı"
+
+#: addons/categories/categories.php:569
+msgid "Category image"
+msgstr "Kategori resmi"
+
+#: addons/categories/categories.php:565 addons/categories/categories.php:632
+msgid "Upload image"
+msgstr "Görsel yükle"
+
+#: addons/categories/categories.php:564 addons/categories/categories.php:629
+#: includes/class-form-hooks.php:1016
+msgid "Image"
+msgstr "Görsel"
+
+#: addons/categories/categories.php:436
+msgid "Select a topic that best fits your question."
+msgstr "Sorunuza en uygun bir konu seçin."
+
+#: addons/categories/categories.php:311
+msgid "Image height in categories page"
+msgstr "Kategorilerdeki resim yüksekliği sayfası"
+
+#: addons/categories/categories.php:310
+msgid "Categories image height"
+msgstr "Kategoriler görüntü yüksekliği"
+
+#: addons/categories/categories.php:305
+msgid "Category to show per page"
+msgstr "Sayfa başına gösterilecek kategori"
+
+#: addons/categories/categories.php:304
+msgid "Category per page"
+msgstr "Sayfa başına kategori"
+
+#: addons/categories/categories.php:299
+msgid "Descending"
+msgstr "Azalan"
+
+#: addons/categories/categories.php:298
+msgid "Ascending"
+msgstr "Artan"
+
+#: addons/categories/categories.php:282 addons/categories/categories.php:295
+msgid "Set how you want to order categories in categories page."
+msgstr "Kategoriler sayfasında kategorileri nasıl sıralayacağınızı belirleyin."
+
+#: addons/categories/categories.php:276 addons/categories/categories.php:289
+msgid "Group"
+msgstr "Grup"
+
+#: addons/categories/categories.php:269
+msgid "Set how you want to order categories in form."
+msgstr "Formda kategorileri nasıl sıralayacağınızı belirleyin."
+
+#: addons/categories/categories.php:268
+msgid "Ask form category order"
+msgstr "Soru formu kategorisi sıralaması"
+
+#: addons/categories/categories.php:202 addons/tags/tags.php:201
+msgid "Nothing found in Trash"
+msgstr "Çöpte hiçbir şey bulunamadı"
+
+#: addons/categories/categories.php:201 addons/tags/tags.php:200
+msgid "Nothing Found"
+msgstr "Hiçbir Şey Bulunamadı"
+
+#: addons/categories/categories.php:200
+msgid "Search Category"
+msgstr "Kategori Ara"
+
+#: addons/categories/categories.php:199
+msgid "View Category"
+msgstr "Kategoriyi Görüntüle"
+
+#: addons/categories/categories.php:198
+msgid "New Category"
+msgstr "Yeni Kategori"
+
+#: addons/categories/categories.php:197
+msgid "Edit Category"
+msgstr "Kategoriyi Düzenle"
+
+#: addons/categories/categories.php:195
+msgid "All Categories"
+msgstr "Tüm Kategoriler"
+
+#: addons/categories/categories.php:193 addons/categories/categories.php:354
+msgid "Question Categories"
+msgstr "Soru Kategorileri"
+
+#: addons/categories/widget.php:197
+msgid "Icon height:"
+msgstr "Simge yüksekliği:"
+
+#: addons/categories/widget.php:193
+msgid "Icon width:"
+msgstr "Simge genişliği:"
+
+#: addons/categories/widget.php:189
+msgid "ASC"
+msgstr "Artan"
+
+#: addons/categories/widget.php:188
+msgid "DESC"
+msgstr "Azalan"
+
+#: addons/categories/widget.php:186
+msgid "Order:"
+msgstr "Sıralama:"
+
+#: addons/categories/categories.php:274 addons/categories/categories.php:287
+#: addons/categories/widget.php:181
+msgid "Slug"
+msgstr "Kısaisim"
+
+#: addons/categories/categories.php:272 addons/categories/categories.php:285
+#: addons/categories/widget.php:179
+msgid "ID"
+msgstr "ID"
+
+#: addons/categories/categories.php:275 addons/categories/categories.php:288
+#: addons/categories/widget.php:178
+msgid "Count"
+msgstr "Sayı"
+
+#: addons/categories/widget.php:177
+msgid "None"
+msgstr "Yok"
+
+#: addons/categories/widget.php:175
+msgid "Order By:"
+msgstr "Şununla Sırala:"
+
+#: addons/categories/widget.php:171
+msgid "Number:"
+msgstr "Numara:"
+
+#: addons/categories/widget.php:159
+msgid "Top level"
+msgstr "En üst seviye"
+
+#: addons/categories/widget.php:157
+msgid "Parent:"
+msgstr "Ana Yanıt:"
+
+#: addons/categories/widget.php:153
+msgid "Hide empty:"
+msgstr "Boş olanları gizle:"
+
+#: addons/categories/categories.php:47 addons/categories/categories.php:493
+#: addons/categories/categories.php:505 addons/categories/widget.php:43
+#: addons/categories/widget.php:130 includes/functions.php:1632
+#: includes/functions.php:2364 includes/taxo.php:29
+msgid "Categories"
+msgstr "Kategoriler"
+
+#. translators: Placeholder contains child category count.
+#: addons/categories/widget.php:111
+msgid "%d Child"
+msgstr "%d Çocuk"
+
+#: addons/categories/widget.php:29
+msgid "Display AnsPress categories"
+msgstr "AnsPress kategorilerini göster"
+
+#: addons/buddypress/buddypress.php:306 templates/addons/user/answers.php:42
+msgid "Load more answers"
+msgstr "Daha fazla cevap yükle"
+
+#: addons/buddypress/buddypress.php:239
+msgid "Load more questions"
+msgstr "Daha fazla soru yükle"
+
+#: addons/buddypress/buddypress.php:174
+msgid "No AnsPress template found for rendering this page."
+msgstr "Bu sayfayı şekillendirmek için gerekli AnsPress şablonu bulunamadı."
+
+#. translators: %s is views count i.e. 2.1k views.
+#: includes/qaquery.php:466
+msgid "%s views"
+msgstr "%s görüntülenme"
+
+#: includes/class/roles-cap.php:1364
+msgid "You do not have permission to vote."
+msgstr "Oy kullanmaya yetkiniz yok."
+
+#: includes/functions.php:1316
+msgid "deleted answer"
+msgstr "silinen cevap"
+
+#. Translators: %s contain human readable time.
+#. translators: %s is time.
+#. translators: %s is human readable time difference.
+#: templates/addons/user/answer-item.php:43 templates/answer.php:41
+#: templates/shortcode/question.php:60
+msgid "Posted %s"
+msgstr "%s gönderildi"
+
+#. translators: %s: human-readable time difference
+#: includes/functions.php:257
+msgid "%s ago"
+msgstr "%s önce"
+
+#: admin/views/dashboard.php:452
+msgid "Extensions"
+msgstr "Uzantılar"
+
+#. translators: %1 is link to themes %2 is link to addons.
+#: admin/views/dashboard.php:451
+msgid "Themes"
+msgstr "Temalar"
+
+#. Translators: %d contain comment count.
+#. translators: %d is count of comments.
+#. Translators: %d contains count of comments.
+#. translators: %d is comments count.
+#: ajax/comment-delete.php:103 includes/class-form-hooks.php:848
+#: includes/class-form-hooks.php:942 includes/comments.php:148
+msgid "%d Comment"
+msgid_plural "%d Comments"
+msgstr[0] "%d Yorum"
+msgstr[1] ""
+
+#: templates/addons/user/answers.php:48
+msgid "No answer posted by this user."
+msgstr "Bu kullanıcı tarafından gönderilen yanıt yok"
+
+#: templates/attachments.php:28
+msgid "Download file"
+msgstr "Dosyayı indir"
+
+#: templates/attachments.php:25
+msgid "Attachments"
+msgstr "Ekler"
+
+#: templates/answer-form.php:52
+msgid "Write your answer."
+msgstr "Cevabınızı yazın."
+
+#: includes/theme.php:349
+msgid "Convert to post"
+msgstr "Gönderiye dönüştür"
+
+#: includes/qaquery.php:456
+msgid "Featured"
+msgstr "Öne Çıkarılan"
+
+#: includes/shortcode-basepage.php:101
+msgid "Question and answer is powered by"
+msgstr "Soru ve cevap yazılımının arkasındaki güç"
+
+#: includes/shortcode-basepage.php:76
+msgid "AnsPress shortcode cannot be nested."
+msgstr "AnsPress kısa kodu içiçe yerleştirilemez."
+
+#: includes/hooks.php:888
+msgid "years"
+msgstr "yıl"
+
+#: includes/hooks.php:887
+msgid "year"
+msgstr "yıl"
+
+#: includes/hooks.php:886
+msgid "weeks"
+msgstr "hafta"
+
+#: includes/hooks.php:885
+msgid "week"
+msgstr "hafta"
+
+#: includes/hooks.php:884
+msgid "days"
+msgstr "gün"
+
+#: includes/hooks.php:883
+msgid "day"
+msgstr "gün"
+
+#: includes/hooks.php:882
+msgid "hours"
+msgstr "saat"
+
+#: includes/hooks.php:881
+msgid "hour"
+msgstr "saat"
+
+#: includes/hooks.php:880
+msgid "minutes"
+msgstr "dakika"
+
+#: includes/hooks.php:879
+msgid "minute"
+msgstr "dakika"
+
+#: includes/common-pages.php:97
+msgid "This question is not published yet and is not accessible to anyone until it get published."
+msgstr "Bu soru henüz yayınlanmamış ve yayınlanana kadar kimse erişememektedir."
+
+#. Translators: %s contain time to publish.
+#: includes/common-pages.php:93
+msgid "Question will be published in %s"
+msgstr "Soru %s içinde yayınlanacak"
+
+#: includes/comments.php:299
+msgid "Approve"
+msgstr "Onayla"
+
+#: includes/comments.php:154
+msgid "Comment approved successfully."
+msgstr "Yorum başarıyla onaylandı."
+
+#: includes/functions.php:1325
+msgid "edited comment on answer"
+msgstr "cevap üzerindeki yorum düzenlendi"
+
+#: includes/api.php:48
+msgid "Wrong data supplied"
+msgstr "Verilen yanlış veri"
+
+#: includes/ajax-hooks.php:319
+msgid "Only question can be set as featured"
+msgstr "Sadece sorular öne çıkarılabilir"
+
+#. translators: %s is human time difference.
+#: includes/ajax-hooks.php:204
+msgid "This post was created %s, hence you cannot trash it"
+msgstr "Bu gönderi %s önce oluşturulmuş ve bu nedenle silemezsiniz"
+
+#: anspress-question-answer.php:46
+msgid "AnsPress is not running!"
+msgstr "AnsPress çalışmıyor!"
+
+#: admin/views/dashboard.php:459
+msgid "Help and Support!"
+msgstr "Yardım ve Destek!"
+
+#: admin/views/dashboard.php:443
+msgid "More actions"
+msgstr "Daha fazlası"
+
+#: admin/views/dashboard.php:434
+msgid "View questions"
+msgstr "Soruları görüntüle"
+
+#: admin/views/dashboard.php:429
+msgid "Post an answer"
+msgstr "Yanıt yaz"
+
+#: admin/views/dashboard.php:424
+msgid "Write your first question"
+msgstr "İlk sorunuzu yazınız"
+
+#: admin/views/dashboard.php:420
+msgid "Next Steps"
+msgstr "Sonraki Adımlar"
+
+#: admin/views/dashboard.php:411
+msgid "Get Started"
+msgstr "Başlarken"
+
+#: admin/views/dashboard.php:403
+msgid "Welcome to AnsPress!"
+msgstr "AnsPress'e hoş geldiniz!"
+
+#. translators: placeholder contains total awaiting moderation question/answer.
+#: admin/views/dashboard.php:265
+msgid "%d answers awaiting moderation"
+msgstr "%d Bayraklanmış cevap moderasyon bekliyor"
+
+#. translators: placeholder contains total flagged answers count.
+#: admin/views/dashboard.php:248
+msgid "%d Flagged answers"
+msgstr "%d Bayraklanmış cevap"
+
+#: admin/views/dashboard.php:204
+msgid "All looks fine"
+msgstr "Her şey yolunda gözüküyor"
+
+#. translators: placeholder contains total question awaiting moderation.
+#: admin/views/dashboard.php:228
+msgid "%d questions awaiting moderation"
+msgstr "%d soru moderasyon bekliyor"
+
+#. translators: Placeholder contains total flagged question count.
+#: admin/views/dashboard.php:216
+msgid "%d Flagged questions"
+msgstr "%d Bayraklı soru"
+
+#. translators: placeholder contain count.
+#. translators: Placeholder contain total awaiting moderation answers count.
+#: admin/views/dashboard.php:86 admin/views/dashboard.php:309
+msgid "%d Moderate"
+msgstr "%d Onay sürecinde"
+
+#. translators: placeholder contain count.
+#. translators: placeholder contains total numbers of private posts.
+#: admin/views/dashboard.php:78 admin/views/dashboard.php:301
+msgid "%d Private"
+msgstr "%d Özel"
+
+#. translators: placeholder contain count.
+#. translators: placeholder contains total number of published answer count.
+#: admin/views/dashboard.php:70 admin/views/dashboard.php:293
+msgid "%d Published"
+msgstr "%d Yayınlandı"
+
+#: admin/views/dashboard.php:37
+msgid "Latest Answers"
+msgstr "Güncel Cevaplar"
+
+#: admin/views/dashboard.php:29
+msgid "Require Attention"
+msgstr "Dikkat Gerektiriyor"
+
+#: admin/anspress-admin.php:1260
+msgid "Instead of showing time passed i.e. 1 Hour ago, show default format date."
+msgstr "Geçen zamanı (örnek 1 saat önce) göstermek yerine varsayılan tarih biçimini göster."
+
+#: admin/anspress-admin.php:1259
+msgid "Show default date format"
+msgstr "Öntanımlı tarih biçimini göster"
+
+#: addons/buddypress/buddypress.php:108
+msgid "Q&A"
+msgstr "Soru&Cevap"
+
+#. Author of the plugin
+#: anspress-question-answer.php
+msgid "Rahul Aryan"
+msgstr "Rahul Aryan"
+
+#. Description of the plugin
+#: anspress-question-answer.php
+msgid "The most advance community question and answer system for WordPress"
+msgstr "WordPress için en gelişkin topluluk soru ve cevap sistemi"
+
+#: includes/ajax-hooks.php:553 includes/theme.php:956
+msgid "Subscribe"
+msgstr "Takibe al"
+
+#: includes/post-types.php:92 widgets/search.php:71
+msgid "Search questions"
+msgstr "Soruları ara"
+
+#: widgets/search.php:33
+msgid "Question and answer search form."
+msgstr "Soru ve cevap arama formu."
+
+#: widgets/search.php:32
+msgid "(AnsPress) Search"
+msgstr "(AnsPress) Ara"
+
+#: widgets/questions.php:146
+msgid "Limit:"
+msgstr "Sınır:"
+
+#: widgets/questions.php:140
+msgid "Category IDs:"
+msgstr "Kategori ID'leri:"
+
+#: widgets/questions.php:31
+msgid "(AnsPress) Questions"
+msgstr "(AnsPress) Sorular"
+
+#: widgets/question_stats.php:95
+msgid "This widget can only be used in single question page"
+msgstr "Bu bileşen sadece tek soru sayfasında kullanılabilir"
+
+#: includes/qaquery-hooks.php:189
+msgid "No permission"
+msgstr "İzin yok"
+
+#: includes/functions.php:556
+msgid "You cannot vote on restricted posts"
+msgstr "Engelli gönderileri oylayamazsınız"
+
+#: includes/common-pages.php:86
+msgid "Sorry! you are not allowed to read this question."
+msgstr "Üzgünüz! Bu soruyu okumaya yetkiniz yok."
+
+#: includes/class/roles-cap.php:1354
+msgid "Voting on restricted posts are not allowed."
+msgstr "Engelli gönderiler oylanamaz."
+
+#: includes/class/roles-cap.php:1346
+msgid "Voting on own post is not allowed"
+msgstr "Kendi gönderinizi oylamanıza izin verilmiyor"
+
+#: admin/views/roles.php:84
+msgid "Add role"
+msgstr "Rol ekle"
+
+#: admin/views/roles.php:69
+msgid "Role slug, without any space"
+msgstr "Role kısaismi, boşluksuz"
+
+#: admin/views/roles.php:68
+msgid "Role name"
+msgstr "Rol ismi"
+
+#: admin/views/roles.php:65
+msgid "Add a new user role."
+msgstr "Yeni kullanıcı rolü ekle."
+
+#: admin/views/roles.php:62
+msgid "Add new role"
+msgstr "Yeni rol ekle"
+
+#. translators: %s contain role name.
+#: admin/views/roles.php:45
+msgid "Its look like %s role already exists ."
+msgstr "Görünen o ki,  %s rolü zaten ekli."
+
+#. translators: %s contain role name.
+#: admin/views/roles.php:41
+msgid "New role %s added successfully ."
+msgstr "New %s rolü başarıyla eklendi."
+
+#: admin/views/licenses.php:60
+msgid "No license yet."
+msgstr "Henüz lisans yok."
+
+#: admin/views/licenses.php:56
+msgid "Save"
+msgstr "Kaydet"
+
+#: admin/updater.php:89 admin/views/licenses.php:47
+msgid "Activate License"
+msgstr "Lisansı Etkinleştir"
+
+#: admin/updater.php:88 admin/views/licenses.php:45
+msgid "Deactivate License"
+msgstr "Lisansı Devre Dışı BIrak"
+
+#: admin/views/licenses.php:44
+msgid "active"
+msgstr "etkin"
+
+#. translators: Placeholder contains name of product.
+#: admin/views/licenses.php:31
+msgid "Enter license key for %s"
+msgstr " Lütfen %s için lisans anahtarını girin"
+
+#: admin/views/licenses.php:21
+msgid "License keys for AnsPress products, i.e. extensions and themes."
+msgstr "AnsPress ürünleri için lisans anahtarları, ör. uzantılar ve temalar."
+
+#: admin/updater.php:379
+msgid "Error"
+msgstr "Hata"
+
+#: admin/updater.php:379
+msgid "You do not have permission to install plugin updates"
+msgstr "Eklenti güncellemelerini yükleme iznine sahip değilsiniz"
+
+#: admin/updater.php:237
+msgid "There is a new version of %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s\">update now</a>."
+msgstr "Yeni %1$s sürümü mevcut. Sürüm <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">%3$s ayrıntılarını</a> görebilir ya da <a href=\"%4$s\">hemen güncelleyebilirsiniz</a>."
+
+#: admin/updater.php:230
+msgid "There is a new version of %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr "Yeni %1$s sürümü mevcut. Sürüm <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">%3$s ayrıntılarını</a> görebilirsiniz."
+
+#: admin/anspress-admin.php:909
+msgid "Title of the search page"
+msgstr "Arama sayfasının başlığı"
+
+#: admin/anspress-admin.php:908
+msgid "Search page title"
+msgstr "Arama sayfası başlığı"
+
+#: admin/anspress-admin.php:945
+msgid "Check this to load AnsPress JS and CSS on the AnsPress page only. Be careful, this might break layout."
+msgstr "Sadece AnsPress sayfasındaki AnsPress JS ve CSS'i yüklemek için burayı tıklayın. Dikkat edin, bu değişiklik tasarımı bozabilir."
+
+#: admin/anspress-admin.php:944
+msgid "Load assets in AnsPress page only?"
+msgstr "Asset'leri sadece AnsPress sayfasında yükle?"
+
+#: admin/meta-box.php:127
+msgid "+"
+msgstr "+"
+
+#: admin/meta-box.php:123
+msgid "-"
+msgstr "-"
+
+#: admin/meta-box.php:63 admin/meta-box.php:108
+msgid "Add an answer"
+msgstr "Bir cevap ekle"
+
+#: admin/license.php:44 admin/views/licenses.php:19
+msgid "Licenses"
+msgstr "Lisanslar"
+
+#: admin/class-list-table-hooks.php:179 admin/meta-box.php:151
+msgid "Clear flag"
+msgstr "Bayrağı kaldır"
+
+#. translators: %s is post title.
+#: admin/class-list-table-hooks.php:147
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Düzenle &#8220;%s&#8221;"
+
+#. translators: First and last contain span and middle is answer count.
+#: widgets/question_stats.php:85
+msgid "%2$s1%3$s answer"
+msgid_plural "%2$s%1$d%3$s answers"
+msgstr[0] "%2$s1%3$s cevap"
+msgstr[1] "%2$s%1$d%3$s cevap"
+
+#: admin/views/recount.php:85 includes/theme.php:428
+#: widgets/question_stats.php:81
+msgid "Views"
+msgstr "Görüntülenme"
+
+#: widgets/question_stats.php:35
+msgid "Shows question stats in single question page."
+msgstr "Soru istatistiklerini tekil soru sayfasında göster."
+
+#: widgets/question_stats.php:34
+msgid "(AnsPress) Question Stats"
+msgstr "(AnsPress) Soru İstatistikleri"
+
+#: widgets/breadcrumbs.php:31
+msgid "Show current anspress page navigation"
+msgstr "Gezinti sırasında o anki anspress sayfasını göster"
+
+#: widgets/breadcrumbs.php:30
+msgid "(AnsPress) Breadcrumbs"
+msgstr "(AnsPress) Breadcrumbs"
+
+#: addons/categories/widget.php:149 widgets/ask-form.php:82
+#: widgets/leaderboard.php:149 widgets/questions.php:125
+#: widgets/question_stats.php:117 widgets/search.php:79
+msgid "Title:"
+msgstr "Başlık:"
+
+#: widgets/ask-form.php:76
+msgid "Ask questions"
+msgstr "Soru Sor"
+
+#: widgets/ask-form.php:30
+msgid "(AnsPress) Ask form"
+msgstr "(AnsPress) Soru sorma formu"
+
+#: includes/ajax-hooks.php:140
+msgid "No related questions found."
+msgstr "İlgili hiçbir soru bulunmadı."
+
+#: templates/widgets/widget-questions.php:40
+msgid "No questions found."
+msgstr "Hiçbir soru bulunamadı."
+
+#. translators: Placeholder contains questions count.
+#. translators: %d is question count.
+#. translators: %d is category question count.
+#. translators: %s is total question count of category.
+#. translators: %d is count of question.
+#: addons/categories/widget.php:104 includes/ajax-hooks.php:637
+#: templates/addons/category/categories.php:39
+#: templates/addons/category/single-category.php:49
+#: templates/addons/tag/tag.php:28 templates/addons/tag/tags.php:46
+msgid "%d Question"
+msgid_plural "%d Questions"
+msgstr[0] "%d Soru "
+msgstr[1] ""
+
+#. translators: %d is answers count of a question.
+#: admin/meta-box.php:40
+msgid " %d Answers"
+msgstr "%d Cevap"
+
+#: templates/addons/notification/index.php:50
+msgid "No notification"
+msgstr "Bildirim yok"
+
+#: includes/theme.php:702 templates/addons/notification/index.php:30
+msgid "Mark all as seen"
+msgstr "Hepsini okunmuş olarak işaretle"
+
+#: addons/notifications/notifications.php:54
+#: addons/notifications/notifications.php:67
+#: addons/notifications/notifications.php:224 includes/functions.php:1636
+#: includes/theme.php:701
+msgid "Notifications"
+msgstr "Bildirimler"
+
+#: addons/email/email.php:189 addons/email/email.php:234
+#: includes/post-types.php:89
+msgid "New question"
+msgstr "Yeni soru"
+
+#: templates/shortcode/question.php:101
+msgid "View all answers"
+msgstr "Tüm cevapları gör"
+
+#: widgets/question_stats.php:113
+msgid "Question stats"
+msgstr "Soru istatistikleri"
+
+#: templates/login-signup.php:28
+msgid "Login"
+msgstr "Giriş Yap"
+
+#: includes/theme.php:791
+msgid "Reset sorting and filter"
+msgstr "Sıralama ve filtreyi sıfırlayın"
+
+#: templates/search-form.php:22
+msgid "Search questions..."
+msgstr "Sorularda ara..."
+
+#: templates/functions.php:127
+msgid "Widgets in this area will be shown in authors page."
+msgstr "Bu alandaki bileşen, yazarlar sayfasında gösterilecektir."
+
+#: templates/functions.php:115
+msgid "Widgets in this area will be shown in tag listing page."
+msgstr "Bu alandaki bileşen AnsPress etiket listeleri sayfasında gösterilecektir."
+
+#: templates/functions.php:103
+msgid "Widgets in this area will be shown in category listing page."
+msgstr "Bu alandaki bileşen kategori listeleri sayfasında gösterilecektir."
+
+#: templates/functions.php:91
+msgid "Widgets in this area will be shown in single question page sidebar."
+msgstr "Bu alandaki bileşen, soru sayfası kenar çubuğunda gösterilecektir."
+
+#: addons/tags/tags.php:168
+msgid "Widgets in this area will be shown in anspress tags page."
+msgstr "Bu alandaki bileşen anspress etiketler sayfasında gösterilecektir."
+
+#: templates/functions.php:67
+msgid "Widgets in this area will be shown before questions list."
+msgstr "Bu alandaki bileşen, AnsPress sorular listesinin üstünde gösterilecektir."
+
+#: templates/functions.php:55
+msgid "Widgets in this area will be shown before anspress body."
+msgstr "Bu alandaki bileşen, AnsPress gövdesinden önce gösterilecektir."
+
+#: includes/theme.php:692
+msgid "Sending request"
+msgstr "İstek gönderiliyor"
+
+#: includes/functions.php:1317
+msgid "restored question"
+msgstr "geri getirilmiş soru"
+
+#: admin/class-list-table-hooks.php:209 admin/class-list-table-hooks.php:321
+#: includes/theme.php:416 templates/question-list-item.php:34
+msgid "Votes"
+msgstr "Oy"
+
+#: includes/functions.php:2058 templates/ask.php:21
+msgid "You do not have permission to ask a question."
+msgstr "Soru sormak için izniniz yok."
+
+#: includes/functions.php:1426
+msgid " (anonymous)"
+msgstr "(anonim)"
+
+#: includes/functions.php:1395
+msgid "Anonymous"
+msgstr "Anonim"
+
+#: includes/functions.php:1628
+msgid "Emails"
+msgstr "E-postalar"
+
+#: includes/theme.php:574
+msgid "Ask question"
+msgstr "Soru sor"
+
+#: includes/theme.php:443
+msgid "Unsolved"
+msgstr "Çözülmedi"
+
+#: includes/theme.php:438 widgets/questions.php:135
+msgid "Unanswered"
+msgstr "Cevaplanmamış"
+
+#: includes/qaquery.php:460 includes/theme.php:433
+msgid "Solved"
+msgstr "Çözüldü"
+
+#: templates/not-found.php:14
+msgid "Error 404"
+msgstr "404 Hatası"
+
+#: addons/reputation/reputation.php:173
+msgid "Selecting an Answer"
+msgstr "Bir Cevap Seçiliyor"
+
+#: includes/theme.php:525
+msgid "Best answer"
+msgstr "En iyi cevap"
+
+#: admin/class-list-table-hooks.php:468
+msgid "Please fill parent question field, Answer was not saved!"
+msgstr "Lütfen ana soru alanını doldurun, Cevap kaydedilmedi!"
+
+#: admin/class-list-table-hooks.php:158
+msgid "Preview"
+msgstr "Önizle"
+
+#. translators: %s is post title.
+#: admin/class-list-table-hooks.php:155
+msgid "Preview &#8220;%s&#8221;"
+msgstr "Önizle &#8220;%s&#8221;"
+
+#: admin/class-list-table-hooks.php:141 includes/theme.php:332
+msgid "Delete Permanently"
+msgstr "Kalıcı Olarak Sil"
+
+#: admin/class-list-table-hooks.php:141
+msgid "Delete this item permanently"
+msgstr "Bu öğeyi kalıcı olarak sil"
+
+#: admin/class-list-table-hooks.php:137
+msgid "Move this item to the Trash"
+msgstr "Bu öğeyi Çöp'e taşı"
+
+#: admin/class-list-table-hooks.php:135
+msgid "Restore this item from the Trash"
+msgstr "Çöpten bu öğeyi geri yükle"
+
+#: admin/class-list-table-hooks.php:318
+msgid "Content"
+msgstr "İçerik"
+
+#: admin/class-list-table-hooks.php:211 admin/class-list-table-hooks.php:323
+msgid "Date"
+msgstr "Tarih"
+
+#: admin/class-list-table-hooks.php:207 templates/question-list-item.php:41
+msgid "Ans"
+msgstr "Cevap"
+
+#: addons/tags/tags.php:41 addons/tags/tags.php:193 addons/tags/tags.php:244
+#: addons/tags/tags.php:597 admin/class-list-table-hooks.php:203
+msgid "Tag"
+msgstr "Etiket"
+
+#: admin/class-list-table-hooks.php:195 admin/class-list-table-hooks.php:317
+msgid "Author"
+msgstr "Yazar"
+
+#: includes/post-types.php:171
+msgid "No answer found in trash"
+msgstr "Çöpte hiç cevap bulunamadı"
+
+#: includes/post-types.php:170
+msgid "No answer found"
+msgstr "Hiç cevap bulunamadı"
+
+#: includes/post-types.php:169
+msgid "Search answers"
+msgstr "Cevaplarda ara"
+
+#: addons/email/email.php:213 addons/email/email.php:258
+#: includes/post-types.php:167
+msgid "Edit answer"
+msgstr "Cevabı düzenle"
+
+#: admin/anspress-admin.php:205 admin/views/emails.php:46
+msgid "New Answer"
+msgstr "Yeni Cevap"
+
+#: includes/post-types.php:165
+msgid "Add new answer"
+msgstr "Yeni cevap ekle"
+
+#: includes/post-types.php:164
+msgid "View answer"
+msgstr "Cevabı görüntüle"
+
+#: includes/post-types.php:162
+msgid "Parent answer:"
+msgstr "Ana Cevap:"
+
+#: includes/post-types.php:160
+msgctxt "Post Type Singular Name"
+msgid "Answer"
+msgstr "Cevap"
+
+#: includes/post-types.php:159
+msgctxt "Post Type General Name"
+msgid "Answers"
+msgstr "Cevaplar"
+
+#: includes/post-types.php:94
+msgid "No questions found in trash"
+msgstr "Çöpte hiç soru bulunamadı"
+
+#: includes/post-types.php:93
+msgid "No question found"
+msgstr "Hiç soru bulunamadı"
+
+#: includes/class-form-hooks.php:130 includes/functions.php:2080
+msgid "Update Question"
+msgstr "Soruyu Güncelle"
+
+#: admin/views/emails.php:48
+msgid "Edit Question"
+msgstr "Soruyu Düzenle"
+
+#: includes/post-types.php:88
+msgid "Add new question"
+msgstr "Yeni soru ekle"
+
+#: templates/addons/user/answer-item.php:51
+#: templates/buddypress/answer-item.php:43
+#: templates/buddypress/question-item.php:53
+msgid "View Question"
+msgstr "Soruyu Görüntüle"
+
+#: includes/post-types.php:85
+msgid "Parent question:"
+msgstr "Ana Soru:"
+
+#: includes/post-types.php:83
+msgctxt "Post Type Singular Name"
+msgid "Question"
+msgstr "Soru"
+
+#: includes/post-types.php:82
+msgctxt "Post Type General Name"
+msgid "Questions"
+msgstr "Sorular"
+
+#. translators: %s is count of private post.
+#: includes/post-status.php:49
+msgid "Private Post <span class=\"count\">(%s)</span>"
+msgid_plural "Private Post <span class=\"count\">(%s)</span>"
+msgstr[0] " <span class=\"count\">(%s)</span> Özel Gönderi"
+msgstr[1] " <span class=\"count\">(%s)</span> Özel Gönderi"
+
+#: admin/anspress-admin.php:652 admin/anspress-admin.php:669
+#: admin/anspress-admin.php:675
+msgid "Private Post"
+msgstr "Özel Gönderi"
+
+#. translators: %s is count of post awaiting moderation.
+#: includes/post-status.php:37
+msgid "Moderate <span class=\"count\">(%s)</span>"
+msgid_plural "Moderate <span class=\"count\">(%s)</span>"
+msgstr[0] "Denetleme bekleyen <span class=\"count\">(%s)</span>"
+msgstr[1] "Denetleme bekleyen <span class=\"count\">(%s)</span>"
+
+#: includes/functions.php:970
+msgid "[Solved] "
+msgstr "[Çözüldü] "
+
+#: includes/ajax-hooks.php:341 includes/theme.php:921
+msgid "Mark this question as featured"
+msgstr "Bu soruyu öne çıkar"
+
+#: templates/login-signup.php:25
+msgid "or"
+msgstr "veya"
+
+#. translators: %s is post type.
+#: includes/post-status.php:133
+msgid "This %s has been trashed, you can delete it permanently from wp-admin."
+msgstr "Bu %s çöpe taşındı, kalıcı olarak wp-admin panelinden silebilirsiniz."
+
+#. translators: %s is post type.
+#: includes/post-status.php:128
+msgid "This %s is waiting for the approval by the moderator."
+msgstr "Bu %s moderatör tarafından onaylanmayı bekliyor."
+
+#. translators: %s is post type.
+#: includes/post-status.php:124
+msgid "This %s is marked as a private, only admin and post author can see."
+msgstr "Bu %s özel olarak işaretlenmiştir, sadece gönderi yazarı ve yönetici görebilir."
+
+#: includes/functions.php:552
+msgid "Voting down is disabled."
+msgstr "Negatif oylama devre dışı."
+
+#: includes/functions.php:548
+msgid "Your profile has been updated successfully."
+msgstr "Profiliniz başarıyla güncellendi."
+
+#: includes/functions.php:544
+msgid "You have already attached maximum numbers of allowed uploads."
+msgstr "İzin verilen maksimum yükleme sayısı kadar ekleme yaptınız."
+
+#: includes/ajax-hooks.php:344
+msgid "Question is unmarked as featured."
+msgstr "Sorunun öne çıkarılan olarak işaretlenmesi geri alındı."
+
+#: includes/ajax-hooks.php:367
+msgid "Question is marked as featured."
+msgstr "Soru öne çıkarılan olarak işaretlendi."
+
+#: includes/functions.php:540
+msgid "Answer has been deleted permanently"
+msgstr "Cevap kalıcı olarak silindi"
+
+#: includes/functions.php:536
+msgid "Image uploaded successfully"
+msgstr "Görsel başarıyla yüklendi"
+
+#: includes/functions.php:532
+msgid "Please check captcha field and resubmit it again."
+msgstr "Lütfen captcha alanını kontrol ederek tekrar gönderin."
+
+#: includes/functions.php:528
+msgid "You do not have permission to view private posts."
+msgstr "Özel gönderileri görüntüleme yetkiniz yok."
+
+#: ajax/toggle-best-answer.php:93
+msgid "Best answer is selected for your question."
+msgstr "Sorunuz için en iyi cevap seçildi."
+
+#: ajax/toggle-best-answer.php:74
+msgid "Best answer is unselected for your question."
+msgstr "Sorunuz için en iyi cevap seçilmedi."
+
+#: includes/functions.php:524
+msgid "You cannot vote on your own question or answer."
+msgstr "Kendi soru veya yanıtınıza oy veremezsiniz."
+
+#: includes/votes.php:91
+msgid "Undo your vote first."
+msgstr "Önce oyunuzu geri çekin."
+
+#: includes/votes.php:75
+msgid "Your vote has been removed."
+msgstr "Oyunuz kaldırıldı."
+
+#: includes/votes.php:109
+msgid "Thank you for voting."
+msgstr "Oyunuz için teşekkürler."
+
+#: addons/email/email.php:768
+msgid "Post updated successfully"
+msgstr "Gönderi başarıyla gönderildi"
+
+#: includes/functions.php:2163
+msgid "Answer submitted successfully"
+msgstr "Cevap başarıyla gönderildi"
+
+#: includes/functions.php:520
+msgid "Comment updated successfully."
+msgstr "Yorum başarıyla güncellendi."
+
+#: ajax/comment-delete.php:95
+msgid "Comment successfully deleted"
+msgstr "Yorum başarıyla silindi"
+
+#: includes/functions.php:515
+msgid "Something went wrong, last action failed."
+msgstr "Bir şey ters gitti, son işlem başarısız oldu."
+
+#: includes/functions.php:510
+msgid "Success"
+msgstr "Başarılı"
+
+#: includes/post-status.php:44
+msgid "Private"
+msgstr "Özel"
+
+#: includes/ajax-hooks.php:393 includes/theme.php:255
+msgid "Open"
+msgstr "Aç"
+
+#: includes/ajax-hooks.php:393 includes/mce-languages.php:29
+#: includes/theme.php:255
+msgid "Close"
+msgstr "Kapat"
+
+#: ajax/toggle-best-answer.php:92 includes/theme.php:837
+msgid "Unselect"
+msgstr "Seçimi kaldır"
+
+#: includes/theme.php:836
+msgid "Unselect this answer"
+msgstr "Bu cevabı seçme"
+
+#: includes/theme.php:828
+msgid "Select this answer as best"
+msgstr "Bu cevabı en iyi cevap olarak seç"
+
+#: admin/views/emails.php:49 includes/common-pages.php:28
+msgid "Edit Answer"
+msgstr "Cevabı Düzenle"
+
+#: includes/class-form-hooks.php:252 includes/theme.php:697
+#: templates/answer.php:52
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "Yorum"
+msgstr[1] ""
+
+#: includes/class-form-hooks.php:227 includes/functions.php:2225
+msgid "Update Answer"
+msgstr "Cevabı Güncelle"
+
+#: includes/qaquery-hooks.php:190
+msgid "You do not have permission to read this question."
+msgstr "Bu soruyu okumaya yetkiniz yok."
+
+#: addons/tags/tags.php:42 addons/tags/tags.php:232 addons/tags/tags.php:316
+#: addons/tags/tags.php:402 addons/tags/tags.php:476 addons/tags/tags.php:490
+#: includes/functions.php:1640 includes/functions.php:2370
+msgid "Tags"
+msgstr "Etiketler"
+
+#: includes/class-form-hooks.php:852
+msgid "Comment updated successfully"
+msgstr "Yorum başarıyla güncellendi"
+
+#: admin/class-list-table-hooks.php:210 admin/class-list-table-hooks.php:322
+msgid "Flags"
+msgstr "Bayraklar"
+
+#: addons/notifications/notifications.php:252
+msgid "You do not have permission to view this page"
+msgstr "Bu sayfaya erişmek için yetkiniz yok"
+
+#. Translators: placeholder contain field label.
+#: lib/class-validate.php:349 lib/class-validate.php:368
+msgid "%s field is required."
+msgstr "%s alanı zorunludur."
+
+#. translators: %s is file size.
+#: includes/upload.php:315
+msgid "File cannot be uploaded, size is bigger than %s MB"
+msgstr "Boyutu %s MB'dan daha büyük olduğu için bu dosya yüklenemez"
+
+#: addons/profile/profile.php:79 includes/functions.php:2358
+msgid "Profile"
+msgstr "Profil"
+
+#: addons/notifications/notifications.php:101
+msgid "Notification"
+msgstr "EPosta Bildirimi"
+
+#: includes/class-theme.php:218
+msgid "Answers Feed"
+msgstr "Cevaplar Akışı"
+
+#: includes/class-theme.php:217
+msgid "Question Feed"
+msgstr "Soru Akışı"
+
+#: includes/class/roles-cap.php:60
+msgid "AnsPress Banned"
+msgstr "AnsPress Yasaklılar"
+
+#: includes/class/roles-cap.php:59
+msgid "AnsPress Participants"
+msgstr "AnsPress Katılımcılar"
+
+#: includes/class/roles-cap.php:53
+msgid "AnsPress Moderator"
+msgstr "AnsPress Moderatör"
+
+#: includes/theme.php:698
+msgid "Cancel"
+msgstr "İptal"
+
+#: lib/class-form.php:108
+msgid "Submit"
+msgstr "Gönder"
+
+#. translators: first - comments count, second - post title, third - post type.
+#: addons/buddypress/buddypress.php:518
+msgid "%1$d comments on your %3$s - %2$s"
+msgstr "%3$s - %2$s başlığında %1$d yorum var"
+
+#. translators: Placeholder contains reputation points.
+#: addons/reputation/reputation.php:482
+msgid "%s Reputation"
+msgstr "%s İtibar"
+
+#: addons/buddypress/buddypress.php:371
+msgid "Answer this question"
+msgstr "Bu soruyu cevaplayın"
+
+#. translators: First placeholder contains user name and link.
+#: addons/buddypress/buddypress.php:351
+msgid "%1$s <a href=\"AP_CPT_LINK\">answered</a> a question"
+msgstr "%1$s  bir soruyu <a href=\"AP_CPT_LINK\">cevapladı</a>"
+
+#. translators: First placeholder contains user link and name.
+#: addons/buddypress/buddypress.php:330
+msgid "%1$s asked a new <a href=\"AP_CPT_LINK\">question</a>, on the site %3$s"
+msgstr "%1$s yeni bir <a href=\"AP_CPT_LINK\">soru</a> sordu, %3$s adresinde"
+
+#. translators: First placeholder contains user link and name.
+#: addons/buddypress/buddypress.php:328
+msgid "%1$s asked a new <a href=\"AP_CPT_LINK\">question</a>"
+msgstr "%1$s yeni bir <a href=\"AP_CPT_LINK\">soru</a> sordu"
+
+#: includes/class-form-hooks.php:42
+msgid "Question in one sentence"
+msgstr "Sorunuzu bir cümleyle özetleyin"
+
+#: includes/post-types.php:91
+msgid "Update question"
+msgstr "Soruyu güncelle"
+
+#: includes/class-form-hooks.php:71 includes/class-form-hooks.php:185
+msgid "Only visible to admin and moderator."
+msgstr "Sadece yönetici ve moderatöre görünür."
+
+#: includes/class-form-hooks.php:80 includes/class-form-hooks.php:194
+msgid "Enter your name to display"
+msgstr "Gösterilecek adınızı girin"
+
+#: addons/categories/categories.php:273 addons/categories/categories.php:286
+#: addons/categories/widget.php:180 addons/tags/tags.php:660
+#: addons/tags/tags.php:719
+msgid "Name"
+msgstr "İsim"
+
+#: includes/class-form-hooks.php:166
+msgid "Post Answer"
+msgstr "Cevap Gönder"
+
+#: includes/post-types.php:168
+msgid "Update answer"
+msgstr "Cevabı güncelle"
+
+#: includes/theme.php:699
+msgid "Update"
+msgstr "Güncelleştir"
+
+#: admin/views/select_question.php:56 ajax/toggle-best-answer.php:73
+#: includes/ajax-hooks.php:123 includes/theme.php:829
+msgid "Select"
+msgstr "Seç"
+
+#. translators: %d is count of questions.
+#: includes/ajax-hooks.php:106
+msgid "%d similar question found"
+msgid_plural "%d similar questions found"
+msgstr[0] "%d benzer soru bulundu"
+msgstr[1] ""
+
+#: includes/functions.php:1330
+msgid "unselected as best answer"
+msgstr "en iyi cevap seçimi kaldırıldı"
+
+#: includes/functions.php:1329
+msgid "selected as best answer"
+msgstr "en iyi cevap seçildi"
+
+#: includes/functions.php:1328
+msgid "updated status"
+msgstr "güncellenen durum"
+
+#: includes/functions.php:1327
+msgid "unselected answer"
+msgstr "seçilmemiş cevap"
+
+#: includes/functions.php:1326
+msgid "selected answer"
+msgstr "seçilmiş cevap"
+
+#: includes/functions.php:1324
+msgid "edited comment"
+msgstr "düzenlenmiş yorum"
+
+#: includes/functions.php:1323
+msgid "edited answer"
+msgstr "düzenlenmiş cevap"
+
+#: includes/functions.php:1322
+msgid "edited question"
+msgstr "düzenlenen soru"
+
+#: includes/functions.php:1321
+msgid "commented on answer"
+msgstr "cevap üstüne yorum yapıldı"
+
+#: includes/functions.php:1319 includes/theme.php:696 templates/comment.php:32
+msgid "commented"
+msgstr "yorumlandı"
+
+#: includes/functions.php:1315
+msgid "answered"
+msgstr "cevaplandı"
+
+#: includes/functions.php:1312
+msgid "asked"
+msgstr "soruldu"
+
+#: addons/buddypress/buddypress.php:512 addons/notifications/query.php:329
+#: includes/ajax-hooks.php:182 includes/ajax-hooks.php:220
+#: includes/class-form-hooks.php:872 includes/flag.php:46 includes/flag.php:67
+#: includes/flag.php:149 includes/flag.php:155 includes/post-types.php:183
+#: includes/theme.php:302 includes/theme.php:309 includes/theme.php:336
+#: includes/votes.php:622 includes/votes.php:627
+msgid "answer"
+msgstr "cevap"
+
+#: addons/buddypress/buddypress.php:512 addons/notifications/query.php:327
+#: includes/ajax-hooks.php:182 includes/ajax-hooks.php:220
+#: includes/class-form-hooks.php:872 includes/flag.php:46 includes/flag.php:67
+#: includes/flag.php:149 includes/flag.php:155 includes/post-types.php:106
+#: includes/theme.php:302 includes/theme.php:309 includes/theme.php:336
+#: includes/votes.php:622 includes/votes.php:627
+msgid "question"
+msgstr "soru"
+
+#: admin/views/roles.php:79 admin/views/roles.php:126
+msgid "Moderator Capabilities"
+msgstr "Moderatör Yetkileri"
+
+#: admin/views/roles.php:74 admin/views/roles.php:116
+msgid "Basic Capabilities"
+msgstr "Temel Yetkiler"
+
+#: admin/views/roles.php:98
+msgid "Select user role"
+msgstr "Kullanıcı rolünü seç"
+
+#: admin/views/roles.php:92
+msgid "Add AnsPress capabilities to 3rd party roles."
+msgstr "Üçüncü taraf rollere AnsPress yetkileri ekle."
+
+#: admin/views/roles.php:91
+msgid "AnsPress capabilities"
+msgstr "AnsPress yetkileri"
+
+#: admin/views/select_question.php:22
+msgid "Slowly type for question suggestion and then click select button right to question title."
+msgstr "Yavaşça soru önerisini yazın ve sonra soru başlığının sağındaki düğmeyi tıklatarak seçin."
+
+#: admin/views/select_question.php:21
+msgid "Select a question for new answer"
+msgstr "Yeni cevap için soruyu seçin"
+
+#: includes/comments.php:251
+msgid "Comments awaiting moderation"
+msgstr "Yorumlar moderasyon bekliyor"
+
+#: admin/class-list-table-hooks.php:208 admin/class-list-table-hooks.php:320
+msgid "Comments"
+msgstr "Yorumlar"
+
+#: admin/views/dashboard.php:33
+msgid "Latest Questions"
+msgstr "Güncel Sorular"
+
+#: addons/buddypress/buddypress.php:118 addons/buddypress/buddypress.php:212
+#: addons/profile/profile.php:52 addons/profile/profile.php:165
+#: admin/views/dashboard.php:31 admin/views/dashboard.php:209
+#: includes/functions.php:2346 includes/options.php:102
+#: includes/post-types.php:84 includes/taxo.php:77 includes/taxo.php:402
+#: widgets/questions.php:47 widgets/questions.php:102
+msgid "Questions"
+msgstr "Sorular"
+
+#: includes/ajax-hooks.php:178 includes/comments.php:286 includes/theme.php:305
+#: lib/form/class-group.php:84
+msgid "Delete"
+msgstr "Sil"
+
+#: addons/recaptcha/recaptcha.php:111
+msgid "Enter your secret key"
+msgstr "Secret anahtarınızı girin"
+
+#: addons/recaptcha/recaptcha.php:110
+msgid "Recaptcha secret key"
+msgstr "Recaptcha secret anahtarı"
+
+#: addons/recaptcha/recaptcha.php:106
+msgid "Enter your site key, if you dont have it get it from here https://www.google.com/recaptcha/admin"
+msgstr "Site anahtarını girin, eğer yoksa buradan https://www.google.com/recaptcha/admin alabilirsiniz"
+
+#: addons/recaptcha/recaptcha.php:105
+msgid "Recaptcha site key"
+msgstr "Recaptcha site anahtarı"
+
+#: addons/recaptcha/recaptcha.php:84 includes/functions.php:1656
+msgid "reCaptcha"
+msgstr "reCaptcha"
+
+#: admin/anspress-admin.php:1141
+msgid "Default status of edited answer."
+msgstr "Düzenlenmiş cevabın öntanımlı durumu."
+
+#: admin/anspress-admin.php:1140
+msgid "Status of edited answer"
+msgstr "Düzenlenmiş cevabın durumu"
+
+#: admin/anspress-admin.php:1131
+msgid "Default status of new answer."
+msgstr "Yeni cevabın öntanımlı durumu."
+
+#: admin/anspress-admin.php:1130
+msgid "Status of new answer"
+msgstr "Yeni cevap durumu"
+
+#: admin/anspress-admin.php:1121
+msgid "Default status of edited question."
+msgstr "Düzenlenmiş sorunun öntanımlı durumu."
+
+#: admin/anspress-admin.php:1120
+msgid "Status of edited question"
+msgstr "Düzenlenmiş sorunun durumu"
+
+#: admin/anspress-admin.php:1111
+msgid "Default status of new question."
+msgstr "Yeni sorunun öntanımlı durumu."
+
+#: admin/anspress-admin.php:1110
+msgid "Status of new question"
+msgstr "Yeni sorunun durumu"
+
+#: admin/anspress-admin.php:1194
+msgid "Max upload size"
+msgstr "Maksimum yükleme boyutu"
+
+#: admin/anspress-admin.php:1184
+msgid "Allow logged-in users to upload image."
+msgstr "Giriş yapmış kullanıcıların görsel yüklemesine izin ver."
+
+#: admin/anspress-admin.php:1183
+msgid "Allow image upload"
+msgstr "Görsel yüklemeye izin ver"
+
+#: admin/anspress-admin.php:1088
+msgid "Allow users to submit multiple answer per question."
+msgstr "Kullanıcıya soru başına birden fazla cevap verebilmesi için izin ver."
+
+#: admin/anspress-admin.php:1087
+msgid "Multiple answers"
+msgstr "Çok sayıda cevap"
+
+#: includes/ajax-hooks.php:342 includes/theme.php:922
+msgid "Feature"
+msgstr "Öne Çıkar"
+
+#: admin/anspress-admin.php:1369
+msgid "Disable down voting on answers."
+msgstr "Cevaplar üzerinde negatif oy kullanılmasını devre dışarı bırak."
+
+#: admin/anspress-admin.php:1363
+msgid "Disable voting on answers."
+msgstr "Cevaplar üzerinde oylamayı devre dışı bırak."
+
+#: admin/anspress-admin.php:1357
+msgid "Disable comments on answer."
+msgstr "Cevap üzerine yorum yapılmasını devre dışı bırak."
+
+#: admin/anspress-admin.php:1351
+msgid "Set minimum letters for a answer contents."
+msgstr "Cevap içeriğinde gereken minimum karakter sayısını belirle."
+
+#: admin/anspress-admin.php:1333
+msgid "If enabled this will prevent user to submit answer on solved question."
+msgstr "Etkinleştirildiğinde, kullanıcının çözülmüş sorulara cevap yazmasını engeller."
+
+#: admin/anspress-admin.php:1332
+msgid "Close question after selecting answer"
+msgstr "Cevabı seçtikten sonra soruyu kapat"
+
+#: admin/anspress-admin.php:1327
+msgid "Disable down voting on questions."
+msgstr "Sorulara yapılan negatif oylamayı devre dışı bırak."
+
+#: admin/anspress-admin.php:1326 admin/anspress-admin.php:1368
+msgid "Disable down voting"
+msgstr "Negatif oylamayı devre dışı bırak"
+
+#: admin/anspress-admin.php:1321
+msgid "Disable voting on questions."
+msgstr "Sorulara oylama yapmayı devre dışı bırak."
+
+#: admin/anspress-admin.php:1320 admin/anspress-admin.php:1362
+msgid "Disable voting"
+msgstr "Oylamayı devre dışı bırak"
+
+#: admin/anspress-admin.php:1315
+msgid "Disable comments on questions."
+msgstr "Sorulara yapılan yorumları devre dışı bırak."
+
+#: admin/anspress-admin.php:1314 admin/anspress-admin.php:1356
+msgid "Disable comments"
+msgstr "Yorumları devre dışı bırak"
+
+#: admin/anspress-admin.php:1297
+msgid "Set minimum letters for a question contents."
+msgstr "Soru içeriği için minimum karakter sayısı belirle."
+
+#: admin/anspress-admin.php:1296
+msgid "Minimum question content"
+msgstr "Minimum soru içeriği"
+
+#: admin/anspress-admin.php:1291
+msgid "Set minimum letters for a question title."
+msgstr "Soru başlığı için minimum karakter sayısı belirle."
+
+#: admin/anspress-admin.php:1290
+msgid "Minimum title length"
+msgstr "Minimum başlık boyutu"
+
+#: admin/anspress-admin.php:915
+msgid "Title of the author page"
+msgstr "Yazar sayfasının başlığı"
+
+#: addons/profile/profile.php:104
+msgid "Answers page title"
+msgstr "Cevaplar sayfası başlığı"
+
+#: admin/anspress-admin.php:903
+msgid "Main questions list page title"
+msgstr "Ana sorular listesi sayfa başlığı"
+
+#: admin/anspress-admin.php:902
+msgid "Base page title"
+msgstr "Temel soru başlığı"
+
+#: admin/anspress-admin.php:1266
+msgid "If an answer is selected for question then [solved] prefix will be added in title."
+msgstr "Soru için en iyi cevap seçilirse başlığa [çözüldü] öneki eklenecek."
+
+#: admin/anspress-admin.php:1265
+msgid "Show solved prefix"
+msgstr "Çözüldü önekini göster"
+
+#: addons/profile/profile.php:109
+msgid "Answers page slug"
+msgstr "Cevaplar sayfası kısaismi"
+
+#: addons/profile/profile.php:99
+msgid "Questions page slug"
+msgstr "Sorular sayfası kısaismi"
+
+#: admin/views/options.php:50
+msgid "Pages"
+msgstr "Sayfalar"
+
+#: admin/anspress-admin.php:1279 admin/anspress-admin.php:1345
+#: includes/theme.php:496
+msgid "Oldest"
+msgstr "En Eski"
+
+#: admin/anspress-admin.php:1278 admin/anspress-admin.php:1344
+#: includes/theme.php:492 widgets/questions.php:132
+msgid "Newest"
+msgstr "En Yeni"
+
+#: admin/anspress-admin.php:1277 admin/anspress-admin.php:1343
+#: admin/views/toggle-features.php:73 includes/theme.php:403
+#: includes/theme.php:479 widgets/questions.php:131
+#: widgets/question_stats.php:73
+msgid "Active"
+msgstr "Aktif"
+
+#: admin/anspress-admin.php:1276 admin/anspress-admin.php:1342
+#: includes/theme.php:486 widgets/questions.php:133
+msgid "Voted"
+msgstr "Oylandı"
+
+#: admin/anspress-admin.php:981
+msgid "Answers to show per page."
+msgstr "Her sayfada gösterilecek yanıtlar."
+
+#: admin/anspress-admin.php:980
+msgid "Answers per page"
+msgstr "Sayfa başına cevaplar"
+
+#: admin/anspress-admin.php:975
+msgid "Questions to show per page."
+msgstr "Sayfa başına sorulacak sorular."
+
+#: admin/anspress-admin.php:974
+msgid "Questions per page"
+msgstr "Sayfa başına sorular"
+
+#: admin/anspress-admin.php:969
+msgid "User avatar size for comments."
+msgstr "Yorumlar için kullanıcı avatar boyutu."
+
+#: admin/anspress-admin.php:968
+msgid "Comment avatar size"
+msgstr "Yorum avatar boyutu"
+
+#: admin/anspress-admin.php:963
+msgid "User avatar size for answer."
+msgstr "Cevap için kullanıcı avatar boyutu."
+
+#: admin/anspress-admin.php:962
+msgid "Answer avatar size"
+msgstr "Yanıt avatar boyutu"
+
+#: admin/anspress-admin.php:957
+msgid "User avatar size for question."
+msgstr "Soru için kullanıcı avatar boyutu."
+
+#: admin/anspress-admin.php:956
+msgid "Question avatar size"
+msgstr "Soru avatar boyutu"
+
+#: admin/anspress-admin.php:951
+msgid "User avatar size for questions list."
+msgstr "Sorular listesi için kullanıcı avatarı boyutu."
+
+#: admin/anspress-admin.php:950
+msgid "List avatar size"
+msgstr "Avatar boyutunu listele"
+
+#: admin/views/options.php:56
+msgid "Layout"
+msgstr "Arayüz"
+
+#: admin/anspress-admin.php:1206
+msgid "Allow private posts"
+msgstr "Özel gönderilere izin ver"
+
+#: admin/anspress-admin.php:830
+msgid "Hide link to AnsPress project site."
+msgstr "AnsPress proje sitesine bağlantıyı gizle."
+
+#: admin/anspress-admin.php:829
+msgid "Hide author credits"
+msgstr "Yazar bilgilerini gizle"
+
+#: admin/class-list-table-hooks.php:253 admin/class-list-table-hooks.php:276
+msgid "--"
+msgstr "--"
+
+#: addons/categories/categories.php:46 addons/categories/categories.php:194
+#: addons/categories/categories.php:247 addons/categories/categories.php:435
+#: addons/categories/categories.php:545 admin/class-list-table-hooks.php:199
+#: includes/taxo.php:229
+msgid "Category"
+msgstr "Kategori"
+
+#: admin/class-list-table-hooks.php:206 admin/class-list-table-hooks.php:319
+#: includes/theme.php:286
+msgid "Status"
+msgstr "Durum"
+
+#. translators: %d is answers count of a question.
+#: admin/meta-box.php:118
+msgid "<strong>%d</strong> Vote"
+msgid_plural "<strong>%d</strong> Votes"
+msgstr[0] "<strong>%d</strong> Oy"
+msgstr[1] "<strong>%d</strong> Oy"
+
+#. translators: %d is answers count of a question.
+#: admin/meta-box.php:103
+msgid "<strong>%d</strong> Answer"
+msgid_plural "<strong>%d</strong> Answers"
+msgstr[0] "<strong>%d</strong> Cevap"
+msgstr[1] ""
+
+#: addons/buddypress/buddypress.php:122 addons/buddypress/buddypress.php:278
+#: addons/profile/profile.php:53 addons/profile/profile.php:172
+#: admin/views/dashboard.php:238 includes/post-types.php:161
+#: includes/theme.php:423 widgets/questions.php:134
+#: widgets/question_stats.php:91
+msgid "Answers"
+msgstr "Cevaplar"
+
+#: templates/single-question.php:77
+msgid "Published"
+msgstr "Yayınlandı"
+
+#: admin/class-list-table-hooks.php:163
+msgid "View"
+msgstr "Görüntüle"
+
+#: admin/class-list-table-hooks.php:149 admin/meta-box.php:77
+#: includes/comments.php:273 includes/theme.php:274
+msgid "Edit"
+msgstr "Düzenle"
+
+#: admin/class-list-table-hooks.php:135
+msgid "Restore"
+msgstr "Geri Yükle"
+
+#: addons/buddypress/buddypress.php:348 addons/buddypress/buddypress.php:349
+#: addons/buddypress/buddypress.php:371 admin/views/dashboard.php:35
+#: includes/ajax-hooks.php:164 includes/comments.php:86
+#: includes/post-status.php:97 includes/post-status.php:117
+#: includes/post-types.php:184 templates/answers.php:24
+msgid "Answer"
+msgid_plural "Answers"
+msgstr[0] "Cevap"
+msgstr[1] ""
+
+#: addons/buddypress/buddypress.php:325 addons/buddypress/buddypress.php:326
+#: admin/meta-box.php:49 includes/ajax-hooks.php:164 includes/comments.php:86
+#: includes/common-pages.php:25 includes/post-status.php:97
+#: includes/post-status.php:117 includes/post-types.php:107
+msgid "Question"
+msgstr "Soru"
+
+#: admin/class-list-table-hooks.php:137 admin/meta-box.php:78
+msgid "Trash"
+msgstr "Çöp"
+
+#: admin/anspress-admin.php:1114 admin/anspress-admin.php:1124
+#: admin/anspress-admin.php:1134 admin/anspress-admin.php:1144
+#: admin/anspress-admin.php:1154
+msgid "Publish"
+msgstr "Yayımla"
+
+#: templates/addons/notification/index.php:35
+msgid "All"
+msgstr "Tümü"
+
+#: includes/common-pages.php:27 includes/theme.php:703
+#: templates/addons/tag/tags.php:25 templates/search-form.php:20
+msgid "Search"
+msgstr "Ara"
+
+#: admin/class-list-table-hooks.php:397 admin/meta-box.php:150
+#: includes/flag.php:166
+msgid "Flag"
+msgstr "Bayrak"
+
+#: admin/anspress-admin.php:532
+msgid "Add to Menu"
+msgstr "Menüye Ekle"
+
+#: addons/email/email.php:231
+msgid "User Notifications"
+msgstr "Kullanıcı Bildirimleri"
+
+#: addons/profile/profile.php:59
+msgid "User profile"
+msgstr "Kullanıcı profili"
+
+#: addons/email/email.php:207 addons/email/email.php:252
+#: admin/class-list-table-hooks.php:377 includes/post-types.php:90
+msgid "Edit question"
+msgstr "Soruyu düzenle"
+
+#: admin/class-list-table-hooks.php:357
+msgid "This question is orphan, no question is selected for this answer"
+msgstr "Bu soru yetim kalmış, bu cevap için bir soru seçilmemiş"
+
+#: admin/anspress-admin.php:214 admin/anspress-admin.php:320
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: admin/views/dashboard.php:413
+msgid "AnsPress Options"
+msgstr "AnsPress Seçenekleri"
+
+#: addons/reputation/reputation.php:92 addons/reputation/reputation.php:449
+#: addons/reputation/reputation.php:452 addons/reputation/reputation.php:454
+#: includes/functions.php:1644
+msgid "Reputation"
+msgstr "İtibar"
+
+#: admin/class-list-table-hooks.php:61 admin/class-list-table-hooks.php:428
+msgid "Flagged"
+msgstr "Bayrakla işaretlenmiş"
+
+#: admin/anspress-admin.php:651 admin/anspress-admin.php:667
+#: admin/anspress-admin.php:674 admin/anspress-admin.php:1115
+#: admin/anspress-admin.php:1125 admin/anspress-admin.php:1135
+#: admin/anspress-admin.php:1145 admin/anspress-admin.php:1155
+#: includes/post-status.php:32
+msgid "Moderate"
+msgstr "Yönet"
+
+#: admin/anspress-admin.php:203
+msgid "All Answers"
+msgstr "Tüm Cevaplar"
+
+#: admin/anspress-admin.php:201 admin/views/emails.php:45
+msgid "New Question"
+msgstr "Yeni Soru"
+
+#: admin/anspress-admin.php:199
+msgid "All Questions"
+msgstr "Tüm Sorular"
+
+#: widgets/leaderboard.php:114
+msgid "Points"
+msgstr "Puan"
+
+#: includes/class-form-hooks.php:56 includes/class-form-hooks.php:170
+msgid "Description"
+msgstr "Açıklama"
+
+#: admin/class-list-table-hooks.php:196 includes/class-form-hooks.php:41
+msgid "Title"
+msgstr "Başlık"

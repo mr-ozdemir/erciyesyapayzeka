@@ -1,0 +1,1365 @@
+Return-Path: <cpanel@erciyesyapayzeka.com.tr>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id VEznOG2VyWeOgjcAO6WR3A
+	(envelope-from <cpanel@erciyesyapayzeka.com.tr>)
+	for <info@erciyesyapayzeka.com.tr>; Thu, 06 Mar 2025 15:30:37 +0300
+Return-path: <cpanel@erciyesyapayzeka.com.tr>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Thu, 06 Mar 2025 15:30:37 +0300
+Received: from [127.0.0.1] (port=53540 helo=localhost.localdomain)
+	by cpanel1.kayizer.com with esmtpa (Exim 4.98.1)
+	(envelope-from <cpanel@erciyesyapayzeka.com.tr>)
+	id 1tqAN6-0000000FGNi-0LQ3
+	for info@erciyesyapayzeka.com.tr;
+	Thu, 06 Mar 2025 15:30:37 +0300
+Date: Thu, 06 Mar 2025 12:30:37 GMT
+From: "cPanel on erciyesyapayzeka.com.tr" <cpanel@erciyesyapayzeka.com.tr>
+Message-Id: <1741264237.qLwgBWpNA11GEE8z@cpanel1.kayizer.com>
+Reply-To: "cPanel on erciyesyapayzeka.com.tr" <cpanel@erciyesyapayzeka.com.tr>
+Subject: =?UTF-8?B?W2VyY2l5ZXN5YXBheXpla2EuY29tLnRyXSBDbGllbnQgY29uZmln?= =?UTF-8?B?dXJhdGlvbiBzZXR0aW5ncyBmb3Ig4oCcaW5mb0BlcmNpeWVzeWFwYXl6ZWth?= =?UTF-8?B?LmNvbS50cuKAnS4=?=
+To: <info@erciyesyapayzeka.com.tr>
+X-iContact_locale: tr
+Mime-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed-Cpanel::Email::Object-3637866-1741264237-0.861439835630808"
+
+--mixed-Cpanel::Email::Object-3637866-1741264237-0.861439835630808
+Content-Type: multipart/alternative; boundary="alternative-Cpanel::Email::Object-3637866-1741264237-0.707095506982725"
+
+--alternative-Cpanel::Email::Object-3637866-1741264237-0.707095506982725
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Client Configuration settings for =E2=80=9Cinfo@erciyesyapayzeka.com.tr=E2=
+=80=9D.
+
+
+Mail Client Manual Settings
+---------------------------
+
+Secure SSL/TLS Settings (=C3=96nerilir)
+
+Kullan=C4=B1c=C4=B1 ad=C4=B1:
+
+info@erciyesyapayzeka.com.tr
+
+=C5=9Eifre:
+
+E-posta hesab=C4=B1n=C4=B1n =C5=9Fifresini kullan=C4=B1n.
+
+Gelen Posta Sunucusu:
+
+cpanel1.kayizer.com
+
+  * IMAP Port: 993
+
+  * POP3 Port: 995
+
+Giden Sunucu:
+
+cpanel1.kayizer.com
+
+  * SMTP Port: 465
+
+IMAP, POP3 ve SMTP requires authentication.
+
+Non-SSL Settings (NOT Recommended)
+
+Kullan=C4=B1c=C4=B1 ad=C4=B1:
+
+info@erciyesyapayzeka.com.tr
+
+=C5=9Eifre:
+
+E-posta hesab=C4=B1n=C4=B1n =C5=9Fifresini kullan=C4=B1n.
+
+Gelen Posta Sunucusu:
+
+mail.erciyesyapayzeka.com.tr
+
+  * IMAP Port: 143
+
+  * POP3 Port: 110
+
+Giden Sunucu:
+
+mail.erciyesyapayzeka.com.tr
+
+  * SMTP Port: 587
+
+IMAP, POP3 ve SMTP requires authentication.
+
+
+Calendar & Contacts Manual Settings
+-----------------------------------
+
+Secure SSL/TLS Settings (Recommended).
+
+Kullan=C4=B1c=C4=B1 ad=C4=B1:
+
+info@erciyesyapayzeka.com.tr
+
+=C5=9Eifre:
+
+E-posta hesab=C4=B1n=C4=B1n =C5=9Fifresini kullan=C4=B1n.
+
+Sunucu:
+
+https://cpanel1.kayizer.com:2080
+
+  * Port: 2080
+
+Full Calendar URL(s):
+
+  * cPanel CalDAV Calendar:
+
+  * https://cpanel1.kayizer.com:2080/calendars/info@erciyesyapayzeka.com.tr=
+/calendar
+
+Full Contact List URL(s):
+
+  * cPanel CardDAV Address Book:
+
+  * https://cpanel1.kayizer.com:2080/addressbooks/info@erciyesyapayzeka.com=
+.tr/addressbook
+
+Non-SSL Settings (NOT Recommended).
+
+Kullan=C4=B1c=C4=B1 ad=C4=B1:
+
+info@erciyesyapayzeka.com.tr
+
+=C5=9Eifre:
+
+E-posta hesab=C4=B1n=C4=B1n =C5=9Fifresini kullan=C4=B1n.
+
+Sunucu:
+
+http://mail.erciyesyapayzeka.com.tr:2079
+
+  * Port: 2079
+
+Full Calendar URL(s):
+
+  * cPanel CalDAV Calendar:
+
+  * http://mail.erciyesyapayzeka.com.tr:2079/calendars/info@erciyesyapayzek=
+a.com.tr/calendar
+
+Full Contact List URL(s):
+
+  * cPanel CardDAV Address Book:
+
+  * http://mail.erciyesyapayzeka.com.tr:2079/addressbooks/info@erciyesyapay=
+zeka.com.tr/addressbook
+
+A .mobileconfig file for use with iOS for iPhone/iPad/iPod and MacOS=C2=AE =
+Mail.app=C2=AE for Mountain Lion (10.8+) is attached to this message.
+
+Bu bildirim, =E2=80=9C193.255.88.137=E2=80=9D IP adresli bir bilgisayar=C4=
+=B1n sunucu =C3=BCzerindeki =E2=80=9Ccpanel=E2=80=9D hizmeti arac=C4=B1l=C4=
+=B1=C4=9F=C4=B1yla yapt=C4=B1=C4=9F=C4=B1 bir iste=C4=9Fin sonucudur.
+
+Uzak bilgisayar=C4=B1n konumu, Turkey (TR) olarak g=C3=B6r=C3=BCn=C3=BCyor.
+
+Uzak bilgisayar=C4=B1n IP adresi sa=C4=9Flay=C4=B1c=C4=B1ya atanm=C4=B1=C5=
+=9F: =E2=80=9CKayseri Erciyes Universitesi ULAKNET Turkish Academic Network=
+=E2=80=9D
+
+Uzak bilgisayar=C4=B1n a=C4=9F ba=C4=9Flant=C4=B1s=C4=B1 t=C3=BCr=C3=BC =E2=
+=80=9Cgeneric tunnel or VPN=E2=80=9D olarak g=C3=B6r=C3=BCn=C3=BCyor.
+
+Uzak bilgisayar=C4=B1n i=C5=9Fletim sistemi, =E2=80=9CWindows=E2=80=9D s=C3=
+=BCr=C3=BCm =E2=80=9CNT kernel 5.x=E2=80=9D olarak g=C3=B6r=C3=BCn=C3=BCyor.
+
+Sistemin bu bildirimi olu=C5=9Fturma zaman=C4=B1: 6 Mart 2025 Per=C5=9Fembe=
+ 12:30:37 UTC
+
+Bu otomatik mesaj=C4=B1 yan=C4=B1tlamay=C4=B1n.
+
+cP
+
+Copyright=C2=A9 2025 cPanel, L.L.C.=
+
+--alternative-Cpanel::Email::Object-3637866-1741264237-0.707095506982725
+Content-Type: multipart/related; boundary="related-Cpanel::Email::Object-3637866-1741264237-0.711811984707563"
+
+--related-Cpanel::Email::Object-3637866-1741264237-0.711811984707563
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<body style=3D"background:#F4F4F4">
+    <div style=3D"margin:0;padding:0;background:#F4F4F4">
+        <table cellpadding=3D"10" cellspacing=3D"0" border=3D"0" width=3D"1=
+00%" style=3D"width:0 auto;">
+            <tbody>
+                <tr>
+                    <td align=3D"center">
+                        <table cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"680" style=3D"border:0;width:0 auto;max-width:680px;">
+                            <tbody>
+                                <tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20
+                                    <td width=3D"680" height=3D"25" style=
+=3D"font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;=
+color:#333333">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                                            Client Configuration settings f=
+or =E2=80=9Cinfo@erciyesyapayzeka.com.tr=E2=80=9D.
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                                    </td>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20
+                                </tr>
+                                <tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20
+                                    <td style=3D"padding: 15px 0 20px 0; ba=
+ckground-color: #FFFFFF; border: 2px solid #E8E8E8; border-bottom: 2px soli=
+d #FF6C2C;">
+                                        <table width=3D"680" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" style=3D"background:#FFFFFF;font-family:=
+'Helvetica Neue',Helvetica,Arial,sans-serif;">
+                                            <tbody>
+                                                <tr>
+                                                    <td width=3D"15">
+                                                    </td>
+                                                    <td width=3D"650">
+                                                        <table cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <di=
+v id=3D"manual_settings_area" class=3D"section">
+        <h2 id=3D"hdrManualSettings">Mail Client Manual Settings</h2>
+=20=20=20=20=20=20=20=20
+        <div class=3D"row">
+         <div class=3D"col-md-6">
+          <div id=3D"ssl_settings_area"
+=20=20=20=20=20=20=20=20=20=20=20=20
+            style=3D"background-color: #fff;  border: 1px solid transparent=
+; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); margin-bot=
+tom: 20px; border-color: #428bca;"
+=20=20=20=20=20=20=20=20=20=20=20=20
+            class=3D"preferred-selection panel panel-primary">
+               <div
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                style=3D"border-top-left-radius: 3px; border-top-right-radi=
+us: 3px; padding: 10px 15px; background-color: #428bca; border-color: #428b=
+ca; color: #fff;"
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                class=3D"panel-heading">
+                Secure <abbr title=3D"Secure Sockets Layer">SSL</abbr>/<abb=
+r title=3D"Transport Layer Security">TLS</abbr> Settings
+                (=C3=96nerilir)
+              </div>
+              <table class=3D"table manual_settings_table" style=3D"border-=
+collapse: collapse; border-spacing: 0; margin-bottom: 0; width: 100%; backg=
+round-color: transparent; max-width: 100%;">
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"lblSSLSettingsAreaUsername">Kullan=C4=B1c=C4=B1 ad=C4=B1:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"valSSLSettingsAreaUsername" class=3D"data wrap-text">info@erciyesy=
+apayzeka.com.tr</td>
+                  </tr>
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"lblSettingsAreaPassword">=C5=9Eifre:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"valSettingsAreaPassword" class=3D"escape-note"> E-posta hesab=C4=
+=B1n=C4=B1n =C5=9Fifresini kullan=C4=B1n.</td>
+                  </tr>
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"lblSettingsAreaIncomingServer">Gelen Posta Sunucusu:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"valSettingsAreaIncomingServer" class=3D"data">cpanel1.kayizer.com
+                          <ul
+                          style=3D"margin-bottom: 10px; margin-top: 0; list=
+-style: outside none none; margin-left: -5px; padding-left: 0;"
+                          class=3D"port_list list-inline">
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;"><abbr title=3D"Internet Message Access Proto=
+col" class=3D"initialism">IMAP</abbr> Port: 993</li>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;"><abbr title=3D"Post Office Protocol 3" class=
+=3D"initialism">POP3</abbr> Port: 995</li>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                          </ul>
+                      </td>
+                  </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"lblSettingsAreaOutgoingServer">Giden Sunucu:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"valSettingsAreaOutGoingServer" class=3D"data">cpanel1.kayizer.com
+                          <ul
+                          style=3D"margin-bottom: 10px; margin-top: 0; list=
+-style: outside none none; margin-left: -5px; padding-left: 0;"
+                          class=3D"port_list list-inline">
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;"><abbr title=3D"Simple Mail Transfer Protocol=
+">SMTP</abbr> Port: 465</li>
+                          </ul>
+                      </td>
+                  </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" colspan=3D"2" class=3D"notes">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20
+                                                                           =
+     <div id=3D"lblSettingsAreaSmallNote1" class=3D"small_note">IMAP, POP3 =
+ve SMTP requires authentication.</div>
+                      </td>
+                  </tr>
+              </table>
+          </div>
+         </div>
+=20=20
+      </div>
+=20=20=20=20=20=20=20=20
+
+        <div class=3D"row" id=3D"nonSSL" style=3D"display: none">
+         <div class=3D"col-md-6">
+           <div id=3D"non_ssl_settings_area"
+=20=20=20=20=20=20=20=20=20=20=20=20
+            style=3D"background-color: #fff;  border: 1px solid transparent=
+; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); margin-bot=
+tom: 20px; border-color: #f6c342;"
+=20=20=20=20=20=20=20=20=20=20=20=20
+           class=3D"panel panel-default panel-warning">
+               <div
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                style=3D"border-top-left-radius: 3px; border-top-right-radi=
+us: 3px; padding: 10px 15px; background-color: #fcf8e1; border-color: #f6c3=
+42; color: #333;"
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                class=3D"panel-heading">
+                <span id=3D"descNonSSLSettings" class=3D"caption not-recomm=
+ended">Non-SSL Settings (NOT Recommended)</span>
+              </div>
+              <table id=3D"tblManualSettingsTable" class=3D"table manual_se=
+ttings_table" style=3D"border-collapse: collapse; border-spacing: 0; margin=
+-bottom: 0; width: 100%; background-color: transparent; max-width: 100%;">
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"lblNonSSLSettingsUsername">Kullan=C4=B1c=C4=B1 ad=C4=B1:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"valNonSSLSettingsUsername" class=3D"data wrap-text">info@erciyesya=
+payzeka.com.tr</td>
+                  </tr>
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"lblNonSSLSettingsPassword">=C5=9Eifre:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"valNonSSLSettingsPassword" class=3D"escape-note">E-posta hesab=C4=
+=B1n=C4=B1n =C5=9Fifresini kullan=C4=B1n.</td>
+                  </tr>
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"lblNonSSLSettingsIncomingServer">Gelen Posta Sunucusu:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"valNonSSLSettingsIncomingServer" class=3D"data">mail.erciyesyapayz=
+eka.com.tr                          <ul
+                          style=3D"margin-bottom: 10px; margin-top: 0; list=
+-style: outside none none; margin-left: -5px; padding-left: 0;"
+                          class=3D"port_list list-inline">
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;"><abbr title=3D"Internet Message Access Proto=
+col" class=3D"initialism">IMAP</abbr> Port: 143</li>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;"><abbr title=3D"Post Office Protocol 3" class=
+=3D"initialism">POP3</abbr> Port: 110</li>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                          </ul>
+                      </td>
+                  </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"NonSSLSettingsOutgoingServer">Giden Sunucu:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" id=3D"NonSSLSettingsOutgoingServerData" class=3D"data">mail.erciyesyapay=
+zeka.com.tr                          <ul
+                          style=3D"margin-bottom: 10px; margin-top: 0; list=
+-style: outside none none; margin-left: -5px; padding-left: 0;"
+                          class=3D"port_list list-inline">
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;"><abbr title=3D"Simple Mail Transfer Protocol=
+">SMTP</abbr> Port: 587</li>
+                          </ul>
+                      </td>
+                  </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" colspan=3D"2" class=3D"notes">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20
+                                                                           =
+     <div id=3D"descNonSSLSettingsAuthenticationIsRequiredForIMAPPOP3SMTP1"=
+ class=3D"small_note">IMAP, POP3 ve SMTP requires authentication.</div>
+                      </td>
+                  </tr>
+              </table>
+          </div>
+        </div>
+      </div>
+
+    </div><div class=3D"section">
+        <h2>Calendar &amp; Contacts Manual Settings</h2>
+        <div class=3D"row">
+=20=20=20=20=20=20=20=20=20
+         <div class=3D"col-md-6">
+          <div style=3D"background-color: #fff;  border: 1px solid transpar=
+ent; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); margin-=
+bottom: 20px; border-color: #428bca;" class=3D"preferred-selection panel pa=
+nel-primary">
+               <div style=3D"border-top-left-radius: 3px; border-top-right-=
+radius: 3px; padding: 10px 15px; background-color: #428bca; border-color: #=
+428bca; color: #fff;" class=3D"panel-heading">
+                Secure <abbr title=3D"Secure Sockets Layer">SSL</abbr>/<abb=
+r title=3D"Transport Layer Security">TLS</abbr> Settings (Recommended).
+              </div>
+              <table class=3D"table manual_settings_table" style=3D"border-=
+collapse: collapse; border-spacing: 0; margin-bottom: 0; width: 100%; backg=
+round-color: transparent; max-width: 100%;">
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;">Kullan=C4=B1c=C4=B1 ad=C4=B1:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" class=3D"data wrap-text">info@erciyesyapayzeka.com.tr</td>
+                  </tr>
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;">=C5=9Eifre:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" class=3D"escape-note"> E-posta hesab=C4=B1n=C4=B1n =C5=9Fifresini kullan=
+=C4=B1n.</td>
+                  </tr>
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;">Sunucu:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" class=3D"data">https://cpanel1.kayizer.com:2080
+                          <ul
+                          style=3D"margin-bottom: 10px; margin-top: 0; list=
+-style: outside none none; margin-left: -5px; padding-left: 0;"
+                          class=3D"port_list list-inline">
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;">Port: 2080</li>
+                          </ul>
+                      </td>
+                  </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;">Full Calendar URL(s):</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" class=3D"data">
+                          <ul
+                          style=3D"margin-bottom: 10px; margin-top: 0; list=
+-style: outside none none; margin-left: -5px; padding-left: 0;"
+                          class=3D"port_list list-inline">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;"><b>cPanel CalDAV Calendar</b>:</li>
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;">https://cpanel1.kayizer.com:2080/calendars/i=
+nfo@erciyesyapayzeka.com.tr/calendar</li>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                          </ul>
+                      </td>
+                  </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;">Full Contact List URL(s):</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" class=3D"data">
+                          <ul
+                          style=3D"margin-bottom: 10px; margin-top: 0; list=
+-style: outside none none; margin-left: -5px; padding-left: 0;"
+                          class=3D"port_list list-inline">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;"><b>cPanel CardDAV Address Book</b>:</li>
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;">https://cpanel1.kayizer.com:2080/addressbook=
+s/info@erciyesyapayzeka.com.tr/addressbook</li>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                          </ul>
+                      </td>
+                  </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+              </table>
+          </div>
+         </div>
+=20=20=20=20=20=20=20=20=20
+         <div class=3D"col-md-6">
+          <div style=3D"background-color: #fff;  border: 1px solid transpar=
+ent; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); margin-=
+bottom: 20px; border-color: #f6c342;" class=3D"preferred-selection panel pa=
+nel-primary">
+               <div style=3D"border-top-left-radius: 3px; border-top-right-=
+radius: 3px; padding: 10px 15px; background-color: #fcf8e1; border-color: #=
+f6c342; color: #333;" class=3D"panel-heading">
+                Non-SSL Settings (NOT Recommended).
+              </div>
+              <table class=3D"table manual_settings_table" style=3D"border-=
+collapse: collapse; border-spacing: 0; margin-bottom: 0; width: 100%; backg=
+round-color: transparent; max-width: 100%;">
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;">Kullan=C4=B1c=C4=B1 ad=C4=B1:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" class=3D"data wrap-text">info@erciyesyapayzeka.com.tr</td>
+                  </tr>
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;">=C5=9Eifre:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" class=3D"escape-note"> E-posta hesab=C4=B1n=C4=B1n =C5=9Fifresini kullan=
+=C4=B1n.</td>
+                  </tr>
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;">Sunucu:</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" class=3D"data">http://mail.erciyesyapayzeka.com.tr:2079
+                          <ul
+                          style=3D"margin-bottom: 10px; margin-top: 0; list=
+-style: outside none none; margin-left: -5px; padding-left: 0;"
+                          class=3D"port_list list-inline">
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;">Port: 2079</li>
+                          </ul>
+                      </td>
+                  </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;">Full Calendar URL(s):</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" class=3D"data">
+                          <ul
+                          style=3D"margin-bottom: 10px; margin-top: 0; list=
+-style: outside none none; margin-left: -5px; padding-left: 0;"
+                          class=3D"port_list list-inline">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;"><b>cPanel CalDAV Calendar</b>:</li>
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;">http://mail.erciyesyapayzeka.com.tr:2079/cal=
+endars/info@erciyesyapayzeka.com.tr/calendar</li>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                          </ul>
+                      </td>
+                  </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                  <tr>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;">Full Contact List URL(s):</td>
+                      <td style=3D"border-top: 1px solid #ddd; padding: 8px=
+;" class=3D"data">
+                          <ul
+                          style=3D"margin-bottom: 10px; margin-top: 0; list=
+-style: outside none none; margin-left: -5px; padding-left: 0;"
+                          class=3D"port_list list-inline">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;"><b>cPanel CardDAV Address Book</b>:</li>
+                              <li style=3D"display: inline-block; padding-l=
+eft: 5px; padding-right: 5px;">http://mail.erciyesyapayzeka.com.tr:2079/add=
+ressbooks/info@erciyesyapayzeka.com.tr/addressbook</li>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                          </ul>
+                      </td>
+                  </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+              </table>
+          </div>
+         </div>
+=20=20=20=20=20=20=20=20=20
+        </div>
+      </div>
+    </div><p>
+ A .mobileconfig file for use with iOS for iPhone/iPad/iPod and MacOS=C2=AE=
+ Mail.app=C2=AE for Mountain Lion (10.8+) is attached to this message.
+</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <di=
+v style=3D"font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;border-t=
+op: 2px solid #E8E8E8; padding-top:5px; margin-top: 5px; font-size:12px; co=
+lor: #666666;">
+        <p style=3D"padding:0 0 0 0; margin: 5px 0 0 0;">
+=20=20=20=20=20=20=20=20
+          Bu bildirim, =E2=80=9C193.255.88.137=E2=80=9D <abbr title=3D"=C4=
+=B0nternet Protokol=C3=BC">IP</abbr> adresli bir bilgisayar=C4=B1n sunucu =
+=C3=BCzerindeki =E2=80=9Ccpanel=E2=80=9D hizmeti arac=C4=B1l=C4=B1=C4=9F=C4=
+=B1yla yapt=C4=B1=C4=9F=C4=B1 bir iste=C4=9Fin sonucudur.
+=20=20=20=20=20=20=20=20
+    </p>
+
+                    <p style=3D"padding:0 0 0 0; margin: 5px 0 0 0;">
+                            Uzak bilgisayar=C4=B1n konumu, Turkey (TR) olar=
+ak g=C3=B6r=C3=BCn=C3=BCyor.
+                    </p>
+=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20
+                <p style=3D"padding:0 0 0 0; margin: 5px 0 0 0;">
+                  Uzak bilgisayar=C4=B1n <abbr title=3D"=C4=B0nternet Proto=
+kol=C3=BC">IP</abbr> adresi sa=C4=9Flay=C4=B1c=C4=B1ya atanm=C4=B1=C5=9F: =
+=E2=80=9CKayseri Erciyes Universitesi ULAKNET Turkish Academic Network=E2=
+=80=9D
+                </p>
+=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20
+
+=20=20=20=20=20=20=20=20=20
+                            <p style=3D"padding:0 0 0 0; margin: 5px 0 0 0;=
+">
+          Uzak bilgisayar=C4=B1n a=C4=9F ba=C4=9Flant=C4=B1s=C4=B1 t=C3=BCr=
+=C3=BC =E2=80=9Cgeneric tunnel or VPN=E2=80=9D olarak g=C3=B6r=C3=BCn=C3=BC=
+yor.
+        </p>
+                          <p style=3D"padding:0 0 0 0; margin: 5px 0 0 0;">
+=20=20=20=20=20=20=20=20=20=20
+            Uzak bilgisayar=C4=B1n i=C5=9Fletim sistemi, =E2=80=9CWindows=
+=E2=80=9D s=C3=BCr=C3=BCm =E2=80=9CNT kernel 5.x=E2=80=9D olarak g=C3=B6r=
+=C3=BCn=C3=BCyor.
+=20=20=20=20=20=20=20=20=20=20
+        </p>
+=20=20=20=20=20=20=20=20=20=20
+    <p style=3D"padding:0 0 0 0; margin: 5px 0 0 0;">
+        Sistemin bu bildirimi olu=C5=9Fturma zaman=C4=B1: 6 Mart 2025 Per=
+=C5=9Fembe 12:30:37 UTC
+    </p>
+</div>=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                                                                           =
+<!-- -->
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+<p>
+    Bu otomatik mesaj=C4=B1 yan=C4=B1tlamay=C4=B1n.
+</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+
+                                                    </td>
+                                                    <td width=3D"15">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20
+                                </tr>
+                                <tr>
+                                    <td align=3D"center" style=3D"padding-t=
+op: 10px;">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20
+                                        <img src=3D"cid:auto_cid_2713236536=
+" height=3D"25" width=3D"25" style=3D"border:0;line-height:100%;border:0" a=
+lt=3D"cP">
+                                        <p style=3D"font-family:'Helvetica =
+Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#666666; padding: 0; =
+margin: 0;">Copyright=C2=A9=C2=A02025 cPanel, L.L.C.<p>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>=
+
+--related-Cpanel::Email::Object-3637866-1741264237-0.711811984707563
+Content-Type: image/png; x-unix-mode=0600; name="cpanel-logo-tiny.png"
+Content-Disposition: attachment; filename="cpanel-logo-tiny.png"
+Content-ID: <auto_cid_2713236536>
+Content-Transfer-Encoding: base64
+
+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
+P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4
+bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1
+LjYtYzAxNCA3OS4xNTY3OTcsIDIwMTQvMDgvMjAtMDk6NTM6MDIgICAgICAgICI+CiAgIDxyZGY6
+UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5z
+IyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5z
+OnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgICAgICAgICAgeG1sbnM6eG1w
+TU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICAgICAgICAgIHhtbG5zOnN0
+RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAg
+ICAgICAgICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3Av
+MS4wLyIKICAgICAgICAgICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8x
+LjEvIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4w
+LyIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8i
+PgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNp
+bnRvc2gpPC94bXA6Q3JlYXRvclRvb2w+CiAgICAgICAgIDx4bXA6Q3JlYXRlRGF0ZT4yMDE1LTAz
+LTIyVDA3OjUwOjI4LTA1OjAwPC94bXA6Q3JlYXRlRGF0ZT4KICAgICAgICAgPHhtcDpNZXRhZGF0
+YURhdGU+MjAxNS0wMy0yMlQwNzo1MDoyOC0wNTowMDwveG1wOk1ldGFkYXRhRGF0ZT4KICAgICAg
+ICAgPHhtcDpNb2RpZnlEYXRlPjIwMTUtMDMtMjJUMDc6NTA6MjgtMDU6MDA8L3htcDpNb2RpZnlE
+YXRlPgogICAgICAgICA8eG1wTU06SW5zdGFuY2VJRD54bXAuaWlkOmQxMDU0MzZlLWY5ZTAtNDkx
+MS1iZTFiLTcwMzcxNDM4NTA4MjwveG1wTU06SW5zdGFuY2VJRD4KICAgICAgICAgPHhtcE1NOkRv
+Y3VtZW50SUQ+YWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjVmYTlmM2I1LTExMjAtMTE3OC1iOTIzLWZi
+MjdlNDc0YmQzYTwveG1wTU06RG9jdW1lbnRJRD4KICAgICAgICAgPHhtcE1NOk9yaWdpbmFsRG9j
+dW1lbnRJRD54bXAuZGlkOjA4ZTkxZjNlLWU3MjQtNDYzNC04YmJlLTFiNzRlNzMwMTA3NTwveG1w
+TU06T3JpZ2luYWxEb2N1bWVudElEPgogICAgICAgICA8eG1wTU06SGlzdG9yeT4KICAgICAgICAg
+ICAgPHJkZjpTZXE+CiAgICAgICAgICAgICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0iUmVzb3Vy
+Y2UiPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6YWN0aW9uPmNyZWF0ZWQ8L3N0RXZ0OmFjdGlv
+bj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDowOGU5MWYzZS1l
+NzI0LTQ2MzQtOGJiZS0xYjc0ZTczMDEwNzU8L3N0RXZ0Omluc3RhbmNlSUQ+CiAgICAgICAgICAg
+ICAgICAgIDxzdEV2dDp3aGVuPjIwMTUtMDMtMjJUMDc6NTA6MjgtMDU6MDA8L3N0RXZ0OndoZW4+
+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDpzb2Z0d2FyZUFnZW50PkFkb2JlIFBob3Rvc2hvcCBD
+QyAyMDE0IChNYWNpbnRvc2gpPC9zdEV2dDpzb2Z0d2FyZUFnZW50PgogICAgICAgICAgICAgICA8
+L3JkZjpsaT4KICAgICAgICAgICAgICAgPHJkZjpsaSByZGY6cGFyc2VUeXBlPSJSZXNvdXJjZSI+
+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDphY3Rpb24+c2F2ZWQ8L3N0RXZ0OmFjdGlvbj4KICAg
+ICAgICAgICAgICAgICAgPHN0RXZ0Omluc3RhbmNlSUQ+eG1wLmlpZDpkMTA1NDM2ZS1mOWUwLTQ5
+MTEtYmUxYi03MDM3MTQzODUwODI8L3N0RXZ0Omluc3RhbmNlSUQ+CiAgICAgICAgICAgICAgICAg
+IDxzdEV2dDp3aGVuPjIwMTUtMDMtMjJUMDc6NTA6MjgtMDU6MDA8L3N0RXZ0OndoZW4+CiAgICAg
+ICAgICAgICAgICAgIDxzdEV2dDpzb2Z0d2FyZUFnZW50PkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0
+IChNYWNpbnRvc2gpPC9zdEV2dDpzb2Z0d2FyZUFnZW50PgogICAgICAgICAgICAgICAgICA8c3RF
+dnQ6Y2hhbmdlZD4vPC9zdEV2dDpjaGFuZ2VkPgogICAgICAgICAgICAgICA8L3JkZjpsaT4KICAg
+ICAgICAgICAgPC9yZGY6U2VxPgogICAgICAgICA8L3htcE1NOkhpc3Rvcnk+CiAgICAgICAgIDxw
+aG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+CiAgICAgICAgICAgIDxyZGY6QmFnPgogICAgICAg
+ICAgICAgICA8cmRmOmxpPnhtcC5kaWQ6NEMxRkU2RTZCQzREMTFFNEI3MDg5OEZGODlDRkQ2RUU8
+L3JkZjpsaT4KICAgICAgICAgICAgPC9yZGY6QmFnPgogICAgICAgICA8L3Bob3Rvc2hvcDpEb2N1
+bWVudEFuY2VzdG9ycz4KICAgICAgICAgPHBob3Rvc2hvcDpDb2xvck1vZGU+MzwvcGhvdG9zaG9w
+OkNvbG9yTW9kZT4KICAgICAgICAgPHBob3Rvc2hvcDpJQ0NQcm9maWxlPnNSR0IgSUVDNjE5NjYt
+Mi4xPC9waG90b3Nob3A6SUNDUHJvZmlsZT4KICAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9wbmc8
+L2RjOmZvcm1hdD4KICAgICAgICAgPHRpZmY6T3JpZW50YXRpb24+MTwvdGlmZjpPcmllbnRhdGlv
+bj4KICAgICAgICAgPHRpZmY6WFJlc29sdXRpb24+NzIwMDAwLzEwMDAwPC90aWZmOlhSZXNvbHV0
+aW9uPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj43MjAwMDAvMTAwMDA8L3RpZmY6WVJlc29s
+dXRpb24+CiAgICAgICAgIDx0aWZmOlJlc29sdXRpb25Vbml0PjI8L3RpZmY6UmVzb2x1dGlvblVu
+aXQ+CiAgICAgICAgIDxleGlmOkNvbG9yU3BhY2U+MTwvZXhpZjpDb2xvclNwYWNlPgogICAgICAg
+ICA8ZXhpZjpQaXhlbFhEaW1lbnNpb24+MjU8L2V4aWY6UGl4ZWxYRGltZW5zaW9uPgogICAgICAg
+ICA8ZXhpZjpQaXhlbFlEaW1lbnNpb24+MjU8L2V4aWY6UGl4ZWxZRGltZW5zaW9uPgogICAgICA8
+L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAK
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+IAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAog
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAK
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+IAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAog
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/Ph0AdIcAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkA
+AHUwAADqYAAAOpgAABdvkl/FRgAAAclJREFUeNrs1s+LjVEYB/DPHe7EYjY2wsaPjaZBZDQLEZGF
+hSwkNdlIWbC2UEr5D8ZGSX4sJJINaQjlNkn5lcVMSuSWaagZXImYrsU8N6fT6/JOkcV869T7nOc5
+53vO83yf930rzWbT30aHf4AZklKYDQ6tKLvmODZiFpqo4CvquIlzmAQDz4KkHNbjcBv/HvTHGJ1u
+unb9QcxmXEHX70g6UI30VNEZ6enN4ibxrWB9H/YWkczBPlzCYzyN8QS30YNlSfwo1mElNuFatt/O
+n4WfwgJciIIW4QHmY14ydxeP4nkEDzGMRTG3NL1JJ862IYAaVmVz+ckbmCiW8FQxt2a+LyFLIc2T
+OJ/4v8ftUuzH8sSupyQ7suCLOIJP0QMTkaa0oV7gPQbQHUpaG/Et3ElJ+hLHmzhRIyPuxdzEvoqD
+MYrwDqfTmnRlaWoULNqS2UNtavg55Ps6JRlJApbgaPRGC1VsS+yP+IDVBZtfDjnfyAt/PUlZBcew
+O2oyhBNYnGz2KvpneyaEMbz8lbrO4AAWJr7uRJY9IfMWBqPotTKv+nqcfKwgZrBA3rem+z2pYQNO
+4TnG8Rb3sCbs8cj1/TIklZkfif+O5McA9Y1iuiAu5qQAAAAASUVORK5CYII=
+
+--related-Cpanel::Email::Object-3637866-1741264237-0.711811984707563--
+
+--alternative-Cpanel::Email::Object-3637866-1741264237-0.707095506982725--
+
+--mixed-Cpanel::Email::Object-3637866-1741264237-0.861439835630808
+Content-Type: application/octet-stream; x-unix-mode=0600; name="email-info@erciyesyapayzeka.com.tr.mobileconfig"
+Content-Disposition: attachment; filename="email-info@erciyesyapayzeka.com.tr.mobileconfig"
+Content-Transfer-Encoding: base64
+
+MIIYeAYJKoZIhvcNAQcCoIIYaTCCGGUCAQExDzANBglghkgBZQMEAgEFADCCC+UGCSqGSIb3DQEH
+AaCCC9YEggvSPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQ
+RSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cu
+YXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQiPg0KPHBsaXN0IHZlcnNpb249IjEu
+MCI+DQo8ZGljdD4NCiAgPGtleT5QYXlsb2FkQ29udGVudDwva2V5Pg0KICA8YXJyYXk+DQogICAg
+PGRpY3Q+DQogICAgICA8a2V5PkVtYWlsQWNjb3VudERlc2NyaXB0aW9uPC9rZXk+DQogICAgICA8
+c3RyaW5nPmluZm9AZXJjaXllc3lhcGF5emVrYS5jb20udHI8L3N0cmluZz4NCiAgICAgIDxrZXk+
+RW1haWxBY2NvdW50TmFtZTwva2V5Pg0KICAgICAgPHN0cmluZz5pbmZvQGVyY2l5ZXN5YXBheXpl
+a2EuY29tLnRyPC9zdHJpbmc+DQogICAgICA8a2V5PkVtYWlsQWNjb3VudFR5cGU8L2tleT4NCiAg
+ICAgIDxzdHJpbmc+RW1haWxUeXBlSU1BUDwvc3RyaW5nPg0KICAgICAgPGtleT5FbWFpbEFkZHJl
+c3M8L2tleT4NCiAgICAgIDxzdHJpbmc+aW5mb0BlcmNpeWVzeWFwYXl6ZWthLmNvbS50cjwvc3Ry
+aW5nPg0KICAgICAgPGtleT5JbmNvbWluZ01haWxTZXJ2ZXJBdXRoZW50aWNhdGlvbjwva2V5Pg0K
+ICAgICAgPHN0cmluZz5FbWFpbEF1dGhQYXNzd29yZDwvc3RyaW5nPg0KICAgICAgPGtleT5JbmNv
+bWluZ01haWxTZXJ2ZXJIb3N0TmFtZTwva2V5Pg0KICAgICAgPHN0cmluZz5jcGFuZWwxLmtheWl6
+ZXIuY29tPC9zdHJpbmc+DQogICAgICA8a2V5PkluY29taW5nTWFpbFNlcnZlclBvcnROdW1iZXI8
+L2tleT4NCiAgICAgIDxpbnRlZ2VyPjk5MzwvaW50ZWdlcj4NCiAgICAgIDxrZXk+SW5jb21pbmdN
+YWlsU2VydmVyVXNlU1NMPC9rZXk+DQogICAgICA8dHJ1ZS8+DQogICAgICA8a2V5PkluY29taW5n
+TWFpbFNlcnZlclVzZXJuYW1lPC9rZXk+DQogICAgICA8c3RyaW5nPmluZm9AZXJjaXllc3lhcGF5
+emVrYS5jb20udHI8L3N0cmluZz4NCiAgICAgIDxrZXk+T3V0Z29pbmdNYWlsU2VydmVyQXV0aGVu
+dGljYXRpb248L2tleT4NCiAgICAgIDxzdHJpbmc+RW1haWxBdXRoUGFzc3dvcmQ8L3N0cmluZz4N
+CiAgICAgIDxrZXk+T3V0Z29pbmdNYWlsU2VydmVySG9zdE5hbWU8L2tleT4NCiAgICAgIDxzdHJp
+bmc+Y3BhbmVsMS5rYXlpemVyLmNvbTwvc3RyaW5nPg0KICAgICAgPGtleT5PdXRnb2luZ01haWxT
+ZXJ2ZXJQb3J0TnVtYmVyPC9rZXk+DQogICAgICA8aW50ZWdlcj40NjU8L2ludGVnZXI+DQogICAg
+ICA8a2V5Pk91dGdvaW5nTWFpbFNlcnZlclVzZVNTTDwva2V5Pg0KICAgICAgPHRydWUvPg0KICAg
+ICAgPGtleT5PdXRnb2luZ01haWxTZXJ2ZXJVc2VybmFtZTwva2V5Pg0KICAgICAgPHN0cmluZz5p
+bmZvQGVyY2l5ZXN5YXBheXpla2EuY29tLnRyPC9zdHJpbmc+DQogICAgICA8a2V5Pk91dGdvaW5n
+UGFzc3dvcmRTYW1lQXNJbmNvbWluZ1Bhc3N3b3JkPC9rZXk+DQogICAgICA8dHJ1ZS8+DQogICAg
+ICA8a2V5PlBheWxvYWREZXNjcmlwdGlvbjwva2V5Pg0KICAgICAgPHN0cmluZz5pbmZvQGVyY2l5
+ZXN5YXBheXpla2EuY29tLnRyIFNlY3VyZSBFbWFpbCBTZXR1cDwvc3RyaW5nPg0KICAgICAgPGtl
+eT5QYXlsb2FkRGlzcGxheU5hbWU8L2tleT4NCiAgICAgIDxzdHJpbmc+aW5mb0BlcmNpeWVzeWFw
+YXl6ZWthLmNvbS50ciBTZWN1cmUgRW1haWwgU2V0dXA8L3N0cmluZz4NCiAgICAgIDxrZXk+UGF5
+bG9hZElkZW50aWZpZXI8L2tleT4NCiAgICAgIDxzdHJpbmc+Y3BhbmVsLm1haWwub3JnLmluZm8u
+ZXJjaXllc3lhcGF5emVrYS5jb20udHI8L3N0cmluZz4NCiAgICAgIDxrZXk+UGF5bG9hZE9yZ2Fu
+aXphdGlvbjwva2V5Pg0KICAgICAgPHN0cmluZz5lcmNpeWVzeWFwYXl6ZWthLmNvbS50cjwvc3Ry
+aW5nPg0KICAgICAgPGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KICAgICAgPHN0cmluZz5jb20uYXBw
+bGUubWFpbC5tYW5hZ2VkPC9zdHJpbmc+DQogICAgICA8a2V5PlBheWxvYWRVVUlEPC9rZXk+DQog
+ICAgICA8c3RyaW5nPjQ2ZGNkMjBmLThmMDktMDQxYi1hZjNiLTcwYTkzMWNmZDdiNjwvc3RyaW5n
+Pg0KICAgICAgPGtleT5QYXlsb2FkVmVyc2lvbjwva2V5Pg0KICAgICAgPGludGVnZXI+MTwvaW50
+ZWdlcj4NCiAgICAgIDxrZXk+UHJldmVudEFwcFNoZWV0PC9rZXk+DQogICAgICA8ZmFsc2UvPg0K
+ICAgICAgPGtleT5QcmV2ZW50TW92ZTwva2V5Pg0KICAgICAgPGZhbHNlLz4NCiAgICAgIDxrZXk+
+U01JTUVFbmFibGVkPC9rZXk+DQogICAgICA8ZmFsc2UvPg0KICAgICAgPGtleT5JbmNvbWluZ01h
+aWxTZXJ2ZXJJTUFQUGF0aFByZWZpeDwva2V5Pg0KICAgICAgPHN0cmluZz5JTkJPWDwvc3RyaW5n
+Pg0KICAgIDwvZGljdD4NCiAgPC9hcnJheT4NCiAgPGtleT5QYXlsb2FkRGVzY3JpcHRpb248L2tl
+eT4NCiAgPHN0cmluZz5pbmZvQGVyY2l5ZXN5YXBheXpla2EuY29tLnRyIFNlY3VyZSBFbWFpbCBT
+ZXR1cDwvc3RyaW5nPg0KICA8a2V5PlBheWxvYWREaXNwbGF5TmFtZTwva2V5Pg0KICA8c3RyaW5n
+PmluZm9AZXJjaXllc3lhcGF5emVrYS5jb20udHIgU2VjdXJlIEVtYWlsIFNldHVwPC9zdHJpbmc+
+DQogIDxrZXk+UGF5bG9hZElkZW50aWZpZXI8L2tleT4NCiAgPHN0cmluZz5jcGFuZWwubWFpbC5v
+cmcuaW5mby5lcmNpeWVzeWFwYXl6ZWthLmNvbS50ci1lbWFpbDwvc3RyaW5nPg0KICA8a2V5PlBh
+eWxvYWRPcmdhbml6YXRpb248L2tleT4NCiAgPHN0cmluZz5jcGFuZWwubWFpbC5vcmcuaW5mby5l
+cmNpeWVzeWFwYXl6ZWthLmNvbS50cjwvc3RyaW5nPg0KICA8a2V5PlBheWxvYWRSZW1vdmFsRGlz
+YWxsb3dlZDwva2V5Pg0KICA8ZmFsc2UvPg0KICA8a2V5PlBheWxvYWRUeXBlPC9rZXk+DQogIDxz
+dHJpbmc+Q29uZmlndXJhdGlvbjwvc3RyaW5nPg0KICA8a2V5PlBheWxvYWRVVUlEPC9rZXk+DQog
+IDxzdHJpbmc+YTBiMmMyZmQtZDBhYy04ZTAzLTEzMmMtY2ZkOTM5NGZhNTNhPC9zdHJpbmc+DQog
+IDxrZXk+UGF5bG9hZFZlcnNpb248L2tleT4NCiAgPGludGVnZXI+MTwvaW50ZWdlcj4NCjwvZGlj
+dD4NCjwvcGxpc3Q+DQqgggoFMIIFBTCCAu2gAwIBAgIQS6hSk/eaL6JzBkuoBI110DANBgkqhkiG
+9w0BAQsFADBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFy
+Y2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMTAeFw0yNDAzMTMwMDAwMDBaFw0yNzAzMTIy
+MzU5NTlaMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNS
+MTAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDPV+XmxFQS7bRH/sknWHZGUCiMHT6I
+3wWd1bUYKb3dtVq/+vbOo76vACFLYlpaPAEvxVgD9on/jhFD68G14BQHlo9vH9fnuoE5CXVlt8Kv
+GFs3Jijno/QHK20a/6tYvJWuQP/py1fEtVt/eA0YYbwX51TGu0mRzW4Y0YCF7qZlNrx06rxQTOr8
+IfM4FpOUurDTazgGzRYSespSdcitdrLCnF2YRVxvYXvGLe48E1KGAdlX5jgc3421H5KRmudKHMxF
+qHJV8LDmowfs/acbZp4/SItxhHFYyTr6717yW0QrPHTnj7JHwQdqzZq3DZb3EoEmUVQK7GH29/Xi
+8orIlQ2NAgMBAAGjgfgwgfUwDgYDVR0PAQH/BAQDAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggr
+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
+
+--mixed-Cpanel::Email::Object-3637866-1741264237-0.861439835630808
+Content-Type: application/octet-stream; x-unix-mode=0600; name="caldav-info@erciyesyapayzeka.com.tr.mobileconfig"
+Content-Disposition: attachment; filename="caldav-info@erciyesyapayzeka.com.tr.mobileconfig"
+Content-Transfer-Encoding: base64
+
+MIIU1AYJKoZIhvcNAQcCoIIUxTCCFMECAQExDzANBglghkgBZQMEAgEFADCCCEEGCSqGSIb3DQEH
+AaCCCDIEggguPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQ
+RSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cu
+YXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQiPg0KPHBsaXN0IHZlcnNpb249IjEu
+MCI+DQo8ZGljdD4NCiAgPGtleT5QYXlsb2FkQ29udGVudDwva2V5Pg0KICA8YXJyYXk+DQogICAg
+PGRpY3Q+DQogICAgICAgIDxrZXk+Q2FsREFWQWNjb3VudERlc2NyaXB0aW9uPC9rZXk+DQogICAg
+ICAgIDxzdHJpbmc+aW5mb0BlcmNpeWVzeWFwYXl6ZWthLmNvbS50cjwvc3RyaW5nPg0KICAgICAg
+ICA8a2V5PkNhbERBVkhvc3ROYW1lPC9rZXk+DQogICAgICAgIDxzdHJpbmc+Y3BhbmVsMS5rYXlp
+emVyLmNvbTwvc3RyaW5nPg0KICAgICAgICA8a2V5PkNhbERBVlBvcnQ8L2tleT4NCiAgICAgICAg
+PGludGVnZXI+MjA4MDwvaW50ZWdlcj4NCiAgICAgICAgPGtleT5DYWxEQVZQcmluY2lwYWxVUkw8
+L2tleT4NCiAgICAgICAgPHN0cmluZz4vcHJpbmNpcGFscy9pbmZvQGVyY2l5ZXN5YXBheXpla2Eu
+Y29tLnRyPC9zdHJpbmc+DQogICAgICAgIDxrZXk+Q2FsREFWVXNlU1NMPC9rZXk+DQogICAgICAg
+IDx0cnVlLz4NCiAgICAgICAgPGtleT5DYWxEQVZVc2VybmFtZTwva2V5Pg0KICAgICAgICA8c3Ry
+aW5nPmluZm9AZXJjaXllc3lhcGF5emVrYS5jb20udHI8L3N0cmluZz4NCiAgICAgICAgPGtleT5Q
+YXlsb2FkRGVzY3JpcHRpb248L2tleT4NCiAgICAgICAgPHN0cmluZz5pbmZvQGVyY2l5ZXN5YXBh
+eXpla2EuY29tLnRyIFNlY3VyZSBDYWxlbmRhciBTZXR1cDwvc3RyaW5nPg0KICAgICAgICA8a2V5
+PlBheWxvYWREaXNwbGF5TmFtZTwva2V5Pg0KICAgICAgICA8c3RyaW5nPmluZm9AZXJjaXllc3lh
+cGF5emVrYS5jb20udHIgU2VjdXJlIENhbGVuZGFyIFNldHVwPC9zdHJpbmc+DQogICAgICAgIDxr
+ZXk+UGF5bG9hZElkZW50aWZpZXI8L2tleT4NCiAgICAgICAgPHN0cmluZz5jcGFuZWwubWFpbC5v
+cmcuaW5mby5lcmNpeWVzeWFwYXl6ZWthLmNvbS50cjwvc3RyaW5nPg0KICAgICAgICA8a2V5PlBh
+eWxvYWRPcmdhbml6YXRpb248L2tleT4NCiAgICAgICAgPHN0cmluZz5lcmNpeWVzeWFwYXl6ZWth
+LmNvbS50cjwvc3RyaW5nPg0KICAgICAgICA8a2V5PlBheWxvYWRUeXBlPC9rZXk+DQogICAgICAg
+IDxzdHJpbmc+Y29tLmFwcGxlLmNhbGRhdi5hY2NvdW50PC9zdHJpbmc+DQogICAgICAgIDxrZXk+
+UGF5bG9hZFVVSUQ8L2tleT4NCiAgICAgICAgPHN0cmluZz43YWQ3OGM5MS0wYmU1LWM1NDktZTYw
+ZS1hZDlmZTBhNTFkYjc8L3N0cmluZz4NCiAgICAgICAgPGtleT5QYXlsb2FkVmVyc2lvbjwva2V5
+Pg0KICAgICAgICA8aW50ZWdlcj4xPC9pbnRlZ2VyPg0KICAgIDwvZGljdD4NCiAgPC9hcnJheT4N
+CiAgPGtleT5QYXlsb2FkRGVzY3JpcHRpb248L2tleT4NCiAgPHN0cmluZz5pbmZvQGVyY2l5ZXN5
+YXBheXpla2EuY29tLnRyIFNlY3VyZSBDYWxlbmRhciBTZXR1cDwvc3RyaW5nPg0KICA8a2V5PlBh
+eWxvYWREaXNwbGF5TmFtZTwva2V5Pg0KICA8c3RyaW5nPmluZm9AZXJjaXllc3lhcGF5emVrYS5j
+b20udHIgU2VjdXJlIENhbGVuZGFyIFNldHVwPC9zdHJpbmc+DQogIDxrZXk+UGF5bG9hZElkZW50
+aWZpZXI8L2tleT4NCiAgPHN0cmluZz5jcGFuZWwubWFpbC5vcmcuaW5mby5lcmNpeWVzeWFwYXl6
+ZWthLmNvbS50ci1jYWxkYXY8L3N0cmluZz4NCiAgPGtleT5QYXlsb2FkT3JnYW5pemF0aW9uPC9r
+ZXk+DQogIDxzdHJpbmc+Y3BhbmVsLm1haWwub3JnLmluZm8uZXJjaXllc3lhcGF5emVrYS5jb20u
+dHI8L3N0cmluZz4NCiAgPGtleT5QYXlsb2FkUmVtb3ZhbERpc2FsbG93ZWQ8L2tleT4NCiAgPGZh
+bHNlLz4NCiAgPGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KICA8c3RyaW5nPkNvbmZpZ3VyYXRpb248
+L3N0cmluZz4NCiAgPGtleT5QYXlsb2FkVVVJRDwva2V5Pg0KICA8c3RyaW5nPmFiNDQwMjg0LWVl
+NDgtYjZmZS0yYTliLTQwMjFjMmYxNGE2ZTwvc3RyaW5nPg0KICA8a2V5PlBheWxvYWRWZXJzaW9u
+PC9rZXk+DQogIDxpbnRlZ2VyPjE8L2ludGVnZXI+DQo8L2RpY3Q+DQo8L3BsaXN0Pg0KoIIKBTCC
+BQUwggLtoAMCAQICEEuoUpP3mi+icwZLqASNddAwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMC
+VVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJ
+U1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAwWhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJV
+UzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDEMMAoGA1UEAxMDUjEwMIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEAz1fl5sRUEu20R/7JJ1h2RlAojB0+iN8FndW1GCm93bVav/r2zqO+rwAh
+S2JaWjwBL8VYA/aJ/44RQ+vBteAUB5aPbx/X57qBOQl1ZbfCrxhbNyYo56P0ByttGv+rWLyVrkD/
+6ctXxLVbf3gNGGG8F+dUxrtJkc1uGNGAhe6mZTa8dOq8UEzq/CHzOBaTlLqw02s4Bs0WEnrKUnXI
+rXaywpxdmEVcb2F7xi3uPBNShgHZV+Y4HN+NtR+SkZrnShzMRahyVfCw5qMH7P2nG2aeP0iLcYRx
+WMk6+u9e8ltEKzx054+yR8EHas2atw2W9xKBJlFUCuxh9vf14vKKyJUNjQIDAQABo4H4MIH1MA4G
+A1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgw
+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
+
+--mixed-Cpanel::Email::Object-3637866-1741264237-0.861439835630808
+Content-Type: application/octet-stream; x-unix-mode=0600; name="carddav-info@erciyesyapayzeka.com.tr.mobileconfig"
+Content-Disposition: attachment; filename="carddav-info@erciyesyapayzeka.com.tr.mobileconfig"
+Content-Transfer-Encoding: base64
+
+MIIUIAYJKoZIhvcNAQcCoIIUETCCFA0CAQExDzANBglghkgBZQMEAgEFADCCB40GCSqGSIb3DQEH
+AaCCB34Eggd6PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQ
+RSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cu
+YXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQiPg0KPHBsaXN0IHZlcnNpb249IjEu
+MCI+DQo8ZGljdD4NCiAgPGtleT5QYXlsb2FkQ29udGVudDwva2V5Pg0KICA8YXJyYXk+DQogICAg
+PGRpY3Q+DQogICAgICAgIDxrZXk+Q2FyZERBVkFjY291bnREZXNjcmlwdGlvbjwva2V5Pg0KICAg
+ICAgICA8c3RyaW5nPmluZm9AZXJjaXllc3lhcGF5emVrYS5jb20udHIgU2VjdXJlIENvbnRhY3Rz
+IFNldHVwPC9zdHJpbmc+DQogICAgICAgIDxrZXk+Q2FyZERBVkhvc3ROYW1lPC9rZXk+DQogICAg
+ICAgIDxzdHJpbmc+Y3BhbmVsMS5rYXlpemVyLmNvbToyMDgwPC9zdHJpbmc+DQogICAgICAgIDxr
+ZXk+Q2FyZERBVlVzZVNTTDwva2V5Pg0KICAgICAgICA8dHJ1ZS8+DQogICAgICAgIDxrZXk+Q2Fy
+ZERBVlVzZXJuYW1lPC9rZXk+DQogICAgICAgIDxzdHJpbmc+aW5mb0BlcmNpeWVzeWFwYXl6ZWth
+LmNvbS50cjwvc3RyaW5nPg0KICAgICAgICA8a2V5PlBheWxvYWREZXNjcmlwdGlvbjwva2V5Pg0K
+ICAgICAgICA8c3RyaW5nPmluZm9AZXJjaXllc3lhcGF5emVrYS5jb20udHIgU2VjdXJlIENvbnRh
+Y3RzIFNldHVwPC9zdHJpbmc+DQogICAgICAgIDxrZXk+UGF5bG9hZERpc3BsYXlOYW1lPC9rZXk+
+DQogICAgICAgIDxzdHJpbmc+Q2FyZERBVjwvc3RyaW5nPg0KICAgICAgICA8a2V5PlBheWxvYWRJ
+ZGVudGlmaWVyPC9rZXk+DQogICAgICAgIDxzdHJpbmc+Y3BhbmVsLm1haWwub3JnLmluZm8uZXJj
+aXllc3lhcGF5emVrYS5jb20udHI8L3N0cmluZz4NCiAgICAgICAgPGtleT5QYXlsb2FkT3JnYW5p
+emF0aW9uPC9rZXk+DQogICAgICAgIDxzdHJpbmc+ZXJjaXllc3lhcGF5emVrYS5jb20udHI8L3N0
+cmluZz4NCiAgICAgICAgPGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KICAgICAgICA8c3RyaW5nPmNv
+bS5hcHBsZS5jYXJkZGF2LmFjY291bnQ8L3N0cmluZz4NCiAgICAgICAgPGtleT5QYXlsb2FkVVVJ
+RDwva2V5Pg0KICAgICAgICA8c3RyaW5nPmYxNjU4OTM4LTNlZjYtMzgwMS00Y2NmLTQ3MzhjNTNm
+MzVjNTwvc3RyaW5nPg0KICAgICAgICA8a2V5PlBheWxvYWRWZXJzaW9uPC9rZXk+DQogICAgICAg
+IDxpbnRlZ2VyPjE8L2ludGVnZXI+DQogICAgPC9kaWN0Pg0KICA8L2FycmF5Pg0KICA8a2V5PlBh
+eWxvYWREZXNjcmlwdGlvbjwva2V5Pg0KICA8c3RyaW5nPmluZm9AZXJjaXllc3lhcGF5emVrYS5j
+b20udHIgU2VjdXJlIENvbnRhY3RzIFNldHVwPC9zdHJpbmc+DQogIDxrZXk+UGF5bG9hZERpc3Bs
+YXlOYW1lPC9rZXk+DQogIDxzdHJpbmc+aW5mb0BlcmNpeWVzeWFwYXl6ZWthLmNvbS50ciBTZWN1
+cmUgQ29udGFjdHMgU2V0dXA8L3N0cmluZz4NCiAgPGtleT5QYXlsb2FkSWRlbnRpZmllcjwva2V5
+Pg0KICA8c3RyaW5nPmNwYW5lbC5tYWlsLm9yZy5pbmZvLmVyY2l5ZXN5YXBheXpla2EuY29tLnRy
+LWNhcmRkYXY8L3N0cmluZz4NCiAgPGtleT5QYXlsb2FkT3JnYW5pemF0aW9uPC9rZXk+DQogIDxz
+dHJpbmc+Y3BhbmVsLm1haWwub3JnLmluZm8uZXJjaXllc3lhcGF5emVrYS5jb20udHI8L3N0cmlu
+Zz4NCiAgPGtleT5QYXlsb2FkUmVtb3ZhbERpc2FsbG93ZWQ8L2tleT4NCiAgPGZhbHNlLz4NCiAg
+PGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KICA8c3RyaW5nPkNvbmZpZ3VyYXRpb248L3N0cmluZz4N
+CiAgPGtleT5QYXlsb2FkVVVJRDwva2V5Pg0KICA8c3RyaW5nPmM0MDhiNTgzLTkxMDQtYjNjYy0z
+ODEzLTQ1MzI5YWY5YWM2ZTwvc3RyaW5nPg0KICA8a2V5PlBheWxvYWRWZXJzaW9uPC9rZXk+DQog
+IDxpbnRlZ2VyPjE8L2ludGVnZXI+DQo8L2RpY3Q+DQo8L3BsaXN0Pg0KoIIKBTCCBQUwggLtoAMC
+AQICEEuoUpP3mi+icwZLqASNddAwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNV
+BAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3Qg
+WDEwHhcNMjQwMzEzMDAwMDAwWhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJVUzEWMBQGA1UE
+ChMNTGV0J3MgRW5jcnlwdDEMMAoGA1UEAxMDUjEwMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAz1fl5sRUEu20R/7JJ1h2RlAojB0+iN8FndW1GCm93bVav/r2zqO+rwAhS2JaWjwBL8VY
+A/aJ/44RQ+vBteAUB5aPbx/X57qBOQl1ZbfCrxhbNyYo56P0ByttGv+rWLyVrkD/6ctXxLVbf3gN
+GGG8F+dUxrtJkc1uGNGAhe6mZTa8dOq8UEzq/CHzOBaTlLqw02s4Bs0WEnrKUnXIrXaywpxdmEVc
+b2F7xi3uPBNShgHZV+Y4HN+NtR+SkZrnShzMRahyVfCw5qMH7P2nG2aeP0iLcYRxWMk6+u9e8ltE
+Kzx054+yR8EHas2atw2W9xKBJlFUCuxh9vf14vKKyJUNjQIDAQABo4H4MIH1MA4GA1UdDwEB/wQE
+AwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB/wIBADAd
+BgNVHQ4EFgQUu7zDR6XkvKnGw6RyDBCNojXhyOgwHwYDVR0jBBgwFoAUebRZ5nu25eQBc4AIiMga
+WPbpm24wMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAChhZodHRwOi8veDEuaS5sZW5jci5vcmcv
+MBMGA1UdIAQMMAowCAYGZ4EMAQIBMCcGA1UdHwQgMB4wHKAaoBiGFmh0dHA6Ly94MS5jLmxlbmNy
+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
+QHEhg3fPM9OXQxNEf5rrQPJUVnJMa99zTEY=
+--mixed-Cpanel::Email::Object-3637866-1741264237-0.861439835630808--

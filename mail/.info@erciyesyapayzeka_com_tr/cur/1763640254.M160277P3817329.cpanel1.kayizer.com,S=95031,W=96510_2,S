@@ -1,0 +1,1479 @@
+Return-Path: <pm_bounces@pm-bounces.wedevs.com>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id gOa6Br4DH2lxPzoAO6WR3A
+	(envelope-from <pm_bounces@pm-bounces.wedevs.com>)
+	for <info@erciyesyapayzeka.com.tr>; Thu, 20 Nov 2025 15:04:14 +0300
+Return-path: <pm_bounces@pm-bounces.wedevs.com>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Thu, 20 Nov 2025 15:04:14 +0300
+Received: from mta247-ab1.mtasv.net ([50.31.205.247]:62573)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	(envelope-from <pm_bounces@pm-bounces.wedevs.com>)
+	id 1vM3OV-0000000G0lO-3KTZ
+	for info@erciyesyapayzeka.com.tr;
+	Thu, 20 Nov 2025 15:04:10 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=ab20250324; d=ab.mtasv.net;
+ h=From:Date:Subject:Message-Id:Reply-To:To:MIME-Version:Content-Type:Date:
+ From:Message-ID:Reply-To:Sender:Subject:To:CC; t=1763640250; x=1763726650;
+ bh=zUmU0T2bFLbnQ60IshmHBvcv3ZxddAHdlQgygny+Ug0=;
+ b=DG2nh7JOGZ7p+hwtwuVj8SSwQShJW6okvv2UJlPuoMNlrjxPEMb7WCoUY0Ol/TA8wc8Y5Slfwd0i
+   RmmE0+OsvPhU7Ne+gQq/Nix8SwVqhoz7ggofOy2cPCwQYmXFwfYI+gJsfpnWJSKbCuGqBzo/BBBt
+   S3NWH5af6gffa+wXgVE286Ihoc1kRYZuIoEHYWewIQwNT3oCh7hsDgO6NzinhCstuhaNYP34ZflL
+   ZfNYEX+AfeQT7tfMr2403W1m6h6LXzeQ3Z/JyI1vGdOvzmZy7K8J91mAxi8700vd35Gb8L5CdGWD
+   6J/Kv9ajPUCwBmQ9OwqCHc5ubL2F0yLNgOjCHw==
+Received: by mta247-ab1.mtasv.net id h3s1p03b84k6 for <info@erciyesyapayzeka.com.tr>; Thu, 20 Nov 2025 07:03:27 -0500 (envelope-from <pm_bounces@pm-bounces.wedevs.com>)
+X-PM-IP: 50.31.205.247
+X-IADB-IP: 50.31.205.247
+X-IADB-IP-REVERSE: 247.205.31.50
+DKIM-Signature: v=1; a=rsa-sha256; d=wedevs.com; s=20210727093452pm;
+	c=relaxed/relaxed; i=hello@wedevs.com; t=1763640207; x=1763813007;
+	h=date:date:from:from:message-id:reply-to:reply-to:sender:subject:subject:to:
+	to:cc:feedback-id:mime-version:content-type;
+	bh=zUmU0T2bFLbnQ60IshmHBvcv3ZxddAHdlQgygny+Ug0=;
+	b=IB07aofClpYMpI7OdPzFFFKQVLu4SI1JJe3pDBRi6NTost95dAmICmDi9bfeg4IaXCbhQBhWcZo
+	i8Xm0qgYjz4b25T9F7JRDTROynvIv1OWlFMGQCC/aUtxN0lD9/LFnvjkFgw78jLDi7VuR2ec4YijY
+	j1vPiGeNqss4xKXwI6c=
+From: WP Project Manager <hello@wedevs.com>
+Date: Thu, 20 Nov 2025 12:03:26 +0000
+Subject: {Disarmed} =?utf-8?b?RG9u4oCZdA==?= Forget Your 50% Discount!
+Message-Id: <e46031e1-6f2e-4920-a746-eee815c05c7c@mtasv.net>
+Reply-To: WP Project Manager <hello@wedevs.com>
+To: info@erciyesyapayzeka.com.tr
+Feedback-ID: s8149297-_:s8149297:a164461:postmark
+X-Complaints-To: abuse@postmarkapp.com
+X-PM-Message-Id: e46031e1-6f2e-4920-a746-eee815c05c7c
+X-PM-RCPT: |bTB8MTY0NDYxfDgxNDkyOTd8aW5mb0BlcmNpeWVzeWFwYXl6ZWthLmNvbS50cg==|
+X-PM-Message-Options: v1;1.wtED7xx6GBDSKryT0lUnKQ.O3kOUVio8LdW-lsxE0t0XuEgIoYNP1yjxH2nEeYCShaWo2__QBCq2njRaDy66fMyOgRzFP7XKvTdXv_n1snW8zoCD7TgRNsgiIp614OG5PhkCqAxNUIc-F9fNh7h6hZOqRyCZhVqnMVDRXjnT8pU9P-b803xna5LFs7oNAkjzkCNV9QKG5FJCkzX5w4XWbne
+X-PM-Message-Details: v1;1.Fp7TX4vZSM8A8aeIkWSwiQ.3FKwzb9uHW5w6hlA6tPq-xbUpwbRLJDgpVjbNsP3xATrx3ns4Aq0A6HJ33xzV-KDkdUk1GvfCdTrhrkJTxcnbXIj_A9eNW9Ea24XvEnTdMD6hPoQEJZhfdop7xRkwrqYB_gFu8-pzSgf6Tl5cBmEL6qx81ftKLzY7rZ_T7gWrJM7u99IDVOfGc2_m8m3zQTWduqd3qL6OJP2Xc6GRBg7EiLA57IOEqU8yLtu-uXuSpk
+MIME-Version: 1.0
+X-PM-MTA-Pool: application-bulk-1
+Content-Type: multipart/alternative;
+	boundary=mk3-9dcde8f585734f8e9493ccf1c57543ec; charset=UTF-8
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1vM3OV-0000000G0lO-3KTZ
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=0.014, required 5, DKIM_SIGNED 0.10, DKIM_VALID -0.10,
+	DKIM_VALID_AU -0.10, HTML_FONT_LOW_CONTRAST 0.00, HTML_MESSAGE 0.00,
+	LOTS_OF_MONEY 0.00, RCVD_IN_ZEN_BLOCKED_OPENDNS 0.00,
+	SPF_HELO_PASS -0.00, SPF_PASS -0.00, T_MONEY_PERCENT 0.01,
+	URIBL_BLOCKED 0.00, URIBL_DBL_BLOCKED_OPENDNS 0.00, URI_HEX 0.10)
+X-YourOrg-MailScanner-From: pm_bounces@pm-bounces.wedevs.com
+X-Spam-Status: No
+
+--mk3-9dcde8f585734f8e9493ccf1c57543ec
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+ Final Hours to Save Big on WP Project Manager Pro =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+[https://wedevs.s3.amazonaws.com/uploads/2025/08/WP-Project-Manager-Logo.pn=
+g]
+[https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-=
+319c-4f5e-b18b-96098edc5991:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665]
+[https://wedevs.s3.amazonaws.com/uploads/2025/11/Early-Bird-BFCM-2025.gif]
+[https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-=
+319c-4f5e-b18b-96098edc5991:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665]
+Hi mr.ozdemir34,
+
+Ever wanted a project management tool but felt the pricing was too high! Yo=
+u=E2=80=99re
+not alone. Most charge per-user fees and many extra costs, making it painfu=
+l to
+scale your team.
+
+But WP Project Manager skips all of that. You get unlimited team members un=
+der=20
+one unbeatable price =E2=80=94 plus access to Kanban, Gantt, Time Tracker, =
+Milestone
+Tracker, Order Manager, Invoice Generator, and more.
+
+This Early Bird Black Friday, we=E2=80=99re offering up to 50% OFF on all W=
+P Project
+Manager Pro plans. Check below what the biggest lifetime deal of the plugin
+offers.
+
+Business Lifetime Deal at 50% OffRegular Price: $124550% OFF$623*One-time
+payment. No future billing. Ever.*Plus exclusive discounts across all weDevs
+products.What You Get=E2=9C=94 License for 10 Domains=E2=9C=94 Kanban Board=
+=E2=9C=94 Gantt Chart=E2=9C=94 Time
+Tracker=E2=9C=94 Custom Fields=E2=9C=94 Stripe Integration=E2=9C=94 And Mor=
+e Features =F0=9F=91=89 Get Up to 50%
+OFF Now
+[https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-=
+319c-4f5e-b18b-96098edc5991:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665]
+Other Pricing Plans After DiscountAnnual PlansPersonal$55 30% OFFProfession=
+al$97=20
+35% OFFBusiness$149 40% OFFLifetime PlansPersonal$237 40% OFFProfessional$4=
+10=20
+45% OFFBusiness$623 50% OFF [https://api.getwemail.io/builder/countdown-gen=
+erate?date=3D2025-11-21&amp;weight=3Dregular&amp;time=3D18:00:00&amp;timezo=
+ne=3DAsia/Dhaka]=20
+ Last Change to Get the Biggest Discount Ever
+
+BFCM Early Bird Deals - Handpicked Favorites
+
+ * Dokan (Up to 55%) =E2=80=93 Build a fully equipped multi-vendor marketpl=
+ace.
+ * WP Project Manager (Up to 50%) =E2=80=93 Manage projects and teams with =
+ease.
+ * weDocs (Up to 40%) =E2=80=93 Create beautiful, easy-to-navigate product
+   documentation.
+ * WP ERP (Up to 50%) =E2=80=93 Run HR, Accounting, and CRM, all in one pla=
+ce.
+ * HappyAddons (Up to 50%) =E2=80=93 The most unique and powerful Elementor=
+ addons.
+ * WP User Frontend (Up to 50%) - Ultimate frontend solution for WordPress.
+ * Klasio (Up to 50%) - Course builder that keeps things simple and easy fo=
+r pro
+   creators.
+ * FlyWP (Buy 1 Year, Get 1 Year Free) - Cloud control panel for managing
+   WordPress sites on your own servers.
+
+Unlock up to 55% OFF
+[https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-=
+319c-4f5e-b18b-96098edc5991:a45e23fb404b0ab42aa673c9b0150c11/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665]
+
+Grab the best deals from the above list and turn Black Friday 2025 into your
+most exciting shopping season ever!
+
+Happy managing!
+Team WP Project Manager
+
+[https://wedevs.s3.amazonaws.com/uploads/2025/11/WPPM-Facebook-Community.pn=
+g]
+[https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-=
+319c-4f5e-b18b-96098edc5991:fab28ecc3ff52688912785e165001c27/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665]
+Facebook [https://cdn.getwemail.io/images/social-icons/solid-color-facebook=
+.png]
+[https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-=
+319c-4f5e-b18b-96098edc5991:313fcf3ee5670cbd651368c1bd2b1f06/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665]=20
+ X [https://cdn.getwemail.io/images/social-icons/solid-color-x.png]
+[https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-=
+319c-4f5e-b18b-96098edc5991:e982cf5f8571926d6f0c341594229f51/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665]=20
+ YouTube [https://cdn.getwemail.io/images/social-icons/solid-color-youtube.=
+png]
+[https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-=
+319c-4f5e-b18b-96098edc5991:4141a0829fbc9fbf7c66ebcc1d1a32c8/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665]=20
+ LinkedIn
+[https://cdn.getwemail.io/images/social-icons/solid-color-linkedin.png]
+[https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-=
+319c-4f5e-b18b-96098edc5991:1f77c79a556cd3f67fec7fd0e0bd3bcc/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665]=20
+ This email was sent to info@erciyesyapayzeka.com.tr because you have opted=
+ in
+on our website. If you would prefer not to receive any email from us in the
+future, please unsubscribe
+[https://app.getwemail.io/campaigns/c1a79635-319c-4f5e-b18b-96098edc5991/su=
+bscribers/0f7d2acd1af6b285953f03dcbe3b43be/unsubscribe?email_id=3Dbd573fd4-=
+7356-47e8-b719-4a3cb3f1d665]
+=2E
+Copyright =C2=A9 2025 weDevs Pte. Ltd. 160 Robinson Road, #14-04 SBF Centre=
+, SG-01,
+Singapore, 068914.
+
+[https://api.getwemail.io/campaigns/c1a79635-319c-4f5e-b18b-96098edc5991/su=
+bscribers/0f7d2acd1af6b285953f03dcbe3b43be/track?email_id=3Dbd573fd4-7356-4=
+7e8-b719-4a3cb3f1d665&sid=3D0f7d2acd1af6b285953f03dcbe3b43be&cb=3D176364020=
+6192-3us0fhjk0ib]
+
+--mk3-9dcde8f585734f8e9493ccf1c57543ec
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"box-sizing: border-bo=
+x; font-family: sans-serif; line-height: 1.15; -webkit-text-size-adjust: 10=
+0%; -ms-text-size-adjust: 100%; -ms-overflow-style: scrollbar; -webkit-tap-=
+highlight-color: transparent;">
+<head>
+    <title>weMail Email Campaign</title>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <style>@import url('https://fonts.googleapis.com/css2?family=3DLato:ita=
+l,wght@0,400;0,700;1,400;1,700&display=3Dswap');</style>
+    <!-- weMail styles -->
+<!--     <style>CUSTOMIZER_CSS</style> -->
+
+    <!-- litmus styles -->
+    <style type=3D"text/css">
+[tabindex=3D"-1"]:focus {
+  outline: none !important;
+}
+a:hover {
+  color: #003f5e;
+  text-decoration: underline;
+}
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+button::-moz-focus-inner,
+[type=3D"button"]::-moz-focus-inner,
+[type=3D"reset"]::-moz-focus-inner,
+[type=3D"submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.empty-content-zone.hovering-content .content-dropzone-placeholder {
+  background: rgba(0, 115, 170, .2);
+  border: 1px dashed #0073aa;
+}
+.responsive-table > tbody > tr > td .control-buttons i.disabled i:hover {
+  background-color: #23282d;
+}
+.responsive-table > tbody > tr > td .control-buttons i:hover {
+  background-color: #0073aa;
+}
+.responsive-table > tbody > tr > td:hover .control-buttons {
+  display: block;
+}
+@media screen and (max-width: 525px) {
+  .wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .wemail-content-image {
+    margin: 0!important;
+  }
+
+  .wemail-content-button {
+    margin-bottom: 10px;
+  }
+
+  .content-text-extra-padding {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .img-max {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .responsive-table {
+    width: 100% !important;
+  }
+
+  .section.section-top .wemail-content-text,
+.section.section-top .wemail-content-text p {
+    text-align: center !important;
+  }
+}
+</style>
+=20=20=20=20
+    <style type=3D"text/css">a{ color:#28B0F1;text-decoration:underline;}</=
+style>
+</head>
+<body style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; font-family: Arial, sans-serif; font-size: 0.875rem=
+; font-weight: normal; line-height: 1.5; color: #23282d; text-align: left; =
+background-color: #fff; height: 100%; width: 100%; margin: 0; padding: 0;">
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style=3D"box-sizing: border-box; display: none; font-size: 1px; co=
+lor: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; =
+max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Final Hours to Save Big on WP Project Manager Pro&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;=
+&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw=
+nj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;=
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nb=
+sp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+    </div>
+
+    <div data-server-rendered=3D"true" style=3D"box-sizing: border-box;"><d=
+iv id=3D"wemail-customizer" style=3D"box-sizing: border-box; position: rela=
+tive; padding-top: 10px; padding-bottom: 0px; background-color: #F4FBF7;"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top-style=
+: solid; background-color: #F4FBF7; padding-bottom: 0px; font-family: Lato,=
+ sans-serif; color: #59595F; border-top-width: 0px; font-size: 16px; paddin=
+g-top: 10px; border-top-color: #0073aa; border-collapse: collapse;" bgcolor=
+=3D"#F4FBF7"><tr class=3D"section section-top" style=3D"box-sizing: border-=
+box;"><td align=3D"center" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"responsive-table section-wrapper" style=3D"box-sizing=
+: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: transparent;=
+ color: inherit; border-top-color: #1e73be; border-top-style: solid; border=
+-bottom-color: #1e73be; border-left: 0; font-family: inherit; padding-botto=
+m: 0px; border-top-width: 0px; border-right: 0; border-bottom-style: solid;=
+ font-size: inherit; margin-bottom: 0px; padding-top: 0px; border-bottom-wi=
+dth: 0px; max-width: 600px; border-collapse: collapse;" bgcolor=3D"transpar=
+ent"><tbody data-section-index=3D"0" style=3D"box-sizing: border-box;"><tr =
+data-source=3D"iframe" data-content-type=3D"image" data-section-index=3D"0"=
+ data-content-index=3D"0" class=3D"content-wrapper" style=3D"box-sizing: bo=
+rder-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt; position: relative;"><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-c=
+ollapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"cent=
+er" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjus=
+t: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; font-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><tabl=
+e align=3D"left" border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"wrapper" style=3D"box-sizing: border-box; -webkit-text-size=
+-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table=
+-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-b=
+ox;"><td align=3D"center" width=3D"100%" valign=3D"top" class=3D"columns" s=
+tyle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-si=
+ze-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class=
+=3D"wemail-content-image" style=3D"box-sizing: border-box; background-color=
+: #ffffff; border-color: #e5e5e5; padding-bottom: 15px; text-align: center;=
+ border-width: 0px; padding-right: 15px; margin-bottom: 0px; padding-top: 1=
+5px; border-style: solid; padding-left: 15px; max-width: 200px;"><a href=3D=
+"https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-=
+319c-4f5e-b18b-96098edc5991:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b2=
+85953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; background-color: transparent; -webkit-text-decoration-skip: o=
+bjects; -ms-touch-action: manipulation; touch-action: manipulation; color: =
+#28B0F1; text-decoration: underline; display: block;"><img src=3D"https://w=
+edevs.s3.amazonaws.com/uploads/2025/08/WP-Project-Manager-Logo.png" style=
+=3D"box-sizing: border-box; -ms-interpolation-mode: bicubic; border: 0; lin=
+e-height: 100%; outline: none; text-decoration: none; vertical-align: middl=
+e; border-style: none; max-width: 100%; height: auto;" height=3D"auto"></a>=
+</div></td></tr></table></td></tr></table></td></tr></tbody></table></td></=
+tr><tr class=3D"section section-head" style=3D"box-sizing: border-box;"><td=
+ align=3D"center" style=3D"box-sizing: border-box; -webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"responsive-table section-wrapper" style=3D"box-sizing: border-=
+box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; background-color: transparent; color: i=
+nherit; border-top-color: #1e73be; border-top-style: solid; border-bottom-c=
+olor: #1e73be; border-left: 0; font-family: inherit; padding-bottom: 0px; b=
+order-top-width: 0px; border-right: 0; border-bottom-style: solid; font-siz=
+e: inherit; margin-bottom: 0px; padding-top: 0px; border-bottom-width: 0px;=
+ max-width: 600px; border-collapse: collapse;" bgcolor=3D"transparent"><tbo=
+dy data-section-index=3D"1" style=3D"box-sizing: border-box;"><tr data-sour=
+ce=3D"iframe" data-content-type=3D"image" data-section-index=3D"1" data-con=
+tent-index=3D"0" class=3D"content-wrapper" style=3D"box-sizing: border-box;=
+"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; posit=
+ion: relative;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-=
+size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-t=
+able-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse: co=
+llapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=
+=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -=
+ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; fo=
+nt-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><table align=3D=
+"left" border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"wrapper" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 10=
+0%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0p=
+t; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td al=
+ign=3D"center" width=3D"100%" valign=3D"top" class=3D"columns" style=3D"box=
+-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: =
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class=3D"wemail-c=
+ontent-image" style=3D"box-sizing: border-box; background-color: #ffffff; b=
+order-color: #e5e5e5; padding-bottom: 15px; text-align: center; border-widt=
+h: 0px; padding-right: 15px; margin-bottom: 0px; padding-top: 15px; border-=
+style: solid; padding-left: 15px; max-width: 1000px;"><a href=3D"https://c1=
+a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-319c-4f5e-b=
+18b-96098edc5991:296e809350a39c421a2cb2e1ec101938/0f7d2acd1af6b285953f03dcb=
+e3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665" style=3D"box-sizin=
+g: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+background-color: transparent; -webkit-text-decoration-skip: objects; -ms-t=
+ouch-action: manipulation; touch-action: manipulation; color: #28B0F1; text=
+-decoration: underline; display: block;"><img src=3D"https://wedevs.s3.amaz=
+onaws.com/uploads/2025/11/Early-Bird-BFCM-2025.gif" style=3D"box-sizing: bo=
+rder-box; -ms-interpolation-mode: bicubic; border: 0; line-height: 100%; ou=
+tline: none; text-decoration: none; vertical-align: middle; border-style: n=
+one; max-width: 100%; height: auto;" height=3D"auto"></a></div></td></tr></=
+table></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-t=
+ype=3D"text" data-section-index=3D"1" data-content-index=3D"1" class=3D"con=
+tent-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: bo=
+rder-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width:=
+ 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-si=
+zing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; background-color:=
+ #ffffff;" bgcolor=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing: =
+border-box; display: inline-block; width: 100%; vertical-align: top;"><tabl=
+e align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; borde=
+r-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"c=
+enter" valign=3D"top" class=3D"content-text-extra-padding" style=3D"box-siz=
+ing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wra=
+pperInner" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%;=
+ -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 15p=
+x; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; border-wi=
+dth: 0px; border-style: solid; border-color: #e5e5e5;"><table cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: b=
+order-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr s=
+tyle=3D"box-sizing: border-box;"><td align=3D"left" valign=3D"middle" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;=
+"><div class=3D"wemail-content-text" style=3D"box-sizing: border-box;"><p s=
+tyle=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;"><span =
+style=3D"box-sizing: border-box; margin-bottom: 0; font-size: 16px;">Hi mr.=
+ozdemir34,</span></p>
+<p data-start=3D"356" data-end=3D"521" style=3D"box-sizing: border-box; mar=
+gin-top: 0; margin-bottom: 1rem;"><span style=3D"box-sizing: border-box; ma=
+rgin-bottom: 0; font-size: 16px;">Ever wanted a project management tool but=
+ felt the pricing was too high! You&rsquo;re not alone. Most charge per-use=
+r fees and many extra costs, making it painful to scale your team.</span></=
+p>
+<p data-start=3D"356" data-end=3D"521" style=3D"box-sizing: border-box; mar=
+gin-top: 0; margin-bottom: 1rem;"><span style=3D"box-sizing: border-box; ma=
+rgin-bottom: 0; font-size: 16px;">But <strong style=3D"box-sizing: border-b=
+ox; font-weight: bolder;">WP Project Manager</strong> skips all of that. Yo=
+u get <strong style=3D"box-sizing: border-box; font-weight: bolder;">unlimi=
+ted team members</strong> under <strong style=3D"box-sizing: border-box; fo=
+nt-weight: bolder;">one unbeatable price</strong> &mdash; plus access to <s=
+trong style=3D"box-sizing: border-box; font-weight: bolder; margin-bottom: =
+0;">Kanban, Gantt, Time Tracker, Milestone Tracker, Order Manager, Invoice =
+Generator,</strong> and more.</span></p>
+<p data-start=3D"356" data-end=3D"521" style=3D"box-sizing: border-box; mar=
+gin-top: 0; margin-bottom: 0;"><span style=3D"box-sizing: border-box; margi=
+n-bottom: 0; font-size: 16px;">This <strong style=3D"box-sizing: border-box=
+; font-weight: bolder;">Early Bird Black Friday</strong>, we&rsquo;re offer=
+ing <strong style=3D"box-sizing: border-box; font-weight: bolder;">up to 50=
+% OFF</strong> on all <strong style=3D"box-sizing: border-box; font-weight:=
+ bolder; margin-bottom: 0;">WP Project Manager Pro plans</strong>. Check be=
+low what the biggest lifetime deal of the plugin offers.</span></p></div></=
+td></tr></table></td></tr></table></td></tr></table></div> <!----></td></tr=
+></table></td></tr><tr data-source=3D"iframe" data-content-type=3D"text" da=
+ta-section-index=3D"1" data-content-index=3D"2" class=3D"content-wrapper" s=
+tyle=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -webk=
+it-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; position: relative;"><table align=3D"center" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-si=
+zing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100=
+%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-b=
+ottom: 0px; border-collapse: collapse;"><tr style=3D"box-sizing: border-box=
+;"><td align=3D"center" valign=3D"top" style=3D"box-sizing: border-box; -we=
+bkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt; font-size: 0; background-color: #ffffff;" bgcol=
+or=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing: border-box; disp=
+lay: inline-block; width: 100%; vertical-align: top;"><table align=3D"left"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: coll=
+apse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D=
+"top" class=3D"content-text-extra-padding" style=3D"box-sizing: border-box;=
+ -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse:=
+ collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: =
+border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 0px; padding-right:=
+ 15px; padding-bottom: 0px; padding-left: 15px; border-width: 0px; border-s=
+tyle: solid; border-color: #e5e5e5;"><table cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing=
+: border-box;"><td align=3D"left" valign=3D"middle" style=3D"box-sizing: bo=
+rder-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"we=
+mail-content-text" style=3D"box-sizing: border-box;"><!-- Lifetime Deal Sec=
+tion -->
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; back=
+ground-color: #f9f9f9; margin-bottom: 20px; border-radius: 25px; border-col=
+lapse: collapse;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center" bgcolor=3D"#f9f9f9">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 10px;" align=3D"center">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; max-width: 600px; width: 100%; background-color: #ffffff; bor=
+der-radius: 25px; border-collapse: collapse;" border=3D"0" width=3D"100%" c=
+ellspacing=3D"0" cellpadding=3D"20" bgcolor=3D"#ffffff">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 22px; font-weight: bold; color: #222; text-align: cen=
+ter; padding-bottom: 15px;" align=3D"center">Business Lifetime Deal at <spa=
+n style=3D"box-sizing: border-box; margin-bottom: 0; color: #00a651;">50% O=
+ff</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: =
+0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;"><!-- Left Column: P=
+ricing -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+-right: 10px;" valign=3D"top" width=3D"50%">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: =
+0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 16px; font-weight: bold; color: #222; padding-bottom:=
+ 6px;">Regular Price: <s style=3D"box-sizing: border-box; margin-bottom: 0;=
+">$1245</s></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 16px; font-weight: bold; color: #ff4d4d; padding-bott=
+om: 6px;">50% OFF</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 26px; font-weight: bold; color: #222; padding-bottom:=
+ 6px;">$623</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 13px; color: #555; line-height: 1.5; padding-bottom: =
+4px;">*One-time payment. No future billing. Ever.</td>
+</tr>
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 13px; color: #555; line-height: 1.5;">*Plus exclusive=
+ discounts across all weDevs products.</td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- Right Column: Features -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding-left: 10px;" valign=3D"top" width=3D"50%">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: =
+0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 16px; font-weight: bold; color: #222; padding-bottom:=
+ 10px;">What You Get</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; color: #333; padding-bottom: 4px;">=E2=9C=94 Li=
+cense for 10 Domains</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; color: #333; padding-bottom: 4px;">=E2=9C=94 Ka=
+nban Board</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; color: #333; padding-bottom: 4px;">=E2=9C=94 Ga=
+ntt Chart</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; color: #333; padding-bottom: 4px;">=E2=9C=94 Ti=
+me Tracker</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; color: #333; padding-bottom: 4px;">=E2=9C=94 Cu=
+stom Fields</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; color: #333; padding-bottom: 4px;">=E2=9C=94 St=
+ripe Integration</td>
+</tr>
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; color: #333; padding-bottom: 4px;">=E2=9C=94 An=
+d More Features</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table></div></td></tr></table></td></tr></table></td></tr></table></div> =
+<!----></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-=
+type=3D"button" data-section-index=3D"1" data-content-index=3D"3" class=3D"=
+content-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table ali=
+gn=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-widt=
+h: 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-=
+sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizin=
+g: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block; vertic=
+al-align: top; width: 100%;" width=3D"100%"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box=
+-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: =
+100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collap=
+se;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-=
+box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; padding: 16px; background-color: #fffff=
+f; margin-bottom: 0px; text-align: center;" bgcolor=3D"#ffffff" align=3D"ce=
+nter"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" width=3D"100%" class=3D"wrapper" style=3D"box-sizing: border-box; -webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; width: 100%; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td valign=3D"middle" width=3D"100%" style=3D"=
+box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjus=
+t: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><d=
+iv class=3D"wemail-content-button" style=3D"box-sizing: border-box;"><a hre=
+f=3D"https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79=
+635-319c-4f5e-b18b-96098edc5991:296e809350a39c421a2cb2e1ec101938/0f7d2acd1a=
+f6b285953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665" sty=
+le=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size=
+-adjust: 100%; -webkit-text-decoration-skip: objects; -ms-touch-action: man=
+ipulation; touch-action: manipulation; border: 0px none #176598; background=
+-color: #611ED2; border-color: #e5e5e5; color: #fff; text-align: center; di=
+splay: inline-block; padding-right: 65px; text-decoration: none; padding-bo=
+ttom: 16px; border-radius: 26px; border-width: 0px; font-size: 16px; line-h=
+eight: 1; padding-top: 16px; border-style: solid; padding-left: 65px; font-=
+weight: bold; text-transform: none;">=F0=9F=91=89 Get Up to 50% OFF Now</a>=
+</div></td></tr></table></td></tr></table></td></tr></table></td></tr><tr d=
+ata-source=3D"iframe" data-content-type=3D"text" data-section-index=3D"1" d=
+ata-content-index=3D"4" class=3D"content-wrapper" style=3D"box-sizing: bord=
+er-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100=
+%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+; position: relative;"><table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webki=
+t-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt=
+; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-colla=
+pse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" =
+valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0=
+pt; font-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><div clas=
+s=3D"wrapper" style=3D"box-sizing: border-box; display: inline-block; width=
+: 100%; vertical-align: top;"><table align=3D"left" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -=
+webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace=
+: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-=
+sizing: border-box;"><td align=3D"center" valign=3D"top" class=3D"content-t=
+ext-extra-padding" style=3D"box-sizing: border-box; -webkit-text-size-adjus=
+t: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; padding-right: 0;"><table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: border-b=
+ox; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D=
+"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -webkit-text=
+-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; padding-top: 16px; padding-right: 15px; padding-bottom: =
+16px; padding-left: 15px; border-width: 0px; border-style: solid; border-co=
+lor: #e5e5e5;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" widt=
+h=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%;=
+ -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=
+=3D"left" valign=3D"middle" style=3D"box-sizing: border-box; -webkit-text-s=
+ize-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-text" style=
+=3D"box-sizing: border-box;"><!-- Other Pricing Plans Section -->
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; back=
+ground-color: #f9f9f9; margin-bottom: 20px; border-radius: 25px; border-col=
+lapse: collapse;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center" bgcolor=3D"#f9f9f9">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding: 10px;" align=3D"center">
+<table style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; marg=
+in-bottom: 0; max-width: 600px; width: 100%; background-color: #ffffff; bor=
+der-radius: 25px; border-collapse: collapse;" border=3D"0" width=3D"100%" c=
+ellspacing=3D"0" cellpadding=3D"20" bgcolor=3D"#ffffff">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 22px; font-weight: bold; color: #222; text-align: cen=
+ter; padding-bottom: 15px;" align=3D"center">Other Pricing Plans After Disc=
+ount</td>
+</tr>
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: =
+0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;"><!-- Annual Plans -=
+->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+-right: 10px;" valign=3D"top" width=3D"50%">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"5" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: =
+0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 16px; font-weight: bold; color: #222; text-align: cen=
+ter; border-bottom: 1px solid #ddd; padding-bottom: 10px;" colspan=3D"2" al=
+ign=3D"center">Annual Plans</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-si=
+ze: 14px; font-weight: bold; color: #222;">Personal</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; font-weight: bold; color: #222; text-align: rig=
+ht;" align=3D"right">$55 <span style=3D"box-sizing: border-box; margin-bott=
+om: 0; font-size: 10px; color: #00a651;">30% OFF</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-si=
+ze: 14px; font-weight: bold; color: #222;">Professional</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; font-weight: bold; color: #222; text-align: rig=
+ht;" align=3D"right">$97 <span style=3D"box-sizing: border-box; margin-bott=
+om: 0; font-size: 10px; color: #00a651;">35% OFF</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-si=
+ze: 14px; font-weight: bold; color: #222;">Business</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; font-weight: bold; color: #222; text-align: rig=
+ht;" align=3D"right">$149 <span style=3D"box-sizing: border-box; margin-bot=
+tom: 0; font-size: 10px; color: #00a651;">40% OFF</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- Lifetime Plans -->
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; padding-left: 10px;" valign=3D"top" width=3D"50%">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"5" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: =
+0; border-collapse: collapse;">
+<tbody style=3D"box-sizing: border-box; margin-bottom: 0;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 16px; font-weight: bold; color: #222; text-align: cen=
+ter; border-bottom: 1px solid #ddd; padding-bottom: 10px;" colspan=3D"2" al=
+ign=3D"center">Lifetime Plans</td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-si=
+ze: 14px; font-weight: bold; color: #222;">Personal</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; font-weight: bold; color: #222; text-align: rig=
+ht;" align=3D"right">$237 <span style=3D"box-sizing: border-box; margin-bot=
+tom: 0; font-size: 10px; color: #00a651;">40% OFF</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-si=
+ze: 14px; font-weight: bold; color: #222;">Professional</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; font-weight: bold; color: #222; text-align: rig=
+ht;" align=3D"right">$410 <span style=3D"box-sizing: border-box; margin-bot=
+tom: 0; font-size: 10px; color: #00a651;">45% OFF</span></td>
+</tr>
+<tr style=3D"box-sizing: border-box; margin-bottom: 0;">
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-si=
+ze: 14px; font-weight: bold; color: #222;">Business</td>
+<td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-te=
+xt-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-=
+bottom: 0; font-size: 14px; font-weight: bold; color: #222; text-align: rig=
+ht;" align=3D"right">$623 <span style=3D"box-sizing: border-box; margin-bot=
+tom: 0; font-size: 10px; color: #00a651;">50% OFF</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table></div></td></tr></table></td></tr></table></td></tr></table></div> =
+<!----></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-=
+type=3D"countdown" data-section-index=3D"1" data-content-index=3D"5" class=
+=3D"content-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-siz=
+ing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table=
+ align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-=
+width: 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"=
+box-sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-s=
+izing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10=
+0%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class=3D"wrapper" s=
+tyle=3D"box-sizing: border-box; vertical-align: top; width: 100%;"><table a=
+lign=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-c=
+ollapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"cent=
+er" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjus=
+t: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"wrapperInner" style=3D"box-sizing: border-box; -webkit-text-s=
+ize-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: borde=
+r-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ text-align: center; background-color: #ffffff; padding: 0px;" align=3D"cen=
+ter" bgcolor=3D"#ffffff"><table cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-ad=
+just: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;=
+"><td valign=3D"middle" style=3D"box-sizing: border-box; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-countdown" styl=
+e=3D"box-sizing: border-box;"><img src=3D"https://api.getwemail.io/builder/=
+countdown-generate?date=3D2025-11-21&amp;weight=3Dregular&amp;time=3D18:00:=
+00&amp;timezone=3DAsia/Dhaka" alt style=3D"box-sizing: border-box; -ms-inte=
+rpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outlin=
+e: none; text-decoration: none; max-width: 100%; vertical-align: middle; bo=
+rder-style: none;" height=3D"auto"> <!----></div></td></tr></table></td></t=
+r></table></td></tr></table></div></td></tr></table></td></tr><tr data-sour=
+ce=3D"iframe" data-content-type=3D"text" data-section-index=3D"1" data-cont=
+ent-index=3D"6" class=3D"content-wrapper" style=3D"box-sizing: border-box;"=
+><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-t=
+ext-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; positi=
+on: relative;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-s=
+ize-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse: col=
+lapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=
+=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -=
+ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; fo=
+nt-size: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><div class=3D"w=
+rapper" style=3D"box-sizing: border-box; display: inline-block; width: 100%=
+; vertical-align: top;"><table align=3D"left" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit=
+-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing=
+: border-box;"><td align=3D"center" valign=3D"top" class=3D"content-text-ex=
+tra-padding" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100=
+%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+; padding-right: 0;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: border-box; -w=
+ebkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-s=
+izing: border-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt; padding-top: 0px; padding-right: 15px; padding-bottom: 0px; pa=
+dding-left: 15px; border-width: 0px; border-style: solid; border-color: #e5=
+e5e5;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100=
+%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-c=
+ollapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"left=
+" valign=3D"middle" style=3D"box-sizing: border-box; -webkit-text-size-adju=
+st: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspa=
+ce: 0pt; font-size: 16px;"><div class=3D"wemail-content-text" style=3D"box-=
+sizing: border-box;"><p style=3D"box-sizing: border-box; margin-top: 0; mar=
+gin-bottom: 0; text-align: center;"><span style=3D"box-sizing: border-box; =
+margin-bottom: 0; background-color: #ffff00;">&nbsp;Last Change to Get the =
+Biggest Discount Ever&nbsp;</span></p></div></td></tr></table></td></tr></t=
+able></td></tr></table></div> <!----></td></tr></table></td></tr></tbody></=
+table></td></tr><tr class=3D"section section-body" style=3D"box-sizing: bor=
+der-box;"><td align=3D"center" style=3D"box-sizing: border-box; -webkit-tex=
+t-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" class=3D"responsive-table section-wrapper" style=3D"box-si=
+zing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100=
+%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: transpar=
+ent; color: inherit; border-top-color: #1e73be; border-top-style: solid; bo=
+rder-bottom-color: #1e73be; border-left: 0; font-family: inherit; padding-b=
+ottom: 0px; border-top-width: 0px; border-right: 0; border-bottom-style: so=
+lid; font-size: inherit; margin-bottom: 0px; padding-top: 0px; border-botto=
+m-width: 0px; max-width: 600px; border-collapse: collapse;" bgcolor=3D"tran=
+sparent"><tbody data-section-index=3D"2" style=3D"box-sizing: border-box;">=
+<tr data-source=3D"iframe" data-content-type=3D"divider" data-section-index=
+=3D"2" data-content-index=3D"0" class=3D"content-wrapper" style=3D"box-sizi=
+ng: border-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adj=
+ust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; position: relative;"><table align=3D"center" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box=
+; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; bord=
+er-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"=
+center" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-a=
+djust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-r=
+space: 0pt; font-size: 0;"><div class=3D"wrapper" style=3D"box-sizing: bord=
+er-box; display: inline-block; vertical-align: top; width: 100%;"><table al=
+ign=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-co=
+llapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"cente=
+r" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"wrapperInner" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border=
+-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%;=
+ -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+padding: 15px; background-color: #ffffff; line-height: 0;" bgcolor=3D"#ffff=
+ff"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" =
+style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-s=
+ize-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-coll=
+apse: collapse;"><tr style=3D"box-sizing: border-box;"><td valign=3D"middle=
+" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size=
+: 16px;"><div class=3D"wemail-content-divider" style=3D"box-sizing: border-=
+box;"><div style=3D"box-sizing: border-box; width: 100%; border-top-style: =
+dashed; margin: 0 auto; border-top-width: 2px; border-top-color: #e5e5e5;">=
+=C2=A0</div></div></td></tr></table></td></tr></table></td></tr></table></d=
+iv></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-type=
+=3D"text" data-section-index=3D"2" data-content-index=3D"1" class=3D"conten=
+t-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: borde=
+r-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table align=3D"=
+center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size=
+-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600=
+px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-sizing=
+: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing: bor=
+der-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; background-color: #ff=
+ffff;" bgcolor=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing: bord=
+er-box; display: inline-block; width: 100%; vertical-align: top;"><table al=
+ign=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-co=
+llapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D"cente=
+r" valign=3D"top" class=3D"content-text-extra-padding" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapper=
+Inner" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"=
+box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjus=
+t: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 15px; p=
+adding-right: 15px; padding-bottom: 15px; padding-left: 15px; border-width:=
+ 0px; border-style: solid; border-color: #e5e5e5;"><table cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-=
+box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td align=3D"left" valign=3D"middle" style=3D"=
+box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjus=
+t: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><d=
+iv class=3D"wemail-content-text" style=3D"box-sizing: border-box;"><p style=
+=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 1rem; text-align:=
+ center;"><span style=3D"box-sizing: border-box; margin-bottom: 0; font-siz=
+e: 22px;"><strong style=3D"box-sizing: border-box; font-weight: bolder; mar=
+gin-bottom: 0;">BFCM Early Bird Deals - Handpicked Favorites</strong></span=
+></p>
+<ul style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;">
+<li style=3D"box-sizing: border-box;"><span style=3D"box-sizing: border-box=
+; margin-bottom: 0; font-size: 16px;"><strong style=3D"box-sizing: border-b=
+ox; font-weight: bolder; margin-bottom: 0;">Dokan (Up to 55%)</strong> &nda=
+sh; Build a fully equipped multi-vendor marketplace.</span></li>
+<li style=3D"box-sizing: border-box;"><span style=3D"box-sizing: border-box=
+; margin-bottom: 0; font-size: 16px;"><strong style=3D"box-sizing: border-b=
+ox; font-weight: bolder; margin-bottom: 0;">WP Project Manager (Up to 50%)<=
+/strong> &ndash; Manage projects and teams with ease.</span></li>
+<li style=3D"box-sizing: border-box;"><span style=3D"box-sizing: border-box=
+; margin-bottom: 0; font-size: 16px;"><strong style=3D"box-sizing: border-b=
+ox; font-weight: bolder; margin-bottom: 0;">weDocs (Up to 40%)</strong> &nd=
+ash; Create beautiful, easy-to-navigate product documentation.</span></li>
+<li style=3D"box-sizing: border-box;"><span style=3D"box-sizing: border-box=
+; margin-bottom: 0; font-size: 16px;"><strong style=3D"box-sizing: border-b=
+ox; font-weight: bolder; margin-bottom: 0;">WP ERP (Up to 50%)</strong> &nd=
+ash; Run HR, Accounting, and CRM, all in one place.</span></li>
+<li style=3D"box-sizing: border-box;"><span style=3D"box-sizing: border-box=
+; margin-bottom: 0; font-size: 16px;"><strong style=3D"box-sizing: border-b=
+ox; font-weight: bolder; margin-bottom: 0;">HappyAddons (Up to 50%)</strong=
+> &ndash; The most unique and powerful Elementor addons.</span></li>
+<li style=3D"box-sizing: border-box;"><span style=3D"box-sizing: border-box=
+; margin-bottom: 0; font-size: 16px;"><strong style=3D"box-sizing: border-b=
+ox; font-weight: bolder; margin-bottom: 0;">WP User Frontend (Up to 50%)</s=
+trong> - Ultimate frontend solution for WordPress.</span></li>
+<li style=3D"box-sizing: border-box;"><span style=3D"box-sizing: border-box=
+; margin-bottom: 0; font-size: 16px;"><span style=3D"box-sizing: border-box=
+; margin-bottom: 0; font-size: 16px;"><strong style=3D"box-sizing: border-b=
+ox; font-weight: bolder; margin-bottom: 0;">Klasio (Up to 50%)</strong> - C=
+ourse builder that keeps things simple and easy for pro creators.</span></s=
+pan></li>
+<li style=3D"box-sizing: border-box; margin-bottom: 0;"><span style=3D"box-=
+sizing: border-box; margin-bottom: 0; font-size: 16px;"><span style=3D"box-=
+sizing: border-box; margin-bottom: 0; font-size: 16px;"><strong style=3D"bo=
+x-sizing: border-box; font-weight: bolder; margin-bottom: 0;">FlyWP (Buy 1 =
+Year, Get 1 Year Free)</strong> - Cloud control panel for managing WordPres=
+s sites on your own servers.</span></span></li>
+</ul>
+<p style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0; text-a=
+lign: center;"><a href=3D"https://c1a79635-319c-4f5e-b18b-96098edc5991-727.=
+wemailtrack.com/c1a79635-319c-4f5e-b18b-96098edc5991:a45e23fb404b0ab42aa673=
+c9b0150c11/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b=
+719-4a3cb3f1d665" style=3D"box-sizing: border-box; -webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; background-color: transparent; -webkit-=
+text-decoration-skip: objects; -ms-touch-action: manipulation; touch-action=
+: manipulation; color: #28B0F1; text-decoration: underline; margin-bottom: =
+0;"><strong style=3D"box-sizing: border-box; font-weight: bolder; margin-bo=
+ttom: 0;"><span style=3D"box-sizing: border-box; margin-bottom: 0; font-siz=
+e: 16px;">Unlock up to 55% OFF</span></strong></a></p></div></td></tr></tab=
+le></td></tr></table></td></tr></table></div> <!----></td></tr></table></td=
+></tr><tr data-source=3D"iframe" data-content-type=3D"text" data-section-in=
+dex=3D"2" data-content-index=3D"2" class=3D"content-wrapper" style=3D"box-s=
+izing: border-box;"><td style=3D"box-sizing: border-box; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt; position: relative;"><table align=3D"center" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: border-=
+box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px; margin-bottom: 0px; b=
+order-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=
+=3D"center" valign=3D"top" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; font-size: 0; background-color: #ffffff;" bgcolor=3D"#fffff=
+f"><div class=3D"wrapper" style=3D"box-sizing: border-box; display: inline-=
+block; width: 100%; vertical-align: top;"><table align=3D"left" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: b=
+order-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr s=
+tyle=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" class=
+=3D"content-text-extra-padding" style=3D"box-sizing: border-box; -webkit-te=
+xt-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; padding-right: 0;"><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box-siz=
+ing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"=
+><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box;=
+ -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; padding-top: 15px; padding-right: 15px; pad=
+ding-bottom: 15px; padding-left: 15px; border-width: 0px; border-style: sol=
+id; border-color: #e5e5e5;"><table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-bo=
+x;"><td align=3D"left" valign=3D"middle" style=3D"box-sizing: border-box; -=
+webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace=
+: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-conten=
+t-text" style=3D"box-sizing: border-box;"><p style=3D"box-sizing: border-bo=
+x; margin-top: 0; margin-bottom: 0;"><span style=3D"box-sizing: border-box;=
+ margin-bottom: 0; font-size: 16px;">Grab the best deals from the above lis=
+t and turn Black Friday 2025 into your most exciting shopping season ever!<=
+/span></p></div></td></tr></table></td></tr></table></td></tr></table></div=
+> <!----></td></tr></table></td></tr><tr data-source=3D"iframe" data-conten=
+t-type=3D"text" data-section-index=3D"2" data-content-index=3D"3" class=3D"=
+content-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table ali=
+gn=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-widt=
+h: 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-=
+sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizin=
+g: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; background-colo=
+r: #ffffff;" bgcolor=3D"#ffffff"><div class=3D"wrapper" style=3D"box-sizing=
+: border-box; display: inline-block; width: 100%; vertical-align: top;"><ta=
+ble align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; =
+-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; b=
+order-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=
+=3D"center" valign=3D"top" class=3D"content-text-extra-padding" style=3D"bo=
+x-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust:=
+ 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 0;"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=
+=3D"wrapperInner" style=3D"box-sizing: border-box; -webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><t=
+d style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-t=
+op: 12px; padding-right: 15px; padding-bottom: 12px; padding-left: 15px; bo=
+rder-width: 0px; border-style: solid; border-color: #e5e5e5;"><table cellpa=
+dding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizi=
+ng: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;=
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">=
+<tr style=3D"box-sizing: border-box;"><td align=3D"left" valign=3D"middle" =
+style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-s=
+ize-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: =
+16px;"><div class=3D"wemail-content-text" style=3D"box-sizing: border-box;"=
+><p style=3D"box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><spa=
+n style=3D"box-sizing: border-box; font-size: 16px;">Happy managing!</span>=
+<br style=3D"box-sizing: border-box;"><span style=3D"box-sizing: border-box=
+; margin-bottom: 0; font-size: 16px;">Team WP Project Manager</span></p></d=
+iv></td></tr></table></td></tr></table></td></tr></table></div> <!----></td=
+></tr></table></td></tr><tr data-source=3D"iframe" data-content-type=3D"div=
+ider" data-section-index=3D"2" data-content-index=3D"4" class=3D"content-wr=
+apper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-bo=
+x; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; position: relative;"><table align=3D"cent=
+er" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 600px=
+; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-sizing: =
+border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing: borde=
+r-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0;"><div class=3D"wrapper"=
+ style=3D"box-sizing: border-box; display: inline-block; vertical-align: to=
+p; width: 100%;"><table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-s=
+ize-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: borde=
+r-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing: border-box=
+; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: b=
+order-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr s=
+tyle=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -webk=
+it-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; padding: 15px; background-color: #ffffff; line-he=
+ight: 0;" bgcolor=3D"#ffffff"><table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-siz=
+e-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tabl=
+e-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-=
+box;"><td valign=3D"middle" style=3D"box-sizing: border-box; -webkit-text-s=
+ize-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-divider" st=
+yle=3D"box-sizing: border-box;"><div style=3D"box-sizing: border-box; width=
+: 100%; border-top-style: dashed; margin: 0 auto; border-top-width: 2px; bo=
+rder-top-color: #e5e5e5;">=C2=A0</div></div></td></tr></table></td></tr></t=
+able></td></tr></table></div></td></tr></table></td></tr><tr data-source=3D=
+"iframe" data-content-type=3D"image" data-section-index=3D"2" data-content-=
+index=3D"5" class=3D"content-wrapper" style=3D"box-sizing: border-box;"><td=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: =
+relative;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse: collaps=
+e;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"to=
+p" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-siz=
+e: 0; background-color: #ffffff;" bgcolor=3D"#ffffff"><table align=3D"left"=
+ border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"w=
+rapper" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -m=
+s-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bor=
+der-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><td align=3D=
+"center" width=3D"100%" valign=3D"top" class=3D"columns" style=3D"box-sizin=
+g: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class=3D"wemail-content=
+-image" style=3D"box-sizing: border-box; background-color: #ffffff; border-=
+color: #e5e5e5; padding-bottom: 15px; text-align: center; border-width: 0px=
+; padding-right: 15px; margin-bottom: 0px; padding-top: 0px; border-style: =
+solid; padding-left: 15px; max-width: 1000px;"><a href=3D"https://c1a79635-=
+319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a79635-319c-4f5e-b18b-960=
+98edc5991:fab28ecc3ff52688912785e165001c27/0f7d2acd1af6b285953f03dcbe3b43be=
+?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665" style=3D"box-sizing: bord=
+er-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; backgro=
+und-color: transparent; -webkit-text-decoration-skip: objects; -ms-touch-ac=
+tion: manipulation; touch-action: manipulation; color: #28B0F1; text-decora=
+tion: underline; display: block;"><img src=3D"https://wedevs.s3.amazonaws.c=
+om/uploads/2025/11/WPPM-Facebook-Community.png" style=3D"box-sizing: border=
+-box; -ms-interpolation-mode: bicubic; border: 0; line-height: 100%; outlin=
+e: none; text-decoration: none; vertical-align: middle; border-style: none;=
+ max-width: 100%; height: auto;" height=3D"auto"></a></div></td></tr></tabl=
+e></td></tr></table></td></tr></tbody></table></td></tr><tr class=3D"sectio=
+n section-footer" style=3D"box-sizing: border-box;"><td align=3D"center" st=
+yle=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"respons=
+ive-table section-wrapper" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; background-color: transparent; color: inherit; border-top-c=
+olor: #1e73be; border-top-style: solid; border-bottom-color: #1e73be; borde=
+r-left: 0; font-family: inherit; padding-bottom: 0px; border-top-width: 0px=
+; border-right: 0; border-bottom-style: solid; font-size: inherit; margin-b=
+ottom: 0px; padding-top: 0px; border-bottom-width: 0px; max-width: 600px; b=
+order-collapse: collapse;" bgcolor=3D"transparent"><tbody data-section-inde=
+x=3D"3" style=3D"box-sizing: border-box;"><tr data-source=3D"iframe" data-c=
+ontent-type=3D"socialFollow" data-section-index=3D"3" data-content-index=3D=
+"0" class=3D"content-wrapper" style=3D"box-sizing: border-box;"><td style=
+=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-a=
+djust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: relati=
+ve;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt; max-width: 600px; margin-bottom: 0px; border-collapse: collapse;"><t=
+r style=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" sty=
+le=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size=
+-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0;"=
+><div class=3D"wrapper" style=3D"box-sizing: border-box; display: inline-bl=
+ock; vertical-align: top; width: 100%;"><table align=3D"left" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: bor=
+der-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr sty=
+le=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D=
+"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adju=
+st: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"wrapperInner"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-col=
+lapse: collapse;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-si=
+zing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100=
+%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: rgb(247,=
+248,249); padding: 15px; border-width: 0px; border-style: solid; border-col=
+or: #e5e5e5;" bgcolor=3D"rgb(247,248,249)"><table cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0" width=3D"100%" style=3D"box-sizing: border-box; -we=
+bkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=3D"box-si=
+zing: border-box;"><td align=3D"left" valign=3D"middle" style=3D"box-sizing=
+: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 16px;"><div class=
+=3D"wemail-content-social-follow" style=3D"box-sizing: border-box; line-hei=
+ght: 0; text-align: center; padding: 15px; display: block;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"social-follow-table hor=
+izontal-icons default-icons align-center" style=3D"box-sizing: border-box; =
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; font-size: 12px; display: inline-block; widt=
+h: auto; margin-right: 15px; border-collapse: collapse;" width=3D"auto"><tr=
+ style=3D"box-sizing: border-box;"><td valign=3D"middle" class=3D"image-con=
+tainer-td" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%;=
+ -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+padding: 0 3px; line-height: 1;"><a href=3D"https://c1a79635-319c-4f5e-b18b=
+-96098edc5991-727.wemailtrack.com/c1a79635-319c-4f5e-b18b-96098edc5991:313f=
+cf3ee5670cbd651368c1bd2b1f06/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3Dbd=
+573fd4-7356-47e8-b719-4a3cb3f1d665" style=3D"box-sizing: border-box; -webki=
+t-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: tra=
+nsparent; -webkit-text-decoration-skip: objects; -ms-touch-action: manipula=
+tion; touch-action: manipulation; color: #28B0F1; display: block; text-deco=
+ration: none;"><img src=3D"https://cdn.getwemail.io/images/social-icons/sol=
+id-color-facebook.png" alt=3D"Facebook" style=3D"box-sizing: border-box; -m=
+s-interpolation-mode: bicubic; border: 0; line-height: 100%; outline: none;=
+ text-decoration: none; max-width: 100%; vertical-align: middle; border-sty=
+le: none; width: 24px; height: 24px;" width=3D"24" height=3D"24"></a></td> =
+<!----></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"social-follow-table horizontal-icons default-icons align-center" =
+style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-s=
+ize-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: =
+12px; display: inline-block; width: auto; margin-right: 15px; border-collap=
+se: collapse;" width=3D"auto"><tr style=3D"box-sizing: border-box;"><td val=
+ign=3D"middle" class=3D"image-container-td" style=3D"box-sizing: border-box=
+; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt; padding: 0 3px; line-height: 1;"><a href=
+=3D"https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wemailtrack.com/c1a796=
+35-319c-4f5e-b18b-96098edc5991:e982cf5f8571926d6f0c341594229f51/0f7d2acd1af=
+6b285953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719-4a3cb3f1d665" styl=
+e=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; background-color: transparent; -webkit-text-decoration-skip: =
+objects; -ms-touch-action: manipulation; touch-action: manipulation; color:=
+ #28B0F1; display: block; text-decoration: none;"><img src=3D"https://cdn.g=
+etwemail.io/images/social-icons/solid-color-x.png" alt=3D"X" style=3D"box-s=
+izing: border-box; -ms-interpolation-mode: bicubic; border: 0; line-height:=
+ 100%; outline: none; text-decoration: none; max-width: 100%; vertical-alig=
+n: middle; border-style: none; width: 24px; height: 24px;" width=3D"24" hei=
+ght=3D"24"></a></td> <!----></tr></table><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" class=3D"social-follow-table horizontal-icons default=
+-icons align-center" style=3D"box-sizing: border-box; -webkit-text-size-adj=
+ust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; font-size: 12px; display: inline-block; width: auto; margin-right=
+: 15px; border-collapse: collapse;" width=3D"auto"><tr style=3D"box-sizing:=
+ border-box;"><td valign=3D"middle" class=3D"image-container-td" style=3D"b=
+ox-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 3px; line-=
+height: 1;"><a href=3D"https://c1a79635-319c-4f5e-b18b-96098edc5991-727.wem=
+ailtrack.com/c1a79635-319c-4f5e-b18b-96098edc5991:4141a0829fbc9fbf7c66ebcc1=
+d1a32c8/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3Dbd573fd4-7356-47e8-b719=
+-4a3cb3f1d665" style=3D"box-sizing: border-box; -webkit-text-size-adjust: 1=
+00%; -ms-text-size-adjust: 100%; background-color: transparent; -webkit-tex=
+t-decoration-skip: objects; -ms-touch-action: manipulation; touch-action: m=
+anipulation; color: #28B0F1; display: block; text-decoration: none;"><img s=
+rc=3D"https://cdn.getwemail.io/images/social-icons/solid-color-youtube.png"=
+ alt=3D"YouTube" style=3D"box-sizing: border-box; -ms-interpolation-mode: b=
+icubic; border: 0; line-height: 100%; outline: none; text-decoration: none;=
+ max-width: 100%; vertical-align: middle; border-style: none; width: 24px; =
+height: 24px;" width=3D"24" height=3D"24"></a></td> <!----></tr></table><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"social-follow=
+-table horizontal-icons default-icons align-center" style=3D"box-sizing: bo=
+rder-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt; font-size: 12px; display: inline-b=
+lock; width: auto; border-collapse: collapse;" width=3D"auto"><tr style=3D"=
+box-sizing: border-box;"><td valign=3D"middle" class=3D"image-container-td"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0=
+ 3px; line-height: 1;"><a href=3D"https://c1a79635-319c-4f5e-b18b-96098edc5=
+991-727.wemailtrack.com/c1a79635-319c-4f5e-b18b-96098edc5991:1f77c79a556cd3=
+f67fec7fd0e0bd3bcc/0f7d2acd1af6b285953f03dcbe3b43be?email_id=3Dbd573fd4-735=
+6-47e8-b719-4a3cb3f1d665" style=3D"box-sizing: border-box; -webkit-text-siz=
+e-adjust: 100%; -ms-text-size-adjust: 100%; background-color: transparent; =
+-webkit-text-decoration-skip: objects; -ms-touch-action: manipulation; touc=
+h-action: manipulation; color: #28B0F1; display: block; text-decoration: no=
+ne;"><img src=3D"https://cdn.getwemail.io/images/social-icons/solid-color-l=
+inkedin.png" alt=3D"LinkedIn" style=3D"box-sizing: border-box; -ms-interpol=
+ation-mode: bicubic; border: 0; line-height: 100%; outline: none; text-deco=
+ration: none; max-width: 100%; vertical-align: middle; border-style: none; =
+width: 24px; height: 24px;" width=3D"24" height=3D"24"></a></td> <!----></t=
+r></table></div></td></tr></table></td></tr></table></td></tr></table></div=
+></td></tr></table></td></tr><tr data-source=3D"iframe" data-content-type=
+=3D"footer" data-section-index=3D"3" data-content-index=3D"1" class=3D"cont=
+ent-wrapper" style=3D"box-sizing: border-box;"><td style=3D"box-sizing: bor=
+der-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; position: relative;"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"box-sizing: border-box; -webkit-text-size-adjust: 100%; -ms-text-=
+size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width:=
+ 600px; margin-bottom: 0px; border-collapse: collapse;"><tr style=3D"box-si=
+zing: border-box;"><td align=3D"center" valign=3D"top" style=3D"box-sizing:=
+ border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 0; color: rgb(132,13=
+3,134); background-color: rgb(247,248,249);" bgcolor=3D"rgb(247,248,249)"><=
+div class=3D"wrapper" style=3D"box-sizing: border-box; display: inline-bloc=
+k; width: 100%; vertical-align: top;"><table align=3D"left" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"box-sizing: borde=
+r-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr style=
+=3D"box-sizing: border-box;"><td align=3D"center" valign=3D"top" class=3D"c=
+ontent-text-extra-padding" style=3D"box-sizing: border-box; -webkit-text-si=
+ze-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; padding-right: 0;"><table border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"100%" class=3D"wrapperInner" style=3D"box-sizing: =
+border-box; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr =
+style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box; -web=
+kit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; padding-top: 15px; padding-right: 15px; padding-=
+bottom: 15px; padding-left: 15px; border-width: 0px; border-style: solid; b=
+order-color: #e5e5e5;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0" width=3D"100%" style=3D"box-sizing: border-box; -webkit-text-size-adjus=
+t: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; border-collapse: collapse;"><tr style=3D"box-sizing: border-box;"><=
+td align=3D"left" valign=3D"middle" style=3D"box-sizing: border-box; -webki=
+t-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt=
+; mso-table-rspace: 0pt; font-size: 16px;"><div class=3D"wemail-content-tex=
+t" style=3D"box-sizing: border-box;"><p style=3D"box-sizing: border-box; ma=
+rgin-top: 0; margin-bottom: 0; text-align: center;"><span style=3D"box-sizi=
+ng: border-box; font-size: 11px;">This email was sent to info@erciyesyapayz=
+eka.com.tr because you have opted in on our website. If you would prefer no=
+t to receive any email from us in the future, please <a href=3D"https://app=
+.getwemail.io/campaigns/c1a79635-319c-4f5e-b18b-96098edc5991/subscribers/0f=
+7d2acd1af6b285953f03dcbe3b43be/unsubscribe?email_id=3Dbd573fd4-7356-47e8-b7=
+19-4a3cb3f1d665" target=3D"_blank">unsubscribe</a>.<br style=3D"box-sizing:=
+ border-box; margin-bottom: 0;"></span><span style=3D"box-sizing: border-bo=
+x; margin-bottom: 0; font-size: 11px;">Copyright &copy; 2025 weDevs Pte. Lt=
+d. 160 Robinson Road, #14-04 SBF Centre, SG-01, Singapore, 068914.</span></=
+p></div></td></tr></table></td></tr></table></td></tr></table></div> <!----=
+></td></tr></table></td></tr></tbody></table></td></tr></table></div></div>
+    <img src=3D"data:image/gif;base64,R0lGODlhAQABAJEAAP///wAAAAAAAAAAACH5B=
+AkAAAAALAAAAAABAAEAAAgEAAEEBAA7" width=3D"1" height=3D"auto" alt=3D"Web Bug=
+ from https://api.getwemail.io/campaigns/c1a79635-319c-4f5e-b18b-96098edc59=
+91/subscribers/0f7d2acd1af6b285953f03dcbe3b43be/track?email_id=3Dbd573fd4-7=
+356-47e8-b719-4a3cb3f1d665&sid=3D0f7d2acd1af6b285953f03dcbe3b43be&cb=3D1763=
+640206192-3us0fhjk0ib" />
+</body>
+</html>
+
+--mk3-9dcde8f585734f8e9493ccf1c57543ec--

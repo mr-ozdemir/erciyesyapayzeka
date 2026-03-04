@@ -1,0 +1,98 @@
+Return-Path: <msalman0042@gmail.com>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id EfoSKprINWnG6xAAO6WR3A
+	(envelope-from <msalman0042@gmail.com>)
+	for <info@erciyesyapayzeka.com.tr>; Sun, 07 Dec 2025 21:34:02 +0300
+Return-path: <msalman0042@gmail.com>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Sun, 07 Dec 2025 21:34:02 +0300
+Received: from mail-lf1-f49.google.com ([209.85.167.49]:58814)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.98.2)
+	(envelope-from <msalman0042@gmail.com>)
+	id 1vSJa4-00000004eA4-1ox3
+	for info@erciyesyapayzeka.com.tr;
+	Sun, 07 Dec 2025 21:34:00 +0300
+Received: by mail-lf1-f49.google.com with SMTP id 2adb3069b0e04-5959da48139so3875440e87.1
+        for <info@erciyesyapayzeka.com.tr>; Sun, 07 Dec 2025 10:33:39 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1765132398; x=1765737198; darn=erciyesyapayzeka.com.tr;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=bOWTMERDjShQLgo7tDWk0zg/ICM8KU57P9O9We2gg4A=;
+        b=lpaxTNShKJL44xUXZCABNmR+/EJuVyLu2W2MmD9xzZVDibspLQ/b/5iH7wNb3hC5jz
+         IupFzmsmJOek7AFLgYQGH4XQ06hqWd86qKmvRBDT/kZVbk9LaFo/kTxGYRLFAmVKc4BX
+         9Ew3s7Pw9XuZNcO4w0ajN+tmjq33YEJkKuivSbMtPzpmkub4bqUe9UjKEAst/Ci+ci4d
+         jaHTBy/Er7CjVFQmpdDYHi8LeSZKZ53MjXJjz298vM2r96aT3K02zyYGqQBAkLVpObOL
+         MdhqR0xbHde+I+zXiGxXYnCz+uZdi84SypBfSjTa4yyIyKFQW6rUA9dMD66RjKoIcqN2
+         JmRA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1765132398; x=1765737198;
+        h=to:subject:message-id:date:from:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=bOWTMERDjShQLgo7tDWk0zg/ICM8KU57P9O9We2gg4A=;
+        b=nZR7xgy3G1bSXy37eHXUDKXeJFAlfPXgSW4ucclyQLxlr7asqx+GfIDzBuwmtn43VH
+         lb8mvXK7yxKH1Zs5m032w26DUNt3g8nQJWLnp6hrh0eE4Y2BSv8XUYYIsk7zjJjfyliV
+         KnTbViPqYyN3qOfFrWN4TX9bAMFxV9/AhZJ2vfRG/hKFnTGHQdPPEfpkVY4Ds6VOPHJC
+         s4sit2DFgoYisuDediIZXGT1P+yvSr/+KmFyfjSxYsl/ZPmj20PY2/yLpjgq09wxl9D0
+         5ezNY7G8MGeHVY60TVzTaQ3KHxN/B6p8F8FejztIoCeDVLcxp6Zy1hR1o+EYUmxNkMyO
+         WY6g==
+X-Gm-Message-State: AOJu0Ywtk5Xh4bDPm6CO2WEmHKQHIJctWVa9+JNqRQD05lCdzD9BVjGL
+	XqcPvMmUsgJ7g99IyPjfqHy3SSjGPWOiU+G3+izhi2GJKqMOLHfxUNhXNqs2h+uln+EA3PDiIFp
+	sy/DeqhP8lEXKsOgRIOjFMbzFCwd+tx6LiA==
+X-Gm-Gg: ASbGnctPYyrmhA9AyWUhRmbKEZXcsGA59Tm1UEVPYsE2MO2MecchWWyLjHSn9h1UItb
+	l/TLIgvmoL5paPMq7/KZs5Q0spqa2HzVbrsSeXrIGewPfGXG4K41EmCMpgUHwkMryW3wUVO12/m
+	7U0Htsid4CTvViPE7wsKCSQrqiGwqHNFRd6O328592mgK2x5Db7LbODNvzZ6+xdDIDqrpK/XHzf
+	zB7MNi+uBTsZ1KIfvJeM6I1zmC8+keLuvnptGkJmG+hrD4gk1LxBHtxPaPbdImshHRksFd8uiJp
+	aI92Gw==
+X-Google-Smtp-Source: AGHT+IGZHxXyDUoJNyQLCShcEeFWztPSv2qCMbfRHCh2xstNXJm91Dg5EpQjnuqDGM83rGgtsIEH5MbCYy3ir8uLgpY=
+X-Received: by 2002:a05:6512:398c:b0:595:7d94:eaa1 with SMTP id
+ 2adb3069b0e04-598853bc459mr1589191e87.32.1765132398145; Sun, 07 Dec 2025
+ 10:33:18 -0800 (PST)
+MIME-Version: 1.0
+From: Mustafa Salman <msalman0042@gmail.com>
+Date: Sun, 7 Dec 2025 21:33:07 +0300
+X-Gm-Features: AQt7F2oSXu_npEvYUozTfSTWuPTFaV2LVf_gGXtUE5AwfseSXI60bKQbPjG8-AE
+Message-ID: <CAKjiDJh-i+tmP2caib8BDA662gO_yUbcMk5vB=bBvGQkXiwbMA@mail.gmail.com>
+Subject: bilgilendirme
+To: info@erciyesyapayzeka.com.tr
+Content-Type: multipart/alternative; boundary="00000000000092b423064560e91c"
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1vSJa4-00000004eA4-1ox3
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=0.655, required 5, DKIM_SIGNED 0.10, DKIM_VALID -0.10,
+	DKIM_VALID_AU -0.10, FREEMAIL_FROM 0.00, GB_FREEMAIL_NUM 0.75,
+	HTML_MESSAGE 0.00, RCVD_IN_VALIDITY_CERTIFIED_BLOCKED 0.00,
+	RCVD_IN_VALIDITY_RPBL_BLOCKED 0.00,
+	RCVD_IN_VALIDITY_SAFE_BLOCKED 0.00, RCVD_IN_ZEN_BLOCKED_OPENDNS 0.00,
+	SPF_PASS -0.00)
+X-YourOrg-MailScanner-From: msalman0042@gmail.com
+X-Spam-Status: No
+
+--00000000000092b423064560e91c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+merhabalar, erciyes =C3=BCniversitesi =C3=B6=C4=9Frencisi olarak ge=C3=A7en=
+ sene kul=C3=BCb=C3=BCn=C3=BCze
+=C3=BCyeli=C4=9Fim vard=C4=B1. resmi bir kuruma ba=C5=9Fvurumda kul=C3=BCp =
+ve kul=C3=BCp ba=C5=9Fkan=C4=B1n ismi
+gerekti. yaln=C4=B1z ben ge=C3=A7en seneki ba=C5=9Fkan=C4=B1n ad=C4=B1n=C4=
+=B1 hat=C4=B1rlam=C4=B1yorum. bu konuda
+bana yard=C4=B1mc=C4=B1 olabilirmisiniz.
+
+--00000000000092b423064560e91c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">merhabalar, erciyes =C3=BCniversitesi =C3=B6=C4=9Frencisi =
+olarak ge=C3=A7en sene kul=C3=BCb=C3=BCn=C3=BCze =C3=BCyeli=C4=9Fim vard=C4=
+=B1. resmi bir kuruma ba=C5=9Fvurumda=C2=A0kul=C3=BCp ve kul=C3=BCp ba=C5=
+=9Fkan=C4=B1n ismi gerekti. yaln=C4=B1z ben ge=C3=A7en seneki ba=C5=9Fkan=
+=C4=B1n ad=C4=B1n=C4=B1 hat=C4=B1rlam=C4=B1yorum. bu konuda bana yard=C4=B1=
+mc=C4=B1 olabilirmisiniz.</div>
+
+--00000000000092b423064560e91c--

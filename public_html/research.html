@@ -1,0 +1,589 @@
+<!doctype html>
+<html class="no-js" lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Projeler</title>
+    <meta name="description" content="Erciyes Üniversitesi Yapay Zeka Kulübü Araştırma Projeleri ve Yayınları">
+    <meta name="keywords" content="ERÜ Yapay Zeka Kulübü, ERU AI CLUB, Yapay Zeka Kulübü, Erciyes Üniversitesi Yapay Zeka Kulübü, Erciyes Yapay Zeka, Yapay Zeka Kulübü, ErÜ Yapay Zeka">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/logo/fav1.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Genel Sayfa Background */
+        body {
+            background: #f8f9fa;
+        }
+
+        /* Yan Yana Layout için Container */
+        .two-column-layout {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+        }
+
+        .column-wrapper {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .column-header {
+            background: #ffffff;
+            color: #2c3e50;
+            padding: 22px;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+            margin-bottom: 0;
+            border-bottom: 3px solid #667eea;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+            .column-header.publications-header {
+                border-bottom-color: #667eea;
+            }
+
+            .column-header.projects-header {
+                border-bottom-color: #00b894;
+            }
+
+            .column-header h3 {
+                font-size: 22px;
+                font-weight: 600;
+                margin: 0;
+                color: #2c3e50;
+            }
+
+            .column-header p {
+                font-size: 13px;
+                margin: 6px 0 0 0;
+                color: #6c757d;
+            }
+
+        .items-container {
+            background: #ffffff;
+            border-radius: 0 0 12px 12px;
+            padding: 20px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        /* Scrollbar Styling kaldırıldı - artık scroll yok */
+
+        .publication-item, .project-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: all 0.3s ease;
+            border-left: 3px solid #667eea;
+        }
+
+            .publication-item:hover, .project-item:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                background: #ffffff;
+            }
+
+        .project-item {
+            border-left-color: #00b894;
+        }
+
+            .publication-item h5, .project-item h5 {
+                color: #2c3e50;
+                font-size: 15px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+
+            .publication-item .badge, .project-item .badge {
+                display: inline-block;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-size: 11px;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+
+        .publication-item .badge {
+            background: #e8eaf6;
+            color: #667eea;
+            border: 1px solid #667eea;
+        }
+
+        .project-item .badge {
+            background: #e0f7f4;
+            color: #00b894;
+            border: 1px solid #00b894;
+        }
+
+        .publication-item p, .project-item p {
+            color: #6c757d;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .authors {
+            color: #667eea;
+            font-style: italic;
+            font-size: 12px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .section-header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+            .section-header h2 {
+                font-size: 34px;
+                font-weight: 700;
+                color: #2c3e50;
+                margin-bottom: 10px;
+            }
+
+            .section-header p {
+                color: #6c757d;
+                font-size: 15px;
+            }
+
+        /* Responsive - Mobilde Alt Alta */
+        @media (max-width: 991px) {
+            .two-column-layout {
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .column-header h3 {
+                font-size: 20px;
+            }
+
+            .research-area {
+                padding-top: 80px !important;
+                padding-bottom: 80px !important;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .breadcrumb__area {
+                padding-top: 80px !important;
+                padding-bottom: 100px !important;
+            }
+
+            .research-area {
+                padding-top: 60px !important;
+                padding-bottom: 60px !important;
+            }
+
+            .section-header {
+                margin-bottom: 45px;
+            }
+
+                .section-header h2 {
+                    font-size: 26px;
+                }
+
+            .column-header {
+                padding: 18px;
+            }
+
+                .column-header h3 {
+                    font-size: 18px;
+                }
+
+                .column-header p {
+                    font-size: 12px;
+                }
+
+            .items-container {
+                padding: 15px;
+            }
+
+            .publication-item, .project-item {
+                padding: 15px;
+            }
+
+                .publication-item h5, .project-item h5 {
+                    font-size: 14px;
+                }
+        }
+
+        /* Footer Küçültme CSS */
+        .footer-area {
+            font-size: 13px;
+        }
+
+        .footernewsletter__title {
+            font-size: 20px !important;
+        }
+
+        .footercontact__icon {
+            font-size: 28px !important;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+            .footercontact__icon i {
+                font-size: 22px !important;
+                color: #ffffff;
+            }
+
+        .fw-pink-icon i {
+            color: #ff6b9d !important;
+        }
+
+        .fw-green-icon i {
+            color: #00d9a0 !important;
+        }
+
+        .footercontact__title,
+        .footercontact__content {
+            font-size: 13px !important;
+        }
+
+            .footercontact__title a,
+            .footercontact__content a,
+            .footercontact__content span {
+                font-size: 13px !important;
+            }
+
+        .footer-widget__copyright {
+            font-size: 12px !important;
+        }
+
+            .footer-widget__copyright span,
+            .footer-widget__copyright a {
+                font-size: 12px !important;
+            }
+
+        .footercontact {
+            margin-bottom: 25px !important;
+        }
+
+        .footer-area.pt-105 {
+            padding-top: 70px !important;
+        }
+
+        .tp-footer-top.pb-25 {
+            padding-bottom: 15px !important;
+        }
+
+        @media (max-width: 767px) {
+            .footernewsletter__title {
+                font-size: 18px !important;
+            }
+
+            .footercontact__icon {
+                font-size: 24px !important;
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 50%;
+            }
+
+                .footercontact__icon i {
+                    font-size: 20px !important;
+                }
+
+            .footercontact__title,
+            .footercontact__content {
+                font-size: 12px !important;
+            }
+
+            .footer-widget__copyright {
+                font-size: 11px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <i class="fas fa-angle-up"></i>
+    </button>
+
+    <div id="preloadertp">
+        <img src="assets/img/preloader.png" alt="">
+    </div>
+
+    <header class="d-none d-xl-block">
+        <div class="header-custom" id="header-sticky">
+            <div class="header-logo-box">
+                <a href="index"><img src="assets/img/logo/logo.png" alt="logo"></a>
+            </div>
+            <div class="header-menu-box">
+                <div class="header-menu-bottom">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="main-menu main-menu-second">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="index">Ana Sayfa</a></li>
+                                        <li><a href="etkinlikler">Etkinlikler</a></li>
+                                        <li><a class="active" href="research">Projeler</a></li>
+                                        <li><a href="uyeol">Üye Ol</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="header-mob-sticky" class="tp-mobile-header-area pt-15 pb-15 d-xl-none">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-10">
+                    <div class="tp-mob-logo">
+                        <a href="index"><img src="assets/img/logo/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-2">
+                    <div class="tp-mobile-bar d-flex align-items-center justify-content-end">
+                        <button class="tp-menu-toggle"><i class="far fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tpsideinfo tp-side-info-area">
+        <button class="tpsideinfo__close"><i class="fal fa-times"></i></button>
+        <div class="tpsideinfo__logo mb-40">
+            <a href="index"><img src="assets/img/logo/logo.png" alt="logo"></a>
+        </div>
+        <div class="mobile-menu"></div>
+    </div>
+
+    <div class="body-overlay"></div>
+
+    <main>
+        <section class="breadcrumb__area pt-100 pb-140 breadcrumb__overlay" data-background="assets/img/banner/breadcrumb-01.jpg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="tp-breadcrumb text-center">
+                            <h2 class="tp-breadcrumb__title">Projeler</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- İKİ KOLONLU ALAN -->
+        <section class="research-area pt-130 pb-100">
+            <div class="container">
+                <div class="section-header">
+                    </br>
+                    <h2>Araştırma ve Geliştirme</h2>
+                    <p>Kulüp üyelerimiz tarafından gerçekleştirilen akademik çalışmalar ve projeler</p>
+                </div>
+
+                <div class="two-column-layout">
+                    <!-- YAYINLAR KOLONU -->
+                    <div class="column-wrapper">
+                        <div class="column-header publications-header">
+                            <h3>📚 Yayınlarımız</h3>
+                            <p>Akademik yayınlar ve konferans bildirileri</p>
+                        </div>
+                        <div class="items-container">
+                          <div class="publication-item wow fadeInUp" data-wow-delay=".1s">
+        <span class="badge">Dergide</span>
+        <h5>Derin Sinir Ağları Aktivasyon Fonksiyonlarının Genetik Programlama ile Otomatik Tasarımı</h5>
+        <p>Aktivasyon fonksiyonlarının evrimsel arama ile otomatik keşfi.</p>
+    </div>
+    
+        <div class="publication-item wow fadeInUp" data-wow-delay=".2s">
+        <span class="badge">Yazımda</span>
+        <h5>Doğal Dil Modelleri ile Yazılım Test Senaryolarının Üretilmesi</h5>
+        <p>Büyük dil modelleri ile yazılım projeleri için otomatik yazılım testlerinin üretilmesi</p>
+    </div>
+
+    <div class="publication-item wow fadeInUp" data-wow-delay=".2s">
+        <span class="badge">Dergide</span>
+        <h5>A Comparative Review of EA & Mutation Types in Automatic Activation Function Design</h5>
+        <p>Evrimsel algoritmalarla aktivasyon tasarımında kullanılan EA ve mutasyon türlerinin karşılaştırmalı incelemesi.</p>
+    </div>
+
+    <div class="publication-item wow fadeInUp" data-wow-delay=".3s">
+        <span class="badge">Yazımda</span>
+        <h5>Semantic Search for Automatic Activation Function with Artificial Bee Colony Programming</h5>
+        <p>ABC programlama ile semantik yönlendirmeli aktivasyon keşfi.</p>
+    </div>
+
+    <div class="publication-item wow fadeInUp" data-wow-delay=".4s">
+        <span class="badge">Geliştirme</span>
+        <h5>Neural Architecture Search with Artificial Bee Colony Coding</h5>
+        <p>Yapay arı kolonisi ile NAS araması için yeni kodlama yaklaşımı.</p>
+    </div>
+    
+        <div class="publication-item wow fadeInUp" data-wow-delay=".2s">
+        <span class="badge">Yazımda</span>
+        <h5>Unit Test Generation Using a Large Language Model</h5>
+        <p>Birim testlerinin büyük dil modelleri ile eğitilmesi</p>
+    </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJELER KOLONU -->
+                    <div class="column-wrapper">
+                        <div class="column-header projects-header">
+                            <h3>🚀 Projelerimiz</h3>
+                            <p>Araştırma ve geliştirme projeleri</p>
+                        </div>
+                        <div class="items-container">
+                            <div class="project-item wow fadeInUp" data-wow-delay=".1s">
+                                <span class="badge">Bilgisayar Bilimleri</span>
+                                <h5>Gerçek Zamanlı İşaret Dili Tespiti ve Metinden Sese Çevirme Sistemi</h5>
+                                <p>CNN-GRU derin öğrenme modeli ile işaret dili tespiti ve HMM tabanlı metinden sese çevirme teknolojisi.</p>
+                            </div>
+
+                            <div class="project-item wow fadeInUp" data-wow-delay=".2s">
+                                <span class="badge">Bilgisayar ve Tıp Bilimleri</span>
+                                <h5>Kolektif Derin Öğrenme ile Meme Mamografilerinde Kanser Risk Sınıflandırması</h5>
+                                <p>Negatif Tabanlı Kolektif Öğrenme modeli ile meme mamografilerinde BI-RADS sınıflandırması.</p>
+                            </div>
+
+                            <div class="project-item wow fadeInUp" data-wow-delay=".3s">
+                                <span class="badge">Bilgisayar ve Tıp Bilimleri</span>
+                                <h5>Derin Öğrenme ile Meme Mamografilerinde Lezyon Tespiti</h5>
+                                <p>YOLOv8 ve Yapay Arı Kolonisi algoritması ile meme yoğunluklarına göre kitle ve kalsifikasyon tespiti.</p>
+                            </div>
+
+                            <div class="project-item wow fadeInUp" data-wow-delay=".4s">
+                                <span class="badge">Bilgisayar Bilimleri</span>
+                                <h5>HMM-N-gram Hibrit Modeli ile Türkçe Konuşma Tanıma Sistemi</h5>
+                                <p>Düşük maliyetli mikrodenetleyiciler üzerinde gerçek zamanlı Türkçe konuşma tanıma sistemi.</p>
+                            </div>
+
+                            <div class="project-item wow fadeInUp" data-wow-delay=".5s">
+                                <span class="badge">Bilgisayar Bilimleri ve Finans</span>
+                                <h5>Yapay Zeka Destekli Portföy Yönetimi ve Risk Analizi Sistemi</h5>
+                                <p>Bi-LSTM ile finansal tahmin, FinBERT ile sosyal medya analizi ve Monte Carlo simülasyonu ile risk analizi.</p>
+                            </div>
+
+                            <div class="project-item wow fadeInUp" data-wow-delay=".6s">
+                                <span class="badge">TÜBİTAK Destekli</span>
+                                <h5>Makine Öğrenme Tabanlı Müşteri Eşleştirme ve Ürün Öneri Sistemi</h5>
+                                <p>Kafe ve restoran işletmeleri için geliştirilmektedir. TÜBİTAK BİDEB desteği.</p>
+                            </div>
+
+                            <div class="project-item wow fadeInUp" data-wow-delay=".7s">
+                                <span class="badge">TÜBİTAK Destekli</span>
+                                <h5>LSTM-CNN Hibrit Modeli ile Uyku Evrelerinin Analizi</h5>
+                                <p>Uyku hastalıkları teşhisi için geliştirilmiş entegre alarm sistemi. TÜBİTAK BİDEB desteği.</p>
+                            </div>
+
+                            <div class="project-item wow fadeInUp" data-wow-delay=".8s">
+                                <span class="badge">TÜBİTAK Destekli</span>
+                                <h5>EEG Verilerinden Duygu Durumu Analizi ve Müzik Öneri Sistemi</h5>
+                                <p>Derin öğrenme yöntemleri ile EEG verilerinden duygu analizi. TÜBİTAK BİDEB desteği.</p>
+                            </div>
+
+                            <div class="project-item wow fadeInUp" data-wow-delay=".9s">
+                                <span class="badge">TEKNOFEST</span>
+                                <h5>Hibrit Mamografi Analizi ve Rapor Varlık İsmi Çıkarımı</h5>
+                                <p>Bilgisayarlı görü ve doğal dil işleme teknikleriyle mamografi analizi. TÜSEB/TEKNOFEST desteği.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-area tp-common-area footer-white-content theme-bg pt-105">
+            <div class="tp-footer-top pb-25">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="footernewsletter mb-40 wow fadeInUp" data-wow-delay=".2s">
+                                <h4 class="footernewsletter__title">Bize Ulaşın</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="footernewsletter__form p-relative wow fadeInUp" data-wow-delay=".4s">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-40 pt-50">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footercontact mb-40 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="footercontact__icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="footercontact__content">
+                                    <span class="footercontact__title"><a href="contact.html">Mühendislik Fakültesi - Bilgisayar Mühendisliği <br>Erciyes Üniversitesi</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footercontact mb-40 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="footercontact__icon fw-pink-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="footercontact__content fw-pink-content">
+                                    <a href="mailto:info@erciyesyapayzeka.com.tr">info@erciyesyapayzeka.com.tr</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footercontact mb-40 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="footercontact__icon fw-green-icon">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div class="footercontact__content">
+                                    <span>Pazartesi - Cuma - 09:00 - 21:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footercontact mb-40 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="tp-footer-widget__social fw-social">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-area-bottom-tp">
+                <div class="container">
+                    <div class="footer-bottom-border">
+                        <div class="row">
+                            <div class="col-xxl-6 col-xl-7 col-lg-6 col-md-12 col-12">
+                                <div class="footer-widget__copyright cpy-white-content">
+                                    <span>© Copyright ©2024 <a href="index">Erciyes Üniversitesi Yapay Zeka Kulübü</a>. <i>All Rights Reserved Copyright</i></span>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-xl-5 col-lg-6 col-md-12 col-12">
+                                <div class="footer-widget__copyright-info info-direction cpy-white-content-info">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

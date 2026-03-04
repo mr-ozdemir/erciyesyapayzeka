@@ -1,0 +1,149 @@
+Return-Path: <>
+Delivered-To: info@erciyesyapayzeka.com.tr
+Received: from cpanel1.kayizer.com
+	by cpanel1.kayizer.com with LMTP
+	id QEVvJOOL32hVxSkAO6WR3A
+	(envelope-from <>)
+	for <info@erciyesyapayzeka.com.tr>; Fri, 03 Oct 2025 11:40:03 +0300
+Return-path: <>
+Envelope-to: info@erciyesyapayzeka.com.tr
+Delivery-date: Fri, 03 Oct 2025 11:40:03 +0300
+Received: from relay3-bounce-b.mailbaby.net ([174.138.180.170]:15576)
+	by cpanel1.kayizer.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.98.2)
+	id 1v4bKf-0000000G5Sc-0ZF1
+	for info@erciyesyapayzeka.com.tr;
+	Fri, 03 Oct 2025 11:40:03 +0300
+Received: from localhost
+ by relay3-bounce-b.mailbaby.net (MailBabyMTA) with HTTP id 199a939ba360004bf1.001
+ for <info@erciyesyapayzeka.com.tr>;
+ Fri, 03 Oct 2025 08:39:16 +0000
+X-Zone-Loop: c484c72509e989d7ab3abd462bd7fa128ec54af66d54
+Feedback-ID: bounce:199a939ba360004bf1:avjfebtekf5uypkf:mbaby
+From: Mail Delivery Subsystem <mailer-daemon@bounces.mailbaby.net>
+To: info@erciyesyapayzeka.com.tr
+X-Failed-Recipients: yetiksila@icloud.com
+Auto-Submitted: auto-replied
+Subject: Delivery Status Notification (Failure)
+In-Reply-To: <4a9f856da1da1b1a236b545027e15563@erciyesyapayzeka.com.tr>
+References: <4a9f856da1da1b1a236b545027e15563@erciyesyapayzeka.com.tr>
+Date: Fri, 03 Oct 2025 08:39:16 +0000
+Message-ID: <0efb3fc7-899d-6469-9c4f-cfceb17b07b9@bounces.mailbaby.net>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+ boundary="--_NmP-12a3331ae6572b1c-Part_1"
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: =?ISO-8859-1?Q?Spam_detection_software=2C_running_on_the_system_=22cpanel1=2Ekayize?= =?ISO-8859-1?Q?r=2Ecom=22=2C=0A_has_NOT_identified_this_incoming_ema?= =?ISO-8859-1?Q?il_as_spam=2E__The_original=0A_message_has_been_attac?= =?ISO-8859-1?Q?hed_to_this_so_you_can_view_it_or_label=0A_similar_fu?= =?ISO-8859-1?Q?ture_email=2E__If_you_have_any_questions=2C_see=0A_ro?= =?ISO-8859-1?Q?ot=5C=40localhost_for_details=2E=0A_Content_preview=3A_?= =?ISO-8859-1?Q?_Delivery_to_the_following_recipient_failed_permanent?= =?ISO-8859-1?Q?ly=3A_yetiksila=40icloud=2Ecom=0A____Technical_detail?= =?ISO-8859-1?Q?s_of_permanent_failure=3A_552_5=2E2=2E2_=3Cyetiksila=40i?= =?ISO-8859-1?Q?cloud=2Ecom=3E=3A=0A____user_is_over_quota_=0A_Conten?= =?ISO-8859-1?Q?t_analysis_details=3A___=280=2E0_points=2C_5=2E0_requ?= =?ISO-8859-1?Q?ired=29=0A__pts_rule_name______________description=0A_?= =?ISO-8859-1?Q?----_----------------------_-------------------------?= =?ISO-8859-1?Q?-------------------------=0A__0=2E0_URIBL=5FBLOCKED__?= =?ISO-8859-1?Q?________ADMINISTRATOR_NOTICE=3A_The_query_to_URIBL_wa?= =?ISO-8859-1?Q?s_blocked=2E=0A_____________________________See=0A___?= =?ISO-8859-1?Q?__________________________http=3A//wiki=2Eapache=2Eor?= =?ISO-8859-1?Q?g/spamassassin/DnsBlocklists#dnsbl-block=0A__________?= =?ISO-8859-1?Q?____________________for_more_information=2E=0A_______?= =?ISO-8859-1?Q?______________________=5BURI=3A_mailbaby=2Enet=5D=0A_?= =?ISO-8859-1?Q?____________________________=5BURI=3A_kayizer=2Ecom=5D=0A?= =?ISO-8859-1?Q?_-0=2E0_SPF=5FHELO=5FPASS__________SPF=3A_HELO_matche?= =?ISO-8859-1?Q?s_SPF_record=0A__0=2E0_RCVD=5FIN=5FVALIDITY=5FRPBL=5FB?= =?ISO-8859-1?Q?LOCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_The_query_to=0A_?= =?ISO-8859-1?Q?_____________________________Validity_was_blocked=2E_?= =?ISO-8859-1?Q?_See=0A_____________________________https=3A//knowled?= =?ISO-8859-1?Q?ge=2Evalidity=2Ecom/hc/en-us/articles/20961730681243=0A_?= =?ISO-8859-1?Q?_____________________________for_more_information=2E=0A?= =?ISO-8859-1?Q?___________________________=5B174=2E138=2E180=2E170_l?= =?ISO-8859-1?Q?isted_in_bl=2Escore=2Esenderscore=2Ecom=5D=0A__0=2E0_?= =?ISO-8859-1?Q?RCVD=5FIN=5FVALIDITY=5FSAFE=5FBLOCKED_RBL=3A_ADMINIST?= =?ISO-8859-1?Q?RATOR_NOTICE=3A_The_query_to=0A______________________?= =?ISO-8859-1?Q?________Validity_was_blocked=2E__See=0A______________?= =?ISO-8859-1?Q?_______________https=3A//knowledge=2Evalidity=2Ecom/h?= =?ISO-8859-1?Q?c/en-us/articles/20961730681243=0A___________________?= =?ISO-8859-1?Q?___________for_more_information=2E=0A________________?= =?ISO-8859-1?Q?_____________=5B174=2E138=2E180=2E170_listed_in_sa-ac?= =?ISO-8859-1?Q?credit=2Ehabeas=2Ecom=5D=0A__0=2E0_RCVD=5FIN=5FVALIDI?= =?ISO-8859-1?Q?TY=5FCERTIFIED=5FBLOCKED_RBL=3A_ADMINISTRATOR_NOTICE=3A_?= =?ISO-8859-1?Q?The=0A_____________________________query_to_Validity_?= =?ISO-8859-1?Q?was_blocked=2E__See=0A_____________________________ht?= =?ISO-8859-1?Q?tps=3A//knowledge=2Evalidity=2Ecom/hc/en-us/articles/?= =?ISO-8859-1?Q?20961730681243=0A______________________________for_mo?= =?ISO-8859-1?Q?re_information=2E=0A________________________=5B174=2E1?= =?ISO-8859-1?Q?38=2E180=2E170_listed_in_sa-trusted=2Ebondedsender=2Eo?= =?ISO-8859-1?Q?rg=5D=0A__0=2E0_KAM=5FDMARC=5FSTATUS_______Test_Rule_?= =?ISO-8859-1?Q?for_DKIM_or_SPF_Failure_with_Strict=0A_______________?= =?ISO-8859-1?Q?______________Alignment?=
+X-Spam-Flag: NO
+
+----_NmP-12a3331ae6572b1c-Part_1
+Content-Type: text/plain
+Content-Description: Notification
+Content-Transfer-Encoding: 7bit
+
+Delivery to the following recipient failed permanently:
+    yetiksila@icloud.com
+
+Technical details of permanent failure:
+
+552 5.2.2 <yetiksila@icloud.com>: user is over quota
+
+
+----_NmP-12a3331ae6572b1c-Part_1
+Content-Type: message/delivery-status
+Content-Description: Delivery report
+
+Reporting-MTA: dns; relay3-o.mailbaby.net
+X-ZoneMTA-Queue-ID: 199a939a0860003dd7
+X-ZoneMTA-Sender: rfc822; info@erciyesyapayzeka.com.tr
+Arrival-Date: Fri, 03 Oct 2025 08:39:11 +0000
+
+Final-Recipient: rfc822; yetiksila@icloud.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx01.mail.icloud.com
+Diagnostic-Code: smtp; 552 5.2.2 <yetiksila@icloud.com>: user is over quota
+
+
+----_NmP-12a3331ae6572b1c-Part_1
+Content-Type: text/rfc822-headers
+Content-Description: Undelivered Message Headers
+Content-Transfer-Encoding: quoted-printable
+
+Received: from cpanel1.kayizer.com ([85.235.74.127] cpanel1.kayizer.com)
+ (Authenticated sender: mb46323)
+ by relay3-o.mailbaby.net (MailBabyMTA) with ESMTPSA id 199a939a0860003dd7.=
+001
+ for <yetiksila@icloud.com>
+ (version=3DTLSv1.3 cipher=3DTLS_AES_256_GCM_SHA384);
+ Fri, 03 Oct 2025 08:39:10 +0000
+X-Zone-Loop: 91501ea809db69c84eae2e147c485ea4c63a566fb183
+ARC-Authentication-Results: i=3D1;	rspamdcluster2.mailbaby.net;	=
+auth=3Dpass
+ smtp.auth=3Dmb46323 smtp.mailfrom=3Dinfo@erciyesyapayzeka.com.tr
+ARC-Seal: i=3D1; s=3Ddetka; d=3Dmailbaby.net; t=3D1759480750; =
+a=3Drsa-sha256;
+	cv=3Dnone;
+	b=3DRatZU16KNPtgTM9j104lE1IwS4KzQPuW39CydNpli4jSPOhBrBXB05oidW1vNrzpWfyM66=
+
+	fu9UZoo+4VcK6DqyJrTXbRm6FvxZ16C1q0Xkh4MS93okNKrOMVXs1KgSnpiNjkdjbdUqW/
+	TLoL3cGEtyNhZHW38/n9nhvmAEJ7Nwdd0WsmZi/MFtBCrxvF3tR2JRN96eyVUrj78W022P
+	gI7bNBAy+TD0Mz41aTFsv8EVYqcaTvVyIjMtcq8+XhWVk70em2MdwEVEq0T6i+1xHFKnM7
+	8uackzMtlzxZTke9F56ambJQVtYlDhUKlFPmIS7Ua9wV6XTXqawQvlh7+Cn22Q=3D=3D
+ARC-Message-Signature: i=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed;
+ d=3Dmailbaby.net;	s=3Ddetka; t=3D1759480750;
+	h=3Dfrom:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=3D+GHqSsdGrfmbuadF+YlyfbM13jK/QPkrWp2Ag6xmUmI=3D;
+	b=3DII7ynK054gkQj/QG8EEnuUM4+sroZc5qf5wZBvFiaM3YYUwWq5HSIeN3l9us1iLRMp0sGZ=
+
+	iNhi7mgobVziQ4Q0pLKS/lhuVpe5IW+DSazEBNElTKRa7ztvsTsg9U7ZOX4rsFu95hU3fN
+	4l4Cvm8t7KpGUlhcCsEG+951ts9OSGNHBpfZ6bT5Zdxv4szrWEZDhCqIj68pmuZGsxJJ3o
+	96yFSZjzBfRtqEZCP6xT42SNaR7wPbyJxez61sVLD9sIQkZzlPaWNSmKKZsNB64BNf3X6e
+	WHWhNQWdynmOXT50xkcQRdWuRqSBquukRlGWe11ReX+an0ugQmdLLaAk8XRiwQ=3D=3D
+X-MB-ID: mb46323|info@erciyesyapayzeka.com.tr
+X-SPF: pass
+Feedback-ID: mb46323:199a939a0860003dd7:85.235.74.127:mbaby
+X-NS-SCAN: PASS
+DKIM-Signature: v=3D1; a=3Drsa-sha256; q=3Ddns/txt; c=3Drelaxed/relaxed;
+	d=3Derciyesyapayzeka.com.tr; s=3Ddefault; h=3DContent-Transfer-Encoding:
+	Content-Type:Message-ID:Subject:To:From:Date:MIME-Version:Sender:Reply-To:=
+Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archiv=
+e;
+	bh=3D+GHqSsdGrfmbuadF+YlyfbM13jK/QPkrWp2Ag6xmUmI=3D; =
+b=3DOlpkak1i9sZd1gLb5NMvqO6gMy
+	YffAOchWg60yTnD5dCfi4Z3OGujwbJsCz6maCOF8Mrmr+Zblm+mnXu7pzA11KBXBfRMBrpPQkz=
+5qh
+	8GiMRKGtkHBFUqMAWQ7poNIwvC5LTc2lUN9ur9tAZOujpUavPRzWWweTRlstTaBjv64efIkW/o=
+zoG
+	0si3QXQsrN0ZxqwO74Gtt8W4lEsMa/Cb0IZw96t3rJR/9NmCpXu018Je6GRBgo9uJ3Or6qYSiN=
+EbH
+	Q0IwVYoQZdW74a7UOGoosyku32ALHKHZlEquvKr9r/+g14DeF3USmY5WkhVZCvU56kwNeUYBZB=
+W6W
+	HBHrqhsQ=3D=3D;
+Received: from [::1] (port=3D47782 helo=3Dcpanel1.kayizer.com)
+	by cpanel1.kayizer.com with esmtpa (Exim 4.98.2)
+	(envelope-from <info@erciyesyapayzeka.com.tr>)
+	id 1v4bJn-0000000G5MQ-3Vxf;
+	Fri, 03 Oct 2025 11:39:08 +0300
+MIME-Version: 1.0
+Date: Fri, 03 Oct 2025 11:39:07 +0300
+From: info@erciyesyapayzeka.com.tr
+To: undisclosed-recipients:;
+Subject: =3D?UTF-8?Q?Data_Kamp_Yapay_Zeka=3D27ya_Giri=3DC5=3D9F?=3D
+User-Agent: Roundcube Webmail/1.6.11
+Message-ID: <4a9f856da1da1b1a236b545027e15563@erciyesyapayzeka.com.tr>
+X-Sender: info@erciyesyapayzeka.com.tr
+Content-Type: text/plain; charset=3DUTF-8;
+ format=3Dflowed
+Content-Transfer-Encoding: 8bit
+X-AuthUser: info@erciyesyapayzeka.com.tr
+
+
+----_NmP-12a3331ae6572b1c-Part_1--

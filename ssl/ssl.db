@@ -1,0 +1,277 @@
+--- 
+files: 
+  certificate: 
+    _wildcard__erciyesyapayzeka_com_tr_9c0af_69b2d_1779149010_1863118e363be40b4088e68932a9f9a2: 
+      created: '1771376521'
+      domains: 
+        - "*.erciyesyapayzeka.com.tr"
+        - erciyesyapayzeka.com.tr
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “erciyesyapayzeka.com.tr” 1771376521.0
+      id: _wildcard__erciyesyapayzeka_com_tr_9c0af_69b2d_1779149010_1863118e363be40b4088e68932a9f9a2
+      is_self_signed: 0
+      issuer.commonName: R12
+      issuer.organizationName: Let's Encrypt
+      key_algorithm: rsaEncryption
+      modulus: 9c0af7f61b112b9a1367d551da2a728cc230aafc0bb24935193c9dc3c36d82aa1e2221f4c576ec1c9863ea3145e93e1775a29ece0d0d8167a6c63f2ea1fb3512a79c0eaac01ca47dcaf8f33694fcb2631fac3db98115d14d278a761778ed669e19253d1963c0fb7ae9cebab7dabc418cb35086240e39ef29a4935eb19f77b9064d39b33666af762e6830c0c9b367bd0e073e8d19ee73af102bb1aa0cfbea7f47685a080a8a51e550aae602f3c7fb8242d3c957c488977954cfd3510ddf72c6ae16d601c601c2259f4054f4940835aa1f06c36b3f9c6c62454f29f287a3e3e301b0007755a2993bd9cda058844367e35b565ca2db367c72604b9509aca4e69b2d
+      modulus_length: 2048
+      not_after: '1779149010'
+      not_before: '1771373011'
+      serial: 05f9a158493d77f215936cdfb46127345625
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: "*.erciyesyapayzeka.com.tr"
+      validation_type: dv
+    _wildcard__erciyesyapayzeka_com_tr_b3dfb_a355b_1763337842_a90f3a2f3f221f41a25e252580d31b6d: 
+      created: '1755565354'
+      domains: 
+        - "*.erciyesyapayzeka.com.tr"
+        - erciyesyapayzeka.com.tr
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “erciyesyapayzeka.com.tr” 1755565354.0
+      id: _wildcard__erciyesyapayzeka_com_tr_b3dfb_a355b_1763337842_a90f3a2f3f221f41a25e252580d31b6d
+      is_self_signed: 0
+      issuer.commonName: R11
+      issuer.organizationName: Let's Encrypt
+      key_algorithm: rsaEncryption
+      modulus: b3dfb4def5ad3f59443da441166970d77be666908286d91bedcb320a6450bfd4b5297f7d4cbcd018f1016607faccae9c30724a62ffc3b6c0c5f4ebc54246c059bc34ee8d348d5a316494b8d528a84e2f2208f2a24b09d1a80f94c93831af2f43811c1c849c4db687d121d7a8bb00f1db50ccb3eb027e307a188109c2b85de7819f41b36cce2da16d1dd2d77527d8f11cb6dfdac968a84c4bc126dc8c96110a4742111b82dda0638857644980d1efb02069080f3f4e8b9c5ad7dfc1aef2806d8b280ddea1a3216242cca73d852d55287bcc3ede8de6edf6dfa5df368fde78d38b5746efaee18115ec41c0dff8e7ae95189f72fcd10ddecbbde3af0d63315a355b
+      modulus_length: 2048
+      not_after: '1763337842'
+      not_before: '1755561843'
+      serial: 0586427d6b66de7d44307e0f40b0194df2c1
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: "*.erciyesyapayzeka.com.tr"
+      validation_type: dv
+    _wildcard__erciyesyapayzeka_com_tr_c75a9_de7f1_1768608251_0bf7d29e9eff91431c0823a0af49f7f1: 
+      created: '1760835764'
+      domains: 
+        - "*.erciyesyapayzeka.com.tr"
+        - erciyesyapayzeka.com.tr
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “erciyesyapayzeka.com.tr” 1760835764.0
+      id: _wildcard__erciyesyapayzeka_com_tr_c75a9_de7f1_1768608251_0bf7d29e9eff91431c0823a0af49f7f1
+      is_self_signed: 0
+      issuer.commonName: R13
+      issuer.organizationName: Let's Encrypt
+      key_algorithm: rsaEncryption
+      modulus: c75a9d4f3d51696b71ca02473e528d33bfbdb1febb304163f2a8a61b93440ad9007ff84d55a92a37ce6708ce3526fe37e35cf6ee9074c12cdb296d741e590f35265bdfeb49bc5baa6b3c94dbce19296629ef89a31dca81a2548b64dbc1210f1dbf9d50bb5c6dfb381195afca8791428ad86188ad2ed0ec42ffae54702740bb96fd8d93f602a325354440ec869fae03ed9780d8059027a8e523b7c5af947c77e518f19e55aa65e081cf6c606a1687b13e0fb132fb6c395202259391f24b43b7c40abd21ed78c9c6132a7c9d58e2e213ed2b8dde7b2d2d5402d571494601a837d85594ace835d03f7735b10791bd296cd17c3442ea054eb395951ae401fe3de7f1
+      modulus_length: 2048
+      not_after: '1768608251'
+      not_before: '1760832252'
+      serial: 05bcb075fcc845c59a47ef6b2b8b4085ff56
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: "*.erciyesyapayzeka.com.tr"
+      validation_type: dv
+    _wildcard__erciyesyapayzeka_com_tr_dc798_013f3_1773878595_e6a869ee1c915b523cc3cabda07823ef: 
+      created: '1766106108'
+      domains: 
+        - "*.erciyesyapayzeka.com.tr"
+        - erciyesyapayzeka.com.tr
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “erciyesyapayzeka.com.tr” 1766106108.0
+      id: _wildcard__erciyesyapayzeka_com_tr_dc798_013f3_1773878595_e6a869ee1c915b523cc3cabda07823ef
+      is_self_signed: 0
+      issuer.commonName: R13
+      issuer.organizationName: Let's Encrypt
+      key_algorithm: rsaEncryption
+      modulus: dc798a7c0fbd208b02afff6ddb2ccf8c49ef1536fd72319f3616e3010510432fe7c65edcf5256827ef7c23dba3fcb3b0b0484656771fd4a27d14238b6cd2843bf678848c0d355ef9acacc814082f7b9c74ddf1eb787cd498311ec1a2a178683cdbae1e368bd716de2d9394ceaf582b4c49dfb10303216d029dd7bcdfaac747c06e73b344e9608e2ba3def40be24338952965aa012d3bf33a13d5ea9014af244e5075da21632d776e626f35965d40f0bbf0fc6fc913fe8e2faffe016bedb9960a4ab439e38e090320c42665f906975e92e7f30a8cc2e0adb24564b61f9516727dc437db6d09decc123df3bdfdc4502f3e5e2b9fc57af52964ab67a62a5be013f3
+      modulus_length: 2048
+      not_after: '1773878595'
+      not_before: '1766102596'
+      serial: 05e275a28808fbe861693f93b6f05b6918bf
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: "*.erciyesyapayzeka.com.tr"
+      validation_type: dv
+    erciyesyapayzeka_com_tr_b40aa_8b789_1772796140_72168c934e5dc8e40da5a0079cb68c1a: 
+      created: '1741260140'
+      domains: 
+        - erciyesyapayzeka.com.tr
+        - mail.erciyesyapayzeka.com.tr
+        - www.erciyesyapayzeka.com.tr
+        - cpanel.erciyesyapayzeka.com.tr
+        - webmail.erciyesyapayzeka.com.tr
+        - webdisk.erciyesyapayzeka.com.tr
+        - cpcontacts.erciyesyapayzeka.com.tr
+        - cpcalendars.erciyesyapayzeka.com.tr
+        - autodiscover.erciyesyapayzeka.com.tr
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “erciyesyapayzeka.com.tr”
+      id: erciyesyapayzeka_com_tr_b40aa_8b789_1772796140_72168c934e5dc8e40da5a0079cb68c1a
+      is_self_signed: 1
+      issuer.commonName: erciyesyapayzeka.com.tr
+      issuer.organizationName: ~
+      key_algorithm: rsaEncryption
+      modulus: b40aa92a40efebe8fedeae6f81efee8820bd2d0cd5f091e05f605f682424468388f8802c1a6eeff0c9d3a1fa4fbaec2ddedcbe0b70d1ea7b9880020149032af5b4268e35faab06669f5745a13fe755801f5e1977a6235d54b2fa5d10b18c84373cef5ee8da9f07e983fa686d40f26f7a505db021057a18b9bb99ca084c4cb2b19da0f375ed94a3d8585de4ea1fe54ea0b4b26881bf5e9ca1a1493b36b541817bcc29ce54f9ba62393da3bd73b00c24b90b8df322ab799124818b01cfe04452a62cecde836b398b1cba799747a7adb1c6e6cc1440596fa89218d10c07a96fe0aa21f1a4ee27dd8f14652393bce34f9f93ffd995210ace4c53a1a89f534ea8b789
+      modulus_length: 2048
+      not_after: '1772796140'
+      not_before: '1741260140'
+      serial: 01ab58b9eb
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: erciyesyapayzeka.com.tr
+      validation_type: ~
+    topluluk_erciyesyapayzeka_com_tr_cb132_36c11_1776092657_95a0a92135e3196b7449ec5b4eaa6042: 
+      created: '1768320169'
+      domains: 
+        - topluluk.erciyesyapayzeka.com.tr
+        - www.topluluk.erciyesyapayzeka.com.tr
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “topluluk.erciyesyapayzeka.com.tr” 1768320169.0
+      id: topluluk_erciyesyapayzeka_com_tr_cb132_36c11_1776092657_95a0a92135e3196b7449ec5b4eaa6042
+      is_self_signed: 0
+      issuer.commonName: R13
+      issuer.organizationName: Let's Encrypt
+      key_algorithm: rsaEncryption
+      modulus: cb1321b6dc6ed8f2a64a698d156264a2cce394917533dc676dbce7064e9cdefd63dd9aded14842216e5ac663b6868780af4db09462497642cd60f4ef93ec2558131ac659934c9117776991f03ddb7d8c1fc9dc23e2b3aa9ac20bfae5bc35cfaf4dc9a014cb3cc92c23b9f15dedd2d60a2b7ff9c9225927e4f3aa63321dd15f481201d6fa26fad7b1450a19a729074c0312f8b947df463f6f6d7b7c0c5c0bac43556701fe87536ae75d8f68aafcbe51b737ceaababe10c5e5c3bf5b1001d1a8812154e015563c1e0a0f67896aaf951c33eecdfade31c22b3fd768d6b67ee0966679d73e56e061398e0066168779ab85d4bb277c1c922554d7a0d7b6f30f736c11
+      modulus_length: 2048
+      not_after: '1776092657'
+      not_before: '1768316658'
+      serial: 06798aeda94cc6a24d7c66ed44e984cc9c49
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: topluluk.erciyesyapayzeka.com.tr
+      validation_type: dv
+    www_topluluk_erciyesyapayzeka_com_tr_ef59d_a9843_1770818515_4adb917c8f4066d3693ddaa57ad537ab: 
+      created: '1763046027'
+      domains: 
+        - topluluk.erciyesyapayzeka.com.tr
+        - www.topluluk.erciyesyapayzeka.com.tr
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “topluluk.erciyesyapayzeka.com.tr”
+      id: www_topluluk_erciyesyapayzeka_com_tr_ef59d_a9843_1770818515_4adb917c8f4066d3693ddaa57ad537ab
+      is_self_signed: 0
+      issuer.commonName: R12
+      issuer.organizationName: Let's Encrypt
+      key_algorithm: rsaEncryption
+      modulus: ef59d662f5ed7e9d72f3b9f2aaf563dcf412026c2988028cc349c29530238bf39c75a7740320279b2a520bec8bd6d3ad3647191b21bf63331193303ffa7cf87d1b74bf5e44b1cc643e19774874cb7050d5bace4f6dc0d942a1d87aacd282fa2e8315cbd0f93142d9906b269086c4f902b679f3a042e9c3f7d08cf617c6550b0eb08f5781a64e0a8f49934e688da5a3248356b4510469b638c6d9d11b150879ec4b807371b8bee07af7c8d1ecefd823cccee84ab81df892f4a5e09a1b75786f39e889f7ed5a57070d4f383723bfdcee21533399669a1ec21d4654974dec1eb26f7e085d2237e753d70373720faa9a0e468d9f86e8394d15059af8fd49778a9843
+      modulus_length: 2048
+      not_after: '1770818515'
+      not_before: '1763042516'
+      serial: 069fe1fe4e2f6c3b7196f4b2be77507af9f2
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: www.topluluk.erciyesyapayzeka.com.tr
+      validation_type: dv
+  key: 
+    9c0af_69b2d_2160e3cbd61b4c3df0b5a425dc09eb7c: 
+      created: '1771376521'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “erciyesyapayzeka.com.tr” 1771376521.0
+      id: 9c0af_69b2d_2160e3cbd61b4c3df0b5a425dc09eb7c
+      key_algorithm: rsaEncryption
+      modulus: 9c0af7f61b112b9a1367d551da2a728cc230aafc0bb24935193c9dc3c36d82aa1e2221f4c576ec1c9863ea3145e93e1775a29ece0d0d8167a6c63f2ea1fb3512a79c0eaac01ca47dcaf8f33694fcb2631fac3db98115d14d278a761778ed669e19253d1963c0fb7ae9cebab7dabc418cb35086240e39ef29a4935eb19f77b9064d39b33666af762e6830c0c9b367bd0e073e8d19ee73af102bb1aa0cfbea7f47685a080a8a51e550aae602f3c7fb8242d3c957c488977954cfd3510ddf72c6ae16d601c601c2259f4054f4940835aa1f06c36b3f9c6c62454f29f287a3e3e301b0007755a2993bd9cda058844367e35b565ca2db367c72604b9509aca4e69b2d
+      modulus_length: 2048
+    b3dfb_a355b_e40d7d26946b175f55d232fc11976920: 
+      created: '1755565354'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “erciyesyapayzeka.com.tr” 1755565354.0
+      id: b3dfb_a355b_e40d7d26946b175f55d232fc11976920
+      key_algorithm: rsaEncryption
+      modulus: b3dfb4def5ad3f59443da441166970d77be666908286d91bedcb320a6450bfd4b5297f7d4cbcd018f1016607faccae9c30724a62ffc3b6c0c5f4ebc54246c059bc34ee8d348d5a316494b8d528a84e2f2208f2a24b09d1a80f94c93831af2f43811c1c849c4db687d121d7a8bb00f1db50ccb3eb027e307a188109c2b85de7819f41b36cce2da16d1dd2d77527d8f11cb6dfdac968a84c4bc126dc8c96110a4742111b82dda0638857644980d1efb02069080f3f4e8b9c5ad7dfc1aef2806d8b280ddea1a3216242cca73d852d55287bcc3ede8de6edf6dfa5df368fde78d38b5746efaee18115ec41c0dff8e7ae95189f72fcd10ddecbbde3af0d63315a355b
+      modulus_length: 2048
+    b40aa_8b789_e7052d6dc2e9789c758b29089cdb7e9b: 
+      created: '1741260140'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “erciyesyapayzeka.com.tr”
+      id: b40aa_8b789_e7052d6dc2e9789c758b29089cdb7e9b
+      key_algorithm: rsaEncryption
+      modulus: b40aa92a40efebe8fedeae6f81efee8820bd2d0cd5f091e05f605f682424468388f8802c1a6eeff0c9d3a1fa4fbaec2ddedcbe0b70d1ea7b9880020149032af5b4268e35faab06669f5745a13fe755801f5e1977a6235d54b2fa5d10b18c84373cef5ee8da9f07e983fa686d40f26f7a505db021057a18b9bb99ca084c4cb2b19da0f375ed94a3d8585de4ea1fe54ea0b4b26881bf5e9ca1a1493b36b541817bcc29ce54f9ba62393da3bd73b00c24b90b8df322ab799124818b01cfe04452a62cecde836b398b1cba799747a7adb1c6e6cc1440596fa89218d10c07a96fe0aa21f1a4ee27dd8f14652393bce34f9f93ffd995210ace4c53a1a89f534ea8b789
+      modulus_length: 2048
+    c75a9_de7f1_2b97b1422d58f5ed9962f4e02f75f8a2: 
+      created: '1760835764'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “erciyesyapayzeka.com.tr” 1760835764.0
+      id: c75a9_de7f1_2b97b1422d58f5ed9962f4e02f75f8a2
+      key_algorithm: rsaEncryption
+      modulus: c75a9d4f3d51696b71ca02473e528d33bfbdb1febb304163f2a8a61b93440ad9007ff84d55a92a37ce6708ce3526fe37e35cf6ee9074c12cdb296d741e590f35265bdfeb49bc5baa6b3c94dbce19296629ef89a31dca81a2548b64dbc1210f1dbf9d50bb5c6dfb381195afca8791428ad86188ad2ed0ec42ffae54702740bb96fd8d93f602a325354440ec869fae03ed9780d8059027a8e523b7c5af947c77e518f19e55aa65e081cf6c606a1687b13e0fb132fb6c395202259391f24b43b7c40abd21ed78c9c6132a7c9d58e2e213ed2b8dde7b2d2d5402d571494601a837d85594ace835d03f7735b10791bd296cd17c3442ea054eb395951ae401fe3de7f1
+      modulus_length: 2048
+    cb132_36c11_b7b9068fb8365c5092f2c1639cdc2232: 
+      created: '1768320169'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “topluluk.erciyesyapayzeka.com.tr” 1768320169.0
+      id: cb132_36c11_b7b9068fb8365c5092f2c1639cdc2232
+      key_algorithm: rsaEncryption
+      modulus: cb1321b6dc6ed8f2a64a698d156264a2cce394917533dc676dbce7064e9cdefd63dd9aded14842216e5ac663b6868780af4db09462497642cd60f4ef93ec2558131ac659934c9117776991f03ddb7d8c1fc9dc23e2b3aa9ac20bfae5bc35cfaf4dc9a014cb3cc92c23b9f15dedd2d60a2b7ff9c9225927e4f3aa63321dd15f481201d6fa26fad7b1450a19a729074c0312f8b947df463f6f6d7b7c0c5c0bac43556701fe87536ae75d8f68aafcbe51b737ceaababe10c5e5c3bf5b1001d1a8812154e015563c1e0a0f67896aaf951c33eecdfade31c22b3fd768d6b67ee0966679d73e56e061398e0066168779ab85d4bb277c1c922554d7a0d7b6f30f736c11
+      modulus_length: 2048
+    dc798_013f3_45d60fbc496866d5883755280cb0df27: 
+      created: '1766106108'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “erciyesyapayzeka.com.tr” 1766106108.0
+      id: dc798_013f3_45d60fbc496866d5883755280cb0df27
+      key_algorithm: rsaEncryption
+      modulus: dc798a7c0fbd208b02afff6ddb2ccf8c49ef1536fd72319f3616e3010510432fe7c65edcf5256827ef7c23dba3fcb3b0b0484656771fd4a27d14238b6cd2843bf678848c0d355ef9acacc814082f7b9c74ddf1eb787cd498311ec1a2a178683cdbae1e368bd716de2d9394ceaf582b4c49dfb10303216d029dd7bcdfaac747c06e73b344e9608e2ba3def40be24338952965aa012d3bf33a13d5ea9014af244e5075da21632d776e626f35965d40f0bbf0fc6fc913fe8e2faffe016bedb9960a4ab439e38e090320c42665f906975e92e7f30a8cc2e0adb24564b61f9516727dc437db6d09decc123df3bdfdc4502f3e5e2b9fc57af52964ab67a62a5be013f3
+      modulus_length: 2048
+    ef59d_a9843_f38801236c7af8cf3ac28420cfb35720: 
+      created: '1763046027'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “topluluk.erciyesyapayzeka.com.tr”
+      id: ef59d_a9843_f38801236c7af8cf3ac28420cfb35720
+      key_algorithm: rsaEncryption
+      modulus: ef59d662f5ed7e9d72f3b9f2aaf563dcf412026c2988028cc349c29530238bf39c75a7740320279b2a520bec8bd6d3ad3647191b21bf63331193303ffa7cf87d1b74bf5e44b1cc643e19774874cb7050d5bace4f6dc0d942a1d87aacd282fa2e8315cbd0f93142d9906b269086c4f902b679f3a042e9c3f7d08cf617c6550b0eb08f5781a64e0a8f49934e688da5a3248356b4510469b638c6d9d11b150879ec4b807371b8bee07af7c8d1ecefd823cccee84ab81df892f4a5e09a1b75786f39e889f7ed5a57070d4f383723bfdcee21533399669a1ec21d4654974dec1eb26f7e085d2237e753d70373720faa9a0e468d9f86e8394d15059af8fd49778a9843
+      modulus_length: 2048
+indexes: 
+  certificate: 
+    modulus: 
+      9c0af7f61b112b9a1367d551da2a728cc230aafc0bb24935193c9dc3c36d82aa1e2221f4c576ec1c9863ea3145e93e1775a29ece0d0d8167a6c63f2ea1fb3512a79c0eaac01ca47dcaf8f33694fcb2631fac3db98115d14d278a761778ed669e19253d1963c0fb7ae9cebab7dabc418cb35086240e39ef29a4935eb19f77b9064d39b33666af762e6830c0c9b367bd0e073e8d19ee73af102bb1aa0cfbea7f47685a080a8a51e550aae602f3c7fb8242d3c957c488977954cfd3510ddf72c6ae16d601c601c2259f4054f4940835aa1f06c36b3f9c6c62454f29f287a3e3e301b0007755a2993bd9cda058844367e35b565ca2db367c72604b9509aca4e69b2d: 
+        _wildcard__erciyesyapayzeka_com_tr_9c0af_69b2d_1779149010_1863118e363be40b4088e68932a9f9a2: ~
+      b3dfb4def5ad3f59443da441166970d77be666908286d91bedcb320a6450bfd4b5297f7d4cbcd018f1016607faccae9c30724a62ffc3b6c0c5f4ebc54246c059bc34ee8d348d5a316494b8d528a84e2f2208f2a24b09d1a80f94c93831af2f43811c1c849c4db687d121d7a8bb00f1db50ccb3eb027e307a188109c2b85de7819f41b36cce2da16d1dd2d77527d8f11cb6dfdac968a84c4bc126dc8c96110a4742111b82dda0638857644980d1efb02069080f3f4e8b9c5ad7dfc1aef2806d8b280ddea1a3216242cca73d852d55287bcc3ede8de6edf6dfa5df368fde78d38b5746efaee18115ec41c0dff8e7ae95189f72fcd10ddecbbde3af0d63315a355b: 
+        _wildcard__erciyesyapayzeka_com_tr_b3dfb_a355b_1763337842_a90f3a2f3f221f41a25e252580d31b6d: ~
+      b40aa92a40efebe8fedeae6f81efee8820bd2d0cd5f091e05f605f682424468388f8802c1a6eeff0c9d3a1fa4fbaec2ddedcbe0b70d1ea7b9880020149032af5b4268e35faab06669f5745a13fe755801f5e1977a6235d54b2fa5d10b18c84373cef5ee8da9f07e983fa686d40f26f7a505db021057a18b9bb99ca084c4cb2b19da0f375ed94a3d8585de4ea1fe54ea0b4b26881bf5e9ca1a1493b36b541817bcc29ce54f9ba62393da3bd73b00c24b90b8df322ab799124818b01cfe04452a62cecde836b398b1cba799747a7adb1c6e6cc1440596fa89218d10c07a96fe0aa21f1a4ee27dd8f14652393bce34f9f93ffd995210ace4c53a1a89f534ea8b789: 
+        erciyesyapayzeka_com_tr_b40aa_8b789_1772796140_72168c934e5dc8e40da5a0079cb68c1a: ~
+      c75a9d4f3d51696b71ca02473e528d33bfbdb1febb304163f2a8a61b93440ad9007ff84d55a92a37ce6708ce3526fe37e35cf6ee9074c12cdb296d741e590f35265bdfeb49bc5baa6b3c94dbce19296629ef89a31dca81a2548b64dbc1210f1dbf9d50bb5c6dfb381195afca8791428ad86188ad2ed0ec42ffae54702740bb96fd8d93f602a325354440ec869fae03ed9780d8059027a8e523b7c5af947c77e518f19e55aa65e081cf6c606a1687b13e0fb132fb6c395202259391f24b43b7c40abd21ed78c9c6132a7c9d58e2e213ed2b8dde7b2d2d5402d571494601a837d85594ace835d03f7735b10791bd296cd17c3442ea054eb395951ae401fe3de7f1: 
+        _wildcard__erciyesyapayzeka_com_tr_c75a9_de7f1_1768608251_0bf7d29e9eff91431c0823a0af49f7f1: ~
+      cb1321b6dc6ed8f2a64a698d156264a2cce394917533dc676dbce7064e9cdefd63dd9aded14842216e5ac663b6868780af4db09462497642cd60f4ef93ec2558131ac659934c9117776991f03ddb7d8c1fc9dc23e2b3aa9ac20bfae5bc35cfaf4dc9a014cb3cc92c23b9f15dedd2d60a2b7ff9c9225927e4f3aa63321dd15f481201d6fa26fad7b1450a19a729074c0312f8b947df463f6f6d7b7c0c5c0bac43556701fe87536ae75d8f68aafcbe51b737ceaababe10c5e5c3bf5b1001d1a8812154e015563c1e0a0f67896aaf951c33eecdfade31c22b3fd768d6b67ee0966679d73e56e061398e0066168779ab85d4bb277c1c922554d7a0d7b6f30f736c11: 
+        topluluk_erciyesyapayzeka_com_tr_cb132_36c11_1776092657_95a0a92135e3196b7449ec5b4eaa6042: ~
+      dc798a7c0fbd208b02afff6ddb2ccf8c49ef1536fd72319f3616e3010510432fe7c65edcf5256827ef7c23dba3fcb3b0b0484656771fd4a27d14238b6cd2843bf678848c0d355ef9acacc814082f7b9c74ddf1eb787cd498311ec1a2a178683cdbae1e368bd716de2d9394ceaf582b4c49dfb10303216d029dd7bcdfaac747c06e73b344e9608e2ba3def40be24338952965aa012d3bf33a13d5ea9014af244e5075da21632d776e626f35965d40f0bbf0fc6fc913fe8e2faffe016bedb9960a4ab439e38e090320c42665f906975e92e7f30a8cc2e0adb24564b61f9516727dc437db6d09decc123df3bdfdc4502f3e5e2b9fc57af52964ab67a62a5be013f3: 
+        _wildcard__erciyesyapayzeka_com_tr_dc798_013f3_1773878595_e6a869ee1c915b523cc3cabda07823ef: ~
+      ef59d662f5ed7e9d72f3b9f2aaf563dcf412026c2988028cc349c29530238bf39c75a7740320279b2a520bec8bd6d3ad3647191b21bf63331193303ffa7cf87d1b74bf5e44b1cc643e19774874cb7050d5bace4f6dc0d942a1d87aacd282fa2e8315cbd0f93142d9906b269086c4f902b679f3a042e9c3f7d08cf617c6550b0eb08f5781a64e0a8f49934e688da5a3248356b4510469b638c6d9d11b150879ec4b807371b8bee07af7c8d1ecefd823cccee84ab81df892f4a5e09a1b75786f39e889f7ed5a57070d4f383723bfdcee21533399669a1ec21d4654974dec1eb26f7e085d2237e753d70373720faa9a0e468d9f86e8394d15059af8fd49778a9843: 
+        www_topluluk_erciyesyapayzeka_com_tr_ef59d_a9843_1770818515_4adb917c8f4066d3693ddaa57ad537ab: ~
+    subject.commonName: 
+      "*.erciyesyapayzeka.com.tr": 
+        _wildcard__erciyesyapayzeka_com_tr_9c0af_69b2d_1779149010_1863118e363be40b4088e68932a9f9a2: ~
+        _wildcard__erciyesyapayzeka_com_tr_b3dfb_a355b_1763337842_a90f3a2f3f221f41a25e252580d31b6d: ~
+        _wildcard__erciyesyapayzeka_com_tr_c75a9_de7f1_1768608251_0bf7d29e9eff91431c0823a0af49f7f1: ~
+        _wildcard__erciyesyapayzeka_com_tr_dc798_013f3_1773878595_e6a869ee1c915b523cc3cabda07823ef: ~
+      erciyesyapayzeka.com.tr: 
+        erciyesyapayzeka_com_tr_b40aa_8b789_1772796140_72168c934e5dc8e40da5a0079cb68c1a: ~
+      topluluk.erciyesyapayzeka.com.tr: 
+        topluluk_erciyesyapayzeka_com_tr_cb132_36c11_1776092657_95a0a92135e3196b7449ec5b4eaa6042: ~
+      www.topluluk.erciyesyapayzeka.com.tr: 
+        www_topluluk_erciyesyapayzeka_com_tr_ef59d_a9843_1770818515_4adb917c8f4066d3693ddaa57ad537ab: ~
+uniques: 
+  certificate: 
+    friendly_name: 
+      Cert for “erciyesyapayzeka.com.tr”: erciyesyapayzeka_com_tr_b40aa_8b789_1772796140_72168c934e5dc8e40da5a0079cb68c1a
+      Cert for “erciyesyapayzeka.com.tr” 1755565354.0: _wildcard__erciyesyapayzeka_com_tr_b3dfb_a355b_1763337842_a90f3a2f3f221f41a25e252580d31b6d
+      Cert for “erciyesyapayzeka.com.tr” 1760835764.0: _wildcard__erciyesyapayzeka_com_tr_c75a9_de7f1_1768608251_0bf7d29e9eff91431c0823a0af49f7f1
+      Cert for “erciyesyapayzeka.com.tr” 1766106108.0: _wildcard__erciyesyapayzeka_com_tr_dc798_013f3_1773878595_e6a869ee1c915b523cc3cabda07823ef
+      Cert for “erciyesyapayzeka.com.tr” 1771376521.0: _wildcard__erciyesyapayzeka_com_tr_9c0af_69b2d_1779149010_1863118e363be40b4088e68932a9f9a2
+      Cert for “topluluk.erciyesyapayzeka.com.tr”: www_topluluk_erciyesyapayzeka_com_tr_ef59d_a9843_1770818515_4adb917c8f4066d3693ddaa57ad537ab
+      Cert for “topluluk.erciyesyapayzeka.com.tr” 1768320169.0: topluluk_erciyesyapayzeka_com_tr_cb132_36c11_1776092657_95a0a92135e3196b7449ec5b4eaa6042
+  key: 
+    friendly_name: 
+      Key for “erciyesyapayzeka.com.tr”: b40aa_8b789_e7052d6dc2e9789c758b29089cdb7e9b
+      Key for “erciyesyapayzeka.com.tr” 1755565354.0: b3dfb_a355b_e40d7d26946b175f55d232fc11976920
+      Key for “erciyesyapayzeka.com.tr” 1760835764.0: c75a9_de7f1_2b97b1422d58f5ed9962f4e02f75f8a2
+      Key for “erciyesyapayzeka.com.tr” 1766106108.0: dc798_013f3_45d60fbc496866d5883755280cb0df27
+      Key for “erciyesyapayzeka.com.tr” 1771376521.0: 9c0af_69b2d_2160e3cbd61b4c3df0b5a425dc09eb7c
+      Key for “topluluk.erciyesyapayzeka.com.tr”: ef59d_a9843_f38801236c7af8cf3ac28420cfb35720
+      Key for “topluluk.erciyesyapayzeka.com.tr” 1768320169.0: cb132_36c11_b7b9068fb8365c5092f2c1639cdc2232
+    modulus:ecdsa_curve_name:ecdsa_public: 
+      9c0af7f61b112b9a1367d551da2a728cc230aafc0bb24935193c9dc3c36d82aa1e2221f4c576ec1c9863ea3145e93e1775a29ece0d0d8167a6c63f2ea1fb3512a79c0eaac01ca47dcaf8f33694fcb2631fac3db98115d14d278a761778ed669e19253d1963c0fb7ae9cebab7dabc418cb35086240e39ef29a4935eb19f77b9064d39b33666af762e6830c0c9b367bd0e073e8d19ee73af102bb1aa0cfbea7f47685a080a8a51e550aae602f3c7fb8242d3c957c488977954cfd3510ddf72c6ae16d601c601c2259f4054f4940835aa1f06c36b3f9c6c62454f29f287a3e3e301b0007755a2993bd9cda058844367e35b565ca2db367c72604b9509aca4e69b2d: 9c0af_69b2d_2160e3cbd61b4c3df0b5a425dc09eb7c
+      b3dfb4def5ad3f59443da441166970d77be666908286d91bedcb320a6450bfd4b5297f7d4cbcd018f1016607faccae9c30724a62ffc3b6c0c5f4ebc54246c059bc34ee8d348d5a316494b8d528a84e2f2208f2a24b09d1a80f94c93831af2f43811c1c849c4db687d121d7a8bb00f1db50ccb3eb027e307a188109c2b85de7819f41b36cce2da16d1dd2d77527d8f11cb6dfdac968a84c4bc126dc8c96110a4742111b82dda0638857644980d1efb02069080f3f4e8b9c5ad7dfc1aef2806d8b280ddea1a3216242cca73d852d55287bcc3ede8de6edf6dfa5df368fde78d38b5746efaee18115ec41c0dff8e7ae95189f72fcd10ddecbbde3af0d63315a355b: b3dfb_a355b_e40d7d26946b175f55d232fc11976920
+      b40aa92a40efebe8fedeae6f81efee8820bd2d0cd5f091e05f605f682424468388f8802c1a6eeff0c9d3a1fa4fbaec2ddedcbe0b70d1ea7b9880020149032af5b4268e35faab06669f5745a13fe755801f5e1977a6235d54b2fa5d10b18c84373cef5ee8da9f07e983fa686d40f26f7a505db021057a18b9bb99ca084c4cb2b19da0f375ed94a3d8585de4ea1fe54ea0b4b26881bf5e9ca1a1493b36b541817bcc29ce54f9ba62393da3bd73b00c24b90b8df322ab799124818b01cfe04452a62cecde836b398b1cba799747a7adb1c6e6cc1440596fa89218d10c07a96fe0aa21f1a4ee27dd8f14652393bce34f9f93ffd995210ace4c53a1a89f534ea8b789: b40aa_8b789_e7052d6dc2e9789c758b29089cdb7e9b
+      c75a9d4f3d51696b71ca02473e528d33bfbdb1febb304163f2a8a61b93440ad9007ff84d55a92a37ce6708ce3526fe37e35cf6ee9074c12cdb296d741e590f35265bdfeb49bc5baa6b3c94dbce19296629ef89a31dca81a2548b64dbc1210f1dbf9d50bb5c6dfb381195afca8791428ad86188ad2ed0ec42ffae54702740bb96fd8d93f602a325354440ec869fae03ed9780d8059027a8e523b7c5af947c77e518f19e55aa65e081cf6c606a1687b13e0fb132fb6c395202259391f24b43b7c40abd21ed78c9c6132a7c9d58e2e213ed2b8dde7b2d2d5402d571494601a837d85594ace835d03f7735b10791bd296cd17c3442ea054eb395951ae401fe3de7f1: c75a9_de7f1_2b97b1422d58f5ed9962f4e02f75f8a2
+      cb1321b6dc6ed8f2a64a698d156264a2cce394917533dc676dbce7064e9cdefd63dd9aded14842216e5ac663b6868780af4db09462497642cd60f4ef93ec2558131ac659934c9117776991f03ddb7d8c1fc9dc23e2b3aa9ac20bfae5bc35cfaf4dc9a014cb3cc92c23b9f15dedd2d60a2b7ff9c9225927e4f3aa63321dd15f481201d6fa26fad7b1450a19a729074c0312f8b947df463f6f6d7b7c0c5c0bac43556701fe87536ae75d8f68aafcbe51b737ceaababe10c5e5c3bf5b1001d1a8812154e015563c1e0a0f67896aaf951c33eecdfade31c22b3fd768d6b67ee0966679d73e56e061398e0066168779ab85d4bb277c1c922554d7a0d7b6f30f736c11: cb132_36c11_b7b9068fb8365c5092f2c1639cdc2232
+      dc798a7c0fbd208b02afff6ddb2ccf8c49ef1536fd72319f3616e3010510432fe7c65edcf5256827ef7c23dba3fcb3b0b0484656771fd4a27d14238b6cd2843bf678848c0d355ef9acacc814082f7b9c74ddf1eb787cd498311ec1a2a178683cdbae1e368bd716de2d9394ceaf582b4c49dfb10303216d029dd7bcdfaac747c06e73b344e9608e2ba3def40be24338952965aa012d3bf33a13d5ea9014af244e5075da21632d776e626f35965d40f0bbf0fc6fc913fe8e2faffe016bedb9960a4ab439e38e090320c42665f906975e92e7f30a8cc2e0adb24564b61f9516727dc437db6d09decc123df3bdfdc4502f3e5e2b9fc57af52964ab67a62a5be013f3: dc798_013f3_45d60fbc496866d5883755280cb0df27
+      ef59d662f5ed7e9d72f3b9f2aaf563dcf412026c2988028cc349c29530238bf39c75a7740320279b2a520bec8bd6d3ad3647191b21bf63331193303ffa7cf87d1b74bf5e44b1cc643e19774874cb7050d5bace4f6dc0d942a1d87aacd282fa2e8315cbd0f93142d9906b269086c4f902b679f3a042e9c3f7d08cf617c6550b0eb08f5781a64e0a8f49934e688da5a3248356b4510469b638c6d9d11b150879ec4b807371b8bee07af7c8d1ecefd823cccee84ab81df892f4a5e09a1b75786f39e889f7ed5a57070d4f383723bfdcee21533399669a1ec21d4654974dec1eb26f7e085d2237e753d70373720faa9a0e468d9f86e8394d15059af8fd49778a9843: ef59d_a9843_f38801236c7af8cf3ac28420cfb35720

@@ -1,0 +1,520 @@
+<!doctype html>
+<html class="no-js" lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Data Camp</title>
+    <meta name="description" content="ERÜ Yapay Zeka Kulübü Data Kamp">
+    <meta name="keywords" content="ERÜ Yapay Zeka Kulübü, ERU AI CLUB, Yapay Zeka Kulübü, Erciyes Üniversitesi Yapay Zeka Kulübü, Erciyes Yapay Zeka, Yapay Zeka Kulübü, Erü Yapay Zeka">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="8MybSn_dUVt5PeYUSH69GpiKlEWYMUPmImmvS9m-XT0" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo/fav1.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet" />
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales-all.min.js"></script>
+
+    <style>
+        /* ——— KALIN MAVİ ARKA PLANLI DERS STİLİ ——— */
+        .ai-event {
+            background: #0d6efd !important; /* mavi arka plan */
+            border: none !important; /* kenarlık yok */
+            border-radius: 8px !important; /* yumuşak köşe */
+            box-shadow: 0 2px 0 rgba(0,0,0,.08); /* hafif gölge */
+        }
+
+            .ai-event .fc-event-main {
+                color: #fff !important; /* beyaz yazı */
+                font-weight: 700; /* kalın */
+                padding: 4px 8px; /* daha dolu görünüm */
+            }
+
+        .fc .fc-daygrid-event {
+            margin: 3px 0;
+        }
+
+        .fc .fc-daygrid-block-event .fc-event-time,
+        .fc .fc-daygrid-block-event .fc-event-title {
+            white-space: normal; /* uzun başlıklar satır kaydırabilsin */
+        }
+
+        /* Takvim kapsayıcı */
+        #calendar {
+            max-width: 100%;
+            overflow-x: hidden;
+            padding: 10px;
+            scroll-margin-top: 90px; /* header sabitse anchorla kayarken üstte boşluk bırakır */
+        }
+
+        @media (max-width: 768px) {
+            #calendar {
+                padding: 5px;
+            }
+        }
+
+        /* Modal görselliği */
+        .modal-content {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-header {
+            background-color: #007bff;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .modal-title {
+            font-size: 1.25rem;
+        }
+
+        .modal-body h6 {
+            font-weight: bold;
+        }
+
+        .modal-footer button {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: { left: 'prev,next today', center: 'title', right: 'dayGridMonth' },
+                locale: 'tr',
+                timeZone: 'local',
+                firstDay: 1,
+                displayEventTime: false,                 // <<< zamanları kutuda gösterme
+                eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
+
+                // Kutuda sadece ders adı gözüksün
+                eventContent: function (arg) {
+                    const el = document.createElement('div');
+                    el.className = 'fc-title-only';
+                    el.textContent = arg.event.title;      // sadece title
+                    return { domNodes: [el] };
+                },
+
+                events: [
+                    // — TEMEL EĞİTİM (Cuma 19:40–21:40) — 03 → 31 Ekim 2025
+                    {
+                        title: 'Temel-1', start: '2025-10-03T19:40:00+03:00', end: '2025-10-03T21:40:00+03:00',
+                        description: 'Yapay Zekâ Nedir? Ne Değildir?', classroom: 'Bilgisayar Mühendisliği B2032, 19:40 - 21:40'
+                    },
+                    {
+                        title: 'Temel-2', start: '2025-10-10T19:40:00+03:00', end: '2025-10-10T21:40:00+03:00',
+                        description: 'Veri ve Bilgi: Analiz', classroom: 'Bilgisayar Mühendisliği B2032, 19:40 - 21:40'
+                    },
+                    {
+                        title: 'Temel-3', start: '2025-10-17T19:40:00+03:00', end: '2025-10-17T21:40:00+03:00',
+                        description: 'Makine Öğrenmesi Temelleri + Model Tasarımı, Seçimi ve Değerlendirme', classroom: 'Bilgisayar Mühendisliği B2032, 19:40 - 21:40'
+                    },
+                    {
+                        title: 'Temel-4', start: '2025-10-24T19:40:00+03:00', end: '2025-10-24T21:40:00+03:00',
+                        description: 'Yapay Sinir Ağlarına Giriş', classroom: 'Bilgisayar Mühendisliği B2032, 19:40 - 21:40'
+                    },
+                    {
+                        title: 'Temel-5', start: '2025-10-31T19:40:00+03:00', end: '2025-10-31T21:40:00+03:00',
+                        description: 'Derin Modeller & Konfigürasyon', classroom: 'Bilgisayar Mühendisliği B2032, 19:40 - 21:40'
+                    },
+
+
+                    {
+                        title: 'Vize Arası', start: '2025-11-07T19:40:00+03:00', end: '2025-11-07T20:40:00+03:00',
+                        description: '', classroom: ''
+                    },
+
+                    {
+                        title: 'Vize Arası', start: '2025-11-14T19:40:00+03:00', end: '2025-11-14T20:40:00+03:00',
+                        description: '', classroom: ''
+                    },
+
+
+                    // — ATÖLYELER (Cuma) — 28 Kasım → 26 Aralık 2025
+                    // 1. Hafta (Önce NLP 19:40, sonra Görü 20:40)
+                    {
+                        title: 'Doğal Dil İşleme-1', start: '2025-11-21T19:40:00+03:00', end: '2025-11-21T20:40:00+03:00',
+                        description: 'NLP’ye Giriş & Dilin Temsili', classroom: 'Bilgisayar Mühendisliği B2032, 19:40 - 20:40'
+                    },
+                    {
+                        title: 'Bilgisayarlı Görü-1', start: '2025-11-21T20:40:00+03:00', end: '2025-11-21T21:40:00+03:00',
+                        description: 'Görüntü Oluşturma & İşleme Temelleri', classroom: 'Bilgisayar Mühendisliği B2032, 20:40 - 21:40'
+                    },
+
+
+                  
+
+
+                    // 2. Hafta (Önce Görü 19:40, sonra NLP 20:40)
+                    {
+                        title: 'Bilgisayarlı Görü-2', start: '2025-11-28T19:40:00+03:00', end: '2025-11-28T20:40:00+03:00',
+                        description: 'Görüntü Sınıflandırma', classroom: 'Bilgisayar Mühendisliği B2032, 19:40 - 20:40'
+                    },
+                    {
+                        title: 'Doğal Dil İşleme-2', start: '2025-11-28T20:40:00+03:00', end: '2025-11-28T21:40:00+03:00',
+                        description: 'Word Embeddings (Dağıtımsal Anlam)', classroom: 'Bilgisayar Mühendisliği B2032, 20:40 - 21:40'
+                    },
+
+                    // 3. Hafta (Önce NLP 19:40, sonra Görü 20:40)
+                    {
+                        title: 'Doğal Dil İşleme-3', start: '2025-12-05T19:40:00+03:00', end: '2025-12-05T20:40:00+03:00',
+                        description: 'Klasik Modeller', classroom: 'Bilgisayar Mühendisliği B2032, 19:40 - 20:40'
+                    },
+                    {
+                        title: 'Bilgisayarlı Görü-3', start: '2025-12-05T20:40:00+03:00', end: '2025-12-05T21:40:00+03:00',
+                        description: 'CNN Temeli & Transfer Learning', classroom: 'Bilgisayar Mühendisliği B2032, 20:40 - 21:40'
+                    },
+
+                    // 4. Hafta (Önce Görü 19:40, sonra NLP 20:40)
+                    {
+                        title: 'Bilgisayarlı Görü-4', start: '2025-12-12T19:40:00+03:00', end: '2025-12-12T20:40:00+03:00',
+                        description: 'Nesne Tespiti ve Değerlendirme', classroom: 'Bilgisayar Mühendisliği B2032, 19:40 - 20:40'
+                    },
+                    {
+                        title: 'Doğal Dil İşleme-4', start: '2025-12-12T20:40:00+03:00', end: '2025-12-12T21:40:00+03:00',
+                        description: 'Derin Öğrenme ile NLP', classroom: 'Bilgisayar Mühendisliği B2032, 20:40 - 21:40'
+                    },
+
+                    // 5. Hafta (Önce NLP 19:40, sonra Görü 20:40)
+                    {
+                        title: 'Doğal Dil İşleme-5', start: '2025-12-19T19:40:00+03:00', end: '2025-12-19T20:40:00+03:00',
+                        description: 'Transformer, Fine-Tuning, RAG & Agentler', classroom: 'Bilgisayar Mühendisliği B2032, 19:40 - 20:40'
+                    },
+                    {
+                        title: 'Bilgisayarlı Görü-5', start: '2025-12-19T20:40:00+03:00', end: '2025-12-19T21:40:00+03:00',
+                        description: 'Bitirme Projesi', classroom: 'Bilgisayar Mühendisliği B2032, 20:40 - 21:40'
+                    },
+
+                    {
+                        title: 'Proje Sunumları', start: '2025-12-26T19:40:00+03:00', end: '2025-12-26T20:40:00+03:00',
+                        description: 'Proje Sunumları', classroom: 'Bilgisayar Mühendisliği - tarih ve saat sonradan eklenecektir.'
+                    },
+                 
+                ],
+
+                // Mavi arka plan ver; tooltip artık yok (sadece modalda detay)
+                eventDidMount: function (info) {
+                    info.el.classList.add('ai-event');
+                },
+
+                // Tıklandığında detayları modalda göster
+                eventClick: function (info) {
+                    document.getElementById('modalTitle').innerText = info.event.title;
+                    document.getElementById('modalDescription').innerText = info.event.extendedProps.description || 'Detay bulunmuyor.';
+
+                    const s = info.event.start, e = info.event.end;
+                    const dOpts = { year: 'numeric', month: 'long', day: 'numeric' };
+                    const tOpts = { hour: '2-digit', minute: '2-digit', hour12: false };
+                    const dayStr = s ? s.toLocaleDateString('tr-TR', dOpts) : '—';
+                    const timeStr = s ? s.toLocaleTimeString('tr-TR', tOpts) + (e ? ' – ' + e.toLocaleTimeString('tr-TR', tOpts) : '') : '';
+                    document.getElementById('modalDate').innerText = 'Zaman: ' + dayStr + ' ' + timeStr;
+
+                    document.getElementById('modalClassroom').innerText = 'Sınıf: ' + (info.event.extendedProps.classroom || 'Sınıf bilgisi yok.');
+                    new bootstrap.Modal(document.getElementById('eventModal')).show();
+                }
+            });
+
+            calendar.render();
+        });
+    </script>
+
+
+</head>
+<body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">Eski bir tarayıcı kullanıyorsunuz. Daha iyi bir deneyim için lütfen güncelleyin.</p>
+    <![endif]-->
+    <!-- Scroll-top -->
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <i class="fas fa-angle-up"></i>
+    </button>
+
+    <!-- preloader -->
+    <div id="preloadertp">
+        <img src="assets/img/preloader.png" alt="">
+    </div>
+
+    <!-- header-area -->
+    <header class="d-none d-xl-block">
+        <div class="header-custom" id="header-sticky">
+            <div class="header-logo-box">
+                <a href="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
+            </div>
+            <div class="header-menu-box">
+                <div class="header-menu-top"></div>
+                <div class="header-menu-bottom">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="main-menu main-menu-second">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="index.html">Ana Sayfa</a></li>
+                                        <li class=""><a href="etkinlikler.html">Etkinlikler</a></li>
+                                        <li><a href="research.html">Projeler</a></li>
+                                        <li><a href="uyeol.html">Üye Ol</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile header -->
+    <div id="header-mob-sticky" class="tp-mobile-header-area pt-15 pb-15 d-xl-none">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-10">
+                    <div class="tp-mob-logo">
+                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-2">
+                    <div class="tp-mobile-bar d-flex align-items-center justify-content-end">
+                        <div class="tp-bt-btn-banner d-none d-md-block d-xl-none mr-30">
+                            <a class="tp-bt-btn" href="tel:123456"></a>
+                        </div>
+                        <button class="tp-menu-toggle"><i class="far fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sidebar-info -->
+    <div class="tpsideinfo tp-side-info-area">
+        <button class="tpsideinfo__close"><i class="fal fa-times"></i></button>
+        <div class="tpsideinfo__logo mb-40">
+            <a href="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
+        </div>
+        <div class="mobile-menu"></div>
+    </div>
+    <div class="body-overlay"></div>
+
+    <!-- main-area -->
+    <main>
+        <!-- breadcrumb-area -->
+        <section class="breadcrumb__area pt-100 pb-120 breadcrumb__overlay" data-background="assets/img/banner/2345.png">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <div class="tp-breadcrumb">
+                            <h2 class="tp-breadcrumb__title">DATA KAMP<br> Yapay Zeka Eğitimi</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <div class="tp-breadcrumb__link d-flex align-items-center"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content -->
+        <section class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <article class="blog-post">
+                            <div class="blog-post-content">
+                                <div class="container">
+                                    <br>
+                                    <h3 class="tp-section__title mb-70">Data Kamp Bahar Program Detayları</h3>
+                                    <p><h5>Eğitime Katılabilmeniz için Yapay Zeka Kulübü Üyesi Olmanız Gerekmektedir. <a href="https://erciyesyapayzeka.com.tr/uyeol" target="_blank" style="color: red;">ÜYE OL</a></h5></br>Eğitim programı takvimde belirtilmiştir. Ders saati, konusu, yeri takvime eklenmiştir.<br>Başvurulara açıktır. </p>
+                                   
+                                    <p><h4>Eğitime katılım için 2025-2026 dönemi Yapay Zeka Kulübü üyeliğiniz olması gerekmektedir.</h4></p>
+                                    <div class="about-content__btn" style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:18px;">
+                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfHAvUrU5upkX9cm1IwHjiDPCegrr-TkHRGS6-61gdX56ajYg/viewform?usp=header" class="tp-btn">Başvur</a>
+                                        <a href="#calendar" class="tp-btn" style="background:#f2f2f2; color:#111; padding:12px 20px; border-radius:8px; text-decoration:none;">Takvimi Gör</a>
+                                    </div>
+
+                                    <!-- Kısa Tanıtım Bloğu -->
+                                    <section class="program-brief" style="margin-top:10px; margin-bottom:18px;">
+                                        <div style="display:flex; gap:24px; flex-wrap:wrap; align-items:stretch;">
+                                            <div style="flex:1 1 340px; min-width:300px;">
+                                                <a href="https://erciyesyapayzeka.com.tr/datakamp_2025-2026.png" target="_blank" rel="noopener">
+                                                    <img src="https://erciyesyapayzeka.com.tr/datakamp_2025-2026.png" alt="Data Kamp Bahar Duyurusu"
+                                                         style="width:100%; height:auto; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,.08);" />
+                                                </a>
+                                            </div>
+                                            <div style="flex:2 1 420px; min-width:320px;">
+                                                <h4 style="margin:0 0 10px 0;">Kısa Tanıtım</h4>
+                                                <p style="margin:0 0 10px 0;">
+                                                    Data Kamp; temel yapay zekâ kavramlarıyla başlar, ardından <strong>Bilgisayarlı Görü</strong> ve
+                                                    <strong>Doğal Dil İşleme</strong> atölyelerinde uygulamalı çalışmalarla devam eder. Cuma günleri B2032’de
+                                                    gerçekleştirilen oturumlarda gerçek veri üzerinde model kurma, değerlendirme ve iyileştirme pratikleri yapılır.
+                                                </p>
+                                                <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin:16px 0;">
+                                                    <div style="padding:14px; border:1px solid #eee; border-radius:12px;">
+                                                        <div style="font-weight:600; margin-bottom:6px;">Tarih & Saat</div>
+                                                        <ul style="margin:0; padding-left:18px;">
+                                                            <li><strong>Temel Eğitim:</strong> 03–31 Ekim 2025, Cuma 19:30–21:30</li>
+                                                            <li><strong>Atölyeler:</strong> 28 Kasım–26 Aralık 2025, Cuma 19:30–20:30 & 20:30–21:30</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="padding:14px; border:1px solid #eee; border-radius:12px;">
+                                                        <div style="font-weight:600; margin-bottom:6px;">Yer</div>
+                                                        <p style="margin:0;">Bilgisayar Mühendisliği <strong>B2032</strong></p>
+                                                    </div>
+                                                    <div style="padding:14px; border:1px solid #eee; border-radius:12px;">
+                                                        <div style="font-weight:600; margin-bottom:6px;">Öne Çıkanlar</div>
+                                                        <ul style="margin:0; padding-left:18px;">
+                                                            <li>Uygulamalı atölye akışı (CV & NLP)</li>
+                                                            <li>Model değerlendirme ve iyileştirme</li>
+                                                            <li>Gerçek veri üzerinde pratik</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div style="padding:14px; border:1px solid #eee; border-radius:12px;">
+                                                        <div style="font-weight:600; margin-bottom:6px;">Hedef Kitle</div>
+                                                        <ul style="margin:0; padding-left:18px;">
+                                                            <li>AI/ML’e adım atmak isteyenler</li>
+                                                            <li>Temel Python bilgisi olan öğrenciler</li>
+                                                            <li>Uygulamalı derin öğrenme deneyimi arayanlar</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- TAKVİM -->
+                                    <div id="calendar"></div>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="eventModalLabel">Etkinlik Detayları</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h6 id="modalTitle"></h6>
+                                                    <p id="modalDescription"></p>
+                                                    <p id="modalDate"></p>
+                                                    <p id="modalClassroom"></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- /.container -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer-area -->
+    <footer>
+        <div class="footer-area tp-common-area footer-white-content theme-bg pt-105">
+            <div class="tp-footer-top pb-25">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="footernewsletter mb-40 wow fadeInUp" data-wow-delay=".2s">
+                                <h4 class="footernewsletter__title">Bize Ulaşın</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="footernewsletter__form p-relative wow fadeInUp" data-wow-delay=".4s"></div>
+                        </div>
+                    </div>
+                    <div class="row pb-40 pt-50">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footercontact mb-40 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="footercontact__icon"><i class="flaticon-placeholder"></i></div>
+                                <div class="footercontact__content">
+                                    <span class="footercontact__title"><a href="contact.html">Mühendislik Fakültesi - Bilgisayar Mühendisliği <br>Erciyes Üniversitesi</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footercontact mb-40 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="footercontact__icon fw-pink-icon"><i class="flaticon-mail"></i></div>
+                                <div class="footercontact__content fw-pink-content">
+                                    <a href="mailto:info@erciyesyapayzeka.com.tr">info@erciyesyapayzeka.com.tr</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footercontact mb-40 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="footercontact__icon fw-green-icon"><i class="flaticon-24-hours"></i></div>
+                                <div class="footercontact__content">
+                                    <span>Pazartesi - Cuma -  09:00 - 21:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </div>
+            <div class="footer-area-bottom-tp">
+                <div class="container">
+                    <div class="footer-bottom-border">
+                        <div class="row">
+                            <div class="col-xxl-6 col-xl-7 col-lg-6 col-md-12 col-12">
+                                <div class="footer-widget__copyright cpy-white-content">
+                                    <span> © Copyright ©2024 <a href="index.html">Erciyes Üniversitesi Yapay Zeka Kulübü</a>. <i>All Rights Reserved Copyright</i></span>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-xl-5 col-lg-6 col-md-12 col-12">
+                                <div class="footer-widget__copyright-info info-direction cpy-white-content-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script> <!-- Tek Bootstrap JS bu -->
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/jquery.knob.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
